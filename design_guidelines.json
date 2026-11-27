@@ -1,188 +1,184 @@
 {
-  "project_meta": {
-    "name": "VICE ATLAS — Your GTA 6 Pause Menu",
-    "latest_user_direction": "User explicitly requested a much closer visual copy of gtatown.com. Reference captured directly in-browser: midnight navy page gradient #111222/#1f1f38, Barlow Condensed 700/800 display, Plus Jakarta Sans UI, pale yellow #fff9cb headings, pale pink #ffb2c6 controls; compact nav, YOUR GTA 6 PAUSE MENU left with six white-selected menu rows and thumbnails, large night map right, rounded Jump in image grid, compact latest-news cards. This direction supersedes the initial invented neon-brutalist homepage. Retain existing English Vice Atlas brand and working content/search/saved flows.",
-    "codename": "VICETOWN VI",
-    "tagline": "The Grand Theft Auto VI Cinematic Explorer & Leonida Archive",
-    "author_disclaimer": "UNOFFICIAL FAN SITE & IMMERSIVE COMPANION • ALL TRADEMARKS, ARTWORK AND MEDIA ASSETS BELONG TO ROCKSTAR GAMES / TAKE-TWO INTERACTIVE",
-    "version": "1.0.0-AWWWARDS-SSS",
-    "target_platform": "React (JavaScript .js), Tailwind CSS, Framer Motion, Lucide Icons, Sonner"
+  "project": "VICE ATLAS — Universal Dossier / Ficha Redesign (SSS Tier)",
+  "target_file": "/app/frontend/src/components/portal/DetailPage.js",
+  "styling_files": [
+    "/app/frontend/src/Portal.css",
+    "/app/frontend/src/Nightfall.css"
+  ],
+  "context": "fan_companion_portal",
+  "design_tier": "SSS Tier Obscuro / GTA Town x Rockstar Games hybrid",
+  "problem_analysis": {
+    "current_issue": "User reported that the current individual dossier/ficha page feels like a basic title with a large dark car-image letterbox block. It lacks high-impact tactical hierarchy, editorial depth, and holistic inspectability across different dossier types (Vehicles, Weapons, Characters/People, Regions, Radio, Media/Screenshots, Guides/Editorials, Videos).",
+    "core_imperatives": [
+      "Keep all current data, attributes, checklist/bookmark persistence, spoiler protection, video playback, and links intact without inventing fake gameplay stats.",
+      "Universal real detail routes (never modals); real image inspectability without tiny letterboxed blocks.",
+      "Full SSS-tier visual direction: midnight base with tropical accents (--gta-pink, --gta-turquoise, --gta-coral, --gta-peach, --gta-lilac, --gta-cream).",
+      "Gradients marked on display headings, discrete on surfaces; selective borders, shadows, and underlines matching PRD approvals.",
+      "Remove generic AI copy; strictly respect factual labels ('GTABase · community reference', 'Rockstar Games · official', etc.).",
+      "Full responsiveness from 360px mobile up to 1920px ultrawide."
+    ]
   },
-  "design_synthesis_concept": {
-    "rockstar_games_vi_dna": "Monumental condensed Art Deco & brutalist typography, warm Vice sunset palette (bubblegum neon pink, peach cream, deep ocean obsidian), kinetic poster-first hero with masked line-by-line staggered reveal, film-grain texture, and cinematic character duos (Jason & Lucia).",
-    "gtatown_com_dna": "Structured field-intel explorer architecture: six Leonida territories, interactive interactive dossier modals, map coordinate badges, vehicle garage metadata, crime-beat radio/news timeline, and bookmarkable local collections.",
-    "hybrid_breakthrough": "'Cinematic Neon Brutalism' — high-end editorial meets tactical surveillance terminal. Every card feels like classified satellite field intel stamped in Vice Beach neon."
-  },
-  "fonts": {
-    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@600;700;800;900&family=Cabinet+Grotesk:wght@400;700;800;900&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,300;0,400;0,600;0,800;1,400&display=swap",
-    "font_pairings": {
-      "display_hero": "'Anton', 'Cabinet Grotesk', sans-serif",
-      "display_serif_vice": "'Cinzel', serif",
-      "body_modern": "'Outfit', sans-serif",
-      "data_intel_mono": "'JetBrains Mono', monospace"
+  "typography": {
+    "headings": {
+      "font_family": "'Barlow Condensed', sans-serif",
+      "weights": "700 to 800",
+      "letter_spacing": "tracking-tight (-0.02em to -0.01em)",
+      "line_height": "leading-[0.96] to leading-[1.02]",
+      "treatment": "Gradient fill (--gradient-heading / --gradient-sunset) with -webkit-background-clip: text; 0.35px fine stroke and glyph-following drop-shadow(0 2px 0 #080810b8) drop-shadow(0 8px 18px #080810b3)"
     },
-    "typography_rules": {
-      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tighter leading-[0.95]",
-      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-black uppercase tracking-tight leading-none",
-      "h3_card_title": "text-xl sm:text-2xl font-bold uppercase tracking-tight",
-      "eyebrow_badge": "text-[10px] sm:text-xs font-mono uppercase tracking-[0.25em] text-[#FF4893]",
-      "body_text": "text-sm sm:text-base font-normal leading-relaxed text-[#D6DCE5]",
-      "metadata_stat": "text-xs font-mono tracking-widest text-[#F9C3A6]"
+    "body_and_ui": {
+      "font_family": "'Plus Jakarta Sans', -apple-system, sans-serif",
+      "body_size": "13px - 14px",
+      "body_line_height": "1.85 to 1.95",
+      "label_style": "font: 600 11px/1.4 'Barlow Condensed', uppercase tracking-[0.14em]"
     }
   },
   "color_palette": {
-    "background_void": "#06080D",
-    "background_card": "#0B1019",
-    "background_elevated": "#111827",
-    "border_subtle": "#1F2B3E",
-    "border_glow": "rgba(255, 72, 147, 0.4)",
-    "neon_pink": "#FF3377",
-    "electric_flamingo": "#FF599C",
-    "vice_sunset_orange": "#FF7A30",
-    "cream_sand": "#FFF3E4",
-    "ocean_cyan": "#00F0FF",
-    "grassriver_gold": "#FFC043",
-    "text_primary": "#FFFFFF",
-    "text_secondary": "#B5C1D3",
-    "text_muted": "#6C7D93"
+    "midnight_base": "#151526",
+    "night_deep": "#0b0c16",
+    "night_surface": "#191a2e",
+    "night_panel": "#22233c",
+    "night_panel_hover": "#2c2d4a",
+    "gta_cream": "#FFF1D6",
+    "gta_pink": "#F3B6CF",
+    "gta_coral": "#EF8F9C",
+    "gta_peach": "#F2C79E",
+    "gta_lilac": "#A18BC5",
+    "gta_turquoise": "#65BFC1",
+    "border_outline": "rgba(161, 139, 197, 0.28)",
+    "edge_light": "rgba(255, 241, 214, 0.09)"
   },
-  "core_features_matrix": [
-    {
-      "id": "hero_kinetic",
-      "label": "Kinetic Hero & Official Trailer Cinema",
-      "description": "Full-bleed hero using Rockstar poster asset with line-by-line staggered text reveals, audio ambiance toggle, and inline popover trailer cinema."
+  "dossier_redesign_blueprint": {
+    "layout_mode": "Hybrid Cinematic Stage + Modular Editorial Command Grid",
+    "structural_layers": [
+      {
+        "layer_id": "breadcrumbs_and_kicker_rail",
+        "description": "Sticky micro-navigation bar at top of detail view with category badge, collection route, entry counter, and quick share/bookmark actions."
+      },
+      {
+        "layer_id": "hero_presentation_stage",
+        "description": "Massive full-bleed or contained cinematic viewport that adapts dynamically by item.kind (Vehicle showcase stage with radial spotlight and grid mesh, Character portrait duo-tone canvas, Region landscape panorama with coordinate tags, Media 1:1 inspectable light-box with zoom trigger, Video theater with custom poster & play aura). Eliminates the dead letterbox aesthetic by introducing illuminated ground reflections and ambient neon rim lighting.",
+        "inspectability_features": [
+          "Interactive full-canvas view mode toggle ('Inspect Frame')",
+          "Direct uncompressed source download action",
+          "Aspect-ratio intelligent framing (contain with ambient glow for vehicles/weapons, cover/expand for regions/media)",
+          "Overlaid tactical watermark stamp ('VICE ATLAS DOSSIER // [ITEM_ID]')"
+        ]
+      },
+      {
+        "layer_id": "meta_command_hud",
+        "description": "Directly beneath or flanking the image stage: quick tactical badges (Classification, Manufacturer/Subcategory, Provenance Status, Local Checklist state, Quick Compare button).",
+        "components": [
+          "Provenance indicator badge (Official vs Community)",
+          "Checklist toggle with instant local-device feedback",
+          "Compare link for Vehicles & Weapons",
+          "Share & Download buttons with tactile active states"
+        ]
+      },
+      {
+        "layer_id": "editorial_and_attribute_grid",
+        "description": "Asymmetrical two-column or three-column bento architecture:",
+        "columns": {
+          "primary_prose_column": "Lead synopsis with drop-cap accent, multi-paragraph analysis, bulleted facts list styled as tactical surveillance points, spoiler protection shroud with neon eye reveal.",
+          "secondary_dossier_sidebar": "Sticky 'Source Dossier' technical file with origin URL, disclaimer card, structured attribute pairs with neon divider bars, previous/next frame controller (for media items)."
+        }
+      },
+      {
+        "layer_id": "keep_exploring_carousel",
+        "description": "Related peer entries from the same collection rendered in 3-card SSS-tier responsive grid with hover lift, status pill, and direct deep-links."
+      }
+    ]
+  },
+  "type_specific_dossier_specs": {
+    "vehicles": {
+      "kind": "Vehicle",
+      "stage_treatment": "Tactical showroom presentation: subtle linear blueprint grid lines (background-image: radial-gradient + repeating grid), 2px glowing rim highlight on the vehicle silhouette, manufacturer badge prominently displayed above title, quick shortcut to '/compare?a=[id]&b='.",
+      "attribute_highlights": ["Manufacturer", "Class", "Top speed (Not verified in this atlas)", "Price (Not verified in this atlas)"]
     },
-    {
-      "id": "regions_explorer",
-      "label": "Six Leonida Territory Intel Explorer",
-      "description": "Interactive map-card matrix for Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Mount Kalaga, and Ambrosia County with coordinates, danger rating, and high-res imagery."
+    "weapons": {
+      "kind": "Weapon",
+      "stage_treatment": "Armory workbench canvas with dark carbon backdrop, high-contrast weapon preview, caliber/type specifications, and direct link to '/weapons/compare?a=[id]&b='."
     },
-    {
-      "id": "character_dossiers",
-      "label": "Jason & Lucia Classified Syndicate Dossiers",
-      "description": "Interactive duality view comparing Jason vs Lucia's background, equipment specialities, arrest records, and tactical insights."
+    "characters": {
+      "kind": "Character",
+      "stage_treatment": "Intimate protagonist/supporting portrait presentation with atmospheric duotone rim lighting, spoiler shroud for story premises, character affiliation tags, and partner links."
     },
-    {
-      "id": "vehicle_garage",
-      "label": "Vice Customs & High-Roller Garage",
-      "description": "Catalog of sports cruisers, speedboats, muscle rigs, and airboats spotted across Leonida with top-speed, acceleration, and spawn points."
+    "regions": {
+      "kind": "Region",
+      "stage_treatment": "Panoramic vista viewport with latitude/longitude stylized watermark, landscape key tags (Coastal, Wetlands, City life), and connection to regional explore tools."
     },
-    {
-      "id": "editorial_dispatch",
-      "label": "Weazel News & Radio Dispatch Wire",
-      "description": "Live-style satire news feed capturing Vice City craziness, official Rockstar release milestone countdown, and leaks verification meter."
+    "radio": {
+      "kind": "Radio station",
+      "stage_treatment": "Soundstage broadcast layout with frequency/genre tags, clear honest disclaimer stating no audio stream is hosted, and reference attribution to GTA Town."
     },
-    {
-      "id": "media_lightbox",
-      "label": "4K Surveillance Gallery & Bookmark Vault",
-      "description": "Full-screen zoomable lightbox with tag filters (Screenshots, Postcards, Characters) + browser localStorage bookmarking system."
+    "media": {
+      "kind": "Image / Artwork / Screenshot",
+      "stage_treatment": "High-fidelity photographic gallery frame with previous/next media navigator, uncompressed image download button, and frame index (e.g. 03 / 06)."
+    },
+    "videos": {
+      "kind": "Video",
+      "stage_treatment": "Cinematic cinema frame with custom Rockstar poster overlay, pulsating coral/pink play trigger, embed iframe on click, and direct YouTube source link fallback."
+    },
+    "guides": {
+      "kind": "Guide / Editorial",
+      "stage_treatment": "Deep editorial layout with structured paragraphs, clean typography, verified source badges, and reading time indicator."
     }
+  },
+  "required_data_testids": [
+    "breadcrumbs",
+    "breadcrumb-home",
+    "breadcrumb-current",
+    "detail-status",
+    "detail-title",
+    "detail-subtitle",
+    "detail-save",
+    "detail-share",
+    "detail-image",
+    "detail-image-credit",
+    "detail-description",
+    "detail-facts",
+    "detail-complete",
+    "detail-source-label",
+    "detail-disclaimer",
+    "detail-official-source",
+    "detail-download",
+    "detail-compare",
+    "detail-back-to-collection",
+    "story-protection",
+    "reveal-character-story",
+    "image-previous",
+    "image-next",
+    "image-position",
+    "cinema-play",
+    "trailer-iframe",
+    "trailer-help"
   ],
-  "image_urls": {
-    "rockstar_official_poster": {
-      "url": "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg",
-      "category": "hero_background",
-      "description": "Rockstar Games official key art of Jason and Lucia overlooking Vice City horizon"
+  "accessibility_and_contrast": {
+    "apca_target": "LC 75+ for all running body copy",
+    "text_colors": {
+      "headings": "#FFF1D6 with --gradient-heading text fill",
+      "lead_text": "#F3EBF6 (high contrast off-white)",
+      "body_text": "#D9CEE2 (readable muted lavender-cream)",
+      "metadata": "#A18BC5 and #EF8F9C",
+      "status_official": "#65BFC1",
+      "status_community": "#F2C79E"
     },
-    "vice_city_skyline": {
-      "url": "https://gtatown.com/img/rs/vice_city_09-1280.webp",
-      "category": "region_vice_city",
-      "description": "Vice City high-rise beachfront strip at sunset with neon reflections"
-    },
-    "jason_and_lucia_dossier": {
-      "url": "https://gtatown.com/img/rs/jason_and_lucia_01-1280.webp",
-      "category": "characters_showcase",
-      "description": "Jason and Lucia in the car with bandana and getaway supplies"
-    },
-    "leonida_keys": {
-      "url": "https://gtatown.com/img/rs/leonida_keys_02-1280.webp",
-      "category": "region_keys",
-      "description": "Aerial view of turquoise coral shallow water highways of Leonida Keys"
-    },
-    "grassrivers_wetlands": {
-      "url": "https://gtatown.com/img/rs/grassrivers_03-1280.webp",
-      "category": "region_grassrivers",
-      "description": "Sunken marshland, wild alligators, and fan-boat waterway in Grassrivers"
-    },
-    "mount_kalaga_postcard": {
-      "url": "https://gtatown.com/img/rs/mount_kalaga_national_park_postcard-1280.webp",
-      "category": "region_mount_kalaga",
-      "description": "Vintage style postcard artwork for Mount Kalaga National Park wilderness"
-    },
-    "ocean_drive_art_deco": {
-      "url": "https://images.unsplash.com/photo-1543968332-f99478b1ebdc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHw0fHxtaWFtaSUyMHN1bnNldHxlbnwwfHx8fDE3OTU3OTEwMzh8MA&ixlib=rb-4.1.0&q=85",
-      "category": "ambient_art_deco",
-      "description": "Ocean Drive pastel Art Deco neon hotels and vintage sports cars at dusk"
-    },
-    "sports_car_night": {
-      "url": "https://images.unsplash.com/photo-1623346483743-b968a27ed34c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwzfHxzcG9ydHMlMjBjYXIlMjBuaWdodHxlbnwwfHx8fDE3OTU3OTEwNDF8MA&ixlib=rb-4.1.0&q=85",
-      "category": "garage_showcase",
-      "description": "High-powered exotic vehicle drifting down nighttime coastal avenue"
-    },
-    "supercar_p1": {
-      "url": "https://images.unsplash.com/photo-1555532686-d0fccaccadcf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxzcG9ydHMlMjBjYXIlMjBuaWdodHxlbnwwfHx8fDE3OTU3OTEwNDF8MA&ixlib=rb-4.1.0&q=85",
-      "category": "garage_supercar",
-      "description": "Matte carbon high performance hypercar in dramatic studio lighting"
-    }
+    "interactive_states": "All buttons and links must provide visible :focus-visible with 2px --gta-turquoise or --gta-pink outline and 4px offset. No pure transparent containers."
   },
-  "motion_and_interaction_guide": {
-    "engine": "Framer Motion 11.18.0",
-    "hero_reveal": {
-      "type": "Line-by-line masked clip reveal",
-      "stagger_delay": 0.12,
-      "duration": 0.85,
-      "ease": [0.16, 1, 0.3, 1]
-    },
-    "scroll_reveal": {
-      "initial": { "opacity": 0, "y": 28 },
-      "whileInView": { "opacity": 1, "y": 0 },
-      "viewport": { "once": true, "margin": "-80px" },
-      "transition": { "duration": 0.65, "ease": [0.22, 1, 0.36, 1] }
-    },
-    "hover_effects": {
-      "card_lift": "hover:-translate-y-1.5 transition-transform duration-300 ease-out",
-      "border_glow": "hover:border-[#FF3377]/80 hover:shadow-[0_0_25px_rgba(255,51,119,0.25)] transition-all duration-300",
-      "image_zoom": "group-hover:scale-105 transition-transform duration-700 ease-out"
-    },
-    "marquee": {
-      "strategy": "Dual-tone kinetic ticker",
-      "speed": "28s linear infinite",
-      "items": [
-        "VICE CITY METROPOLITAN AREA",
-        "LEONIDA HIGHWAY PATROL ALERT",
-        "JASON & LUCIA SYNDICATE REPORT",
-        "WEAZEL NEWS EXCLUSIVE",
-        "CORAL WATERS OF LEONIDA KEYS",
-        "ROCKSTAR GAMES OFFICIAL STAINLESS STEEL EDITION"
-      ]
-    }
+  "motion_and_micro_interactions": {
+    "stage_hover": "Subtle scale up of imagery with cubic-bezier(.2,.65,.3,1) and glow expansion",
+    "action_buttons": "Hover lift of -2px with box-shadow depth-raised, active depression of translateY(0)",
+    "reduced_motion": "All transforms and scale effects disabled under @media (prefers-reduced-motion: reduce)"
   },
-  "layout_and_bento_structure": {
-    "hero_section": "100vh relative overflow-hidden flex flex-col justify-end p-6 sm:p-12 lg:p-20 border-b border-[#1F2B3E]",
-    "bento_regions_grid": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6 p-6 sm:p-12 lg:p-16 max-w-7xl mx-auto",
-    "bento_span_matrix": {
-      "vice_city_primary": "col-span-full md:col-span-8 lg:col-span-8 row-span-2",
-      "leonida_keys_card": "col-span-full md:col-span-4 lg:col-span-4 row-span-1",
-      "grassrivers_card": "col-span-full md:col-span-4 lg:col-span-4 row-span-1",
-      "port_gellhorn_card": "col-span-full md:col-span-4 lg:col-span-4 row-span-1",
-      "mount_kalaga_card": "col-span-full md:col-span-4 lg:col-span-4 row-span-1",
-      "ambrosia_county_card": "col-span-full md:col-span-4 lg:col-span-4 row-span-1"
-    }
+  "css_class_enhancements": {
+    "dossier_stage": "dossier-stage (encompasses both the media frame and the ambient background)",
+    "dossier_badge_row": "dossier-badge-row (tactical bar with kind, status, source label)",
+    "dossier_grid": "dossier-body-grid (asymmetric CSS grid with sticky technical sidebar)",
+    "dossier_hud_card": "dossier-hud-card (tactical bordered card with fine 1px edge stroke and ambient drop shadow)"
   },
-  "instructions_to_main_agent": [
-    "1. Replace the default Emergent splash screen in /app/frontend/src/App.js with the ultimate unified Vice City Companion portal.",
-    "2. Use clean React .js with Lucide icons and Framer Motion.",
-    "3. Implement the custom SVG logo mark: A bold, stylized Roman numeral 'VI' intertwined with a tropical palm neon silhouette and 'VICE TOWN // LEONIDA' subtitle.",
-    "4. Feature a persistent cinematic audio-atmosphere simulation (ambient ocean & city synth hum using Web Audio API or rhythmic pulse toggle) so users feel like they are inside the Rockstar teaser.",
-    "5. Include full interactive tabs: 1) Territory Map & Intel, 2) Character Dossiers (Jason vs Lucia compare mode), 3) Vehicle Garage with filterable specs, 4) Dispatch News Feed, and 5) My Saved Evidence Locker (saved to localStorage with counter badge).",
-    "6. Include an official Trailer popover modal (embed official Rockstar GTA VI Trailer YouTube video: 'QdBZY2fkU-0' with play/pause and 4K cinema wrapper).",
-    "7. Implement an interactive image lightbox with zoom, camera coordinates, and 'Save to Evidence Locker' bookmark toggle.",
-    "8. Guarantee strict WCAG contrast on all buttons and tags, never use full transparency on nav/overlays, and ensure all buttons and test points have descriptive data-testid attributes."
-  ],
   "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
-    "forbidden_colors": ["#7351B7", "#1B93A4"],
-    "forbidden_fonts_for_headings": ["Inter", "Roboto", "Open Sans", "Space Grotesk"],
-    "contrast_rule": "Every text over image must use radial/linear scrim overlays (bg-black/60 to bg-black/85 at base) with text-shadow for absolute legibility.",
-    "test_id_convention": "kebab-case data-testid on every tab, modal toggle, bookmark button, card, and filter button."
+    "file_structure": "Update DetailPage.js and Portal.css to implement this comprehensive blueprint without breaking existing router paths, data schemas, or localStorage keys.",
+    "no_mock_removal": "Retain all canonical paths, local persistence hooks (saved, completed, spoilers), and component props exactly as defined in App.js.",
+    "verification_step": "Run yarn build or npm test after modifying files to ensure syntax and build stability."
   }
 }

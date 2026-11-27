@@ -1,30 +1,32 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Download, Eye, Play, Share2 } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Share2 } from 'lucide-react';
 import { toast } from 'sonner';
-import { SaveButton } from '../AtlasUI';
+import { SaveButton, Reveal } from '../AtlasUI';
 import { entries, checklist } from '../../data/portal';
-import { sectionById, sourceLabel } from '../../data/sections';
+import { sectionById } from '../../data/sections';
 import { Breadcrumbs } from './PortalLayout';
 import { CatalogCard } from './CatalogGrid';
+import { DossierMedia } from './dossier/DossierMedia';
+import { DossierMeta, typeLabel } from './dossier/DossierMeta';
+import { DossierContent } from './dossier/DossierContent';
+import { DossierPager } from './dossier/DossierPager';
 
 export default function DetailPage({item,atlas}) {
-  const [playing,setPlaying]=useState(false);
+  const [expanded,setExpanded]=useState(false);
+  const [dimensions,setDimensions]=useState(null);
   const section=sectionById[item.collections[0]];
-  const protectedStory=item.spoiler&&!atlas.spoilers;
-  const media=['Image','Artwork'].includes(item.kind);
-  const peers=entries.filter(e=>e.kind===item.kind);const index=peers.findIndex(e=>e.id===item.id);
+  const peers=entries.filter(e=>e.kind===item.kind);
+  const related=peers.filter(e=>e.id!==item.id).sort((a,b)=>Number(b.collections.some(c=>item.collections.includes(c)))-Number(a.collections.some(c=>item.collections.includes(c)))).slice(0,3);
   const task=checklist.find(t=>t.path===item.path);
-  const share=async()=>{try{await navigator.clipboard.writeText(new URL(item.path,window.location.origin).href);toast.success('Dossier link copied.');}catch{toast.error('Could not copy. You can share the page address instead.');}};
-  const related=peers.filter(e=>e.id!==item.id).slice(0,3);
-  return <article className={`dossier-page ${['Vehicle','Weapon'].includes(item.kind)?'object-dossier':''}`}><Breadcrumbs section={section} item={item}/><header className="dossier-header"><div><span className="portal-kicker" data-testid="detail-status">{item.kind} / {item.status}</span><h1 data-testid="detail-title">{item.title}</h1><p data-testid="detail-subtitle">{item.subtitle||item.category||'THE VICE ATLAS DOSSIER'}</p></div><div className="dossier-actions"><SaveButton item={item} saved={atlas.saved} toggleSave={atlas.toggleSave} prefix="detail-save" text/><button className="portal-icon-button" title="Copy page link" aria-label="Copy page link" onClick={share} data-testid="detail-share"><Share2 size={18}/></button></div></header>
-    {item.kind==='Video'?<div className="dossier-cinema">{playing?<iframe data-testid="trailer-iframe" title={`Grand Theft Auto VI ${item.title}`} src={`https://www.youtube-nocookie.com/embed/${item.videoId}?autoplay=1&rel=0`} allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen referrerPolicy="strict-origin-when-cross-origin"/>:<button data-testid="cinema-play" aria-label={`Play ${item.title}`} onClick={()=>setPlaying(true)}><img src={item.image} alt="GTA VI official promotional imagery"/><span><Play fill="currentColor" size={32}/></span></button>}</div>:<figure className="dossier-figure"><img src={item.image} alt={item.title} data-testid="detail-image"/><figcaption data-testid="detail-image-credit">{item.status==='Community reference'?`Reference imagery via ${item.source.includes('gtatown')?'GTA Town':'GTABase'} · respective rights holders`:'Promotional imagery © Rockstar Games'}</figcaption></figure>}
-    <div className="dossier-body"><div className="dossier-prose">{protectedStory?<div className="story-protection" data-testid="story-protection"><Eye size={26}/><h2>Keep a little mystery.</h2><p>Character backgrounds and story details are hidden while spoilers are off.</p><button className="portal-button" data-testid="reveal-character-story" onClick={()=>atlas.setSpoilers(true)}>Show story details <Eye size={16}/></button></div>:<><p className="dossier-lead" data-testid="detail-description">{item.description}</p>{item.paragraphs?.map((p,i)=><p key={i} data-testid={`detail-paragraph-${i}`}>{p}</p>)}{item.details&&<ul className="dossier-facts" data-testid="detail-facts">{item.details.map(d=><li key={d}>{d}</li>)}</ul>}</>}
-      {item.kind==='Video'&&<p data-testid="trailer-help">Playback is provided by YouTube. If the player is unavailable, use the direct source link.</p>}
-      {item.attributes&&<dl className="dossier-attributes">{Object.entries(item.attributes).map(([key,val])=><div key={key}><dt>{key}</dt><dd data-testid={`detail-attribute-${key.toLowerCase().replaceAll(' ','-')}`}>{val}</dd></div>)}</dl>}
-      {task&&<button className={`portal-button ${atlas.completed.includes(task.id)?'completed':'secondary'}`} data-testid="detail-complete" aria-pressed={atlas.completed.includes(task.id)} onClick={()=>atlas.toggleComplete(task.id)}><Check size={17}/>{atlas.completed.includes(task.id)?'Marked in your checklist':'Mark explored in your checklist'}</button>}
-    </div><aside className="dossier-source"><span className="portal-kicker">THE SOURCE FILE</span><h2 data-testid="detail-source-label">{sourceLabel(item.source)}</h2><p data-testid="detail-disclaimer">{item.status==='Community reference'?'Community catalog identification. Specifications and availability may change as sources are checked.':'Independent summary of public material. Editorial observations are not additional confirmed gameplay details.'}</p><a className="portal-source-link" href={item.source} target="_blank" rel="noreferrer" data-testid="detail-official-source">{item.kind==='Video'?'Watch on YouTube':'Open source'} <ArrowUpRight size={17}/></a>{media&&<a className="portal-source-link" href={item.image} download data-testid="detail-download">Download source image <Download size={16}/></a>}{['Vehicle','Weapon'].includes(item.kind)&&<Link className="portal-source-link" to={`${item.kind==='Weapon'?'/weapons/compare':'/compare'}?a=${item.id}&b=`} data-testid="detail-compare">Compare this entry <ArrowRight size={17}/></Link>}</aside></div>
-    {media&&peers.length>1&&<nav className="dossier-media-nav" aria-label="Browse images"><Link to={peers[(index-1+peers.length)%peers.length].path} data-testid="image-previous"><ArrowLeft size={17}/> Previous frame</Link><span data-testid="image-position">{index+1} / {peers.length}</span><Link to={peers[(index+1)%peers.length].path} data-testid="image-next">Next frame <ArrowRight size={17}/></Link></nav>}
-    {related.length>0&&<section className="dossier-related"><div className="portal-section-heading"><h2>Keep exploring</h2><Link to={section.path} data-testid="detail-back-to-collection">{section.title}<ArrowRight size={15}/></Link></div><div className="portal-grid">{related.map(e=><CatalogCard key={e.id} item={e} atlas={atlas} prefix="related"/>)}</div></section>}
+  const share=async()=>{try{await navigator.clipboard.writeText(new URL(item.path,window.location.origin).href);toast.success('Page link copied.');}catch{toast.error('Could not copy. You can share the page address instead.');}};
+  const mode=item.kind==='Radio station'?'radio':item.kind==='Character'?'person':['Vehicle','Weapon'].includes(item.kind)?'object':['Image','Artwork'].includes(item.kind)?'gallery':item.kind==='Video'?'video':'landscape';
+  return <article className={`dossier-v2 record-${mode}`} data-testid="dossier-page"><Breadcrumbs section={section} item={item}/>
+    <header className="record-heading"><div className="record-heading-copy"><div className="record-heading-kicker"><span data-testid="detail-kind">{typeLabel(item)}</span><span className={`record-status-label ${item.status==='Official source'?'is-official':''}`} data-testid="detail-status">{item.status}</span></div><h1 data-testid="detail-title">{item.title}</h1><p data-testid="detail-subtitle">{item.subtitle||item.category||section.title}</p></div><div className="record-heading-actions"><SaveButton item={item} saved={atlas.saved} toggleSave={atlas.toggleSave} prefix="detail-save" text compact/><button type="button" className="record-share" title="Copy page link" aria-label="Copy page link" onClick={share} data-testid="detail-share"><Share2 size={17}/></button></div></header>
+    <div className={`record-stage ${expanded?'is-expanded':''}`} data-testid="detail-stage"><DossierMedia key={item.id} item={item} expanded={expanded} setExpanded={setExpanded} onDimensions={setDimensions}/><DossierMeta item={item} section={section} atlas={atlas} task={task} dimensions={dimensions}/></div>
+    <DossierPager item={item} peers={peers} section={section}/>
+    <DossierContent item={item} atlas={atlas}/>
+    {related.length>0&&<section className="record-related"><div className="record-related-heading"><div><span className="portal-kicker">{section.title}</span><h2 data-testid="detail-related-heading">Related entries</h2></div><Link to={section.path} data-testid="detail-back-to-collection">View collection<ArrowUpRight size={18}/></Link></div><div className="portal-grid">{related.map((entry,i)=><Reveal key={entry.id} delay={i*.05}><CatalogCard item={entry} atlas={atlas} prefix="related"/></Reveal>)}</div></section>}
+    {!related.length&&<Link className="record-return" to={section.path} data-testid="detail-back-to-collection">Back to {section.title.toLowerCase()}<ArrowRight size={17}/></Link>}
   </article>;
 }

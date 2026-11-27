@@ -1,0 +1,563 @@
+/* VICE ATLAS — Nightfall. Approved GTA VI-inspired palette, not an official brand guide.
+   This shared color layer deliberately leaves layouts, photography and motion untouched. */
+:root {
+  color-scheme: dark;
+  --gta-midnight: #151526;
+  --gta-pink: #F3B6CF;
+  --gta-coral: #EF8F9C;
+  --gta-peach: #F2C79E;
+  --gta-cream: #FFF1D6;
+  --gta-lilac: #A18BC5;
+  --gta-turquoise: #65BFC1;
+  --night-deep: color-mix(in srgb, var(--gta-midnight) 64%, black);
+  --night-surface: color-mix(in srgb, var(--gta-midnight) 95%, var(--gta-lilac));
+  --night-panel: color-mix(in srgb, var(--gta-midnight) 88%, var(--gta-lilac));
+  --night-panel-hover: color-mix(in srgb, var(--gta-midnight) 80%, var(--gta-lilac));
+  --night-text: color-mix(in srgb, var(--gta-cream) 83%, var(--gta-lilac));
+  --night-muted: color-mix(in srgb, var(--gta-cream) 52%, var(--gta-lilac));
+  --night-line: color-mix(in srgb, var(--gta-lilac) 21%, transparent);
+  --night-line-strong: color-mix(in srgb, var(--gta-lilac) 42%, transparent);
+  --section-accent: var(--gta-pink);
+  --ink: var(--gta-midnight);
+  --panel: var(--night-panel);
+  --cream: var(--gta-cream);
+  --pink: var(--gta-pink);
+  --pink-soft: var(--gta-pink);
+  --muted: var(--night-muted);
+  --line: var(--night-line);
+  --background: 240 29% 12%;
+  --foreground: 39 100% 92%;
+  --card: 247 25% 17%;
+  --card-foreground: 39 100% 92%;
+  --popover: 247 25% 17%;
+  --popover-foreground: 39 100% 92%;
+  --primary: 335 72% 83%;
+  --primary-foreground: 240 29% 12%;
+  --secondary: 247 25% 20%;
+  --secondary-foreground: 39 100% 92%;
+  --muted-foreground: 265 22% 72%;
+  --accent: 247 25% 22%;
+  --accent-foreground: 39 100% 92%;
+  --destructive: 352 75% 75%;
+  --destructive-foreground: 240 29% 12%;
+  --border: 257 18% 28%;
+  --input: 257 18% 28%;
+  --ring: 335 72% 83%;
+}
+.atlas-app[data-atlas-area="explore"],.atlas-app[data-atlas-area="progress"] { --section-accent:var(--gta-turquoise) }
+.atlas-app[data-atlas-area="garage"],.atlas-app[data-atlas-area="guides"],.atlas-app[data-atlas-area="game"] { --section-accent:var(--gta-peach) }
+.atlas-app[data-atlas-area="weapons"],.atlas-app[data-atlas-area="news"] { --section-accent:var(--gta-coral) }
+.atlas-app[data-atlas-area="universe"],.atlas-app[data-atlas-area="media"] { --section-accent:var(--gta-lilac) }
+html,body { background:var(--gta-midnight);color:var(--night-text) }
+::selection { background:var(--gta-pink);color:var(--gta-midnight) }
+.atlas-app { color:var(--night-text);background:linear-gradient(153deg,var(--night-surface),var(--gta-midnight) 900px,var(--night-deep) 76%,var(--gta-midnight)) }
+.atlas-app a:focus-visible,.atlas-app button:focus-visible,.atlas-app summary:focus-visible,.atlas-app select:focus-visible,.atlas-modal button:focus-visible { outline-color:var(--gta-turquoise) }
+.atlas-app input::placeholder,.atlas-modal input::placeholder { color:var(--night-muted) }
+.town-brand,.town-wordmark,.brand-footer,.portal-footer>a { color:var(--gta-cream) }
+.rockstar-ribbon { background:var(--night-deep);color:var(--gta-peach);border-color:var(--night-line) }
+.rockstar-ribbon:hover { color:var(--gta-pink) }
+.portal-mode .town-header.portal-header { background:var(--gta-midnight);border-color:var(--night-line) }
+.town-header.is-stuck,.portal-mode .town-header.portal-header.is-stuck { background:color-mix(in srgb,var(--gta-midnight) 96%,transparent);border-color:var(--night-line);box-shadow:0 8px 35px #0002 }
+.town-nav>a,.town-nav>button { color:var(--night-text) }
+.town-nav>a:hover,.town-nav>.nav-active { color:var(--section-accent) }
+.town-nav>.nav-active:after { background:var(--section-accent) }
+.town-icon,.spoiler-toggle { background:var(--night-deep);color:var(--night-text) }
+.town-icon:hover,.spoiler-toggle:hover { background:var(--night-panel-hover);color:var(--gta-cream) }
+.spoiler-toggle[aria-pressed=true] { background:var(--gta-coral);color:var(--gta-midnight) }
+.town-all-pages { background:var(--night-panel);color:var(--gta-pink);border-color:color-mix(in srgb,var(--gta-pink) 24%,transparent) }
+.town-all-pages:hover { background:var(--gta-pink);color:var(--gta-midnight) }
+.reading-progress { background:linear-gradient(90deg,var(--gta-turquoise),var(--gta-lilac) 44%,var(--gta-pink),var(--gta-peach)) }
+.saved-count { background:var(--gta-turquoise);color:var(--gta-midnight) }
+
+/* The pause menu stays bright against the night, without turning the page pastel. */
+.pause-title { color:var(--gta-cream) }
+.pause-mask:last-child { color:var(--gta-pink) }
+.pause-hud,.pause-row-copy>span { color:var(--night-muted) }
+.pause-hud>span:first-child,.hud-place { color:var(--gta-lilac);border-color:var(--night-line-strong) }
+.pause-hud>strong { color:var(--gta-cream) }
+.hud-sun { color:var(--gta-peach) }
+.pause-row { color:var(--night-text) }
+.pause-selection { background:var(--gta-cream);box-shadow:inset 3px 0 var(--gta-coral),0 5px 25px #0002 }
+.pause-row.selected { color:var(--gta-midnight) }
+.pause-row.selected .pause-row-copy>span { color:color-mix(in srgb,var(--gta-midnight) 82%,var(--gta-lilac)) }
+.pause-row:not(.selected)>.pause-row-icon { color:var(--gta-lilac) }
+.pause-art-hint { background:color-mix(in srgb,var(--gta-midnight) 88%,transparent);border-color:var(--night-line-strong);color:var(--gta-turquoise) }
+.pause-scroll { color:var(--gta-lilac) }
+.pause-photo-caption>small { color:var(--gta-peach) }
+.pause-photo-caption>strong { color:var(--gta-cream) }
+.pause-photo-caption>svg { color:var(--gta-pink) }
+.county-label { color:var(--gta-cream);text-shadow:0 1px 6px var(--gta-midnight),0 0 12px var(--gta-midnight) }
+.town-destinations nav>a { --tile-accent:var(--gta-pink);background:var(--night-panel);border-color:var(--night-line);color:var(--night-text) }
+.town-destinations nav>a:nth-child(1) { --tile-accent:var(--gta-peach) }
+.town-destinations nav>a:nth-child(2) { --tile-accent:var(--gta-coral) }
+.town-destinations nav>a:nth-child(4),.town-destinations nav>a:nth-child(5) { --tile-accent:var(--gta-lilac) }
+.town-destinations nav>a:nth-child(6) { --tile-accent:var(--gta-turquoise) }
+.town-destinations nav>a>svg { color:var(--tile-accent) }
+.town-destinations nav>a:hover { background:var(--tile-accent);color:var(--gta-midnight) }
+.town-destinations nav>a:hover>svg { color:var(--gta-midnight) }
+.town-banner,.hub-tile,.article-card,.town-fresh button { background:var(--night-panel);border-color:var(--night-line) }
+.town-banner { box-shadow:inset 0 1px 0 color-mix(in srgb,var(--gta-lilac) 12%,transparent) }
+.town-banner h2>span,.hub-floating-icon { color:var(--gta-turquoise) }
+.town-banner>button { background:var(--gta-pink);color:var(--gta-midnight) }
+.town-banner>button:hover { background:var(--gta-peach) }
+.hub-progress,.hub-ring:before { background:var(--night-panel) }
+.hub-ring { background:conic-gradient(var(--gta-turquoise) var(--progress),var(--night-line-strong) 0) }
+.hub-progress-lines i { background:var(--gta-turquoise) }
+.hub-progress-lines svg,.hub-progress-key,.hub-progress-key>strong,.hub-ring>small,.hub-field-preview { color:var(--night-muted) }
+.hub-field-preview>span { color:var(--gta-lilac) }
+.hub-field-preview p>svg { background:var(--night-deep);color:var(--gta-peach) }
+.hub-map-chip { background:var(--gta-midnight);color:var(--night-text) }
+.hub-map-chip>svg { color:var(--gta-turquoise) }
+.hub-map-markers>span { border-color:var(--gta-cream);background:var(--gta-turquoise);color:var(--gta-midnight) }
+.hub-map-markers>span:nth-child(2),.hub-map-markers>span:nth-child(5) { background:var(--gta-peach) }
+.hub-map-markers>span:nth-child(3) { background:var(--gta-lilac) }
+.hub-map-markers>span:nth-child(4) { background:var(--gta-turquoise) }
+.hub-map-markers>span:nth-child(6) { background:var(--gta-coral) }
+.hub-map-markers>span:after { border-color:var(--gta-cream) }
+.hub-tile-caption>p,.hub-small .hub-tile-caption>p,.article-card>p,.article-meta { color:var(--night-muted) }
+.hub-tile:hover .hub-tile-caption>h3 { color:var(--gta-peach) }
+.article-category,.region-label { background:color-mix(in srgb,var(--gta-midnight) 90%,transparent);color:var(--gta-cream);border-color:var(--night-line-strong) }
+.article-meta>span:first-child:before { background:var(--gta-coral) }
+.article-card:hover .article-title { color:var(--gta-peach) }
+.town-fresh button>svg:first-child { color:var(--gta-turquoise) }
+.town-fresh button:hover { background:var(--gta-peach);color:var(--gta-midnight) }
+.town-fresh button:hover>svg,.town-fresh button:hover>span { color:var(--gta-midnight) }
+.region-card,.character-card,.world-panorama { background:var(--night-panel);border-color:var(--night-line) }
+.world-panorama-copy h2,.world-panorama-copy h2>span { color:var(--gta-cream) }
+.world-panorama-copy h2>span { color:var(--gta-turquoise) }
+.world-panorama-description>p,.section-description p,.region-card p,.characters-intro>p,.character-card-copy>p { color:var(--night-text) }
+.world-panorama-description>span,.world-panorama-top,.section-footnote { color:var(--night-muted) }
+.section-footnote>span:first-child { color:var(--gta-turquoise) }
+.filter-button { color:var(--night-muted) }
+.filter-button.active { background:var(--gta-pink);border-color:var(--gta-pink);color:var(--gta-midnight) }
+.filter-button:hover:not(.active) { color:var(--gta-cream);border-color:var(--night-line-strong) }
+.characters-section { background:var(--night-surface) }
+.characters-intro h2 .soft-pink,.character-firstname>span { color:var(--gta-pink) }
+.duo-note,.duo-note small { color:var(--night-muted) }
+.character-read { border-color:var(--night-line-strong) }
+.character-card:hover .character-read { color:var(--gta-peach) }
+.marquee { background:var(--night-panel);border-color:var(--night-line) }
+.marquee-star { color:var(--gta-coral) }
+.gallery-overlay small { color:var(--gta-peach) }
+.gallery-overlay strong { color:var(--gta-cream) }
+.town-experience-copy a:first-child { background:var(--gta-pink);color:var(--gta-midnight) }
+.town-experience-copy a:first-child:hover { background:var(--gta-peach) }
+.town-experience-copy a:last-child,.town-experience-credit { color:var(--gta-cream) }
+
+/* Every route shares the same night surfaces; each area gets one quiet accent. */
+.portal-sidebar,.atlas-tree-children,.sidebar-note,.portal-return,.portal-section-heading,.dossier-source { border-color:var(--night-line) }
+.sidebar-home,.mobile-all-pages,.portal-kicker,.portal-source-link,.portal-section-heading>a,.portal-return a { color:var(--section-accent) }
+.atlas-tree summary,.atlas-tree-single,.atlas-tree-children a { color:var(--night-text) }
+.atlas-tree summary>svg,.atlas-tree-single>svg { color:var(--gta-lilac) }
+.atlas-tree summary.active,.atlas-tree-single[aria-current=page] { background:var(--section-accent);color:var(--gta-midnight) }
+.atlas-tree summary.active>svg,.atlas-tree-single[aria-current=page]>svg { color:var(--gta-midnight) }
+.atlas-tree summary:hover:not(.active),.atlas-tree-single:hover { background:var(--night-panel);color:var(--gta-cream) }
+.atlas-tree-children a:hover,.atlas-tree-children a[aria-current=page] { color:var(--section-accent) }
+.atlas-tree-level.level-1>a,.atlas-tree-level.level-2>a,.sidebar-note p { color:var(--night-muted) }
+.sidebar-note strong { color:var(--night-text) }
+.sidebar-note>svg { color:var(--gta-turquoise) }
+.mobile-atlas-navigation { background:var(--night-panel);border-color:var(--night-line-strong) }
+.mobile-atlas-navigation>summary>svg { color:var(--section-accent) }
+.mobile-browse-label,.portal-breadcrumbs { color:var(--night-muted) }
+.mobile-atlas-navigation>div { border-color:var(--night-line) }
+.portal-breadcrumbs a:hover { color:var(--section-accent) }
+.portal-breadcrumbs [aria-current=page],.portal-breadcrumbs>[data-testid=breadcrumb-current] { color:var(--gta-cream) }
+.portal-hero { background:var(--night-panel) }
+.portal-hero-index { color:var(--gta-cream) }
+.portal-hero-index>span { color:var(--section-accent) }
+.portal-hero p { color:var(--night-text) }
+.portal-hero-meta { color:var(--gta-peach) }
+.portal-hero-meta>span+span { border-color:var(--night-line-strong) }
+.portal-hero-meta>span:last-child { color:var(--night-muted) }
+.object-hero .portal-hero-image { background:var(--night-panel) }
+.portal-subsections>a { background:var(--night-panel);color:var(--night-text);border-color:var(--night-line) }
+.portal-subsections>a>svg { color:var(--section-accent) }
+.portal-subsections>a:hover { background:var(--section-accent);color:var(--gta-midnight) }
+.portal-subsections>a:hover>svg { color:var(--gta-midnight) }
+.portal-input,.portal-select,.catalog-view-toggle { background:var(--night-surface);color:var(--night-muted);border-color:var(--night-line-strong) }
+.portal-input:focus-within { background:var(--night-panel);border-color:var(--section-accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--section-accent) 8%,transparent) }
+.portal-input input,.portal-select select,.comparison-column select { color:var(--night-text) }
+.portal-select option,.comparison-column option { background:var(--gta-midnight);color:var(--gta-cream) }
+.catalog-view-toggle>button { color:var(--gta-lilac) }
+.catalog-view-toggle>button[aria-pressed=true] { background:var(--section-accent);color:var(--gta-midnight) }
+.catalog-view-toggle>button:hover:not([aria-pressed=true]) { background:var(--night-panel-hover);color:var(--gta-cream) }
+.portal-card,.directory-area-card { background:var(--night-panel);border-color:var(--night-line) }
+.portal-card:hover { background:var(--night-panel-hover);box-shadow:0 14px 30px #0003 }
+.portal-card-image,.object-card .portal-card-image img { background:var(--night-surface) }
+.portal-card-image>span { background:color-mix(in srgb,var(--gta-midnight) 92%,transparent);color:var(--gta-cream);border-color:var(--night-line-strong) }
+.portal-card-copy>a:hover { color:var(--section-accent) }
+.portal-card-copy>small { color:var(--gta-lilac) }
+.portal-card-copy>small.official { color:var(--gta-turquoise) }
+.portal-card-copy p,.portal-section-heading>span,.portal-muted,.portal-empty p,.portal-empty-line,.portal-pagination { color:var(--night-muted) }
+.portal-pagination button { border-color:var(--night-line-strong) }
+.portal-pagination button:hover:not(:disabled) { background:var(--night-panel-hover);color:var(--section-accent) }
+.portal-empty { border-color:var(--night-line) }
+.portal-button,.atlas-button { background:var(--gta-pink);border-color:var(--gta-pink);color:var(--gta-midnight) }
+.portal-button:hover,.atlas-button:hover { background:var(--gta-peach);border-color:var(--gta-peach) }
+.portal-button.secondary,.atlas-button.secondary { background:transparent;color:var(--night-text);border-color:var(--night-line-strong) }
+.portal-button.secondary:hover,.atlas-button.secondary:hover { background:var(--night-panel-hover);color:var(--gta-cream);border-color:var(--section-accent) }
+.save-button,.portal-card>.save-button { background:color-mix(in srgb,var(--gta-midnight) 88%,transparent);color:var(--gta-pink);border-color:var(--night-line-strong) }
+.save-button:hover { background:var(--gta-pink);border-color:var(--gta-pink);color:var(--gta-midnight) }
+.save-button.is-saved,.portal-card>.save-button.is-saved { background:var(--gta-turquoise);border-color:var(--gta-turquoise);color:var(--gta-midnight) }
+.portal-icon-button { color:var(--gta-pink);border-color:var(--night-line-strong) }
+.portal-icon-button:hover { background:var(--night-panel-hover) }
+.dossier-header p,.dossier-figure figcaption,.dossier-source p,.story-protection p,.dossier-prose>p { color:var(--night-muted) }
+.dossier-prose>p.dossier-lead { color:var(--night-text) }
+.dossier-figure,.dossier-cinema { background:var(--night-deep);border-color:var(--night-line) }
+.dossier-figure figcaption { border-color:var(--night-line) }
+.object-dossier .dossier-figure img { background:var(--night-surface) }
+.dossier-facts li { border-color:var(--night-line-strong);color:var(--gta-peach) }
+.dossier-attributes>div { border-color:var(--night-line) }
+.dossier-attributes dt { color:var(--night-muted) }
+.dossier-attributes dd { color:var(--gta-cream) }
+.dossier-media-nav { border-color:var(--night-line-strong) }
+.dossier-media-nav a { color:var(--section-accent) }
+.dossier-media-nav>span { color:var(--gta-lilac) }
+.dossier-cinema>button>span { background:var(--gta-pink);color:var(--gta-midnight) }
+.dossier-cinema>button:hover>span { background:var(--gta-peach);box-shadow:0 0 0 12px color-mix(in srgb,var(--gta-pink) 10%,transparent) }
+.progress-stats,.progress-stats>div,.progress-stats>div:last-child,.checklist-row { border-color:var(--night-line) }
+.progress-stats svg,.checklist-row>a { color:var(--gta-turquoise) }
+.progress-stats span,.progress-stats strong small,.checklist-row small { color:var(--night-muted) }
+.progress-stats .device-dot { background:var(--gta-turquoise) }
+.checklist-meter { background:var(--night-line-strong) }
+.checklist-meter>span { background:var(--gta-turquoise) }
+.portal-tabs>button { color:var(--night-muted);border-color:var(--night-line-strong) }
+.portal-tabs>button.active { background:var(--gta-cream);border-color:var(--gta-cream);color:var(--gta-midnight) }
+.portal-tabs>button:hover:not(.active) { background:var(--night-panel-hover);color:var(--gta-pink) }
+.checklist-row>button { color:var(--gta-turquoise);border-color:var(--night-line-strong) }
+.checklist-row.completed>button,.portal-button.completed { background:var(--gta-turquoise);color:var(--gta-midnight);border-color:var(--gta-turquoise) }
+.checklist-row.completed strong { color:var(--night-muted) }
+.portal-map { background:var(--night-surface);border-color:var(--night-line) }
+.portal-map-regions { border-color:var(--night-line) }
+.portal-map-stage { background:var(--gta-midnight) }
+.portal-map-scroll { scrollbar-color:var(--gta-lilac) transparent }
+.portal-map-regions small,.portal-map-regions p,.portal-map-regions>button>span { color:var(--night-muted) }
+.portal-map-regions>button.active { background:var(--gta-turquoise);color:var(--gta-midnight) }
+.portal-map-regions>button.active small,.portal-map-regions>button.active>span { color:var(--gta-midnight) }
+.portal-map-regions>button:hover:not(.active) { background:var(--night-panel) }
+.map-zoom-controls>button,.portal-map-preview { background:var(--night-panel);border-color:var(--night-line-strong);color:var(--gta-turquoise) }
+.map-zoom-controls>button:hover,.portal-map-preview:hover { background:var(--night-panel-hover) }
+.portal-map-preview small { color:var(--gta-turquoise) }
+.portal-map-preview>span>span { color:var(--night-text) }
+.comparison-column,.comparison-column dl>div { border-color:var(--night-line) }
+.comparison-column select { background:var(--night-surface);border-color:var(--night-line-strong) }
+.comparison-column>img { background:var(--night-panel) }
+.comparison-column>a { color:var(--section-accent) }
+.comparison-column>label>span,.comparison-column dt,.comparison-empty { color:var(--night-muted) }
+.comparison-column dd { color:var(--gta-cream) }
+.directory-toolbar>span,.directory-area-links>a.is-nested { color:var(--night-muted) }
+.directory-group small { color:var(--gta-peach) }
+.directory-group>svg,.directory-area-links>a:hover,.directory-area-links>a:hover>svg { color:var(--gta-pink) }
+.directory-area-links>a { color:var(--night-text) }
+.directory-area-links>a.is-nested { border-color:var(--night-line) }
+.directory-area-links>a>svg { color:var(--gta-lilac) }
+.coverage-section,.faq-list details { border-color:var(--night-line) }
+.coverage-section>div:first-child>svg,.coverage-status { color:var(--gta-peach) }
+.coverage-status:before { background:var(--gta-peach) }
+.coverage-section p,.faq-list p,.portal-not-found p { color:var(--night-muted) }
+.coverage-section a,.faq-list summary>span { color:var(--section-accent) }
+
+/* Cinematic pages, search and footer use the same palette, not a second theme. */
+.rockstar-experience,.rs-editorial { background:var(--night-deep) }
+.rs-poster-section:before { background:none }
+.rs-chapter-mark>h2,.rs-poster-info>div:first-child>strong,.rs-fan-label>strong,.rs-editorial-intro,.rs-feature-copy { color:var(--gta-cream) }
+.rs-chapter-mark>span:first-child,.rs-poster-info>div:first-child>span,.rs-fan-label,.rs-editorial-intro>p,.rs-editorial-end { color:var(--night-muted) }
+.rs-editorial-intro>span { color:var(--gta-lilac) }
+.rs-editorial-intro>h2>em { color:var(--gta-pink) }
+.rs-feature-copy>span { color:var(--gta-peach) }
+.rs-feature-copy>p { color:var(--night-text) }
+.rs-pill { background:var(--gta-pink);border-color:var(--gta-pink);color:var(--gta-midnight);box-shadow:0 6px 28px #0002 }
+.rs-pill:hover { background:var(--gta-peach);border-color:var(--gta-peach);box-shadow:0 6px 30px color-mix(in srgb,var(--gta-coral) 12%,transparent) }
+.rs-cinema-play { background:var(--gta-cream);color:var(--gta-midnight) }
+.rs-cinema-play:hover { background:var(--gta-pink);box-shadow:0 0 0 16px color-mix(in srgb,var(--gta-pink) 15%,transparent) }
+.rs-trailer-heading,.rs-scene-bottom { color:var(--gta-cream) }
+.rs-editorial-end>a,.rs-down,.experience-page-heading>a { color:var(--gta-pink) }
+.experience-page-heading>h1 { color:var(--gta-lilac) }
+.atlas-modal { background:var(--night-surface)!important;border-color:var(--night-line-strong)!important;box-shadow:0 32px 110px #0009!important }
+.atlas-modal-scroll { background:transparent;scrollbar-color:var(--gta-lilac) var(--gta-midnight) }
+.atlas-modal>[data-testid="modal-close"] { background:var(--night-deep);color:var(--gta-cream);border-color:var(--night-line-strong) }
+.atlas-modal>[data-testid="modal-close"]:hover { background:var(--gta-coral);color:var(--gta-midnight) }
+.list-modal>.eyebrow { color:var(--gta-lilac) }
+.list-modal [data-testid="list-description"],.search-count,.empty-state>p { color:var(--night-muted) }
+.search-field { background:var(--night-deep);border-color:var(--night-line-strong);color:var(--gta-pink) }
+.search-field:focus-within { border-color:var(--gta-pink);box-shadow:0 0 0 3px color-mix(in srgb,var(--gta-pink) 9%,transparent) }
+.search-field>input { color:var(--gta-cream) }
+.portal-search-result { border-color:var(--night-line);color:var(--night-text) }
+.portal-search-result:hover,.empty-state h3 { color:var(--gta-cream) }
+.portal-search-result small { color:var(--gta-lilac) }
+.portal-search-result>svg { color:var(--gta-turquoise) }
+.atlas-footer-index { background:var(--night-surface);border-color:var(--night-line) }
+.atlas-footer-columns a,.portal-footer p,.footer-bar>p,.footer-copyright,.footer-callout-top .eyebrow,.footer-coordinate,.footer-callout-bottom>p { color:var(--night-muted) }
+.atlas-footer-columns a.footer-area-title { color:var(--gta-peach) }
+.atlas-footer-columns a:hover { color:var(--gta-turquoise) }
+.portal-footer,.footer-bar { background:var(--night-deep);border-color:var(--night-line) }
+.portal-footer>div>a,.footer-links { color:var(--night-text) }
+.portal-footer>div,.footer-copyright { border-color:var(--night-line) }
+.footer-callout { background:var(--gta-midnight);color:var(--gta-cream) }
+.footer-headline-row h2>span { color:var(--gta-pink) }
+.footer-stamp { color:var(--gta-peach);border-color:var(--night-line-strong) }
+.footer-stamp small { color:var(--gta-lilac) }
+[data-sonner-toast][data-styled="true"] { background:var(--night-panel);color:var(--gta-cream);border-color:var(--night-line-strong) }
+[data-sonner-toast][data-type="success"] [data-icon] { color:var(--gta-turquoise) }
+[data-sonner-toast][data-type="error"] [data-icon] { color:var(--gta-coral) }
+
+/* Scrims use the approved midnight; source images retain their original colors. */
+.portal-hero-scrim { background:linear-gradient(90deg,#151526ed,#15152660 67%,#15152615),linear-gradient(0deg,#151526d9,transparent 85%) }
+.object-hero .portal-hero-scrim { background:linear-gradient(90deg,#151526fa,#151526c2 60%,transparent) }
+.town-experience-shade { background:linear-gradient(90deg,#151526e8,#15152630 68%,transparent),linear-gradient(0deg,#151526a0,transparent 60%) }
+.directory-group:after { background:linear-gradient(0deg,#151526ef,#15152625) }
+.hub-tile:after,.hub-small:after { background:linear-gradient(0deg,#151526f2,#15152650 55%,transparent) }
+.hub-map-tile:after { background:linear-gradient(0deg,#151526e8,transparent 52%) }
+.region-card .card-scrim,.character-card .card-scrim { background:linear-gradient(0deg,#151526f2,#1515262b 70%,#15152615) }
+.gallery-overlay { background:linear-gradient(0deg,#151526e6,transparent 72%) }
+.world-panorama-shade { background:linear-gradient(0deg,#151526ed,transparent),linear-gradient(90deg,#15152655,transparent 60%) }
+.rs-feature-shade { background:linear-gradient(90deg,transparent 20%,#15152618 42%,#151526cf 80%) }
+.rs-screens-feature .rs-feature-shade { background:linear-gradient(90deg,transparent 15%,#1515263d 44%,#151526eb 90%) }
+@media(max-width:650px) {
+  .portal-hero-scrim { background:linear-gradient(0deg,#151526f2,#15152666) }
+  .town-experience-shade { background:linear-gradient(0deg,#151526fa,#15152610 90%) }
+  .world-panorama-shade { background:linear-gradient(0deg,#151526f5,#15152615) }
+  .rs-feature-shade,.rs-screens-feature .rs-feature-shade { background:linear-gradient(0deg,#151526f5,#15152699 40%,transparent 90%) }
+  .rockstar-ribbon>span:nth-of-type(2) { display:inline }
+}
+
+/* Editorial gradients: strong on display type, quiet on surfaces. */
+:root {
+  --gradient-sunset:linear-gradient(112deg,var(--gta-cream) 0%,var(--gta-peach) 32%,var(--gta-pink) 66%,var(--gta-coral) 100%);
+  --gradient-neon:linear-gradient(112deg,var(--gta-turquoise),var(--gta-lilac) 47%,var(--gta-pink) 100%);
+  --gradient-rose:linear-gradient(112deg,var(--gta-pink),var(--gta-coral) 50%,var(--gta-peach));
+}
+.atlas-app,.atlas-modal {
+  --gradient-heading:linear-gradient(112deg,var(--gta-cream) 0%,var(--section-accent) 56%,var(--gta-pink) 100%);
+  --gradient-surface:linear-gradient(145deg,color-mix(in srgb,var(--night-panel) 94%,var(--section-accent)),var(--night-panel) 52%,var(--night-surface));
+  --gradient-surface-hover:linear-gradient(145deg,color-mix(in srgb,var(--night-panel) 85%,var(--section-accent)),var(--night-panel-hover) 65%,var(--night-panel));
+}
+.atlas-app[data-atlas-area="explore"],.atlas-app[data-atlas-area="progress"] {
+  --gradient-heading:linear-gradient(112deg,var(--gta-cream),var(--gta-turquoise) 56%,var(--gta-pink));
+}
+.atlas-app[data-atlas-area="garage"],.atlas-app[data-atlas-area="guides"],.atlas-app[data-atlas-area="game"] { --gradient-heading:var(--gradient-sunset) }
+.atlas-app[data-atlas-area="universe"],.atlas-app[data-atlas-area="media"] {
+  --gradient-heading:linear-gradient(112deg,var(--gta-cream),var(--gta-pink) 48%,var(--gta-lilac));
+}
+.portal-card,.directory-area-card,.town-banner,.hub-progress,.hub-field-notes,.article-card,.portal-subsections>a,.town-destinations nav>a,.town-fresh button { background-image:var(--gradient-surface) }
+.portal-card:hover,.article-card:hover { background-image:var(--gradient-surface-hover);border-color:color-mix(in srgb,var(--section-accent) 28%,transparent) }
+.portal-subsections>a:hover,.town-destinations nav>a:hover,.town-fresh button:hover { background-image:none }
+.portal-hero,.dossier-figure,.comparison-column>img,.object-dossier .dossier-figure img { background-image:linear-gradient(140deg,var(--night-panel),var(--night-deep)) }
+.town-all-pages { background-image:linear-gradient(130deg,color-mix(in srgb,var(--night-panel) 87%,var(--gta-pink)),var(--night-surface));border-color:color-mix(in srgb,var(--gta-pink) 32%,transparent) }
+.town-all-pages:hover { background-image:var(--gradient-rose) }
+.portal-button:not(.secondary):not(.completed),.rs-pill,.town-banner>button,.town-experience-copy a:first-child { background-image:linear-gradient(115deg,var(--gta-pink),color-mix(in srgb,var(--gta-pink) 65%,var(--gta-peach)));border-color:color-mix(in srgb,var(--gta-cream) 27%,var(--gta-pink)) }
+.portal-button:not(.secondary):not(.completed):hover,.rs-pill:hover,.town-banner>button:hover,.town-experience-copy a:first-child:hover { background-image:linear-gradient(115deg,var(--gta-pink),var(--gta-peach)) }
+.portal-button.completed { background-image:linear-gradient(115deg,var(--gta-turquoise),color-mix(in srgb,var(--gta-turquoise) 80%,var(--gta-cream))) }
+.checklist-meter>span { background-image:linear-gradient(90deg,var(--gta-turquoise),color-mix(in srgb,var(--gta-turquoise) 58%,var(--gta-cream))) }
+.portal-input,.portal-select,.search-field { background-image:linear-gradient(120deg,color-mix(in srgb,var(--night-surface) 97%,var(--gta-lilac)),var(--night-deep)) }
+.atlas-modal { background-image:linear-gradient(145deg,color-mix(in srgb,var(--night-surface) 96%,var(--gta-pink)),var(--night-deep))!important }
+.atlas-footer-index { background-image:linear-gradient(120deg,var(--night-surface),var(--gta-midnight) 55%,color-mix(in srgb,var(--gta-midnight) 97%,var(--gta-turquoise))) }
+.footer-callout { background-image:linear-gradient(130deg,var(--night-surface),var(--gta-midnight) 55%,color-mix(in srgb,var(--gta-midnight) 93%,var(--gta-pink)))!important }
+.marquee { background-image:linear-gradient(95deg,var(--night-deep),var(--night-panel),var(--night-deep)) }
+.portal-section-heading { position:relative;padding-bottom:13px }
+.portal-section-heading:after { content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,color-mix(in srgb,var(--section-accent) 45%,transparent),var(--night-line) 32%,transparent 80%);pointer-events:none }
+
+@supports ((background-clip:text) or (-webkit-background-clip:text)) {
+  .pause-mask>span,.portal-hero h1,.dossier-header h1,.portal-not-found h1,
+  .town-experience-copy h2,.world-panorama-copy h2,.characters-intro h2,
+  .gallery-section .section-title,.footer-headline-row h2,.list-modal h2,
+  .rs-editorial-intro>h2,.rs-feature-copy>h3,.rs-trailer-heading>h2,.rs-chapter-mark>h2,
+  .directory-group h2,.town-section-title,.wire-section .section-title,
+  .portal-section-heading>h2,.atlas-footer-index-heading>h2,.coverage-section h2,
+  .portal-empty h2,.empty-state h3,.story-protection h2,.town-banner h2 {
+    color:var(--gta-cream);
+    background-image:var(--gradient-heading,var(--gradient-sunset));
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    padding-bottom:.05em;
+  }
+  .pause-mask>span { display:inline-block;background-image:var(--gradient-sunset) }
+  .pause-mask:last-child>span { background-image:linear-gradient(108deg,var(--gta-pink),var(--gta-coral) 42%,var(--gta-peach)) }
+  .world-panorama-copy h2 { background-image:linear-gradient(110deg,var(--gta-cream),var(--gta-turquoise) 75%) }
+  .characters-intro h2,.gallery-section .section-title,.rs-editorial-intro>h2,.rs-feature-copy>h3,.footer-headline-row h2 { background-image:var(--gradient-sunset) }
+  .portal-card-copy>a:hover h3,.article-title:hover h3 {
+    background-image:var(--gradient-heading);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  .progress-stats strong:not(.device-label) { background-image:linear-gradient(110deg,var(--gta-cream),var(--gta-turquoise));background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent }
+  .portal-hero .portal-kicker,.dossier-header .portal-kicker { background-image:linear-gradient(100deg,var(--section-accent),var(--gta-cream));background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent }
+}
+/* No moving gradient shimmer. Reduced-motion users keep the same readable colors. */
+@media (forced-colors:active), (prefers-contrast:more) {
+  .atlas-app h1,.atlas-app h2,.atlas-app h3,.atlas-app h1 span,.atlas-app h2 span,
+  .atlas-app h2 em,.atlas-app .portal-kicker,.progress-stats strong,.list-modal h2 {
+    background-image:none!important;-webkit-text-fill-color:currentColor!important;
+  }
+  .portal-section-heading:after { background:currentColor }
+}
+@media print {
+  h1,h2,h3,h1 span,h2 span,h2 em,.portal-kicker,.progress-stats strong { background:none!important;color:black!important;-webkit-text-fill-color:black!important }
+}
+@media(max-width:650px) {
+  .gallery-section .section-title { font-size:44px;overflow-wrap:anywhere }
+  .hub-field-preview p { font-size:12px;line-height:1.6;color:var(--night-text) }
+}
+@media(max-width:359px) { .gallery-section .section-title { font-size:37px } }
+
+/* Finishing details: three depth levels, fine contours and selective underlines. */
+:root {
+  --depth-rest: 0 2px 4px #0003, 0 10px 24px #0002;
+  --depth-raised: 0 6px 12px #0004, 0 22px 42px #0004;
+  --depth-dialog: 0 12px 35px #0006, 0 38px 110px #0009;
+  --edge-light: color-mix(in srgb,var(--gta-cream) 9%,transparent);
+  --edge-outline: color-mix(in srgb,var(--gta-lilac) 30%,transparent);
+}
+
+/* Drop shadows follow the gradient glyphs instead of painting over their fill. */
+.pause-mask>span,.portal-hero h1,.dossier-header h1,.portal-not-found h1,
+.world-panorama-copy h2,.characters-intro h2,.town-experience-copy h2,
+.gallery-section .section-title,.footer-headline-row h2,
+.rs-editorial-intro>h2,.rs-feature-copy>h3,.rs-trailer-heading>h2 {
+  -webkit-text-stroke:.35px color-mix(in srgb,var(--gta-cream) 24%,transparent);
+  paint-order:stroke fill;
+  filter:drop-shadow(0 2px 0 #080810a6) drop-shadow(0 7px 12px #08081066);
+}
+.portal-hero h1,.world-panorama-copy h2,.town-experience-copy h2,.rs-feature-copy>h3 {
+  filter:drop-shadow(0 2px 0 #080810b8) drop-shadow(0 8px 18px #080810b3);
+}
+.directory-group h2,.hub-tile-caption h3,.region-card h3,.character-firstname {
+  filter:drop-shadow(0 2px 2px #080810ad) drop-shadow(0 5px 10px #08081066);
+}
+.list-modal h2,.town-section-title,.portal-section-heading>h2 {
+  filter:drop-shadow(0 2px 2px #08081080);
+}
+
+/* Border widths stay constant between states, avoiding layout movement. */
+.portal-card,.directory-area-card,.article-card,.hub-tile,
+.region-card,.character-card,.gallery-card {
+  border:1px solid var(--edge-outline);
+  box-shadow:inset 0 1px 0 var(--edge-light),var(--depth-rest);
+  transition-property:transform,background-color,border-color,box-shadow;
+  transition-duration:.25s;
+}
+.portal-card:hover,.portal-card:focus-within,.directory-area-card:hover,.directory-area-card:focus-within,
+.article-card:hover,.article-card:focus-within,.hub-tile:hover,.hub-tile:focus-within,
+.region-card:hover,.region-card:focus-within,.character-card:hover,.character-card:focus-within,
+.gallery-card:hover,.gallery-card:focus-within {
+  border-color:color-mix(in srgb,var(--section-accent) 58%,transparent);
+  box-shadow:inset 0 1px 0 color-mix(in srgb,var(--gta-cream) 15%,transparent),var(--depth-raised);
+}
+.dossier-figure,.dossier-cinema,.portal-map {
+  border:1px solid var(--edge-outline);
+  box-shadow:inset 0 1px 0 var(--edge-light),0 12px 34px #0003;
+}
+.comparison-column>img {
+  box-shadow:inset 0 0 0 1px var(--edge-outline),var(--depth-rest);
+}
+.portal-hero { border-block:1px solid var(--edge-outline) }
+.portal-subsections>a,.town-destinations nav>a,.town-fresh button {
+  box-shadow:inset 0 1px 0 var(--edge-light),0 4px 10px #0002;
+  border:1px solid var(--edge-outline);
+}
+.portal-subsections>a:hover,.town-destinations nav>a:hover,.town-fresh button:hover {
+  border-color:color-mix(in srgb,var(--gta-cream) 60%,transparent);
+  box-shadow:0 7px 16px #0004;
+}
+.town-header.is-stuck,.portal-mode .town-header.portal-header.is-stuck {
+  box-shadow:0 1px 0 var(--edge-light),0 8px 25px #0004;
+}
+.town-all-pages,.portal-button,.atlas-button,.rs-pill,.town-banner>button,.town-experience-copy a:first-child {
+  box-shadow:inset 0 1px 0 color-mix(in srgb,var(--gta-cream) 26%,transparent),0 3px 0 #08081066,0 7px 16px #0003;
+}
+.town-all-pages:hover,.portal-button:hover,.atlas-button:hover,.rs-pill:hover,.town-banner>button:hover {
+  box-shadow:inset 0 1px 0 color-mix(in srgb,var(--gta-cream) 40%,transparent),0 4px 0 #08081066,0 12px 23px #0004;
+}
+.portal-button:active,.atlas-button:active,.rs-pill:active,.town-all-pages:active {
+  box-shadow:inset 0 2px 4px #15152626,0 2px 6px #0003;
+}
+.portal-icon-button,.save-button,.portal-card>.save-button,.town-icon {
+  box-shadow:inset 0 0 0 1px var(--edge-outline),0 3px 8px #0004;
+}
+.portal-input,.portal-select,.search-field,.comparison-column select {
+  box-shadow:inset 0 2px 5px #0003,0 1px 0 var(--edge-light);
+}
+.portal-input:focus-within,.search-field:focus-within {
+  box-shadow:inset 0 2px 5px #0002,0 0 0 3px color-mix(in srgb,var(--section-accent) 13%,transparent);
+}
+.atlas-modal {
+  border-color:color-mix(in srgb,var(--gta-pink) 40%,var(--night-panel))!important;
+  box-shadow:inset 0 1px 0 var(--edge-light),var(--depth-dialog)!important;
+}
+.pause-selection {
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--gta-peach) 65%,var(--gta-cream)),inset 3px 0 var(--gta-coral),0 5px 0 #08081026,0 10px 22px #0003;
+}
+.dossier-source {
+  border-left-color:color-mix(in srgb,var(--section-accent) 43%,transparent);
+}
+
+/* Editorial rules identify sections; underlines identify navigation and sources. */
+.portal-section-heading:before {
+  content:'';position:absolute;left:0;bottom:0;width:52px;height:3px;
+  background:linear-gradient(90deg,var(--section-accent),var(--gta-cream));
+  border-radius:3px;pointer-events:none;
+}
+.town-section-title {
+  position:relative;
+  padding-bottom:16px;
+}
+.town-section-title:after {
+  content:'';position:absolute;left:0;bottom:0;width:48px;height:3px;
+  background:var(--gradient-rose);border-radius:3px;pointer-events:none;
+}
+.town-nav>a { position:relative }
+.town-nav>a:after,.town-nav>.nav-active:after {
+  content:'';position:absolute;left:0;bottom:-10px;width:100%;height:2px;
+  border-radius:2px;background:linear-gradient(90deg,var(--section-accent),var(--gta-peach));
+  transform:scaleX(0);transform-origin:left;transition:transform .22s ease;
+}
+.town-nav>a:hover:after,.town-nav>a:focus-visible:after,.town-nav>.nav-active:after { transform:scaleX(1) }
+.atlas-tree-children a[aria-current=page] {
+  text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px;
+  text-decoration-color:color-mix(in srgb,var(--section-accent) 65%,transparent);
+}
+.portal-source-link,.coverage-section a,.dossier-media-nav a,
+.portal-section-heading>a,.atlas-footer-index-heading>a {
+  text-decoration-line:underline;text-decoration-thickness:1px;text-underline-offset:5px;
+  text-decoration-color:color-mix(in srgb,var(--section-accent) 50%,transparent);
+  text-decoration-skip-ink:auto;
+}
+.portal-source-link:hover,.coverage-section a:hover,.dossier-media-nav a:hover,
+.portal-section-heading>a:hover,.atlas-footer-index-heading>a:hover {
+  text-decoration-thickness:2px;text-decoration-color:var(--section-accent);
+}
+.portal-card-copy>a:hover h3,.article-title:hover h3,
+.text-link:hover,.footer-links a:hover,.footer-links button:hover,.directory-area-links>a:hover {
+  text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px;
+  text-decoration-color:color-mix(in srgb,var(--section-accent) 65%,transparent);
+}
+.portal-tabs>button.active,.catalog-view-toggle>button[aria-pressed=true] {
+  box-shadow:inset 0 -2px 0 color-mix(in srgb,var(--gta-midnight) 27%,transparent),0 2px 5px #0003;
+}
+.atlas-tree summary.active { box-shadow:inset 3px 0 var(--gta-cream),0 3px 10px #0003 }
+
+@media(max-width:650px) {
+  .pause-mask>span,.portal-hero h1,.dossier-header h1,.portal-not-found h1,
+  .world-panorama-copy h2,.characters-intro h2,.town-experience-copy h2,
+  .gallery-section .section-title,.footer-headline-row h2,
+  .rs-editorial-intro>h2,.rs-feature-copy>h3,.rs-trailer-heading>h2 {
+    -webkit-text-stroke:.25px color-mix(in srgb,var(--gta-cream) 21%,transparent);
+    filter:drop-shadow(0 2px 0 #08081099) drop-shadow(0 4px 8px #08081080);
+  }
+  .portal-card,.directory-area-card,.article-card,.hub-tile,.region-card,.character-card,.gallery-card {
+    box-shadow:inset 0 1px 0 var(--edge-light),0 5px 14px #0003;
+  }
+  .dossier-source { border-left:0;border-top-color:color-mix(in srgb,var(--section-accent) 43%,transparent) }
+}
+@media(prefers-reduced-motion:reduce) {
+  .town-nav>a:after,.portal-card,.directory-area-card,.article-card,.hub-tile,.region-card,.character-card,.gallery-card { transition:none }
+}
+@media(forced-colors:active),(prefers-contrast:more) {
+  .atlas-app h1,.atlas-app h2,.atlas-app h3,.atlas-app h1 span,.character-firstname,.list-modal h2 { filter:none!important;-webkit-text-stroke:0!important }
+  .portal-card,.directory-area-card,.article-card,.hub-tile,.region-card,.character-card,.gallery-card,.portal-input,.portal-select,.atlas-modal { box-shadow:none!important;border-color:currentColor!important }
+  .portal-section-heading:before,.town-section-title:after,.town-nav>a:after { background:currentColor }
+}
+@media print {
+  .atlas-app *,.atlas-modal * { box-shadow:none!important;filter:none!important;-webkit-text-stroke:0!important }
+}

@@ -7,9 +7,9 @@ export const pauseItems = [
   { id: 'map', title: 'Map', icon: Map, thumb: 'vice_city_02', preview: 'leonida-night', action: 'map', caption: '' },
   { id: 'story', title: 'Story', icon: Send, thumb: 'story-preview', preview: 'story-preview', action: 'story', caption: '' },
   { id: 'progress', title: 'Progress', icon: CheckCircle2, thumb: 'vice_city_12', preview: 'vice_city_12', action: 'progress', caption: '' },
-  { id: 'garage', title: 'Garage', icon: CarFront, thumb: 'garage-preview', preview: 'garage-preview', action: 'garage', caption: 'Street machines. Open-water escapes.' },
-  { id: 'guides', title: 'Guides', icon: BookOpen, thumb: 'guides-preview', preview: 'guides-preview', action: 'guides', caption: 'Get to know your next obsession' },
-  { id: 'news', title: 'News', icon: Newspaper, thumb: 'news-preview', preview: 'news-preview', action: 'stories', caption: 'Stories from our corner of Leonida' },
+  { id: 'garage', title: 'Garage', icon: CarFront, thumb: 'garage-preview', preview: 'garage-preview', action: 'garage', caption: 'Vehicles and comparisons' },
+  { id: 'guides', title: 'Guides', icon: BookOpen, thumb: 'guides-preview', preview: 'guides-preview', action: 'guides', caption: 'References and FAQ' },
+  { id: 'news', title: 'News', icon: Newspaper, thumb: 'news-preview', preview: 'news-preview', action: 'stories', caption: 'News and features' },
 ];
 
 const countyLabels = [ ['LUMMOX COUNTY', 50, 16], ['LEONARD COUNTY', 63, 33], ['KELLY COUNTY', 39, 39], ['VICE-DALE COUNTY', 65, 66], ['MARIANA COUNTY', 43, 80] ];
