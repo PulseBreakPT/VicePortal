@@ -725,19 +725,28 @@ export const characterCoverage = {
       {
         "label": "Community gameplay profile",
         "url": "https://gta6data.com/gta-6-character-kd/"
+      },
+      {
+        "label": "Gameta — gameplay profile",
+        "url": "https://gameta.gg/gta6/characters/kd/"
       }
     ],
     "bio": {
-      "description": "A promoter who introduces Dre'Quan to Royce and can be approached for photographs during Headliners.",
-      "source": "https://gta6data.com/gta-6-character-kd/",
-      "mission": "Headliners",
-      "occupation": "Promoter",
+      "description": "Club promoter who connects Dre'Quan to Royce Jones. A meeting during Photo/Shoot goes wrong, and he subsequently offers to arrange another introduction.",
+      "source": "https://gameta.gg/gta6/characters/kd/",
+      "mission": "Photo/Shoot",
+      "occupation": "Club promoter",
       "relations": [
         "drequan-priest",
         "royce-jones"
       ]
     },
-    "qualified": false
+    "qualified": false,
+    "portrait": {
+      "url": "https://gameta.gg/_ipx/w_644&q_80/media/people/kd/face.webp",
+      "page": "https://gameta.gg/gta6/characters/kd/",
+      "source": "Gameta"
+    }
   },
   "rafa-de-leon-navarro": {
     "sources": [
@@ -828,18 +837,29 @@ export const characterCoverage = {
       {
         "label": "Community gameplay profile",
         "url": "https://gta6data.com/gta-6-character-kevin-kueh/"
+      },
+      {
+        "label": "Gameta — gameplay profile",
+        "url": "https://gameta.gg/gta6/characters/kevin-kueh/"
       }
     ],
     "bio": {
-      "description": "A contact associated with the bridge meeting during Bird in the Hand.",
-      "source": "https://gta6data.com/gta-6-character-kevin-kueh/",
+      "description": "Former Navy ORCA associated with Vinny Capsik and Liz Jackson through Savage Mentality Mindset. Giorgio introduces him to the protagonists during Bird in the Hand.",
+      "source": "https://gameta.gg/gta6/characters/kevin-kueh/",
       "mission": "Bird in the Hand",
-      "occupation": null,
+      "occupation": "Former Navy ORCA",
       "relations": [
+        "vinny-capsik",
+        "liz-jackson",
         "giorgio-gallo"
       ]
     },
-    "qualified": false
+    "qualified": false,
+    "portrait": {
+      "url": "https://gameta.gg/_ipx/w_644&q_80/media/people/kevin-kueh/face.webp",
+      "page": "https://gameta.gg/gta6/characters/kevin-kueh/",
+      "source": "Gameta"
+    }
   },
   "the-hitman": {
     "sources": [
@@ -2328,8 +2348,29 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/all/#danica-howard"
+      },
+      {
+        "label": "Gameta — gameplay profile",
+        "url": "https://gameta.gg/gta6/characters/danica-howard/"
       }
-    ]
+    ],
+    "bio": {
+      "description": "Statewide prosecutor of Leonida, previously a public prosecutor in Mariana County. In Protective Custody she discusses an immunity and witness-protection arrangement with Lucia.",
+      "source": "https://gameta.gg/gta6/characters/danica-howard/",
+      "mission": "Protective Custody",
+      "occupation": "Statewide prosecutor",
+      "relations": [
+        "lucia-caminos",
+        "giorgio-gallo",
+        "deputy-sarah-fitzroy"
+      ]
+    },
+    "qualified": false,
+    "portrait": {
+      "url": "https://gameta.gg/_ipx/w_644&q_80/media/people/danica-howard/face.webp",
+      "page": "https://gameta.gg/gta6/characters/danica-howard/",
+      "source": "Gameta"
+    }
   },
   "shanese": {
     "sources": [
@@ -3337,5 +3378,31 @@ export const characterCoverage = {
         "url": "https://gta6data.com/gta-6-character-alan-coleman/"
       }
     ]
+  },
+  "wade-howard": {
+    "sources": [
+      {
+        "label": "Gameta — gameplay profile",
+        "url": "https://gameta.gg/gta6/characters/wade-howard/"
+      }
+    ],
+    "portrait": {
+      "url": "https://gameta.gg/_ipx/w_644&q_80/media/people/wade-howard/face.webp",
+      "page": "https://gameta.gg/gta6/characters/wade-howard/",
+      "source": "Gameta"
+    }
+  },
+  "beau-raceway": {
+    "sources": [
+      {
+        "label": "Gameta — gameplay profile",
+        "url": "https://gameta.gg/gta6/characters/beau/"
+      }
+    ],
+    "portrait": {
+      "url": "https://gameta.gg/_ipx/w_644&q_80/media/people/beau/face.webp",
+      "page": "https://gameta.gg/gta6/characters/beau/",
+      "source": "Gameta"
+    }
   }
 };
