@@ -8,7 +8,7 @@ describe('Character catalogue integrity', () => {
     expect(ids.size).toBe(characterRecords.length);
     expect(characterRecords.filter(record => record.attributes['Credit section'] === 'Main Cast')).toHaveLength(57);
     expect(characterRecords.filter(record => record.attributes['Credit section'] === 'Full Cast')).toHaveLength(145);
-    expect(characterRecords.length).toBeGreaterThanOrEqual(570);
+    expect(characterRecords.length).toBeGreaterThanOrEqual(579);
   });
   test('all 328 media role labels resolve to existing or new dossier IDs', () => {
     expect(mediaCast).toHaveLength(328);
