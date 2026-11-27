@@ -20,7 +20,7 @@ try {
   const { characterDiscoveries } = await import(pathToFileURL(join(dir,'characterDiscoveries.mjs')).href);
   const byId = new Map(records.map(row=>[row.id,row]));
   assert.equal(byId.size,records.length,'Duplicate dossier ID');
-  assert.ok(records.length>=579,'Unexpected catalogue regression');
+  assert.ok(records.length>=589,'Unexpected catalogue regression');
   assert.equal(records.filter(x=>x.attributes['Credit section']==='Main Cast').length,57);
   assert.equal(records.filter(x=>x.attributes['Credit section']==='Full Cast').length,145);
   assert.equal(mediaCast.length,328);

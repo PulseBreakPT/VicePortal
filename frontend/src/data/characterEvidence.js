@@ -424,5 +424,204 @@ export const characterEvidence = {
     "description": "The story guide identifies Percy as Dante Fresh's Siberian tiger. Whether this animal is the same Percy as the role credited to Anthony Robert Grasso is not established.",
     "qualified": true,
     "spoiler": true
+  },
+  "dodo-noah": {
+    "source": "https://www.gtabase.com/gta-6/characters/noah",
+    "description": "A member of Dodos Rising who leads a protest near the Vice City airport and recruits the protagonists for Bring Out the Chimp.",
+    "mission": "Bring Out the Chimp",
+    "relations": [
+      "dodo-jeremy"
+    ],
+    "spoiler": true
+  },
+  "dodo-tyler": {
+    "source": "https://www.gtabase.com/gta-6/characters/tyler",
+    "description": "An anti-fracking activist in Dodos Rising. He and Steve enlist the protagonists in the Watson Bay mission Twin Flames.",
+    "mission": "Twin Flames",
+    "relations": [
+      "dodo-steve"
+    ],
+    "spoiler": true
+  },
+  "dodo-steve": {
+    "source": "https://www.gtabase.com/gta-6/characters/tyler",
+    "description": "A fellow activist and friend of Tyler involved in the Dodos Rising mission Twin Flames at Watson Bay.",
+    "mission": "Twin Flames",
+    "relations": [
+      "dodo-tyler"
+    ],
+    "spoiler": true
+  },
+  "mother-dodo-yvonne": {
+    "source": "https://www.gtabase.com/gta-6/characters/yvonne",
+    "description": "Known as Mother Dodo, Yvonne leads Dodos Rising. Lucia meets her in the group's concluding mission, Dodo, Rise!",
+    "mission": "Dodo, Rise!",
+    "relations": [
+      "dodo-noah",
+      "dodo-tyler",
+      "dodo-steve"
+    ],
+    "spoiler": true
+  },
+  "kodak-black": {
+    "source": "https://gta.wiki/w/Kodak_Black",
+    "description": "The rapper appears as himself in GTA VI and is depicted in an official Vice City promotional screenshot.",
+    "portrait": {
+      "url": "https://gta.wiki/images/thumb/OfficialScreenshots-GTAVI-PromotionalWebsite-ViceCity25.jpg/300px-OfficialScreenshots-GTAVI-PromotionalWebsite-ViceCity25.jpg?85626",
+      "page": "https://gta.wiki/w/Kodak_Black",
+      "source": "GTA Wiki / Rockstar Games"
+    }
+  },
+  "sam": {
+    "source": "https://gta.wiki/w/Sam_(Mud_Club)",
+    "description": "Sam is a longtime member of Billy's off-road riding group at the Thrillbilly Mud Club in Ambrosia. The wiki identifies her riding a Sanchez but does not independently confirm the voice performer.",
+    "portrait": {
+      "url": "https://gta.wiki/images/thumb/SamMudClub-GTAVI-Portrait.png/300px-SamMudClub-GTAVI-Portrait.png?7a85a",
+      "page": "https://gta.wiki/w/Sam_(Mud_Club)",
+      "source": "GTA Wiki"
+    },
+    "relations": [
+      "billy",
+      "ej"
+    ],
+    "spoiler": true
+  },
+  "ms-sharleen": {
+    "source": "https://gta.wiki/w/Ms._Sharleen",
+    "description": "A resident of Calypso Avenue, Key Lento, who holds a yard sale where Jason can buy clothing and meet her pet alligator Gary.",
+    "portrait": {
+      "url": "https://gta.wiki/images/thumb/MsSharleen-GTAVI-Portrait.png/300px-MsSharleen-GTAVI-Portrait.png?74e33",
+      "page": "https://gta.wiki/w/Ms._Sharleen",
+      "source": "GTA Wiki"
+    },
+    "relations": [
+      "gary-alligator",
+      "jason-duval"
+    ],
+    "spoiler": true
+  },
+  "kai": {
+    "source": "https://gta.wiki/w/Kai_(GTA_VI)",
+    "description": "GTA Wiki documents a character called Kai with a possible connection to Billy. Its profile does not establish that the character is the role performed by Michael Giese.",
+    "qualified": true,
+    "spoiler": true
+  },
+  "joe-laurino": {
+    "source": "https://gta.fandom.com/wiki/Joe_Laurino",
+    "description": "Fandom tentatively identifies Joe Laurino as a parole officer in Down to Earth, but its incomplete page also incorrectly labels him as a GTA IV character. The identity and appearance need independent verification.",
+    "qualified": true,
+    "spoiler": true
+  },
+  "mitico-mario": {
+    "source": "https://gta.fandom.com/wiki/Mitico_Mario",
+    "description": "A dancer at Delights in Port Gellhorn, encountered during the Chapter 2 club sequence. Fandom identifies Mario as the role played by Bad Bunny, who also performs as El Martillo on Cocoteo FM.",
+    "portrait": {
+      "url": "https://static.wikia.nocookie.net/gtawiki/images/9/95/Mario_GTA6.png/revision/latest/smart/width/40/height/30?cb=20261127111022",
+      "page": "https://gta.fandom.com/wiki/Category:Characters_in_GTA_VI",
+      "source": "GTA Fandom (directory thumbnail)"
+    },
+    "relations": [
+      "vicki",
+      "mario",
+      "media-cocoteo-fm-el-martillo-bad-bunny"
+    ],
+    "spoiler": true
+  },
+  "mario": {
+    "source": "https://gta.fandom.com/wiki/Mitico_Mario",
+    "description": "The Delights dancer described by Fandom as Mitico Mario. This gameplay encounter is retained as a legacy cross-reference rather than claiming a separate person.",
+    "relations": [
+      "mitico-mario"
+    ],
+    "spoiler": true
+  },
+  "the-pretender": {
+    "source": "https://gta.fandom.com/wiki/The_Pretender",
+    "description": "A mysterious GTA VI character. Fandom records the name The Pretender; alternative names circulated by players are not established.",
+    "portrait": {
+      "url": "https://static.wikia.nocookie.net/gtawiki/images/c/cb/Pretender.png/revision/latest/smart/width/40/height/30?cb=20261127090221",
+      "page": "https://gta.fandom.com/wiki/Category:Characters_in_GTA_VI",
+      "source": "GTA Fandom (directory thumbnail)"
+    },
+    "spoiler": true
+  },
+  "jimmy-de-santa": {
+    "source": "https://www.gtabase.com/gta-6/articles/all-returning-characters-from-past-games-in-gta-6",
+    "description": "Returning GTA V character who appears at the club in Headliners; the protagonists may decide whether to admit him. His brief appearance is reported by GTABase.",
+    "portrait": {
+      "url": "https://www.gtabase.com/images/gta-6/articles/gta-6-jimmy-de-santa-headliners.jpg",
+      "page": "https://www.gtabase.com/gta-6/articles/all-returning-characters-from-past-games-in-gta-6",
+      "source": "GTABase"
+    },
+    "mission": "Headliners",
+    "spoiler": true
+  },
+  "media-final-act-wade-herbert-matthew-maher": {
+    "source": "https://www.gtabase.com/gta-6/articles/all-returning-characters-from-past-games-in-gta-6",
+    "description": "The returning GTA V character Wade Hebert is interviewed on Final Act. He discusses his conviction and refers to former associates. The official GTA VI credit spells the surname Herbert.",
+    "spoiler": true
+  },
+  "media-final-act-dave-norton-julian-gamble": {
+    "source": "https://www.gtabase.com/gta-6/articles/all-returning-characters-from-past-games-in-gta-6",
+    "description": "A returning GTA V FIB agent heard on Final Act, discussing Michael De Santa and other people from his past.",
+    "spoiler": true
+  },
+  "media-final-act-solomon-richards-michael-quinlan": {
+    "source": "https://www.gtabase.com/gta-6/articles/all-returning-characters-from-past-games-in-gta-6",
+    "description": "The film producer from GTA V returns as a guest on the in-game Final Act podcast.",
+    "spoiler": true
+  },
+  "valentina": {
+    "source": "https://www.gtabase.com/gta-6/articles/all-returning-characters-from-past-games-in-gta-6",
+    "description": "A returning GTA Online character who connects the protagonists with work involving Andrés de León in GTA VI.",
+    "relations": [
+      "andres-de-leon"
+    ],
+    "spoiler": true
+  },
+  "media-maccas-magical-smoke-boat-tour-macca-darius-marquis-johnson": {
+    "source": "https://gta.wiki/w/Macca_the_Gator",
+    "description": "Macca is the titular alligator character of Macca & Friends and appears in Macca's Magical Smoke Boat Tour.",
+    "portrait": {
+      "url": "https://gta.wiki/images/thumb/Macca%26Friends-MaccaTheGator-GTAVI-CE-Artwork.png/300px-Macca%26Friends-MaccaTheGator-GTAVI-CE-Artwork.png?7fef3",
+      "page": "https://gta.wiki/w/Macca_the_Gator",
+      "source": "GTA Wiki / Rockstar Games official artwork"
+    }
+  },
+  "media-maccas-magical-smoke-boat-tour-chunkee-kyle-chapple": {
+    "source": "https://gta.wiki/w/Chunkee_the_Manatee",
+    "description": "Chunkee is the manatee character in Macca & Friends and the credited television special.",
+    "portrait": {
+      "url": "https://gta.wiki/images/thumb/Macca%26Friends-ChunkeeTheManatee-GTAVI-CE-Artwork.png/300px-Macca%26Friends-ChunkeeTheManatee-GTAVI-CE-Artwork.png?4e4d3",
+      "page": "https://gta.wiki/w/Chunkee_the_Manatee",
+      "source": "GTA Wiki / Rockstar Games official artwork"
+    }
+  },
+  "media-maccas-magical-smoke-boat-tour-pinche-felipe-di-poi": {
+    "source": "https://gta.wiki/w/Pinche_the_Crab",
+    "description": "Pinche is the crab character in Macca & Friends, identified in GTA Wiki as a landlord.",
+    "portrait": {
+      "url": "https://gta.wiki/images/thumb/Macca%26Friends-PincheTheCrab-GTAVI-CE-Artwork.png/300px-Macca%26Friends-PincheTheCrab-GTAVI-CE-Artwork.png?13718",
+      "page": "https://gta.wiki/w/Pinche_the_Crab",
+      "source": "GTA Wiki / Rockstar Games official artwork"
+    }
+  },
+  "media-maccas-magical-smoke-boat-tour-fede-jason-kaye": {
+    "source": "https://gta.wiki/w/Fede_the_Flamingo",
+    "description": "Fede is the flamingo character in Macca & Friends and is voiced by Jason Kaye.",
+    "portrait": {
+      "url": "https://gta.wiki/images/thumb/Macca%26Friends-FedeTheFlamingo-GTAVI-CE-Artwork.png/300px-Macca%26Friends-FedeTheFlamingo-GTAVI-CE-Artwork.png?95759",
+      "page": "https://gta.wiki/w/Fede_the_Flamingo",
+      "source": "GTA Wiki / Rockstar Games official artwork"
+    }
+  },
+  "media-maccas-magical-smoke-boat-tour-sunny-t-l-flint": {
+    "source": "https://gta.wiki/w/Sunny_(GTA_VI)",
+    "description": "Sunny is a character from Macca & Friends, voiced by T.L. Flint.",
+    "portrait": {
+      "url": "https://gta.wiki/images/thumb/Macca%26Friends-Sunny-GTAVI-CE-Artwork.png/300px-Macca%26Friends-Sunny-GTAVI-CE-Artwork.png?7ae3d",
+      "page": "https://gta.wiki/w/Sunny_(GTA_VI)",
+      "source": "GTA Wiki / Rockstar Games official artwork"
+    }
   }
 };

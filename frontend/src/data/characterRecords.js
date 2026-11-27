@@ -1972,18 +1972,20 @@ function applyEvidence(item) {
   if(!evidence)return item;
   const attributes=evidence.creditOnly?{...item.attributes}:{...item.attributes,'Biography availability':evidence.qualified?'Not verified in this atlas':'Documented partial context','Evidence':evidence.qualified?'Official cast credit; possible appearance (unconfirmed)':item.attributes['Credit section']||item.id.startsWith('media-')?'Official cast credit; community gameplay context':'Community gameplay context'};
   if(evidence.mission&&!evidence.qualified)attributes['Documented mission']=evidence.mission;
+  if(evidence.portrait)attributes['Portrait availability']='Attributed image reference';
   if(evidence.contextImage)attributes['Contextual image availability']=evidence.creditOnly?'Station artwork; not a portrait':'Documented scene; not an isolated portrait';
   return {...item,...(evidence.creditOnly?{}:{description:evidence.description,status:'Community reference'}),spoiler:item.spoiler||!!evidence.spoiler,attributes,
     ...(evidence.relations?{relatedCharacterIds:[...new Set([...(item.relatedCharacterIds||[]),...evidence.relations])]}:{}),
+    ...(evidence.portrait?{image:evidence.portrait.url,imageSource:evidence.portrait.source,imageSourceUrl:evidence.portrait.page,imageFallback:placeholder,placeholderImage:false}:{}),
     ...(evidence.contextImage?{contextImage:evidence.contextImage,contextCaption:evidence.contextCaption,contextImageSource:evidence.contextImageSource||evidence.source}:{}),
-    relatedSources:[...(item.relatedSources||[]),{label:evidence.creditOnly?'Individual media credit':'Gameplay and biography evidence',url:evidence.source},...(evidence.contextImageSource?[{label:'Contextual artwork source',url:evidence.contextImageSource}]:[])].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i)};
+    relatedSources:[...(item.relatedSources||[]),{label:evidence.creditOnly?'Individual media credit':'Gameplay and biography evidence',url:evidence.source},...(evidence.contextImageSource?[{label:'Contextual artwork source',url:evidence.contextImageSource}]:[]),...(evidence.portrait?[{label:'Character image source',url:evidence.portrait.page}]:[])].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i)};
 }
 export const characterRecords = [
   ...main.map(row=>enrichCharacter(record(row,'Main Cast'))),
   ...full.map(row=>enrichCharacter(record(row,'Full Cast'))),
   ...additionalEncounters.map(encounter),
   ...additionalReviewed,
-  ...characterDiscoveries.map(([title,id,description,source,portrait,relations,mission,role='Named gameplay appearance'])=>({...encounter([title,id,description]),source,relatedSources:[{label:'Community gameplay profile — '+new URL(source).hostname,url:source}],relatedCharacterIds:relations,attributes:{Role:role,'Credited performer':'Not verified in this atlas',Evidence:'Community gameplay or appearance reference',...(mission?{'Documented mission':mission}:{}),'Biography availability':'Partial context only'},...(portrait?{image:portrait,placeholderImage:false,imageFallback:placeholder,imageSource:'GTA6DATA',imageSourceUrl:source}:{})})),
+  ...characterDiscoveries.map(([title,id,description,source,portrait,relations,mission,role='Named gameplay appearance'])=>({...encounter([title,id,description]),source,relatedSources:[{label:'Community gameplay profile — '+new URL(source).hostname,url:source}],relatedCharacterIds:relations,attributes:{Role:role,'Credited performer':'Not verified in this atlas',Evidence:'Community gameplay or appearance reference',...(mission?{'Documented mission':mission}:{}),'Biography availability':'Partial context only'},...(portrait?{image:portrait,placeholderImage:false,imageFallback:placeholder,imageSource:new URL(source).hostname.includes('gta6data.com')?'GTA6DATA':new URL(source).hostname,imageSourceUrl:source}:{})})),
   {id:'real-dimez',title:'Real Dimez',kind:'Character',category:'Music duo',subtitle:'Bae-Luxe and Roxy Rashad',tag:'MUSIC DUO',
    image:'/images/real_dimez_01.webp',source:profiles,status:'Official source',spoiler:true,
    description:'Rap duo formed by Bae-Luxe and Roxy, signed to Only Raw Records. Their early collaboration with DWNPLY helped establish their career.',
