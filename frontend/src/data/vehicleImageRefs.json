@@ -1,0 +1,50 @@
+{
+  "vehicle-emerus": {
+    "title": "Progen Emerus",
+    "image": "https://gtatown.com/img/pc/vehicles/progen-emerus-294.webp",
+    "source": "https://gtatown.com/garage/vehicles/progen-emerus",
+    "evidence": "detail-page"
+  },
+  "vehicle-thrax": {
+    "title": "Truffade Thrax",
+    "image": "https://gtatown.com/img/pc/vehicles/truffade-thrax-294.webp",
+    "source": "https://gtatown.com/garage/vehicles/truffade-thrax",
+    "evidence": "detail-page"
+  },
+  "vehicle-tempesta": {
+    "title": "Pegassi Tempesta",
+    "image": "https://gtatown.com/img/pc/vehicles/pegassi-tempesta-294.webp",
+    "source": "https://gtatown.com/garage/vehicles/pegassi-tempesta",
+    "evidence": "detail-page"
+  },
+  "vehicle-comet-s2": {
+    "title": "Pfister Comet S2",
+    "image": "https://gtatown.com/img/pc/vehicles/pfister-comet-s2-294.webp",
+    "source": "https://gtatown.com/garage/vehicles/pfister-comet-s2",
+    "evidence": "detail-page"
+  },
+  "vehicle-gauntlet-hellfire": {
+    "title": "Bravado Gauntlet Hellfire",
+    "image": "https://gtatown.com/img/pc/vehicles/bravado-gauntlet-hellfire-294.webp",
+    "source": "https://gtatown.com/garage/vehicles/bravado-gauntlet-hellfire",
+    "evidence": "detail-page"
+  },
+  "vehicle-carbon-rs": {
+    "title": "Nagasaki Carbon RS",
+    "image": "https://gtatown.com/img/pc/vehicles/nagasaki-carbon-rs-294.webp",
+    "source": "https://gtatown.com/garage/vehicles/nagasaki-carbon-rs",
+    "evidence": "detail-page"
+  },
+  "vehicle-cheetah-classic": {
+    "title": "'95 Grotti Cheetah",
+    "image": "https://gtatown.com/img/pc/vehicles/grotti-cheetah-95-294.webp",
+    "source": "https://gtatown.com/garage/vehicles/grotti-cheetah-95",
+    "evidence": "detail-page"
+  },
+  "vehicle-honeycomb-emerus": {
+    "title": "Honeycomb Emerus",
+    "image": "https://gtatown.com/img/pc/vehicles/honeycomb-emerus-294.webp",
+    "source": "https://gtatown.com/garage/vehicles/honeycomb-emerus",
+    "evidence": "detail-page"
+  }
+}
