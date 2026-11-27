@@ -8,7 +8,7 @@ export const CatalogCard = ({item,atlas,prefix='catalog'}) => <article className
 export const CatalogGrid = ({items,atlas,prefix='catalog',title='In the atlas'}) => {
   const [query,setQuery]=useState('');const [kind,setKind]=useState('All');const [sort,setSort]=useState('featured');const [page,setPage]=useState(1);const [view,setView]=useState('grid');
   const kinds=[...new Set(items.map(e=>e.kind))];
-  const found=items.filter(e=>(kind==='All'||e.kind===kind)&&`${e.title} ${e.category||''}`.toLowerCase().includes(query.toLowerCase().trim()));
+  const found=items.filter(e=>(kind==='All'||e.kind===kind)&&`${e.title} ${e.category||''} ${e.attributes?.['Credited performer']||''} ${e.attributes?.['Credited as']||''}`.toLowerCase().includes(query.toLowerCase().trim()));
   if(sort==='az')found.sort((a,b)=>a.title.localeCompare(b.title));if(sort==='za')found.sort((a,b)=>b.title.localeCompare(a.title));
   const pages=Math.max(1,Math.ceil(found.length/12));const current=Math.min(page,pages);const shown=found.slice((current-1)*12,current*12);
   return <section className="catalog-section" data-testid={`${prefix}-section`}>

@@ -1,5 +1,6 @@
-import { articles, characters, gallery, image, officialUrl, regions, vehicles } from './catalog';
+import { articles, gallery, image, officialUrl, regions, vehicles } from './catalog';
 import { descendantIds } from './sections';
+import { characterRecords } from './characterRecords';
 
 const base = (item, section, collections, status = 'Official source') => ({ ...item, path: `/${section}/${item.id}`, collections, status });
 const vehicleSource = 'https://www.gtabase.com/gta-6/vehicles/';
@@ -30,13 +31,6 @@ export const weaponEntries = [
   ['az1200','AZ1200','Shotguns','weapon-az1200','shotguns'],
 ].map(([id,title,category,photo,group])=>base({id:`weapon-${id}`,title,kind:'Weapon',category,image:image(photo),source:weaponSource,description:`${title} appears in GTABase’s GTA VI weapons reference. The type is recorded here; damage, prices and unlock requirements have not been independently checked for this atlas.`,details:[category,'Community reference'],attributes:{Type:category,Damage:'Not verified in this atlas',Price:'Not verified in this atlas',Availability:'Not verified in this atlas'}},'weapons',[`weapons/${group}`],'Community reference'));
 
-const supporting = [
-  ['cal-hampton','Cal Hampton','cal_hampton_01','A friend of Jason’s in the Leonida Keys. Cal is among the people introduced in Rockstar’s GTA VI character material.'],
-  ['brian-heder','Brian Heder','brian_heder_01','An associate of Jason’s in the Keys, introduced in Rockstar’s official GTA VI character material.'],
-  ['boobie-ike','Boobie Ike','boobie_ike_01','A Vice City figure with business interests and a connection to the music scene, introduced by Rockstar.'],
-  ['raul-bautista','Raul Bautista','raul_bautista_01','An experienced criminal introduced among Rockstar’s GTA VI characters.'],
-  ['real-dimez','Real Dimez','real_dimez_01','The musical duo Bae-Luxe and Roxy, introduced in Rockstar’s GTA VI character material.'],
-];
 const guides = [
   ['first-steps','GTA VI: setting and characters','guides/getting-started','vice_city_11','An introduction to Jason, Lucia and Leonida.',['Rockstar introduces GTA VI through Jason and Lucia, with Vice City and the wider state of Leonida as the backdrop. Their official profiles are the starting point for the character dossiers in this atlas.','The region index covers the city, coast and wilderness. Each dossier links to its source. The personal checklist tracks atlas pages, not your game save.','Official information, community catalog entries and fan editorial are labelled separately. Empty indexes have not received checked entries; they do not mean a feature is absent from the game.']],
   ['source-guide','Sources and verification','guides/getting-started','news-preview','How this atlas labels official material, community references and editorial.',['Rockstar’s public website and official trailers are primary sources for character introductions, regions and promotional media. Community sites are secondary references and are labelled accordingly.','A vehicle seen in footage does not establish its performance, price or unlock requirements. A track in a trailer does not establish a radio playlist. Data from previous GTA games is not substituted.','Fan observations are not additional Rockstar announcements. Each dossier includes its source and content label.']],
@@ -49,8 +43,7 @@ const guides = [
 
 export const entries = [
   ...regions.map(x=>base(x,'regions',['regions','locations'])),
-  ...characters.map(x=>({...base(x,'characters',['characters/protagonists']),spoiler:true})),
-  ...supporting.map(([id,title,photo,description])=>({...base({id,title,kind:'Character',category:'Supporting',image:image(photo),source:officialUrl,description},'characters',['characters/supporting']),spoiler:true})),
+  ...characterRecords.map(x=>base(x,'characters',[x.category==='Protagonist'?'characters/protagonists':'characters/supporting', ...(x.category==='Optional encounter / side contact'?['characters/side-contacts']:[])],x.status)),
   ...articles.map(x=>base(x,'news',['news/features'],'Fan editorial')),
   ...gallery.map(x=>base({...x,description:x.subtitle},'screenshots',['screenshots'])),
   ...vehicles.map(x=>base(x,'vehicles',[x.id==='backcountry-buggy'?'vehicles/off-road':x.id==='island-hopper'?'vehicles/aircraft':'vehicles/customisation'],'Visual spotlight')),
