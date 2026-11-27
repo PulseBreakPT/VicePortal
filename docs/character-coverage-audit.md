@@ -1,0 +1,129 @@
+# Character coverage audit
+
+Reviewed 2026-11-27. Scope: the existing 240-entry character directory, including 57 Main Cast and 145 Full Cast roles, 37 additional encounters and the Real Dimez duo. Separate radio, TV and in-world video game casts are not included in this count.
+
+- Total: 240
+- Unique IDs: 240
+- Credit-only: 24
+- Unconfirmed possible appearances: 3
+- Image references: 156
+- Without identified image: 84
+
+## Unresolved narrative identities
+
+- Kent Andrews — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Peewees Squatter — Official cast credit; possible appearance (unconfirmed) — https://findora.cirelay.com/gta-6/beggar-food
+- Isabella Brady — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Percy — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Bianca Celestino — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Andre Ye — Official cast credit; possible appearance (unconfirmed) — https://gta6data.com/gta-6-character-andre/
+- Cullen — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Nayib — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Sparky — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Zeek — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Marcel — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Leif Åland — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Alicia — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Erjon — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Jasir — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Joe Laurino — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Manny Muscles — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Hank — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Hugo el Capitan — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Kai — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Abel — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Cerise — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Drunk Aussie — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Debora — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Pablo — Official cast credit; possible appearance (unconfirmed) — https://gta6data.com/gta-6-character-pablo-the-y/
+- Marco — Official cast credit only — https://www.rockstargames.com/VI/credits
+- Ali — Official cast credit only — https://www.rockstargames.com/VI/credits
+
+## Missing images
+
+- KD
+- Kevin Kueh
+- Donatello's Assistant
+- Danny the Night Manager
+- Rocky Chavez
+- Kent Andrews
+- Cassie the Pillar
+- Marissa Tercio
+- Annabelle
+- Officer Jackson
+- Peewees Squatter
+- Isabella Brady
+- Percy
+- Mitico Mario
+- Bianca Celestino
+- Dodo Jeff
+- Sam
+- Andre Ye
+- Bodega
+- Cullen
+- Parole Officer Walsh
+- Zaria "Ri Ri" Luckett
+- Wax
+- Nayib
+- Megan the Pillar
+- Sparky
+- BootyBang Director
+- Zeek
+- Vypertec-100
+- Marcel
+- Leif Åland
+- Alicia
+- Erjon
+- Natalie the Pillar
+- Dodo Steve
+- Dante Fresh
+- Bert
+- Dodo Jeremy
+- Jasir
+- Cecilia Richardson (Real)
+- Joe Laurino
+- Manny Muscles
+- Lauren the Whisper
+- Mother Dodo Yvonne
+- Kodak Black
+- Danica Howard
+- Cecilia Richardson (Fake)
+- Chester
+- Rodney
+- Officer Gutierrez
+- Hank
+- Hugo el Capitan
+- Kai
+- Abel
+- Cerise
+- Drunk Aussie
+- Dodo Tyler
+- Priscilla Pace
+- Maryam Ansari
+- Debora
+- Pablo
+- Marco
+- Ali
+- DJ Pretzel
+- The Pianist
+- Sasha
+- Dorean
+- Sam the Bookie
+- Samantha
+- Lexy Campbell
+- Dodo Noah
+- Nico — Vape & Smoke Shop
+- Vanessa — Bayside tenant
+- Andrew Node
+- Dave — Circles of Hell
+- President Russo
+- The Pretender
+- Alan
+- Antonia
+- CO Wilson
+- Daniel Porter
+- Dobbs
+- Janet
+- Zoey
+
+A missing biography or portrait is not evidence that the role has no appearance in the game. External portrait references have not been independently visually checked or tested in a browser. Do not substitute actor photos, images from older games or unconfirmed lookalikes. The structural checks ran in the editing session; the full React build and Jest runner have not been executed.
