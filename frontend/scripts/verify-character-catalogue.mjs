@@ -8,7 +8,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 // Copy the modules to temporary .mjs files and resolve CRA's extensionless imports.
 const root = fileURLToPath(new URL('../', import.meta.url));
 const dir = await mkdtemp(join(tmpdir(), 'viceportal-characters-'));
-const modules = ['characterSourceIndex','characterCoverage','mediaCast','characterDiscoveries','characterRecords'];
+const modules = ['characterSourceIndex','characterCoverage','mediaCast','characterDiscoveries','characterEvidence','characterRecords'];
 try {
   for (const name of modules) {
     const source = await readFile(join(root,'src','data',name+'.js'),'utf8');
@@ -49,6 +49,11 @@ try {
     }
     if (row.attributes.Evidence.includes('Official cast credit only')||row.attributes.Evidence.includes('unconfirmed')) {
       assert.match(row.attributes['Biography availability'],/^Not verified/);
+    }
+    if (row.contextImage) {
+      assert.equal(new URL(row.contextImage).protocol,'https:');
+      assert.equal(new URL(row.contextImageSource).protocol,'https:');
+      assert.ok(row.contextCaption,'Missing contextual image caption');
     }
     if (row.image.startsWith('https://')) {
       assert.ok(row.imageSource&&row.imageSourceUrl&&row.imageFallback,row.id+' lacks image provenance');
