@@ -1,6 +1,7 @@
 import { characterRecords } from './characterRecords';
 import { mediaCast } from './mediaCast';
 import { characterDiscoveries } from './characterDiscoveries';
+import { characterEvidence } from './characterEvidence';
 
 describe('Character catalogue integrity', () => {
   const ids = new Set(characterRecords.map(record => record.id));
@@ -30,6 +31,18 @@ describe('Character catalogue integrity', () => {
       expect(record.title).toBe(title);
       expect(record.source).toBe(source);
       expect(record.attributes['Credited performer']).toBe('Not verified in this atlas');
+    }
+  });
+  test('contextual visuals and biography status remain explicit for all dossiers', () => {
+    for (const id of Object.keys(characterEvidence)) expect(ids.has(id)).toBe(true);
+    for (const row of characterRecords) {
+      expect(row.attributes['Biography availability']).toBeTruthy();
+      expect(row.attributes['Portrait availability']).toBeTruthy();
+      if (row.contextImage) {
+        expect(row.contextImage).toMatch(/^https:\/\//);
+        expect(row.contextImageSource).toMatch(/^https:\/\//);
+        expect(row.contextCaption).toBeTruthy();
+      }
     }
   });
   test('every entry has a description, source and explicit evidence level', () => {
