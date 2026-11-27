@@ -1185,42 +1185,42 @@ const additionalEncounters = [
   [
     "Martin",
     "martin",
-    "A security employee at Delights Cabaret."
+    "Delights Cabaret security worker; his appearance in Afternoon Delight depends on the selected approach."
   ],
   [
     "Nico — Vape & Smoke Shop",
     "nico-vape-smoke-shop",
-    "A named shop contact, not established as the credited Hitman."
+    "Yasmani introduces this contact during Chapter 3. Nico facilitates collection of stolen goods in the game and is not established as the Hitman."
   ],
   [
     "Pedro — café waiter",
     "pedro-cafe-waiter",
-    "A café employee in a documented gameplay encounter."
+    "Serves Mia and Lucia during Mami Knows Best. Mia says he is training to become a veterinarian."
   ],
   [
     "Raph",
     "raph",
-    "Named gameplay character with a documented appearance."
+    "Shayna’s partner, introduced through her optional post-prison storyline."
   ],
   [
     "Rob — exotic-car dealer",
     "rob-exotic-car-dealer",
-    "An exotic vehicle dealer encountered in the story."
+    "Dealership contact in Company Cars, reached through Santino after Valentina arranges access."
   ],
   [
     "Rocco",
     "rocco",
-    "Named gameplay character with a documented appearance."
+    "A contact in Andrés de León’s circle whom Jason meets in Adventures in Babysitting."
   ],
   [
     "Sandy",
     "sandy",
-    "Named gameplay character with a documented appearance."
+    "Receptionist at Lucretia Law Group, introduced in Lawyer Up."
   ],
   [
     "Santiago",
     "santiago",
-    "Named gameplay character with a documented appearance."
+    "Organizes street racing in Vice City and sends invitations after an optional Chapter 3 race."
   ],
   [
     "Tommy (Tomás)",
@@ -1230,17 +1230,17 @@ const additionalEncounters = [
   [
     "Vanessa — Bayside tenant",
     "vanessa-bayside-tenant",
-    "A tenant associated with Bayside."
+    "Former resident of the protagonists’ Bayside apartment, known through belongings and messages rather than a face-to-face meeting."
   ],
   [
     "Zach",
     "zach",
-    "Named gameplay character with a documented appearance."
+    "A Starlet Motel acquaintance who directs Lucia to Vicki during the Chapter 2 storyline."
   ],
   [
     "Andrew Node",
     "andrew-node",
-    "Named appearance documented in the character research."
+    "Identified through the No Flusher investigation, which connects his address to a custom Truffade Thrax."
   ],
   [
     "Camillo",
@@ -1250,7 +1250,7 @@ const additionalEncounters = [
   [
     "Dave — Circles of Hell",
     "dave-circles-of-hell",
-    "Named appearance connected to Circles of Hell."
+    "The transport contact who introduces the campsite encounter near Port Gellhorn."
   ],
   [
     "José Bermúdez",
@@ -1275,7 +1275,7 @@ const additionalEncounters = [
   [
     "The Pretender",
     "the-pretender",
-    "Named appearance documented in the character research."
+    "The final opponent in the optional Circles of Hell challenge."
   ]
 ];
 function enrichCharacter(item) {
