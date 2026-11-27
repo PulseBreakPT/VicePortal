@@ -1253,6 +1253,2266 @@
       "handling": 5.1,
       "source": "https://gtatown.com/garage/vehicles",
       "spoiler": false
+    },
+    {
+      "name": "Sandblasted Cliffhanger",
+      "maker": "Western",
+      "vehicle_class": "All-Terrain",
+      "speed": 5.3,
+      "acceleration": 6.2,
+      "handling": 5.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Spiderweb Coquette",
+      "maker": "Invetero",
+      "vehicle_class": "Retro",
+      "speed": 6.8,
+      "acceleration": 6.6,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Tropical Manchez",
+      "maker": "Maibatsu",
+      "vehicle_class": "Race Bikes",
+      "speed": 4.7,
+      "acceleration": 6.8,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'19 Bravado Buffalo",
+      "maker": "Bravado",
+      "vehicle_class": "Sedans",
+      "speed": 5.5,
+      "acceleration": 6.4,
+      "handling": 4.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Cultist Nightblade",
+      "maker": "Western",
+      "vehicle_class": "Chopper",
+      "speed": 4.5,
+      "acceleration": 6,
+      "handling": 6.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Drifter Elegy",
+      "maker": "Annis",
+      "vehicle_class": "Street Racer",
+      "speed": 7.1,
+      "acceleration": 7,
+      "handling": 2.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Emancipator Stallion",
+      "maker": "Classique",
+      "vehicle_class": "Ripped & Shredded",
+      "speed": 6.3,
+      "acceleration": 6.4,
+      "handling": 3.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Obsidian Sovereign",
+      "maker": "Western",
+      "vehicle_class": "Retro",
+      "speed": 4.9,
+      "acceleration": 5.8,
+      "handling": 5.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Peacock Sovereign",
+      "maker": "Western",
+      "vehicle_class": "Retro",
+      "speed": 4.9,
+      "acceleration": 5.9,
+      "handling": 5.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Sal's Chino",
+      "maker": "Dundreary",
+      "vehicle_class": "Retro",
+      "speed": 6,
+      "acceleration": 6.6,
+      "handling": 3.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Schyster PMP 700",
+      "maker": "Schyster",
+      "vehicle_class": "Sedans",
+      "speed": 5.8,
+      "acceleration": 6.4,
+      "handling": 4.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Dominator ASP",
+      "maker": "Vapid",
+      "vehicle_class": "Muscle Cars",
+      "speed": 5.7,
+      "acceleration": 6.2,
+      "handling": 4.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Western Sovereign 107",
+      "maker": "Western",
+      "vehicle_class": "Bikes",
+      "speed": 4.9,
+      "acceleration": 5.8,
+      "handling": 5.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'72 Western Cliffhanger",
+      "maker": "Western",
+      "vehicle_class": "Bikes",
+      "speed": 4.9,
+      "acceleration": 5.8,
+      "handling": 5.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Anarchist Dominator",
+      "maker": "Vapid",
+      "vehicle_class": "Ripped & Shredded",
+      "speed": 5.9,
+      "acceleration": 6.4,
+      "handling": 3.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Cherry Bomb Chino",
+      "maker": "Dundreary",
+      "vehicle_class": "Ripped & Shredded",
+      "speed": 6,
+      "acceleration": 6.6,
+      "handling": 3.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "DriveShaft Gauntlet",
+      "maker": "Bravado",
+      "vehicle_class": "DriveShaft Famous",
+      "speed": 6.3,
+      "acceleration": 6.3,
+      "handling": 3.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Magma Cliffhanger",
+      "maker": "Western",
+      "vehicle_class": "Retro",
+      "speed": 4.9,
+      "acceleration": 5.9,
+      "handling": 5.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Oubliette Coquette",
+      "maker": "Invetero",
+      "vehicle_class": "Retro",
+      "speed": 6.5,
+      "acceleration": 6.3,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Revenant Gauntlet",
+      "maker": "Bravado",
+      "vehicle_class": "Ripped & Shredded",
+      "speed": 6.3,
+      "acceleration": 6.2,
+      "handling": 3.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Smuggler Caracara",
+      "maker": "Vapid",
+      "vehicle_class": "All-Terrain",
+      "speed": 5.9,
+      "acceleration": 7.3,
+      "handling": 3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Turbo Ruiner",
+      "maker": "Imponte",
+      "vehicle_class": "Hot Rods",
+      "speed": 5.9,
+      "acceleration": 6.4,
+      "handling": 3.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Western Nightblade",
+      "maker": "Western",
+      "vehicle_class": "Bikes",
+      "speed": 4.4,
+      "acceleration": 5.9,
+      "handling": 5.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Big Shot Baller-STD",
+      "maker": "Gallivanter",
+      "vehicle_class": "Blinged Up",
+      "speed": 5.3,
+      "acceleration": 6.4,
+      "handling": 4.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Buckingham Jubilee",
+      "maker": "Buckingham",
+      "vehicle_class": "SUVs",
+      "speed": 5.4,
+      "acceleration": 6.1,
+      "handling": 4.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Gallivanter Baller ST-D",
+      "maker": "Gallivanter",
+      "vehicle_class": "SUVs",
+      "speed": 5.3,
+      "acceleration": 6.4,
+      "handling": 4.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Jackals Sanchez",
+      "maker": "Maibatsu",
+      "vehicle_class": "Clout Chaser",
+      "speed": 4.2,
+      "acceleration": 6.5,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Pink Sunset Baller",
+      "maker": "Gallivanter",
+      "vehicle_class": "Blinged Up",
+      "speed": 5.1,
+      "acceleration": 6.2,
+      "handling": 4.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Dominator",
+      "maker": "Vapid",
+      "vehicle_class": "Muscle Cars",
+      "speed": 5.6,
+      "acceleration": 6,
+      "handling": 4.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Ahol Blista",
+      "maker": "Dinka",
+      "vehicle_class": "Fine Art",
+      "speed": 5.6,
+      "acceleration": 6,
+      "handling": 3.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Apocalypse Stallion",
+      "maker": "Classique",
+      "vehicle_class": "Demolition Derby",
+      "speed": 6,
+      "acceleration": 6.4,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Cheshire Rebel",
+      "maker": "Karin",
+      "vehicle_class": "Demolition Derby",
+      "speed": 5.4,
+      "acceleration": 5.9,
+      "handling": 4.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Dirt Rocket Zombie Bobber",
+      "maker": "Western",
+      "vehicle_class": "All-Terrain",
+      "speed": 4.8,
+      "acceleration": 6,
+      "handling": 4.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Gallivanter Baller",
+      "maker": "Gallivanter",
+      "vehicle_class": "SUVs",
+      "speed": 5.1,
+      "acceleration": 6.2,
+      "handling": 4.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Memorial Sanchez",
+      "maker": "Maibatsu",
+      "vehicle_class": "Race Bikes",
+      "speed": 4.2,
+      "acceleration": 6.3,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Moses' Sultan",
+      "maker": "Emperor",
+      "vehicle_class": "Street Racer",
+      "speed": 4.9,
+      "acceleration": 6.1,
+      "handling": 4.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Soaring Phoenix",
+      "maker": "Imponte",
+      "vehicle_class": "Ripped & Shredded",
+      "speed": 5.8,
+      "acceleration": 6.3,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'50 Albany Hermes",
+      "maker": "Albany",
+      "vehicle_class": "Muscle Cars",
+      "speed": 5.5,
+      "acceleration": 6.1,
+      "handling": 3.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Battler Picador",
+      "maker": "Declasse",
+      "vehicle_class": "Stock Car",
+      "speed": 5.8,
+      "acceleration": 5.5,
+      "handling": 4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Black Moth Kamacho",
+      "maker": "Canis",
+      "vehicle_class": "All-Terrain",
+      "speed": 5.4,
+      "acceleration": 6.9,
+      "handling": 3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Cuban Hermes",
+      "maker": "Albany",
+      "vehicle_class": "Throwback",
+      "speed": 5.5,
+      "acceleration": 6.1,
+      "handling": 3.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Emperor Sultan",
+      "maker": "Emperor",
+      "vehicle_class": "Sports Cars",
+      "speed": 4.9,
+      "acceleration": 6.1,
+      "handling": 4.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Fathom FR36",
+      "maker": "Fathom",
+      "vehicle_class": "Coupes",
+      "speed": 5.3,
+      "acceleration": 5.8,
+      "handling": 4.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Maibatsu Penumbra",
+      "maker": "Maibatsu",
+      "vehicle_class": "Coupes",
+      "speed": 5.3,
+      "acceleration": 5.7,
+      "handling": 4.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Party Girl Penumbra",
+      "maker": "Maibatsu",
+      "vehicle_class": "Girlypop",
+      "speed": 5.3,
+      "acceleration": 5.7,
+      "handling": 4.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Princess Jubilee",
+      "maker": "Buckingham",
+      "vehicle_class": "Girlypop",
+      "speed": 5.1,
+      "acceleration": 6,
+      "handling": 4.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Seafoam Picador",
+      "maker": "Declasse",
+      "vehicle_class": "Lowriders",
+      "speed": 6,
+      "acceleration": 5.8,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Verdant Buccaneer",
+      "maker": "Albany",
+      "vehicle_class": "Lowriders",
+      "speed": 5.7,
+      "acceleration": 6.3,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Western Zombie Bobber",
+      "maker": "Western",
+      "vehicle_class": "Bikes",
+      "speed": 4.4,
+      "acceleration": 5.3,
+      "handling": 5.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'07 Bravado Buffalo",
+      "maker": "Bravado",
+      "vehicle_class": "Sedans",
+      "speed": 5.2,
+      "acceleration": 5.4,
+      "handling": 4.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'64 Invetero Coquette",
+      "maker": "Invetero",
+      "vehicle_class": "Muscle Cars",
+      "speed": 5.9,
+      "acceleration": 5.7,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'68 Classique Stallion",
+      "maker": "Classique",
+      "vehicle_class": "Muscle Cars",
+      "speed": 5.5,
+      "acceleration": 5.7,
+      "handling": 3.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'73 BF Injection",
+      "maker": "BF",
+      "vehicle_class": "Off-Road Vehicles",
+      "speed": 5,
+      "acceleration": 6,
+      "handling": 3.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'97 Maibatsu Penumbra FF",
+      "maker": "Maibatsu",
+      "vehicle_class": "Coupes",
+      "speed": 5.1,
+      "acceleration": 5.5,
+      "handling": 4.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Benefactor Schafter S",
+      "maker": "Benefactor",
+      "vehicle_class": "Sedans",
+      "speed": 4.8,
+      "acceleration": 5.7,
+      "handling": 4.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Berserker Sanchez",
+      "maker": "Maibatsu",
+      "vehicle_class": "Leonida Man",
+      "speed": 3.9,
+      "acceleration": 5.9,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Dinka Sugoi",
+      "maker": "Dinka",
+      "vehicle_class": "Sedans",
+      "speed": 5,
+      "acceleration": 5.8,
+      "handling": 4.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "DIY Chavos",
+      "maker": "Dinka",
+      "vehicle_class": "Leonida Man",
+      "speed": 5.4,
+      "acceleration": 5.8,
+      "handling": 3.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Hellraiser Avarus",
+      "maker": "LCC",
+      "vehicle_class": "Chopper",
+      "speed": 4.6,
+      "acceleration": 5.5,
+      "handling": 4.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Highwayman Sanchez",
+      "maker": "Maibatsu",
+      "vehicle_class": "Race Bikes",
+      "speed": 3.9,
+      "acceleration": 5.9,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Karin Intruder",
+      "maker": "Karin",
+      "vehicle_class": "Sedans",
+      "speed": 5.5,
+      "acceleration": 5.8,
+      "handling": 3.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Maibatsu Manchez",
+      "maker": "Maibatsu",
+      "vehicle_class": "Bikes",
+      "speed": 3.9,
+      "acceleration": 5.8,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Maibatsu Sanchez",
+      "maker": "Maibatsu",
+      "vehicle_class": "Bikes",
+      "speed": 3.9,
+      "acceleration": 5.9,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Monarch Avarus",
+      "maker": "LCC",
+      "vehicle_class": "Chopper",
+      "speed": 4.9,
+      "acceleration": 5.4,
+      "handling": 4.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "MyWays Manchez",
+      "maker": "Maibatsu",
+      "vehicle_class": "Leonida Man",
+      "speed": 3.9,
+      "acceleration": 5.8,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Obey Tailgater S",
+      "maker": "Obey",
+      "vehicle_class": "Sedans",
+      "speed": 4.8,
+      "acceleration": 5.9,
+      "handling": 4.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Raul's Coquette Classic",
+      "maker": "Invetero",
+      "vehicle_class": "Retro",
+      "speed": 5.9,
+      "acceleration": 5.8,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Sludge Wraith Injection",
+      "maker": "BF",
+      "vehicle_class": "All-Terrain",
+      "speed": 5.2,
+      "acceleration": 6.2,
+      "handling": 3.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Sunset Sanchez",
+      "maker": "Maibatsu",
+      "vehicle_class": "Mudder",
+      "speed": 3.9,
+      "acceleration": 5.9,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Übermacht Rebla GTS",
+      "maker": "Übermacht",
+      "vehicle_class": "SUVs",
+      "speed": 4.7,
+      "acceleration": 5.8,
+      "handling": 4.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Lowline",
+      "maker": "Vapid",
+      "vehicle_class": "Sedans",
+      "speed": 4.8,
+      "acceleration": 5.6,
+      "handling": 4.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'67 Vapid Dominator Buggy",
+      "maker": "Vapid",
+      "vehicle_class": "Off-Road Vehicles",
+      "speed": 5,
+      "acceleration": 6.1,
+      "handling": 3.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'72 Dinka Enduro",
+      "maker": "Dinka",
+      "vehicle_class": "Bikes",
+      "speed": 3.9,
+      "acceleration": 5.7,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Albany Cavalcade XL",
+      "maker": "Albany",
+      "vehicle_class": "SUVs",
+      "speed": 4.7,
+      "acceleration": 5.8,
+      "handling": 4.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Alpha Bison",
+      "maker": "Bravado",
+      "vehicle_class": "Law & Order",
+      "speed": 5.1,
+      "acceleration": 6.8,
+      "handling": 2.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Booty Bang Cavalcade",
+      "maker": "Albany",
+      "vehicle_class": "Clout Chaser",
+      "speed": 4.7,
+      "acceleration": 5.8,
+      "handling": 4.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Dinka Chavos XS",
+      "maker": "Dinka",
+      "vehicle_class": "Sedans",
+      "speed": 5.2,
+      "acceleration": 5.7,
+      "handling": 3.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Flipside Enduro",
+      "maker": "Dinka",
+      "vehicle_class": "All-Terrain",
+      "speed": 3.9,
+      "acceleration": 5.7,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Martha's Vamos",
+      "maker": "Declasse",
+      "vehicle_class": "Ripped & Shredded",
+      "speed": 5.7,
+      "acceleration": 5.8,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Narcos Cavalcade",
+      "maker": "Albany",
+      "vehicle_class": "Clout Chaser",
+      "speed": 4.7,
+      "acceleration": 5.8,
+      "handling": 4.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Obey Animus",
+      "maker": "Obey",
+      "vehicle_class": "Sedans",
+      "speed": 4.6,
+      "acceleration": 5.6,
+      "handling": 4.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'65 Vapid Dominator",
+      "maker": "Vapid",
+      "vehicle_class": "Muscle Cars",
+      "speed": 5.1,
+      "acceleration": 5.6,
+      "handling": 3.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'98 Karin Feroci",
+      "maker": "Karin",
+      "vehicle_class": "Sedans",
+      "speed": 5,
+      "acceleration": 5.4,
+      "handling": 4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bullion Gauntlet",
+      "maker": "Bravado",
+      "vehicle_class": "Ripped & Shredded",
+      "speed": 5.5,
+      "acceleration": 5.3,
+      "handling": 3.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Citrus Ganado",
+      "maker": "Vapid",
+      "vehicle_class": "Ripped & Shredded",
+      "speed": 5,
+      "acceleration": 5.7,
+      "handling": 3.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Ghosts Exposed Parkland",
+      "maker": "Declasse",
+      "vehicle_class": "Leonida Man",
+      "speed": 4.8,
+      "acceleration": 5.1,
+      "handling": 4.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Glitterbomb APOC",
+      "maker": "Übermacht",
+      "vehicle_class": "Girlypop",
+      "speed": 4.8,
+      "acceleration": 5.4,
+      "handling": 4.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Gunrunner Kamacho",
+      "maker": "Canis",
+      "vehicle_class": "All-Terrain",
+      "speed": 5,
+      "acceleration": 6.2,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Trash Rebel",
+      "maker": "Karin",
+      "vehicle_class": "Demolition Derby",
+      "speed": 4.9,
+      "acceleration": 5.3,
+      "handling": 4.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Übermacht APOC",
+      "maker": "Übermacht",
+      "vehicle_class": "Coupes",
+      "speed": 4.8,
+      "acceleration": 5.4,
+      "handling": 4.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'69 Bravado Gauntlet Custom",
+      "maker": "Bravado",
+      "vehicle_class": "Muscle Cars",
+      "speed": 5.4,
+      "acceleration": 5,
+      "handling": 3.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'72 Schyster Deviant",
+      "maker": "Schyster",
+      "vehicle_class": "Muscle Cars",
+      "speed": 5.1,
+      "acceleration": 5.2,
+      "handling": 3.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Axanthic Transgressor",
+      "maker": "Sirius",
+      "vehicle_class": "Ripped & Shredded",
+      "speed": 5.1,
+      "acceleration": 5.8,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Benefactor Dubsta",
+      "maker": "Benefactor",
+      "vehicle_class": "SUVs",
+      "speed": 4.7,
+      "acceleration": 5.5,
+      "handling": 3.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Blood Moon Bandito",
+      "maker": "BF",
+      "vehicle_class": "All-Terrain",
+      "speed": 3.9,
+      "acceleration": 6.8,
+      "handling": 3.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Born Free Deviant",
+      "maker": "Schyster",
+      "vehicle_class": "Patriot",
+      "speed": 5.1,
+      "acceleration": 5.3,
+      "handling": 3.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Gilded Dubsta",
+      "maker": "Benefactor",
+      "vehicle_class": "Blinged Up",
+      "speed": 4.7,
+      "acceleration": 5.5,
+      "handling": 3.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Jackals Caracara",
+      "maker": "Vapid",
+      "vehicle_class": "Clout Chaser",
+      "speed": 4.9,
+      "acceleration": 5.9,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Red Queen Dubsta",
+      "maker": "Benefactor",
+      "vehicle_class": "Blinged Up",
+      "speed": 4.7,
+      "acceleration": 5.5,
+      "handling": 3.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Teniente Manana",
+      "maker": "Albany",
+      "vehicle_class": "Lowriders",
+      "speed": 4.8,
+      "acceleration": 5.2,
+      "handling": 4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Truth & Justice Caracara",
+      "maker": "Vapid",
+      "vehicle_class": "Patriot",
+      "speed": 5,
+      "acceleration": 6.1,
+      "handling": 2.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Wyman's '67 Dominator Buggy",
+      "maker": "Vapid",
+      "vehicle_class": "Mudder",
+      "speed": 4.9,
+      "acceleration": 6,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "'20 Declasse Impaler",
+      "maker": "Declasse",
+      "vehicle_class": "Sedans",
+      "speed": 4.6,
+      "acceleration": 5.3,
+      "handling": 3.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'85 Übermacht Sentinel",
+      "maker": "Übermacht",
+      "vehicle_class": "Sports Cars",
+      "speed": 4.7,
+      "acceleration": 4.9,
+      "handling": 4.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Benefactor XLS",
+      "maker": "Benefactor",
+      "vehicle_class": "SUVs",
+      "speed": 4.4,
+      "acceleration": 5.3,
+      "handling": 4.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Blazin' Phoenix",
+      "maker": "Imponte",
+      "vehicle_class": "Ripped & Shredded",
+      "speed": 5,
+      "acceleration": 5.5,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Blue Silk Walton",
+      "maker": "Declasse",
+      "vehicle_class": "Donks",
+      "speed": 4.9,
+      "acceleration": 5.2,
+      "handling": 3.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bravado Gresley XT",
+      "maker": "Bravado",
+      "vehicle_class": "SUVs",
+      "speed": 4.3,
+      "acceleration": 5.6,
+      "handling": 4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Busted Cheater Rebel",
+      "maker": "Karin",
+      "vehicle_class": "Leonida Man",
+      "speed": 4.6,
+      "acceleration": 5.7,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Getaway Grouse",
+      "maker": "Willard",
+      "vehicle_class": "Demolition Derby",
+      "speed": 4.9,
+      "acceleration": 5.3,
+      "handling": 3.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Aleutian",
+      "maker": "Vapid",
+      "vehicle_class": "SUVs",
+      "speed": 4.3,
+      "acceleration": 5.1,
+      "handling": 4.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Riata",
+      "maker": "Vapid",
+      "vehicle_class": "Pickups",
+      "speed": 4.4,
+      "acceleration": 5.7,
+      "handling": 3.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Willard Transient",
+      "maker": "Willard",
+      "vehicle_class": "Sedans",
+      "speed": 4.8,
+      "acceleration": 5.2,
+      "handling": 3.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'70 Vapid Ganado",
+      "maker": "Vapid",
+      "vehicle_class": "Muscle Cars",
+      "speed": 4.7,
+      "acceleration": 5.3,
+      "handling": 3.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Beast Chino",
+      "maker": "Dundreary",
+      "vehicle_class": "Retro",
+      "speed": 4.8,
+      "acceleration": 5.3,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bret's Rebel",
+      "maker": "Karin",
+      "vehicle_class": "All-Terrain",
+      "speed": 4.6,
+      "acceleration": 5.7,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "DriveShaft Devanity",
+      "maker": "Albany",
+      "vehicle_class": "DriveShaft Famous",
+      "speed": 5.1,
+      "acceleration": 5.3,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Dundreary Landstalker XL",
+      "maker": "Dundreary",
+      "vehicle_class": "SUVs",
+      "speed": 4.4,
+      "acceleration": 5.2,
+      "handling": 3.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Karin Contender",
+      "maker": "Karin",
+      "vehicle_class": "Pickups",
+      "speed": 4.5,
+      "acceleration": 5.5,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Peppermint Stanier",
+      "maker": "Vapid",
+      "vehicle_class": "Donks",
+      "speed": 4.5,
+      "acceleration": 4.7,
+      "handling": 4.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Smush! Ganado",
+      "maker": "Vapid",
+      "vehicle_class": "Topper",
+      "speed": 4.7,
+      "acceleration": 5.3,
+      "handling": 3.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Stanier G2",
+      "maker": "Vapid",
+      "vehicle_class": "Sedans",
+      "speed": 4.5,
+      "acceleration": 4.7,
+      "handling": 4.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'72 Declasse Picador",
+      "maker": "Declasse",
+      "vehicle_class": "Muscle Cars",
+      "speed": 5.1,
+      "acceleration": 4.8,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'72 Declasse Tulip",
+      "maker": "Declasse",
+      "vehicle_class": "Muscle Cars",
+      "speed": 5.1,
+      "acceleration": 4.8,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'77 BF Bandito",
+      "maker": "BF",
+      "vehicle_class": "Off-Road Vehicles",
+      "speed": 3.6,
+      "acceleration": 6,
+      "handling": 3.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'90 Willard Lasso",
+      "maker": "Willard",
+      "vehicle_class": "Coupes",
+      "speed": 4.7,
+      "acceleration": 4.9,
+      "handling": 3.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'93 Dundreary Arcturus",
+      "maker": "Dundreary",
+      "vehicle_class": "Coupes",
+      "speed": 4.7,
+      "acceleration": 5,
+      "handling": 3.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'95 Declasse Impaler SZ",
+      "maker": "Declasse",
+      "vehicle_class": "Sedans",
+      "speed": 4.5,
+      "acceleration": 4.8,
+      "handling": 3.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'98 Vapid Stanier",
+      "maker": "Vapid",
+      "vehicle_class": "Sedans",
+      "speed": 4.5,
+      "acceleration": 4.6,
+      "handling": 4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Beer Buggy Bandito",
+      "maker": "BF",
+      "vehicle_class": "Patriot",
+      "speed": 3.6,
+      "acceleration": 6,
+      "handling": 3.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "BF Greta",
+      "maker": "BF",
+      "vehicle_class": "Sedans",
+      "speed": 4.3,
+      "acceleration": 4.7,
+      "handling": 4.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bravado Sojourn",
+      "maker": "Bravado",
+      "vehicle_class": "Vans",
+      "speed": 4.5,
+      "acceleration": 4.8,
+      "handling": 3.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Final Chapter Avarus",
+      "maker": "LCC",
+      "vehicle_class": "Chopper",
+      "speed": 3.6,
+      "acceleration": 4.7,
+      "handling": 4.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Gravekeeper Walton",
+      "maker": "Declasse",
+      "vehicle_class": "Demolition Derby",
+      "speed": 4.6,
+      "acceleration": 4.4,
+      "handling": 4.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "LCC Avarus",
+      "maker": "LCC",
+      "vehicle_class": "Bikes",
+      "speed": 3.6,
+      "acceleration": 4.7,
+      "handling": 4.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Midnight Sun Avarus",
+      "maker": "LCC",
+      "vehicle_class": "Chopper",
+      "speed": 3.6,
+      "acceleration": 4.7,
+      "handling": 4.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Muckspreader Bandito",
+      "maker": "BF",
+      "vehicle_class": "All-Terrain",
+      "speed": 3.6,
+      "acceleration": 6,
+      "handling": 3.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Springtime Sungrazer",
+      "maker": "Sirius",
+      "vehicle_class": "Retro",
+      "speed": 4.7,
+      "acceleration": 5.2,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Trippin' Picador",
+      "maker": "Declasse",
+      "vehicle_class": "Fine Art",
+      "speed": 5.1,
+      "acceleration": 4.8,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'67 Sirius Transgressor",
+      "maker": "Sirius",
+      "vehicle_class": "Muscle Cars",
+      "speed": 4.5,
+      "acceleration": 5.1,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'82 Imponte Ruiner",
+      "maker": "Imponte",
+      "vehicle_class": "Coupes",
+      "speed": 4.5,
+      "acceleration": 4.6,
+      "handling": 3.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'85 Dinka Blista",
+      "maker": "Dinka",
+      "vehicle_class": "Coupes",
+      "speed": 4.5,
+      "acceleration": 4.7,
+      "handling": 3.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Canis Mesa",
+      "maker": "Canis",
+      "vehicle_class": "SUVs",
+      "speed": 4.4,
+      "acceleration": 5.4,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Cousin Carlo's Akane",
+      "maker": "Declasse",
+      "vehicle_class": "Topper",
+      "speed": 4.3,
+      "acceleration": 5,
+      "handling": 3.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Declasse Akane",
+      "maker": "Declasse",
+      "vehicle_class": "Coupes",
+      "speed": 4.3,
+      "acceleration": 5,
+      "handling": 3.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "DriveShaft Hustler",
+      "maker": "Vapid",
+      "vehicle_class": "DriveShaft Famous",
+      "speed": 4,
+      "acceleration": 5.7,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Old Glory Caracara",
+      "maker": "Vapid",
+      "vehicle_class": "Patriot",
+      "speed": 4.3,
+      "acceleration": 5.3,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "She's All That Blista",
+      "maker": "Dinka",
+      "vehicle_class": "Girlypop",
+      "speed": 4.5,
+      "acceleration": 4.7,
+      "handling": 3.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Thirsty Grouse",
+      "maker": "Willard",
+      "vehicle_class": "Demolition Derby",
+      "speed": 4.6,
+      "acceleration": 4.6,
+      "handling": 3.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bravado Bison",
+      "maker": "Bravado",
+      "vehicle_class": "Pickups",
+      "speed": 4.2,
+      "acceleration": 4.6,
+      "handling": 3.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Declasse Yosemite 1500",
+      "maker": "Declasse",
+      "vehicle_class": "Pickups",
+      "speed": 4.3,
+      "acceleration": 4.5,
+      "handling": 3.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Karin Vivanite",
+      "maker": "Karin",
+      "vehicle_class": "Vans",
+      "speed": 4.5,
+      "acceleration": 4.2,
+      "handling": 4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Love Buggy Outlaw",
+      "maker": "Mer-Can",
+      "vehicle_class": "Mudder",
+      "speed": 3.4,
+      "acceleration": 5.8,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Pink Gin Tulip",
+      "maker": "Declasse",
+      "vehicle_class": "Donks",
+      "speed": 4.6,
+      "acceleration": 5.4,
+      "handling": 2.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Red Hot Hustler",
+      "maker": "Vapid",
+      "vehicle_class": "Hot Rods",
+      "speed": 4,
+      "acceleration": 5.3,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Rocket Slamvan",
+      "maker": "Vapid",
+      "vehicle_class": "Hot Rods",
+      "speed": 4,
+      "acceleration": 5.5,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Caracara 4x4",
+      "maker": "Vapid",
+      "vehicle_class": "Pickups",
+      "speed": 4.2,
+      "acceleration": 5.1,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Montagne",
+      "maker": "Vapid",
+      "vehicle_class": "SUVs",
+      "speed": 4,
+      "acceleration": 4.6,
+      "handling": 4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Reclaimer",
+      "maker": "Vapid",
+      "vehicle_class": "Pickups",
+      "speed": 4,
+      "acceleration": 5.3,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'77 Imponte Phoenix",
+      "maker": "Imponte",
+      "vehicle_class": "Muscle Cars",
+      "speed": 4.3,
+      "acceleration": 4.7,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'85 Karin Futo",
+      "maker": "Karin",
+      "vehicle_class": "Coupes",
+      "speed": 4.3,
+      "acceleration": 4.5,
+      "handling": 3.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Beach Candy Bobcat",
+      "maker": "Declasse",
+      "vehicle_class": "Girlypop",
+      "speed": 4.3,
+      "acceleration": 4.8,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Cotton Candy Devanity",
+      "maker": "Albany",
+      "vehicle_class": "Girlypop",
+      "speed": 4.5,
+      "acceleration": 4.6,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Declasse Granger 3600LX",
+      "maker": "Declasse",
+      "vehicle_class": "SUVs",
+      "speed": 4,
+      "acceleration": 4.5,
+      "handling": 3.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Karin Asterope GZ",
+      "maker": "Karin",
+      "vehicle_class": "Sedans",
+      "speed": 4.4,
+      "acceleration": 4.5,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Mer-Can Outlaw",
+      "maker": "Mer-Can",
+      "vehicle_class": "Off-Road Vehicles",
+      "speed": 3.3,
+      "acceleration": 5.8,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'59 Albany Devanity",
+      "maker": "Albany",
+      "vehicle_class": "Muscle Cars",
+      "speed": 4.4,
+      "acceleration": 4.5,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'84 Declasse Bobcat XL",
+      "maker": "Declasse",
+      "vehicle_class": "Pickups",
+      "speed": 4.2,
+      "acceleration": 4.7,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Applesauce Bobcat",
+      "maker": "Declasse",
+      "vehicle_class": "Retro",
+      "speed": 3.9,
+      "acceleration": 5.1,
+      "handling": 3.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bravado Bison 1800",
+      "maker": "Bravado",
+      "vehicle_class": "Pickups",
+      "speed": 4,
+      "acceleration": 4.7,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Donk Verus",
+      "maker": "Dinka",
+      "vehicle_class": "Leonida Man",
+      "speed": 3.1,
+      "acceleration": 5.6,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Flamingo Bobcat",
+      "maker": "Declasse",
+      "vehicle_class": "Leonida Man",
+      "speed": 4.2,
+      "acceleration": 4.7,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Karin Allander",
+      "maker": "Karin",
+      "vehicle_class": "SUVs",
+      "speed": 3.6,
+      "acceleration": 4.4,
+      "handling": 3.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Mountain Yosemite",
+      "maker": "Declasse",
+      "vehicle_class": "All-Terrain",
+      "speed": 4.4,
+      "acceleration": 4.7,
+      "handling": 2.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Nancy's Crawler",
+      "maker": "Canis",
+      "vehicle_class": "All-Terrain",
+      "speed": 3.3,
+      "acceleration": 5.7,
+      "handling": 3.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "'74 Declasse Vamos",
+      "maker": "Declasse",
+      "vehicle_class": "Muscle Cars",
+      "speed": 4.4,
+      "acceleration": 3.9,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'84 Karin Rebel",
+      "maker": "Karin",
+      "vehicle_class": "Pickups",
+      "speed": 3.8,
+      "acceleration": 4.4,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Azalea Street Blazer",
+      "maker": "Nagasaki",
+      "vehicle_class": "Girlypop",
+      "speed": 2.8,
+      "acceleration": 5.4,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bravado Bogan",
+      "maker": "Bravado",
+      "vehicle_class": "Sedans",
+      "speed": 4.2,
+      "acceleration": 4.1,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Canis Kamacho",
+      "maker": "Canis",
+      "vehicle_class": "SUVs",
+      "speed": 3.7,
+      "acceleration": 4.7,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Chrome Street Blazer",
+      "maker": "Nagasaki",
+      "vehicle_class": "All-Terrain",
+      "speed": 2.8,
+      "acceleration": 5.4,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "DriveShaft Youga",
+      "maker": "Bravado",
+      "vehicle_class": "DriveShaft Famous",
+      "speed": 4.1,
+      "acceleration": 4.2,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Monster Futo",
+      "maker": "Karin",
+      "vehicle_class": "Leonida Man",
+      "speed": 4,
+      "acceleration": 4.6,
+      "handling": 3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Nagasaki Street Blazer",
+      "maker": "Nagasaki",
+      "vehicle_class": "Bikes",
+      "speed": 2.8,
+      "acceleration": 5.4,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Tormentor Street Blazer",
+      "maker": "Nagasaki",
+      "vehicle_class": "Mudder",
+      "speed": 2.8,
+      "acceleration": 5.4,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Montagne Pickup",
+      "maker": "Vapid",
+      "vehicle_class": "Pickups",
+      "speed": 3.5,
+      "acceleration": 4.3,
+      "handling": 3.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'65 Albany Buccaneer",
+      "maker": "Albany",
+      "vehicle_class": "Muscle Cars",
+      "speed": 4.2,
+      "acceleration": 4.1,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'65 Dundreary Chino",
+      "maker": "Dundreary",
+      "vehicle_class": "Muscle Cars",
+      "speed": 3.9,
+      "acceleration": 4.2,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'80 Declasse Impaler",
+      "maker": "Declasse",
+      "vehicle_class": "Sedans",
+      "speed": 4.1,
+      "acceleration": 4,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'95 Bravado Bison 900",
+      "maker": "Bravado",
+      "vehicle_class": "Pickups",
+      "speed": 4.1,
+      "acceleration": 4.6,
+      "handling": 2.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Beer Nuts Yosemite",
+      "maker": "Declasse",
+      "vehicle_class": "Leonida Man",
+      "speed": 3.8,
+      "acceleration": 4.3,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Broken Oak Bobcat",
+      "maker": "Declasse",
+      "vehicle_class": "Hot Rods",
+      "speed": 3.7,
+      "acceleration": 4.7,
+      "handling": 3.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Cultivator Sandking",
+      "maker": "Vapid",
+      "vehicle_class": "All-Terrain",
+      "speed": 3.7,
+      "acceleration": 4.9,
+      "handling": 2.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Declasse Granger",
+      "maker": "Declasse",
+      "vehicle_class": "SUVs",
+      "speed": 3.6,
+      "acceleration": 4,
+      "handling": 3.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Gator Shack Bison",
+      "maker": "Bravado",
+      "vehicle_class": "Swamp Style",
+      "speed": 4.1,
+      "acceleration": 4.6,
+      "handling": 2.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Shrimp and Save Shifter",
+      "maker": "Vapid",
+      "vehicle_class": "Topper",
+      "speed": 3.6,
+      "acceleration": 4.2,
+      "handling": 3.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Sandking XL",
+      "maker": "Vapid",
+      "vehicle_class": "Pickups",
+      "speed": 3.6,
+      "acceleration": 4.3,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Shifter",
+      "maker": "Vapid",
+      "vehicle_class": "Vans",
+      "speed": 3.6,
+      "acceleration": 4.2,
+      "handling": 3.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'81 Declasse Walton",
+      "maker": "Declasse",
+      "vehicle_class": "Pickups",
+      "speed": 3.8,
+      "acceleration": 3.8,
+      "handling": 3.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'92 Willard Grouse",
+      "maker": "Willard",
+      "vehicle_class": "Sedans",
+      "speed": 4.1,
+      "acceleration": 3.8,
+      "handling": 3.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Albany Primo",
+      "maker": "Albany",
+      "vehicle_class": "Sedans",
+      "speed": 4,
+      "acceleration": 4.1,
+      "handling": 3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Allegiance Dorado",
+      "maker": "Bravado",
+      "vehicle_class": "Patriot",
+      "speed": 4,
+      "acceleration": 3.8,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Fruit Outlet Walton",
+      "maker": "Declasse",
+      "vehicle_class": "Topper",
+      "speed": 3.8,
+      "acceleration": 3.8,
+      "handling": 3.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Tap-Tap Walton",
+      "maker": "Declasse",
+      "vehicle_class": "Fine Art",
+      "speed": 3.8,
+      "acceleration": 3.8,
+      "handling": 3.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Montagne XL",
+      "maker": "Vapid",
+      "vehicle_class": "SUVs",
+      "speed": 3.8,
+      "acceleration": 3.7,
+      "handling": 3.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'55 Vapid Stanier",
+      "maker": "Vapid",
+      "vehicle_class": "Muscle Cars",
+      "speed": 3.9,
+      "acceleration": 3.7,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'77 Albany Manana",
+      "maker": "Albany",
+      "vehicle_class": "Muscle Cars",
+      "speed": 3.7,
+      "acceleration": 3.6,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bravado Bison 3800",
+      "maker": "Bravado",
+      "vehicle_class": "Pickups",
+      "speed": 3.5,
+      "acceleration": 4.1,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Cereza Manana",
+      "maker": "Albany",
+      "vehicle_class": "Lowriders",
+      "speed": 3.7,
+      "acceleration": 3.6,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Dinka Verus",
+      "maker": "Dinka",
+      "vehicle_class": "Bikes",
+      "speed": 2.8,
+      "acceleration": 4.6,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Holdout Sungrazer",
+      "maker": "Sirius",
+      "vehicle_class": "Retro",
+      "speed": 3.8,
+      "acceleration": 3.8,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Sunrise Emperor",
+      "maker": "Albany",
+      "vehicle_class": "Lowriders",
+      "speed": 4,
+      "acceleration": 4.1,
+      "handling": 2.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Sandking XT",
+      "maker": "Vapid",
+      "vehicle_class": "Pickups",
+      "speed": 3.6,
+      "acceleration": 4.3,
+      "handling": 3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'61 Sirius Sungrazer",
+      "maker": "Sirius",
+      "vehicle_class": "Sedans",
+      "speed": 3.6,
+      "acceleration": 3.6,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'67 Declasse Yosemite",
+      "maker": "Declasse",
+      "vehicle_class": "Muscle Cars",
+      "speed": 3.7,
+      "acceleration": 3.5,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'78 Declasse Tulip M-100",
+      "maker": "Declasse",
+      "vehicle_class": "Muscle Cars",
+      "speed": 3.7,
+      "acceleration": 3.7,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'85 Schyster Woodland",
+      "maker": "Schyster",
+      "vehicle_class": "Sedans",
+      "speed": 3.8,
+      "acceleration": 3.4,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'98 Declasse Burrito",
+      "maker": "Declasse",
+      "vehicle_class": "Vans",
+      "speed": 3.4,
+      "acceleration": 3.8,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "AudaCity Sandking",
+      "maker": "Vapid",
+      "vehicle_class": "Leonida Man",
+      "speed": 3.3,
+      "acceleration": 4.1,
+      "handling": 3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bravado Dorado",
+      "maker": "Bravado",
+      "vehicle_class": "SUVs",
+      "speed": 3.7,
+      "acceleration": 3.6,
+      "handling": 3.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bugstars Burrito",
+      "maker": "Declasse",
+      "vehicle_class": "Throwback",
+      "speed": 3.4,
+      "acceleration": 3.8,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "DriveShaft Marshall",
+      "maker": "Vapid",
+      "vehicle_class": "DriveShaft Famous",
+      "speed": 3.5,
+      "acceleration": 4.3,
+      "handling": 2.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Flower Child Woodland",
+      "maker": "Schyster",
+      "vehicle_class": "Fine Art",
+      "speed": 3.8,
+      "acceleration": 3.4,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Survivor Riata",
+      "maker": "Vapid",
+      "vehicle_class": "All-Terrain",
+      "speed": 3.3,
+      "acceleration": 4.2,
+      "handling": 3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Truther Burrito",
+      "maker": "Declasse",
+      "vehicle_class": "Leonida Man",
+      "speed": 3.4,
+      "acceleration": 3.8,
+      "handling": 3.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Beer Monster Marshall",
+      "maker": "Vapid",
+      "vehicle_class": "Patriot",
+      "speed": 3.3,
+      "acceleration": 4.1,
+      "handling": 2.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
     }
   ]
 }
