@@ -1,3 +1,4 @@
+import { mediaCast } from './mediaCast';
 import { characterCoverage } from './characterCoverage';
 import { characterSourceIndex } from './characterSourceIndex';
 // Character roster checked 2026-11-27 against Rockstar's published Main Cast and Full Cast.
@@ -1948,6 +1949,22 @@ function applyCoverage(item) {
     ...(portrait?{image:portrait.url,placeholderImage:false,imageFallback:placeholder,imageSource:portrait.source,imageSourceUrl:portrait.page}:{}),
   };
 }
+const mediaPrograms = item => mediaCast.filter(row=>row.existingId===item.id);
+function mergeMediaCredits(item) {
+  const appearances = mediaPrograms(item);
+  if(!appearances.length)return item;
+  return {...item,mediaCategories:[...new Set(appearances.map(x=>x.category))],
+    attributes:{...item.attributes,'Media credits':appearances.map(x=>x.program+' — '+x.role+' ('+x.performer+')').join('; ')},
+    relatedSources:[...(item.relatedSources||[]),{label:'Rockstar Games — official media cast',url:credits}].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i)};
+}
+function mediaRecord(row) {
+  const title = ['Himself','Herself','Presenter'].includes(row.role)?row.performer:row.role;
+  const portrait=row.portrait;
+  return {id:row.id,title,kind:'Character',category:row.category,mediaCategories:[row.category],subtitle:row.program,tag:row.category.toUpperCase(),image:portrait?.url||placeholder,placeholderImage:!portrait,...(portrait?{imageSource:portrait.source,imageSourceUrl:portrait.page,imageFallback:placeholder}:{}),source:credits,status:'Official source',spoiler:false,
+    description:row.performer+' is credited for '+row.role+' in '+row.program+', in the '+row.category.toLowerCase()+' cast. This credit establishes the role and programme, not an independent story biography.',
+    attributes:{Role:row.role,'Credited performer':row.performer,'Programme':row.program,'Media category':row.category,Evidence:'Official media cast credit','Biography availability':'Not verified in this atlas','Portrait availability':portrait?'Attributed external reference':'Not verified in this atlas'},
+    relatedSources:[{label:'Rockstar Games — official cast credits',url:credits},...(portrait?[{label:'GTA6DATA — image reference',url:portrait.page}]:[])],verifiedOn:'2026-11-27'};
+}
 export const characterRecords = [
   ...main.map(row=>enrichCharacter(record(row,'Main Cast'))),
   ...full.map(row=>enrichCharacter(record(row,'Full Cast'))),
@@ -1958,4 +1975,4 @@ export const characterRecords = [
    description:'Rap duo formed by Bae-Luxe and Roxy, signed to Only Raw Records. Their early collaboration with DWNPLY helped establish their career.',
    attributes:{Role:'Music duo',Members:'Bae-Luxe; Roxy Rashad',Label:'Only Raw Records',Evidence:'Official group profile'},
    relatedSources:[{label:'Rockstar Games — cast credits',url:credits},{label:'GTABase — character guide',url:gtabase}],verifiedOn:'2026-11-27'},
-].map(attachResearch).map(applyCoverage);
+].map(attachResearch).map(applyCoverage).map(mergeMediaCredits).concat(mediaCast.filter(row=>row.id).map(mediaRecord));
