@@ -7,17 +7,19 @@ describe('Character catalogue integrity', () => {
     expect(ids.size).toBe(characterRecords.length);
     expect(characterRecords.filter(record => record.attributes['Credit section'] === 'Main Cast')).toHaveLength(57);
     expect(characterRecords.filter(record => record.attributes['Credit section'] === 'Full Cast')).toHaveLength(145);
-    expect(characterRecords.length).toBeGreaterThanOrEqual(488);
+    expect(characterRecords.length).toBeGreaterThanOrEqual(557);
   });
-  test('all 259 media credits resolve to existing or new dossier IDs', () => {
-    expect(mediaCast).toHaveLength(259);
-    expect(mediaCast.filter(row => row.id)).toHaveLength(248);
+  test('all 328 media role labels resolve to existing or new dossier IDs', () => {
+    expect(mediaCast).toHaveLength(328);
+    expect(mediaCast.filter(row => row.id)).toHaveLength(317);
     expect(mediaCast.filter(row => row.existingId)).toHaveLength(11);
     for (const row of mediaCast) {
       expect(ids.has(row.id || row.existingId)).toBe(true);
       expect(row.role).toBeTruthy();
       expect(row.performer).toBeTruthy();
       expect(row.program).toBeTruthy();
+      expect(row.profileUrl).toMatch(/^https:\/\/gta6ops\.com\//);
+      expect(row.creditedRole).toBeTruthy();
     }
   });
   test('every entry has a description, source and explicit evidence level', () => {
