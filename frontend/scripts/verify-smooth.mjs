@@ -28,7 +28,7 @@ const paths=['../src/Smooth.css','../src/App.js','../src/hooks/useCardFlight.js'
 const [css,app,flight,scroll,nav,hero,reveal,kinetic,odo,cards,progress,media]=await Promise.all(paths.map(read));
 const requirements=[
  [css,['smooth-flight-ghost','smooth-letter','smooth-aurora','smooth-sweep','smooth-roll-in','smooth-roll-out','::details-content','smooth-accordion-in','data-cinema-active','--smooth-velocity','--cinema-parallax','prefers-reduced-motion:reduce','pointer:coarse','radial-gradient','focus-within']],
- [app,["import './Smooth.css'","import './NeonCipher.css'","useCardFlight(path,item?.id)",'<KineticTitle value="THE GTA VI EXPERIENCE"/>']],
+ [app,["import './Smooth.css'","import './NeonCipher.css'","useCardFlight(path,hiddenVehicle?undefined:item?.id)",'<KineticTitle value="THE GTA VI EXPERIENCE"/>']],
  [flight,['event.ctrlKey','event.metaKey','source.id!==itemId','image.currentSrc||image.src','duration:420','animation.finished.then(stop,stop)','ghost.remove()','cancelAnimationFrame(frame)','document.hidden']],
  [scroll,['velocityShift','clearTimeout(velocityTimer)','--smooth-velocity','requestAnimationFrame(update)']],
  [nav,['ResizeObserver','smooth-nav-indicator','type:"spring"','observer?.disconnect()']],
