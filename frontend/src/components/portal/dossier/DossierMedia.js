@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ArrowUpRight, Expand, Minimize, ImageOff, Play } from 'lucide-react';
 
-export const imageCredit = item => item.imageSource ? `Gameplay image reference via ${item.imageSource}${item.sharedPortrait?' (shared scene)':''} · respective rights holders` : item.placeholderImage ? 'Placeholder · character portrait not verified' : item.source.includes('gtatown') ? 'Image reference via GTA Town · respective rights holders' : item.source.includes('gtabase') ? 'Image reference via GTABase · respective rights holders' : 'Official promotional imagery © Rockstar Games';
+export const imageCredit = item => item.imageSource ? `Image reference via ${item.imageSource}${item.sharedPortrait?' (shared scene)':''} · respective rights holders` : item.placeholderImage ? 'Placeholder · character portrait not verified' : item.source.includes('gtatown') ? 'Image reference via GTA Town · respective rights holders' : item.source.includes('gtabase') ? 'Image reference via GTABase · respective rights holders' : 'Official promotional imagery © Rockstar Games';
 
 export const DossierMedia = ({item,expanded,setExpanded,onDimensions}) => {
   const [playing,setPlaying]=useState(false);
