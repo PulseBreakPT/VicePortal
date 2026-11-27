@@ -1861,8 +1861,8 @@ function attachResearch(item) {
   attrs['Portrait availability'] = portrait ? 'Attributed external reference' : item.placeholderImage ? 'Not verified in this atlas' : 'Existing image';
   return {...item,attributes:attrs,relatedSources:sources,
     ...(bio?{description:bio[0],paragraphs:[],status:'Community reference',source:ref.ops||item.source,details:['Official cast credit; community biography'],relatedCharacterIds:[...new Set([...(item.relatedCharacterIds||[]),...bio[3]])]}:{}),
-    ...(appearance?{paragraphs:[...(item.paragraphs||[]),appearance],details:['Official cast credit; appearance context distinguished from a biography']}:{}),
-    ...(portrait?{image:portrait,placeholderImage:false,imageFallback:placeholder,imageSource:'PowerPyx',imageSourceUrl:ref.powerpyx||ref.portrait}:{}),
+    ...(appearance?{status:'Community reference',source:ref.ops||item.source,paragraphs:[...(item.paragraphs||[]),appearance],details:['Official cast credit; appearance context distinguished from a biography']}:{}),
+    ...(portrait?{image:portrait,placeholderImage:false,imageFallback:placeholder,imageSource:'PowerPyx',sharedPortrait:['jaylah','marv'].includes(item.id),imageSourceUrl:ref.powerpyx||ref.portrait}:{}),
   };
 }
 
