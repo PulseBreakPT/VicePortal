@@ -1,5 +1,6 @@
-// Rockstar Games official credits, named role/performer pairs; checked 2026-11-27.
+// Rockstar Games official credits; named role/performer pairs, checked 2026-11-27.
 // Slash-separated roles remain as credited. Unassigned production staff, music and extra cast are excluded.
+// Third-party image references are labelled separately from official credits.
 export const mediaCast = [
   {
     "category": "Radio host",
@@ -1112,28 +1113,48 @@ export const mediaCast = [
     "program": "EL DESTINO EXTIENDE SUS ALAS",
     "role": "Marisol",
     "performer": "Camila Moreno",
-    "id": "media-el-destino-extiende-sus-alas-marisol-camila-moreno"
+    "id": "media-el-destino-extiende-sus-alas-marisol-camila-moreno",
+    "portrait": {
+      "url": "https://gta6data.com/wp-content/uploads/2026/11/g6d-cast-footage-marisol-destino-face-150x150.jpg",
+      "page": "https://gta6data.com/gta-6-character-marisol-destino/",
+      "source": "GTA6DATA"
+    }
   },
   {
     "category": "Television",
     "program": "EL DESTINO EXTIENDE SUS ALAS",
     "role": "Jose Luis",
     "performer": "J. Eddie Martinez",
-    "id": "media-el-destino-extiende-sus-alas-jose-luis-j-eddie-martinez"
+    "id": "media-el-destino-extiende-sus-alas-jose-luis-j-eddie-martinez",
+    "portrait": {
+      "url": "https://gta6data.com/wp-content/uploads/2026/11/g6d-cast-footage-jose-luis-de-ramos-face-150x150.jpg",
+      "page": "https://gta6data.com/gta-6-character-jose-luis-de-ramos/",
+      "source": "GTA6DATA"
+    }
   },
   {
     "category": "Television",
     "program": "EL DESTINO EXTIENDE SUS ALAS",
     "role": "Don Antonio",
     "performer": "Tony Chiroldes",
-    "id": "media-el-destino-extiende-sus-alas-don-antonio-tony-chiroldes"
+    "id": "media-el-destino-extiende-sus-alas-don-antonio-tony-chiroldes",
+    "portrait": {
+      "url": "https://gta6data.com/wp-content/uploads/2026/11/g6d-cast-footage-don-antonio-de-ramos-face-150x150.jpg",
+      "page": "https://gta6data.com/gta-6-character-don-antonio-de-ramos/",
+      "source": "GTA6DATA"
+    }
   },
   {
     "category": "Television",
     "program": "EL DESTINO EXTIENDE SUS ALAS",
     "role": "Dona Lucrecia",
     "performer": "Karina Arroyave",
-    "id": "media-el-destino-extiende-sus-alas-dona-lucrecia-karina-arroyave"
+    "id": "media-el-destino-extiende-sus-alas-dona-lucrecia-karina-arroyave",
+    "portrait": {
+      "url": "https://gta6data.com/wp-content/uploads/2026/11/g6d-cast-footage-dona-lucrecia-de-ramos-face-150x150.jpg",
+      "page": "https://gta6data.com/gta-6-character-dona-lucrecia-de-ramos/",
+      "source": "GTA6DATA"
+    }
   },
   {
     "category": "Television",
@@ -1217,7 +1238,12 @@ export const mediaCast = [
     "program": "MACCA'S MAGICAL SMOKE BOAT TOUR",
     "role": "Officer Buttski",
     "performer": "Henry Zebrowski",
-    "id": "media-maccas-magical-smoke-boat-tour-officer-buttski-henry-zebrowski"
+    "id": "media-maccas-magical-smoke-boat-tour-officer-buttski-henry-zebrowski",
+    "portrait": {
+      "url": "https://gta6data.com/wp-content/uploads/2026/11/g6d-cast-footage-officer-buttsk-face-150x150.jpg",
+      "page": "https://gta6data.com/gta-6-character-officer-buttsk/",
+      "source": "GTA6DATA"
+    }
   },
   {
     "category": "Television",
@@ -1252,7 +1278,12 @@ export const mediaCast = [
     "program": "RIGHT WING",
     "role": "Right Wing",
     "performer": "Dave Willis",
-    "id": "media-right-wing-right-wing-dave-willis"
+    "id": "media-right-wing-right-wing-dave-willis",
+    "portrait": {
+      "url": "https://gta6data.com/wp-content/uploads/2026/11/g6d-cast-footage-right-wing-face-150x150.jpg",
+      "page": "https://gta6data.com/gta-6-character-right-wing/",
+      "source": "GTA6DATA"
+    }
   },
   {
     "category": "Television",
@@ -1266,7 +1297,12 @@ export const mediaCast = [
     "program": "RIGHT WING",
     "role": "The Educated Woman",
     "performer": "Marianne McKenzie",
-    "id": "media-right-wing-the-educated-woman-marianne-mckenzie"
+    "id": "media-right-wing-the-educated-woman-marianne-mckenzie",
+    "portrait": {
+      "url": "https://gta6data.com/wp-content/uploads/2026/11/g6d-cast-footage-the-educated-woman-face-150x150.jpg",
+      "page": "https://gta6data.com/gta-6-character-the-educated-woman/",
+      "source": "GTA6DATA"
+    }
   },
   {
     "category": "Television",
@@ -1350,7 +1386,12 @@ export const mediaCast = [
     "program": "THE DOCTOR WILL SEE YOU NOW",
     "role": "Dr. Ray DeAngelo Harris",
     "performer": "J.B. Smoove",
-    "id": "media-the-doctor-will-see-you-now-dr-ray-deangelo-harris-j-b-smoove"
+    "id": "media-the-doctor-will-see-you-now-dr-ray-deangelo-harris-j-b-smoove",
+    "portrait": {
+      "url": "https://gta6data.com/wp-content/uploads/2026/11/g6d-cast-footage-dr-ray-de-angelo-harris-face-150x150.jpg",
+      "page": "https://gta6data.com/gta-6-character-dr-ray-de-angelo-harris/",
+      "source": "GTA6DATA"
+    }
   },
   {
     "category": "Television",
@@ -1511,14 +1552,24 @@ export const mediaCast = [
     "program": "WHERE DOES IT HURT?",
     "role": "Yarelis",
     "performer": "Camila Moreno",
-    "id": "media-where-does-it-hurt-yarelis-camila-moreno"
+    "id": "media-where-does-it-hurt-yarelis-camila-moreno",
+    "portrait": {
+      "url": "https://gta6data.com/wp-content/uploads/2026/11/g6d-cast-footage-yarelis-face-150x150.jpg",
+      "page": "https://gta6data.com/gta-6-character-yarelis/",
+      "source": "GTA6DATA"
+    }
   },
   {
     "category": "Television",
     "program": "WHERE DOES IT HURT?",
     "role": "Dr. Domingo Dominguez",
     "performer": "Tony Chiroldes",
-    "id": "media-where-does-it-hurt-dr-domingo-dominguez-tony-chiroldes"
+    "id": "media-where-does-it-hurt-dr-domingo-dominguez-tony-chiroldes",
+    "portrait": {
+      "url": "https://gta6data.com/wp-content/uploads/2026/11/g6d-cast-footage-dr-domingo-dominguez-face-150x150.jpg",
+      "page": "https://gta6data.com/gta-6-character-dr-domingo-dominguez/",
+      "source": "GTA6DATA"
+    }
   },
   {
     "category": "Television",
@@ -1532,7 +1583,12 @@ export const mediaCast = [
     "program": "WHERE DOES IT HURT?",
     "role": "Andreina",
     "performer": "Karina Arroyave",
-    "id": "media-where-does-it-hurt-andreina-karina-arroyave"
+    "id": "media-where-does-it-hurt-andreina-karina-arroyave",
+    "portrait": {
+      "url": "https://gta6data.com/wp-content/uploads/2026/11/g6d-cast-footage-andreina-face-150x150.jpg",
+      "page": "https://gta6data.com/gta-6-character-andreina/",
+      "source": "GTA6DATA"
+    }
   },
   {
     "category": "Television",
@@ -1777,7 +1833,12 @@ export const mediaCast = [
     "program": "TV NEWS",
     "role": "Alejandro Modero",
     "performer": "Luis Carlos de la Lombana",
-    "id": "media-tv-news-alejandro-modero-luis-carlos-de-la-lombana"
+    "id": "media-tv-news-alejandro-modero-luis-carlos-de-la-lombana",
+    "portrait": {
+      "url": "https://gta6data.com/wp-content/uploads/2026/11/g6d-cast-footage-alejandro-modero-face-150x150.jpg",
+      "page": "https://gta6data.com/gta-6-character-alejandro-modero/",
+      "source": "GTA6DATA"
+    }
   },
   {
     "category": "TV news",
