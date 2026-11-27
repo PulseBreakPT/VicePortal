@@ -721,8 +721,23 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/kd/"
+      },
+      {
+        "label": "Community gameplay profile",
+        "url": "https://gta6data.com/gta-6-character-kd/"
       }
-    ]
+    ],
+    "bio": {
+      "description": "A promoter who introduces Dre'Quan to Royce and can be approached for photographs during Headliners.",
+      "source": "https://gta6data.com/gta-6-character-kd/",
+      "mission": "Headliners",
+      "occupation": "Promoter",
+      "relations": [
+        "drequan-priest",
+        "royce-jones"
+      ]
+    },
+    "qualified": false
   },
   "rafa-de-leon-navarro": {
     "sources": [
@@ -809,8 +824,22 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/kevin-kueh/"
+      },
+      {
+        "label": "Community gameplay profile",
+        "url": "https://gta6data.com/gta-6-character-kevin-kueh/"
       }
-    ]
+    ],
+    "bio": {
+      "description": "A contact associated with the bridge meeting during Bird in the Hand.",
+      "source": "https://gta6data.com/gta-6-character-kevin-kueh/",
+      "mission": "Bird in the Hand",
+      "occupation": null,
+      "relations": [
+        "giorgio-gallo"
+      ]
+    },
+    "qualified": false
   },
   "the-hitman": {
     "sources": [
@@ -854,16 +883,22 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/donatellos-assistant/"
+      },
+      {
+        "label": "Community gameplay profile",
+        "url": "https://gta6data.com/gta-6-character-donatellos-assistant/"
       }
     ],
     "bio": {
-      "description": "Works for the actor Donatello Lambrini; further background is not documented.",
-      "source": "https://gta6.university/db/characters/donatellos-assistant/",
-      "occupation": null,
+      "description": "Represents Donatello Lambrini's party among the VIP choices during Headliners.",
+      "source": "https://gta6data.com/gta-6-character-donatellos-assistant/",
+      "mission": "Headliners",
+      "occupation": "Assistant",
       "relations": [
         "donatello-lambrini"
       ]
-    }
+    },
+    "qualified": false
   },
   "danny-the-night-manager": {
     "sources": [
@@ -874,13 +909,27 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/danny-the-night-manager/"
+      },
+      {
+        "label": "Community gameplay profile",
+        "url": "https://gta6data.com/gta-6-character-danny-the-night-manager/"
       }
     ],
     "bio": {
-      "description": "Credited as a night manager, with no established workplace or story chronology.",
-      "source": "https://gta6.university/db/characters/danny-the-night-manager/",
-      "occupation": "Night manager",
-      "relations": []
+      "description": "Danny is the Starlet Motel employee referred to by Linda during the room and painkiller searches. He also appears doing maintenance at the motel.",
+      "source": "https://gta6data.com/gta-6-character-danny-the-night-manager/",
+      "mission": "Girls' Trip",
+      "occupation": "Motel employee",
+      "relations": [
+        "linda",
+        "vicki"
+      ]
+    },
+    "qualified": false,
+    "portrait": {
+      "url": "https://leonidex.com/_next/image?url=%2Fmedia%2Fgameplay%2Fcharacters%2Fdanny%2F1.webp&w=3840&q=75",
+      "page": "https://leonidex.com/wiki/characters/danny",
+      "source": "Leonidex"
     }
   },
   "rocky-chavez": {
@@ -1199,16 +1248,23 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/all/#sam"
+      },
+      {
+        "label": "Community gameplay profile",
+        "url": "https://gta6data.com/gta-6-character-sam/"
       }
     ],
     "bio": {
-      "description": "Associated with Billy’s group of riders, as described in the community character directory. Distinct from other GTA characters named Sam.",
-      "source": "https://gta6wiki.eu/characters/all/#sam",
-      "occupation": null,
+      "description": "An experienced rider whom Billy introduces at the Thrillbilly Mud Club.",
+      "source": "https://gta6data.com/gta-6-character-sam/",
+      "mission": null,
+      "occupation": "Thrillbilly rider",
       "relations": [
-        "billy"
+        "billy",
+        "ej"
       ]
-    }
+    },
+    "qualified": false
   },
   "big-mike": {
     "sources": [
@@ -1348,8 +1404,30 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/wax/"
+      },
+      {
+        "label": "Community gameplay profile",
+        "url": "https://leonidex.com/wiki/characters/wax"
       }
-    ]
+    ],
+    "bio": {
+      "description": "Audio engineer at the Only Raw Records studio who records Real Dimez during Dealer's Choice. Also credited in the Drunk Kings podcast.",
+      "source": "https://leonidex.com/wiki/characters/wax",
+      "mission": "Dealer's Choice",
+      "occupation": "Audio engineer",
+      "relations": [
+        "drequan-priest",
+        "real-dimez",
+        "bae-luxe",
+        "roxy-rashad"
+      ]
+    },
+    "qualified": false,
+    "portrait": {
+      "url": "https://leonidex.com/_next/image?url=%2Fmedia%2Fgameplay%2Fcharacters%2Fwax%2F1.webp&w=3840&q=75",
+      "page": "https://leonidex.com/wiki/characters/wax",
+      "source": "Leonidex"
+    }
   },
   "shirley-baker": {
     "sources": [
@@ -1507,8 +1585,20 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/sparky/"
+      },
+      {
+        "label": "Community gameplay profile",
+        "url": "https://www.games2egypt.com/gta-6/characters/sparky"
       }
-    ]
+    ],
+    "bio": {
+      "description": "A community guide tentatively associates the credited Sparky with a mechanic known as Sparky Malarky at the Thrillbilly Mud Club. This identity is not confirmed by the official credits.",
+      "source": "https://www.games2egypt.com/gta-6/characters/sparky",
+      "mission": null,
+      "occupation": null,
+      "relations": []
+    },
+    "qualified": true
   },
   "pineapples": {
     "sources": [
@@ -1662,19 +1752,28 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/vypertec-100/"
+      },
+      {
+        "label": "Community gameplay profile",
+        "url": "https://leonidex.com/wiki/characters/vypertec-100"
       }
     ],
     "bio": {
-      "description": "A livestreamer using the moniker the Rage God, whose stream features DWNPLY’s sneaker launch in Ride or Die.",
-      "source": "https://gameta.gg/gta6/missions/ride-or-die/",
+      "description": "A streamer known as The Rage God who previously collaborated with DWNPLY and attends the Eris sneaker launch in Ride or Die.",
+      "source": "https://leonidex.com/wiki/characters/vypertec-100",
+      "mission": "Ride or Die",
       "occupation": "Livestreamer",
       "relations": [
         "dwnply",
         "drequan-priest"
-      ],
-      "mission": "Ride or Die"
+      ]
     },
-    "qualified": false
+    "qualified": false,
+    "portrait": {
+      "url": "https://leonidex.com/_next/image?url=%2Fmedia%2Fgameplay%2Fcharacters%2Fvypertec-100%2F1.webp&w=3840&q=75",
+      "page": "https://leonidex.com/wiki/characters/vypertec-100",
+      "source": "Leonidex"
+    }
   },
   "marcel": {
     "sources": [
@@ -2931,13 +3030,24 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/dorean/"
+      },
+      {
+        "label": "Community gameplay profile",
+        "url": "https://gta6data.com/gta-6-character-dorean/"
       }
     ],
     "bio": {
-      "description": "Identified as a bartender in GTA6 University; no venue or scene is confirmed.",
-      "source": "https://gta6.university/db/characters/dorean/",
-      "occupation": "Bartender",
+      "description": "Works at the Rusty Anchor and rings its bell during the celebration in Coming Home.",
+      "source": "https://gta6data.com/gta-6-character-dorean/",
+      "mission": "Coming Home",
+      "occupation": "Bar employee",
       "relations": []
+    },
+    "qualified": false,
+    "portrait": {
+      "url": "https://gta6data.com/wp-content/uploads/2026/11/g6d-cast-footage-dorean-face.jpg",
+      "page": "https://gta6data.com/gta-6-character-dorean/",
+      "source": "GTA6DATA"
     }
   },
   "doug": {
@@ -3219,5 +3329,13 @@ export const characterCoverage = {
       "page": "https://leonidex.com/wiki/characters/dobbs",
       "source": "Leonidex"
     }
+  },
+  "alan": {
+    "sources": [
+      {
+        "label": "GTA6DATA — Alan Coleman profile",
+        "url": "https://gta6data.com/gta-6-character-alan-coleman/"
+      }
+    ]
   }
 };
