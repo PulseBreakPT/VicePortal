@@ -1937,13 +1937,14 @@ function applyCoverage(item) {
   const sources = [...(item.relatedSources||[]),...(review.sources||[]),...(portrait?[{label:portrait.source+' — image reference',url:portrait.page}]:[])].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i);
   const attributes = {...item.attributes};
   if(bio) {
-    attributes.Evidence='Official cast credit; limited community context';
-    attributes['Biography availability']='Partial context only';
+    attributes.Evidence=review.qualified?'Official cast credit; possible appearance (unconfirmed)':'Official cast credit; limited community context';
+    attributes['Biography availability']=review.qualified?'Not verified in this atlas':'Partial context only';
+    if(bio.mission)attributes['Documented mission']=bio.mission;
     if(bio.occupation)attributes['Occupation / affiliation']=bio.occupation;
   }
   attributes['Portrait availability']=portrait||item.imageSource?'Attributed external reference':item.placeholderImage?'Not verified in this atlas':'Existing image';
-  return {...item,attributes,relatedSources:sources,
-    ...(bio?{description:bio.description,source:bio.source,status:'Community reference',details:['Official cast credit; limited context, not a full biography'],relatedCharacterIds:[...new Set([...(item.relatedCharacterIds||[]),...bio.relations])]}:{}),
+  return {...item,attributes,relatedSources:[...sources,...(bio&& !sources.some(s=>s.url===bio.source)?[{label:'Community context source',url:bio.source}]:[])],
+    ...(bio?{description:bio.description,source:bio.source,status:'Community reference',details:[review.qualified?'Possible appearance only; identity match unconfirmed':'Official cast credit; limited context, not a full biography'],relatedCharacterIds:[...new Set([...(item.relatedCharacterIds||[]),...bio.relations])]}:{}),
     ...(portrait?{image:portrait.url,placeholderImage:false,imageFallback:placeholder,imageSource:portrait.source,imageSourceUrl:portrait.page}:{}),
   };
 }
