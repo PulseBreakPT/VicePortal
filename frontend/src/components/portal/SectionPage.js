@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, FileSearch, ArrowRight } from 'lucide-react';
 import { entriesFor } from '../../data/portal';
+import { vehicleFeedInfo } from '../../data/vehicleRecords';
 import { sectionById } from '../../data/sections';
 import { Breadcrumbs, PageHero, Subsections } from './PortalLayout';
 import { CatalogGrid } from './CatalogGrid';
@@ -22,7 +23,8 @@ export default function SectionPage({section,atlas}) {
   const items=entriesFor(section.id);
   const progress=['progress','progress/checklist','saved'].includes(section.id);
   const compare=['compare','weapons/compare'].includes(section.id);
-  return <><Breadcrumbs section={section}/><PageHero section={section}/><Subsections section={section}/>{section.id==='map'&&<MapPage/>}{progress&&<ProgressPage atlas={atlas} savedOnly={section.id==='saved'}/>} {compare&&<ComparePage weapons={section.id==='weapons/compare'}/>}
+  return <><Breadcrumbs section={section}/><PageHero section={section}/><Subsections section={section}/>{section.id==='map'&&<MapPage/>}{progress&&<ProgressPage atlas={atlas} savedOnly={section.id==='saved'}/>} {compare&&<ComparePage weapons={section.id==='weapons/compare'} spoilers={atlas.spoilers}/>}
+    {(section.id==='garage'||section.id==='vehicles'||section.id.startsWith('vehicles/'))&&<p className="portal-muted" data-testid="vehicle-catalogue-source">{vehicleFeedInfo.complete?'Imported public vehicle catalogue.':'Partial source-checked vehicle snapshot; complete import not yet verified.'} <a href="https://gtatown.com/creators/data" target="_blank" rel="noreferrer">Data: GTA Town · CC BY 4.0</a></p>}
     {section.id==='guides/faq'&&<section className="faq-list" data-testid="faq-list">{faq.map(([q,a],i)=><details key={q}><summary data-testid={`faq-question-${i}`}>{q}<span>+</span></summary><p data-testid={`faq-answer-${i}`}>{a}</p></details>)}<a href="https://www.rockstargames.com/VI" target="_blank" rel="noreferrer" className="portal-source-link" data-testid="faq-source">Official GTA VI site <ArrowUpRight size={16}/></a></section>}
     {!progress&&!compare&&section.id!=='guides/faq'&&(items.length?<CatalogGrid items={items} atlas={atlas} title={section.id==='story'?'The people & the premise':section.id==='media'?'From the official archive':'In this collection'}/>:section.id!=='map'&&<Coverage section={section}/>)}
     {!items.length&&!progress&&!compare&&section.id!=='map'&&section.parent&&<div className="portal-return"><Link to={sectionById[section.parent].path} data-testid="return-parent">Explore {sectionById[section.parent].title}<ArrowRight size={17}/></Link><Link to="/directory" data-testid="return-directory">All destinations <ArrowUpRight size={17}/></Link></div>}
