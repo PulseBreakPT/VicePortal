@@ -37,10 +37,10 @@ const grid=await read('../src/components/portal/CatalogGrid.js');
 for(const marker of ['Vehicle manufacturer','Vehicle class','vehicleStats','Data: GTA Town'])check(grid.includes(marker),'Missing catalogue integration: '+marker);
 
 const refs=JSON.parse(await read('../src/data/vehicleImageRefs.json'));
-const {collectImageReferences,collectSupplementalImages,validImageReference}=await import('./sync-vehicle-images.mjs');
+const {collectImageReferences,collectSupplementalImages,collectTrackerImages,validImageReference}=await import('./sync-vehicle-images.mjs');
 const {vehicleSlug}=await import('../src/data/vehicleNormalizer.mjs');
 const imgURLs=new Set();
-check(Object.keys(refs).length>=11,'Reviewed vehicle image coverage regressed');
+check(Object.keys(refs).length>=13,'Reviewed vehicle image coverage regressed');
 for(const [id,ref] of Object.entries(refs)){
  const row=rows.find(r=>r.id===id);
  check(Boolean(row)&&vehicleSlug(row.title)===vehicleSlug(ref.title),'Image title mismatch: '+id);
@@ -66,7 +66,20 @@ check(Object.keys(gpsRefs).length===1&&gpsRefs['vehicle-dantes-vitello']?.image=
 const alcastFixture='<tr><td><img alt="Progen Seaspray Emerus GTA 6 Icon" src="https://alcasthq.com/wp-content/uploads/2026/11/Progen-Seaspray-Emerus-GTA-6-Icon.webp"></td><td>Progen Seaspray Emerus</td></tr><tr><td><img alt="Progen Black Widow Emerus GTA 6 Icon" src="https://alcasthq.com/wp-content/uploads/2026/11/Progen-Seaspray-Emerus-GTA-6-Icon.webp"></td><td>Progen Black Widow Emerus</td></tr>';
 const iconRefs=collectSupplementalImages(alcastFixture,rows,'alcast');
 check(Object.keys(iconRefs).length===1&&validImageReference(iconRefs['vehicle-seaspray-emerus'],rows.find(row=>row.id==='vehicle-seaspray-emerus')),'Icon parser must reject wrong variant');
+const trackerFixture='<img alt="Sandblasted Cliffhanger" src="https://gtavibase.win/assets/media/gta-6/tools/vehicles/western-sandblasted-cliffhanger.webp?v=1795545412"><img alt="Tactical Caddy" src="https://gtavibase.win/assets/media/gta-6/tools/vehicles/western-sandblasted-cliffhanger.webp?v=1795545412">';
+const trackerRefs=collectTrackerImages(trackerFixture,rows);
+check(Object.keys(trackerRefs).length===1&&trackerRefs['vehicle-sandblasted-cliffhanger']?.image===refs['vehicle-sandblasted-cliffhanger'].image,'Tracker must reject the wrong variant');
+const localFiles=new Set();
+for(const [id,ref] of Object.entries(refs)){
+ if(!ref.local)continue;
+ check(ref.local.path==='/images/vehicles/'+id+'.webp'&&Boolean(ref.local.permissionSource),'Local image must have exact ID and permission evidence');
+ check(!localFiles.has(ref.local.path),'Duplicate local path');localFiles.add(ref.local.path);
+ const bytes=await readFile(new URL('../public'+ref.local.path,import.meta.url));
+ check(bytes.subarray(0,4).toString()==='RIFF'&&bytes.subarray(8,12).toString()==='WEBP','Local file is not WebP');
+ const {createHash}=await import('node:crypto');
+ check(createHash('sha256').update(bytes).digest('hex')===ref.local.sha256,'Local image integrity mismatch');
+}
 const renderer=await read('../src/data/vehicleRecords.js');
-check(renderer.includes('imageRef?imageRef.image:placeholder')&&!renderer.includes('legacyImages'),'Vehicle image renderer must use reviewed references');
+check(renderer.includes('imageRef?(imageRef.local?.path||imageRef.image):placeholder')&&!renderer.includes('legacyImages'),'Vehicle image renderer must use reviewed references');
 
 console.log(JSON.stringify({vehicles:rows.length,complete:feed.complete,imageReferences:Object.keys(refs).length,checks},null,2));
