@@ -40,6 +40,8 @@ jobs:
         run: yarn install --non-interactive --network-timeout 120000
       - name: Download and validate GTA Town creator datasets
         run: node scripts/import-creator-data.mjs
+      - name: Verify Universal Data Engine
+        run: node scripts/verify-universal-data.mjs
       - name: Verify creator dataset integration
         run: node scripts/verify-creator-data.mjs
       - name: Verify cinematic motion bounds and integration

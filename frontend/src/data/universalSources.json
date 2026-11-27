@@ -1,0 +1,65 @@
+{
+  "gtadb": {
+    "repo": "rolux/gtadb.org",
+    "sha": "05f46851b77222ef7be64abde1f946013b74c521",
+    "path": "map/data/6/landmarks.json",
+    "license": "CC BY 4.0",
+    "credit": "GTADB.ORG and contributors",
+    "mode": "import"
+  },
+  "openmap": {
+    "repo": "fbritoferreira/gta6",
+    "sha": "90e1acf92e9e8e26437259dc132db323db41483e",
+    "path": "public/data/places.json",
+    "license": "CC BY 4.0",
+    "credit": "Open GTA 6 Map (fbritoferreira)",
+    "mode": "import"
+  },
+  "radio": {
+    "repo": "NotHGM/gta6-hash-database",
+    "sha": "ce689ccabc54c09182219aae093d8ee2c84b7547",
+    "path": "data/radio/stations.tsv",
+    "trackPath": "data/radio/tracklist.tsv",
+    "license": "MIT (radio catalog only)",
+    "credit": "NotHGM and radio catalogue contributors",
+    "mode": "import"
+  },
+  "prices": {
+    "repo": "LeonidaLab/gta6-price-index",
+    "sha": "b25db624fb739b511b48a1ea2910cbfa4ce1730e",
+    "path": "gta6-price-index.json",
+    "license": "CC BY 4.0",
+    "credit": "Leonida Lab",
+    "mode": "import"
+  },
+  "hq": {
+    "repo": "xpbeats00-sudo/gta6-hq",
+    "sha": "ed53d8ccc40febf45949b902a5a6e8e86d78a53c",
+    "mode": "research",
+    "reason": "No verified reusable encyclopedia data license; game media explicitly not cleared."
+  },
+  "hash": {
+    "repo": "NotHGM/gta6-hash-database",
+    "sha": "ce689ccabc54c09182219aae093d8ee2c84b7547",
+    "mode": "research",
+    "reason": "Mixed upstream permissions; no blanket import of hashes or technical tables."
+  },
+  "atlas": {
+    "repo": "navanem/gta6-leonida-atlas",
+    "sha": "4c40cb6d93c82dab37401ef13492234a8dbf9e61",
+    "mode": "upstream",
+    "reason": "GTADB-derived CC BY data already imported directly; AGPL code and Rockstar assets not copied."
+  },
+  "saverift": {
+    "repo": "SaveRift/SaveRift-Ecosystem",
+    "sha": "d4193d928e50596c013cb4855e78f6d68660eb70",
+    "mode": "research",
+    "reason": "Per-record evidence and permitted use differ; candidates and proprietary payloads excluded."
+  },
+  "mcp": {
+    "repo": "LeonidaLab/gta6-mcp",
+    "sha": "a65b12b0b5a62ee85d449daeeb945bc67129b768",
+    "mode": "research",
+    "reason": "MIT server code is not an independent data license; do not execute external code or copy unverified responses."
+  }
+}

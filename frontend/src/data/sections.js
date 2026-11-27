@@ -96,6 +96,7 @@ const rows = [
   ['wallpapers','Wallpapers','media','Download the available source images. No upscaled 4K versions are offered.','rs-poster-2'],
   ['covers','Covers & key art','media','Promotional key art. Not confirmed retail packaging.','rs-poster-2'],
   ['game','Game information',null,'Platforms, development and release information.','jason_and_lucia_01'],
+  ['game/prices','Global price index','game','Historical storefront prices by country and platform, attributed to Leonida Lab.','rs-poster-2'],
   ['game/editions','Editions & platforms','game','Platform and edition information from official announcements.','rs-poster-2'],
   ['online','GTA VI Online','game','GTA VI multiplayer references. GTA Online details from other games are not assumed to apply.','vice_city_11'],
   ['game/development','Development','game','Public Rockstar material about GTA VI.','rs-trailer2'],
