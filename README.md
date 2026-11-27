@@ -21,7 +21,7 @@
 
 </div>
 
-> **Website:** [pulsebreakpt.github.io/VicePortal/](https://pulsebreakpt.github.io/VicePortal/) — GitHub Pages project landing page. As checked on November 27, 2026, Pages serves the repository documentation; the interactive React application has not been verified as deployed there. Run the application locally using the instructions below.
+> **Website:** [pulsebreakpt.github.io/VicePortal/](https://pulsebreakpt.github.io/VicePortal/) — the intended URL for the original Vice Atlas React application. The repository previously served only documentation. The application deployment workflow is now configured; a successful production deployment must be verified separately.
 
 ---
 
@@ -140,7 +140,7 @@ For a production bundle:
 yarn build
 ```
 
-The build is written to `frontend/build/`. A production host must support client-side route fallback and the configured public asset base. GitHub Pages currently serves the project landing page, not a verified application build.
+The build is written to `frontend/build/`. A production host must support client-side route fallback and the configured public asset base. For GitHub Pages, the [Publish Vice Atlas workflow](.github/workflows/publish-pages.yml) builds the original frontend with the correct project base and prepares deep-link fallback. In repository Settings → Pages, select GitHub Actions as the publishing source. Then run the workflow on main.
 
 ### Optional backend
 
@@ -204,7 +204,7 @@ Corrections, source-backed catalogue additions and accessibility improvements ar
 - Expand verified biographies and replace missing or low-resolution portraits.
 - Improve source traceability and remote image reliability.
 - Complete and validate remaining catalogue sections.
-- Verify the production build and publish the interactive application.
+- Verify the production deployment of the interactive application.
 
 ## Disclaimer
 
