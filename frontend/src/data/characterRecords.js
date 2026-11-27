@@ -1,3 +1,4 @@
+import { characterEvidence } from './characterEvidence';
 import { characterDiscoveries } from './characterDiscoveries';
 import { mediaCast } from './mediaCast';
 import { characterCoverage } from './characterCoverage';
@@ -1966,6 +1967,15 @@ function mediaRecord(row) {
     attributes:{Role:row.role,'Original credit':row.creditedRole||row.role,'Credited performer':row.performer,'Programme':row.program,'Media category':row.category,Evidence:'Official media cast credit','Biography availability':'Not verified in this atlas','Portrait availability':portrait?'Attributed external reference':'Not verified in this atlas'},
     relatedSources:[{label:'Rockstar Games — official cast credits',url:credits},...(row.profileUrl?[{label:'GTA6Ops — individual credit profile',url:row.profileUrl}]:[]),...(portrait?[{label:'GTA6DATA — image reference',url:portrait.page}]:[])],verifiedOn:'2026-11-27'};
 }
+function applyEvidence(item) {
+  const evidence=characterEvidence[item.id];
+  if(!evidence)return item;
+  const attributes={...item.attributes,'Biography availability':'Documented partial context','Evidence':item.attributes['Credit section']||item.id.startsWith('media-')?'Official cast credit; community gameplay context':'Community gameplay context'};
+  if(evidence.contextImage)attributes['Contextual image availability']='Documented scene; not an isolated portrait';
+  return {...item,description:evidence.description,status:'Community reference',spoiler:item.spoiler||!!evidence.spoiler,attributes,
+    ...(evidence.contextImage?{contextImage:evidence.contextImage,contextCaption:evidence.contextCaption,contextImageSource:evidence.source}:{}),
+    relatedSources:[...(item.relatedSources||[]),{label:'Gameplay and biography evidence',url:evidence.source}].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i)};
+}
 export const characterRecords = [
   ...main.map(row=>enrichCharacter(record(row,'Main Cast'))),
   ...full.map(row=>enrichCharacter(record(row,'Full Cast'))),
@@ -1977,4 +1987,4 @@ export const characterRecords = [
    description:'Rap duo formed by Bae-Luxe and Roxy, signed to Only Raw Records. Their early collaboration with DWNPLY helped establish their career.',
    attributes:{Role:'Music duo',Members:'Bae-Luxe; Roxy Rashad',Label:'Only Raw Records',Evidence:'Official group profile'},
    relatedSources:[{label:'Rockstar Games — cast credits',url:credits},{label:'GTABase — character guide',url:gtabase}],verifiedOn:'2026-11-27'},
-].map(attachResearch).map(applyCoverage).map(mergeMediaCredits).concat(mediaCast.filter(row=>row.id).map(mediaRecord));
+].map(attachResearch).map(applyCoverage).map(mergeMediaCredits).concat(mediaCast.filter(row=>row.id).map(mediaRecord)).map(applyEvidence);
