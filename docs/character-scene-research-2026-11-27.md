@@ -1,6 +1,6 @@
 # Character scene research — November 27, 2026
 
-This second pass adds 28 source-attributed scene summaries to existing dossiers. It verifies individual credit references for 9 unresolved story roles without claiming a biography for them. The 589 dossier catalog has NOT received a fresh individual web review of every record. No new identities, portraits, unverified performer matches or guessed story outcomes have been added.
+This second pass adds 43 source-attributed scene summaries to existing dossiers. It verifies individual credit references for 9 unresolved story roles without claiming a biography for them. The 589 dossier catalog has NOT received a fresh individual web review of every record. No new identities, portraits, unverified performer matches or guessed story outcomes have been added.
 
 ## Documented scenes
 
@@ -49,3 +49,23 @@ A similarly named Hank Wright appears in an in-game advertisement; the reviewed 
 - vinny-capsik: https://gta6ops.com/story/vinny-capsik/
 - nathan-nate-bozer: https://gta6ops.com/story/nate-bozer/
 - francisco-cisco-delgado: https://gta6ops.com/story/francisco-delgado/
+
+## Further individually reviewed profiles
+
+- raul-bautista: https://gta6ops.com/story/raul-bautista/
+- andrea: https://gta6ops.com/story/andrea/
+- ernesto: https://gta6ops.com/story/ernesto/
+- raymond: https://gta6ops.com/story/raymond/
+- mia-caminos: https://www.gtabase.com/gta-6/characters/mia-caminos
+- randy-kozlov: https://www.gtabase.com/gta-6/characters/randy
+- tyrone-russo: https://www.gtabase.com/gta-6/characters/tyrone
+- dunk: https://www.gtabase.com/gta-6/characters/dunk
+- alvan-west: https://www.gtabase.com/gta-6/characters/alvan-west
+- kirk: https://www.gtabase.com/gta-6/characters/kirk
+- bae-luxe: https://gta6ops.com/story/bae-luxe/
+- roxy-rashad: https://gta6ops.com/story/roxy-rashad/
+- dwnply: https://gta6ops.com/story/dwnply/
+- boobie-ike: https://gta6ops.com/story/boobie-ike/
+- yago-jimenez: https://www.gtabase.com/gta-6/strangers/join-a-street-race
+
+Ernesto's lead summary now explicitly records the source disagreement. No definitive occupation is asserted by the supplemental research.

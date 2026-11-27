@@ -460,6 +460,192 @@ export const characterSceneResearch = {
       "raina-koleva",
       "lucia-caminos"
     ]
+  },
+  "raul-bautista": {
+    "source": "https://gta6ops.com/story/raul-bautista/",
+    "text": "Chapter 3 brings the protagonists into Raul’s specialist crew. Credit Check is the crew introduction; a subsequent call opens the Sinfrontera National Bank storyline.",
+    "fields": {
+      "Documented story chapter": "3",
+      "Documented appearances": "First Impressions; Credit Check; Sinfrontera National Bank"
+    },
+    "relations": [
+      "karim",
+      "andrea",
+      "jason-duval",
+      "lucia-caminos"
+    ]
+  },
+  "andrea": {
+    "source": "https://gta6ops.com/story/andrea/",
+    "text": "Already part of Raul’s team before meeting the protagonists, Andrea handles coordination and takes part in field assignments. In The Missing Link she adopts the name Maria, with Lucia posing as her cousin Izzy. Her earlier career and surname are undocumented.",
+    "fields": {
+      "Occupation": "Crew communications and coordination",
+      "Documented alias": "Maria (undercover identity)",
+      "Documented appearances": "First Impressions; Credit Check; The Missing Link"
+    },
+    "relations": [
+      "raul-bautista",
+      "lucia-caminos",
+      "omar-dawoud"
+    ]
+  },
+  "ernesto": {
+    "source": "https://gta6ops.com/story/ernesto/",
+    "text": "Ernesto is heard by telephone in Bricked Up, warning Raymond about approaching police. Raymond suspects him of informing, but that accusation is not confirmed. GTABase associates Ernesto with San4San; PowerPyx leaves his occupation open.",
+    "fields": {
+      "Documented mission": "Bricked Up",
+      "Appearance type": "Telephone dialogue",
+      "Occupation evidence": "Disputed between community sources; not established"
+    },
+    "relations": [
+      "raymond"
+    ],
+    "clarifiedDescription": "A contact heard warning Raymond during Bricked Up. Community guides disagree about his precise occupation and affiliation."
+  },
+  "raymond": {
+    "source": "https://gta6ops.com/story/raymond/",
+    "text": "Boobie sends Jason and Lucia to Raymond’s operation in Chapter 3. Their collection in Bricked Up is interrupted by a police raid; a telephone warning from Ernesto is part of the encounter.",
+    "fields": {
+      "Documented mission": "Bricked Up",
+      "Documented story chapter": "3",
+      "Location": "Venture Apartments"
+    },
+    "relations": [
+      "boobie-ike",
+      "ernesto",
+      "jason-duval",
+      "lucia-caminos"
+    ]
+  },
+  "mia-caminos": {
+    "source": "https://www.gtabase.com/gta-6/characters/mia-caminos",
+    "text": "When Lucia reconnects with her mother in Vice City, Mia has recently established a property business. Mami Knows Best introduces her first listing. She is also Tommy’s grandmother.",
+    "fields": {
+      "Occupation": "Real estate agent",
+      "Documented mission": "Mami Knows Best",
+      "Family": "Lucia Caminos (daughter); Tomas Caminos (grandson)"
+    },
+    "relations": [
+      "lucia-caminos",
+      "tommy-tomas"
+    ]
+  },
+  "randy-kozlov": {
+    "source": "https://www.gtabase.com/gta-6/characters/randy",
+    "text": "Randy offers an optional mission series. GTABase connects its concluding assignment to the Supply & Demand achievement.",
+    "fields": {
+      "Related achievement": "Supply & Demand",
+      "Mission category": "Strangers & Freaks"
+    }
+  },
+  "tyrone-russo": {
+    "source": "https://www.gtabase.com/gta-6/characters/tyrone",
+    "text": "Tyrone buys illicit goods from the protagonists and offers his own optional assignments. Finishing his mission strand earns Spin On This!, according to GTABase.",
+    "fields": {
+      "Occupation": "Fence and drug dealer",
+      "Related achievement": "Spin On This!",
+      "Mission category": "Strangers & Freaks"
+    }
+  },
+  "dunk": {
+    "source": "https://www.gtabase.com/gta-6/characters/dunk",
+    "text": "Dunk lives in a trailer in Port Gellhorn. Vicki directs Lucia to him during Girls’ Trip; he later helps with Jason’s medication in Slam Dunk and becomes a buyer of stolen goods.",
+    "fields": {
+      "Location": "Port Gellhorn",
+      "Documented appearances": "Girls’ Trip; Slam Dunk",
+      "Occupation": "Drug dealer and fence"
+    },
+    "relations": [
+      "vicki",
+      "lucia-caminos",
+      "jason-duval"
+    ]
+  },
+  "alvan-west": {
+    "source": "https://www.gtabase.com/gta-6/characters/alvan-west",
+    "text": "Alvan answers the Kelly County Tip Line advertised on missing-person notices. Investigating the notices at the Starlet Motel in Chapter 2 begins his optional storyline, which contributes to Strangers & Freaks completion.",
+    "fields": {
+      "Affiliation": "Kelly County Tip Line",
+      "Documented appearances": "Gellhorn’s Missing Tourists; Missing Persons",
+      "Location": "Port Gellhorn",
+      "Related achievement": "Strangers & Freaks"
+    }
+  },
+  "kirk": {
+    "source": "https://www.gtabase.com/gta-6/characters/kirk",
+    "text": "Kirk pursues a creature he calls Mr. Mangrove in the wetlands and claims its pollen caused his disfigurement. The three-part quest involving the creature and tree effigies contributes to the Strangers & Freaks achievement.",
+    "fields": {
+      "Documented appearances": "Search for the Skunk Ape; Search for Tree Effigies; Help Kirk Find Mr. Mangrove",
+      "Related achievement": "Strangers & Freaks",
+      "Personal account": "Claims exposure to Skunk Ape pollen"
+    }
+  },
+  "bae-luxe": {
+    "source": "https://gta6ops.com/story/bae-luxe/",
+    "text": "Her individual credits distinguish her from her musical partner Roxy. Studio recording in Dealer’s Choice, the booking dispute in Top Billing, the Cooties video and the Headliners show form her documented music storyline. No independent solo discography is established.",
+    "fields": {
+      "Documented appearances": "Dealer’s Choice; Top Billing; Cooties; Headliners",
+      "Musical group": "Real Dimez",
+      "Record label": "Only Raw Records"
+    },
+    "relations": [
+      "roxy-rashad",
+      "drequan-priest",
+      "boobie-ike",
+      "dwnply"
+    ]
+  },
+  "roxy-rashad": {
+    "source": "https://gta6ops.com/story/roxy-rashad/",
+    "text": "During Top Billing, Roxy leaves after objecting to the opportunities offered to DWNPLY. The ensuing party sequence is specific to her rather than a shared action by both members. She later takes part in the video and launch-show storyline.",
+    "fields": {
+      "Documented appearances": "Top Billing; Cooties; Headliners",
+      "Musical group": "Real Dimez",
+      "Record label": "Only Raw Records"
+    },
+    "relations": [
+      "bae-luxe",
+      "drequan-priest",
+      "dwnply",
+      "jacki"
+    ]
+  },
+  "dwnply": {
+    "source": "https://gta6ops.com/story/dwnply/",
+    "text": "An earlier recording with Real Dimez helped the pair reach a larger audience. The booking conflict in Top Billing and the interruption at Headliners turn that working relationship into a rivalry. Denzel Curry is the credited performer, not the character’s established legal name.",
+    "fields": {
+      "Occupation": "Rapper",
+      "Documented appearances": "Top Billing; Headliners"
+    },
+    "relations": [
+      "bae-luxe",
+      "roxy-rashad",
+      "bush"
+    ]
+  },
+  "boobie-ike": {
+    "source": "https://gta6ops.com/story/boobie-ike/",
+    "text": "Boobie’s property network includes Bayside Apartments, where the protagonists move after Welcome to Vice City. In Boobie Time, Jason meets him at Jack of Hearts in Crosstown and is introduced to Yasmani through the subsequent work.",
+    "fields": {
+      "Businesses": "Jack of Hearts; property holdings; recording studio; Only Raw Records",
+      "Documented appearances": "Welcome to Vice City; Boobie Time",
+      "Location": "Crosstown, Vice City"
+    },
+    "relations": [
+      "drequan-priest",
+      "yasmani-cabrera",
+      "jason-duval",
+      "lucia-caminos"
+    ]
+  },
+  "yago-jimenez": {
+    "source": "https://www.gtabase.com/gta-6/strangers/join-a-street-race",
+    "text": "Yago is introduced in the optional street-racing strand, which begins with Join a Street Race in Salton. The subsequent Bumper to Bumper and Brother to Brother jobs continue his storyline.",
+    "fields": {
+      "Documented appearances": "Join a Street Race; Bumper to Bumper; Brother to Brother",
+      "Location": "Salton",
+      "Mission category": "Strangers & Freaks"
+    }
   }
 };
 export const checkedCreditProfiles = {
@@ -479,7 +665,7 @@ export function applySceneResearch(item) {
   const creditSource = checkedCreditProfiles[item.id];
   if (!review && !creditSource) return item;
   const source = review?.source || creditSource;
-  const relatedSources = [...(item.relatedSources || []), {label: review ? (source.includes('gta6ops.com') ? 'GTA6Ops — individual story profile' : 'GTA6DATA — documented scene') : 'GTA6Ops — individual credit review',url:source}].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i);
+  const relatedSources = [...(item.relatedSources || []), {label: review ? (source.includes('gta6ops.com') ? 'GTA6Ops — individual story profile' : source.includes('gtabase.com') ? 'GTABase — character or mission profile' : 'GTA6DATA — documented scene') : 'GTA6Ops — individual credit review',url:source}].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i);
   if (!review) return {...item,relatedSources};
   const attributes = {...item.attributes};
   for (const [name,value] of Object.entries(review.fields)) {
@@ -489,5 +675,5 @@ export function applySceneResearch(item) {
     if (attributes.Evidence === 'Official cast credit only') attributes.Evidence = 'Official cast credit; community scene context';
     if (!attributes['Biography availability'] || /^not verified/i.test(attributes['Biography availability'])) attributes['Biography availability'] = 'Documented partial context';
   }
-  return {...item,spoiler:true,attributes,paragraphs:[...new Set([...(item.paragraphs||[]),review.text])],relatedSources,...(review.relations ? {relatedCharacterIds:[...new Set([...(item.relatedCharacterIds||[]),...review.relations])].filter(id=>id!==item.id)} : {})};
+  return {...item,...(review.clarifiedDescription ? {description:review.clarifiedDescription} : {}),spoiler:true,attributes,paragraphs:[...new Set([...(item.paragraphs||[]),review.text])],relatedSources,...(review.relations ? {relatedCharacterIds:[...new Set([...(item.relatedCharacterIds||[]),...review.relations])].filter(id=>id!==item.id)} : {})};
 }
