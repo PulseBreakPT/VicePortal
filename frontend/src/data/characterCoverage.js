@@ -1014,14 +1014,23 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/officer-jackson/"
+      },
+      {
+        "label": "Leonidex — documented gameplay",
+        "url": "https://leonidex.com/wiki/characters/officer-gutierrez"
       }
     ],
     "bio": {
-      "description": "Credited law-enforcement role; not the same entry as the separately documented shooting-range contact named Jackson.",
-      "source": "https://gta6.university/db/characters/officer-jackson/",
+      "description": "Introduced alongside Officer Gutierrez by Sergeant Galeki during Tourist Trap. This named law-enforcement role is distinct from the shooting-range encounter.",
+      "source": "https://leonidex.com/wiki/characters/officer-gutierrez",
       "occupation": "Police officer",
-      "relations": []
-    }
+      "relations": [
+        "sergeant-pete-galeki",
+        "officer-gutierrez"
+      ],
+      "mission": "Tourist Trap"
+    },
+    "qualified": false
   },
   "peewees-squatter": {
     "sources": [
@@ -1266,8 +1275,29 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/parole-officer-walsh/"
+      },
+      {
+        "label": "Leonidex — documented gameplay",
+        "url": "https://leonidex.com/wiki/characters/parole-officer"
       }
-    ]
+    ],
+    "bio": {
+      "description": "Lucia's supervising parole officer monitors her ankle bracelet and discusses her custody case during Down to Earth.",
+      "source": "https://leonidex.com/wiki/characters/parole-officer",
+      "occupation": "Parole officer",
+      "relations": [
+        "lucia-caminos",
+        "jason-duval",
+        "tommy-tomas"
+      ],
+      "mission": "Down to Earth"
+    },
+    "qualified": false,
+    "portrait": {
+      "url": "https://leonidex.com/_next/image?url=%2Fmedia%2Fgameplay%2Fcharacters%2Fparole-officer%2F1.webp&w=3840&q=75",
+      "page": "https://leonidex.com/wiki/characters/parole-officer",
+      "source": "Leonidex"
+    }
   },
   "judd-beaven": {
     "sources": [
@@ -2290,13 +2320,27 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/chester/"
+      },
+      {
+        "label": "Leonidex — documented gameplay",
+        "url": "https://leonidex.com/wiki/characters/chester"
       }
     ],
     "bio": {
-      "description": "Works at a motel reception desk; the source does not establish a longer personal history.",
-      "source": "https://gta6.university/db/characters/chester/",
-      "occupation": "Motel employee",
-      "relations": []
+      "description": "A resident of the Starlet Motel who repeatedly clashes with Linda over noise and property damage. He is questioned about Jason and Lucia during Checking Out.",
+      "source": "https://leonidex.com/wiki/characters/chester",
+      "occupation": null,
+      "relations": [
+        "linda",
+        "shanese"
+      ],
+      "mission": "Just Moved In"
+    },
+    "qualified": false,
+    "portrait": {
+      "url": "https://leonidex.com/_next/image?url=%2Fmedia%2Fgameplay%2Fcharacters%2Fchester%2F1.webp&w=3840&q=75",
+      "page": "https://leonidex.com/wiki/characters/chester",
+      "source": "Leonidex"
     }
   },
   "rodney": {
@@ -2329,13 +2373,28 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/officer-gutierrez/"
+      },
+      {
+        "label": "Leonidex — documented gameplay",
+        "url": "https://leonidex.com/wiki/characters/officer-gutierrez"
       }
     ],
     "bio": {
-      "description": "Credited police officer; specific duties and appearances remain unconfirmed.",
-      "source": "https://gta6.university/db/characters/officer-gutierrez/",
+      "description": "Works alongside Sergeant Galeki at the Grassrivers Visitor Center and is present during the confrontation with Castro in Tourist Trap.",
+      "source": "https://leonidex.com/wiki/characters/officer-gutierrez",
       "occupation": "Police officer",
-      "relations": []
+      "relations": [
+        "sergeant-pete-galeki",
+        "officer-miguel-castro",
+        "officer-jackson"
+      ],
+      "mission": "Tourist Trap"
+    },
+    "qualified": false,
+    "portrait": {
+      "url": "https://leonidex.com/_next/image?url=%2Fmedia%2Fgameplay%2Fcharacters%2Fofficer-gutierrez%2F1.webp&w=3840&q=75",
+      "page": "https://leonidex.com/wiki/characters/officer-gutierrez",
+      "source": "Leonidex"
     }
   },
   "dook": {
@@ -3147,5 +3206,18 @@ export const characterCoverage = {
         "url": "https://gta6.university/db/characters/real-dimez/"
       }
     ]
+  },
+  "dobbs": {
+    "sources": [
+      {
+        "label": "Leonidex — documented gameplay",
+        "url": "https://leonidex.com/wiki/characters/dobbs"
+      }
+    ],
+    "portrait": {
+      "url": "https://leonidex.com/_next/image?url=%2Fmedia%2Fgameplay%2Fcharacters%2Fdobbs%2F1.webp&w=3840&q=75",
+      "page": "https://leonidex.com/wiki/characters/dobbs",
+      "source": "Leonidex"
+    }
   }
 };
