@@ -26,6 +26,7 @@ try {
     assert.ok(row.spoiler, 'Supplemental story details must be protected '+id);
     assert.ok(row.paragraphs.includes(review.text), 'Missing supplemental biography '+id);
     assert.ok(row.relatedSources.some(source=>source.url===review.source), 'Missing supplemental source '+id);
+    for (const related of review.relations || []) assert.ok(row.relatedCharacterIds?.includes(related), 'Missing sourced relation '+id+' / '+related);
   }
   for (const [id,url] of Object.entries(checkedCreditProfiles)) {
     assert.ok(byId.get(id)?.relatedSources.some(s=>s.url===url),'Missing individual credit review '+id);

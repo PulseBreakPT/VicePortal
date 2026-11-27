@@ -327,6 +327,139 @@ export const characterSceneResearch = {
       "Documented mission": "Tourist Trap",
       "Documented location": "Grassrivers Visitor Center"
     }
+  },
+  "lorena-caminos": {
+    "source": "https://gta6ops.com/story/lorena-caminos/",
+    "text": "During Chapter 3, Lucia can send money to Lorena twice. Lorena keeps her informed about Tommy, then asks her to stop the large transfers after the bank raises concerns.",
+    "fields": {
+      "Family connection": "Lucia’s aunt; Tommy’s caregiver",
+      "Documented story chapter": "3"
+    },
+    "relations": [
+      "lucia-caminos",
+      "tommy-tomas"
+    ]
+  },
+  "karim": {
+    "source": "https://gta6ops.com/story/karim/",
+    "text": "Raul mentions Karim in First Impressions, before Jason meets him in Crosstown Traffic. GTA6Ops identifies his technical contribution to the equipment used in Credit Check.",
+    "fields": {
+      "Occupation": "Technical specialist",
+      "Documented appearances": "First Impressions; Crosstown Traffic; Credit Check"
+    },
+    "relations": [
+      "raul-bautista",
+      "jason-duval"
+    ]
+  },
+  "rafa-de-leon-navarro": {
+    "source": "https://gta6ops.com/story/rafa-de-leon-navarro/",
+    "text": "Rafa is introduced during Adventures in Babysitting and becomes the focus of Child’s Play. His interest in games and streaming continues during the rescue; the documented account says he returns to his parents.",
+    "fields": {
+      "Documented appearances": "Adventures in Babysitting; Child’s Play",
+      "Family": "Andrés de León (father); Petra Navarro (mother); César Navarro (grandfather)",
+      "Interests": "Video games and streams"
+    },
+    "relations": [
+      "andres-de-leon",
+      "petra-navarro",
+      "cesar-navarro"
+    ]
+  },
+  "kordell-grant": {
+    "source": "https://gta6ops.com/story/kordell-grant/",
+    "text": "Kordell’s group comprises Raina, Cisco and Nate. Their training takes place around Ajax Gym and Lawton Theater; Heavy Lifting introduces him, and Lucia’s undercover involvement continues until VCIA Takedown.",
+    "fields": {
+      "Documented locations": "Ajax Gym; Lawton Theater",
+      "Documented appearances": "Heavy Lifting; VCIA Takedown",
+      "Occupation / affiliation": "Leader of Kordell’s crew"
+    },
+    "relations": [
+      "raina-koleva",
+      "francisco-cisco-delgado",
+      "nathan-nate-bozer",
+      "lucia-caminos"
+    ]
+  },
+  "deputy-sarah-fitzroy": {
+    "source": "https://gta6ops.com/story/sarah-fitzroy/",
+    "text": "Fitzroy initially escorts Jason into custody. During the attack in Protective Custody she releases him, is wounded and survives the documented sequence. Her assistance does not amount to a legal pardon.",
+    "fields": {
+      "Documented mission": "Protective Custody",
+      "Documented outcome": "Survives the station sequence"
+    },
+    "relations": [
+      "jason-duval",
+      "captain-aldo-mendez"
+    ]
+  },
+  "giorgio-gallo": {
+    "source": "https://gta6ops.com/story/giorgio-gallo/",
+    "text": "GTA6Ops identifies Bilgeco as Giorgio’s shipping company. Mattia arranges the couple’s meeting with him, and a lost shipment puts Giorgio under pressure from the Albanian organization.",
+    "fields": {
+      "Business": "Bilgeco",
+      "Documented location": "Pegassi Towers, Tequesta Retreat"
+    },
+    "relations": [
+      "mattia-tauro",
+      "dardan"
+    ]
+  },
+  "felipe": {
+    "source": "https://gta6ops.com/story/felipe/",
+    "text": "Felipe supplies transport and a garage during the crew’s preparations. After leaving Raul, he can be confronted in Bad Driver!; the player’s choice determines whether he survives and later offers a vehicle.",
+    "fields": {
+      "Occupation": "Getaway driver",
+      "Documented appearances": "Credit Check; Safe Word; Bad Driver!",
+      "Story outcome": "Player-dependent"
+    },
+    "relations": [
+      "raul-bautista",
+      "andrea",
+      "jason-duval"
+    ]
+  },
+  "vinny-capsik": {
+    "source": "https://gta6ops.com/story/vinny-capsik/",
+    "text": "Vinny works as Giorgio’s MMA trainer and appears at the penthouse gym in Bird in the Hand. GTA6Ops also identifies a separate request to Lucia in Doggie Bag.",
+    "fields": {
+      "Occupation": "MMA trainer",
+      "Documented appearances": "Bird in the Hand; Doggie Bag"
+    },
+    "relations": [
+      "giorgio-gallo",
+      "liz-jackson",
+      "kevin-kueh"
+    ]
+  },
+  "nathan-nate-bozer": {
+    "source": "https://gta6ops.com/story/nate-bozer/",
+    "text": "Nate introduces Lucia to Ajax Gym in Heavy Lifting. Later, selling body oil and spending time together builds his trust, which helps her gain access to Kordell’s group.",
+    "fields": {
+      "Documented location": "Ajax Gym",
+      "Documented mission": "Heavy Lifting",
+      "Occupation / affiliation": "Kordell’s crew"
+    },
+    "relations": [
+      "kordell-grant",
+      "raina-koleva",
+      "lucia-caminos"
+    ]
+  },
+  "francisco-cisco-delgado": {
+    "source": "https://gta6ops.com/story/francisco-delgado/",
+    "text": "Cisco first appears at Ajax Gym in Heavy Lifting. During a drive he tells Lucia that he attended clown school; this is a self-reported detail, not evidence of a professional clown career.",
+    "fields": {
+      "Documented mission": "Heavy Lifting",
+      "Documented location": "Ajax Gym",
+      "Personal history": "Attended clown school (self-reported dialogue)"
+    },
+    "relations": [
+      "kordell-grant",
+      "nathan-nate-bozer",
+      "raina-koleva",
+      "lucia-caminos"
+    ]
   }
 };
 export const checkedCreditProfiles = {
@@ -346,7 +479,7 @@ export function applySceneResearch(item) {
   const creditSource = checkedCreditProfiles[item.id];
   if (!review && !creditSource) return item;
   const source = review?.source || creditSource;
-  const relatedSources = [...(item.relatedSources || []), {label: review ? 'GTA6DATA — documented scene' : 'GTA6Ops — individual credit review',url:source}].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i);
+  const relatedSources = [...(item.relatedSources || []), {label: review ? (source.includes('gta6ops.com') ? 'GTA6Ops — individual story profile' : 'GTA6DATA — documented scene') : 'GTA6Ops — individual credit review',url:source}].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i);
   if (!review) return {...item,relatedSources};
   const attributes = {...item.attributes};
   for (const [name,value] of Object.entries(review.fields)) {
@@ -356,5 +489,5 @@ export function applySceneResearch(item) {
     if (attributes.Evidence === 'Official cast credit only') attributes.Evidence = 'Official cast credit; community scene context';
     if (!attributes['Biography availability'] || /^not verified/i.test(attributes['Biography availability'])) attributes['Biography availability'] = 'Documented partial context';
   }
-  return {...item,spoiler:true,attributes,paragraphs:[...new Set([...(item.paragraphs||[]),review.text])],relatedSources};
+  return {...item,spoiler:true,attributes,paragraphs:[...new Set([...(item.paragraphs||[]),review.text])],relatedSources,...(review.relations ? {relatedCharacterIds:[...new Set([...(item.relatedCharacterIds||[]),...review.relations])].filter(id=>id!==item.id)} : {})};
 }

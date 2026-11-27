@@ -1,6 +1,6 @@
 # Character scene research — November 27, 2026
 
-This second pass adds 18 source-attributed scene summaries to existing dossiers. It verifies individual credit references for 9 unresolved story roles without claiming a biography for them. The 589 dossier catalog has NOT received a fresh individual web review of every record. No new identities, portraits, unverified performer matches or guessed story outcomes have been added.
+This second pass adds 28 source-attributed scene summaries to existing dossiers. It verifies individual credit references for 9 unresolved story roles without claiming a biography for them. The 589 dossier catalog has NOT received a fresh individual web review of every record. No new identities, portraits, unverified performer matches or guessed story outcomes have been added.
 
 ## Documented scenes
 
@@ -36,3 +36,16 @@ This second pass adds 18 source-attributed scene summaries to existing dossiers.
 - drunk-aussie: https://gta6ops.com/story/drunk-aussie/
 
 A similarly named Hank Wright appears in an in-game advertisement; the reviewed evidence does not establish that he is the Full Cast role Hank. Do not merge these identities. Existing individual sources and media credits remain intact. Added fields do not overwrite known values; scene summaries remain spoiler protected. Original summaries are based on community gameplay reporting, not new official Rockstar biographies.
+
+## Additional individual story profiles
+
+- lorena-caminos: https://gta6ops.com/story/lorena-caminos/
+- karim: https://gta6ops.com/story/karim/
+- rafa-de-leon-navarro: https://gta6ops.com/story/rafa-de-leon-navarro/
+- kordell-grant: https://gta6ops.com/story/kordell-grant/
+- deputy-sarah-fitzroy: https://gta6ops.com/story/sarah-fitzroy/
+- giorgio-gallo: https://gta6ops.com/story/giorgio-gallo/
+- felipe: https://gta6ops.com/story/felipe/
+- vinny-capsik: https://gta6ops.com/story/vinny-capsik/
+- nathan-nate-bozer: https://gta6ops.com/story/nate-bozer/
+- francisco-cisco-delgado: https://gta6ops.com/story/francisco-delgado/
