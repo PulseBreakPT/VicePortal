@@ -7,7 +7,7 @@ const rows=normalizeVehicles(feed);
 const sections=await read('../src/data/sections.js');
 let checks=0;
 const check=(condition,message)=>{checks++;assert.ok(condition,message);};
-check(rows.length>=(feed.complete?560:125),'Vehicle coverage regression');
+check(rows.length>=(feed.complete?560:559),'Vehicle coverage regression');
 check(new Set(rows.map(r=>r.id)).size===rows.length,'Duplicate vehicle IDs');
 const legacy=['thrax','emerus','tempesta','comet-s2','gauntlet-hellfire','carbon-rs','cheetah-classic'];
 for(const id of legacy)check(rows.some(x=>x.id==='vehicle-'+id),'Legacy bookmark missing: '+id);
@@ -19,6 +19,8 @@ for(const row of rows){
  for(const key of ['speed','acceleration','handling','offroad','strength'])check(row[key]===null||(Number.isFinite(row[key])&&row[key]>=0&&row[key]<=10),'Invalid 0–10 stat');
  check(typeof row.spoiler==='boolean','Invalid spoiler flag');
 }
+check(vehicleGroup('Patriot')==='standout','Patriot variant mapping');
+check(vehicleGroup('Bikes','Bicycles')==='bicycles','Bicycle type mapping');
 check(vehicleGroup('Supercars')==='super','Supercars mapping');
 check(vehicleGroup('Standout: Fine Art')==='standout','Standout mapping');
 check(vehicleGroup('unknown','Helicopters')==='aircraft','Type fallback');
