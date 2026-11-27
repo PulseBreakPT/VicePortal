@@ -2,6 +2,7 @@ import { articles, gallery, image, officialUrl, regions, vehicles } from './cata
 import { descendantIds } from './sections';
 import { characterRecords } from './characterRecords';
 import { vehicleRecords } from './vehicleRecords';
+import {creatorRecords,creatorWeapons} from './creatorRecords';
 
 const base = (item, section, collections, status = 'Official source') => ({ ...item, path: `/${section}/${item.id}`, collections, status });
 const weaponSource = 'https://www.gtabase.com/gta-6/weapons/';
@@ -14,13 +15,15 @@ const radioEntries = [
   ['flash-fm','Flash FM','Pop'],
 ].map(([id,title,category])=>base({id:`radio-${id}`,title,kind:'Radio station',category,image:image(`radio-${id}`),source:'https://gtatown.com/radio/',description:`${title} is listed in GTA Town’s radio reference with a ${category.toLowerCase()} focus. This record documents that community listing; it is not an independently verified Rockstar playlist.`,attributes:{Genre:category,Tracklist:'Not verified in this atlas'},paragraphs:['No audio stream or music playback is hosted here. Tracklists and station availability should be checked against the linked source. Trailer soundtrack appearances alone are not treated as station confirmations.']},'radio',['radio'],'Community reference'));
 export const carEntries = vehicleRecords;
-export const weaponEntries = [
+const reviewedWeaponEntries = [
   ['38','.38','Handguns','weapon-38','handguns'],
   ['1922','1922','Handguns','weapon-1922','handguns'],
   ['556','556 Assault Rifle','Assault rifles','weapon-556','assault-rifles'],
   ['akulus','Akulus','Handguns','weapon-akulus','handguns'],
   ['az1200','AZ1200','Shotguns','weapon-az1200','shotguns'],
 ].map(([id,title,category,photo,group])=>base({id:`weapon-${id}`,title,kind:'Weapon',category,image:image(photo),source:weaponSource,description:`${title} appears in GTABase’s GTA VI weapons reference. The type is recorded here; damage, prices and unlock requirements have not been independently checked for this atlas.`,details:[category,'Community reference'],attributes:{Type:category,Damage:'Not verified in this atlas',Price:'Not verified in this atlas',Availability:'Not verified in this atlas'}},'weapons',[`weapons/${group}`],'Community reference'));
+
+export const weaponEntries = creatorWeapons(reviewedWeaponEntries);
 
 const guides = [
   ['first-steps','GTA VI: setting and characters','guides/getting-started','vice_city_11','An introduction to Jason, Lucia and Leonida.',['Rockstar introduces GTA VI through Jason and Lucia, with Vice City and the wider state of Leonida as the backdrop. Their official profiles are the starting point for the character dossiers in this atlas.','The region index covers the city, coast and wilderness. Each dossier links to its source. The personal checklist tracks atlas pages, not your game save.','Official information, community catalog entries and fan editorial are labelled separately. Empty indexes have not received checked entries; they do not mean a feature is absent from the game.']],
@@ -38,7 +41,7 @@ export const entries = [
   ...articles.map(x=>base(x,'news',['news/features'],'Fan editorial')),
   ...gallery.map(x=>base({...x,description:x.subtitle},'screenshots',['screenshots'])),
   ...vehicles.map(x=>base(x,'vehicles',[x.id==='backcountry-buggy'?'vehicles/off-road':x.id==='island-hopper'?'vehicles/aircraft':'vehicles/customisation'],'Visual spotlight')),
-  ...carEntries,...weaponEntries,...radioEntries,
+  ...carEntries,...weaponEntries,...radioEntries,...creatorRecords,
   ...guides.map(([id,title,section,photo,description,paragraphs])=>({...base({id,title,kind:'Guide',category:section.startsWith('game')?'Game information':'Field guide',image:image(photo),description,paragraphs,source:officialUrl},section,[section],['night-culture','reading-the-trailers','first-steps','source-guide','atlas-privacy'].includes(id)?'Fan editorial':'Official source'),spoiler:id==='story-premise'})),
   ...[['trailer-1','Trailer 1','QdBZY2fkU-0','rs-trailer2'],['trailer-2','Trailer 2','VQRLujxTm3c','jason_and_lucia_01']].map(([id,title,videoId,photo])=>base({id,title,kind:'Video',image:image(photo),videoId,description:'Grand Theft Auto VI · An official film by Rockstar Games',source:`https://www.youtube.com/watch?v=${videoId}`},'videos',['videos'])),
   base({id:'leonida-key-art',title:'Jason & Lucia — key art',kind:'Artwork',image:image('rs-poster-2'),description:'Official GTA VI promotional artwork. This is not presented as confirmed retail packaging.',source:officialUrl},'artwork',['artwork','wallpapers','covers']),
