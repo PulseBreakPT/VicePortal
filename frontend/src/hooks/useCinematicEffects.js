@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { pointerEffects, parallaxOffset } from './cinematicMath.mjs';
+import { velocityShift } from './smoothMath.mjs';
 
 const targets = '.portal-card:not(.is-list .portal-card), .hub-tile, .article-card, .gallery-card, .portal-button, .atlas-button';
 const heroTargets = '.portal-hero:not(.object-hero):not(.tool-hero), .pause-art, .town-experience-teaser';
@@ -16,6 +17,7 @@ export function useCinematicEffects(rootRef, path, reduced) {
       dispose();
       if (!desktop.matches || motion.matches) return;
       let active = null, point = null, frame = 0, scrollDirty = true;
+      let previousY=window.scrollY, previousTime=performance.now(), velocityTimer=0, velocity=0;
       const heroes = Array.from(root.querySelectorAll(heroTargets));
       const visible = new Set(heroes);
       const reset = () => {
@@ -36,6 +38,7 @@ export function useCinematicEffects(rootRef, path, reduced) {
         }
         if (scrollDirty) {
           scrollDirty = false;
+          root.style.setProperty('--smooth-velocity',velocity+'px');
           visible.forEach(el => el.style.setProperty('--cinema-parallax',parallaxOffset(el.getBoundingClientRect(),window.innerHeight)+'px'));
         }
       };
@@ -46,7 +49,14 @@ export function useCinematicEffects(rootRef, path, reduced) {
         if (target !== active) { reset(); active = target && root.contains(target) ? target : null; }
         if (active) { point = {x:event.clientX,y:event.clientY}; schedule(); }
       };
-      const scroll = () => { reset(); scrollDirty = true; schedule(); };
+      const scroll = () => {
+        const now=performance.now(), y=window.scrollY;
+        velocity=velocityShift(y-previousY,now-previousTime);
+        previousY=y;previousTime=now;
+        clearTimeout(velocityTimer);
+        velocityTimer=setTimeout(()=>{velocity=0;root.style.removeProperty('--smooth-velocity');},120);
+        reset();scrollDirty=true;schedule();
+      };
       const observer = typeof IntersectionObserver === 'function' ? new IntersectionObserver(records => {
         for (const record of records) {
           if (record.isIntersecting) visible.add(record.target);
@@ -64,6 +74,7 @@ export function useCinematicEffects(rootRef, path, reduced) {
       schedule();
       dispose = () => {
         cancelAnimationFrame(frame); observer?.disconnect(); reset();
+        clearTimeout(velocityTimer);root.style.removeProperty('--smooth-velocity');
         heroes.forEach(el => el.style.removeProperty('--cinema-parallax'));
         root.removeEventListener('pointermove',move);
         root.removeEventListener('pointerleave',reset);
