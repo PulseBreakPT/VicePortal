@@ -8,7 +8,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 // Copy the modules to temporary .mjs files and resolve CRA's extensionless imports.
 const root = fileURLToPath(new URL('../', import.meta.url));
 const dir = await mkdtemp(join(tmpdir(), 'viceportal-characters-'));
-const modules = ['characterSourceIndex','characterCoverage','mediaCast','characterDiscoveries','characterEvidence','characterRecords'];
+const modules = ['characterSourceIndex','characterCoverage','mediaCast','characterDiscoveries','characterEvidence','characterProfileResearch','characterRecords'];
 try {
   for (const name of modules) {
     const source = await readFile(join(root,'src','data',name+'.js'),'utf8');
@@ -19,6 +19,14 @@ try {
   const { mediaCast } = await import(pathToFileURL(join(dir,'mediaCast.mjs')).href);
   const { characterDiscoveries } = await import(pathToFileURL(join(dir,'characterDiscoveries.mjs')).href);
   const byId = new Map(records.map(row=>[row.id,row]));
+  const { characterProfileResearch } = await import(pathToFileURL(join(dir,'characterProfileResearch.mjs')).href);
+  for (const [id,review] of Object.entries(characterProfileResearch)) {
+    const row=byId.get(id);
+    assert.ok(row, 'Unknown supplemental character ID '+id);
+    assert.ok(row.spoiler, 'Supplemental story details must be protected '+id);
+    assert.ok(row.paragraphs.includes(review.text), 'Missing supplemental biography '+id);
+    assert.ok(row.relatedSources.some(source=>source.url===review.source), 'Missing supplemental source '+id);
+  }
   assert.equal(byId.size,records.length,'Duplicate dossier ID');
   assert.ok(records.length>=589,'Unexpected catalogue regression');
   assert.equal(records.filter(x=>x.attributes['Credit section']==='Main Cast').length,57);
