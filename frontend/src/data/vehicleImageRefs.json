@@ -1,51 +1,256 @@
 {
-  "vehicle-emerus": {
-    "title": "Progen Emerus",
-    "image": "https://gtatown.com/img/pc/vehicles/progen-emerus-294.webp",
-    "source": "https://gtatown.com/garage/vehicles/progen-emerus",
-    "evidence": "detail-page"
+  "vehicle-1010-cheetah": {
+    "title": "1010 Cheetah",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/grotti-1010-cheetah.webp?v=1795546016",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
   },
-  "vehicle-thrax": {
-    "title": "Truffade Thrax",
-    "image": "https://gtatown.com/img/pc/vehicles/truffade-thrax-294.webp",
-    "source": "https://gtatown.com/garage/vehicles/truffade-thrax",
-    "evidence": "detail-page"
+  "vehicle-acid-youga": {
+    "title": "Acid Youga",
+    "image": "https://assets.gta6gps.com/standout/acid-youga.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
   },
-  "vehicle-tempesta": {
-    "title": "Pegassi Tempesta",
-    "image": "https://gtatown.com/img/pc/vehicles/pegassi-tempesta-294.webp",
-    "source": "https://gtatown.com/garage/vehicles/pegassi-tempesta",
-    "evidence": "detail-page"
+  "vehicle-ahol-blista": {
+    "title": "Ahol Blista",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/dinka-ahol-blista.webp?v=1795545502",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
   },
-  "vehicle-comet-s2": {
-    "title": "Pfister Comet S2",
-    "image": "https://gtatown.com/img/pc/vehicles/pfister-comet-s2-294.webp",
-    "source": "https://gtatown.com/garage/vehicles/pfister-comet-s2",
-    "evidence": "detail-page"
+  "vehicle-airgator-airboat-09": {
+    "title": "Airgator Airboat 09",
+    "image": "https://gtatown.com/img/pc/vehicles/airgator-airboat-09-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/airgator-airboat-09",
+    "evidence": "exact-index-card"
   },
-  "vehicle-gauntlet-hellfire": {
-    "title": "Bravado Gauntlet Hellfire",
-    "image": "https://gtatown.com/img/pc/vehicles/bravado-gauntlet-hellfire-294.webp",
-    "source": "https://gtatown.com/garage/vehicles/bravado-gauntlet-hellfire",
-    "evidence": "detail-page"
+  "vehicle-albany-cavalcade-xl": {
+    "title": "Albany Cavalcade XL",
+    "image": "https://gtatown.com/img/pc/vehicles/albany-cavalcade-xl-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/albany-cavalcade-xl",
+    "evidence": "exact-index-card"
   },
-  "vehicle-carbon-rs": {
-    "title": "Nagasaki Carbon RS",
-    "image": "https://gtatown.com/img/pc/vehicles/nagasaki-carbon-rs-294.webp",
-    "source": "https://gtatown.com/garage/vehicles/nagasaki-carbon-rs",
-    "evidence": "detail-page"
+  "vehicle-albany-primo": {
+    "title": "Albany Primo",
+    "image": "https://gtatown.com/img/pc/vehicles/albany-primo-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/albany-primo",
+    "evidence": "exact-index-card"
   },
-  "vehicle-cheetah-classic": {
-    "title": "'95 Grotti Cheetah",
-    "image": "https://gtatown.com/img/pc/vehicles/grotti-cheetah-95-294.webp",
-    "source": "https://gtatown.com/garage/vehicles/grotti-cheetah-95",
-    "evidence": "detail-page"
+  "vehicle-albany-v-str": {
+    "title": "Albany V-STR",
+    "image": "https://gtatown.com/img/pc/vehicles/albany-v-str-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/albany-v-str",
+    "evidence": "exact-index-card"
   },
-  "vehicle-honeycomb-emerus": {
-    "title": "Honeycomb Emerus",
-    "image": "https://gtatown.com/img/pc/vehicles/honeycomb-emerus-294.webp",
-    "source": "https://gtatown.com/garage/vehicles/honeycomb-emerus",
-    "evidence": "detail-page"
+  "vehicle-allegiance-dorado": {
+    "title": "Allegiance Dorado",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/bravado-allegiance-dorado.webp?v=1795545712",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-alpha-bison": {
+    "title": "Alpha Bison",
+    "image": "https://assets.gta6gps.com/standout/alpha-bison.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-ambergris-torlan": {
+    "title": "Ambergris Torlan",
+    "image": "https://gtatown.com/img/pc/vehicles/ambergris-torlan-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/ambergris-torlan",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-anarchist-dominator": {
+    "title": "Anarchist Dominator",
+    "image": "https://gtatown.com/img/pc/vehicles/anarchist-dominator-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/anarchist-dominator",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-andrew-nodes-thrax": {
+    "title": "Andrew Node's Thrax",
+    "image": "https://assets.gta6gps.com/standout/andrew-nodes-thrax.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-apocalypse-stallion": {
+    "title": "Apocalypse Stallion",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/classique-apocalypse-stallion.webp?v=1795545460",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-applesauce-bobcat": {
+    "title": "Applesauce Bobcat",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/declasse-applesauce-bobcat.webp?v=1795545766",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-ascot-paragon": {
+    "title": "Ascot Paragon",
+    "image": "https://gtatown.com/img/pc/vehicles/ascot-paragon-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/ascot-paragon",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-atlantic-volatus": {
+    "title": "Atlantic Volatus",
+    "image": "https://gtatown.com/img/pc/vehicles/atlantic-volatus-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/atlantic-volatus",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-audacity-sanchez": {
+    "title": "AudaCity Sanchez",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-audacity-sanchez.webp?v=1795545596",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-audacity-sandking": {
+    "title": "AudaCity Sandking",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/audacity-sandking.webp?v=1795545598",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-axanthic-transgressor": {
+    "title": "Axanthic Transgressor",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/sirius-axanthic-transgressor.webp?v=1795546142",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-azalea-street-blazer": {
+    "title": "Azalea Street Blazer",
+    "image": "https://gtatown.com/img/pc/vehicles/azalea-street-blazer-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/azalea-street-blazer",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-b3000-excavator": {
+    "title": "B3000 Excavator",
+    "image": "https://gtatown.com/img/pc/vehicles/b3000-excavator-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/b3000-excavator",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bareback-cypher": {
+    "title": "Bareback Cypher",
+    "image": "https://assets.gta6gps.com/standout/bareback-cypher.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-battler-picador": {
+    "title": "Battler Picador",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/declasse-battler-picador.webp?v=1795545830",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-beach-candy-bobcat": {
+    "title": "Beach Candy Bobcat",
+    "image": "https://gtatown.com/img/pc/vehicles/beach-candy-bobcat-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/beach-candy-bobcat",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-beast-chino": {
+    "title": "Beast Chino",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/dundreary-beast-chino.webp?v=1795545768",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-beer-buggy-bandito": {
+    "title": "Beer Buggy Bandito",
+    "image": "https://gtatown.com/img/pc/vehicles/beer-buggy-bandito-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/beer-buggy-bandito",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-beer-monster-marshall": {
+    "title": "Beer Monster Marshall",
+    "image": "https://assets.gta6gps.com/standout/beer-monster-marshall.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-beer-nuts-yosemite": {
+    "title": "Beer Nuts Yosemite",
+    "image": "https://assets.gta6gps.com/standout/beer-nuts-yosemite.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-benefactor-dubsta": {
+    "title": "Benefactor Dubsta",
+    "image": "https://gtatown.com/img/pc/vehicles/benefactor-dubsta-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/benefactor-dubsta",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-benefactor-schafter-s": {
+    "title": "Benefactor Schafter S",
+    "image": "https://gtatown.com/img/pc/vehicles/benefactor-schafter-s-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/benefactor-schafter-s",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-benefactor-schafter-v12": {
+    "title": "Benefactor Schafter V12",
+    "image": "https://gtatown.com/img/pc/vehicles/benefactor-schafter-v12-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/benefactor-schafter-v12",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-benefactor-schutzen": {
+    "title": "Benefactor Schutzen",
+    "image": "https://gtatown.com/img/pc/vehicles/benefactor-schutzen-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/benefactor-schutzen",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-benefactor-xls": {
+    "title": "Benefactor XLS",
+    "image": "https://gtatown.com/img/pc/vehicles/benefactor-xls-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/benefactor-xls",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-berserker-sanchez": {
+    "title": "Berserker Sanchez",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-berserker-sanchez.webp?v=1795545616",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-bf-greta": {
+    "title": "BF Greta",
+    "image": "https://gtatown.com/img/pc/vehicles/bf-greta-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bf-greta",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-big-cat-furia": {
+    "title": "Big Cat Furia",
+    "image": "https://gtatown.com/img/pc/vehicles/big-cat-furia-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/big-cat-furia",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-big-game-airboat": {
+    "title": "Big Game Airboat",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/big-game-airboat.webp?v=1795545882",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-big-shot-baller-std": {
+    "title": "Big Shot Baller-STD",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/gallivanter-big-shot-baller-std.webp?v=1795545418",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-black-moth-kamacho": {
+    "title": "Black Moth Kamacho",
+    "image": "https://gtatown.com/img/pc/vehicles/black-moth-kamacho-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/black-moth-kamacho",
+    "evidence": "exact-index-card"
   },
   "vehicle-black-widow-emerus": {
     "title": "Black Widow Emerus",
@@ -54,12 +259,508 @@
     "evidence": "reviewed-in-game-name",
     "credit": "GamesRadar+ via GTA6.house · game imagery © Rockstar Games"
   },
-  "vehicle-seaspray-emerus": {
-    "title": "Seaspray Emerus",
-    "image": "https://gta6.house/media/gta6/1200/lib-feb61c5ab4.webp",
-    "source": "https://gta6.house/library/vehicles/progen-seaspray-emerus",
-    "evidence": "reviewed-in-game-name",
-    "credit": "GamesRadar+ via GTA6.house · game imagery © Rockstar Games"
+  "vehicle-blade-500": {
+    "title": "Blade 500",
+    "image": "https://gtatown.com/img/pc/vehicles/blade-500-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/blade-500",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-blazin-phoenix": {
+    "title": "Blazin' Phoenix",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/imponte-blazin-phoenix.webp?v=1795545806",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-blazing-mallard": {
+    "title": "Blazing Mallard",
+    "image": "https://gtatown.com/img/pc/vehicles/blazing-mallard-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/blazing-mallard",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-blood-fever-sovereign": {
+    "title": "Blood Fever Sovereign",
+    "image": "https://gtatown.com/img/pc/vehicles/blood-fever-sovereign-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/blood-fever-sovereign",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-blood-moon-bandito": {
+    "title": "Blood Moon Bandito",
+    "image": "https://assets.gta6gps.com/standout/blood-moon-bandito.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-bloodbath-phoenix": {
+    "title": "Bloodbath Phoenix",
+    "image": "https://assets.gta6gps.com/standout/bloodbath-phoenix.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-bloodless-jugular": {
+    "title": "Bloodless Jugular",
+    "image": "https://gtatown.com/img/pc/vehicles/bloodless-jugular-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bloodless-jugular",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-blue-drake-penumbra": {
+    "title": "Blue Drake Penumbra",
+    "image": "https://gtatown.com/img/pc/vehicles/blue-drake-penumbra-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/blue-drake-penumbra",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-blue-silk-walton": {
+    "title": "Blue Silk Walton",
+    "image": "https://gtatown.com/img/pc/vehicles/blue-silk-walton-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/blue-silk-walton",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bogskimmer-sea-sparrow": {
+    "title": "Bogskimmer Sea Sparrow",
+    "image": "https://assets.gta6gps.com/standout/bogskimmer-sea-sparrow.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-bombora-s23-ccs": {
+    "title": "Bombora S23 CCS",
+    "image": "https://gtatown.com/img/pc/vehicles/bombora-s23-ccs-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bombora-s23-ccs",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-booty-bang-cavalcade": {
+    "title": "Booty Bang Cavalcade",
+    "image": "https://gtatown.com/img/pc/vehicles/booty-bang-cavalcade-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/booty-bang-cavalcade",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-booty-bang-nimbus": {
+    "title": "Booty Bang Nimbus",
+    "image": "https://assets.gta6gps.com/standout/booty-bang-nimbus.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-booty-fcr-1000": {
+    "title": "Booty FCR 1000",
+    "image": "https://assets.gta6gps.com/standout/booty-fcr-1000.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-born-free-deviant": {
+    "title": "Born Free Deviant",
+    "image": "https://gtatown.com/img/pc/vehicles/born-free-deviant-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/born-free-deviant",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bottcher-015a": {
+    "title": "Bottcher 015A",
+    "image": "https://gtatown.com/img/pc/vehicles/bottcher-015a-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bottcher-015a",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bottcher-buzzard": {
+    "title": "Bottcher Buzzard",
+    "image": "https://gtatown.com/img/pc/vehicles/bottcher-buzzard-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bottcher-buzzard",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bottcher-duster": {
+    "title": "Bottcher Duster",
+    "image": "https://gtatown.com/img/pc/vehicles/bottcher-duster-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bottcher-duster",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bourbon-windsor": {
+    "title": "Bourbon Windsor",
+    "image": "https://gtatown.com/img/pc/vehicles/bourbon-windsor-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bourbon-windsor",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bravado-banshee": {
+    "title": "Bravado Banshee",
+    "image": "https://gtatown.com/img/pc/vehicles/bravado-banshee-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bravado-banshee",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bravado-bison": {
+    "title": "Bravado Bison",
+    "image": "https://gtatown.com/img/pc/vehicles/bravado-bison-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bravado-bison",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bravado-bison-1800": {
+    "title": "Bravado Bison 1800",
+    "image": "https://gtatown.com/img/pc/vehicles/bravado-bison-1800-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bravado-bison-1800",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bravado-bison-3800": {
+    "title": "Bravado Bison 3800",
+    "image": "https://gtatown.com/img/pc/vehicles/bravado-bison-3800-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bravado-bison-3800",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bravado-dorado": {
+    "title": "Bravado Dorado",
+    "image": "https://gtatown.com/img/pc/vehicles/bravado-dorado-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bravado-dorado",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bravado-gresley-xt": {
+    "title": "Bravado Gresley XT",
+    "image": "https://gtatown.com/img/pc/vehicles/bravado-gresley-xt-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bravado-gresley-xt",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bravado-sojourn": {
+    "title": "Bravado Sojourn",
+    "image": "https://gtatown.com/img/pc/vehicles/bravado-sojourn-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bravado-sojourn",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bravado-swamp-blaster": {
+    "title": "Bravado Swamp Blaster",
+    "image": "https://gtatown.com/img/pc/vehicles/bravado-swamp-blaster-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bravado-swamp-blaster",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-brets-rebel": {
+    "title": "Bret's Rebel",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/karin-brets-rebel.webp?v=1795545402",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-brimstone-golfer": {
+    "title": "Brimstone Golfer",
+    "image": "https://gtatown.com/img/pc/vehicles/brimstone-golfer-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/brimstone-golfer",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-broken-oak-bobcat": {
+    "title": "Broken Oak Bobcat",
+    "image": "https://gtatown.com/img/pc/vehicles/broken-oak-bobcat-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/broken-oak-bobcat",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-brute-boxville": {
+    "title": "Brute Boxville",
+    "image": "https://gtatown.com/img/pc/vehicles/brute-boxville-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/brute-boxville",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-brute-police-riot": {
+    "title": "Brute Police Riot",
+    "image": "https://gtatown.com/img/pc/vehicles/brute-police-riot-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/brute-police-riot",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-brute-ripley": {
+    "title": "Brute Ripley",
+    "image": "https://gtatown.com/img/pc/vehicles/brute-ripley-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/brute-ripley",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-brute-taco-van": {
+    "title": "Brute Taco Van",
+    "image": "https://gtatown.com/img/pc/vehicles/brute-taco-van-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/brute-taco-van",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bubblegum-growler": {
+    "title": "Bubblegum Growler",
+    "image": "https://gtatown.com/img/pc/vehicles/bubblegum-growler-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bubblegum-growler",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-buckingham-jubilee": {
+    "title": "Buckingham Jubilee",
+    "image": "https://gtatown.com/img/pc/vehicles/buckingham-jubilee-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/buckingham-jubilee",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-buckingham-maverick": {
+    "title": "Buckingham Maverick",
+    "image": "https://gtatown.com/img/pc/vehicles/buckingham-maverick-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/buckingham-maverick",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-buckingham-shamal": {
+    "title": "Buckingham Shamal",
+    "image": "https://gtatown.com/img/pc/vehicles/buckingham-shamal-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/buckingham-shamal",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-buckingham-supervolito": {
+    "title": "Buckingham SuperVolito",
+    "image": "https://gtatown.com/img/pc/vehicles/buckingham-supervolito-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/buckingham-supervolito",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-buckingham-valkyrie": {
+    "title": "Buckingham Valkyrie",
+    "image": "https://gtatown.com/img/pc/vehicles/buckingham-valkyrie-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/buckingham-valkyrie",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-buckingham-windsor-drop": {
+    "title": "Buckingham Windsor Drop",
+    "image": "https://gtatown.com/img/pc/vehicles/buckingham-windsor-drop-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/buckingham-windsor-drop",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bugstars-burrito": {
+    "title": "Bugstars Burrito",
+    "image": "https://gtatown.com/img/pc/vehicles/bugstars-burrito-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/bugstars-burrito",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-bullion-gauntlet": {
+    "title": "Bullion Gauntlet",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/bravado-bullion-gauntlet.webp?v=1795545810",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-burning-cypher": {
+    "title": "Burning Cypher",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/ubermacht-burning-cypher.webp?v=1795545834",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-burnished-alvino": {
+    "title": "Burnished Alvino",
+    "image": "https://assets.gta6gps.com/standout/burnished-alvino.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-busted-cheater-rebel": {
+    "title": "Busted Cheater Rebel",
+    "image": "https://assets.gta6gps.com/standout/busted-cheater-rebel.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-buttermilk-comet-retro": {
+    "title": "Buttermilk Comet Retro",
+    "image": "https://assets.gta6gps.com/standout/buttermilk-comet-retro.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-calder-cb69": {
+    "title": "Calder CB69",
+    "image": "https://gtatown.com/img/pc/vehicles/calder-cb69-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/calder-cb69",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-calder-torlan": {
+    "title": "Calder Torlan",
+    "image": "https://gtatown.com/img/pc/vehicles/calder-torlan-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/calder-torlan",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-calder-yakuruna": {
+    "title": "Calder Yakuruna",
+    "image": "https://gtatown.com/img/pc/vehicles/calder-yakuruna-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/calder-yakuruna",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-caliente-picador": {
+    "title": "Caliente Picador",
+    "image": "https://gtatown.com/img/pc/vehicles/caliente-picador-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/caliente-picador",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-camo-caddy": {
+    "title": "Camo Caddy",
+    "image": "https://assets.gta6gps.com/standout/camo-caddy.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-candyman-scorcher": {
+    "title": "Candyman Scorcher",
+    "image": "https://assets.gta6gps.com/standout/candyman-scorcher.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-canis-kamacho": {
+    "title": "Canis Kamacho",
+    "image": "https://gtatown.com/img/pc/vehicles/canis-kamacho-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/canis-kamacho",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-canis-mesa": {
+    "title": "Canis Mesa",
+    "image": "https://gtatown.com/img/pc/vehicles/canis-mesa-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/canis-mesa",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-carbon-rs": {
+    "title": "Nagasaki Carbon RS",
+    "image": "https://gtatown.com/img/pc/vehicles/nagasaki-carbon-rs-294.webp",
+    "source": "https://gtatown.com/garage/vehicles/nagasaki-carbon-rs",
+    "evidence": "detail-page"
+  },
+  "vehicle-celebration-caddy": {
+    "title": "Celebration Caddy",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-celebration-caddy.webp?v=1795545624",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-cellerica-caddy": {
+    "title": "Cellerica Caddy",
+    "image": "https://gtatown.com/img/pc/vehicles/cellerica-caddy-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/cellerica-caddy",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-cereza-manana": {
+    "title": "Cereza Manana",
+    "image": "https://gtatown.com/img/pc/vehicles/cereza-manana-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/cereza-manana",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-chameleon-elegy": {
+    "title": "Chameleon Elegy",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/annis-chameleon-elegy.webp?v=1795545852",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-charred-toros": {
+    "title": "Charred Toros",
+    "image": "https://assets.gta6gps.com/standout/charred-toros.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-cheetah-classic": {
+    "title": "'95 Grotti Cheetah",
+    "image": "https://gtatown.com/img/pc/vehicles/grotti-cheetah-95-294.webp",
+    "source": "https://gtatown.com/garage/vehicles/grotti-cheetah-95",
+    "evidence": "detail-page"
+  },
+  "vehicle-cherry-bomb-chino": {
+    "title": "Cherry Bomb Chino",
+    "image": "https://gtatown.com/img/pc/vehicles/cherry-bomb-chino-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/cherry-bomb-chino",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-cherry-popper-boxville": {
+    "title": "Cherry Popper Boxville",
+    "image": "https://gtatown.com/img/pc/vehicles/cherry-popper-boxville-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/cherry-popper-boxville",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-cheshire-rebel": {
+    "title": "Cheshire Rebel",
+    "image": "https://assets.gta6gps.com/standout/cheshire-rebel.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-chrome-street-blazer": {
+    "title": "Chrome Street Blazer",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/nagasaki-chrome-street-blazer.webp?v=1795545402",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-circles-of-hell-youga": {
+    "title": "Circles of Hell Youga",
+    "image": "https://gtatown.com/img/pc/vehicles/circles-of-hell-youga-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/circles-of-hell-youga",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-citrus-ganado": {
+    "title": "Citrus Ganado",
+    "image": "https://assets.gta6gps.com/standout/citrus-ganado.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-clarion": {
+    "title": "Clarion",
+    "image": "https://gtatown.com/img/pc/vehicles/clarion-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/clarion",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-class-act-comet": {
+    "title": "Class Act Comet",
+    "image": "https://gtatown.com/img/pc/vehicles/class-act-comet-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/class-act-comet",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-coil-raiden": {
+    "title": "Coil Raiden",
+    "image": "https://gtatown.com/img/pc/vehicles/coil-raiden-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/coil-raiden",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-cold-case-l35p": {
+    "title": "Cold Case L35P",
+    "image": "https://gtatown.com/img/pc/vehicles/cold-case-l35p-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/cold-case-l35p",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-comet-s2": {
+    "title": "Pfister Comet S2",
+    "image": "https://gtatown.com/img/pc/vehicles/pfister-comet-s2-294.webp",
+    "source": "https://gtatown.com/garage/vehicles/pfister-comet-s2",
+    "evidence": "detail-page"
+  },
+  "vehicle-copperheads-gauntlet": {
+    "title": "Copperheads Gauntlet",
+    "image": "https://gtatown.com/img/pc/vehicles/copperheads-gauntlet-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/copperheads-gauntlet",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-cotton-candy-devanity": {
+    "title": "Cotton Candy Devanity",
+    "image": "https://gtatown.com/img/pc/vehicles/cotton-candy-devanity-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/cotton-candy-devanity",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-cousin-carlos-akane": {
+    "title": "Cousin Carlo's Akane",
+    "image": "https://assets.gta6gps.com/standout/cousin-carlos-akane.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-crushed-velvet-double-t": {
+    "title": "Crushed Velvet Double-T",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/dinka-crushed-velvet-double-t.webp?v=1795545746",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-cuban-hermes": {
+    "title": "Cuban Hermes",
+    "image": "https://gtatown.com/img/pc/vehicles/cuban-hermes-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/cuban-hermes",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-cultist-nightblade": {
+    "title": "Cultist Nightblade",
+    "image": "https://gtatown.com/img/pc/vehicles/cultist-nightblade-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/cultist-nightblade",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-cultivator-sandking": {
+    "title": "Cultivator Sandking",
+    "image": "https://assets.gta6gps.com/standout/cultivator-sandking.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
   },
   "vehicle-dantes-vitello": {
     "title": "Dante's Vitello",
@@ -68,6 +769,1351 @@
     "evidence": "exact-gps-image",
     "credit": "GTA6GPS · vehicle image reference · respective rights holders"
   },
+  "vehicle-darkling-dominator": {
+    "title": "Darkling Dominator",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/vapid-darkling-dominator.webp?v=1795545836",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-decker-crake": {
+    "title": "Decker Crake",
+    "image": "https://gtatown.com/img/pc/vehicles/decker-crake-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/decker-crake",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-declasse-akane": {
+    "title": "Declasse Akane",
+    "image": "https://gtatown.com/img/pc/vehicles/declasse-akane-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/declasse-akane",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-declasse-ambulance": {
+    "title": "Declasse Ambulance",
+    "image": "https://gtatown.com/img/pc/vehicles/declasse-ambulance-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/declasse-ambulance",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-declasse-granger": {
+    "title": "Declasse Granger",
+    "image": "https://gtatown.com/img/pc/vehicles/declasse-granger-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/declasse-granger",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-declasse-granger-3600lx": {
+    "title": "Declasse Granger 3600LX",
+    "image": "https://gtatown.com/img/pc/vehicles/declasse-granger-3600lx-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/declasse-granger-3600lx",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-declasse-vigero-zx-convertible": {
+    "title": "Declasse Vigero ZX Convertible",
+    "image": "https://gtatown.com/img/pc/vehicles/declasse-vigero-zx-convertible-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/declasse-vigero-zx-convertible",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-declasse-yosemite-1500": {
+    "title": "Declasse Yosemite 1500",
+    "image": "https://gtatown.com/img/pc/vehicles/declasse-yosemite-1500-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/declasse-yosemite-1500",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-del-perro-erode": {
+    "title": "Del Perro Erode",
+    "image": "https://gtatown.com/img/pc/vehicles/del-perro-erode-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/del-perro-erode",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-del-perro-scorcher": {
+    "title": "Del Perro Scorcher",
+    "image": "https://gtatown.com/img/pc/vehicles/del-perro-scorcher-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/del-perro-scorcher",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-devils-rope-gauntlet": {
+    "title": "Devil's Rope Gauntlet",
+    "image": "https://assets.gta6gps.com/standout/devils-rope-gauntlet.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-diamond-jubilee": {
+    "title": "Diamond Jubilee",
+    "image": "https://assets.gta6gps.com/standout/diamond-jubilee.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-dingus-como": {
+    "title": "Dingus Como",
+    "image": "https://gtatown.com/img/pc/vehicles/dingus-como-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/dingus-como",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-dingus-nepa": {
+    "title": "Dingus Nepa",
+    "image": "https://gtatown.com/img/pc/vehicles/dingus-nepa-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/dingus-nepa",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-dinka-chavos-xs": {
+    "title": "Dinka Chavos XS",
+    "image": "https://gtatown.com/img/pc/vehicles/dinka-chavos-xs-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/dinka-chavos-xs",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-dinka-double-t": {
+    "title": "Dinka Double-T",
+    "image": "https://gtatown.com/img/pc/vehicles/dinka-double-t-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/dinka-double-t",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-dinka-sugoi": {
+    "title": "Dinka Sugoi",
+    "image": "https://gtatown.com/img/pc/vehicles/dinka-sugoi-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/dinka-sugoi",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-dirt-rocket-zombie-bobber": {
+    "title": "Dirt Rocket Zombie Bobber",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/western-dirt-rocket-zombie-bobber.webp?v=1795545404",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-diy-chavos": {
+    "title": "DIY Chavos",
+    "image": "https://assets.gta6gps.com/standout/diy-chavos.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-dogfight-fcr": {
+    "title": "Dogfight FCR",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/ubermacht-dogfight-fcr.webp?v=1795545772",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-dolce-vita-rsx": {
+    "title": "Dolce Vita RSX",
+    "image": "https://assets.gta6gps.com/standout/dolce-vita-rsx.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-donk-boomazoom": {
+    "title": "Donk Boomazoom",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-donk-boomazoom.webp?v=1795545630",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-donk-caddy": {
+    "title": "Donk Caddy",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-donk-caddy.webp?v=1795545632",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-donk-verus": {
+    "title": "Donk Verus",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/dinka-donk-verus.webp?v=1795545634",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-dot-matrix-dibnah": {
+    "title": "Dot Matrix Dibnah",
+    "image": "https://assets.gta6gps.com/standout/dot-matrix-dibnah.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-dr-sheehans-airboat": {
+    "title": "Dr Sheehan's Airboat",
+    "image": "https://assets.gta6gps.com/standout/dr-sheehans-airboat.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-dragon-gate-furia": {
+    "title": "Dragon Gate Furia",
+    "image": "https://gtatown.com/img/pc/vehicles/dragon-gate-furia-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/dragon-gate-furia",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-dragonfly-volatus": {
+    "title": "Dragonfly Volatus",
+    "image": "https://gtatown.com/img/pc/vehicles/dragonfly-volatus-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/dragonfly-volatus",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-drifter-elegy": {
+    "title": "Drifter Elegy",
+    "image": "https://gtatown.com/img/pc/vehicles/drifter-elegy-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/drifter-elegy",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-driveshaft-banshee": {
+    "title": "DriveShaft Banshee",
+    "image": "https://assets.gta6gps.com/standout/driveshaft-banshee.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-driveshaft-devanity": {
+    "title": "DriveShaft Devanity",
+    "image": "https://assets.gta6gps.com/standout/driveshaft-devanity.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-driveshaft-gauntlet": {
+    "title": "DriveShaft Gauntlet",
+    "image": "https://gtatown.com/img/pc/vehicles/driveshaft-gauntlet-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/driveshaft-gauntlet",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-driveshaft-hustler": {
+    "title": "DriveShaft Hustler",
+    "image": "https://gtatown.com/img/pc/vehicles/driveshaft-hustler-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/driveshaft-hustler",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-driveshaft-journey": {
+    "title": "DriveShaft Journey",
+    "image": "https://gtatown.com/img/pc/vehicles/driveshaft-journey-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/driveshaft-journey",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-driveshaft-marshall": {
+    "title": "DriveShaft Marshall",
+    "image": "https://gtatown.com/img/pc/vehicles/driveshaft-marshall-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/driveshaft-marshall",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-driveshaft-sovereign": {
+    "title": "DriveShaft Sovereign",
+    "image": "https://assets.gta6gps.com/standout/driveshaft-sovereign.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-driveshaft-youga": {
+    "title": "DriveShaft Youga",
+    "image": "https://gtatown.com/img/pc/vehicles/driveshaft-youga-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/driveshaft-youga",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-dump": {
+    "title": "Dump",
+    "image": "https://gtatown.com/img/pc/vehicles/dump-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/dump",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-dwnplys-schutzen": {
+    "title": "DWNPLY's Schutzen",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/benefactor-dwnplys-schutzen.webp?v=1795545450",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-elven-queen-youga": {
+    "title": "Elven Queen Youga",
+    "image": "https://assets.gta6gps.com/standout/elven-queen-youga.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-emancipator-stallion": {
+    "title": "Emancipator Stallion",
+    "image": "https://gtatown.com/img/pc/vehicles/emancipator-stallion-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/emancipator-stallion",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-emerald-zombie-bobber": {
+    "title": "Emerald Zombie Bobber",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/western-emerald-zombie-bobber.webp?v=1795545434",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-emerus": {
+    "title": "Progen Emerus",
+    "image": "https://gtatown.com/img/pc/vehicles/progen-emerus-294.webp",
+    "source": "https://gtatown.com/garage/vehicles/progen-emerus",
+    "evidence": "detail-page"
+  },
+  "vehicle-emilios-lectro": {
+    "title": "Emilio's Lectro",
+    "image": "https://gtatown.com/img/pc/vehicles/emilios-lectro-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/emilios-lectro",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-emperor-sultan": {
+    "title": "Emperor Sultan",
+    "image": "https://gtatown.com/img/pc/vehicles/emperor-sultan-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/emperor-sultan",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-emperor-vectre": {
+    "title": "Emperor Vectre",
+    "image": "https://gtatown.com/img/pc/vehicles/emperor-vectre-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/emperor-vectre",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-endurance-mamba-gt": {
+    "title": "Endurance Mamba GT",
+    "image": "https://gtatown.com/img/pc/vehicles/endurance-mamba-gt-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/endurance-mamba-gt",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-enforcer-coquette": {
+    "title": "Enforcer Coquette",
+    "image": "https://gtatown.com/img/pc/vehicles/enforcer-coquette-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/enforcer-coquette",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-erotic-journey": {
+    "title": "Erotic Journey",
+    "image": "https://assets.gta6gps.com/standout/erotic-journey.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-fathom-fr36": {
+    "title": "Fathom FR36",
+    "image": "https://gtatown.com/img/pc/vehicles/fathom-fr36-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/fathom-fr36",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-fatstaks-dubsta": {
+    "title": "Fatstaks Dubsta",
+    "image": "https://assets.gta6gps.com/standout/fatstaks-dubsta.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-final-chapter-avarus": {
+    "title": "Final Chapter Avarus",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/lcc-final-chapter-avarus.webp?v=1795545434",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-finns-reclaimer": {
+    "title": "Finns Reclaimer",
+    "image": "https://assets.gta6gps.com/standout/finns-reclaimer.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-firebug-dominator": {
+    "title": "Firebug Dominator",
+    "image": "https://assets.gta6gps.com/standout/firebug-dominator.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-flamingo-bobcat": {
+    "title": "Flamingo Bobcat",
+    "image": "https://assets.gta6gps.com/standout/flamingo-bobcat.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-flipside-enduro": {
+    "title": "Flipside Enduro",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/dinka-flipside-enduro.webp?v=1795545406",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-flower-child-woodland": {
+    "title": "Flower Child Woodland",
+    "image": "https://gtatown.com/img/pc/vehicles/flower-child-woodland-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/flower-child-woodland",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-flower-powered-rancher": {
+    "title": "Flower Powered Rancher",
+    "image": "https://gtatown.com/img/pc/vehicles/flower-powered-rancher-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/flower-powered-rancher",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-fruit-outlet-walton": {
+    "title": "Fruit Outlet Walton",
+    "image": "https://assets.gta6gps.com/standout/fruit-outlet-walton.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-gallivanter-baller": {
+    "title": "Gallivanter Baller",
+    "image": "https://gtatown.com/img/pc/vehicles/gallivanter-baller-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/gallivanter-baller",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-gallivanter-baller-st-d": {
+    "title": "Gallivanter Baller ST-D",
+    "image": "https://gtatown.com/img/pc/vehicles/gallivanter-baller-st-d-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/gallivanter-baller-st-d",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-gator-shack-bison": {
+    "title": "Gator Shack Bison",
+    "image": "https://gtatown.com/img/pc/vehicles/gator-shack-bison-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/gator-shack-bison",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-gauntlet-hellfire": {
+    "title": "Bravado Gauntlet Hellfire",
+    "image": "https://gtatown.com/img/pc/vehicles/bravado-gauntlet-hellfire-294.webp",
+    "source": "https://gtatown.com/garage/vehicles/bravado-gauntlet-hellfire",
+    "evidence": "detail-page"
+  },
+  "vehicle-gentrifier-comet": {
+    "title": "Gentrifier Comet",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/pfister-gentrifier-comet.webp?v=1795546088",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-getaway-grouse": {
+    "title": "Getaway Grouse",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/willard-getaway-grouse.webp?v=1795545464",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-ghost-cruiser": {
+    "title": "Ghost Cruiser",
+    "image": "https://gtatown.com/img/pc/vehicles/ghost-cruiser-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/ghost-cruiser",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-ghosts-exposed-parkland": {
+    "title": "Ghosts Exposed Parkland",
+    "image": "https://assets.gta6gps.com/standout/ghosts-exposed-parkland.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-gilded-dubsta": {
+    "title": "Gilded Dubsta",
+    "image": "https://assets.gta6gps.com/standout/gilded-dubsta.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-gilf-windsor": {
+    "title": "GILF Windsor",
+    "image": "https://assets.gta6gps.com/standout/gilf-windsor.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-glacier-erode": {
+    "title": "Glacier Erode",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/del-perro-glacier-erode.webp?v=1795545736",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-glamor-caddy": {
+    "title": "Glamor Caddy",
+    "image": "https://gtatown.com/img/pc/vehicles/glamor-caddy-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/glamor-caddy",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-glitterbomb-apoc": {
+    "title": "Glitterbomb APOC",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/ubermacht-glitterbomb-apoc.webp?v=1795545546",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-gold-rope-infernus": {
+    "title": "Gold Rope Infernus",
+    "image": "https://gtatown.com/img/pc/vehicles/gold-rope-infernus-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/gold-rope-infernus",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-gold-rush-tempesta": {
+    "title": "Gold Rush Tempesta",
+    "image": "https://gtatown.com/img/pc/vehicles/gold-rush-tempesta-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/gold-rush-tempesta",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-gold-scarab-windsor": {
+    "title": "Gold Scarab Windsor",
+    "image": "https://gtatown.com/img/pc/vehicles/gold-scarab-windsor-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/gold-scarab-windsor",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-gradys-slamvan": {
+    "title": "Grady's Slamvan",
+    "image": "https://gtatown.com/img/pc/vehicles/gradys-slamvan-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/gradys-slamvan",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-granforma-zorrusso": {
+    "title": "Granforma Zorrusso",
+    "image": "https://gtatown.com/img/pc/vehicles/granforma-zorrusso-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/granforma-zorrusso",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-gravekeeper-walton": {
+    "title": "Gravekeeper Walton",
+    "image": "https://assets.gta6gps.com/standout/gravekeeper-walton.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-grotti-carbonizzare": {
+    "title": "Grotti Carbonizzare",
+    "image": "https://gtatown.com/img/pc/vehicles/grotti-carbonizzare-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/grotti-carbonizzare",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-grotti-itali-rsx": {
+    "title": "Grotti Itali RSX",
+    "image": "https://gtatown.com/img/pc/vehicles/grotti-itali-rsx-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/grotti-itali-rsx",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-gunrunner-kamacho": {
+    "title": "Gunrunner Kamacho",
+    "image": "https://assets.gta6gps.com/standout/gunrunner-kamacho.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-hauners-brigade": {
+    "title": "Hauners Brigade",
+    "image": "https://gtatown.com/img/pc/vehicles/hauners-brigade-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/hauners-brigade",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-hauners-cargobob": {
+    "title": "Hauners Cargobob",
+    "image": "https://gtatown.com/img/pc/vehicles/hauners-cargobob-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/hauners-cargobob",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-hauners-p-996-lazer": {
+    "title": "Hauners P-996 LAZER",
+    "image": "https://gtatown.com/img/pc/vehicles/hauners-p-996-lazer-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/hauners-p-996-lazer",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-hauners-rhino-tank": {
+    "title": "Hauners Rhino Tank",
+    "image": "https://gtatown.com/img/pc/vehicles/hauners-rhino-tank-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/hauners-rhino-tank",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-hellraiser-avarus": {
+    "title": "Hellraiser Avarus",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/lcc-hellraiser-avarus.webp?v=1795545436",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-henshaw-rhode": {
+    "title": "Henshaw Rhode",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/rugger-henshaw-rhode.webp?v=1795545718",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-highwayman-sanchez": {
+    "title": "Highwayman Sanchez",
+    "image": "https://gtatown.com/img/pc/vehicles/highwayman-sanchez-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/highwayman-sanchez",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-holdout-sungrazer": {
+    "title": "Holdout Sungrazer",
+    "image": "https://gtatown.com/img/pc/vehicles/holdout-sungrazer-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/holdout-sungrazer",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-honeycomb-emerus": {
+    "title": "Honeycomb Emerus",
+    "image": "https://gtatown.com/img/pc/vehicles/honeycomb-emerus-294.webp",
+    "source": "https://gtatown.com/garage/vehicles/honeycomb-emerus",
+    "evidence": "detail-page"
+  },
+  "vehicle-hornet-growler": {
+    "title": "Hornet Growler",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/pfister-hornet-growler.webp?v=1795545856",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-hulls-sea-enchantress": {
+    "title": "Hulls Sea Enchantress",
+    "image": "https://gtatown.com/img/pc/vehicles/hulls-sea-enchantress-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/hulls-sea-enchantress",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-hung-carbon-rs": {
+    "title": "Hung Carbon RS",
+    "image": "https://gtatown.com/img/pc/vehicles/hung-carbon-rs-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/hung-carbon-rs",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-hvy-airtug": {
+    "title": "HVY Airtug",
+    "image": "https://gtatown.com/img/pc/vehicles/hvy-airtug-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/hvy-airtug",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-hvy-bulldozer": {
+    "title": "HVY Bulldozer",
+    "image": "https://gtatown.com/img/pc/vehicles/hvy-bulldozer-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/hvy-bulldozer",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-immortal-bmx": {
+    "title": "Immortal BMX",
+    "image": "https://assets.gta6gps.com/standout/immortal-bmx.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-independence-boomazoom": {
+    "title": "Independence Boomazoom",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-independence-boomazoom.webp?v=1795545720",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-interdimensional-youga": {
+    "title": "Interdimensional Youga",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/bravado-interdimensional-youga.webp?v=1795545516",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-invetero-coquette": {
+    "title": "Invetero Coquette",
+    "image": "https://gtatown.com/img/pc/vehicles/invetero-coquette-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/invetero-coquette",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-invetero-coquette-d10": {
+    "title": "Invetero Coquette D10",
+    "image": "https://gtatown.com/img/pc/vehicles/invetero-coquette-d10-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/invetero-coquette-d10",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-jackals-caracara": {
+    "title": "Jackals Caracara",
+    "image": "https://gtatown.com/img/pc/vehicles/jackals-caracara-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/jackals-caracara",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-jackals-sanchez": {
+    "title": "Jackals Sanchez",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-jackals-sanchez.webp?v=1795545454",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-jobuilt-mb2-10": {
+    "title": "JoBuilt MB2-10",
+    "image": "https://gtatown.com/img/pc/vehicles/jobuilt-mb2-10-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/jobuilt-mb2-10",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-karin-allander": {
+    "title": "Karin Allander",
+    "image": "https://gtatown.com/img/pc/vehicles/karin-allander-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/karin-allander",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-karin-contender": {
+    "title": "Karin Contender",
+    "image": "https://gtatown.com/img/pc/vehicles/karin-contender-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/karin-contender",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-karin-intruder": {
+    "title": "Karin Intruder",
+    "image": "https://gtatown.com/img/pc/vehicles/karin-intruder-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/karin-intruder",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-karin-vivanite": {
+    "title": "Karin Vivanite",
+    "image": "https://gtatown.com/img/pc/vehicles/karin-vivanite-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/karin-vivanite",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-kds-sfb-1000": {
+    "title": "KD's SFB 1000",
+    "image": "https://gtatown.com/img/pc/vehicles/kds-sfb-1000-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/kds-sfb-1000",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-kinetic-dominator": {
+    "title": "Kinetic Dominator",
+    "image": "https://assets.gta6gps.com/standout/kinetic-dominator.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-king-of-swing-youga": {
+    "title": "King of Swing Youga",
+    "image": "https://assets.gta6gps.com/standout/king-of-swing-youga.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-kowaachobee-airboat": {
+    "title": "Kowaachobee Airboat",
+    "image": "https://assets.gta6gps.com/standout/kowaachobee-airboat.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-kyles-mallard": {
+    "title": "Kyle's Mallard",
+    "image": "https://gtatown.com/img/pc/vehicles/kyles-mallard-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/kyles-mallard",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-lagoon-schafter": {
+    "title": "Lagoon Schafter",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/benefactor-lagoon-schafter.webp?v=1795545860",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-lapwing-300-h": {
+    "title": "Lapwing 300-H",
+    "image": "https://gtatown.com/img/pc/vehicles/lapwing-300-h-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/lapwing-300-h",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-lapwing-mallard": {
+    "title": "Lapwing Mallard",
+    "image": "https://gtatown.com/img/pc/vehicles/lapwing-mallard-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/lapwing-mallard",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-lapwing-mammatus": {
+    "title": "Lapwing Mammatus",
+    "image": "https://gtatown.com/img/pc/vehicles/lapwing-mammatus-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/lapwing-mammatus",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-lapwing-nimbus": {
+    "title": "Lapwing Nimbus",
+    "image": "https://gtatown.com/img/pc/vehicles/lapwing-nimbus-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/lapwing-nimbus",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-lipgloss-vitello": {
+    "title": "Lipgloss Vitello",
+    "image": "https://assets.gta6gps.com/standout/lipgloss-vitello.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-love-buggy-outlaw": {
+    "title": "Love Buggy Outlaw",
+    "image": "https://gtatown.com/img/pc/vehicles/love-buggy-outlaw-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/love-buggy-outlaw",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-love-fist-shamal": {
+    "title": "Love Fist Shamal",
+    "image": "https://gtatown.com/img/pc/vehicles/love-fist-shamal-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/love-fist-shamal",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-love-fist-youga": {
+    "title": "Love Fist Youga",
+    "image": "https://gtatown.com/img/pc/vehicles/love-fist-youga-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/love-fist-youga",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-lowrider-boomazoom": {
+    "title": "Lowrider Boomazoom",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-lowrider-boomazoom.webp?v=1795545644",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-lowrider-caddy": {
+    "title": "Lowrider Caddy",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-lowrider-caddy.webp?v=1795545646",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-lure-predator-l20s": {
+    "title": "Lure Predator L20S",
+    "image": "https://gtatown.com/img/pc/vehicles/lure-predator-l20s-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/lure-predator-l20s",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-lure-predator-l35p": {
+    "title": "Lure Predator L35P",
+    "image": "https://gtatown.com/img/pc/vehicles/lure-predator-l35p-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/lure-predator-l35p",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-lustrous-toros": {
+    "title": "Lustrous Toros",
+    "image": "https://assets.gta6gps.com/standout/lustrous-toros.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-magma-cliffhanger": {
+    "title": "Magma Cliffhanger",
+    "image": "https://gtatown.com/img/pc/vehicles/magma-cliffhanger-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/magma-cliffhanger",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-maibatsu-caddy": {
+    "title": "Maibatsu Caddy",
+    "image": "https://gtatown.com/img/pc/vehicles/maibatsu-caddy-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/maibatsu-caddy",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-maibatsu-manchez": {
+    "title": "Maibatsu Manchez",
+    "image": "https://gtatown.com/img/pc/vehicles/maibatsu-manchez-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/maibatsu-manchez",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-maibatsu-penumbra": {
+    "title": "Maibatsu Penumbra",
+    "image": "https://gtatown.com/img/pc/vehicles/maibatsu-penumbra-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/maibatsu-penumbra",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-maibatsu-sanchez": {
+    "title": "Maibatsu Sanchez",
+    "image": "https://gtatown.com/img/pc/vehicles/maibatsu-sanchez-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/maibatsu-sanchez",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-malibu-zombie-bobber": {
+    "title": "Malibu Zombie Bobber",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/western-malibu-zombie-bobber.webp?v=1795545978",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-mammoth-dodo": {
+    "title": "Mammoth Dodo",
+    "image": "https://gtatown.com/img/pc/vehicles/mammoth-dodo-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/mammoth-dodo",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-marthas-vamos": {
+    "title": "Martha's Vamos",
+    "image": "https://assets.gta6gps.com/standout/marthas-vamos.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-memorial-sanchez": {
+    "title": "Memorial Sanchez",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-memorial-sanchez.webp?v=1795545754",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-mer-can-blast": {
+    "title": "Mer-Can Blast",
+    "image": "https://gtatown.com/img/pc/vehicles/mer-can-blast-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/mer-can-blast",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-meteor-duster": {
+    "title": "Meteor Duster",
+    "image": "https://gtatown.com/img/pc/vehicles/meteor-duster-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/meteor-duster",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-midnight-sun-avarus": {
+    "title": "Midnight Sun Avarus",
+    "image": "https://assets.gta6gps.com/standout/midnight-sun-avarus.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-midsummer-erode": {
+    "title": "Midsummer Erode",
+    "image": "https://assets.gta6gps.com/standout/midsummer-erode.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-millionaire-bmx": {
+    "title": "Millionaire BMX",
+    "image": "https://assets.gta6gps.com/standout/millionaire-bmx.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-mojito-tempesta": {
+    "title": "Mojito Tempesta",
+    "image": "https://gtatown.com/img/pc/vehicles/mojito-tempesta-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/mojito-tempesta",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-monarch-avarus": {
+    "title": "Monarch Avarus",
+    "image": "https://assets.gta6gps.com/standout/monarch-avarus.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-monster-futo": {
+    "title": "Monster Futo",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/karin-monster-futo.webp?v=1795545648",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-mosaic-dibnah": {
+    "title": "Mosaic Dibnah",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/calder-mosaic-dibnah.webp?v=1795546112",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-moses-sultan": {
+    "title": "Moses' Sultan",
+    "image": "https://gtatown.com/img/pc/vehicles/moses-sultan-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/moses-sultan",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-mountain-yosemite": {
+    "title": "Mountain Yosemite",
+    "image": "https://gtatown.com/img/pc/vehicles/mountain-yosemite-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/mountain-yosemite",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-mtl-packer": {
+    "title": "MTL Packer",
+    "image": "https://gtatown.com/img/pc/vehicles/mtl-packer-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/mtl-packer",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-muckspreader-bandito": {
+    "title": "Muckspreader Bandito",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/bf-muckspreader-bandito.webp?v=1795545410",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-mud-crasher-rancher": {
+    "title": "Mud Crasher Rancher",
+    "image": "https://assets.gta6gps.com/standout/mud-crasher-rancher.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-murica-dominator": {
+    "title": "Murica Dominator",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/vapid-murica-dominator.webp?v=1795545840",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-myways-manchez": {
+    "title": "MyWays Manchez",
+    "image": "https://assets.gta6gps.com/standout/myways-manchez.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-nagasaki-sea-sparrow": {
+    "title": "Nagasaki Sea Sparrow",
+    "image": "https://gtatown.com/img/pc/vehicles/nagasaki-sea-sparrow-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/nagasaki-sea-sparrow",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-nagasaki-sfb-1000": {
+    "title": "Nagasaki SFB 1000",
+    "image": "https://gtatown.com/img/pc/vehicles/nagasaki-sfb-1000-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/nagasaki-sfb-1000",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-nagasaki-street-blazer": {
+    "title": "Nagasaki Street Blazer",
+    "image": "https://gtatown.com/img/pc/vehicles/nagasaki-street-blazer-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/nagasaki-street-blazer",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-nancys-crawler": {
+    "title": "Nancy's Crawler",
+    "image": "https://gtatown.com/img/pc/vehicles/nancys-crawler-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/nancys-crawler",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-narcos-cavalcade": {
+    "title": "Narcos Cavalcade",
+    "image": "https://assets.gta6gps.com/standout/narcos-cavalcade.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-naughty-boy-airboat": {
+    "title": "Naughty Boy Airboat",
+    "image": "https://assets.gta6gps.com/standout/naughty-boy-airboat.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-nightlight-schafter": {
+    "title": "Nightlight Schafter",
+    "image": "https://gtatown.com/img/pc/vehicles/nightlight-schafter-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/nightlight-schafter",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-nugget-boomazoom": {
+    "title": "Nugget Boomazoom",
+    "image": "https://gtatown.com/img/pc/vehicles/nugget-boomazoom-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/nugget-boomazoom",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-obey-8f-drafter": {
+    "title": "Obey 8F Drafter",
+    "image": "https://gtatown.com/img/pc/vehicles/obey-8f-drafter-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/obey-8f-drafter",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-obey-animus": {
+    "title": "Obey Animus",
+    "image": "https://gtatown.com/img/pc/vehicles/obey-animus-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/obey-animus",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-obey-tailgater-s": {
+    "title": "Obey Tailgater S",
+    "image": "https://gtatown.com/img/pc/vehicles/obey-tailgater-s-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/obey-tailgater-s",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-obsidian-sovereign": {
+    "title": "Obsidian Sovereign",
+    "image": "https://gtatown.com/img/pc/vehicles/obsidian-sovereign-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/obsidian-sovereign",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-ocean-pearl-cb69": {
+    "title": "Ocean Pearl CB69",
+    "image": "https://assets.gta6gps.com/standout/ocean-pearl-cb69.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-ocelot-jugular": {
+    "title": "Ocelot Jugular",
+    "image": "https://gtatown.com/img/pc/vehicles/ocelot-jugular-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/ocelot-jugular",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-old-glory-caracara": {
+    "title": "Old Glory Caracara",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/vapid-old-glory-caracara.webp?v=1795545722",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-oubliette-coquette": {
+    "title": "Oubliette Coquette",
+    "image": "https://assets.gta6gps.com/standout/oubliette-coquette.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-oxygen-zombie-bobber": {
+    "title": "Oxygen Zombie Bobber",
+    "image": "https://gtatown.com/img/pc/vehicles/oxygen-zombie-bobber-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/oxygen-zombie-bobber",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-pacific-manchez": {
+    "title": "Pacific Manchez",
+    "image": "https://assets.gta6gps.com/standout/pacific-manchez.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-party-girl-penumbra": {
+    "title": "Party Girl Penumbra",
+    "image": "https://gtatown.com/img/pc/vehicles/party-girl-penumbra-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/party-girl-penumbra",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-partytime-caddy": {
+    "title": "Partytime Caddy",
+    "image": "https://assets.gta6gps.com/standout/partytime-caddy.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-peacock-sovereign": {
+    "title": "Peacock Sovereign",
+    "image": "https://assets.gta6gps.com/standout/peacock-sovereign.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-pegassi-toros": {
+    "title": "Pegassi Toros",
+    "image": "https://gtatown.com/img/pc/vehicles/pegassi-toros-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/pegassi-toros",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-pegassi-vitello": {
+    "title": "Pegassi Vitello",
+    "image": "https://gtatown.com/img/pc/vehicles/pegassi-vitello-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/pegassi-vitello",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-peppermint-stanier": {
+    "title": "Peppermint Stanier",
+    "image": "https://gtatown.com/img/pc/vehicles/peppermint-stanier-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/peppermint-stanier",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-pfister-astron": {
+    "title": "Pfister Astron",
+    "image": "https://gtatown.com/img/pc/vehicles/pfister-astron-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/pfister-astron",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-pfister-growler": {
+    "title": "Pfister Growler",
+    "image": "https://gtatown.com/img/pc/vehicles/pfister-growler-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/pfister-growler",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-pfister-neon": {
+    "title": "Pfister Neon",
+    "image": "https://gtatown.com/img/pc/vehicles/pfister-neon-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/pfister-neon",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-pharaoh-sanchez": {
+    "title": "Pharaoh Sanchez",
+    "image": "https://gtatown.com/img/pc/vehicles/pharaoh-sanchez-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/pharaoh-sanchez",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-piccia-furia": {
+    "title": "Piccia Furia",
+    "image": "https://gtatown.com/img/pc/vehicles/piccia-furia-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/piccia-furia",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-pink-champagne-caddy": {
+    "title": "Pink Champagne Caddy",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-pink-champagne-caddy.webp?v=1795545554",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-pink-gin-tulip": {
+    "title": "Pink Gin Tulip",
+    "image": "https://gtatown.com/img/pc/vehicles/pink-gin-tulip-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/pink-gin-tulip",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-pink-licorice-astron": {
+    "title": "Pink Licorice Astron",
+    "image": "https://assets.gta6gps.com/standout/pink-licorice-astron.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-pink-sunset-baller": {
+    "title": "Pink Sunset Baller",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/gallivanter-pink-sunset-baller.webp?v=1795545430",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-pixel-elegy": {
+    "title": "Pixel Elegy",
+    "image": "https://gtatown.com/img/pc/vehicles/pixel-elegy-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/pixel-elegy",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-pop-art-cypher": {
+    "title": "Pop Art Cypher",
+    "image": "https://gtatown.com/img/pc/vehicles/pop-art-cypher-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/pop-art-cypher",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-preachers-moocher": {
+    "title": "Preacher's Moocher",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/willard-preachers-moocher.webp?v=1795545668",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-preziosa-cheetah": {
+    "title": "Preziosa Cheetah",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/grotti-preziosa-cheetah.webp?v=1795546166",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-princess-jubilee": {
+    "title": "Princess Jubilee",
+    "image": "https://assets.gta6gps.com/standout/princess-jubilee.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-principe-alvino-v1": {
+    "title": "Principe Alvino V1",
+    "image": "https://gtatown.com/img/pc/vehicles/principe-alvino-v1-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/principe-alvino-v1",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-punk-putter-caddy": {
+    "title": "Punk Putter Caddy",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-punk-putter-caddy.webp?v=1795545676",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-purple-drank-emerus": {
+    "title": "Purple Drank Emerus",
+    "image": "https://gtatown.com/img/pc/vehicles/purple-drank-emerus-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/purple-drank-emerus",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-pussycat-mammatus": {
+    "title": "Pussycat Mammatus",
+    "image": "https://gtatown.com/img/pc/vehicles/pussycat-mammatus-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/pussycat-mammatus",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-queen-bee-paragon": {
+    "title": "Queen Bee Paragon",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/ascot-queen-bee-paragon.webp?v=1795545430",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-rainbow-ripple-l20s": {
+    "title": "Rainbow Ripple L20S",
+    "image": "https://gtatown.com/img/pc/vehicles/rainbow-ripple-l20s-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/rainbow-ripple-l20s",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-rampant-stallion": {
+    "title": "Rampant Stallion",
+    "image": "https://gtatown.com/img/pc/vehicles/rampant-stallion-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/rampant-stallion",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-rauls-coquette-classic": {
+    "title": "Raul's Coquette Classic",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/invetero-rauls-coquette-classic.webp?v=1795545792",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-rauls-tempesta": {
+    "title": "Raul's Tempesta",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/pegassi-rauls-tempesta.webp?v=1795546126",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-red-apple-orchard-rancher": {
+    "title": "Red Apple Orchard Rancher",
+    "image": "https://gtatown.com/img/pc/vehicles/red-apple-orchard-rancher-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/red-apple-orchard-rancher",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-red-hot-hustler": {
+    "title": "Red Hot Hustler",
+    "image": "https://gtatown.com/img/pc/vehicles/red-hot-hustler-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/red-hot-hustler",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-red-queen-dubsta": {
+    "title": "Red Queen Dubsta",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/benefactor-red-queen-dubsta.webp?v=1795545432",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-revenant-gauntlet": {
+    "title": "Revenant Gauntlet",
+    "image": "https://assets.gta6gps.com/standout/revenant-gauntlet.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-revival-kit-car": {
+    "title": "Revival Kit Car",
+    "image": "https://gtatown.com/img/pc/vehicles/revival-kit-car-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/revival-kit-car",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-revolutionary-azure": {
+    "title": "Revolutionary Azure",
+    "image": "https://assets.gta6gps.com/standout/revolutionary-azure.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-rocket-slamvan": {
+    "title": "Rocket Slamvan",
+    "image": "https://gtatown.com/img/pc/vehicles/rocket-slamvan-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/rocket-slamvan",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-royal-ruby-emerus": {
+    "title": "Royal Ruby Emerus",
+    "image": "https://gtatown.com/img/pc/vehicles/royal-ruby-emerus-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/royal-ruby-emerus",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-royal-sanchez": {
+    "title": "Royal Sanchez",
+    "image": "https://assets.gta6gps.com/standout/royal-sanchez.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-rudolph-tao": {
+    "title": "Rudolph Tao",
+    "image": "https://gtatown.com/img/pc/vehicles/rudolph-tao-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/rudolph-tao",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-rugger-rhode": {
+    "title": "Rugger Rhode",
+    "image": "https://gtatown.com/img/pc/vehicles/rugger-rhode-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/rugger-rhode",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-sals-chino": {
+    "title": "Sal's Chino",
+    "image": "https://gtatown.com/img/pc/vehicles/sals-chino-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/sals-chino",
+    "evidence": "exact-index-card"
+  },
   "vehicle-sandblasted-cliffhanger": {
     "title": "Sandblasted Cliffhanger",
     "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/western-sandblasted-cliffhanger.webp?v=1795545412",
@@ -75,11 +2121,582 @@
     "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
     "evidence": "exact-tracker-variant"
   },
+  "vehicle-schyster-pmp-700": {
+    "title": "Schyster PMP 700",
+    "image": "https://gtatown.com/img/pc/vehicles/schyster-pmp-700-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/schyster-pmp-700",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-seafoam-picador": {
+    "title": "Seafoam Picador",
+    "image": "https://gtatown.com/img/pc/vehicles/seafoam-picador-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/seafoam-picador",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-searing-zombie-bobber": {
+    "title": "Searing Zombie Bobber",
+    "image": "https://assets.gta6gps.com/standout/searing-zombie-bobber.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-seashark-azure": {
+    "title": "Seashark Azure",
+    "image": "https://gtatown.com/img/pc/vehicles/seashark-azure-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/seashark-azure",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-seashark-hydroblast": {
+    "title": "Seashark Hydroblast",
+    "image": "https://gtatown.com/img/pc/vehicles/seashark-hydroblast-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/seashark-hydroblast",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-seashark-sedna": {
+    "title": "Seashark Sedna",
+    "image": "https://gtatown.com/img/pc/vehicles/seashark-sedna-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/seashark-sedna",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-seashell-boomazoom": {
+    "title": "Seashell Boomazoom",
+    "image": "https://gtatown.com/img/pc/vehicles/seashell-boomazoom-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/seashell-boomazoom",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-seaspray-emerus": {
+    "title": "Seaspray Emerus",
+    "image": "https://gta6.house/media/gta6/1200/lib-feb61c5ab4.webp",
+    "source": "https://gta6.house/library/vehicles/progen-seaspray-emerus",
+    "evidence": "reviewed-in-game-name",
+    "credit": "GamesRadar+ via GTA6.house · game imagery © Rockstar Games"
+  },
+  "vehicle-shes-all-that-blista": {
+    "title": "She's All That Blista",
+    "image": "https://gtatown.com/img/pc/vehicles/shes-all-that-blista-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/shes-all-that-blista",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-shift-e-fan-e": {
+    "title": "Shift-E FAN-E",
+    "image": "https://gtatown.com/img/pc/vehicles/shift-e-fan-e-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/shift-e-fan-e",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-shining-sea-squalo": {
+    "title": "Shining Sea Squalo",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/shitzu-shining-sea-squalo.webp?v=1795545726",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-shitzu-squalo": {
+    "title": "Shitzu Squalo",
+    "image": "https://gtatown.com/img/pc/vehicles/shitzu-squalo-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/shitzu-squalo",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-shrimp-and-save-shifter": {
+    "title": "Shrimp and Save Shifter",
+    "image": "https://assets.gta6gps.com/standout/shrimp-and-save-shifter.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-silver-bullet-mallard": {
+    "title": "Silver Bullet Mallard",
+    "image": "https://gtatown.com/img/pc/vehicles/silver-bullet-mallard-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/silver-bullet-mallard",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-sludge-wraith-injection": {
+    "title": "Sludge Wraith Injection",
+    "image": "https://gtatown.com/img/pc/vehicles/sludge-wraith-injection-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/sludge-wraith-injection",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-smokescreen-carbon-rs": {
+    "title": "Smokescreen Carbon RS",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/nagasaki-smokescreen-carbon-rs.webp?v=1795545764",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-smuggler-caracara": {
+    "title": "Smuggler Caracara",
+    "image": "https://gtatown.com/img/pc/vehicles/smuggler-caracara-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/smuggler-caracara",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-smush-ganado": {
+    "title": "Smush! Ganado",
+    "image": "https://assets.gta6gps.com/standout/smush-ganado.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-soaring-phoenix": {
+    "title": "Soaring Phoenix",
+    "image": "https://gtatown.com/img/pc/vehicles/soaring-phoenix-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/soaring-phoenix",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-spec-ops-boomazoom": {
+    "title": "Spec Ops Boomazoom",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-spec-ops-boomazoom.webp?v=1795545926",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-speeder-700-gt": {
+    "title": "Speeder 700 GT",
+    "image": "https://gtatown.com/img/pc/vehicles/speeder-700-gt-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/speeder-700-gt",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-speedy-boomazoom": {
+    "title": "Speedy Boomazoom",
+    "image": "https://assets.gta6gps.com/standout/speedy-boomazoom.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-spiderweb-coquette": {
+    "title": "Spiderweb Coquette",
+    "image": "https://gtatown.com/img/pc/vehicles/spiderweb-coquette-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/spiderweb-coquette",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-splattered-vitello": {
+    "title": "Splattered Vitello",
+    "image": "https://gtatown.com/img/pc/vehicles/splattered-vitello-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/splattered-vitello",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-springtime-sungrazer": {
+    "title": "Springtime Sungrazer",
+    "image": "https://gtatown.com/img/pc/vehicles/springtime-sungrazer-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/springtime-sungrazer",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-stanley-furrow-tc-2350": {
+    "title": "Stanley Furrow TC 2350",
+    "image": "https://gtatown.com/img/pc/vehicles/stanley-furrow-tc-2350-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/stanley-furrow-tc-2350",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-status-rsx": {
+    "title": "Status RSX",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/grotti-status-rsx.webp?v=1795545842",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-stolen-valor-300-h": {
+    "title": "Stolen Valor 300-H",
+    "image": "https://gtatown.com/img/pc/vehicles/stolen-valor-300-h-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/stolen-valor-300-h",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-street-art-squalo": {
+    "title": "Street Art Squalo",
+    "image": "https://gtatown.com/img/pc/vehicles/street-art-squalo-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/street-art-squalo",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-sunrise-emperor": {
+    "title": "Sunrise Emperor",
+    "image": "https://gtatown.com/img/pc/vehicles/sunrise-emperor-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/sunrise-emperor",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-sunset-sanchez": {
+    "title": "Sunset Sanchez",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-sunset-sanchez.webp?v=1795545704",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-survivor-riata": {
+    "title": "Survivor Riata",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/vapid-survivor-riata.webp?v=1795546182",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-swampy-sals-caddy": {
+    "title": "Swampy Sal's Caddy",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-swampy-sals-caddy.webp?v=1795545934",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-sweet-land-caddy": {
+    "title": "Sweet Land Caddy",
+    "image": "https://gtatown.com/img/pc/vehicles/sweet-land-caddy-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/sweet-land-caddy",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-taci-ragno": {
+    "title": "Taci Ragno",
+    "image": "https://gtatown.com/img/pc/vehicles/taci-ragno-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/taci-ragno",
+    "evidence": "exact-index-card"
+  },
   "vehicle-tactical-caddy": {
     "title": "Tactical Caddy",
     "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-tactical-caddy.webp?v=1795545414",
     "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
     "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
     "evidence": "exact-tracker-variant"
+  },
+  "vehicle-tap-tap-walton": {
+    "title": "Tap-Tap Walton",
+    "image": "https://gtatown.com/img/pc/vehicles/tap-tap-walton-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/tap-tap-walton",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-taxi": {
+    "title": "Taxi",
+    "image": "https://gtatown.com/img/pc/vehicles/taxi-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/taxi",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-tempesta": {
+    "title": "Pegassi Tempesta",
+    "image": "https://gtatown.com/img/pc/vehicles/pegassi-tempesta-294.webp",
+    "source": "https://gtatown.com/garage/vehicles/pegassi-tempesta",
+    "evidence": "detail-page"
+  },
+  "vehicle-teniente-manana": {
+    "title": "Teniente Manana",
+    "image": "https://gtatown.com/img/pc/vehicles/teniente-manana-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/teniente-manana",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-thicc-esskey": {
+    "title": "Thicc Esskey",
+    "image": "https://assets.gta6gps.com/standout/thicc-esskey.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-third-eye-youga": {
+    "title": "Third Eye Youga",
+    "image": "https://gtatown.com/img/pc/vehicles/third-eye-youga-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/third-eye-youga",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-thirsty-grouse": {
+    "title": "Thirsty Grouse",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/willard-thirsty-grouse.webp?v=1795545468",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-thrax": {
+    "title": "Truffade Thrax",
+    "image": "https://gtatown.com/img/pc/vehicles/truffade-thrax-294.webp",
+    "source": "https://gtatown.com/garage/vehicles/truffade-thrax",
+    "evidence": "detail-page"
+  },
+  "vehicle-tormentor-street-blazer": {
+    "title": "Tormentor Street Blazer",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/nagasaki-tormentor-street-blazer.webp?v=1795545706",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-trash-rebel": {
+    "title": "Trash Rebel",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/karin-trash-rebel.webp?v=1795545470",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-trippin-picador": {
+    "title": "Trippin' Picador",
+    "image": "https://gtatown.com/img/pc/vehicles/trippin-picador-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/trippin-picador",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-tropic-dawn-youga": {
+    "title": "Tropic Dawn Youga",
+    "image": "https://gtatown.com/img/pc/vehicles/tropic-dawn-youga-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/tropic-dawn-youga",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-tropical-manchez": {
+    "title": "Tropical Manchez",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-tropical-manchez.webp?v=1795546190",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-truth-justice-caracara": {
+    "title": "Truth & Justice Caracara",
+    "image": "https://assets.gta6gps.com/standout/truth-justice-caracara.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-truther-burrito": {
+    "title": "Truther Burrito",
+    "image": "https://assets.gta6gps.com/standout/truther-burrito.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-tsunami-zorrusso": {
+    "title": "Tsunami Zorrusso",
+    "image": "https://assets.gta6gps.com/standout/tsunami-zorrusso.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-turbo-ruiner": {
+    "title": "Turbo Ruiner",
+    "image": "https://gtatown.com/img/pc/vehicles/turbo-ruiner-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/turbo-ruiner",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-twinstripe-vigero": {
+    "title": "Twinstripe Vigero",
+    "image": "https://assets.gta6gps.com/standout/twinstripe-vigero.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-typhoon-squalo": {
+    "title": "Typhoon Squalo",
+    "image": "https://gtatown.com/img/pc/vehicles/typhoon-squalo-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/typhoon-squalo",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-ubermacht-apoc": {
+    "title": "Übermacht APOC",
+    "image": "https://gtatown.com/img/pc/vehicles/ubermacht-apoc-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/ubermacht-apoc",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-ubermacht-cypher": {
+    "title": "Übermacht Cypher",
+    "image": "https://gtatown.com/img/pc/vehicles/ubermacht-cypher-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/ubermacht-cypher",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-ubermacht-rebla-gts": {
+    "title": "Übermacht Rebla GTS",
+    "image": "https://gtatown.com/img/pc/vehicles/ubermacht-rebla-gts-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/ubermacht-rebla-gts",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-valiant-tempesta": {
+    "title": "Valiant Tempesta",
+    "image": "https://gtatown.com/img/pc/vehicles/valiant-tempesta-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/valiant-tempesta",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vanessas-growler": {
+    "title": "Vanessa's Growler",
+    "image": "https://gtatown.com/img/pc/vehicles/vanessas-growler-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vanessas-growler",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-aleutian": {
+    "title": "Vapid Aleutian",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-aleutian-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-aleutian",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-caracara-4x4": {
+    "title": "Vapid Caracara 4x4",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-caracara-4x4-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-caracara-4x4",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-dominator": {
+    "title": "Vapid Dominator",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-dominator-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-dominator",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-dominator-gt": {
+    "title": "Vapid Dominator GT",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-dominator-gt-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-dominator-gt",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-guardian-tx2": {
+    "title": "Vapid Guardian TX2",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-guardian-tx2-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-guardian-tx2",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-lowline": {
+    "title": "Vapid Lowline",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-lowline-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-lowline",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-marshall": {
+    "title": "Vapid Marshall",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-marshall-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-marshall",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-montagne": {
+    "title": "Vapid Montagne",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-montagne-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-montagne",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-montagne-pickup": {
+    "title": "Vapid Montagne Pickup",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-montagne-pickup-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-montagne-pickup",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-montagne-xl": {
+    "title": "Vapid Montagne XL",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-montagne-xl-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-montagne-xl",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-reclaimer": {
+    "title": "Vapid Reclaimer",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-reclaimer-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-reclaimer",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-riata": {
+    "title": "Vapid Riata",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-riata-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-riata",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-rumpo": {
+    "title": "Vapid Rumpo",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-rumpo-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-rumpo",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-sandking-xl": {
+    "title": "Vapid Sandking XL",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-sandking-xl-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-sandking-xl",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-sandking-xt": {
+    "title": "Vapid Sandking XT",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-sandking-xt-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-sandking-xt",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-shifter": {
+    "title": "Vapid Shifter",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-shifter-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-shifter",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-speedo": {
+    "title": "Vapid Speedo",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-speedo-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-speedo",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vapid-stanier-g2": {
+    "title": "Vapid Stanier G2",
+    "image": "https://gtatown.com/img/pc/vehicles/vapid-stanier-g2-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/vapid-stanier-g2",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-venomous-marshall": {
+    "title": "Venomous Marshall",
+    "image": "https://assets.gta6gps.com/standout/venomous-marshall.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-venturas-blvd-elegy": {
+    "title": "Venturas BLVD Elegy",
+    "image": "https://gtatown.com/img/pc/vehicles/venturas-blvd-elegy-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/venturas-blvd-elegy",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-verdant-buccaneer": {
+    "title": "Verdant Buccaneer",
+    "image": "https://gtatown.com/img/pc/vehicles/verdant-buccaneer-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/verdant-buccaneer",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-vice-vinyl-coquette": {
+    "title": "Vice Vinyl Coquette",
+    "image": "https://assets.gta6gps.com/standout/vice-vinyl-coquette.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-walter-cruiser": {
+    "title": "Walter Cruiser",
+    "image": "https://gtatown.com/img/pc/vehicles/walter-cruiser-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/walter-cruiser",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-walter-lombike": {
+    "title": "Walter Lombike",
+    "image": "https://gtatown.com/img/pc/vehicles/walter-lombike-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/walter-lombike",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-westbound-azure": {
+    "title": "Westbound Azure",
+    "image": "https://gtatown.com/img/pc/vehicles/westbound-azure-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/westbound-azure",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-western-sovereign-107": {
+    "title": "Western Sovereign 107",
+    "image": "https://gtatown.com/img/pc/vehicles/western-sovereign-107-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/western-sovereign-107",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-western-zombie-bobber": {
+    "title": "Western Zombie Bobber",
+    "image": "https://gtatown.com/img/pc/vehicles/western-zombie-bobber-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/western-zombie-bobber",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-whiffler-dashound": {
+    "title": "Whiffler Dashound",
+    "image": "https://gtatown.com/img/pc/vehicles/whiffler-dashound-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/whiffler-dashound",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-will-o-the-wisp-airboat": {
+    "title": "Will O' The Wisp Airboat",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/will-o-the-wisp-airboat.webp?v=1795545942",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-willard-transient": {
+    "title": "Willard Transient",
+    "image": "https://gtatown.com/img/pc/vehicles/willard-transient-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/willard-transient",
+    "evidence": "exact-index-card"
+  },
+  "vehicle-wymans-67-dominator-buggy": {
+    "title": "Wyman's '67 Dominator Buggy",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/vapid-wymans-67-dominator-buggy.webp?v=1795546214",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-yesteryear-boomazoom": {
+    "title": "Yesteryear Boomazoom",
+    "image": "https://gtatown.com/img/pc/vehicles/yesteryear-boomazoom-588.webp",
+    "source": "https://gtatown.com/garage/vehicles/yesteryear-boomazoom",
+    "evidence": "exact-index-card"
   }
 }
