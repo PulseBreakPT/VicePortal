@@ -8,7 +8,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 // Copy the modules to temporary .mjs files and resolve CRA's extensionless imports.
 const root = fileURLToPath(new URL('../', import.meta.url));
 const dir = await mkdtemp(join(tmpdir(), 'viceportal-characters-'));
-const modules = ['characterSourceIndex','characterCoverage','mediaCast','characterDiscoveries','characterEvidence','characterRecords'];
+const modules = ['characterSourceIndex','characterCoverage','mediaCast','characterDiscoveries','characterEvidence','characterProfileResearch','characterCompleteness','characterRecords'];
 try {
   for (const name of modules) {
     const source = await readFile(join(root,'src','data',name+'.js'),'utf8');
@@ -19,6 +19,25 @@ try {
   const { mediaCast } = await import(pathToFileURL(join(dir,'mediaCast.mjs')).href);
   const { characterDiscoveries } = await import(pathToFileURL(join(dir,'characterDiscoveries.mjs')).href);
   const byId = new Map(records.map(row=>[row.id,row]));
+  const { characterCoverageReport } = await import(pathToFileURL(join(dir,'characterCompleteness.mjs')).href);
+  const report=characterCoverageReport(records);
+  assert.equal(report.records,report.uniqueIds,'Duplicate character IDs');
+  assert.equal(report.withEvidenceScope,records.length,'Every dossier must declare its evidence scope');
+  for(const row of records) assert.ok(row.attributes['Outstanding evidence'],'Missing evidence audit '+row.id);
+  for(const row of mediaCast) assert.ok(byId.get(row.existingId||row.id)?.attributes['Documented media appearances']?.includes(row.program),'Missing media context '+row.role);
+  console.log('Full character coverage audit:',JSON.stringify(report));
+  const { characterProfileResearch, characterSceneResearch, checkedCreditProfiles } = await import(pathToFileURL(join(dir,'characterProfileResearch.mjs')).href);
+  for (const [id,review] of [...Object.entries(characterProfileResearch),...Object.entries(characterSceneResearch)]) {
+    const row=byId.get(id);
+    assert.ok(row, 'Unknown supplemental character ID '+id);
+    assert.ok(row.spoiler, 'Supplemental story details must be protected '+id);
+    assert.ok(row.paragraphs.includes(review.text), 'Missing supplemental biography '+id);
+    assert.ok(row.relatedSources.some(source=>source.url===review.source), 'Missing supplemental source '+id);
+    for (const related of review.relations || []) assert.ok(row.relatedCharacterIds?.includes(related), 'Missing sourced relation '+id+' / '+related);
+  }
+  for (const [id,url] of Object.entries(checkedCreditProfiles)) {
+    assert.ok(byId.get(id)?.relatedSources.some(s=>s.url===url),'Missing individual credit review '+id);
+  }
   assert.equal(byId.size,records.length,'Duplicate dossier ID');
   assert.ok(records.length>=589,'Unexpected catalogue regression');
   assert.equal(records.filter(x=>x.attributes['Credit section']==='Main Cast').length,57);

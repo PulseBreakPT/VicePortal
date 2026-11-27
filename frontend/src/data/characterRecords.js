@@ -1,4 +1,6 @@
 import { characterEvidence } from './characterEvidence';
+import { completeCharacterDossier } from './characterCompleteness';
+import { applyProfileResearch, applySceneResearch } from './characterProfileResearch';
 import { characterDiscoveries } from './characterDiscoveries';
 import { mediaCast } from './mediaCast';
 import { characterCoverage } from './characterCoverage';
@@ -1991,4 +1993,4 @@ export const characterRecords = [
    description:'Rap duo formed by Bae-Luxe and Roxy, signed to Only Raw Records. Their early collaboration with DWNPLY helped establish their career.',
    attributes:{Role:'Music duo',Members:'Bae-Luxe; Roxy Rashad',Label:'Only Raw Records',Evidence:'Official group profile'},
    relatedSources:[{label:'Rockstar Games — cast credits',url:credits},{label:'GTABase — character guide',url:gtabase}],verifiedOn:'2026-11-27'},
-].map(attachResearch).map(applyCoverage).map(mergeMediaCredits).concat(mediaCast.filter(row=>row.id).map(mediaRecord)).map(applyEvidence).map(item=>({...item,attributes:{...item.attributes,'Biography availability':item.attributes['Biography availability']||'Documented summary; complete life history not established','Portrait availability':item.placeholderImage?'Not verified in this atlas':item.attributes['Portrait availability']||'Attributed image reference'}}));
+].map(attachResearch).map(applyCoverage).map(mergeMediaCredits).concat(mediaCast.filter(row=>row.id).map(mediaRecord)).map(applyEvidence).map(applyProfileResearch).map(applySceneResearch).map(item=>({...item,attributes:{...item.attributes,'Biography availability':item.attributes['Biography availability']||'Documented summary; complete life history not established','Portrait availability':item.placeholderImage?'Not verified in this atlas':item.attributes['Portrait availability']||'Attributed image reference'}})).map(completeCharacterDossier);
