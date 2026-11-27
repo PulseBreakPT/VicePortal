@@ -35,8 +35,10 @@
 .neon-cipher-number .neon-cipher-overlay { color:var(--gta-turquoise,#65BFC1); text-shadow: 0 0 .18em #65BFC133; }
 .neon-cipher-card .neon-cipher-overlay { text-shadow:none; }
 /* Keep keyboard focus, touch, reduced motion and printed text immediately legible. */
-:focus-within > .neon-cipher[data-cipher-active] > .neon-cipher-original { opacity:1; }
-:focus-within > .neon-cipher[data-cipher-active] > .neon-cipher-overlay { display:none; }
+:focus-within > .neon-cipher[data-cipher-active] > .neon-cipher-original,
+.portal-card:focus-within .neon-cipher-card[data-cipher-active] > .neon-cipher-original { opacity:1; }
+:focus-within > .neon-cipher[data-cipher-active] > .neon-cipher-overlay,
+.portal-card:focus-within .neon-cipher-card[data-cipher-active] > .neon-cipher-overlay { display:none; }
 @media (max-width:899px), (pointer:coarse) {
   .neon-cipher-card[data-cipher-active] > .neon-cipher-original { opacity:1; }
   .neon-cipher-card[data-cipher-active] > .neon-cipher-overlay { display:none; }
