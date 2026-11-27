@@ -1505,9 +1505,349 @@ const researchedBios = {
     []
   ]
 };
+Object.assign(researchedBios, {
+  "jacki": [
+    "Party guest who blocks Lucia’s access to Roxy’s room. Her dog Pluto is present in the encounter.",
+    "Top Billing",
+    null,
+    [
+      "lucia-caminos",
+      "roxy-rashad"
+    ]
+  ],
+  "stevie-j": [
+    "DJ at the Real Dimez launch show and acquaintance of Dre’Quan. Other credits identify distinct broadcast appearances.",
+    "Headliners",
+    "DJ",
+    [
+      "real-dimez",
+      "drequan-priest"
+    ]
+  ],
+  "felix-the-ten": [
+    "Personal assistant to Cecilia in Cellerica, who introduces Lucia to parts of the organization’s operation.",
+    "Peach!",
+    "Cellerica",
+    [
+      "cecilia-richardson-real",
+      "lucia-caminos"
+    ]
+  ],
+  "jenna-the-whisper": [
+    "Cellerica customer who meets Lucia at a market during Andy’s product distribution assignments.",
+    "Climbing the Cellerichain Part 2",
+    "Cellerica",
+    [
+      "andy",
+      "lucia-caminos"
+    ]
+  ],
+  "terro": [
+    "Leader of M7, who becomes involved with Mia Caminos’s real-estate business following a dispute with Viper.",
+    "South Leonida Real Estate",
+    "M7",
+    [
+      "viper",
+      "mia-caminos",
+      "bones"
+    ]
+  ],
+  "bledar": [
+    "Works within Giorgio’s penthouse circle and assists the departing group in Chapter 5.",
+    "Protective Custody",
+    null,
+    [
+      "giorgio-gallo"
+    ]
+  ],
+  "janice": [
+    "Wine authentication professional whose work-related access becomes relevant to Lucia during the airport heist.",
+    "VCIA Takedown",
+    "Wine authentication",
+    [
+      "lucia-caminos"
+    ]
+  ],
+  "dodo-steve": [
+    "Friend of Dodo Tyler who participates in the Watson Bay environmental protest and can be rescued during the incident.",
+    "Twin Flames",
+    "Dodos Rising",
+    [
+      "dodo-tyler",
+      "lucia-caminos"
+    ]
+  ],
+  "jaylah": [
+    "Bayside Apartments resident who shares a home with Marv and can converse with the player outside the Chapter 3 apartment.",
+    null,
+    null,
+    [
+      "marv"
+    ]
+  ],
+  "lucky": [
+    "Dancer at Delights Cabaret who may join Jason onstage during Ladies’ Night, depending on the selected approach.",
+    "Afternoon Delight",
+    "Delights performer",
+    [
+      "mario",
+      "jason-duval"
+    ]
+  ],
+  "cecilia-richardson-real": [
+    "Leads Cellerica and communicates through a manufactured public image. The warehouse storyline exposes the organization’s deception; the credits distinguish the real and fake roles.",
+    null,
+    "Cellerica",
+    [
+      "andy",
+      "felix-the-ten",
+      "cecilia-richardson-fake"
+    ]
+  ],
+  "jalen-wang": [
+    "Manager of Ajax Gym, referred to as J-Wang in gameplay reporting. Gives Jason a tour during the hard-drive investigation.",
+    "Heavy Lifting",
+    "Gym manager",
+    [
+      "jason-duval"
+    ]
+  ],
+  "yolanda": [
+    "Hamlet Correctional acquaintance with whom Lucia can discuss a crossword during the prologue.",
+    "Prologue",
+    null,
+    [
+      "lucia-caminos"
+    ]
+  ],
+  "dook": [
+    "Bodyguard for Tyrone Russo and familiar acquaintance of Dre’Quan.",
+    "Dealer’s Choice",
+    "Bodyguard",
+    [
+      "tyrone-russo",
+      "drequan-priest"
+    ]
+  ],
+  "marv": [
+    "Recurring Bayside Apartments neighbor who shares a household with Jaylah and discusses local events.",
+    null,
+    null,
+    [
+      "jaylah"
+    ]
+  ],
+  "viper": [
+    "M7 member whose opposition to Mia’s property sale escalates into a conflict involving Terro.",
+    "South Leonida Real Estate",
+    "M7",
+    [
+      "terro",
+      "mia-caminos",
+      "lucia-caminos"
+    ]
+  ],
+  "levi": [
+    "Present in the backstage dressing room occupied by Real Dimez; no specific employment or family relationship is established.",
+    "Top Billing",
+    null,
+    [
+      "real-dimez"
+    ]
+  ],
+  "celine": [
+    "Hotel guest encountered in Chapter 4 during a disagreement with a bartender; later offers the player a drink.",
+    null,
+    null,
+    []
+  ],
+  "paulo-jimenez": [
+    "Security guard employed by Andrés de León who escorts Jason at the mansion and assists during the nightclub incident.",
+    "Adventures in Babysitting",
+    "Security guard",
+    [
+      "andres-de-leon",
+      "jason-duval"
+    ]
+  ],
+  "burim": [
+    "Associate of Mattia who initially assists Lucia during Day Release, then becomes hostile in the later Key Lento events.",
+    "Day Release",
+    null,
+    [
+      "mattia-tauro",
+      "alexi",
+      "dardan",
+      "lucia-caminos"
+    ]
+  ],
+  "roscoe": [
+    "Member of Tyrone Russo’s circle seen at the pickup location during the music storyline.",
+    "Dealer’s Choice",
+    null,
+    [
+      "tyrone-russo"
+    ]
+  ],
+  "pooch": [
+    "Attempts to film Real Dimez backstage before Dre’Quan intervenes.",
+    "Top Billing",
+    null,
+    [
+      "real-dimez",
+      "drequan-priest"
+    ]
+  ],
+  "monterossa": [
+    "Also called Monty, leads a Pollia Negra hideout and becomes a target of Raul’s operation.",
+    null,
+    "Pollia Negra",
+    [
+      "raul-bautista",
+      "andrea",
+      "lucia-caminos"
+    ]
+  ],
+  "elonzo": [
+    "Initially presented as an acquaintance of Andrés, but becomes involved in the attack during the network event.",
+    "Party Hard",
+    null,
+    [
+      "andres-de-leon",
+      "jason-duval"
+    ]
+  ],
+  "andrew-from-chucks": [
+    "Employee at Chuck’s gun shop who contacts Jason during preparations for Lucia’s return.",
+    "Gear Up",
+    "Gun-store employee",
+    [
+      "jason-duval"
+    ]
+  ],
+  "ricky": [
+    "Also called Ricardo; member of Billy’s Thrillbilly group who appears in the optional Chapter 2 storyline.",
+    "Thrillbillies",
+    "Thrillbilly crew",
+    [
+      "billy",
+      "brittney",
+      "ian"
+    ]
+  ],
+  "little-sam": [
+    "Self-credited performer who appears during the Chapter 3 meeting with Boobie Ike. A suggested real-world identity is not confirmed by the credit.",
+    "Boobie Time",
+    null,
+    [
+      "boobie-ike"
+    ]
+  ],
+  "sir-todd-bancroft": [
+    "Kenton’s rival in treasure recovery, later appearing with Cameron during the charter-business storyline.",
+    "Island Dream",
+    "Treasure hunter",
+    [
+      "kenton-rees",
+      "cameron"
+    ]
+  ],
+  "bones": [
+    "Protects Terro and accompanies him during the real-estate encounter involving Mia and Lucia.",
+    "South Leonida Real Estate",
+    "Bodyguard / M7",
+    [
+      "terro",
+      "mia-caminos"
+    ]
+  ],
+  "sexyy-red": [
+    "Appears as herself at the Real Dimez launch party as a VIP guest.",
+    "Headliners",
+    null,
+    [
+      "real-dimez",
+      "drequan-priest"
+    ]
+  ],
+  "briana": [
+    "Assistant to Royce Jones during Dre’Quan’s booking negotiations, later receiving the recovered tapes.",
+    "Watch It",
+    "Promoter’s assistant",
+    [
+      "royce-jones",
+      "drequan-priest"
+    ]
+  ],
+  "emelda": [
+    "Works in Andrés de León’s household and appears near the pool with Rafa.",
+    "Adventures in Babysitting",
+    "Household staff",
+    [
+      "andres-de-leon",
+      "rafa-de-leon-navarro"
+    ]
+  ],
+  "bailey-the-pillar": [
+    "Mentors Andy in Cellerica and helps introduce Lucia to the organization.",
+    "Climbing the Cellerichain",
+    "Cellerica",
+    [
+      "andy",
+      "lucia-caminos"
+    ]
+  ],
+  "maleek-rivers": [
+    "VIP guest at the Real Dimez launch event, credited to Tyreek Hill. The performer’s real-world profession is not attributed to this character.",
+    "Headliners",
+    null,
+    [
+      "real-dimez"
+    ]
+  ],
+  "lavaughn": [
+    "Associated with DWNPLY and appears during the rival performer’s disruption of the Real Dimez event.",
+    "Headliners",
+    null,
+    [
+      "dwnply",
+      "real-dimez"
+    ]
+  ],
+  "ian": [
+    "Biker in Billy’s group who participates in the optional Chapter 2 robbery storyline.",
+    "Twist Wrist, Smash, Grab",
+    "Thrillbilly crew",
+    [
+      "billy",
+      "ricky"
+    ]
+  ],
+  "lorena-caminos": [
+    "Lucia’s aunt and Tommy’s caregiver while Lucia is incarcerated. Later phone messages concern the child and Lucia’s financial assistance.",
+    null,
+    null,
+    [
+      "lucia-caminos",
+      "tommy-tomas"
+    ]
+  ]
+});
+const researchedAppearances = {
+  "marissa-tercio": "Also credited within the game’s television news cast; a particular news report or on-air job has not been established.",
+  "mitico-mario": "Bad Bunny also performs the separately credited Cocoteo FM host El Martillo. Neither that role nor the Delights performer named Mario is established as Mitico Mario.",
+  "zaria-ri-ri-luckett": "The Jack of Hearts Dancers collectible set includes cards under this name, including Silver and Gold variants.",
+  "jimmy-de-santa": "Returning character from GTA V, with the same credited performer. His exact GTA VI scene and intervening life history remain undocumented here.",
+  "monali-a": "The Jack of Hearts Dancers collectibles feature cards under this name in Bronze, Silver and Gold variants.",
+  "kodak-black": "Credited as himself and separately as host of The Sniper of La Perle. GTA Base identifies an appearance in promotional imagery; a specific mission chronology is not established.",
+  "priscilla-pace": "A Jack of Hearts collectible guide uses the spelling Pricilla Pace. The similar label may be a variant, but the identity match remains unresolved.",
+  "jerry-turner": "The same character-performer pairing appears in the TV News section of the credits; a physical encounter is not established.",
+  "lexy-campbell": "The Jack of Hearts card checklist uses Lexi Campbell. The spelling difference is retained rather than assuming a confirmed identity match."
+};
 function attachResearch(item) {
   const ref = characterSourceIndex[item.id] || {};
   const bio = researchedBios[item.id];
+  const appearance = researchedAppearances[item.id];
   const sources = [...(item.relatedSources || []), ...(ref.ops ? [{label:'GTA6Ops — individual profile',url:ref.ops}] : []), ...(ref.powerpyx ? [{label:'PowerPyx — individual profile',url:ref.powerpyx}] : []), ...(ref.portrait && item.placeholderImage ? [{label:'PowerPyx — image reference',url:ref.portrait}] : [])].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i);
   const portrait = item.placeholderImage && ref.portrait;
   const attrs = {...item.attributes};
@@ -1516,10 +1856,12 @@ function attachResearch(item) {
     if(bio[1]) attrs['Documented mission'] = bio[1];
     if(bio[2]) attrs['Occupation / affiliation'] = bio[2];
   }
-  if(attrs.Evidence==='Official cast credit only') attrs['Biography availability'] = 'Not verified in this atlas';
+  if(appearance) attrs.Evidence = 'Official cast credit; documented or qualified appearance context';
+  if(attrs.Evidence==='Official cast credit only' || appearance) attrs['Biography availability'] = 'Not verified in this atlas';
   attrs['Portrait availability'] = portrait ? 'Attributed external reference' : item.placeholderImage ? 'Not verified in this atlas' : 'Existing image';
   return {...item,attributes:attrs,relatedSources:sources,
     ...(bio?{description:bio[0],paragraphs:[],status:'Community reference',source:ref.ops||item.source,details:['Official cast credit; community biography'],relatedCharacterIds:[...new Set([...(item.relatedCharacterIds||[]),...bio[3]])]}:{}),
+    ...(appearance?{paragraphs:[...(item.paragraphs||[]),appearance],details:['Official cast credit; appearance context distinguished from a biography']}:{}),
     ...(portrait?{image:portrait,placeholderImage:false,imageFallback:placeholder,imageSource:'PowerPyx',imageSourceUrl:ref.powerpyx||ref.portrait}:{}),
   };
 }
