@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { motion, useScroll, useSpring } from 'framer-motion';
+import { motion, useScroll, useSpring, useReducedMotion } from 'framer-motion';
 import { Eye, EyeOff, Grid2X2, Search, Bookmark } from 'lucide-react';
 import { sectionById } from '../data/sections';
 import { entries } from '../data/portal';
@@ -9,16 +9,34 @@ export const TownMark = () => <svg width="30" height="34" viewBox="0 0 38 44" fi
 
 export const Navigation = ({open,saved,spoilers,setSpoilers}) => {
   const [scrolled,setScrolled]=useState(false);
+  const navRef=useRef(null);
+  const reduced=useReducedMotion();
+  const [indicator,setIndicator]=useState(null);
   const {pathname}=useLocation();
   const {scrollYProgress}=useScroll();
   const progress=useSpring(scrollYProgress,{stiffness:170,damping:35});
   let current=sectionById[pathname.slice(1)] || sectionById[entries.find(e=>e.path===pathname)?.collections[0]];
   while(current?.parent)current=sectionById[current.parent];
   const root=current?.id;
+  useEffect(()=>{
+    const nav=navRef.current;
+    if(!nav)return;
+    const measure=()=>{
+      const active=nav.querySelector('.nav-active');
+      if(!active||!nav.clientWidth){setIndicator(null);return;}
+      setIndicator({x:active.offsetLeft,width:active.offsetWidth});
+    };
+    measure();
+    const observer=typeof ResizeObserver==='function'?new ResizeObserver(measure):null;
+    observer?.observe(nav);
+    for(const link of nav.querySelectorAll('a'))observer?.observe(link);
+    window.addEventListener('resize',measure,{passive:true});
+    return()=>{observer?.disconnect();window.removeEventListener('resize',measure);};
+  },[root]);
   useEffect(()=>{const handler=()=>setScrolled(window.scrollY>40);handler();window.addEventListener('scroll',handler,{passive:true});return()=>window.removeEventListener('scroll',handler);},[]);
   return <header className={`town-header ${scrolled?'is-stuck':''} ${pathname!=='/'?'portal-header':''}`} data-testid="site-header">
     <Link to="/" className="town-brand" aria-label="Vice Atlas home" data-testid="header-logo"><TownMark/><span className="town-wordmark">VICE<br/>ATLAS</span></Link>
-    <nav className="town-nav" aria-label="Main navigation">{[['Map','/map','explore'],['Story','/story','story'],['Progress','/progress','progress'],['Garage','/garage','garage'],['Guides','/guides','guides'],['News','/news','news']].map(([title,path,area])=><Link key={path} to={path} data-testid={`nav-${title.toLowerCase()}`} className={root===area?'nav-active':''} aria-current={pathname===path?'page':undefined}>{title}</Link>)}</nav>
+    <nav ref={navRef} className="town-nav smooth-nav" data-smooth-nav-ready={indicator?true:undefined} aria-label="Main navigation">{[['Map','/map','explore'],['Story','/story','story'],['Progress','/progress','progress'],['Garage','/garage','garage'],['Guides','/guides','guides'],['News','/news','news']].map(([title,path,area])=><Link key={path} to={path} data-testid={`nav-${title.toLowerCase()}`} className={root===area?'nav-active':''} aria-current={pathname===path?'page':undefined}>{title}</Link>)}{indicator&&<motion.span className="smooth-nav-indicator" aria-hidden="true" initial={false} animate={{x:indicator.x,width:indicator.width}} transition={reduced?{duration:0}:{type:"spring",stiffness:340,damping:34,mass:.7}}/>}</nav>
     <div className="town-header-actions">
       <button className="spoiler-toggle" data-testid="spoiler-toggle" aria-label={`Spoilers ${spoilers?'on':'off'}`} title={`Spoilers ${spoilers?'on':'off'}`} aria-pressed={spoilers} onClick={()=>setSpoilers(!spoilers)}>{spoilers?<Eye size={17}/>:<EyeOff size={17}/>}<span>Spoilers {spoilers?'on':'off'}</span></button>
       <button className="town-icon" data-testid="open-search" aria-label="Search Vice Atlas" title="Search" onClick={()=>open({type:'search'})}><Search size={20}/></button>
