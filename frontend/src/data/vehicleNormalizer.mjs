@@ -2,7 +2,7 @@ export const vehicleSlug=value=>String(value??'').normalize('NFD').replace(/[\u0
 const aliases={
   'truffade-thrax':'thrax','progen-emerus':'emerus','pegassi-tempesta':'tempesta','pfister-comet-s2':'comet-s2','bravado-gauntlet-hellfire':'gauntlet-hellfire','nagasaki-carbon-rs':'carbon-rs','95-grotti-cheetah':'cheetah-classic','grotti-cheetah-95':'cheetah-classic','grotti-cheetah-classic':'cheetah-classic'
 };
-export const STANDOUT_CLASSES=['ultra-luxe','street-racer','stock-car','fine-art','girlypop','race-bikes','leonida-man','retro','ripped-shredded','blinged-up','law-order','clout-chaser','driveshaft-famous','donks','hot-rods','all-terrain','chopper','throwback','lowriders','lowrider','demolition-derby','mudder','pedal-power','swamp-style','topper'];
+export const STANDOUT_CLASSES=['ultra-luxe','street-racer','stock-car','fine-art','girlypop','race-bikes','leonida-man','retro','ripped-shredded','blinged-up','law-order','clout-chaser','driveshaft-famous','donks','hot-rods','all-terrain','chopper','throwback','lowriders','lowrider','demolition-derby','mudder','pedal-power','swamp-style','topper','patriot'];
 export function vehicleGroup(category,type=''){
  const key=vehicleSlug(category).replace(/^standout-/,'');
  if(STANDOUT_CLASSES.includes(key)||/^standout/.test(vehicleSlug(category)))return 'standout';
@@ -14,6 +14,7 @@ export function vehicleGroup(category,type=''){
  if(/suv/.test(key))return 'suvs';
  if(/compact|hatchback/.test(key))return 'compacts';
  if(/off-road|offroad|pickup|atv/.test(key))return 'off-road';
+ if(/bicycle|^cycles$/.test(vehicleSlug(type)))return 'bicycles';
  if(/motorbike|motorcycle|^bikes$|scooter/.test(key))return 'motorcycles';
  if(/bicycle|^cycles$/.test(key))return 'bicycles';
  if(/boat|watercraft|jet-ski/.test(key))return 'boats';
@@ -31,7 +32,7 @@ const field=(row,...keys)=>{
  for(const k of keys){const v=values[fieldKey(k)];if(v!==undefined&&v!==null&&v!=='')return v;}
 };
 const str=v=>typeof v==='string'||typeof v==='number'||typeof v==='boolean'?String(v).trim():'';
-const score=v=>{if(v===undefined||v===null||v==='')return null;const n=Number(String(v).trim().replace(/\s*\/\s*10$/,''));return Number.isFinite(n)&&n>=0&&n<=10?n:null;};
+const score=v=>{if(v===undefined||v===null||v===''||typeof v==='boolean')return null;const n=Number(String(v).trim().replace(/\s*\/\s*10$/,''));return Number.isFinite(n)&&n>=0&&n<=10?n:null;};
 const sourceURL=v=>{try{const u=new URL(String(v),'https://gtatown.com');return u.protocol==='https:'&&u.hostname==='gtatown.com'&&u.pathname.startsWith('/garage/vehicles')?u.href:'https://gtatown.com/garage/vehicles';}catch{return 'https://gtatown.com/garage/vehicles';}};
 export function extractRows(input){
  if(Array.isArray(input))return input;
