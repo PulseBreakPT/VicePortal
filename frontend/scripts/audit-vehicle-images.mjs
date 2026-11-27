@@ -40,6 +40,7 @@ const unavailable=ids.filter(id=>results[id].status!=='reachable');
 const missing=rows.filter(row=>!refs[row.id]).map(({id,title,maker,category})=>({id,title,maker,category}));
 const summary={vehicles:rows.length,references:ids.length,missing:missing.length,reachableUnique:ids.length-unavailable.length-duplicateIds.size,unavailable:unavailable.length,duplicateGroups:duplicateGroups.length,duplicateIds:duplicateIds.size,local:ids.filter(id=>refs[id].local).length};
 const report={summary,missing,unavailable,duplicateGroups,results:Object.fromEntries(ids.map(id=>[id,results[id]]))};
+await writeFile(file('vehicleImageMissing.json'),JSON.stringify(missing,null,2)+'\n');
 await writeFile(file('vehicleImageAudit.json'),JSON.stringify(report,null,2)+'\n');
 console.log('Vehicle image audit:',JSON.stringify(summary));
 if(process.env.REQUIRE_COMPLETE_VEHICLE_IMAGES==='1'&&(missing.length||unavailable.length||duplicateIds.size))process.exitCode=1;
