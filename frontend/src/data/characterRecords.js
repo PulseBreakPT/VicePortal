@@ -1970,9 +1970,11 @@ function mediaRecord(row) {
 function applyEvidence(item) {
   const evidence=characterEvidence[item.id];
   if(!evidence)return item;
-  const attributes=evidence.creditOnly?{...item.attributes}:{...item.attributes,'Biography availability':'Documented partial context','Evidence':item.attributes['Credit section']||item.id.startsWith('media-')?'Official cast credit; community gameplay context':'Community gameplay context'};
+  const attributes=evidence.creditOnly?{...item.attributes}:{...item.attributes,'Biography availability':evidence.qualified?'Not verified in this atlas':'Documented partial context','Evidence':evidence.qualified?'Official cast credit; possible appearance (unconfirmed)':item.attributes['Credit section']||item.id.startsWith('media-')?'Official cast credit; community gameplay context':'Community gameplay context'};
+  if(evidence.mission&&!evidence.qualified)attributes['Documented mission']=evidence.mission;
   if(evidence.contextImage)attributes['Contextual image availability']=evidence.creditOnly?'Station artwork; not a portrait':'Documented scene; not an isolated portrait';
   return {...item,...(evidence.creditOnly?{}:{description:evidence.description,status:'Community reference'}),spoiler:item.spoiler||!!evidence.spoiler,attributes,
+    ...(evidence.relations?{relatedCharacterIds:[...new Set([...(item.relatedCharacterIds||[]),...evidence.relations])]}:{}),
     ...(evidence.contextImage?{contextImage:evidence.contextImage,contextCaption:evidence.contextCaption,contextImageSource:evidence.contextImageSource||evidence.source}:{}),
     relatedSources:[...(item.relatedSources||[]),{label:evidence.creditOnly?'Individual media credit':'Gameplay and biography evidence',url:evidence.source},...(evidence.contextImageSource?[{label:'Contextual artwork source',url:evidence.contextImageSource}]:[])].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i)};
 }
@@ -1987,4 +1989,4 @@ export const characterRecords = [
    description:'Rap duo formed by Bae-Luxe and Roxy, signed to Only Raw Records. Their early collaboration with DWNPLY helped establish their career.',
    attributes:{Role:'Music duo',Members:'Bae-Luxe; Roxy Rashad',Label:'Only Raw Records',Evidence:'Official group profile'},
    relatedSources:[{label:'Rockstar Games — cast credits',url:credits},{label:'GTABase — character guide',url:gtabase}],verifiedOn:'2026-11-27'},
-].map(attachResearch).map(applyCoverage).map(mergeMediaCredits).concat(mediaCast.filter(row=>row.id).map(mediaRecord)).map(applyEvidence);
+].map(attachResearch).map(applyCoverage).map(mergeMediaCredits).concat(mediaCast.filter(row=>row.id).map(mediaRecord)).map(applyEvidence).map(item=>({...item,attributes:{...item.attributes,'Biography availability':item.attributes['Biography availability']||'Documented summary; complete life history not established','Portrait availability':item.placeholderImage?'Not verified in this atlas':item.attributes['Portrait availability']||'Attributed image reference'}}));
