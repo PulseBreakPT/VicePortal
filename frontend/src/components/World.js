@@ -13,7 +13,7 @@ export const WorldPanorama = () => {
     <motion.img src={image('rs-feature2')} alt="The official Vice City skyline at dusk" loading="lazy" style={reduced ? {} : { y }}/>
     <div className="world-panorama-shade"/>
     <div className="world-panorama-top"><span className="eyebrow" data-testid="world-eyebrow">01 / ON THE GROUND</span><span className="world-edition" data-testid="world-edition">BEYOND THE CITY LIMITS.</span></div>
-    <div className="world-panorama-copy"><Reveal><h2 data-testid="world-heading">LEONIDA.<br/><span>SIX REGIONS.</span></h2></Reveal><Reveal className="world-panorama-description"><p data-testid="world-description">From concrete and coastline to the wild interior: six regions introduced by Rockstar.</p><span data-testid="world-image-location">VICE CITY, LEONIDA <MapPin size={12}/></span></Reveal></div>
+    <div className="world-panorama-copy"><Reveal><h2 data-testid="world-heading">LEONIDA.<br/><span>SIX REGIONS.</span></h2></Reveal><Reveal className="world-panorama-description"><p data-testid="world-description">The postcard only gets you so far. Six regions introduced by Rockstar, from the coast to the backcountry.</p><span data-testid="world-image-location">VICE CITY, LEONIDA <MapPin size={12}/></span></Reveal></div>
   </div>;
 };
 
