@@ -1,0 +1,143 @@
+/* Cinematic enhancement layer. Existing Nightfall and dossier layout remain authoritative.
+   Effects are local, finite, and never conceal text or disable controls. */
+.atlas-app {
+  --cinema-ease: cubic-bezier(.2,.8,.2,1);
+  --cinema-parallax: 0px;
+}
+.atlas-app .cinema-route {
+  animation: cinema-route-enter .32s var(--cinema-ease) both;
+}
+@keyframes cinema-route-enter {
+  from { opacity: .8; }
+  to { opacity: 1; }
+}
+
+/* Atmospheric color stays behind content, without replacing existing photography. */
+.atlas-app .pause-art {
+  background-image: radial-gradient(ellipse at 68% 28%,#a18bc510,transparent 58%),radial-gradient(ellipse at 25% 80%,#65bfc10a,transparent 55%);
+}
+.atlas-app :is(.pause-art,.portal-hero,.town-experience-teaser)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  z-index: 1;
+  opacity: .11;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.83' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23fff' filter='url(%23grain)' opacity='.32' d='M0 0h160v160H0z'/%3E%3C/svg%3E");
+  mix-blend-mode: soft-light;
+}
+.atlas-app .portal-hero-copy,.atlas-app .town-experience-copy {
+  position: relative;
+  z-index: 2;
+}
+/* Real glass only in the existing sticky header, no full-screen blur layers. */
+@supports (backdrop-filter: blur(12px)) {
+  .atlas-app .town-header.is-stuck,.atlas-app.portal-mode .town-header.portal-header.is-stuck {
+    background-color: color-mix(in srgb,var(--gta-midnight) 86%,transparent);
+    backdrop-filter: blur(14px) saturate(125%);
+    box-shadow: inset 0 1px 0 #fff1,0 8px 26px #0005;
+  }
+}
+
+/* Finite title highlight; existing gradient colors and typography are retained. */
+@supports (background-clip: text) {
+  .atlas-app :is(.record-heading h1,.portal-hero-copy h1) {
+    background-size: 145% 100%;
+    animation: cinema-title-light 1.15s var(--cinema-ease) both;
+  }
+}
+@keyframes cinema-title-light {
+  from { background-position: 100% 50%; }
+  to { background-position: 0 50%; }
+}
+
+/* Media load state: skeleton exists only until a genuine load or terminal failure. */
+.atlas-app .cinema-media-pending {
+  background-image: linear-gradient(110deg,transparent 28%,#f3b6cf12 49%,transparent 71%);
+  background-size: 240% 100%;
+  animation: cinema-shimmer 1.8s linear infinite;
+}
+@keyframes cinema-shimmer {
+  from { background-position: 130% 0; }
+  to { background-position: -130% 0; }
+}
+.atlas-app .cinema-media-ready > img {
+  animation: cinema-image-reveal .55s var(--cinema-ease) both;
+}
+@keyframes cinema-image-reveal {
+  from { opacity: .48; clip-path: inset(0 1.5% 0 1.5% round 2px); }
+  to { opacity: 1; clip-path: inset(0); }
+}
+/* Staggered catalog entries, without extra wrappers or changes to grid/list semantics. */
+.atlas-app .portal-grid:not(.is-list) > .portal-card[data-cinema-order] {
+  animation: cinema-card-enter .42s var(--cinema-ease) both;
+  animation-delay: calc(var(--cinema-order,0) * 32ms);
+}
+@keyframes cinema-card-enter {
+  from { opacity: .72; translate: 0 5px; }
+  to { opacity: 1; translate: 0 0; }
+}
+.atlas-app .portal-grid > .portal-card:focus-within { animation: none; }
+
+/* Underlines reinforce existing active navigation, not a second navigation system. */
+.atlas-app .record-section-nav a,.atlas-app .portal-card-copy > a,.atlas-app .atlas-footer-columns a {
+  text-decoration-color: var(--section-accent);
+  text-underline-offset: .24em;
+}
+.atlas-app .record-section-nav a:hover,.atlas-app .record-section-nav a:focus-visible {
+  text-decoration: underline;
+}
+
+/* Fine-pointer interactions are explicitly disabled on touch and small viewports. */
+@media (min-width: 900px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .atlas-app .portal-hero:not(.object-hero):not(.tool-hero) > .portal-hero-image {
+    translate: 0 var(--cinema-parallax,0px);
+    scale: 1.06;
+  }
+  .atlas-app .pause-art .pause-photo-button > img {
+    translate: 0 var(--cinema-parallax,0px);
+    scale: 1.04;
+  }
+  .atlas-app :is(.portal-card,.hub-tile,.article-card,.gallery-card)[data-cinema-active] {
+    border-color: color-mix(in srgb,var(--section-accent) 46%,var(--night-line));
+    box-shadow: inset 0 1px 0 #ffffff20,0 9px 28px #0004,0 0 20px color-mix(in srgb,var(--section-accent) 10%,transparent);
+    background-image: radial-gradient(ellipse at var(--cinema-x,50%) var(--cinema-y,50%),#f3b6cf10,transparent 65%),var(--gradient-surface);
+  }
+  .atlas-app .portal-grid:not(.is-list) > .portal-card[data-cinema-active] {
+    transform: perspective(1050px) translateY(-3px) rotateX(var(--cinema-rx,0deg)) rotateY(var(--cinema-ry,0deg));
+    transition: transform .18s ease-out,box-shadow .25s,border-color .25s;
+  }
+  .atlas-app .portal-grid > .portal-card:focus-within { transform: none; }
+  .atlas-app :is(.portal-button,.atlas-button)[data-cinema-active]:not(:focus-visible):not(:disabled) {
+    translate: var(--cinema-dx,0px) var(--cinema-dy,0px);
+    transition: translate .16s ease-out;
+  }
+  .atlas-app :is(.portal-button,.atlas-button):active { translate: 0 0; }
+  .atlas-app .portal-card:hover .portal-card-image img { transform: scale(1.055); }
+}
+/* Touch: preserve static color, layout, content and full-sized click targets. */
+@media (max-width: 899px), (pointer: coarse) {
+  .atlas-app .cinema-route { animation-duration: .16s; }
+  .atlas-app .portal-grid:not(.is-list) > .portal-card[data-cinema-order] { animation-delay: 0ms; }
+  .atlas-app .town-header.is-stuck,.atlas-app.portal-mode .town-header.portal-header.is-stuck { backdrop-filter: none; background-color: var(--gta-midnight); }
+  .atlas-app :is(.pause-art,.portal-hero,.town-experience-teaser)::after { opacity: .06; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .atlas-app .cinema-route,
+  .atlas-app :is(.record-heading h1,.portal-hero-copy h1),
+  .atlas-app .cinema-media-pending,
+  .atlas-app .cinema-media-ready > img,
+  .atlas-app .portal-grid:not(.is-list) > .portal-card[data-cinema-order] {
+    animation: none !important;
+    opacity: 1;
+    clip-path: none;
+    translate: none;
+  }
+  .atlas-app :is(.portal-card,.portal-card-image img,.portal-button,.atlas-button) { transition: none; }
+}
+@media (forced-colors: active), print {
+  .atlas-app :is(.pause-art,.portal-hero,.town-experience-teaser)::after { display:none; }
+  .atlas-app :is(.record-heading h1,.portal-hero-copy h1) { background:none; color:CanvasText; -webkit-text-fill-color:currentColor; animation:none; }
+  .atlas-app .cinema-media-pending { animation:none; background-image:none; }
+}
