@@ -15,9 +15,23 @@ const safeURL=(value,kind)=>{
     const m=u.pathname.match(pattern);return m?{url:u.href,slug:m[1]}:null;
   }catch{return null;}
 };
+
+export function validImageReference(ref,row){
+ if(!ref||!row||vehicleSlug(row.title)!==vehicleSlug(ref.title))return false;
+ if(ref.evidence==='reviewed-in-game-name'){
+   try{
+     const p=new URL(ref.source),i=new URL(ref.image);
+     const exact=vehicleSlug(row.maker+' '+row.title);
+     return p.origin==='https://gta6.house'&&i.origin===p.origin&&!p.search&&!p.hash&&!i.search&&!i.hash&&p.pathname==='/library/vehicles/'+exact&&/^\/media\/gta6\/1200\/lib-[a-f0-9]{10}\.webp$/.test(i.pathname)&&ref.credit==='GamesRadar+ via GTA6.house · game imagery © Rockstar Games';
+   }catch{return false;}
+ }
+ const page=safeURL(ref.source,'page'),img=safeURL(ref.image,'image');
+ return Boolean(page&&img&&page.slug===img.slug);
+}
+
 export function collectImageReferences(html,rows){
  const result={},ambiguous=new Set();
- const titles=rows.map(row=>({row,key:vehicleSlug(row.title)}));
+ const titles=rows.map(row=>({row,key:vehicleSlug(row.title),full:vehicleSlug(row.maker+' '+row.title)}));
  for(const anchor of html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a\s*>/gi)){
    const page=safeURL(attr(anchor[1],'href'),'page');
    if(!page)continue;
@@ -27,10 +41,10 @@ export function collectImageReferences(html,rows){
    const label=vehicleSlug(plain(body)),altKeys=imgs.map(x=>vehicleSlug(attr(x,'alt'))).filter(Boolean);
    // Require the actual linked dossier slug to equal the normalized vehicle title.
    // Nonstandard aliases require a separately reviewed manifest entry.
-   const candidates=titles.filter(({key})=>key===page.slug&&(altKeys.includes(key)||label===key||label.startsWith(key+'-')));
+   const candidates=titles.filter(({key,full})=>(key===page.slug||full===page.slug)&&(altKeys.includes(key)||altKeys.includes(full)||label===key||label.startsWith(key+'-')));
    if(candidates.length!==1)continue;
-   const {row,key}=candidates[0];
-   if(altKeys.some(alt=>alt!==key&&titles.some(t=>t.key===alt)))continue;
+   const {row,key,full}=candidates[0];
+   if(altKeys.some(alt=>alt!==key&&alt!==full&&titles.some(t=>t.key===alt||t.full===alt)))continue;
    const images=[];
    for(const tag of imgs)for(const field of ['src','data-src','srcset','data-srcset']){
      for(const part of attr(tag,field).split(',').map(s=>s.trim().split(/\s+/)[0]).filter(Boolean)){
@@ -62,8 +76,7 @@ export async function syncImages(){
  for(const id of Object.keys(merged).sort()){
    const ref=merged[id],row=rows.find(r=>r.id===id);
    if(!row||vehicleSlug(row.title)!==vehicleSlug(ref.title)||seen.has(ref.image))continue;
-   const page=safeURL(ref.source,'page'),img=safeURL(ref.image,'image');
-   if(!page||!img||page.slug!==img.slug)continue;
+   if(!validImageReference(ref,row))continue;
    seen.add(ref.image);sorted[id]=ref;
  }
  if(Object.keys(sorted).length<Object.keys(previous).length)throw Error('Image reference coverage would regress');
