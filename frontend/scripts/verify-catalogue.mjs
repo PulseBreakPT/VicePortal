@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {PAGE_SIZE,initialFilters,visibleItems,layoutFor,groupFor,filterItems,makeGroups,takeGroups} from '../src/components/portal/catalogueModel.mjs';
+let checks=0;const check=(condition,message)=>{checks++;assert.ok(condition,message);};
+const vehicle=(id,title,category,group,extra={})=>({id,title,category,kind:'Vehicle',collections:['vehicles/'+group],attributes:{Manufacturer:'Progen'},...extra});
+const rows=[vehicle('a','Emerus','Supercars','super',{vehicleStats:{speed:9}}),vehicle('b','Black Widow Emerus','Street Racer','standout',{placeholderImage:true,vehicleStats:{speed:8}}),vehicle('c','Secret car','Supercars','super',{spoiler:true}),vehicle('d','Tempesta','Supercars','super',{vehicleStats:{speed:7}})];
+check(visibleItems(rows,false).length===3,'Spoiler filtering');
+check(visibleItems(rows,true).length===4,'Spoiler opt-in');
+check(groupFor(rows[1],'vehicles')==='Standout collection','Standout variant group');
+check(filterItems(rows,{...initialFilters,query:'widow progen'},'vehicles').map(x=>x.id).join()==='b','Multi-term search');
+check(filterItems(rows,{...initialFilters,coverage:'placeholder'},'vehicles').length===1,'Image coverage filter');
+check(filterItems(rows,{...initialFilters,maker:'Other'},'vehicles').length===0,'Maker filter');
+check(filterItems(rows,{...initialFilters,sort:'speed'},'vehicles')[0].id==='a','Ratings order');
+check(filterItems(rows,{...initialFilters,group:'Standout collection'},'vehicles').length===1,'Category filter');
+const people=[{id:'p',title:'Jason',kind:'Character',category:'Protagonist'},{id:'s',title:'Supporting',kind:'Character',collections:['characters/supporting']},{id:'r',title:'Radio',kind:'Character',collections:['characters/media-radio']}];
+check(makeGroups(people.reverse(),'characters')[0].label==='Protagonists','Featured protagonists first');
+check(groupFor({kind:'Character',collections:['characters/supporting','characters/side-contacts']},'characters')==='Side contacts','Specific classification wins');
+for(const [id,layout] of Object.entries({garage:'vehicles','vehicles/super':'vehicles',weapons:'weapons',characters:'characters',regions:'world',missions:'missions',radio:'radio',screenshots:'media',guides:'editorial',progress:'general'}))check(layoutFor({id})===layout,'Layout '+id);
+const many=Array.from({length:559},(_,i)=>vehicle(String(i),'Model '+i,'Supercars',i%2?'super':'standout'));
+const groups=makeGroups(many,'vehicles');
+for(let n=0;n<600;n+=PAGE_SIZE){
+ const shown=takeGroups(groups,n).flatMap(x=>x.items);
+ check(shown.length===Math.min(n,many.length),'Progressive limit '+n);
+ check(new Set(shown.map(x=>x.id)).size===shown.length,'Duplicate entries '+n);
+}
+check(takeGroups(groups,1000).flatMap(x=>x.items).length===559,'Full catalogue reachable');
+check(makeGroups(rows,'vehicles',false).length===1,'Ungrouped sort');
+const read=p=>readFile(new URL(p,import.meta.url),'utf8');
+const [grid,layout,section,css,app]=await Promise.all(['../src/components/portal/CatalogGrid.js','../src/components/portal/PortalLayout.js','../src/components/portal/SectionPage.js','../src/Catalogue.css','../src/App.js'].map(read));
+check(layout.includes('catalogue-destinations')&&!layout.includes('className="portal-subsections"'),'Remove category tile grid');
+check(grid.includes('catalogue-filter-panel')&&grid.includes('catalogue-more')&&!grid.includes('portal-pagination'),'Compact filters and progressive loading');
+check(section.includes('section={section}')&&section.includes('<MapPage/>')&&section.includes('<ComparePage')&&section.includes('<ProgressPage'),'Preserve specialised routes');
+check(css.includes('prefers-reduced-motion:reduce')&&css.includes('max-width:600px')&&css.includes('position:sticky'),'Responsive and reduced motion');
+check(app.includes("import './Catalogue.css'"),'Styles integrated');
+console.log('Cinematic catalogue checks passed:',checks);

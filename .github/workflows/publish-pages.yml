@@ -44,6 +44,8 @@ jobs:
         run: node scripts/verify-neon-cipher.mjs
       - name: Verify smooth motion system
         run: node scripts/verify-smooth.mjs
+      - name: Verify cinematic catalogue organization
+        run: node scripts/verify-catalogue.mjs
       - name: Verify character catalogue
         run: node scripts/verify-character-catalogue.mjs
       - name: Import full public vehicle catalogue (retain reviewed snapshot if unavailable)
