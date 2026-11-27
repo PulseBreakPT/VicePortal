@@ -133,5 +133,104 @@ export const characterDiscoveries = [
       "andy"
     ],
     null
+  ],
+  [
+    "Wade Howard",
+    "wade-howard",
+    "Organizes races at Gellhorn Raceway, according to the gameplay guide.",
+    "https://leonidainsights.com/en/world/characters/wade-howard/",
+    null,
+    [],
+    null
+  ],
+  [
+    "Beau",
+    "beau-raceway",
+    "A track marshal at Gellhorn Raceway.",
+    "https://leonidainsights.com/en/world/characters/beau/",
+    null,
+    [
+      "wade-howard"
+    ],
+    null
+  ],
+  [
+    "Jimmy (Artist Village)",
+    "jimmy-artist-village",
+    "An older man encountered in the artist village. No identity match with Jimmy De Santa is established.",
+    "https://leonidainsights.com/en/world/characters/jimmy/",
+    null,
+    [],
+    null
+  ],
+  [
+    "Jeremy (Charter Guest)",
+    "jeremy-charter-guest",
+    "A member of the bachelor party on Kenton's Island Dreams charter; not established as Dodo Jeremy.",
+    "https://leonidainsights.com/en/world/characters/jeremy/",
+    null,
+    [
+      "dobbs",
+      "kenton-rees"
+    ],
+    "Island Dreams"
+  ],
+  [
+    "Heather",
+    "heather-inmate",
+    "A prison inmate whom Lucia can greet during the Prologue, identified by a named interaction prompt.",
+    "https://www.gtaviceguides.com/wiki/characters/",
+    null,
+    [
+      "lucia-caminos"
+    ],
+    "Prologue"
+  ],
+  [
+    "Skeeter",
+    "skeeter",
+    "Proprietor of Skeeter's bar in Hamlet, referenced in the Skunk Ape questline.",
+    "https://heistatlas.com/en/guide/characters/",
+    null,
+    [
+      "kirk"
+    ],
+    "Search for the Skunk Ape"
+  ],
+  [
+    "Dolores",
+    "dolores-snake",
+    "A named snake associated with Jason's house in the Keys.",
+    "https://leonidainsights.com/en/world/characters/dolores/",
+    null,
+    [
+      "jason-duval"
+    ],
+    null,
+    "Named animal"
+  ],
+  [
+    "Peaches",
+    "peaches-dog",
+    "Dr. Bill's dog, named in the gameplay character directory.",
+    "https://leonidainsights.com/en/world/characters/peaches/",
+    null,
+    [
+      "dr-bill"
+    ],
+    null,
+    "Named animal"
+  ],
+  [
+    "Dip",
+    "dip-dog",
+    "A dog called by name near the pool in Hey Arnold!",
+    "https://gta6data.com/gta-6-character-dip/",
+    "https://gta6data.com/wp-content/uploads/2026/11/g6d-cast-footage-dip-face-150x150.jpg",
+    [
+      "cal-hampton"
+    ],
+    "Hey Arnold!",
+    "Named animal"
   ]
 ];
