@@ -1,5 +1,6 @@
 import { characterRecords } from './characterRecords';
 import { mediaCast } from './mediaCast';
+import { characterDiscoveries } from './characterDiscoveries';
 
 describe('Character catalogue integrity', () => {
   const ids = new Set(characterRecords.map(record => record.id));
@@ -7,7 +8,7 @@ describe('Character catalogue integrity', () => {
     expect(ids.size).toBe(characterRecords.length);
     expect(characterRecords.filter(record => record.attributes['Credit section'] === 'Main Cast')).toHaveLength(57);
     expect(characterRecords.filter(record => record.attributes['Credit section'] === 'Full Cast')).toHaveLength(145);
-    expect(characterRecords.length).toBeGreaterThanOrEqual(557);
+    expect(characterRecords.length).toBeGreaterThanOrEqual(570);
   });
   test('all 328 media role labels resolve to existing or new dossier IDs', () => {
     expect(mediaCast).toHaveLength(328);
@@ -20,6 +21,15 @@ describe('Character catalogue integrity', () => {
       expect(row.program).toBeTruthy();
       expect(row.profileUrl).toMatch(/^https:\/\/gta6ops\.com\//);
       expect(row.creditedRole).toBeTruthy();
+    }
+  });
+  test('new named appearances have source links and no inferred performer identity', () => {
+    for (const [title,id,description,source] of characterDiscoveries) {
+      const record = characterRecords.find(row => row.id === id);
+      expect(record).toBeTruthy();
+      expect(record.title).toBe(title);
+      expect(record.source).toBe(source);
+      expect(record.attributes['Credited performer']).toBe('Not verified in this atlas');
     }
   });
   test('every entry has a description, source and explicit evidence level', () => {
