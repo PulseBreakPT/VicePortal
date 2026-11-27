@@ -17,7 +17,8 @@ export default function DetailPage({item,atlas}) {
   const [dimensions,setDimensions]=useState(null);
   const section=sectionById[item.collections[0]];
   const peers=entries.filter(e=>e.kind===item.kind);
-  const related=peers.filter(e=>e.id!==item.id).sort((a,b)=>Number(b.collections.some(c=>item.collections.includes(c)))-Number(a.collections.some(c=>item.collections.includes(c)))).slice(0,3);
+  const relationshipIds=atlas.spoilers?(item.relatedCharacterIds||[]):[];
+  const related=peers.filter(e=>e.id!==item.id).sort((a,b)=>Number(relationshipIds.includes(b.id))-Number(relationshipIds.includes(a.id))||Number(b.collections.some(c=>item.collections.includes(c)))-Number(a.collections.some(c=>item.collections.includes(c)))).slice(0,Math.max(3,relationshipIds.length));
   const task=checklist.find(t=>t.path===item.path);
   const share=async()=>{try{await navigator.clipboard.writeText(new URL(item.path,window.location.origin).href);toast.success('Page link copied.');}catch{toast.error('Could not copy. You can share the page address instead.');}};
   const mode=item.kind==='Radio station'?'radio':item.kind==='Character'?'person':['Vehicle','Weapon'].includes(item.kind)?'object':['Image','Artwork'].includes(item.kind)?'gallery':item.kind==='Video'?'video':'landscape';
