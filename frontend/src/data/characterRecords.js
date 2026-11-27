@@ -1,6 +1,7 @@
+import { characterSourceIndex } from './characterSourceIndex';
 // Character roster checked 2026-11-27 against Rockstar's published Main Cast and Full Cast.
 // Credits confirm names and performers, not biographies. Community summaries are marked separately.
-// No unofficial portraits are used as substitutes for missing character imagery.
+// External portraits are explicitly attributed; missing imagery uses a placeholder.
 const credits = 'https://www.rockstargames.com/VI/credits';
 const profiles = 'https://www.rockstargames.com/VI/only-in-leonida';
 const gtabase = 'https://www.gtabase.com/gta-6/characters/';
@@ -1287,6 +1288,242 @@ function enrichCharacter(item) {
 function encounter([title,id,description]) {
   return {id,title,kind:'Character',category:'Additional encounter',subtitle:'Documented named appearance',tag:'ADDITIONAL ENCOUNTER',image:placeholder,placeholderImage:true,source:'https://gta6ops.com/story/'+id+'/',status:'Community reference',spoiler:true,description,details:['No matching cast credit established'],attributes:{Role:'Additional encounter / named appearance','Credited performer':'Not verified in this atlas',Evidence:'Community gameplay or appearance reference'},relatedSources:[{label:'GTA6Ops — character directory',url:ops},{label:'PowerPyx — character index',url:powerpyx}],verifiedOn:'2026-11-27'};
 }
+
+const researchedBios = {
+  "raina-koleva": [
+    "Bodybuilder at Ajax Gym and member of Kordell Grant’s team. Lucia encounters her while investigating the crew.",
+    "Heavy Lifting",
+    "Bodybuilding / Kordell’s crew",
+    [
+      "kordell-grant",
+      "nathan-nate-bozer",
+      "francisco-cisco-delgado",
+      "lucia-caminos"
+    ]
+  ],
+  "cesar-navarro": [
+    "Television network board leader, father of Petra and grandfather of Rafa. His corporate role is introduced at the opening of the network’s headquarters.",
+    "Party Hard",
+    "Television executive",
+    [
+      "petra-navarro",
+      "andres-de-leon",
+      "rafa-de-leon-navarro",
+      "gustavo-herrera"
+    ]
+  ],
+  "gustavo-herrera": [
+    "Security employee of César Navarro, whose involvement in Rafa’s kidnapping is revealed later in the story.",
+    "Party Hard",
+    "Private security",
+    [
+      "cesar-navarro",
+      "rafa-de-leon-navarro"
+    ]
+  ],
+  "kd": [
+    "Guest associated with Dre’Quan’s promotional efforts for Real Dimez. Players may choose him for a VIP table during the Club VYB event.",
+    "Headliners",
+    "Music-industry contact",
+    [
+      "drequan-priest",
+      "real-dimez",
+      "royce-jones"
+    ]
+  ],
+  "omar-dawoud": [
+    "Airport recruitment officer who introduces Jason to baggage-handler work after Andrea arranges the meeting.",
+    "Too Much Baggage",
+    "Airport recruitment",
+    [
+      "andrea",
+      "jason-duval",
+      "kordell-grant"
+    ]
+  ],
+  "dardan": [
+    "Represents Albanian creditors monitoring Giorgio Gallo and holds a grievance connected to Alexi and Burim.",
+    "Starting From Zero",
+    "Albanian criminal organization",
+    [
+      "giorgio-gallo",
+      "alexi",
+      "burim"
+    ]
+  ],
+  "liz-jackson": [
+    "Mixed martial arts trainer employed by Giorgio Gallo; joins the specialist team with Vinny and Kevin in Chapter 5.",
+    "Bird in the Hand",
+    "MMA trainer / Navy ORCAS team",
+    [
+      "giorgio-gallo",
+      "vinny-capsik",
+      "kevin-kueh"
+    ]
+  ],
+  "kevin-kueh": [
+    "Specialist in Giorgio Gallo’s Chapter 5 team with Liz and Vinny. A secondary guide calls him Kevin Crumbles, but Rockstar’s credited surname is Kueh.",
+    "Bird in the Hand",
+    "Navy ORCAS team",
+    [
+      "giorgio-gallo",
+      "liz-jackson",
+      "vinny-capsik"
+    ]
+  ],
+  "the-hitman": [
+    "Rockstar credits Michael Hollick as The Hitman. Gameplay reporting identifies the visitor in Chapter 5 as Niko Bellic, confronting Giorgio about a missing shipment; that identification is distinct from the formal credit.",
+    "Taking Liberties",
+    null,
+    [
+      "giorgio-gallo"
+    ]
+  ],
+  "donatello-lambrini": [
+    "Actor whose presence at a nightclub affects Andrés de León’s plans for a reserved booth.",
+    "Adventures in Babysitting",
+    "Actor",
+    [
+      "andres-de-leon"
+    ]
+  ],
+  "senator-camila-fuentes": [
+    "Politician implicated by recorded evidence that Raul considers using as leverage. Rockstar credits her as a senator; another guide calls her a governor.",
+    "Close Surveillance",
+    "Politician",
+    [
+      "raul-bautista"
+    ]
+  ],
+  "cameron": [
+    "Joins Sir Todd Bancroft and Jason on the charter trip connected to Kenton’s disappearance.",
+    "Maritime Disputes",
+    null,
+    [
+      "sir-todd-bancroft",
+      "kenton-rees",
+      "jason-duval"
+    ]
+  ],
+  "kamal": [
+    "Appears with Roxy at the party where Lucia is trying to reach the performer.",
+    "Top Billing",
+    null,
+    [
+      "roxy-rashad",
+      "lucia-caminos"
+    ]
+  ],
+  "tip-dollaz": [
+    "DJ seen as the protagonists leave the club at the start of Fresh Evidence.",
+    "Fresh Evidence",
+    "DJ",
+    []
+  ],
+  "dodo-jeff": [
+    "Contact involved in transporting the rescued dodo in the final part of the Dodos Rising questline.",
+    "Dodo, Rise!",
+    null,
+    [
+      "mother-dodo-yvonne",
+      "lucia-caminos"
+    ]
+  ],
+  "big-mike": [
+    "Appears as himself at the unfinished premises of a new club planned by Boobie Ike.",
+    "Boobie Time",
+    null,
+    [
+      "boobie-ike"
+    ]
+  ],
+  "judd-beaven": [
+    "Contacts Lucia through Snapmatic with a misleading acting opportunity, leading her and Cisco to Washington Beach.",
+    null,
+    null,
+    [
+      "lucia-caminos",
+      "francisco-cisco-delgado"
+    ]
+  ],
+  "royce-jones": [
+    "Club promoter approached by Dre’Quan about securing a better booking for Real Dimez. Briana works as his assistant.",
+    "Watch It",
+    "Club promoter",
+    [
+      "drequan-priest",
+      "real-dimez",
+      "briana"
+    ]
+  ],
+  "peggy": [
+    "Key Lento resident living near Shirley Baker; becomes involved in one of Shirley’s optional errands.",
+    "Steal the Scooter",
+    null,
+    [
+      "shirley-baker",
+      "jason-duval"
+    ]
+  ],
+  "brittney": [
+    "Member of Billy’s Thrillbilly crew, introduced through the optional Chapter 2 mud-club storyline.",
+    "Thrillbillies",
+    "Thrillbilly crew",
+    [
+      "billy"
+    ]
+  ],
+  "sergeant-pete-galeki": [
+    "Police sergeant who questions the protagonist during Tourist Trap. The credited spelling is Galeki, although a walkthrough uses Galecki.",
+    "Tourist Trap",
+    "Police sergeant",
+    [
+      "captain-aldo-mendez"
+    ]
+  ],
+  "arlo": [
+    "Kordell Grant associate who operates a private fighting venue and helps with the crew’s later arrangements.",
+    "Team Building",
+    "Fight club operator",
+    [
+      "kordell-grant",
+      "dice"
+    ]
+  ],
+  "bush": [
+    "Works around DWNPLY’s management and security, appearing backstage during the music storyline.",
+    "Top Billing",
+    "Music management / security",
+    [
+      "dwnply"
+    ]
+  ],
+  "gil-reynolds": [
+    "Founder of Booty Bang whose property features in Safe Word.",
+    "Safe Word",
+    "Adult entertainment producer",
+    []
+  ]
+};
+function attachResearch(item) {
+  const ref = characterSourceIndex[item.id] || {};
+  const bio = researchedBios[item.id];
+  const sources = [...(item.relatedSources || []), ...(ref.ops ? [{label:'GTA6Ops — individual profile',url:ref.ops}] : []), ...(ref.powerpyx ? [{label:'PowerPyx — individual profile',url:ref.powerpyx}] : []), ...(ref.portrait && item.placeholderImage ? [{label:'PowerPyx — image reference',url:ref.portrait}] : [])].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i);
+  const portrait = item.placeholderImage && ref.portrait;
+  const attrs = {...item.attributes};
+  if(bio) {
+    attrs.Evidence = 'Official cast credit; community biography';
+    if(bio[1]) attrs['Documented mission'] = bio[1];
+    if(bio[2]) attrs['Occupation / affiliation'] = bio[2];
+  }
+  if(attrs.Evidence==='Official cast credit only') attrs['Biography availability'] = 'Not verified in this atlas';
+  attrs['Portrait availability'] = portrait ? 'Attributed external reference' : item.placeholderImage ? 'Not verified in this atlas' : 'Existing image';
+  return {...item,attributes:attrs,relatedSources:sources,
+    ...(bio?{description:bio[0],paragraphs:[],status:'Community reference',source:ref.ops||item.source,details:['Official cast credit; community biography'],relatedCharacterIds:[...new Set([...(item.relatedCharacterIds||[]),...bio[3]])]}:{}),
+    ...(portrait?{image:portrait,placeholderImage:false,imageFallback:placeholder,imageSource:'PowerPyx',imageSourceUrl:ref.powerpyx||ref.portrait}:{}),
+  };
+}
+
 export const characterRecords = [
   ...main.map(row=>enrichCharacter(record(row,'Main Cast'))),
   ...full.map(row=>enrichCharacter(record(row,'Full Cast'))),
@@ -1296,4 +1533,4 @@ export const characterRecords = [
    description:'Rap duo formed by Bae-Luxe and Roxy, signed to Only Raw Records. Their early collaboration with DWNPLY helped establish their career.',
    attributes:{Role:'Music duo',Members:'Bae-Luxe; Roxy Rashad',Label:'Only Raw Records',Evidence:'Official group profile'},
    relatedSources:[{label:'Rockstar Games — cast credits',url:credits},{label:'GTABase — character guide',url:gtabase}],verifiedOn:'2026-11-27'},
-];
+].map(attachResearch);
