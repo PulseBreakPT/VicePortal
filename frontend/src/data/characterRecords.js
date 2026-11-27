@@ -1844,11 +1844,23 @@ const researchedAppearances = {
   "jerry-turner": "The same character-performer pairing appears in the TV News section of the credits; a physical encounter is not established.",
   "lexy-campbell": "The Jack of Hearts card checklist uses Lexi Campbell. The spelling difference is retained rather than assuming a confirmed identity match."
 };
+const wikiAppearances = {
+  "dante-fresh": "GTA6Wiki associates the rapper with the blackmail storyline in Watch It.",
+  "danica-howard": "Identified by GTA6Wiki as a prosecutor encountered toward the end of the story.",
+  "wax": "The cast listing also associates Wax with a guest role on the Drunk Kings podcast.",
+  "bodega": "His performer, Bodega the DJ, has a separately credited music mix; this does not establish a specific story scene.",
+  "dj-pretzel": "Listed as the presenter of The Vault Radio, in addition to his Full Cast credit.",
+  "sasha": "Identified as a guest at Gil's pool party in Safe Word.",
+  "samantha": "Identified as another guest at Gil's pool party during Safe Word.",
+  "doug": "Possibly the man Brian speaks with near the Kingfishers camp in Swamped; the first-name match alone does not confirm the credited identity.",
+  "parole-officer-walsh": "Possibly Lucia's supervising officer in Down to Earth; the walkthrough does not confirm the officer's name."
+};
 function attachResearch(item) {
   const ref = characterSourceIndex[item.id] || {};
   const bio = researchedBios[item.id];
-  const appearance = researchedAppearances[item.id];
-  const sources = [...(item.relatedSources || []), ...(ref.ops ? [{label:'GTA6Ops — individual profile',url:ref.ops}] : []), ...(ref.powerpyx ? [{label:'PowerPyx — individual profile',url:ref.powerpyx}] : []), ...(ref.portrait && item.placeholderImage ? [{label:'PowerPyx — image reference',url:ref.portrait}] : [])].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i);
+  const wikiAppearance = wikiAppearances[item.id];
+  const appearance = researchedAppearances[item.id] || wikiAppearance;
+  const sources = [...(item.relatedSources || []), ...(wikiAppearance ? [{label:'GTA6Wiki — appearance context',url:'https://gta6wiki.eu/characters/all/'}] : []), ...(ref.ops ? [{label:'GTA6Ops — individual profile',url:ref.ops}] : []), ...(ref.powerpyx ? [{label:'PowerPyx — individual profile',url:ref.powerpyx}] : []), ...(ref.portrait && item.placeholderImage ? [{label:'PowerPyx — image reference',url:ref.portrait}] : [])].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i);
   const portrait = item.placeholderImage && ref.portrait;
   const attrs = {...item.attributes};
   if(bio) {
