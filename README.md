@@ -33,6 +33,10 @@ The experience combines a cinematic presentation with structured editorial dossi
 
 The project is under active development. Catalogue entries distinguish official material, community reporting and editorial interpretation, with explicit notices wherever evidence is incomplete.
 
+## Vehicle catalogue
+
+The reviewed snapshot includes 559 of 560 GTA Town entries (one hidden by the source), including Standouts, with 441 source-reported ratings. See [coverage and limitations](docs/vehicle-catalogue-audit.md). Data attribution: [GTA Town public creator kit](https://gtatown.com/creators/data), CC BY 4.0.
+
 ## Explore the atlas
 
 | Area | What you can explore |
