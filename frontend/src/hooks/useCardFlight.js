@@ -22,6 +22,7 @@ export function useCardFlight(path,itemId){
     if(!source||source.id!==itemId||performance.now()-source.at>1000||reduced()||!desktop())return;
     let frame=0,cleanup=()=>{};
     frame=requestAnimationFrame(()=>{
+      if(reduced()||!desktop()||document.hidden)return;
       const image=document.querySelector('[data-testid="detail-image"]');
       if(!image||!image.complete||!image.naturalWidth||(image.currentSrc||image.src)!==source.src)return;
       const to=image.getBoundingClientRect();
