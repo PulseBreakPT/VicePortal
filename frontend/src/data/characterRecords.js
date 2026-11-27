@@ -1959,10 +1959,11 @@ function mergeMediaCredits(item) {
 }
 function mediaRecord(row) {
   const title = ['Himself','Herself','Presenter'].includes(row.role)?row.performer:row.role;
-  return {id:row.id,title,kind:'Character',category:row.category,mediaCategories:[row.category],subtitle:row.program,tag:row.category.toUpperCase(),image:placeholder,placeholderImage:true,source:credits,status:'Official source',spoiler:false,
+  const portrait=row.portrait;
+  return {id:row.id,title,kind:'Character',category:row.category,mediaCategories:[row.category],subtitle:row.program,tag:row.category.toUpperCase(),image:portrait?.url||placeholder,placeholderImage:!portrait,...(portrait?{imageSource:portrait.source,imageSourceUrl:portrait.page,imageFallback:placeholder}:{}),source:credits,status:'Official source',spoiler:false,
     description:row.performer+' is credited for '+row.role+' in '+row.program+', in the '+row.category.toLowerCase()+' cast. This credit establishes the role and programme, not an independent story biography.',
-    attributes:{Role:row.role,'Credited performer':row.performer,'Programme':row.program,'Media category':row.category,Evidence:'Official media cast credit','Biography availability':'Not verified in this atlas','Portrait availability':'Not verified in this atlas'},
-    relatedSources:[{label:'Rockstar Games — official cast credits',url:credits}],verifiedOn:'2026-11-27'};
+    attributes:{Role:row.role,'Credited performer':row.performer,'Programme':row.program,'Media category':row.category,Evidence:'Official media cast credit','Biography availability':'Not verified in this atlas','Portrait availability':portrait?'Attributed external reference':'Not verified in this atlas'},
+    relatedSources:[{label:'Rockstar Games — official cast credits',url:credits},...(portrait?[{label:'GTA6DATA — image reference',url:portrait.page}]:[])],verifiedOn:'2026-11-27'};
 }
 export const characterRecords = [
   ...main.map(row=>enrichCharacter(record(row,'Main Cast'))),
