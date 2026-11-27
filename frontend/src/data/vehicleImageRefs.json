@@ -67,5 +67,19 @@
     "source": "https://gta6gps.com/vehicles",
     "evidence": "exact-gps-image",
     "credit": "GTA6GPS · vehicle image reference · respective rights holders"
+  },
+  "vehicle-sandblasted-cliffhanger": {
+    "title": "Sandblasted Cliffhanger",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/western-sandblasted-cliffhanger.webp?v=1795545412",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
+  "vehicle-tactical-caddy": {
+    "title": "Tactical Caddy",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/maibatsu-tactical-caddy.webp?v=1795545414",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
   }
 }

@@ -90,8 +90,37 @@ async function loadHtml(url){
  return r.text();
 }
 
+
+const trackerPage='https://gtavibase.win/en/gta-6/checklist/vehicles/';
+const trackerCredit='MetaForge via GTA VI Base · game imagery © respective rights holders';
+function trackerURL(value,row){
+ try{
+   const u=new URL(value,trackerPage),{title,full}=namesFor(row);
+   const match=u.pathname.match(/^\/assets\/media\/gta-6\/tools\/vehicles\/([a-z0-9-]+)\.webp$/);
+   if(u.origin!=='https://gtavibase.win'||u.username||u.password||u.hash||!match||![title,full].includes(match[1])||row.group!=='standout')return null;
+   if(u.search&&!/^\?v=\d+$/.test(u.search))return null;
+   return u.href;
+ }catch{return null;}
+}
+export function collectTrackerImages(html,rows){
+ const result={},ambiguous=new Set();
+ for(const [tag] of html.matchAll(/<img\b[^>]*>/gi)){
+   const alt=vehicleSlug(attr(tag,'alt'));
+   const matches=rows.filter(row=>row.group==='standout'&&[namesFor(row).title,namesFor(row).full].includes(alt));
+   if(matches.length!==1)continue;
+   const row=matches[0];
+   const image=['data-src','src','data-lazy-src'].map(key=>trackerURL(attr(tag,key),row)).find(Boolean);
+   if(!image)continue;
+   if(result[row.id]&&result[row.id].image!==image){ambiguous.add(row.id);continue;}
+   result[row.id]={title:row.title,image,source:trackerPage,credit:trackerCredit,evidence:'exact-tracker-variant'};
+ }
+ for(const id of ambiguous)delete result[id];
+ return result;
+}
+
 export function validImageReference(ref,row){
  if(!ref||!row||vehicleSlug(row.title)!==vehicleSlug(ref.title))return false;
+ if(ref.evidence==='exact-tracker-variant')return ref.source===trackerPage&&ref.credit===trackerCredit&&trackerURL(ref.image,row)===ref.image;
  const kind=ref.evidence==='exact-gps-image'?'gps':ref.evidence==='exact-alcast-icon'?'alcast':null;
  if(kind){const cfg=extraSources[kind];return ref.source===cfg.page&&ref.credit===cfg.credit&&extraImage(ref.image,row,kind)===ref.image;}
  if(ref.evidence==='reviewed-in-game-name'){
@@ -141,16 +170,16 @@ export function collectImageReferences(html,rows){
 export async function syncImages(){
  const rows=normalizeVehicles(JSON.parse(await readFile(feedURL,'utf8')));
  const previous=JSON.parse(await readFile(manifestURL,'utf8'));
- const results=await Promise.allSettled([loadHtml(index),loadHtml(extraSources.gps.page),loadHtml(extraSources.alcast.page)]);
- const keys=['town','gps','alcast'],foundBy={};
+ const results=await Promise.allSettled([loadHtml(index),loadHtml(extraSources.gps.page),loadHtml(extraSources.alcast.page),loadHtml(trackerPage)]);
+ const keys=['town','gps','alcast','tracker'],foundBy={};
  for(let i=0;i<results.length;i++){
    const r=results[i],key=keys[i];
-   if(r.status==='fulfilled')foundBy[key]=key==='town'?collectImageReferences(r.value,rows):collectSupplementalImages(r.value,rows,key);
+   if(r.status==='fulfilled')foundBy[key]=key==='town'?collectImageReferences(r.value,rows):key==='tracker'?collectTrackerImages(r.value,rows):collectSupplementalImages(r.value,rows,key);
    else{foundBy[key]={};console.warn('Vehicle image source unavailable:',key,r.reason?.message);}
  }
  const found=foundBy.town;
  // Reviewed references win, then exact GTA Town references, then screenshots/icons.
- const merged={...foundBy.alcast,...foundBy.gps,...found,...previous};
+ const merged={...foundBy.alcast,...foundBy.tracker,...foundBy.gps,...found,...previous};
  const active=new Set(rows.map(r=>r.id));
  for(const id of Object.keys(merged))if(!active.has(id))delete merged[id];
  const seen=new Set(),sorted={};
