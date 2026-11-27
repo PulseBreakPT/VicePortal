@@ -159,5 +159,125 @@ export const characterEvidence = {
   "media-where-does-it-hurt-andreina-karina-arroyave": {
     "source": "https://gta6data.com/gta-6-character-andreina/",
     "description": "A credited character in the Megamundo hospital serial Where Does It Hurt?."
+  },
+  "media-afrobank-fm-burna-burna-boy": {
+    "contextImage": "https://www.gta6everything.com/_next/image?url=%2Fimages%2Fofficial%2Fgta-6-afrobank-fm-radio-station-art.jpg&w=1920&q=75&dpl=dpl_ArkB9cZ9ehRzWhrgVHNyvgxd7MTW",
+    "contextCaption": "AFROBANK FM station artwork, not a portrait of Burna.",
+    "contextImageSource": "https://www.gta6everything.com/images",
+    "source": "https://gta6ops.com/story/radio-character-profiles/#profile-1",
+    "description": "Burna Boy is credited on AFROBANK FM as Burna. The credits establish the on-air role, but no personal biography or in-game likeness is established.",
+    "creditOnly": true
+  },
+  "media-afrobank-fm-palmsy-jay-donaldson": {
+    "contextImage": "https://www.gta6everything.com/_next/image?url=%2Fimages%2Fofficial%2Fgta-6-afrobank-fm-radio-station-art.jpg&w=1920&q=75&dpl=dpl_ArkB9cZ9ehRzWhrgVHNyvgxd7MTW",
+    "contextCaption": "AFROBANK FM station artwork, not a portrait of Palmsy.",
+    "contextImageSource": "https://www.gta6everything.com/images",
+    "source": "https://gta6ops.com/story/radio-character-profiles/#profile-2",
+    "description": "Jay Donaldson is credited on AFROBANK FM as Palmsy. The credits establish the on-air role, but no personal biography or in-game likeness is established.",
+    "creditOnly": true
+  },
+  "media-back-country-radio-mw-morgan-wallen": {
+    "contextImage": "https://www.gta6everything.com/_next/image?url=%2Fimages%2Fofficial%2Fgta-6-back-country-radio-station-art.jpg&w=1920&q=75&dpl=dpl_ArkB9cZ9ehRzWhrgVHNyvgxd7MTW",
+    "contextCaption": "BACK COUNTRY RADIO station artwork, not a portrait of MW.",
+    "contextImageSource": "https://www.gta6everything.com/images",
+    "source": "https://gta6ops.com/story/radio-character-profiles/#profile-3",
+    "description": "Morgan Wallen is credited on BACK COUNTRY RADIO as MW. The credits establish the on-air role, but no personal biography or in-game likeness is established.",
+    "creditOnly": true
+  },
+  "media-back-country-radio-delta-dawne-lana-del-rey": {
+    "contextImage": "https://www.gta6everything.com/_next/image?url=%2Fimages%2Fofficial%2Fgta-6-back-country-radio-station-art.jpg&w=1920&q=75&dpl=dpl_ArkB9cZ9ehRzWhrgVHNyvgxd7MTW",
+    "contextCaption": "BACK COUNTRY RADIO station artwork, not a portrait of Delta Dawne.",
+    "contextImageSource": "https://www.gta6everything.com/images",
+    "source": "https://gta6ops.com/story/radio-character-profiles/#profile-4",
+    "description": "Lana Del Rey is credited on BACK COUNTRY RADIO as Delta Dawne. The credits establish the on-air role, but no personal biography or in-game likeness is established.",
+    "creditOnly": true
+  },
+  "media-back-country-radio-mud-dog-mike-jeremy-dufrene": {
+    "contextImage": "https://www.gta6everything.com/_next/image?url=%2Fimages%2Fofficial%2Fgta-6-back-country-radio-station-art.jpg&w=1920&q=75&dpl=dpl_ArkB9cZ9ehRzWhrgVHNyvgxd7MTW",
+    "contextCaption": "BACK COUNTRY RADIO station artwork, not a portrait of Mud Dog Mike.",
+    "contextImageSource": "https://www.gta6everything.com/images",
+    "source": "https://gta6ops.com/story/radio-character-profiles/#profile-5",
+    "description": "Jeremy Dufrene is credited on BACK COUNTRY RADIO as Mud Dog Mike. The credits establish the on-air role, but no personal biography or in-game likeness is established.",
+    "creditOnly": true
+  },
+  "media-cocoteo-fm-el-martillo-bad-bunny": {
+    "contextImage": "https://www.gta6everything.com/_next/image?url=%2Fimages%2Fofficial%2Fgta-6-cocoteo-fm-radio-station-art.jpg&w=1920&q=75&dpl=dpl_ArkB9cZ9ehRzWhrgVHNyvgxd7MTW",
+    "contextCaption": "COCOTEO FM station artwork, not a portrait of El Martillo.",
+    "contextImageSource": "https://www.gta6everything.com/images",
+    "source": "https://gta6ops.com/story/radio-character-profiles/#profile-8",
+    "description": "Bad Bunny is credited on COCOTEO FM as El Martillo. The credits establish the on-air role, but no personal biography or in-game likeness is established.",
+    "creditOnly": true
+  },
+  "media-cocoteo-fm-la-gata-rainao": {
+    "contextImage": "https://www.gta6everything.com/_next/image?url=%2Fimages%2Fofficial%2Fgta-6-cocoteo-fm-radio-station-art.jpg&w=1920&q=75&dpl=dpl_ArkB9cZ9ehRzWhrgVHNyvgxd7MTW",
+    "contextCaption": "COCOTEO FM station artwork, not a portrait of La Gata.",
+    "contextImageSource": "https://www.gta6everything.com/images",
+    "source": "https://gta6ops.com/story/radio-character-profiles/#profile-9",
+    "description": "RaiNao is credited on COCOTEO FM as La Gata. The credits establish the on-air role, but no personal biography or in-game likeness is established.",
+    "creditOnly": true
+  },
+  "media-dirty-south-classics-trina-trina": {
+    "contextImage": "https://www.gta6everything.com/_next/image?url=%2Fimages%2Fofficial%2Fgta-6-dirty-south-classics-radio-station-art.jpg&w=1920&q=75&dpl=dpl_ArkB9cZ9ehRzWhrgVHNyvgxd7MTW",
+    "contextCaption": "DIRTY SOUTH CLASSICS station artwork, not a portrait of Trina.",
+    "contextImageSource": "https://www.gta6everything.com/images",
+    "source": "https://gta6ops.com/story/radio-character-profiles/#profile-10",
+    "description": "Trina is credited on DIRTY SOUTH CLASSICS as Herself. The credits establish the on-air role, but no personal biography or in-game likeness is established.",
+    "creditOnly": true
+  },
+  "media-dirty-south-classics-trick-daddy-trick-daddy": {
+    "contextImage": "https://www.gta6everything.com/_next/image?url=%2Fimages%2Fofficial%2Fgta-6-dirty-south-classics-radio-station-art.jpg&w=1920&q=75&dpl=dpl_ArkB9cZ9ehRzWhrgVHNyvgxd7MTW",
+    "contextCaption": "DIRTY SOUTH CLASSICS station artwork, not a portrait of Trick Daddy.",
+    "contextImageSource": "https://www.gta6everything.com/images",
+    "source": "https://gta6ops.com/story/radio-character-profiles/#profile-11",
+    "description": "Trick Daddy is credited on DIRTY SOUTH CLASSICS as Himself. The credits establish the on-air role, but no personal biography or in-game likeness is established.",
+    "creditOnly": true
+  },
+  "media-flash-fm-robyn-robyn": {
+    "contextImage": "https://www.gta6everything.com/_next/image?url=%2Fimages%2Fofficial%2Fgta-6-flash-fm-radio-station-art.jpg&w=1920&q=75&dpl=dpl_ArkB9cZ9ehRzWhrgVHNyvgxd7MTW",
+    "contextCaption": "FLASH FM station artwork, not a portrait of Robyn.",
+    "contextImageSource": "https://www.gta6everything.com/images",
+    "source": "https://gta6ops.com/story/radio-character-profiles/#profile-14",
+    "description": "Robyn is credited on FLASH FM as Herself. The credits establish the on-air role, but no personal biography or in-game likeness is established.",
+    "creditOnly": true
+  },
+  "media-flash-fm-alex-consani-alex-consani": {
+    "contextImage": "https://www.gta6everything.com/_next/image?url=%2Fimages%2Fofficial%2Fgta-6-flash-fm-radio-station-art.jpg&w=1920&q=75&dpl=dpl_ArkB9cZ9ehRzWhrgVHNyvgxd7MTW",
+    "contextCaption": "FLASH FM station artwork, not a portrait of Alex Consani.",
+    "contextImageSource": "https://www.gta6everything.com/images",
+    "source": "https://gta6ops.com/story/radio-character-profiles/#profile-15",
+    "description": "Alex Consani is credited on FLASH FM as Herself. The credits establish the on-air role, but no personal biography or in-game likeness is established.",
+    "creditOnly": true
+  },
+  "media-the-chamber-106-6-dj-kerry-kerry-king": {
+    "contextImage": "https://www.gta6everything.com/_next/image?url=%2Fimages%2Fofficial%2Fgta-6-the-chamber-106-6-radio-station-art.jpg&w=1920&q=75&dpl=dpl_ArkB9cZ9ehRzWhrgVHNyvgxd7MTW",
+    "contextCaption": "THE CHAMBER 106.6 station artwork, not a portrait of DJ Kerry.",
+    "contextImageSource": "https://www.gta6everything.com/images",
+    "source": "https://gta6ops.com/story/radio-character-profiles/#profile-31",
+    "description": "Kerry King is credited on THE CHAMBER 106.6 as DJ Kerry. The credits establish the on-air role, but no personal biography or in-game likeness is established.",
+    "creditOnly": true
+  },
+  "media-the-chamber-106-6-dj-tom-tom-araya": {
+    "contextImage": "https://www.gta6everything.com/_next/image?url=%2Fimages%2Fofficial%2Fgta-6-the-chamber-106-6-radio-station-art.jpg&w=1920&q=75&dpl=dpl_ArkB9cZ9ehRzWhrgVHNyvgxd7MTW",
+    "contextCaption": "THE CHAMBER 106.6 station artwork, not a portrait of DJ Tom.",
+    "contextImageSource": "https://www.gta6everything.com/images",
+    "source": "https://gta6ops.com/story/radio-character-profiles/#profile-32",
+    "description": "Tom Araya is credited on THE CHAMBER 106.6 as DJ Tom. The credits establish the on-air role, but no personal biography or in-game likeness is established.",
+    "creditOnly": true
+  },
+  "media-the-chamber-106-6-big-fan-brian-brian-posehn": {
+    "contextImage": "https://www.gta6everything.com/_next/image?url=%2Fimages%2Fofficial%2Fgta-6-the-chamber-106-6-radio-station-art.jpg&w=1920&q=75&dpl=dpl_ArkB9cZ9ehRzWhrgVHNyvgxd7MTW",
+    "contextCaption": "THE CHAMBER 106.6 station artwork, not a portrait of Big Fan Brian.",
+    "contextImageSource": "https://www.gta6everything.com/images",
+    "source": "https://gta6ops.com/story/radio-character-profiles/#profile-33",
+    "description": "Brian Posehn is credited on THE CHAMBER 106.6 as Big Fan Brian. The credits establish the on-air role, but no personal biography or in-game likeness is established.",
+    "creditOnly": true
+  },
+  "media-dirty-south-classics-the-tap-in-gucci-mane-gucci-mane": {
+    "contextImage": "https://www.gta6everything.com/_next/image?url=%2Fimages%2Fofficial%2Fgta-6-dirty-south-classics-radio-station-art.jpg&w=1920&q=75&dpl=dpl_ArkB9cZ9ehRzWhrgVHNyvgxd7MTW",
+    "contextCaption": "DIRTY SOUTH CLASSICS station artwork, not a portrait of Gucci Mane.",
+    "contextImageSource": "https://www.gta6everything.com/images",
+    "source": "https://gta6ops.com/story/radio-character-profiles/#profile-12",
+    "description": "Gucci Mane is credited on DIRTY SOUTH CLASSICS / THE TAP IN as Himself. The credits establish the on-air role, but no personal biography or in-game likeness is established.",
+    "creditOnly": true
   }
 };
