@@ -25,13 +25,12 @@ export function collectImageReferences(html,rows){
    // A missing-image card must never inherit an image from its neighbours.
    if(!imgs.length||/\bno image yet\b/i.test(plain(body)))continue;
    const label=vehicleSlug(plain(body)),altKeys=imgs.map(x=>vehicleSlug(attr(x,'alt'))).filter(Boolean);
-   const candidates=titles.filter(({key})=>altKeys.includes(key)||label===key||label.startsWith(key+'-'));
-   if(!candidates.length)continue;
-   // Prefer exact image alt; otherwise the longest title prefix prevents base-model collisions.
-   const exact=candidates.filter(({key})=>altKeys.includes(key));
-   const ranked=(exact.length?exact:candidates).sort((a,b)=>b.key.length-a.key.length);
-   if(ranked.length>1&&ranked[0].key.length===ranked[1].key.length)continue;
-   const {row}=ranked[0];
+   // Require the actual linked dossier slug to equal the normalized vehicle title.
+   // Nonstandard aliases require a separately reviewed manifest entry.
+   const candidates=titles.filter(({key})=>key===page.slug&&(altKeys.includes(key)||label===key||label.startsWith(key+'-')));
+   if(candidates.length!==1)continue;
+   const {row,key}=candidates[0];
+   if(altKeys.some(alt=>alt!==key&&titles.some(t=>t.key===alt)))continue;
    const images=[];
    for(const tag of imgs)for(const field of ['src','data-src','srcset','data-srcset']){
      for(const part of attr(tag,field).split(',').map(s=>s.trim().split(/\s+/)[0]).filter(Boolean)){
