@@ -2965,7 +2965,8 @@ export const mediaCast = [
     "role": "Kodak Black",
     "performer": "Kodak Black",
     "existingId": "kodak-black",
-    "creditedRole": "Kodak Black"
+    "creditedRole": "Kodak Black",
+    "profileUrl": "https://gta6ops.com/story/radio-character-profiles/#profile-44"
   },
   {
     "category": "Radio host",
@@ -2973,7 +2974,8 @@ export const mediaCast = [
     "role": "Presenter",
     "performer": "Michaël Brun",
     "id": "media-the-sniper-of-la-perle-presenter-michael-brun",
-    "creditedRole": "Presenter"
+    "creditedRole": "Presenter",
+    "profileUrl": "https://gta6ops.com/story/radio-character-profiles/#profile-45"
   },
   {
     "category": "Radio host",
