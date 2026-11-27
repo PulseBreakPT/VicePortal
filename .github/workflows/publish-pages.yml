@@ -71,6 +71,7 @@ jobs:
             frontend/src/data/vehicleImageRefs.json
             frontend/src/data/vehicleImageMissing.json
             frontend/src/data/vehicleImageAudit.json
+            frontend/src/data/universalAudit.json
             frontend/src/data/creatorData.json
             frontend/src/data/vehicleFeed.json
           if-no-files-found: error

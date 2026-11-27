@@ -62,3 +62,26 @@ export function normalizeVehicles(input){
  }
  return records;
 }
+
+
+// Raw exports sometimes omit classification. Never guess a model or overwrite
+// a reviewed classification with an empty source field. Raw exports are retained separately.
+export function adaptVehicleExport(input,previous=[]){
+ const rows=extractRows(input);
+ const old=new Map(normalizeVehicles(previous).map(r=>[r.id,r]));
+ const counts={sourceClass:0,retainedClass:0,unknownClass:0};
+ const adapted=rows.map((row,index)=>{
+   const title=str(field(row,'name','title','vehicle_name','display_name','vehicle'));
+   if(!title)throw Error('Missing vehicle title at row '+index+'; available fields: '+Object.keys(row||{}).join(', '));
+   const rawClass=str(field(row,'vehicle_class','class','category','class_name','class_label','collection','standout_set','className'));
+   const provisional={...row,vehicle_class:rawClass||'Not verified in this atlas'};
+   const candidate=normalizeVehicles([provisional])[0];
+   if(rawClass){counts.sourceClass++;return provisional;}
+   const prior=old.get(candidate.id);
+   const same=prior&&vehicleSlug(prior.title)===vehicleSlug(candidate.title)&&vehicleSlug(prior.maker)===vehicleSlug(candidate.maker);
+   if(same&&prior.category!=='Not verified in this atlas'){counts.retainedClass++;return {...provisional,vehicle_class:prior.category};}
+   counts.unknownClass++;return provisional;
+ });
+ const normalized=normalizeVehicles(adapted);
+ return {rows:adapted,normalized,counts};
+}
