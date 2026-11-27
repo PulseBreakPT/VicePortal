@@ -3,6 +3,8 @@ import { characterDiscoveries } from './characterDiscoveries';
 import { mediaCast } from './mediaCast';
 import { characterCoverage } from './characterCoverage';
 import { characterSourceIndex } from './characterSourceIndex';
+import { applyProfileResearch, applySceneResearch } from './characterProfileResearch';
+import { completeCharacterDossier } from './characterCompleteness';
 // Character roster checked 2026-11-27 against Rockstar's published Main Cast and Full Cast.
 // Credits confirm names and performers, not biographies. Community summaries are marked separately.
 // External portraits are explicitly attributed; missing imagery uses a placeholder.
@@ -1991,7 +1993,7 @@ export const characterRecords = [
    description:'Rap duo formed by Bae-Luxe and Roxy, signed to Only Raw Records. Their early collaboration with DWNPLY helped establish their career.',
    attributes:{Role:'Music duo',Members:'Bae-Luxe; Roxy Rashad',Label:'Only Raw Records',Evidence:'Official group profile'},
    relatedSources:[{label:'Rockstar Games — cast credits',url:credits},{label:'GTABase — character guide',url:gtabase}],verifiedOn:'2026-11-27'},
-].map(attachResearch).map(applyCoverage).map(mergeMediaCredits).concat(mediaCast.filter(row=>row.id).map(mediaRecord)).map(applyEvidence).map(item=>{
+].map(attachResearch).map(applyCoverage).map(mergeMediaCredits).concat(mediaCast.filter(row=>row.id).map(mediaRecord)).map(applyEvidence).map(applyProfileResearch).map(applySceneResearch).map(completeCharacterDossier).map(item=>{
   const attributes={...item.attributes,'Biography availability':item.attributes['Biography availability']||'Documented summary; complete life history not established','Portrait availability':item.placeholderImage?'Not verified in this atlas':item.attributes['Portrait availability']||'Attributed image reference'};
   const known=Object.values(attributes).filter(value=>!/^not verified/i.test(String(value))).length;
   return {...item,attributes:{...attributes,'Dossier completeness':`${known} / ${Object.keys(attributes).length} character fields documented`},paragraphs:item.paragraphs?.length?item.paragraphs:['This dossier records the credited role and the available sourced context. No additional biography is inferred where the published sources do not provide one.'],details:item.details?.length?item.details:['Character dossier','Source context checked'],imageFallback:item.imageFallback||placeholder,relatedSources:item.relatedSources||[{label:'Rockstar Games — official cast credits',url:credits}],verifiedOn:item.verifiedOn||'2026-11-27'};
