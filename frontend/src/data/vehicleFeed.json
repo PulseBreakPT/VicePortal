@@ -3513,6 +3513,2089 @@
       "handling": 2.7,
       "source": "https://gtatown.com/garage/vehicles",
       "spoiler": false
+    },
+    {
+      "name": "Red Apple Orchard Rancher",
+      "maker": "Declasse",
+      "vehicle_class": "Topper",
+      "speed": 3.5,
+      "acceleration": 3.6,
+      "handling": 3.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Marshall",
+      "maker": "Vapid",
+      "vehicle_class": "Off-Road Vehicles",
+      "speed": 3.3,
+      "acceleration": 4.1,
+      "handling": 2.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Speedo",
+      "maker": "Vapid",
+      "vehicle_class": "Vans",
+      "speed": 3.4,
+      "acceleration": 3.6,
+      "handling": 3.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Venomous Marshall",
+      "maker": "Vapid",
+      "vehicle_class": "Mudder",
+      "speed": 3.3,
+      "acceleration": 4.1,
+      "handling": 2.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'71 Declasse Parkland",
+      "maker": "Declasse",
+      "vehicle_class": "Sedans",
+      "speed": 3.5,
+      "acceleration": 3.3,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Grady's Slamvan",
+      "maker": "Vapid",
+      "vehicle_class": "Retro",
+      "speed": 3.3,
+      "acceleration": 3.4,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Taci Ragno",
+      "maker": "Taci",
+      "vehicle_class": "Bikes",
+      "speed": 2.6,
+      "acceleration": 3.6,
+      "handling": 3.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Rumpo",
+      "maker": "Vapid",
+      "vehicle_class": "Vans",
+      "speed": 3.2,
+      "acceleration": 3.7,
+      "handling": 3.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'56 Vapid Slamvan",
+      "maker": "Vapid",
+      "vehicle_class": "Muscle Cars",
+      "speed": 3.2,
+      "acceleration": 3.1,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'79 Bravado Youga XL",
+      "maker": "Bravado",
+      "vehicle_class": "Vans",
+      "speed": 3.2,
+      "acceleration": 3.1,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'95 Annis Hellion",
+      "maker": "Annis",
+      "vehicle_class": "SUVs",
+      "speed": 3.1,
+      "acceleration": 3.4,
+      "handling": 3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Acid Youga",
+      "maker": "Bravado",
+      "vehicle_class": "Fine Art",
+      "speed": 3.2,
+      "acceleration": 3.1,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Circles of Hell Youga",
+      "maker": "Bravado",
+      "vehicle_class": "Fine Art",
+      "speed": 3.2,
+      "acceleration": 3.1,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Elven Queen Youga",
+      "maker": "Bravado",
+      "vehicle_class": "Fine Art",
+      "speed": 3.2,
+      "acceleration": 3.1,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Flower Powered Rancher",
+      "maker": "Declasse",
+      "vehicle_class": "Fine Art",
+      "speed": 3.3,
+      "acceleration": 3.2,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "HVY Wastelander",
+      "maker": "HVY",
+      "vehicle_class": "Off-Road Vehicles",
+      "speed": 3.1,
+      "acceleration": 3.8,
+      "handling": 2.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Nagasaki Nimbe",
+      "maker": "Nagasaki",
+      "vehicle_class": "Bikes",
+      "speed": 2.6,
+      "acceleration": 3.5,
+      "handling": 3.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Tropic Dawn Youga",
+      "maker": "Bravado",
+      "vehicle_class": "Fine Art",
+      "speed": 3.2,
+      "acceleration": 3.1,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Shuttle",
+      "maker": "Vapid",
+      "vehicle_class": "Vans",
+      "speed": 2.9,
+      "acceleration": 3.1,
+      "handling": 3.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'32 Vapid Hustler",
+      "maker": "Vapid",
+      "vehicle_class": "Coupes",
+      "speed": 3.2,
+      "acceleration": 2.7,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'86 Declasse Rancher",
+      "maker": "Declasse",
+      "vehicle_class": "Pickups",
+      "speed": 3.1,
+      "acceleration": 3.1,
+      "handling": 3.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'82 Canis Crawler",
+      "maker": "Canis",
+      "vehicle_class": "SUVs",
+      "speed": 2.7,
+      "acceleration": 3,
+      "handling": 3.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'85 Albany Emperor",
+      "maker": "Albany",
+      "vehicle_class": "Sedans",
+      "speed": 3.3,
+      "acceleration": 3,
+      "handling": 2.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Mud Crasher Rancher",
+      "maker": "Declasse",
+      "vehicle_class": "Mudder",
+      "speed": 3,
+      "acceleration": 3.1,
+      "handling": 2.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Third Eye Youga",
+      "maker": "Bravado",
+      "vehicle_class": "Fine Art",
+      "speed": 3.1,
+      "acceleration": 2.6,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'55 Declasse Bobcat 500",
+      "maker": "Declasse",
+      "vehicle_class": "Muscle Cars",
+      "speed": 3,
+      "acceleration": 2.6,
+      "handling": 3.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'70 Vapid Riata",
+      "maker": "Vapid",
+      "vehicle_class": "SUVs",
+      "speed": 2.8,
+      "acceleration": 2.6,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'74 Bravado Youga",
+      "maker": "Bravado",
+      "vehicle_class": "Vans",
+      "speed": 3,
+      "acceleration": 2.6,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bravado Aphid",
+      "maker": "Bravado",
+      "vehicle_class": "Bikes",
+      "speed": 2.1,
+      "acceleration": 3.6,
+      "handling": 2.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Interdimensional Youga",
+      "maker": "Bravado",
+      "vehicle_class": "Fine Art",
+      "speed": 3,
+      "acceleration": 2.6,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "King of Swing Youga",
+      "maker": "Bravado",
+      "vehicle_class": "Fine Art",
+      "speed": 3,
+      "acceleration": 2.6,
+      "handling": 3.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Declasse Ambulance",
+      "maker": "Declasse",
+      "vehicle_class": "Emergency Vehicles",
+      "speed": 3,
+      "acceleration": 2.6,
+      "handling": 2.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'70 Vapid Reclaimer",
+      "maker": "Vapid",
+      "vehicle_class": "Pickups",
+      "speed": 2.6,
+      "acceleration": 2.5,
+      "handling": 2.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Brute Boxville",
+      "maker": "Brute",
+      "vehicle_class": "Vans",
+      "speed": 2.6,
+      "acceleration": 2.7,
+      "handling": 2.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Cherry Popper Boxville",
+      "maker": "Brute",
+      "vehicle_class": "Topper",
+      "speed": 2.6,
+      "acceleration": 2.7,
+      "handling": 2.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Declasse D7700",
+      "maker": "Declasse",
+      "vehicle_class": "Trucks",
+      "speed": 2.9,
+      "acceleration": 2.6,
+      "handling": 2.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Finns Reclaimer",
+      "maker": "Vapid",
+      "vehicle_class": "Leonida Man",
+      "speed": 2.6,
+      "acceleration": 2.5,
+      "handling": 2.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Interstate Ambulance",
+      "maker": "Interstate",
+      "vehicle_class": "Emergency Vehicles",
+      "speed": 2.8,
+      "acceleration": 2.3,
+      "handling": 3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Brute Rental Bus",
+      "maker": "Declasse",
+      "vehicle_class": "Transport Vehicles",
+      "speed": 2.7,
+      "acceleration": 2.4,
+      "handling": 2.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Mer-Can Blast",
+      "maker": "Mer-Can",
+      "vehicle_class": "Off-Road Vehicles",
+      "speed": 2,
+      "acceleration": 3.4,
+      "handling": 2.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Love Fist Youga",
+      "maker": "Bravado",
+      "vehicle_class": "Throwback",
+      "speed": 2.4,
+      "acceleration": 2.2,
+      "handling": 2.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Maibatsu Iota",
+      "maker": "Maibatsu",
+      "vehicle_class": "Trucks",
+      "speed": 2.6,
+      "acceleration": 2.2,
+      "handling": 2.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Benefactor Spritz",
+      "maker": "Benefactor",
+      "vehicle_class": "Vans",
+      "speed": 2.3,
+      "acceleration": 2.2,
+      "handling": 2.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Brute Police Riot",
+      "maker": "Brute",
+      "vehicle_class": "Emergency Vehicles",
+      "speed": 2.4,
+      "acceleration": 2,
+      "handling": 2.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "JoBuilt Rubble",
+      "maker": "JoBuilt",
+      "vehicle_class": "Trucks",
+      "speed": 2.4,
+      "acceleration": 2,
+      "handling": 2.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Guardian TX2",
+      "maker": "Vapid",
+      "vehicle_class": "Trucks",
+      "speed": 2.6,
+      "acceleration": 2.1,
+      "handling": 2.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'95 Willard Trotter",
+      "maker": "Willard",
+      "vehicle_class": "Vans",
+      "speed": 2.4,
+      "acceleration": 1.6,
+      "handling": 2.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Maibatsu Mule",
+      "maker": "Maibatsu",
+      "vehicle_class": "Trucks",
+      "speed": 2.6,
+      "acceleration": 1.9,
+      "handling": 2.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'78 Osprey Journey",
+      "maker": "Osprey",
+      "vehicle_class": "Vans",
+      "speed": 2.4,
+      "acceleration": 1.8,
+      "handling": 2.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'83 Willard Moocher",
+      "maker": "Willard",
+      "vehicle_class": "Vans",
+      "speed": 2.5,
+      "acceleration": 1.4,
+      "handling": 2.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'97 Interstate Benson",
+      "maker": "Interstate",
+      "vehicle_class": "Trucks",
+      "speed": 2.4,
+      "acceleration": 1.7,
+      "handling": 2.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'99 Interstate Stockade",
+      "maker": "Interstate",
+      "vehicle_class": "Emergency Vehicles",
+      "speed": 2.4,
+      "acceleration": 1.4,
+      "handling": 2.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bravado Swamp Blaster",
+      "maker": "Bravado",
+      "vehicle_class": "Off-Road Vehicles",
+      "speed": 1.7,
+      "acceleration": 2.9,
+      "handling": 2.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Cartright Biff",
+      "maker": "Cartright",
+      "vehicle_class": "Trucks",
+      "speed": 2.2,
+      "acceleration": 1.7,
+      "handling": 2.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "DriveShaft Journey",
+      "maker": "Osprey",
+      "vehicle_class": "DriveShaft Famous",
+      "speed": 2.4,
+      "acceleration": 1.8,
+      "handling": 2.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Erotic Journey",
+      "maker": "Osprey",
+      "vehicle_class": "Leonida Man",
+      "speed": 2.4,
+      "acceleration": 1.8,
+      "handling": 2.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "MTL Packer",
+      "maker": "MTL",
+      "vehicle_class": "Trucks",
+      "speed": 2.6,
+      "acceleration": 1.7,
+      "handling": 2.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Preacher's Moocher",
+      "maker": "Willard",
+      "vehicle_class": "Leonida Man",
+      "speed": 2.5,
+      "acceleration": 1.4,
+      "handling": 2.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "MTL Pumper",
+      "maker": "MTL",
+      "vehicle_class": "Emergency Vehicles",
+      "speed": 2.5,
+      "acceleration": 1.8,
+      "handling": 2.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'81 JoBuilt Phantom Custom",
+      "maker": "JoBuilt",
+      "vehicle_class": "Trucks",
+      "speed": 2,
+      "acceleration": 1.5,
+      "handling": 2.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "1776 Phantom",
+      "maker": "JoBuilt",
+      "vehicle_class": "Patriot",
+      "speed": 2,
+      "acceleration": 1.5,
+      "handling": 2.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Cartright Hauler",
+      "maker": "Cartright",
+      "vehicle_class": "Trucks",
+      "speed": 2.1,
+      "acceleration": 1.4,
+      "handling": 2.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Taxi",
+      "maker": "",
+      "vehicle_class": "Transport Vehicles",
+      "speed": 2.1,
+      "acceleration": 1.4,
+      "handling": 2.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Whiffler Airport Bus",
+      "maker": "Whiffler",
+      "vehicle_class": "Transport Vehicles",
+      "speed": 2.1,
+      "acceleration": 1.4,
+      "handling": 2.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Whiffler Bus",
+      "maker": "Whiffler",
+      "vehicle_class": "Transport Vehicles",
+      "speed": 2.1,
+      "acceleration": 1.4,
+      "handling": 2.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "JoBuilt MB2-10",
+      "maker": "JoBuilt",
+      "vehicle_class": "Trucks",
+      "speed": 1.8,
+      "acceleration": 1.4,
+      "handling": 2.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Whiffler Dashound",
+      "maker": "Whiffler",
+      "vehicle_class": "Transport Vehicles",
+      "speed": 2,
+      "acceleration": 1.3,
+      "handling": 2.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Hauners Brigade",
+      "maker": "Hauners",
+      "vehicle_class": "Emergency Vehicles",
+      "speed": 1.6,
+      "acceleration": 1.1,
+      "handling": 1.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Punk Putter Caddy",
+      "maker": "Maibatsu",
+      "vehicle_class": "Leonida Man",
+      "speed": 1.1,
+      "acceleration": 1.3,
+      "handling": 1.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Camo Caddy",
+      "maker": "Maibatsu",
+      "vehicle_class": "Swamp Style",
+      "speed": 1,
+      "acceleration": 0.8,
+      "handling": 1.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Celebration Caddy",
+      "maker": "Maibatsu",
+      "vehicle_class": "Leonida Man",
+      "speed": 1,
+      "acceleration": 0.9,
+      "handling": 1.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Cellerica Caddy",
+      "maker": "Maibatsu",
+      "vehicle_class": "Leonida Man",
+      "speed": 1,
+      "acceleration": 0.9,
+      "handling": 1.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Donk Caddy",
+      "maker": "Maibatsu",
+      "vehicle_class": "Leonida Man",
+      "speed": 1,
+      "acceleration": 0.9,
+      "handling": 1.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Glamor Caddy",
+      "maker": "Maibatsu",
+      "vehicle_class": "Blinged Up",
+      "speed": 1,
+      "acceleration": 0.9,
+      "handling": 1.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Lowrider Caddy",
+      "maker": "Maibatsu",
+      "vehicle_class": "Leonida Man",
+      "speed": 1,
+      "acceleration": 0.9,
+      "handling": 1.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Partytime Caddy",
+      "maker": "Maibatsu",
+      "vehicle_class": "Leonida Man",
+      "speed": 1,
+      "acceleration": 0.9,
+      "handling": 1.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Pink Champagne Caddy",
+      "maker": "Maibatsu",
+      "vehicle_class": "Girlypop",
+      "speed": 1,
+      "acceleration": 0.9,
+      "handling": 1.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Swampy Sal's Caddy",
+      "maker": "Maibatsu",
+      "vehicle_class": "Swamp Style",
+      "speed": 1,
+      "acceleration": 0.9,
+      "handling": 1.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Sweet Land Caddy",
+      "maker": "Maibatsu",
+      "vehicle_class": "Patriot",
+      "speed": 1,
+      "acceleration": 0.9,
+      "handling": 1.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Tactical Caddy",
+      "maker": "Maibatsu",
+      "vehicle_class": "All-Terrain",
+      "speed": 1,
+      "acceleration": 0.9,
+      "handling": 1.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Shift-E FAN-E",
+      "maker": "Shift-E",
+      "vehicle_class": "Bikes",
+      "speed": 0.7,
+      "acceleration": 0.2,
+      "handling": 1.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Speedy Boomazoom",
+      "maker": "Maibatsu",
+      "vehicle_class": "Leonida Man",
+      "speed": 0.6,
+      "acceleration": 0.1,
+      "handling": 0.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Donk Boomazoom",
+      "maker": "Maibatsu",
+      "vehicle_class": "Leonida Man",
+      "speed": 0.3,
+      "acceleration": 0.1,
+      "handling": 0.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Independence Boomazoom",
+      "maker": "Maibatsu",
+      "vehicle_class": "Patriot",
+      "speed": 0.3,
+      "acceleration": 0.1,
+      "handling": 0.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Lowrider Boomazoom",
+      "maker": "Maibatsu",
+      "vehicle_class": "Leonida Man",
+      "speed": 0.2,
+      "acceleration": 0.1,
+      "handling": 0.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Maibatsu Boomazoom",
+      "maker": "Maibatsu",
+      "vehicle_class": "Bikes",
+      "speed": 0.2,
+      "acceleration": 0.1,
+      "handling": 0.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Nugget Boomazoom",
+      "maker": "Maibatsu",
+      "vehicle_class": "Blinged Up",
+      "speed": 0.3,
+      "acceleration": 0.1,
+      "handling": 0.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Seashell Boomazoom",
+      "maker": "Maibatsu",
+      "vehicle_class": "Girlypop",
+      "speed": 0.3,
+      "acceleration": 0.1,
+      "handling": 0.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Spec Ops Boomazoom",
+      "maker": "Maibatsu",
+      "vehicle_class": "Swamp Style",
+      "speed": 0.2,
+      "acceleration": 0.1,
+      "handling": 0.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Yesteryear Boomazoom",
+      "maker": "Maibatsu",
+      "vehicle_class": "Leonida Man",
+      "speed": 0.3,
+      "acceleration": 0.1,
+      "handling": 0.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'32 Vapid Golfer",
+      "maker": "Vapid",
+      "vehicle_class": "Utility Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'80 Interstate Yankee",
+      "maker": "Interstate",
+      "vehicle_class": "Utility Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'82 Maibatsu Caddy",
+      "maker": "Maibatsu",
+      "vehicle_class": "Utility Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'92 Mammoth Patriot",
+      "maker": "Mammoth",
+      "vehicle_class": "Military Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'99 Jack Sheepe Fieldmaster",
+      "maker": "Jack Sheepe",
+      "vehicle_class": "Industrial Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Airgator Airboat 09",
+      "maker": "Airgator",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Ambergris Torlan",
+      "maker": "Calder",
+      "vehicle_class": "Blinged Up",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Atlantic Volatus",
+      "maker": "Buckingham",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Avalanche Supervolito",
+      "maker": "Buckingham",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "B3000 Excavator",
+      "maker": "Brute",
+      "vehicle_class": "Industrial Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Big Game Airboat",
+      "maker": "Airgator",
+      "vehicle_class": "Swamp Style",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Black Dragon Mallard",
+      "maker": "Lapwing",
+      "vehicle_class": "Leonida Man",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Black Dragon Maverick",
+      "maker": "Buckingham",
+      "vehicle_class": "Leonida Man",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Blade 500",
+      "maker": "",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Blazing Mallard",
+      "maker": "Lapwing",
+      "vehicle_class": "Hot Rods",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bogskimmer Sea Sparrow",
+      "maker": "Nagasaki",
+      "vehicle_class": "Swamp Style",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bombora S23 CCS",
+      "maker": "Bombora",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Booty Bang Nimbus",
+      "maker": "Lapwing",
+      "vehicle_class": "Clout Chaser",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bottcher 015A",
+      "maker": "Bottcher",
+      "vehicle_class": "Aircraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bottcher 020",
+      "maker": "Bottcher",
+      "vehicle_class": "Aircraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bottcher Buzzard",
+      "maker": "Bottcher",
+      "vehicle_class": "Military Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bottcher Duster",
+      "maker": "Bottcher",
+      "vehicle_class": "Aircraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Brimstone Golfer",
+      "maker": "Vapid",
+      "vehicle_class": "Hot Rods",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Brute Ripley",
+      "maker": "Brute",
+      "vehicle_class": "Utility Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Brute Taco Van",
+      "maker": "Brute",
+      "vehicle_class": "Utility Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Buckingham Maverick",
+      "maker": "Buckingham",
+      "vehicle_class": "Aircraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Buckingham Shamal",
+      "maker": "Buckingham",
+      "vehicle_class": "Aircraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Buckingham SuperVolito",
+      "maker": "Buckingham",
+      "vehicle_class": "Aircraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Buckingham Swift",
+      "maker": "Buckingham",
+      "vehicle_class": "Aircraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Buckingham Valkyrie",
+      "maker": "Buckingham",
+      "vehicle_class": "Military Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Buckingham Volatus",
+      "maker": "Buckingham",
+      "vehicle_class": "Aircraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Calder CB69",
+      "maker": "Calder",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Calder Dibnah",
+      "maker": "Calder",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Calder Marquis",
+      "maker": "Calder",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Calder Shasa",
+      "maker": "Calder",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Calder Torlan",
+      "maker": "Calder",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Calder Yakuruna",
+      "maker": "Calder",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Candyman Scorcher",
+      "maker": "Del Perro",
+      "vehicle_class": "Pedal Power",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Cellerica Shamal",
+      "maker": "Buckingham",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Clarion",
+      "maker": "Clarion",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Cold Case L35P",
+      "maker": "Lure Predator",
+      "vehicle_class": "Law & Order",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Crest Kayak",
+      "maker": "Crest",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Decker Crake",
+      "maker": "Decker",
+      "vehicle_class": "Aircraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Del Perro Erode",
+      "maker": "Del Perro",
+      "vehicle_class": "Bikes",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Del Perro Scorcher",
+      "maker": "Del Perro",
+      "vehicle_class": "Bikes",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Dingus Como",
+      "maker": "Dingus",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Dingus Garda",
+      "maker": "Dingus",
+      "vehicle_class": "Emergency Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Dingus Nepa",
+      "maker": "Dingus",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Dot Matrix Dibnah",
+      "maker": "Calder",
+      "vehicle_class": "Fine Art",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Dr Sheehan's Airboat",
+      "maker": "Airgator",
+      "vehicle_class": "Swamp Style",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Dragonfly Volatus",
+      "maker": "Buckingham",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Dump",
+      "maker": "MTL",
+      "vehicle_class": "Industrial Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Endurex Aerobike",
+      "maker": "Endurex",
+      "vehicle_class": "Bikes",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Ghost Cruiser",
+      "maker": "Walter",
+      "vehicle_class": "Pedal Power",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Glacier Erode",
+      "maker": "Del Perro",
+      "vehicle_class": "Pedal Power",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Hauners APC",
+      "maker": "Hauners",
+      "vehicle_class": "Military Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Hauners Cargobob",
+      "maker": "Hauners",
+      "vehicle_class": "Military Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Hauners P-996 LAZER",
+      "maker": "Hauners",
+      "vehicle_class": "Military Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Hauners Rhino Tank",
+      "maker": "Hauners",
+      "vehicle_class": "Military Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Hauners Ridgway",
+      "maker": "Hauners",
+      "vehicle_class": "Military Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Henshaw Rhode",
+      "maker": "Rugger",
+      "vehicle_class": "Patriot",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Hulls Flatdeck",
+      "maker": "Hulls",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Hulls Pontoon",
+      "maker": "Hulls",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Hulls Sea Enchantress",
+      "maker": "Hulls",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Hulls Seacab",
+      "maker": "Hulls",
+      "vehicle_class": "Transport Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "HVY Airtug",
+      "maker": "HVY",
+      "vehicle_class": "Utility Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "HVY Bulldozer",
+      "maker": "HVY",
+      "vehicle_class": "Industrial Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Immortal BMX",
+      "maker": "Tuff",
+      "vehicle_class": "Pedal Power",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Inflatable Flamingo",
+      "maker": "",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Kowaachobee Airboat",
+      "maker": "Airgator",
+      "vehicle_class": "Swamp Style",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Kyle's Mallard",
+      "maker": "Lapwing",
+      "vehicle_class": "Retro",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Lacewing Maverick",
+      "maker": "Buckingham",
+      "vehicle_class": "Law & Order",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Lapwing 300-H",
+      "maker": "Lapwing",
+      "vehicle_class": "Aircraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Lapwing Mallard",
+      "maker": "Lapwing",
+      "vehicle_class": "Aircraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Lapwing Mammatus",
+      "maker": "Lapwing",
+      "vehicle_class": "Aircraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Lapwing Nimbus",
+      "maker": "Lapwing",
+      "vehicle_class": "Aircraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Lapwing Streamer 216-C",
+      "maker": "Lapwing",
+      "vehicle_class": "Aircraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Lifta",
+      "maker": "HVY",
+      "vehicle_class": "Utility Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Love Fist Shamal",
+      "maker": "Buckingham",
+      "vehicle_class": "Throwback",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Lure Predator L20S",
+      "maker": "Lure Predator",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Lure Predator L35P",
+      "maker": "Lure Predator",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Maibatsu Caddy",
+      "maker": "Maibatsu",
+      "vehicle_class": "Utility Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Mammoth Dodo",
+      "maker": "Mammoth",
+      "vehicle_class": "Aircraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Meteor Duster",
+      "maker": "Bottcher",
+      "vehicle_class": "Retro",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Midsummer Erode",
+      "maker": "Del Perro",
+      "vehicle_class": "Pedal Power",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Millionaire BMX",
+      "maker": "Tuff",
+      "vehicle_class": "Pedal Power",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Mosaic Dibnah",
+      "maker": "Calder",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "MTL CR5013",
+      "maker": "MTL",
+      "vehicle_class": "Industrial Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Nagasaki Sea Sparrow",
+      "maker": "Nagasaki",
+      "vehicle_class": "Aircraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Nagasaki Tao",
+      "maker": "Nagasaki",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Naughty Boy Airboat",
+      "maker": "Airgator",
+      "vehicle_class": "Swamp Style",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Ocean Pearl CB69",
+      "maker": "Calder",
+      "vehicle_class": "Girlypop",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Pussycat Mammatus",
+      "maker": "Lapwing",
+      "vehicle_class": "Girlypop",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Rainbow Ripple L20S",
+      "maker": "Lure Predator",
+      "vehicle_class": "Clout Chaser",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Revolutionary Azure",
+      "maker": "Seashark",
+      "vehicle_class": "Patriot",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Rudolph Tao",
+      "maker": "Nagasaki",
+      "vehicle_class": "Leonida Man",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Rugger Cretacean",
+      "maker": "Rugger",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Rugger Fortune",
+      "maker": "Rugger",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Rugger Hemming",
+      "maker": "Rugger",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Rugger Rhode",
+      "maker": "Rugger",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Seashark Azure",
+      "maker": "Seashark",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Seashark Hydroblast",
+      "maker": "Seashark",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Seashark Sedna",
+      "maker": "Seashark",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Shining Sea Squalo",
+      "maker": "Shitzu",
+      "vehicle_class": "Patriot",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Shitzu Squalo",
+      "maker": "Shitzu",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Silver Bullet Mallard",
+      "maker": "Lapwing",
+      "vehicle_class": "Retro",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Speeder 700 GT",
+      "maker": "Speeder",
+      "vehicle_class": "Watercraft",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Stanley Furrow TC 2350",
+      "maker": "Stanley",
+      "vehicle_class": "Industrial Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Stolen Valor 300-H",
+      "maker": "Lapwing",
+      "vehicle_class": "Retro",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Street Art Squalo",
+      "maker": "Shitzu",
+      "vehicle_class": "Fine Art",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "TH42 Telehandler",
+      "maker": "HVY",
+      "vehicle_class": "Utility Vehicles",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Tuff BMX",
+      "maker": "Tuff",
+      "vehicle_class": "Bikes",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Typhoon Squalo",
+      "maker": "Shitzu",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Walter Cruiser",
+      "maker": "Walter",
+      "vehicle_class": "Bikes",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Walter Crusher",
+      "maker": "Walter",
+      "vehicle_class": "Bikes",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Walter Lombike",
+      "maker": "Walter",
+      "vehicle_class": "Bikes",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Westbound Azure",
+      "maker": "Seashark",
+      "vehicle_class": "Leonida Man",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Will O' The Wisp Airboat",
+      "maker": "Airgator",
+      "vehicle_class": "Swamp Style",
+      "speed": null,
+      "acceleration": null,
+      "handling": null,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
     }
-  ]
+  ],
+  "publicListCount": 560,
+  "hiddenCount": 1,
+  "snapshotNote": "All 559 visible rows of the public vehicle index; one story vehicle hidden by source. Full export not yet retrieved."
 }
