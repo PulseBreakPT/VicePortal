@@ -1,0 +1,50 @@
+/* Neon Cipher: an additive overlay, not a font or layout replacement. */
+.neon-cipher {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  min-width: 0;
+  vertical-align: baseline;
+  text-align: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+}
+.neon-cipher.neon-cipher-block { display: block; }
+.neon-cipher-original { font: inherit; letter-spacing: inherit; }
+.neon-cipher-overlay {
+  display: none;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  font: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  overflow-wrap: anywhere;
+  color: var(--gta-pink,#F3B6CF);
+  -webkit-text-fill-color: currentColor;
+  -webkit-text-stroke: 0;
+  text-shadow: 0 0 .24em #EF8F9C44;
+}
+.neon-cipher-overlay::before { content: attr(data-cipher-frame); }
+.neon-cipher[data-cipher-active] > .neon-cipher-original { opacity: 0; }
+.neon-cipher[data-cipher-active] > .neon-cipher-overlay { display: block; }
+.neon-cipher-number .neon-cipher-overlay { color:var(--gta-turquoise,#65BFC1); text-shadow: 0 0 .18em #65BFC133; }
+.neon-cipher-card .neon-cipher-overlay { text-shadow:none; }
+/* Keep keyboard focus, touch, reduced motion and printed text immediately legible. */
+:focus-within > .neon-cipher[data-cipher-active] > .neon-cipher-original,
+.portal-card:focus-within .neon-cipher-card[data-cipher-active] > .neon-cipher-original { opacity:1; }
+:focus-within > .neon-cipher[data-cipher-active] > .neon-cipher-overlay,
+.portal-card:focus-within .neon-cipher-card[data-cipher-active] > .neon-cipher-overlay { display:none; }
+@media (max-width:899px), (pointer:coarse) {
+  .neon-cipher-card[data-cipher-active] > .neon-cipher-original { opacity:1; }
+  .neon-cipher-card[data-cipher-active] > .neon-cipher-overlay { display:none; }
+  .neon-cipher-overlay { text-shadow:none; }
+}
+@media (prefers-reduced-motion:reduce), (forced-colors:active), print {
+  .neon-cipher[data-cipher-active] > .neon-cipher-original { opacity:1; }
+  .neon-cipher[data-cipher-active] > .neon-cipher-overlay { display:none; }
+}

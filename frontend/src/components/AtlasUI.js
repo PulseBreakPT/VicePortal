@@ -1,3 +1,4 @@
+import { NeonCipher } from './NeonCipher';
 import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowUpRight, Bookmark, Check } from 'lucide-react';
 import { Button } from './ui/button';
@@ -18,7 +19,7 @@ export const Action = ({ children, secondary = false, arrow = true, className = 
 export const SaveButton = ({ item, saved, toggleSave, prefix = 'save', text = false, compact = false }) => <button className={`save-button ${saved.includes(item.id) ? 'is-saved' : ''} ${text ? 'with-text' : ''}`} data-testid={`${prefix}-${item.id}`} aria-label={`${saved.includes(item.id) ? 'Remove' : 'Save'} ${item.title}`} title={`${saved.includes(item.id) ? 'Remove bookmark' : 'Save entry'}`} aria-pressed={saved.includes(item.id)} onClick={(e) => { e.stopPropagation(); toggleSave(item.id); }}>{saved.includes(item.id) ? <Check size={17}/> : <Bookmark size={17}/>} {text && (compact ? (saved.includes(item.id) ? 'Saved' : 'Save entry') : (saved.includes(item.id) ? 'Saved to your atlas' : 'Save to your atlas'))}</button>;
 
 export const SectionHeading = ({ number, eyebrow, title, description, id }) => <div className="section-heading">
-  <Reveal><span className="eyebrow" data-testid={`${id}-eyebrow`}><span className="section-index">{number}</span>{eyebrow}</span><h2 className="display section-title" data-testid={`${id}-heading`}>{title}</h2></Reveal>
+  <Reveal><span className="eyebrow" data-testid={`${id}-eyebrow`}><span className="section-index">{number}</span>{eyebrow}</span><h2 className="display section-title" data-testid={`${id}-heading`}><NeonCipher value={title} block/></h2></Reveal>
   {description && <Reveal className="section-description"><p data-testid={`${id}-description`}>{description}</p></Reveal>}
 </div>;
 
