@@ -62,4 +62,4 @@ function AtlasApp() {
   </div></MotionConfig>;
 }
 
-export default function App() { return <BrowserRouter><AtlasApp/></BrowserRouter>; }
+export default function App() { return <BrowserRouter basename={process.env.PUBLIC_URL || '/'}><AtlasApp/></BrowserRouter>; }

@@ -1,0 +1,62 @@
+name: Publish Vice Atlas
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'frontend/**'
+      - '.github/workflows/publish-pages.yml'
+  pull_request:
+    paths:
+      - 'frontend/**'
+      - '.github/workflows/publish-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: vice-atlas-pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PUBLIC_URL: /VicePortal
+      GENERATE_SOURCEMAP: 'false'
+      CI: 'false'
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Yarn Classic
+        run: npm install --global yarn@1.22.22
+      - name: Install frontend dependencies
+        run: yarn install --non-interactive --network-timeout 120000
+      - name: Build original React frontend
+        run: yarn build
+      - name: Prepare project-relative assets and route fallback
+        run: node scripts/prepare-pages.mjs
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: frontend/build
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
