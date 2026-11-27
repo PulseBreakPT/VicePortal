@@ -3,6 +3,7 @@ import { normalizeVehicles,extractRows } from '../src/data/vehicleNormalizer.mjs
 
 const endpoint='https://gtatown.com/creators/data/vehicles.json';
 const dest=new URL('../src/data/vehicleFeed.json',import.meta.url);
+try {
 const response=await fetch(endpoint,{signal:AbortSignal.timeout(45000),headers:{Accept:'application/json','User-Agent':'ViceAtlas/1.0 (public data import; source attribution)'}});
 if(!response.ok)throw new Error('Public vehicle export returned '+response.status);
 const body=await response.json();
@@ -21,3 +22,7 @@ const temp=new URL('../src/data/vehicleFeed.tmp.json',import.meta.url);
 await writeFile(temp,JSON.stringify(record,null,2)+'\n');
 await rename(temp,dest);
 console.log('Public vehicle catalogue:',normalized.length,'records (previous snapshot:',previous.rows.length+')');
+
+} finally {
+ try { const {syncImages}=await import('./sync-vehicle-images.mjs'); await syncImages(); } catch(error) { console.warn('Vehicle image sync unavailable; retaining reviewed references:',error.message); }
+}
