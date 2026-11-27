@@ -1,9 +1,9 @@
 import { articles, gallery, image, officialUrl, regions, vehicles } from './catalog';
 import { descendantIds } from './sections';
 import { characterRecords } from './characterRecords';
+import { vehicleRecords } from './vehicleRecords';
 
 const base = (item, section, collections, status = 'Official source') => ({ ...item, path: `/${section}/${item.id}`, collections, status });
-const vehicleSource = 'https://www.gtabase.com/gta-6/vehicles/';
 const weaponSource = 'https://www.gtabase.com/gta-6/weapons/';
 const radioEntries = [
   ['afrobank-fm','AfroBank FM','Afrobeats / highlife'],
@@ -13,16 +13,7 @@ const radioEntries = [
   ['dirty-south-classics','Dirty South Classics','Southern rap'],
   ['flash-fm','Flash FM','Pop'],
 ].map(([id,title,category])=>base({id:`radio-${id}`,title,kind:'Radio station',category,image:image(`radio-${id}`),source:'https://gtatown.com/radio/',description:`${title} is listed in GTA Town’s radio reference with a ${category.toLowerCase()} focus. This record documents that community listing; it is not an independently verified Rockstar playlist.`,attributes:{Genre:category,Tracklist:'Not verified in this atlas'},paragraphs:['No audio stream or music playback is hosted here. Tracklists and station availability should be checked against the linked source. Trailer soundtrack appearances alone are not treated as station confirmations.']},'radio',['radio'],'Community reference'));
-const communityVehicleRows = [
-  ['thrax','Thrax','Truffade','Super','car-thrax','super'],
-  ['emerus','Emerus','Progen','Super','car-emerus','super'],
-  ['tempesta','Tempesta','Pegassi','Super','car-tempesta','super'],
-  ['comet-s2','Comet S2','Pfister','Sports','car-comet','sports'],
-  ['gauntlet-hellfire','Gauntlet Hellfire','Bravado','Muscle','car-gauntlet','muscle'],
-  ['carbon-rs','Carbon RS','Nagasaki','Motorcycles','bike-carbon','motorcycles'],
-  ['cheetah-classic','Cheetah Classic','Grotti','Super','car-cheetah','super'],
-];
-export const carEntries = communityVehicleRows.map(([id,title,manufacturer,category,photo,group]) => base({ id:`vehicle-${id}`, title, kind:'Vehicle', category, image:image(photo), source:vehicleSource, description:`${title} is listed in GTABase’s GTA VI vehicle reference under ${category.toLowerCase()}. This is a community catalog identification, not an independently measured performance specification.`, details:[manufacturer,category,'Community reference'], attributes:{Manufacturer:manufacturer,Class:category,'Top speed':'Not verified in this atlas',Price:'Not verified in this atlas'}, paragraphs:['Vehicle imagery is sourced through GTABase. Catalog identifications and illustrations can be revised as sources are checked. Performance figures from GTA V or GTA Online are not treated as GTA VI specifications here.'] },'vehicles',[`vehicles/${group}`],'Community reference'));
+export const carEntries = vehicleRecords;
 export const weaponEntries = [
   ['38','.38','Handguns','weapon-38','handguns'],
   ['1922','1922','Handguns','weapon-1922','handguns'],
