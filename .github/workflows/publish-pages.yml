@@ -46,6 +46,10 @@ jobs:
         run: node scripts/verify-smooth.mjs
       - name: Verify character catalogue
         run: node scripts/verify-character-catalogue.mjs
+      - name: Import full public vehicle catalogue
+        run: node scripts/import-vehicles.mjs
+      - name: Verify vehicle catalogue
+        run: node scripts/verify-vehicles.mjs
       - name: Build original React frontend
         run: yarn build
       - name: Prepare project-relative assets and route fallback
