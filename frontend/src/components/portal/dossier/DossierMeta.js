@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check, EyeOff, Info, ShieldCheck } from 'lucide-react';
 
-export const sourceName = item => item.source.includes('gtabase')?'GTABase':item.source.includes('gtatown')?'GTA Town':item.source.includes('gta6ops.com')?'GTA6Ops':item.source.includes('powerpyx.com')?'PowerPyx':'Rockstar Games';
+export const sourceName = item => item.source.includes('gtabase')?'GTABase':item.source.includes('gtatown')?'GTA Town':item.source.includes('gta6ops.com')?'GTA6Ops':item.source.includes('powerpyx.com')?'PowerPyx':item.source.includes('gta6.university')?'GTA6 University':item.source.includes('gta6wiki.eu')?'GTA6Wiki':item.source.includes('gta6tracker.org')?'GTA6Tracker':item.source.includes('rockstargames.com')?'Rockstar Games':'External source';
 export const isUnknown = value => /^not verified/i.test(value);
 export const typeLabel = item => item.kind==='Story'?'Article':item.kind;
 
