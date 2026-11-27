@@ -1,0 +1,3 @@
+## Website-owned controls
+
+Uses the already-installed shadcn/ui Radix Select, Popover, DropdownMenu, Sheet, Checkbox and cmdk Command components. All authored native selects in the application are replaced; Radix may internally create an inaccessible form select, which is not the user-facing control. Comparison vehicle selection supports search, empty values and disabled duplicate choices. The mobile category browser is an in-page sheet. Existing links, search dialog, FAQ and semantic desktop disclosures remain in place. The original theme is applied to portalled menus with 44px touch targets and reduced-motion support. Normal OS keyboards, browser permission prompts and system back actions are not replaced. The source regression scan is not a device/browser test.

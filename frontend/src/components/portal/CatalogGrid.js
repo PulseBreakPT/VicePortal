@@ -4,6 +4,9 @@ import { useMemo,useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, Search, SlidersHorizontal, X, LayoutGrid, List, ChevronDown } from 'lucide-react';
 import { SaveButton } from '../AtlasUI';
+import { SiteSelect } from '../ui/site-select';
+import { Popover,PopoverTrigger,PopoverContent } from '../ui/popover';
+import { Checkbox } from '../ui/checkbox';
 import { PAGE_SIZE,initialFilters,visibleItems,layoutFor,groupFor,filterItems,makeGroups,takeGroups } from './catalogueModel.mjs';
 
 export const CatalogCard = ({item,atlas,prefix='catalog',order=0}) => {
@@ -13,7 +16,7 @@ export const CatalogCard = ({item,atlas,prefix='catalog',order=0}) => {
 
 
 const unique=values=>[...new Set(values.filter(Boolean))].sort((a,b)=>a.localeCompare(b));
-const FilterSelect=({label,value,onChange,options,testId})=><label className="catalogue-field"><span>{label}</span><select aria-label={label} value={value} onChange={e=>onChange(e.target.value)} data-testid={testId}>{options.map(option=>{const [key,title]=Array.isArray(option)?option:[option,option];return <option value={key} key={key}>{title}</option>;})}</select></label>;
+const FilterSelect=({label,value,onChange,options,testId})=><div className="catalogue-field"><span>{label}</span><SiteSelect label={label} value={value} onChange={onChange} options={options} testId={testId}/></div>;
 
 export const CatalogGrid = ({items,atlas,section,prefix='catalog',title='In the atlas'}) => {
  const [filters,setFilters]=useState(initialFilters);
@@ -37,18 +40,18 @@ export const CatalogGrid = ({items,atlas,section,prefix='catalog',title='In the 
    <div className="portal-section-heading"><h2 data-testid={prefix+'-heading'}>{title}</h2><span data-testid={prefix+'-count'} aria-live="polite"><NeonCipher value={String(found.length).padStart(2,'0')} variant="number"/> {found.length===1?'entry':'entries'}</span></div>
    <div className="catalogue-toolbar">
      <label className="portal-input catalogue-search"><Search size={18}/><input value={filters.query} onChange={e=>update('query',e.target.value)} placeholder="Search this collection..." aria-label="Filter this collection" data-testid={prefix+'-filter'}/>{filters.query&&<button type="button" onClick={()=>update('query','')} aria-label="Clear filter" data-testid={prefix+'-clear'}><X size={16}/></button>}</label>
-     <details className="catalogue-filter-panel" data-testid={prefix+'-filter-panel'}>
-       <summary><SlidersHorizontal size={17}/><span>Filters{active?' ('+active+')':''}</span><ChevronDown size={14}/></summary>
-       <div className="catalogue-filter-fields">
+     <Popover><div className="catalogue-filter-panel" data-testid={prefix+'-filter-panel'}>
+       <PopoverTrigger asChild><button type="button" className="site-filter-trigger"><SlidersHorizontal size={17}/><span>Filters{active?' ('+active+')':''}</span><ChevronDown size={14}/></button></PopoverTrigger>
+       <PopoverContent className="site-ui-surface site-filter-popover" align="end" sideOffset={6} collisionPadding={12} data-lenis-prevent onOpenAutoFocus={event=>event.preventDefault()}><div className="catalogue-filter-fields">
          {groups.length>1&&<FilterSelect label="Category" value={filters.group} onChange={value=>update('group',value)} options={['All',...groups]} testId={prefix+'-group'}/>}
          {kinds.length>1&&<FilterSelect label="Filter by type" value={filters.kind} onChange={value=>update('kind',value)} options={['All',...kinds]} testId={prefix+'-type'}/>}
          {vehicleCollection&&<><FilterSelect label="Vehicle manufacturer" value={filters.maker} onChange={value=>update('maker',value)} options={['All',...makers]} testId={prefix+'-manufacturer'}/><FilterSelect label="Vehicle class" value={filters.vehicleClass} onChange={value=>update('vehicleClass',value)} options={['All',...vehicleClasses]} testId={prefix+'-class'}/></>}
          {isCharacterCollection?<FilterSelect label="Filter by visual evidence" value={filters.coverage} onChange={value=>update('coverage',value)} options={ [['all','All image statuses'],['portrait','Image reference'],['context','Contextual image only'],['missing','No sourced image']]} testId={prefix+'-coverage'}/>:vehicleCollection&&<FilterSelect label="Image status" value={filters.coverage} onChange={value=>update('coverage',value)} options={ [['all','All image statuses'],['sourced','Image reference'],['placeholder','No sourced image']]} testId={prefix+'-coverage'}/>}
          <FilterSelect label="Sort entries" value={filters.sort} onChange={value=>update('sort',value)} options={ [['featured','Featured first'],['az','Name: A–Z'],['za','Name: Z–A'],...(vehicleCollection?[['speed','Speed rating'],['acceleration','Acceleration rating'],['handling','Handling rating']]:[])]} testId={prefix+'-sort'}/>
-         <label className="catalogue-group-toggle"><input type="checkbox" checked={filters.grouped} onChange={e=>update('grouped',e.target.checked)}/> Group by category</label>
+         <label className="catalogue-group-toggle"><Checkbox checked={filters.grouped} onCheckedChange={value=>update('grouped',value===true)} aria-label="Group by category" className="site-checkbox"/> Group by category</label>
          <div className="catalogue-filter-actions"><div className="catalog-view-toggle" role="group" aria-label="Collection layout">{[['grid',LayoutGrid],['list',List]].map(([mode,Icon])=><button type="button" key={mode} aria-label={mode+' view'} title={mode+' view'} aria-pressed={filters.view===mode} onClick={()=>update('view',mode)} data-testid={prefix+'-view-'+mode}><Icon size={17}/></button>)}</div><button type="button" className="catalogue-reset" onClick={reset} data-testid={prefix+'-reset-filters'}>Reset filters</button></div>
-       </div>
-     </details>
+       </div></PopoverContent>
+     </div></Popover>
    </div>
    <div className="catalogue-result-meta"><span>Showing {Math.min(limit,found.length)} of {found.length}</span>{(active>0||filters.query)&&<button type="button" onClick={reset}>Clear all <X size={13}/></button>}</div>
    <div data-testid={prefix+'-results'} className="catalogue-results">{shown.map((group,index)=><section className="catalogue-group" key={group.label} aria-labelledby={prefix+'-group-heading-'+index}>{grouped&&ordered.length>1&&<header className="catalogue-group-heading"><h3 id={prefix+'-group-heading-'+index}>{group.label}</h3><span>{group.total}</span></header>} {(!grouped||ordered.length===1)&&<h3 className="catalogue-sr-only" id={prefix+'-group-heading-'+index}>{group.label}</h3>}<div className={'portal-grid '+(filters.view==='list'?'is-list':'')}>{group.items.map((item,order)=><CatalogCard order={order} item={item} atlas={atlas} key={item.id} prefix={prefix}/>)}</div></section>)}</div>

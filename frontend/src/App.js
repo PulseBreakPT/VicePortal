@@ -35,6 +35,7 @@ import './Cinematic.css';
 import './NeonCipher.css';
 import './Smooth.css';
 import './Catalogue.css';
+import './SiteUI.css';
 
 function AtlasApp() {
   const atlas = useAtlas();

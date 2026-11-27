@@ -4,6 +4,7 @@ import { ArrowRight, ArrowUpRight, ChevronRight, ChevronDown, Compass, Bookmark 
 import { childrenOf, rootSections, sectionById } from '../../data/sections';
 import { entriesFor } from '../../data/portal';
 import { Reveal } from '../AtlasUI';
+import { DropdownMenu,DropdownMenuTrigger,DropdownMenuContent,DropdownMenuItem } from '../ui/dropdown-menu';
 import { AtlasTree, MobileAtlasNavigation, rootOf } from './AtlasNavigation';
 
 const tid=id=>id.replaceAll('/','-');
@@ -23,7 +24,7 @@ export const PageHero = ({section,eyebrow,children,compact=false}) => {
 export const Subsections = ({section}) => {
   const children=childrenOf(section.id);
   if(!children.length)return null;
-  return <details className="catalogue-destinations" data-testid="subsections"><summary><span>Explore {section.title}</span><small>{children.length} pages</small><ChevronDown size={16}/></summary><nav aria-label={section.title+' pages'}>{children.map(s=><Link to={s.path} key={s.id} data-testid={`subsection-${tid(s.id)}`}>{s.title}<ArrowUpRight size={14}/></Link>)}</nav></details>;
+  return <div className="catalogue-destinations" data-testid="subsections"><DropdownMenu><DropdownMenuTrigger asChild><button type="button" className="site-destinations-trigger"><span>Explore {section.title}</span><small>{children.length} pages</small><ChevronDown size={16}/></button></DropdownMenuTrigger><DropdownMenuContent className="site-ui-surface site-destinations-menu" align="start" collisionPadding={12} data-lenis-prevent aria-label={section.title+' pages'}>{children.map(s=><DropdownMenuItem asChild key={s.id}><Link to={s.path} data-testid={`subsection-${tid(s.id)}`}>{s.title}<ArrowUpRight size={14}/></Link></DropdownMenuItem>)}</DropdownMenuContent></DropdownMenu></div>;
 };
 
 export const AtlasFooterLinks = ({prefix='footer-index'}) => <section className="atlas-footer-index"><div className="atlas-footer-index-heading"><h2 data-testid={`${prefix}-heading`}>Browse the atlas</h2><Link to="/directory" data-testid={`${prefix}-all`}>All pages <ArrowUpRight size={17}/></Link></div><div className="atlas-footer-columns">{rootSections.filter(s=>s.id!=='experience').map(section=><nav key={section.id} aria-label={`Footer ${section.title}`}><Link to={section.path} className="footer-area-title" data-testid={`${prefix}-${section.id}`}>{section.title}</Link>{childrenOf(section.id).slice(0,4).map(s=><Link key={s.id} to={s.path} data-testid={`${prefix}-${tid(s.id)}`}>{s.title}</Link>)}</nav>)}</div></section>;
