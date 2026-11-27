@@ -1,3 +1,4 @@
+import { characterCoverage } from './characterCoverage';
 import { characterSourceIndex } from './characterSourceIndex';
 // Character roster checked 2026-11-27 against Rockstar's published Main Cast and Full Cast.
 // Credits confirm names and performers, not biographies. Community summaries are marked separately.
@@ -1878,13 +1879,82 @@ function attachResearch(item) {
   };
 }
 
+const additionalReviewed = [
+  [
+    "Alan",
+    "alan",
+    "A stranded driver in Key Lento seeking help to locate his wife Janet.",
+    "https://gta6.university/db/characters/alan/"
+  ],
+  [
+    "Antonia",
+    "antonia",
+    "An inmate encountered by Lucia in the Hamlet Correctional sleeping area.",
+    "https://gta6.university/db/characters/antonia/"
+  ],
+  [
+    "CO Wilson",
+    "co-wilson",
+    "Corrections officer who escorts Lucia to her counselor at Hamlet Correctional.",
+    "https://gta6.university/db/characters/co-wilson/"
+  ],
+  [
+    "Daniel Porter",
+    "daniel-porter",
+    "Fleeca branch manager whose name appears on office correspondence.",
+    "https://gta6.university/db/characters/daniel-porter/"
+  ],
+  [
+    "Dobbs",
+    "dobbs",
+    "A member of a bachelor party encountered in a shipwreck.",
+    "https://gta6.university/db/characters/dobbs/"
+  ],
+  [
+    "Janet",
+    "janet",
+    "Alan’s missing wife, whom he asks the player to help find.",
+    "https://gta6.university/db/characters/janet/"
+  ],
+  [
+    "Zoey",
+    "zoey",
+    "An inmate in Lucia’s cell block who talks about her legal representation.",
+    "https://gta6.university/db/characters/zoey/"
+  ],
+  [
+    "Rita",
+    "rita",
+    "A psychic in Grayson who offers readings to the protagonists.",
+    "https://www.gtabase.com/gta-6/characters/rita",
+    "https://www.gtabase.com/images/gta-6/characters/rita.png"
+  ]
+].map(([title,id,description,source,portrait])=>({...encounter([title,id,description]),source,relatedSources:[{label:'Individual community profile',url:source}],...(portrait?{image:portrait,placeholderImage:false,imageFallback:placeholder,imageSource:'GTABase',imageSourceUrl:source}:{})}));
+function applyCoverage(item) {
+  const review = characterCoverage[item.id] || {};
+  const bio = review.bio;
+  const portrait = item.placeholderImage ? review.portrait : null;
+  const sources = [...(item.relatedSources||[]),...(review.sources||[]),...(portrait?[{label:portrait.source+' — image reference',url:portrait.page}]:[])].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i);
+  const attributes = {...item.attributes};
+  if(bio) {
+    attributes.Evidence='Official cast credit; limited community context';
+    attributes['Biography availability']='Partial context only';
+    if(bio.occupation)attributes['Occupation / affiliation']=bio.occupation;
+  }
+  attributes['Portrait availability']=portrait||item.imageSource?'Attributed external reference':item.placeholderImage?'Not verified in this atlas':'Existing image';
+  return {...item,attributes,relatedSources:sources,
+    ...(bio?{description:bio.description,source:bio.source,status:'Community reference',details:['Official cast credit; limited context, not a full biography'],relatedCharacterIds:[...new Set([...(item.relatedCharacterIds||[]),...bio.relations])]}:{}),
+    ...(portrait?{image:portrait.url,placeholderImage:false,imageFallback:placeholder,imageSource:portrait.source,imageSourceUrl:portrait.page}:{}),
+  };
+}
 export const characterRecords = [
   ...main.map(row=>enrichCharacter(record(row,'Main Cast'))),
   ...full.map(row=>enrichCharacter(record(row,'Full Cast'))),
   ...additionalEncounters.map(encounter),
+  ...additionalReviewed,
   {id:'real-dimez',title:'Real Dimez',kind:'Character',category:'Music duo',subtitle:'Bae-Luxe and Roxy Rashad',tag:'MUSIC DUO',
    image:'/images/real_dimez_01.webp',source:profiles,status:'Official source',spoiler:true,
    description:'Rap duo formed by Bae-Luxe and Roxy, signed to Only Raw Records. Their early collaboration with DWNPLY helped establish their career.',
    attributes:{Role:'Music duo',Members:'Bae-Luxe; Roxy Rashad',Label:'Only Raw Records',Evidence:'Official group profile'},
    relatedSources:[{label:'Rockstar Games — cast credits',url:credits},{label:'GTABase — character guide',url:gtabase}],verifiedOn:'2026-11-27'},
-].map(attachResearch);
+].map(attachResearch).map(applyCoverage);
