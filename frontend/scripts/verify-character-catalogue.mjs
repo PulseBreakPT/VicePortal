@@ -19,13 +19,16 @@ try {
   const { mediaCast } = await import(pathToFileURL(join(dir,'mediaCast.mjs')).href);
   const { characterDiscoveries } = await import(pathToFileURL(join(dir,'characterDiscoveries.mjs')).href);
   const byId = new Map(records.map(row=>[row.id,row]));
-  const { characterProfileResearch } = await import(pathToFileURL(join(dir,'characterProfileResearch.mjs')).href);
-  for (const [id,review] of Object.entries(characterProfileResearch)) {
+  const { characterProfileResearch, characterSceneResearch, checkedCreditProfiles } = await import(pathToFileURL(join(dir,'characterProfileResearch.mjs')).href);
+  for (const [id,review] of [...Object.entries(characterProfileResearch),...Object.entries(characterSceneResearch)]) {
     const row=byId.get(id);
     assert.ok(row, 'Unknown supplemental character ID '+id);
     assert.ok(row.spoiler, 'Supplemental story details must be protected '+id);
     assert.ok(row.paragraphs.includes(review.text), 'Missing supplemental biography '+id);
     assert.ok(row.relatedSources.some(source=>source.url===review.source), 'Missing supplemental source '+id);
+  }
+  for (const [id,url] of Object.entries(checkedCreditProfiles)) {
+    assert.ok(byId.get(id)?.relatedSources.some(s=>s.url===url),'Missing individual credit review '+id);
   }
   assert.equal(byId.size,records.length,'Duplicate dossier ID');
   assert.ok(records.length>=589,'Unexpected catalogue regression');
