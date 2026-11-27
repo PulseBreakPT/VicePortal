@@ -1,14 +1,13 @@
-// Individual references matched against the linked GTA6Ops and PowerPyx directories, 2026-11-27.
+// Individual references matched against GTA6Ops and PowerPyx directories, 2026-11-27.
 export const characterSourceIndex = {
   "jason-duval": {
     "ops": "https://gta6ops.com/story/jason-duval/",
     "evidence": "Individual profile",
-    "powerpyx": "https://www.powerpyx.com/gta-6-name-character/",
     "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-jason.jpg"
   },
   "lucia-caminos": {
     "ops": "https://gta6ops.com/story/lucia-caminos/",
-    "evidence": "## The Keys circle",
+    "evidence": "Individual profile",
     "powerpyx": "https://www.powerpyx.com/gta-6-lucia-caminos-character/",
     "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-lucia-2.jpg"
   },
@@ -62,7 +61,7 @@ export const characterSourceIndex = {
   },
   "pilot-pete": {
     "ops": "https://gta6ops.com/story/pilot-pete/",
-    "evidence": "## Friends, family and optional encounters",
+    "evidence": "Individual profile",
     "powerpyx": "https://www.powerpyx.com/gta-6-pete-wozniak-pilot-pete-character/",
     "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-pilot-pete.jpg"
   },
@@ -98,7 +97,7 @@ export const characterSourceIndex = {
   },
   "wyman": {
     "ops": "https://gta6ops.com/story/wyman/",
-    "evidence": "## Vice City music and trade",
+    "evidence": "Individual profile",
     "powerpyx": "https://www.powerpyx.com/gta-6-wyman-character/",
     "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-wyman.jpg"
   },
@@ -146,7 +145,7 @@ export const characterSourceIndex = {
   },
   "yago-jimenez": {
     "ops": "https://gta6ops.com/story/yago-jimenez/",
-    "evidence": "## Port Gellhorn contacts",
+    "evidence": "Individual profile",
     "powerpyx": "https://www.powerpyx.com/gta-6-yago-character/",
     "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-yago.jpg"
   },
@@ -194,7 +193,7 @@ export const characterSourceIndex = {
   },
   "raymond": {
     "ops": "https://gta6ops.com/story/raymond/",
-    "evidence": "## Raul’s crew",
+    "evidence": "Individual profile",
     "powerpyx": "https://www.powerpyx.com/gta-6-raymond-character/",
     "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-raymond.jpg"
   },
@@ -206,7 +205,7 @@ export const characterSourceIndex = {
   },
   "valentina": {
     "ops": "https://gta6ops.com/story/valentina/",
-    "evidence": "## Kordell’s crew",
+    "evidence": "Individual profile",
     "powerpyx": "https://www.powerpyx.com/gta-6-valentina-character/",
     "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-valentina-3.jpg"
   },
@@ -236,7 +235,7 @@ export const characterSourceIndex = {
   },
   "raina-koleva": {
     "ops": "https://gta6ops.com/story/raina-koleva/",
-    "evidence": "## Law, media and the later conspiracy",
+    "evidence": "Individual profile",
     "powerpyx": "https://www.powerpyx.com/gta-6-raina-koleva-character/",
     "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-raina.jpg"
   },
@@ -316,7 +315,7 @@ export const characterSourceIndex = {
   },
   "the-hitman": {
     "ops": "https://gta6ops.com/story/the-hitman/",
-    "evidence": "## All 145 Full Cast profiles"
+    "evidence": "Individual profile"
   },
   "deputy-sarah-fitzroy": {
     "ops": "https://gta6ops.com/story/sarah-fitzroy/",
@@ -684,9 +683,7 @@ export const characterSourceIndex = {
   },
   "cecilia-richardson-real": {
     "ops": "https://gta6ops.com/story/cecilia-richardson-real/",
-    "evidence": "Narrative profile",
-    "powerpyx": "https://www.powerpyx.com/gta-6-cecilia-character/",
-    "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-cecilia.jpg"
+    "evidence": "Narrative profile"
   },
   "kirk": {
     "ops": "https://gta6ops.com/story/kirk/",
@@ -1058,7 +1055,9 @@ export const characterSourceIndex = {
   },
   "jackson-shooting-range-encounter": {
     "powerpyx": "https://www.powerpyx.com/gta-6-jackson-character/",
-    "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-jackson-3.jpg"
+    "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-jackson-3.jpg",
+    "ops": "https://gta6ops.com/story/jackson-shooting-range-encounter/",
+    "evidence": "Individual profile"
   },
   "manuel": {
     "ops": "https://gta6ops.com/story/manuel/",
@@ -1086,7 +1085,9 @@ export const characterSourceIndex = {
   },
   "pedro-cafe-waiter": {
     "powerpyx": "https://www.powerpyx.com/gta-6-pedro-character/",
-    "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-pedro.jpg"
+    "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-pedro.jpg",
+    "ops": "https://gta6ops.com/story/pedro-cafe-waiter/",
+    "evidence": "Individual profile"
   },
   "raph": {
     "ops": "https://gta6ops.com/story/raph/",
@@ -1096,7 +1097,9 @@ export const characterSourceIndex = {
   },
   "rob-exotic-car-dealer": {
     "powerpyx": "https://www.powerpyx.com/gta-6-rob-character/",
-    "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-rob.jpg"
+    "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-rob.jpg",
+    "ops": "https://gta6ops.com/story/rob-exotic-car-dealer/",
+    "evidence": "Individual profile"
   },
   "rocco": {
     "ops": "https://gta6ops.com/story/rocco/",
@@ -1150,10 +1153,31 @@ export const characterSourceIndex = {
   },
   "the-pretender": {
     "ops": "https://gta6ops.com/story/the-pretender/",
-    "evidence": "## Media character profiles"
+    "evidence": "Individual profile"
   },
   "real-dimez": {
     "powerpyx": "https://www.powerpyx.com/gta-6-bae-luxe-roxy-dimez-characters/",
-    "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-dimez.jpg"
+    "portrait": "https://www.powerpyx.com/wp-content/uploads/gta-6-dimez.jpg",
+    "evidence": "Individual profile"
+  },
+  "drequan-priest": {
+    "ops": "https://gta6ops.com/story/drequan-priest/",
+    "evidence": "Individual profile"
+  },
+  "nico-vape-smoke-shop": {
+    "ops": "https://gta6ops.com/story/nico-vape-smoke-shop/",
+    "evidence": "Individual profile"
+  },
+  "vanessa-bayside-tenant": {
+    "ops": "https://gta6ops.com/story/vanessa-bayside-tenant/",
+    "evidence": "Individual profile"
+  },
+  "dave-circles-of-hell": {
+    "ops": "https://gta6ops.com/story/dave-circles-of-hell/",
+    "evidence": "Individual profile"
+  },
+  "mister-mangrove": {
+    "ops": "https://gta6ops.com/story/mister-mangrove/",
+    "evidence": "Individual profile"
   }
 };
