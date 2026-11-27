@@ -372,5 +372,57 @@ export const characterEvidence = {
     "mission": "Day Release",
     "qualified": true,
     "spoiler": true
+  },
+  "wade-howard": {
+    "source": "https://gameta.gg/gta6/characters/wade-howard/",
+    "description": "A racing enthusiast who helps run an informal league at Gellhorn Raceway. Beau introduces him to Lucia after her supervised lap, and Wade adds her to the Keep it PG group chat.",
+    "relations": [
+      "beau-raceway",
+      "lucia-caminos"
+    ],
+    "spoiler": true
+  },
+  "beau-raceway": {
+    "source": "https://gameta.gg/gta6/characters/beau/",
+    "description": "Track marshal at Gellhorn Raceway. He supervises Lucia's first lap, assesses her driving and introduces her to Wade Howard in the pits.",
+    "relations": [
+      "wade-howard",
+      "lucia-caminos"
+    ],
+    "spoiler": true
+  },
+  "dante-fresh": {
+    "source": "https://gameta.gg/gta6/characters/dante-fresh/",
+    "description": "Founder of Mo' Money Music LLC and an established figure in the Vice City music business. Allegations against him lead to house arrest; his relationship with Royce Jones becomes important to the missions Watch It and Fresh Evidence.",
+    "relations": [
+      "royce-jones",
+      "dwnply",
+      "drequan-priest"
+    ],
+    "spoiler": true
+  },
+  "cecilia-richardson-real": {
+    "source": "https://gameta.gg/gta6/characters/cecilia-richardson/",
+    "description": "Founder and CEO of Cellerica, a wellness sales organisation founded in 1996 according to its in-game news coverage. Its sales hierarchy, promotional videos and the physical founder become important to Andy and Lucia's storyline.",
+    "relations": [
+      "andy",
+      "lucia-caminos",
+      "cecilia-richardson-fake"
+    ],
+    "spoiler": true
+  },
+  "cecilia-richardson-fake": {
+    "source": "https://gameta.gg/gta6/characters/cecilia-richardson/",
+    "description": "Cellerica presents an idealised version of its founder through promotional media, contrasting with her physical appearance. Rockstar lists a separate Fake Cecilia Richardson credit, but the available profile does not independently attribute every video appearance to that credit.",
+    "relations": [
+      "cecilia-richardson-real"
+    ],
+    "spoiler": true
+  },
+  "percy": {
+    "source": "https://gameta.gg/gta6/characters/dante-fresh/",
+    "description": "The story guide identifies Percy as Dante Fresh's Siberian tiger. Whether this animal is the same Percy as the role credited to Anthony Robert Grasso is not established.",
+    "qualified": true,
+    "spoiler": true
   }
 };
