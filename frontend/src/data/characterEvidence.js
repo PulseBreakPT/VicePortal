@@ -279,5 +279,98 @@ export const characterEvidence = {
     "source": "https://gta6ops.com/story/radio-character-profiles/#profile-12",
     "description": "Gucci Mane is credited on DIRTY SOUTH CLASSICS / THE TAP IN as Himself. The credits establish the on-air role, but no personal biography or in-game likeness is established.",
     "creditOnly": true
+  },
+  "zeek": {
+    "source": "https://meowdb.com/gta6/npcs/zeek",
+    "description": "Encountered in Boobie Time at a parking area beneath an overpass. Zeek reacts to Boobie's customized Emperor and asks about following his example.",
+    "mission": "Boobie Time",
+    "relations": [
+      "boobie-ike"
+    ],
+    "spoiler": true
+  },
+  "cerise": {
+    "source": "https://wikily.gg/gta-6/missions/welcome-to-vice-city",
+    "description": "Appears in the celebration conversation with Ali in Welcome to Vice City, discussing the prospect of greater wealth.",
+    "mission": "Welcome to Vice City",
+    "relations": [
+      "ali",
+      "boobie-ike",
+      "drequan-priest"
+    ],
+    "spoiler": true
+  },
+  "ali": {
+    "source": "https://wikily.gg/gta-6/missions/welcome-to-vice-city",
+    "description": "Participates in the conversation with Cerise in Welcome to Vice City and calls for the group to celebrate.",
+    "mission": "Welcome to Vice City",
+    "relations": [
+      "cerise",
+      "boobie-ike"
+    ],
+    "spoiler": true
+  },
+  "marcel": {
+    "source": "https://wikily.gg/gta-6/missions/dealer-s-choice",
+    "description": "Participates in a disputed exchange of cash and a backpack during Dealer's Choice, urging the others to leave.",
+    "mission": "Dealer's Choice",
+    "relations": [],
+    "spoiler": true
+  },
+  "marco": {
+    "source": "https://wikily.gg/gta-6/missions/headliners",
+    "description": "A participant in the Headliners nightclub sequence, commenting on the music, drinks and atmosphere.",
+    "mission": "Headliners",
+    "relations": [],
+    "spoiler": true
+  },
+  "bianca-celestino": {
+    "source": "https://wikily.gg/gta-6/missions/party-hard",
+    "description": "Appears in Party Hard and asks the security personnel for help during the disruption at the event.",
+    "mission": "Party Hard",
+    "relations": [
+      "andres-de-leon",
+      "cesar-navarro"
+    ],
+    "spoiler": true
+  },
+  "nayib": {
+    "source": "https://wikily.gg/gta-6/missions/adventures-in-babysitting",
+    "description": "Meets Andrés during Adventures in Babysitting and explains he came downstairs for drinks; the dialogue establishes that they know one another.",
+    "mission": "Adventures in Babysitting",
+    "relations": [
+      "andres-de-leon"
+    ],
+    "spoiler": true
+  },
+  "erjon": {
+    "source": "https://wikily.gg/gta-6/missions/starting-from-zero",
+    "description": "Appears during Starting From Zero and repeatedly tells the protagonists to follow Giorgio.",
+    "mission": "Starting From Zero",
+    "relations": [
+      "giorgio-gallo"
+    ],
+    "spoiler": true
+  },
+  "abel": {
+    "source": "https://wikily.gg/gta-6/missions/bricked-up",
+    "description": "Appears in Bricked Up, speaking to the protagonists about the building and warning them about the situation inside.",
+    "mission": "Bricked Up",
+    "relations": [],
+    "spoiler": true
+  },
+  "jasir": {
+    "source": "https://wikily.gg/gta-6/missions/the-end-of-the-road",
+    "description": "A named speaker in the recorded dialogue of The End of the Road. The available transcript establishes his participation, but not a full personal history.",
+    "mission": "The End of the Road",
+    "relations": [],
+    "spoiler": true
+  },
+  "debora": {
+    "source": "https://wikily.gg/gta-6/missions/day-release",
+    "description": "A partygoer addresses someone named Debora during Day Release. The transcript does not independently establish that this is the role credited to Riley Noland.",
+    "mission": "Day Release",
+    "qualified": true,
+    "spoiler": true
   }
 };
