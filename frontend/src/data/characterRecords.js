@@ -1,3 +1,4 @@
+import { characterDiscoveries } from './characterDiscoveries';
 import { mediaCast } from './mediaCast';
 import { characterCoverage } from './characterCoverage';
 import { characterSourceIndex } from './characterSourceIndex';
@@ -1970,6 +1971,7 @@ export const characterRecords = [
   ...full.map(row=>enrichCharacter(record(row,'Full Cast'))),
   ...additionalEncounters.map(encounter),
   ...additionalReviewed,
+  ...characterDiscoveries.map(([title,id,description,source,portrait,relations,mission])=>({...encounter([title,id,description]),source,relatedSources:[{label:'GTA6DATA — gameplay profile',url:source}],relatedCharacterIds:relations,attributes:{Role:'Named gameplay appearance','Credited performer':'Not verified in this atlas',Evidence:'Community gameplay or appearance reference',...(mission?{'Documented mission':mission}:{}),'Biography availability':'Partial context only'},...(portrait?{image:portrait,placeholderImage:false,imageFallback:placeholder,imageSource:'GTA6DATA',imageSourceUrl:source}:{})})),
   {id:'real-dimez',title:'Real Dimez',kind:'Character',category:'Music duo',subtitle:'Bae-Luxe and Roxy Rashad',tag:'MUSIC DUO',
    image:'/images/real_dimez_01.webp',source:profiles,status:'Official source',spoiler:true,
    description:'Rap duo formed by Bae-Luxe and Roxy, signed to Only Raw Records. Their early collaboration with DWNPLY helped establish their career.',
