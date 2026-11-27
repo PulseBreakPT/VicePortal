@@ -4,7 +4,7 @@ import { carEntries, weaponEntries } from '../../data/portal';
 import { SiteSelect } from '../ui/site-select';
 
 export const ComparePage = ({weapons=false,spoilers=false}) => {
-  const [params,setParams]=useSearchParams();const pool=weapons?weaponEntries:carEntries.filter(x=>spoilers||!x.spoiler);
+  const [params,setParams]=useSearchParams();const pool=(weapons?weaponEntries:carEntries).filter(x=>spoilers||!x.spoiler);
   const keys=['a','b','c'];const ids=keys.map((k,i)=>pool.some(x=>x.id===params.get(k))?params.get(k):params.has(k)?'':pool[i]?.id||'');
   const showThird=params.has('c');const selected=ids.slice(0,showThird?3:2).map(id=>pool.find(x=>x.id===id));
   const update=(index,id)=>{const next=new URLSearchParams(params);keys.forEach((key,i)=>next.set(key,i===index?id:ids[i]));if(!showThird&&index!==2)next.delete('c');setParams(next,{replace:true});};

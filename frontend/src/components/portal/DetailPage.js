@@ -5,6 +5,7 @@ import { ArrowRight, ArrowUpRight, Share2 } from 'lucide-react';
 import { toast } from 'sonner';
 import { SaveButton, Reveal } from '../AtlasUI';
 import { entries, checklist } from '../../data/portal';
+import {hideSpoiler} from '../../data/creatorRecords';
 import { sectionById } from '../../data/sections';
 import { Breadcrumbs } from './PortalLayout';
 import { CatalogCard } from './CatalogGrid';
@@ -17,7 +18,7 @@ export default function DetailPage({item,atlas}) {
   const [expanded,setExpanded]=useState(false);
   const [dimensions,setDimensions]=useState(null);
   const section=sectionById[item.collections[0]];
-  const peers=entries.filter(e=>e.kind===item.kind&&(e.kind!=='Vehicle'||!e.spoiler||atlas.spoilers));
+  const peers=entries.filter(e=>e.kind===item.kind&&!hideSpoiler(e,atlas.spoilers));
   const relationshipIds=atlas.spoilers?(item.relatedCharacterIds||[]):[];
   const related=peers.filter(e=>e.id!==item.id).sort((a,b)=>Number(relationshipIds.includes(b.id))-Number(relationshipIds.includes(a.id))||Number(b.collections.some(c=>item.collections.includes(c)))-Number(a.collections.some(c=>item.collections.includes(c)))).slice(0,Math.max(3,relationshipIds.length));
   const task=checklist.find(t=>t.path===item.path);

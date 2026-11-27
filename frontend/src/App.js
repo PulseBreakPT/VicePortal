@@ -18,6 +18,7 @@ import { ExperienceTeaser, QuickDestinations } from './components/TownEdition';
 import { Overlays } from './components/Overlays';
 import { sections, sectionById } from './data/sections';
 import { entries } from './data/portal';
+import {hideSpoiler} from './data/creatorRecords';
 import { CompactFooter, PortalLayout } from './components/portal/PortalLayout';
 import SectionPage from './components/portal/SectionPage';
 import DetailPage from './components/portal/DetailPage';
@@ -46,7 +47,7 @@ function AtlasApp() {
   useCinematicEffects(cinematicRoot, path, reduced);
   const section = sections.find(s => s.path === path);
   const item = entries.find(e => e.path === path);
-  const hiddenVehicle=item?.kind==='Vehicle'&&item.spoiler&&!atlas.spoilers;
+  const hiddenVehicle=hideSpoiler(item,atlas.spoilers);
   useCardFlight(path,hiddenVehicle?undefined:item?.id);
   const home = path === '/';
   const experience = path === '/experience';
@@ -57,7 +58,7 @@ function AtlasApp() {
     if(hash) requestAnimationFrame(()=>document.getElementById(hash.slice(1))?.scrollIntoView());
   }, [pathname, hash]);
   useEffect(() => {
-    document.title = `${(hiddenVehicle?'Hidden vehicle':item?.title) || section?.title || (path === '/directory' ? 'All pages' : 'Your GTA VI companion')} — Vice Atlas`;
+    document.title = `${(hiddenVehicle?'Hidden entry':item?.title) || section?.title || (path === '/directory' ? 'All pages' : 'Your GTA VI companion')} — Vice Atlas`;
   }, [item, section, path, hiddenVehicle]);
   useEffect(() => {
     if (reduced) return;
@@ -68,7 +69,7 @@ function AtlasApp() {
     <a href="#main-content" className="skip-link" data-testid="skip-content">Skip to content</a>
     {home && <RockstarRibbon/>}
     <Navigation {...atlas}/>
-    <main id="main-content" tabIndex={-1} data-testid="main-content">{home?<><Hero {...atlas}/><QuickDestinations/><TownHub {...atlas}/><Wire {...atlas}/><FreshLinks {...atlas}/><ExperienceTeaser/><World {...atlas}/><Marquee/><Characters {...atlas}/><Gallery {...atlas}/></>:experience?<div className="experience-page"><header className="experience-page-heading"><Link to="/directory" data-testid="experience-back">← All pages</Link><h1 data-testid="experience-title"><KineticTitle value="THE GTA VI EXPERIENCE"/></h1></header><RockstarExperience {...atlas}/></div>:<PortalLayout><div key={path} className="cinema-route">{section?<SectionPage section={section} atlas={atlas}/>:hiddenVehicle?<div className="portal-empty"><h1>Vehicle hidden</h1><p>This vehicle is marked as a spoiler in the catalogue.</p><button className="portal-button" onClick={()=>atlas.setSpoilers(true)}>Show spoilers</button><Link to="/vehicles">Browse vehicles</Link></div>:item?<DetailPage item={item} atlas={atlas}/>:path==='/directory'?<DirectoryPage/>:<div className="portal-not-found" data-testid="not-found"><span className="portal-kicker">404</span><h1 data-testid="not-found-title">Page not found</h1><p>Check the address or browse the directory.</p><Link to="/directory" className="portal-button" data-testid="not-found-directory">All pages</Link></div>}</div></PortalLayout>}</main>
+    <main id="main-content" tabIndex={-1} data-testid="main-content">{home?<><Hero {...atlas}/><QuickDestinations/><TownHub {...atlas}/><Wire {...atlas}/><FreshLinks {...atlas}/><ExperienceTeaser/><World {...atlas}/><Marquee/><Characters {...atlas}/><Gallery {...atlas}/></>:experience?<div className="experience-page"><header className="experience-page-heading"><Link to="/directory" data-testid="experience-back">← All pages</Link><h1 data-testid="experience-title"><KineticTitle value="THE GTA VI EXPERIENCE"/></h1></header><RockstarExperience {...atlas}/></div>:<PortalLayout><div key={path} className="cinema-route">{section?<SectionPage section={section} atlas={atlas}/>:hiddenVehicle?<div className="portal-empty"><h1>Entry hidden</h1><p>This entry is marked as a spoiler in the catalogue.</p><button className="portal-button" onClick={()=>atlas.setSpoilers(true)}>Show spoilers</button><Link to={sectionById[item?.collections[0]]?.path||"/directory"}>Browse collection</Link></div>:item?<DetailPage item={item} atlas={atlas}/>:path==='/directory'?<DirectoryPage/>:<div className="portal-not-found" data-testid="not-found"><span className="portal-kicker">404</span><h1 data-testid="not-found-title">Page not found</h1><p>Check the address or browse the directory.</p><Link to="/directory" className="portal-button" data-testid="not-found-directory">All pages</Link></div>}</div></PortalLayout>}</main>
     {home?<Footer {...atlas}/>:<CompactFooter/>}<Overlays {...atlas}/>
     <Toaster theme="dark" position="bottom-right" richColors/>
   </div></MotionConfig>;

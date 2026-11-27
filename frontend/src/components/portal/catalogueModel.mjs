@@ -1,9 +1,10 @@
 // Pure catalogue presentation logic; source data and routes are never rewritten.
+import {hideSpoiler} from '../../data/creatorDataModel.mjs';
 export const PAGE_SIZE=24;
 export const initialFilters={query:'',kind:'All',sort:'featured',maker:'All',vehicleClass:'All',coverage:'all',group:'All',view:'grid',grouped:true};
 const norm=value=>String(value??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
 const compareText=(a,b)=>String(a).localeCompare(String(b),'en',{numeric:true,sensitivity:'base'});
-export const visibleItems=(items,spoilers)=>items.filter(e=>e.kind!=='Vehicle'||!e.spoiler||spoilers);
+export const visibleItems=(items,spoilers)=>items.filter(e=>!hideSpoiler(e,spoilers));
 export function layoutFor(section){
  const id=typeof section==='string'?section:section?.id||'';
  if(/^(vehicles|garage)(\/|$)/.test(id))return 'vehicles';

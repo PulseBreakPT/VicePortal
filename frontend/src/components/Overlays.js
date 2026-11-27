@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Search, ArrowUpRight, Compass, X } from 'lucide-react';
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from './ui/dialog';
 import { entries } from '../data/portal';
+import {hideSpoiler} from '../data/creatorRecords';
 import { sections } from '../data/sections';
 
 // Search is intentionally the only modal in the application.
@@ -9,7 +10,7 @@ export const Overlays = ({modal,setModal,query,setQuery,open,triggerRef,spoilers
   const [scope,setScope]=useState('All');
   const words=query.trim().toLowerCase().split(/\s+/).filter(Boolean);
   const filtered=[...sections,...entries].filter(item=>{
-    if(item.kind==='Vehicle'&&item.spoiler&&!spoilers)return false;
+    if(hideSpoiler(item,spoilers))return false;
     if(scope==='Pages'&&item.kind!=='Section')return false;if(scope==='Dossiers'&&item.kind==='Section')return false;
     const text=`${item.title} ${item.kind} ${item.category||''} ${item.attributes?.Manufacturer||''} ${item.spoiler&&!spoilers?'':item.description||''}`.toLowerCase();return words.every(word=>text.includes(word));
   });

@@ -1,12 +1,11 @@
 import { readFile,writeFile,rename } from 'node:fs/promises';
 import { normalizeVehicles,extractRows } from '../src/data/vehicleNormalizer.mjs';
 
-const endpoint='https://gtatown.com/creators/data/vehicles.json';
 const dest=new URL('../src/data/vehicleFeed.json',import.meta.url);
 try {
-const response=await fetch(endpoint,{signal:AbortSignal.timeout(45000),headers:{Accept:'application/json','User-Agent':'ViceAtlas/1.0 (public data import; source attribution)'}});
-if(!response.ok)throw new Error('Public vehicle export returned '+response.status);
-const body=await response.json();
+const cached=JSON.parse(await readFile(new URL('../src/data/creatorData.json',import.meta.url),'utf8'));
+const body=cached.datasets.vehicles;
+if(!body)throw Error('No validated creator vehicle export available');
 const rows=extractRows(body);
 const normalized=normalizeVehicles(rows);
 if(normalized.length<560)throw new Error('Expected at least 560 published vehicle records; received '+normalized.length);

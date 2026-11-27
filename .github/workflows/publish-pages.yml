@@ -38,6 +38,10 @@ jobs:
         run: npm install --global yarn@1.22.22
       - name: Install frontend dependencies
         run: yarn install --non-interactive --network-timeout 120000
+      - name: Download and validate GTA Town creator datasets
+        run: node scripts/import-creator-data.mjs
+      - name: Verify creator dataset integration
+        run: node scripts/verify-creator-data.mjs
       - name: Verify cinematic motion bounds and integration
         run: node scripts/verify-cinematic.mjs
       - name: Verify Neon Cipher reveal
@@ -65,6 +69,8 @@ jobs:
             frontend/src/data/vehicleImageRefs.json
             frontend/src/data/vehicleImageMissing.json
             frontend/src/data/vehicleImageAudit.json
+            frontend/src/data/creatorData.json
+            frontend/src/data/vehicleFeed.json
           if-no-files-found: error
       - name: Build original React frontend
         run: yarn build
@@ -116,9 +122,11 @@ jobs:
           git checkout --detach "$BUILD_SHA"
           cp snapshot/vehicleImageRefs.json frontend/src/data/vehicleImageRefs.json
           cp snapshot/vehicleImageMissing.json frontend/src/data/vehicleImageMissing.json
-          git add frontend/src/data/vehicleImageRefs.json frontend/src/data/vehicleImageMissing.json
+          cp snapshot/creatorData.json frontend/src/data/creatorData.json
+          cp snapshot/vehicleFeed.json frontend/src/data/vehicleFeed.json
+          git add frontend/src/data/vehicleImageRefs.json frontend/src/data/vehicleImageMissing.json frontend/src/data/creatorData.json frontend/src/data/vehicleFeed.json
           if git diff --cached --quiet; then exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Persist validated vehicle image references"
+          git commit -m "Persist validated creator datasets and vehicle image references"
           git push origin HEAD:main
