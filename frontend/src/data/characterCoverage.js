@@ -934,8 +934,21 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/cassie-the-pillar/"
+      },
+      {
+        "label": "GTA eXputer — Cellerica faction",
+        "url": "https://gta.exputer.com/gta-6/factions/cellerica/"
       }
-    ]
+    ],
+    "bio": {
+      "description": "Cassie is listed among Cellerica’s Pillars in community faction guides. The individual scenes and personal history have not been independently established.",
+      "source": "https://gta.exputer.com/gta-6/factions/cellerica/",
+      "occupation": "Cellerica — Pillar",
+      "relations": [
+        "bailey-the-pillar",
+        "cecilia-richardson-real"
+      ]
+    }
   },
   "dodo-rosebud": {
     "sources": [
@@ -980,7 +993,17 @@ export const characterCoverage = {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/annabelle/"
       }
-    ]
+    ],
+    "bio": {
+      "description": "Benedict Halifax speaks of her as his client during the motel sequence in Security Expert. Her wider background is not established.",
+      "source": "https://gta6data.com/gta-6-character-annabelle/",
+      "occupation": null,
+      "relations": [
+        "benedict-halifax"
+      ],
+      "mission": "Security Expert"
+    },
+    "qualified": false
   },
   "officer-jackson": {
     "sources": [
@@ -1010,7 +1033,15 @@ export const characterCoverage = {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/peewees-squatter/"
       }
-    ]
+    ],
+    "bio": {
+      "description": "The credited role suggests a connection to Peewees. A walkthrough documents a beggar encounter at Peewees during Top Billing, but does not confirm the credited identity.",
+      "source": "https://findora.cirelay.com/gta-6/beggar-food",
+      "occupation": null,
+      "relations": [],
+      "mission": null
+    },
+    "qualified": true
   },
   "isabella-brady": {
     "sources": [
@@ -1192,7 +1223,15 @@ export const characterCoverage = {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/andre-ye/"
       }
-    ]
+    ],
+    "bio": {
+      "description": "An elevator encounter at The Y features a resident who introduces himself as Andre and discusses his penthouse and music. The full-name match to the credited Andre Ye remains unconfirmed.",
+      "source": "https://gta6data.com/gta-6-character-andre/",
+      "occupation": null,
+      "relations": [],
+      "mission": null
+    },
+    "qualified": true
   },
   "bodega": {
     "sources": [
@@ -1342,7 +1381,19 @@ export const characterCoverage = {
       "url": "https://www.gta6tracker.org/img/gw/ac6d7c234b85a2d6.png",
       "page": "https://www.gta6tracker.org/l/ej",
       "source": "GTA6Tracker"
-    }
+    },
+    "bio": {
+      "description": "A rider introduced alongside Billy’s other club members at the mud park. He is later heard over the radio during the crew’s optional storyline.",
+      "source": "https://gta6data.com/gta-6-character-ej/",
+      "occupation": "Thrillbilly crew",
+      "relations": [
+        "billy",
+        "ricky",
+        "sam"
+      ],
+      "mission": "Thrillbillies"
+    },
+    "qualified": false
   },
   "nayib": {
     "sources": [
@@ -1365,8 +1416,21 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/megan-the-pillar/"
+      },
+      {
+        "label": "GTA eXputer — Cellerica faction",
+        "url": "https://gta.exputer.com/gta-6/factions/cellerica/"
       }
-    ]
+    ],
+    "bio": {
+      "description": "Megan is listed among Cellerica’s Pillars in community faction guides. The individual scenes and personal history have not been independently established.",
+      "source": "https://gta.exputer.com/gta-6/factions/cellerica/",
+      "occupation": "Cellerica — Pillar",
+      "relations": [
+        "bailey-the-pillar",
+        "cecilia-richardson-real"
+      ]
+    }
   },
   "brittney": {
     "sources": [
@@ -1426,7 +1490,22 @@ export const characterCoverage = {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/pineapples/"
       }
-    ]
+    ],
+    "bio": {
+      "description": "A contact referenced in connection with the boat transfer and driver change during Crosstown Traffic.",
+      "source": "https://gta6data.com/gta-6-character-pineapples/",
+      "occupation": null,
+      "relations": [
+        "raul-bautista"
+      ],
+      "mission": "Crosstown Traffic"
+    },
+    "qualified": false,
+    "portrait": {
+      "url": "https://gta6data.com/wp-content/uploads/2026/11/g6d-cast-footage-pineapples-face.jpg",
+      "page": "https://gta6data.com/gta-6-character-pineapples/",
+      "source": "GTA6DATA"
+    }
   },
   "jimmy-de-santa": {
     "sources": [
@@ -1554,7 +1633,18 @@ export const characterCoverage = {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/vypertec-100/"
       }
-    ]
+    ],
+    "bio": {
+      "description": "A livestreamer using the moniker the Rage God, whose stream features DWNPLY’s sneaker launch in Ride or Die.",
+      "source": "https://gameta.gg/gta6/missions/ride-or-die/",
+      "occupation": "Livestreamer",
+      "relations": [
+        "dwnply",
+        "drequan-priest"
+      ],
+      "mission": "Ride or Die"
+    },
+    "qualified": false
   },
   "marcel": {
     "sources": [
@@ -1725,6 +1815,11 @@ export const characterCoverage = {
       "source": "https://gta6.university/db/characters/officer-miguel-castro/",
       "occupation": "Police officer",
       "relations": []
+    },
+    "portrait": {
+      "url": "https://leonidex.com/_next/image?url=%2Fmedia%2Fgameplay%2Fcharacters%2Fcastro%2F1.webp&w=3840&q=75",
+      "page": "https://leonidex.com/wiki/characters/castro",
+      "source": "Leonidex"
     }
   },
   "natalie-the-pillar": {
@@ -1736,8 +1831,21 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/natalie-the-pillar/"
+      },
+      {
+        "label": "GTA eXputer — Cellerica faction",
+        "url": "https://gta.exputer.com/gta-6/factions/cellerica/"
       }
-    ]
+    ],
+    "bio": {
+      "description": "Natalie is listed among Cellerica’s Pillars in community faction guides. The individual scenes and personal history have not been independently established.",
+      "source": "https://gta.exputer.com/gta-6/factions/cellerica/",
+      "occupation": "Cellerica — Pillar",
+      "relations": [
+        "bailey-the-pillar",
+        "cecilia-richardson-real"
+      ]
+    }
   },
   "dodo-steve": {
     "sources": [
@@ -1865,7 +1973,17 @@ export const characterCoverage = {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/dodo-jeremy/"
       }
-    ]
+    ],
+    "bio": {
+      "description": "Joins Noah in the Dodos Rising chimp sanctuary mission, in the group’s campaign against animal captivity.",
+      "source": "https://www.gta6heists.com/missions/dodo-rising-chimp-sanctuary",
+      "occupation": "Dodos Rising",
+      "relations": [
+        "dodo-noah"
+      ],
+      "mission": "Dodo Rising: Chimp Sanctuary"
+    },
+    "qualified": false
   },
   "lucky": {
     "sources": [
@@ -2000,7 +2118,12 @@ export const characterCoverage = {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/yolanda/"
       }
-    ]
+    ],
+    "portrait": {
+      "url": "https://gta6data.com/wp-content/uploads/2026/11/gta6-portrait-yolanda-150x150.jpg",
+      "page": "https://gta6data.com/gta-6-character-yolanda/",
+      "source": "GTA6DATA"
+    }
   },
   "lauren-the-whisper": {
     "sources": [
@@ -2011,8 +2134,21 @@ export const characterCoverage = {
       {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/lauren-the-whisper/"
+      },
+      {
+        "label": "GTA eXputer — Cellerica faction",
+        "url": "https://gta.exputer.com/gta-6/factions/cellerica/"
       }
-    ]
+    ],
+    "bio": {
+      "description": "Lauren is listed among Cellerica’s Whispers in community faction guides. The individual scenes and personal history have not been independently established.",
+      "source": "https://gta.exputer.com/gta-6/factions/cellerica/",
+      "occupation": "Cellerica — Whisper",
+      "relations": [
+        "bailey-the-pillar",
+        "cecilia-richardson-real"
+      ]
+    }
   },
   "counselor-stefanie-gates": {
     "sources": [
@@ -2099,7 +2235,19 @@ export const characterCoverage = {
         "label": "GTA6 University — individual profile",
         "url": "https://gta6.university/db/characters/cecilia-richardson-fake/"
       }
-    ]
+    ],
+    "bio": {
+      "description": "The polished digital persona used in the Cellerica leader’s video calls, distinguished from the real Cecilia in Rockstar’s credits and the questline’s reveal.",
+      "source": "https://gta6walk.com/characters/cecilia/",
+      "occupation": "Cellerica — video persona",
+      "relations": [
+        "cecilia-richardson-real",
+        "andy",
+        "felix-the-ten"
+      ],
+      "mission": "Peach!"
+    },
+    "qualified": false
   },
   "mandy": {
     "sources": [
@@ -2485,7 +2633,12 @@ export const characterCoverage = {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/jerry-turner/"
       }
-    ]
+    ],
+    "portrait": {
+      "url": "https://gta6data.com/wp-content/uploads/2026/11/g6d-cast-footage-jerry-turner-face-150x150.jpg",
+      "page": "https://gta6data.com/gta-6-character-jerry-turner/",
+      "source": "GTA6DATA"
+    }
   },
   "pablo": {
     "sources": [
@@ -2497,7 +2650,15 @@ export const characterCoverage = {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/pablo/"
       }
-    ]
+    ],
+    "bio": {
+      "description": "A guest at The Y addresses a lounge contact as Pablo. This is a possible appearance; the source does not establish that he is the same Pablo credited to Rob Raco.",
+      "source": "https://gta6data.com/gta-6-character-pablo-the-y/",
+      "occupation": null,
+      "relations": [],
+      "mission": null
+    },
+    "qualified": true
   },
   "elonzo": {
     "sources": [
@@ -2730,7 +2891,12 @@ export const characterCoverage = {
         "label": "GTA6Wiki — individual profile",
         "url": "https://gta6wiki.eu/characters/doug/"
       }
-    ]
+    ],
+    "portrait": {
+      "url": "https://leonidex.com/_next/image?url=%2Fmedia%2Fgameplay%2Fcharacters%2Fdoug%2F1.webp&w=3840&q=75",
+      "page": "https://leonidex.com/wiki/characters/doug",
+      "source": "Leonidex"
+    }
   },
   "sam-the-bookie": {
     "sources": [
