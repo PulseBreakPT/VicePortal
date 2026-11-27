@@ -1,9 +1,10 @@
 import {readFile,writeFile,rename} from 'node:fs/promises';
 import {DATASETS,SOURCE,LICENSE,extractExport,parseCSV,validateDataset} from '../src/data/creatorDataModel.mjs';
-import {normalizeVehicles} from '../src/data/vehicleNormalizer.mjs';
+import {adaptVehicleExport,normalizeVehicles} from '../src/data/vehicleNormalizer.mjs';
 const dest=new URL('../src/data/creatorData.json',import.meta.url);
 const previous=JSON.parse(await readFile(dest,'utf8'));
 const datasets={...previous.datasets};
+const previousVehicles=JSON.parse(await readFile(new URL('../src/data/vehicleFeed.json',import.meta.url),'utf8'));
 async function download(key,format){
  const url=SOURCE+'/'+key+'.'+format;
  const response=await fetch(url,{headers:{Accept:format==='json'?'application/json':'text/csv,application/octet-stream','User-Agent':'ViceAtlas/1.0 (CC BY 4.0 public data, cached)'},signal:AbortSignal.timeout(45000)});
@@ -12,7 +13,13 @@ async function download(key,format){
  if(raw.length>30*1024*1024)throw Error('Export exceeds size limit');
  const rows=format==='json'?extractExport(JSON.parse(raw),key):parseCSV(raw);
  validateDataset(rows,key,Math.max(DATASETS[key].count,datasets[key]?.rows?.length||0));
- if(key==='vehicles')normalizeVehicles(rows);
+ if(key==='vehicles'){
+   const adapted=adaptVehicleExport(rows,previousVehicles);
+   const ids=new Set(adapted.normalized.map(row=>row.id));
+   const missing=normalizeVehicles(previousVehicles).filter(row=>!ids.has(row.id));
+   if(missing.length)throw Error('Vehicle export would remove '+missing.length+' reviewed IDs; examples: '+missing.slice(0,5).map(x=>x.id).join(', '));
+   console.log('CREATOR_VEHICLE_CLASSES '+JSON.stringify(adapted.counts));
+ }
  return {format,url,rows,fetchedAt:new Date().toISOString()};
 }
 for(const key of Object.keys(DATASETS)){

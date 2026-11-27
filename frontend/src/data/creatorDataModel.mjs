@@ -1,4 +1,5 @@
 // Public GTA Town creator exports; preserves all supplied fields, never guesses data.
+import {adaptVehicleExport} from './vehicleNormalizer.mjs';
 export const SOURCE='https://gtatown.com/creators/data';
 export const LICENSE='CC BY 4.0';
 export const DATASETS={
@@ -143,7 +144,7 @@ export function normalizeDataset(rows,key){
 }
 export function validateDataset(rows,key,minimum=DATASETS[key].count){
  if(!Array.isArray(rows)||rows.length<minimum)throw Error(key+': expected at least '+minimum+' rows, got '+(rows?.length??0));
- if(key==='vehicles'){if(!rows.every(row=>titleFor(row,key)&&field(row,'vehicle_class','class','category','class_name','class_label','collection','standout_set','className')))throw Error('Incomplete vehicle identity');}
+ if(key==='vehicles')adaptVehicleExport(rows);
  else normalizeDataset(rows,key);
  return rows;
 }

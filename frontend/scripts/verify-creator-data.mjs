@@ -1,6 +1,15 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {DATASETS,extractExport,parseCSV,normalizeDataset,mergeWeapons,hideSpoiler,validateDataset} from '../src/data/creatorDataModel.mjs';
+import {adaptVehicleExport} from '../src/data/vehicleNormalizer.mjs';
+const fallback=adaptVehicleExport([{name:'Model A',maker:'Maker'},{name:'Model B',maker:'Maker'},{name:'Model C',class:'Sports Cars',maker:'Maker'}],[{name:'Model A',class:'SUVs',maker:'Maker'},{name:'Model B',class:'Supercars',maker:'Other'}]);
+assert.deepEqual(fallback.counts,{sourceClass:1,retainedClass:1,unknownClass:1});
+assert.equal(fallback.normalized[0].category,'SUVs');
+assert.equal(fallback.normalized[1].category,'Not verified in this atlas');
+assert.equal(fallback.normalized[2].category,'Sports Cars');
+assert.throws(()=>adaptVehicleExport([{maker:'Maker'}]),/Missing vehicle title/);
+assert.throws(()=>adaptVehicleExport([{name:'Same',maker:'Maker'},{name:'Same',maker:'Maker'}]),/Duplicate/);
+assert.doesNotThrow(()=>validateDataset([{name:'Unclassified',maker:'Maker'}],'vehicles',1));
 const rows=parseCSV('name,class,price,notes\r\n"Example, II",Handguns,0,"Two ""quotes""\nlines"\r\n');
 assert.equal(rows[0].name,'Example, II');assert.equal(rows[0].notes,'Two "quotes"\nlines');
 assert.equal(rows[0].price,'0');
