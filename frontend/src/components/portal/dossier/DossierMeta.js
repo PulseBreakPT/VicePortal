@@ -29,10 +29,10 @@ export const DossierMeta = ({item,section,atlas,task,dimensions}) => {
   const comparable=['Vehicle','Weapon'].includes(item.kind);
   const facts=getFacts(item,section,dimensions).filter(([name])=>!protectedStory||['Role','Credited performer','Credit section','Credited as','Evidence'].includes(name));
   return <aside className="record-meta" aria-label="Entry summary" data-testid="detail-summary">
-    <div className="record-meta-heading"><span>AT A GLANCE</span><span aria-hidden="true">{typeLabel(item).toUpperCase()}</span></div>
+    <div className="record-meta-heading"><span>THE LOWDOWN</span><span aria-hidden="true">{typeLabel(item).toUpperCase()}</span></div>
     <dl className="record-quick-facts">{facts.map(([name,value],i)=><div key={name}><dt>{name}</dt><dd data-testid={`detail-quick-fact-${i}`}>{/^[\d\s.,%×:+−–-]+$/.test(String(value))?<NeonCipher value={value} variant="number"/>:value}</dd></div>)}</dl>
     <div className={`record-provenance ${official?'is-official':''}`}><span>{official?<ShieldCheck size={18}/>:<Info size={18}/>}</span><div><strong data-testid="detail-provenance-status">{item.status}</strong><p data-testid="detail-provenance-source">{sourceName(item)}</p></div></div>
-    {protectedStory&&<p className="record-context-note" data-testid="detail-spoiler-status"><EyeOff size={15}/>Story details hidden</p>}
+    {protectedStory&&<p className="record-context-note" data-testid="detail-spoiler-status"><EyeOff size={15}/>Story under wraps</p>}
     {item.kind==='Radio station'&&<p className="record-context-note" data-testid="detail-radio-note">No audio stream is hosted.</p>}
     {comparable&&<Link className="record-primary-link" to={`${item.kind==='Weapon'?'/weapons/compare':'/compare'}?a=${item.id}&b=`} data-testid="detail-compare">Compare {item.kind.toLowerCase()}<ArrowRight size={17}/></Link>}
     {item.kind==='Region'&&<Link className="record-primary-link" to="/map" data-testid="detail-region-map">Region map<ArrowRight size={17}/></Link>}

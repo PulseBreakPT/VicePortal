@@ -12,8 +12,8 @@ export const WorldPanorama = () => {
   return <div className="world-panorama" ref={ref}>
     <motion.img src={image('rs-feature2')} alt="The official Vice City skyline at dusk" loading="lazy" style={reduced ? {} : { y }}/>
     <div className="world-panorama-shade"/>
-    <div className="world-panorama-top"><span className="eyebrow" data-testid="world-eyebrow">01 / THE LEONIDA FIELD GUIDE</span><span className="world-edition" data-testid="world-edition">SIX REGIONS. ONE STATE.</span></div>
-    <div className="world-panorama-copy"><Reveal><h2 data-testid="world-heading">LEONIDA.<br/><span>SIX REGIONS.</span></h2></Reveal><Reveal className="world-panorama-description"><p data-testid="world-description">The cities, coast and wilderness introduced by Rockstar Games.</p><span data-testid="world-image-location">VICE CITY, LEONIDA <MapPin size={12}/></span></Reveal></div>
+    <div className="world-panorama-top"><span className="eyebrow" data-testid="world-eyebrow">01 / ON THE GROUND</span><span className="world-edition" data-testid="world-edition">BEYOND THE CITY LIMITS.</span></div>
+    <div className="world-panorama-copy"><Reveal><h2 data-testid="world-heading">LEONIDA.<br/><span>SIX REGIONS.</span></h2></Reveal><Reveal className="world-panorama-description"><p data-testid="world-description">From concrete and coastline to the wild interior: six regions introduced by Rockstar.</p><span data-testid="world-image-location">VICE CITY, LEONIDA <MapPin size={12}/></span></Reveal></div>
   </div>;
 };
 
@@ -32,7 +32,7 @@ export const World = ({ open, saved, toggleSave }) => {
         <div className="region-card-copy"><div><span className="card-eyebrow" data-testid={`region-number-${item.id}`}>REGION / {item.number}</span><h3 className="display" data-testid={`region-title-${item.id}`}>{item.title}</h3><p data-testid={`region-subtitle-${item.id}`}>{item.subtitle}</p></div><span className="round-arrow" aria-hidden="true"><ArrowUpRight size={23}/></span></div>
       </Reveal>)}
     </div>
-    <div className="section-footnote" data-testid="world-footnote"><span>REGION PROFILES</span><span>Source: Rockstar Games · Independent summaries</span></div>
+    <div className="section-footnote" data-testid="world-footnote"><span>REGION FILES</span><span>Source: Rockstar Games · Independent summaries</span></div>
   </section>;
 };
 

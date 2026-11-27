@@ -18,7 +18,7 @@ export const CatalogCard = ({item,atlas,prefix='catalog',order=0}) => {
 const unique=values=>[...new Set(values.filter(Boolean))].sort((a,b)=>a.localeCompare(b));
 const FilterSelect=({label,value,onChange,options,testId})=><div className="catalogue-field"><span>{label}</span><SiteSelect label={label} value={value} onChange={onChange} options={options} testId={testId}/></div>;
 
-export const CatalogGrid = ({items,atlas,section,prefix='catalog',title='In the atlas'}) => {
+export const CatalogGrid = ({items,atlas,section,prefix='catalog',title='On file'}) => {
  const [filters,setFilters]=useState(initialFilters);
  const [limit,setLimit]=useState(PAGE_SIZE);
  const layout=layoutFor(section);
@@ -39,7 +39,7 @@ export const CatalogGrid = ({items,atlas,section,prefix='catalog',title='In the 
  return <section className={'catalog-section cinematic-catalogue catalogue-'+layout} data-testid={prefix+'-section'}>
    <div className="portal-section-heading"><h2 data-testid={prefix+'-heading'}>{title}</h2><span data-testid={prefix+'-count'} aria-live="polite"><NeonCipher value={String(found.length).padStart(2,'0')} variant="number"/> {found.length===1?'entry':'entries'}</span></div>
    <div className="catalogue-toolbar">
-     <label className="portal-input catalogue-search"><Search size={18}/><input value={filters.query} onChange={e=>update('query',e.target.value)} placeholder="Search this collection..." aria-label="Filter this collection" data-testid={prefix+'-filter'}/>{filters.query&&<button type="button" onClick={()=>update('query','')} aria-label="Clear filter" data-testid={prefix+'-clear'}><X size={16}/></button>}</label>
+     <label className="portal-input catalogue-search"><Search size={18}/><input value={filters.query} onChange={e=>update('query',e.target.value)} placeholder="Find an entry..." aria-label="Narrow the list" data-testid={prefix+'-filter'}/>{filters.query&&<button type="button" onClick={()=>update('query','')} aria-label="Clear filter" data-testid={prefix+'-clear'}><X size={16}/></button>}</label>
      <Popover><div className="catalogue-filter-panel" data-testid={prefix+'-filter-panel'}>
        <PopoverTrigger asChild><button type="button" className="site-filter-trigger"><SlidersHorizontal size={17}/><span>Filters{active?' ('+active+')':''}</span><ChevronDown size={14}/></button></PopoverTrigger>
        <PopoverContent className="site-ui-surface site-filter-popover" align="end" sideOffset={6} collisionPadding={12} data-lenis-prevent onOpenAutoFocus={event=>event.preventDefault()}><div className="catalogue-filter-fields">
@@ -55,7 +55,7 @@ export const CatalogGrid = ({items,atlas,section,prefix='catalog',title='In the 
    </div>
    <div className="catalogue-result-meta"><span>Showing {Math.min(limit,found.length)} of {found.length}</span>{(active>0||filters.query)&&<button type="button" onClick={reset}>Clear all <X size={13}/></button>}</div>
    <div data-testid={prefix+'-results'} className="catalogue-results">{shown.map((group,index)=><section className="catalogue-group" key={group.label} aria-labelledby={prefix+'-group-heading-'+index}>{grouped&&ordered.length>1&&<header className="catalogue-group-heading"><h3 id={prefix+'-group-heading-'+index}>{group.label}</h3><span>{group.total}</span></header>} {(!grouped||ordered.length===1)&&<h3 className="catalogue-sr-only" id={prefix+'-group-heading-'+index}>{group.label}</h3>}<div className={'portal-grid '+(filters.view==='list'?'is-list':'')}>{group.items.map((item,order)=><CatalogCard order={order} item={item} atlas={atlas} key={item.id} prefix={prefix}/>)}</div></section>)}</div>
-   {!found.length&&<div className="portal-empty" data-testid={prefix+'-empty'}><Search size={30}/><h2>No matching entries.</h2><p>Try a different name or category.</p><button className="portal-button" onClick={reset}>Reset filters</button></div>}
+   {!found.length&&<div className="portal-empty" data-testid={prefix+'-empty'}><Search size={30}/><h2>Nothing matches.</h2><p>Try another name or category.</p><button className="portal-button" onClick={reset}>Reset filters</button></div>}
    {found.length>limit&&<div className="catalogue-more"><button type="button" className="portal-button" data-testid={prefix+'-load-more'} onClick={()=>setLimit(old=>old+PAGE_SIZE)}>Load {Math.min(PAGE_SIZE,found.length-limit)} more <ChevronDown size={17}/></button><span>{Math.min(limit,found.length)} / {found.length} entries</span></div>}
  </section>;
 };

@@ -29,7 +29,7 @@ export default function DetailPage({item,atlas}) {
     <div className={`record-stage ${expanded?'is-expanded':''}`} data-testid="detail-stage"><DossierMedia key={item.id} item={item} expanded={expanded} setExpanded={setExpanded} onDimensions={setDimensions}/><DossierMeta item={item} section={section} atlas={atlas} task={task} dimensions={dimensions}/></div>
     <DossierPager item={item} peers={peers} section={section}/>
     <DossierContent item={item} atlas={atlas}/>
-    {related.length>0&&<section className="record-related"><div className="record-related-heading"><div><span className="portal-kicker">{section.title}</span><h2 data-testid="detail-related-heading">Related entries</h2></div><Link to={section.path} data-testid="detail-back-to-collection">View collection<ArrowUpRight size={18}/></Link></div><div className="portal-grid">{related.map((entry,i)=><Reveal key={entry.id} delay={i*.05}><CatalogCard item={entry} atlas={atlas} prefix="related"/></Reveal>)}</div></section>}
+    {related.length>0&&<section className="record-related"><div className="record-related-heading"><div><span className="portal-kicker">{section.title}</span><h2 data-testid="detail-related-heading">Connected files</h2></div><Link to={section.path} data-testid="detail-back-to-collection">Back to the collection<ArrowUpRight size={18}/></Link></div><div className="portal-grid">{related.map((entry,i)=><Reveal key={entry.id} delay={i*.05}><CatalogCard item={entry} atlas={atlas} prefix="related"/></Reveal>)}</div></section>}
     {!related.length&&<Link className="record-return" to={section.path} data-testid="detail-back-to-collection">Back to {section.title.toLowerCase()}<ArrowRight size={17}/></Link>}
   </article>;
 }

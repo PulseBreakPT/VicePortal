@@ -5,7 +5,7 @@ import { image } from '../data/catalog';
 import { Reveal } from './AtlasUI';
 import { Link } from 'react-router-dom';
 
-export const RockstarRibbon = () => <Link className="rockstar-ribbon" to="/experience" data-testid="rockstar-ribbon"><span>GRAND THEFT AUTO VI</span><i>•</i><span>TRAILERS, ARTWORK & LOCATIONS</span><ArrowRight size={14}/></Link>;
+export const RockstarRibbon = () => <Link className="rockstar-ribbon" to="/experience" data-testid="rockstar-ribbon"><span>GRAND THEFT AUTO VI</span><i>•</i><span>THE WORLD IN FRAME</span><ArrowRight size={14}/></Link>;
 
 const OfficialPoster = ({ open }) => {
   const ref = useRef(null);
@@ -14,7 +14,7 @@ const OfficialPoster = ({ open }) => {
   const scale = useTransform(scrollYProgress, [0, .5, 1], [.91, 1, 1.035]);
   const y = useTransform(scrollYProgress, [0, 1], [35, -35]);
   return <div className="rs-poster-section" ref={ref}>
-    <Reveal className="rs-chapter-mark"><span data-testid="rs-chapter-label">THE WORLD OF</span><h2 data-testid="rs-chapter-title">GRAND THEFT AUTO VI</h2><span className="rs-chapter-line"/></Reveal>
+    <Reveal className="rs-chapter-mark"><span data-testid="rs-chapter-label">STEP INTO</span><h2 data-testid="rs-chapter-title">GRAND THEFT AUTO VI</h2><span className="rs-chapter-line"/></Reveal>
     <motion.div className="rs-poster-frame" style={reduced ? {} : { scale, y }}><img src={image('rs-poster-2')} alt="Official Grand Theft Auto VI poster featuring Jason, Lucia and the people of Leonida" loading="lazy" data-testid="rs-official-poster"/></motion.div>
     <div className="rs-poster-info"><div><strong data-testid="rs-poster-welcome">GRAND THEFT AUTO VI</strong><span data-testid="rs-poster-subtitle">OFFICIAL PROMOTIONAL ARTWORK</span></div><button className="rs-pill" onClick={() => open({ type: 'trailer' })} data-testid="rs-poster-watch">Watch Trailer 2 <Play size={13} fill="currentColor"/></button><div className="rs-fan-label" data-testid="rs-unofficial-label"><span>INDEPENDENT FAN COMPANION</span><strong>VICE ATLAS</strong></div></div>
     <a className="rs-down" href="#rs-trailer" aria-label="Explore the cinematic trailer section" data-testid="rs-poster-down"><ChevronDown size={35}/></a>
@@ -36,9 +36,9 @@ const TrailerScene = ({ open }) => {
 };
 
 const WorldFeature = ({ open }) => <section className="rs-editorial" id="rs-only-in-leonida" data-testid="rs-editorial-section">
-  <Reveal className="rs-editorial-intro"><span data-testid="rs-editorial-eyebrow">ROCKSTAR GAMES</span><h2 data-testid="rs-editorial-heading">THE STATE OF<br/><em>LEONIDA.</em></h2><p data-testid="rs-editorial-description">Vice City and five surrounding regions, introduced in Rockstar’s GTA VI material.</p></Reveal>
-  <Reveal className="rs-feature rs-leonida-feature"><picture><source media="(max-width: 650px)" srcSet={image('rs-leonida-mobile')}/><img src={image('rs-leonida')} alt="A Leonida resident relaxing on a pink flamingo float in a swimming pool" loading="lazy"/></picture><div className="rs-feature-shade"/><div className="rs-feature-copy"><span data-testid="rs-leonida-category">Regions</span><h3 data-testid="rs-leonida-title">Leonida</h3><p data-testid="rs-leonida-description">Cities, islands, wetlands and mountain landscapes.</p><button className="rs-pill" data-testid="rs-leonida-explore" onClick={() => open({ type: 'map' })}>Open region map <ArrowRight size={17}/></button></div></Reveal>
-  <Reveal className="rs-feature rs-screens-feature"><img src={image('rs-screens')} alt="Lucia and Jason under the neon lights of a Vice City nightclub" loading="lazy"/><div className="rs-feature-shade"/><div className="rs-feature-copy"><span data-testid="rs-screens-category">Official images</span><h3 data-testid="rs-screens-title">GTA VI<br/>Screenshots</h3><p data-testid="rs-screens-description">Published images with full-size views and source links.</p><Link to="/screenshots" className="rs-pill" data-testid="rs-screens-explore">View screenshots <ArrowRight size={17}/></Link></div></Reveal>
+  <Reveal className="rs-editorial-intro"><span data-testid="rs-editorial-eyebrow">ROCKSTAR GAMES</span><h2 data-testid="rs-editorial-heading">BEYOND THE CITY<br/><em>LEONIDA.</em></h2><p data-testid="rs-editorial-description">Six corners of Leonida, introduced in Rockstar’s GTA VI material.</p></Reveal>
+  <Reveal className="rs-feature rs-leonida-feature"><picture><source media="(max-width: 650px)" srcSet={image('rs-leonida-mobile')}/><img src={image('rs-leonida')} alt="A Leonida resident relaxing on a pink flamingo float in a swimming pool" loading="lazy"/></picture><div className="rs-feature-shade"/><div className="rs-feature-copy"><span data-testid="rs-leonida-category">Regions</span><h3 data-testid="rs-leonida-title">Leonida</h3><p data-testid="rs-leonida-description">City streets, island roads, wetlands and mountain country.</p><button className="rs-pill" data-testid="rs-leonida-explore" onClick={() => open({ type: 'map' })}>Open region map <ArrowRight size={17}/></button></div></Reveal>
+  <Reveal className="rs-feature rs-screens-feature"><img src={image('rs-screens')} alt="Lucia and Jason under the neon lights of a Vice City nightclub" loading="lazy"/><div className="rs-feature-shade"/><div className="rs-feature-copy"><span data-testid="rs-screens-category">Official images</span><h3 data-testid="rs-screens-title">GTA VI<br/>Screenshots</h3><p data-testid="rs-screens-description">Every frame has a full-size view and a traceable source.</p><Link to="/screenshots" className="rs-pill" data-testid="rs-screens-explore">Browse the frames <ArrowRight size={17}/></Link></div></Reveal>
   <div className="rs-editorial-end"><span data-testid="rs-editorial-source">OFFICIAL ARTWORK & SCREENSHOTS © ROCKSTAR GAMES</span><a href="https://www.rockstargames.com/VI" target="_blank" rel="noreferrer" data-testid="rs-visit-official">Visit the official GTA VI website <ArrowUpRight size={15}/></a></div>
 </section>;
 
