@@ -43,7 +43,7 @@ const guides = [
 
 export const entries = [
   ...regions.map(x=>base(x,'regions',['regions','locations'])),
-  ...characterRecords.map(x=>base(x,'characters',[x.category==='Protagonist'?'characters/protagonists':x.category==='Additional encounter'?'characters/encounters':'characters/supporting', ...(x.category==='Optional encounter / side contact'?['characters/side-contacts']:[])],x.status)),
+  ...characterRecords.map(x=>base(x,'characters',[...(x.id.startsWith('media-')?[]:[x.category==='Protagonist'?'characters/protagonists':x.category==='Additional encounter'?'characters/encounters':'characters/supporting', ...(x.category==='Optional encounter / side contact'?['characters/side-contacts']:[])]), ...(x.mediaCategories||[]).map(category=>['Radio host','Talk radio','Podcast'].includes(category)?'characters/media-radio':['Television','TV news'].includes(category)?'characters/media-tv':'characters/media-games')].filter((v,i,a)=>a.indexOf(v)===i),x.status)),
   ...articles.map(x=>base(x,'news',['news/features'],'Fan editorial')),
   ...gallery.map(x=>base({...x,description:x.subtitle},'screenshots',['screenshots'])),
   ...vehicles.map(x=>base(x,'vehicles',[x.id==='backcountry-buggy'?'vehicles/off-road':x.id==='island-hopper'?'vehicles/aircraft':'vehicles/customisation'],'Visual spotlight')),
