@@ -1970,11 +1970,11 @@ function mediaRecord(row) {
 function applyEvidence(item) {
   const evidence=characterEvidence[item.id];
   if(!evidence)return item;
-  const attributes={...item.attributes,'Biography availability':'Documented partial context','Evidence':item.attributes['Credit section']||item.id.startsWith('media-')?'Official cast credit; community gameplay context':'Community gameplay context'};
-  if(evidence.contextImage)attributes['Contextual image availability']='Documented scene; not an isolated portrait';
-  return {...item,description:evidence.description,status:'Community reference',spoiler:item.spoiler||!!evidence.spoiler,attributes,
-    ...(evidence.contextImage?{contextImage:evidence.contextImage,contextCaption:evidence.contextCaption,contextImageSource:evidence.source}:{}),
-    relatedSources:[...(item.relatedSources||[]),{label:'Gameplay and biography evidence',url:evidence.source}].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i)};
+  const attributes=evidence.creditOnly?{...item.attributes}:{...item.attributes,'Biography availability':'Documented partial context','Evidence':item.attributes['Credit section']||item.id.startsWith('media-')?'Official cast credit; community gameplay context':'Community gameplay context'};
+  if(evidence.contextImage)attributes['Contextual image availability']=evidence.creditOnly?'Station artwork; not a portrait':'Documented scene; not an isolated portrait';
+  return {...item,...(evidence.creditOnly?{}:{description:evidence.description,status:'Community reference'}),spoiler:item.spoiler||!!evidence.spoiler,attributes,
+    ...(evidence.contextImage?{contextImage:evidence.contextImage,contextCaption:evidence.contextCaption,contextImageSource:evidence.contextImageSource||evidence.source}:{}),
+    relatedSources:[...(item.relatedSources||[]),{label:evidence.creditOnly?'Individual media credit':'Gameplay and biography evidence',url:evidence.source},...(evidence.contextImageSource?[{label:'Contextual artwork source',url:evidence.contextImageSource}]:[])].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i)};
 }
 export const characterRecords = [
   ...main.map(row=>enrichCharacter(record(row,'Main Cast'))),
