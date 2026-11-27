@@ -1,0 +1,10 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowUpRight, Minus, Plus, RotateCcw } from 'lucide-react';
+import { NightMap } from '../Hero';
+import { regions } from '../../data/catalog';
+
+export const MapPage = () => {
+  const [selected,setSelected]=useState(regions[0]);const [zoom,setZoom]=useState(1);
+  return <section className="portal-map" data-testid="region-map"><div className="portal-map-regions">{regions.map(r=><button key={r.id} className={selected.id===r.id?'active':''} onClick={()=>setSelected(r)} aria-pressed={selected.id===r.id} data-testid={`map-select-${r.id}`}><span>{r.number}</span><div><strong>{r.title}</strong><small>{r.category}</small></div><ArrowUpRight size={17}/></button>)}<p data-testid="map-overview-note">Illustrative region overview, not a navigable gameplay map. Map artwork: GTA Town. No collectible coordinates are implied.</p></div><div className="portal-map-stage"><div className="portal-map-scroll" data-testid="map-viewport" data-lenis-prevent><div style={{width:`${zoom*100}%`,height:`${zoom*100}%`}}><NightMap labels={false}/></div></div><div className="map-zoom-controls"><button onClick={()=>setZoom(Math.min(2,zoom+.25))} disabled={zoom>=2} aria-label="Zoom in" data-testid="map-zoom-in"><Plus size={17}/></button><button onClick={()=>setZoom(Math.max(1,zoom-.25))} disabled={zoom<=1} aria-label="Zoom out" data-testid="map-zoom-out"><Minus size={17}/></button><button onClick={()=>setZoom(1)} aria-label="Reset zoom" data-testid="map-zoom-reset"><RotateCcw size={17}/></button></div><Link className="portal-map-preview" to={`/regions/${selected.id}`} data-testid="map-region-explore"><img src={selected.image} alt=""/><span><small>{selected.category}</small><strong data-testid="map-selected-region">{selected.title}</strong><span>Open region <ArrowUpRight size={15}/></span></span></Link></div></section>;
+};

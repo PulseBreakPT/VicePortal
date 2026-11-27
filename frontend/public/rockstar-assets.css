@@ -1,0 +1,5 @@
+@font-face{font-family:'Rockstar Deco';src:url('/fonts/deco-regular.woff') format('woff');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:'Rockstar Deco';src:url('/fonts/deco-bold.woff') format('woff');font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:'Rockstar Condensed';src:url('/fonts/deco-condensed.woff') format('woff');font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:'Rockstar Heavy';src:url('/fonts/deco-heavy.woff') format('woff');font-style:normal;font-weight:800;font-display:swap}
+:root{--rs-palms-left:url('/images/rs-palms-left.svg');--rs-palms-right:url('/images/rs-palms-right.svg')}

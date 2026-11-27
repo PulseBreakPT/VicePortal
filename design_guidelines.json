@@ -1,0 +1,188 @@
+{
+  "project_meta": {
+    "name": "VICE ATLAS — Your GTA 6 Pause Menu",
+    "latest_user_direction": "User explicitly requested a much closer visual copy of gtatown.com. Reference captured directly in-browser: midnight navy page gradient #111222/#1f1f38, Barlow Condensed 700/800 display, Plus Jakarta Sans UI, pale yellow #fff9cb headings, pale pink #ffb2c6 controls; compact nav, YOUR GTA 6 PAUSE MENU left with six white-selected menu rows and thumbnails, large night map right, rounded Jump in image grid, compact latest-news cards. This direction supersedes the initial invented neon-brutalist homepage. Retain existing English Vice Atlas brand and working content/search/saved flows.",
+    "codename": "VICETOWN VI",
+    "tagline": "The Grand Theft Auto VI Cinematic Explorer & Leonida Archive",
+    "author_disclaimer": "UNOFFICIAL FAN SITE & IMMERSIVE COMPANION • ALL TRADEMARKS, ARTWORK AND MEDIA ASSETS BELONG TO ROCKSTAR GAMES / TAKE-TWO INTERACTIVE",
+    "version": "1.0.0-AWWWARDS-SSS",
+    "target_platform": "React (JavaScript .js), Tailwind CSS, Framer Motion, Lucide Icons, Sonner"
+  },
+  "design_synthesis_concept": {
+    "rockstar_games_vi_dna": "Monumental condensed Art Deco & brutalist typography, warm Vice sunset palette (bubblegum neon pink, peach cream, deep ocean obsidian), kinetic poster-first hero with masked line-by-line staggered reveal, film-grain texture, and cinematic character duos (Jason & Lucia).",
+    "gtatown_com_dna": "Structured field-intel explorer architecture: six Leonida territories, interactive interactive dossier modals, map coordinate badges, vehicle garage metadata, crime-beat radio/news timeline, and bookmarkable local collections.",
+    "hybrid_breakthrough": "'Cinematic Neon Brutalism' — high-end editorial meets tactical surveillance terminal. Every card feels like classified satellite field intel stamped in Vice Beach neon."
+  },
+  "fonts": {
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@600;700;800;900&family=Cabinet+Grotesk:wght@400;700;800;900&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,300;0,400;0,600;0,800;1,400&display=swap",
+    "font_pairings": {
+      "display_hero": "'Anton', 'Cabinet Grotesk', sans-serif",
+      "display_serif_vice": "'Cinzel', serif",
+      "body_modern": "'Outfit', sans-serif",
+      "data_intel_mono": "'JetBrains Mono', monospace"
+    },
+    "typography_rules": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tighter leading-[0.95]",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-black uppercase tracking-tight leading-none",
+      "h3_card_title": "text-xl sm:text-2xl font-bold uppercase tracking-tight",
+      "eyebrow_badge": "text-[10px] sm:text-xs font-mono uppercase tracking-[0.25em] text-[#FF4893]",
+      "body_text": "text-sm sm:text-base font-normal leading-relaxed text-[#D6DCE5]",
+      "metadata_stat": "text-xs font-mono tracking-widest text-[#F9C3A6]"
+    }
+  },
+  "color_palette": {
+    "background_void": "#06080D",
+    "background_card": "#0B1019",
+    "background_elevated": "#111827",
+    "border_subtle": "#1F2B3E",
+    "border_glow": "rgba(255, 72, 147, 0.4)",
+    "neon_pink": "#FF3377",
+    "electric_flamingo": "#FF599C",
+    "vice_sunset_orange": "#FF7A30",
+    "cream_sand": "#FFF3E4",
+    "ocean_cyan": "#00F0FF",
+    "grassriver_gold": "#FFC043",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#B5C1D3",
+    "text_muted": "#6C7D93"
+  },
+  "core_features_matrix": [
+    {
+      "id": "hero_kinetic",
+      "label": "Kinetic Hero & Official Trailer Cinema",
+      "description": "Full-bleed hero using Rockstar poster asset with line-by-line staggered text reveals, audio ambiance toggle, and inline popover trailer cinema."
+    },
+    {
+      "id": "regions_explorer",
+      "label": "Six Leonida Territory Intel Explorer",
+      "description": "Interactive map-card matrix for Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Mount Kalaga, and Ambrosia County with coordinates, danger rating, and high-res imagery."
+    },
+    {
+      "id": "character_dossiers",
+      "label": "Jason & Lucia Classified Syndicate Dossiers",
+      "description": "Interactive duality view comparing Jason vs Lucia's background, equipment specialities, arrest records, and tactical insights."
+    },
+    {
+      "id": "vehicle_garage",
+      "label": "Vice Customs & High-Roller Garage",
+      "description": "Catalog of sports cruisers, speedboats, muscle rigs, and airboats spotted across Leonida with top-speed, acceleration, and spawn points."
+    },
+    {
+      "id": "editorial_dispatch",
+      "label": "Weazel News & Radio Dispatch Wire",
+      "description": "Live-style satire news feed capturing Vice City craziness, official Rockstar release milestone countdown, and leaks verification meter."
+    },
+    {
+      "id": "media_lightbox",
+      "label": "4K Surveillance Gallery & Bookmark Vault",
+      "description": "Full-screen zoomable lightbox with tag filters (Screenshots, Postcards, Characters) + browser localStorage bookmarking system."
+    }
+  ],
+  "image_urls": {
+    "rockstar_official_poster": {
+      "url": "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg",
+      "category": "hero_background",
+      "description": "Rockstar Games official key art of Jason and Lucia overlooking Vice City horizon"
+    },
+    "vice_city_skyline": {
+      "url": "https://gtatown.com/img/rs/vice_city_09-1280.webp",
+      "category": "region_vice_city",
+      "description": "Vice City high-rise beachfront strip at sunset with neon reflections"
+    },
+    "jason_and_lucia_dossier": {
+      "url": "https://gtatown.com/img/rs/jason_and_lucia_01-1280.webp",
+      "category": "characters_showcase",
+      "description": "Jason and Lucia in the car with bandana and getaway supplies"
+    },
+    "leonida_keys": {
+      "url": "https://gtatown.com/img/rs/leonida_keys_02-1280.webp",
+      "category": "region_keys",
+      "description": "Aerial view of turquoise coral shallow water highways of Leonida Keys"
+    },
+    "grassrivers_wetlands": {
+      "url": "https://gtatown.com/img/rs/grassrivers_03-1280.webp",
+      "category": "region_grassrivers",
+      "description": "Sunken marshland, wild alligators, and fan-boat waterway in Grassrivers"
+    },
+    "mount_kalaga_postcard": {
+      "url": "https://gtatown.com/img/rs/mount_kalaga_national_park_postcard-1280.webp",
+      "category": "region_mount_kalaga",
+      "description": "Vintage style postcard artwork for Mount Kalaga National Park wilderness"
+    },
+    "ocean_drive_art_deco": {
+      "url": "https://images.unsplash.com/photo-1543968332-f99478b1ebdc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHw0fHxtaWFtaSUyMHN1bnNldHxlbnwwfHx8fDE3OTU3OTEwMzh8MA&ixlib=rb-4.1.0&q=85",
+      "category": "ambient_art_deco",
+      "description": "Ocean Drive pastel Art Deco neon hotels and vintage sports cars at dusk"
+    },
+    "sports_car_night": {
+      "url": "https://images.unsplash.com/photo-1623346483743-b968a27ed34c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwzfHxzcG9ydHMlMjBjYXIlMjBuaWdodHxlbnwwfHx8fDE3OTU3OTEwNDF8MA&ixlib=rb-4.1.0&q=85",
+      "category": "garage_showcase",
+      "description": "High-powered exotic vehicle drifting down nighttime coastal avenue"
+    },
+    "supercar_p1": {
+      "url": "https://images.unsplash.com/photo-1555532686-d0fccaccadcf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxzcG9ydHMlMjBjYXIlMjBuaWdodHxlbnwwfHx8fDE3OTU3OTEwNDF8MA&ixlib=rb-4.1.0&q=85",
+      "category": "garage_supercar",
+      "description": "Matte carbon high performance hypercar in dramatic studio lighting"
+    }
+  },
+  "motion_and_interaction_guide": {
+    "engine": "Framer Motion 11.18.0",
+    "hero_reveal": {
+      "type": "Line-by-line masked clip reveal",
+      "stagger_delay": 0.12,
+      "duration": 0.85,
+      "ease": [0.16, 1, 0.3, 1]
+    },
+    "scroll_reveal": {
+      "initial": { "opacity": 0, "y": 28 },
+      "whileInView": { "opacity": 1, "y": 0 },
+      "viewport": { "once": true, "margin": "-80px" },
+      "transition": { "duration": 0.65, "ease": [0.22, 1, 0.36, 1] }
+    },
+    "hover_effects": {
+      "card_lift": "hover:-translate-y-1.5 transition-transform duration-300 ease-out",
+      "border_glow": "hover:border-[#FF3377]/80 hover:shadow-[0_0_25px_rgba(255,51,119,0.25)] transition-all duration-300",
+      "image_zoom": "group-hover:scale-105 transition-transform duration-700 ease-out"
+    },
+    "marquee": {
+      "strategy": "Dual-tone kinetic ticker",
+      "speed": "28s linear infinite",
+      "items": [
+        "VICE CITY METROPOLITAN AREA",
+        "LEONIDA HIGHWAY PATROL ALERT",
+        "JASON & LUCIA SYNDICATE REPORT",
+        "WEAZEL NEWS EXCLUSIVE",
+        "CORAL WATERS OF LEONIDA KEYS",
+        "ROCKSTAR GAMES OFFICIAL STAINLESS STEEL EDITION"
+      ]
+    }
+  },
+  "layout_and_bento_structure": {
+    "hero_section": "100vh relative overflow-hidden flex flex-col justify-end p-6 sm:p-12 lg:p-20 border-b border-[#1F2B3E]",
+    "bento_regions_grid": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6 p-6 sm:p-12 lg:p-16 max-w-7xl mx-auto",
+    "bento_span_matrix": {
+      "vice_city_primary": "col-span-full md:col-span-8 lg:col-span-8 row-span-2",
+      "leonida_keys_card": "col-span-full md:col-span-4 lg:col-span-4 row-span-1",
+      "grassrivers_card": "col-span-full md:col-span-4 lg:col-span-4 row-span-1",
+      "port_gellhorn_card": "col-span-full md:col-span-4 lg:col-span-4 row-span-1",
+      "mount_kalaga_card": "col-span-full md:col-span-4 lg:col-span-4 row-span-1",
+      "ambrosia_county_card": "col-span-full md:col-span-4 lg:col-span-4 row-span-1"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. Replace the default Emergent splash screen in /app/frontend/src/App.js with the ultimate unified Vice City Companion portal.",
+    "2. Use clean React .js with Lucide icons and Framer Motion.",
+    "3. Implement the custom SVG logo mark: A bold, stylized Roman numeral 'VI' intertwined with a tropical palm neon silhouette and 'VICE TOWN // LEONIDA' subtitle.",
+    "4. Feature a persistent cinematic audio-atmosphere simulation (ambient ocean & city synth hum using Web Audio API or rhythmic pulse toggle) so users feel like they are inside the Rockstar teaser.",
+    "5. Include full interactive tabs: 1) Territory Map & Intel, 2) Character Dossiers (Jason vs Lucia compare mode), 3) Vehicle Garage with filterable specs, 4) Dispatch News Feed, and 5) My Saved Evidence Locker (saved to localStorage with counter badge).",
+    "6. Include an official Trailer popover modal (embed official Rockstar GTA VI Trailer YouTube video: 'QdBZY2fkU-0' with play/pause and 4K cinema wrapper).",
+    "7. Implement an interactive image lightbox with zoom, camera coordinates, and 'Save to Evidence Locker' bookmark toggle.",
+    "8. Guarantee strict WCAG contrast on all buttons and tags, never use full transparency on nav/overlays, and ensure all buttons and test points have descriptive data-testid attributes."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
+    "forbidden_colors": ["#7351B7", "#1B93A4"],
+    "forbidden_fonts_for_headings": ["Inter", "Roboto", "Open Sans", "Space Grotesk"],
+    "contrast_rule": "Every text over image must use radial/linear scrim overlays (bg-black/60 to bg-black/85 at base) with text-shadow for absolute legibility.",
+    "test_id_convention": "kebab-case data-testid on every tab, modal toggle, bookmark button, card, and filter button."
+  }
+}

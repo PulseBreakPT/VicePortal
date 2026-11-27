@@ -1,0 +1,20 @@
+import { Link, useLocation } from 'react-router-dom';
+import { ArrowRight, ChevronRight, Compass, Map, Users, CircleCheck, CarFront, Crosshair, BookOpen, Radio, Newspaper, Images, Gamepad2, Bookmark } from 'lucide-react';
+import { childrenOf, rootSections, sectionById } from '../../data/sections';
+import { Reveal } from '../AtlasUI';
+
+const icons = {explore:Map,story:Users,progress:CircleCheck,garage:CarFront,weapons:Crosshair,guides:BookOpen,universe:Radio,news:Newspaper,media:Images,game:Gamepad2};
+const tid = id => id.replaceAll('/','-');
+export const Breadcrumbs = ({section,item}) => {
+  const parents=[];let current=section;
+  while(current){parents.unshift(current);current=sectionById[current.parent];}
+  return <nav className="portal-breadcrumbs" aria-label="Breadcrumb" data-testid="breadcrumbs"><Link to="/" data-testid="breadcrumb-home">Vice Atlas</Link>{parents.map(p=><span key={p.id}><ChevronRight size={12}/><Link to={p.path} data-testid={`breadcrumb-${tid(p.id)}`} aria-current={!item&&p.id===section?.id?'page':undefined}>{p.title}</Link></span>)}{item&&<span data-testid="breadcrumb-current"><ChevronRight size={12}/>{item.title}</span>}</nav>;
+};
+export const Sidebar = () => {
+  const {pathname}=useLocation();
+  return <aside className="portal-sidebar" data-testid="portal-sidebar"><Link className="sidebar-home" to="/directory" data-testid="sidebar-directory"><Compass size={17}/> THE ATLAS <ArrowRight size={14}/></Link><nav aria-label="Atlas sections">{rootSections.map(section=>{const Icon=icons[section.id]||Compass;const subs=childrenOf(section.id);const active=pathname===section.path||subs.some(s=>pathname.startsWith(s.path+'/')||pathname===s.path);return <details key={section.id} open={active} className={active?'is-current':''} data-testid={`sidebar-group-${section.id}`}><summary data-testid={`sidebar-expand-${section.id}`}><Icon size={17}/>{section.title}<ChevronRight size={14}/></summary><Link to={section.path} data-testid={`sidebar-${section.id}`} aria-current={pathname===section.path?'page':undefined}>Overview</Link>{subs.map(s=><Link key={s.id} to={s.path} data-testid={`sidebar-${tid(s.id)}`} aria-current={pathname===s.path?'page':undefined}>{s.title}</Link>)}</details>;})}</nav><div className="sidebar-note"><Bookmark size={16}/><p data-testid="sidebar-storage">Your atlas stays<br/><strong>on this device.</strong></p></div></aside>;
+};
+export const PortalLayout = ({children}) => <div className="portal-layout"><Sidebar/><div className="portal-main">{children}</div></div>;
+export const PageHero = ({section,eyebrow,children}) => <section className={`portal-hero ${['weapons','compare'].includes(section.id)||section.id.startsWith('weapons/')?'object-hero':''}`} data-testid="page-hero"><img src={section.image} alt="" className="portal-hero-image"/><div className="portal-hero-scrim"/><Reveal className="portal-hero-copy"><span className="portal-kicker" data-testid="page-kicker">{eyebrow||'VICE ATLAS / THE LEONIDA COMPANION'}</span><h1 data-testid="page-title">{section.title}</h1><p data-testid="page-description">{section.description}</p>{children}</Reveal><span className="portal-hero-index" aria-hidden="true">VI / ATLAS</span></section>;
+export const Subsections = ({section}) => {const children=childrenOf(section.id);return children.length?<nav className="portal-subsections" aria-label={`${section.title} pages`} data-testid="subsections">{children.map((s,i)=><Link to={s.path} key={s.id} data-testid={`subsection-${tid(s.id)}`}><span>{String(i+1).padStart(2,'0')}</span>{s.title}<ArrowRight size={15}/></Link>)}</nav>:null;};
+export const CompactFooter = () => <footer className="portal-footer" data-testid="portal-footer"><Link to="/" data-testid="portal-footer-home">VICE ATLAS</Link><p data-testid="portal-footer-disclaimer">Independent GTA VI fan companion.<br/>Not affiliated with Rockstar Games or Take-Two Interactive.</p><div><Link to="/about" data-testid="portal-footer-about">About & credits</Link><Link to="/directory" data-testid="portal-footer-directory">All pages <ArrowRight size={13}/></Link></div></footer>;
