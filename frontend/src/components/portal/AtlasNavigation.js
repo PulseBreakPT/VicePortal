@@ -1,4 +1,5 @@
-import { useRef } from 'react';
+import { useState } from 'react';
+import { Sheet,SheetTrigger,SheetContent,SheetTitle,SheetDescription } from '../ui/sheet';
 import { Link, useLocation } from 'react-router-dom';
 import { ArrowUpRight, ChevronDown, Compass, Map, Users, CircleCheck, CarFront, Crosshair, BookOpen, Radio, Newspaper, Images, Gamepad2, Film } from 'lucide-react';
 import { childrenOf, rootSections, sectionById } from '../../data/sections';
@@ -17,6 +18,13 @@ export const AtlasTree = ({prefix}) => {
 };
 
 export const MobileAtlasNavigation = () => {
-  const {pathname}=useLocation();const ref=useRef(null);const active=currentSection(pathname);
-  return <details className="mobile-atlas-navigation" ref={ref} key={pathname} data-testid="mobile-atlas-navigation"><summary data-testid="mobile-atlas-toggle"><Compass size={17}/><span>{active?.title||'Explore the atlas'}</span><span className="mobile-browse-label">Browse</span><ChevronDown size={15}/></summary><div onClick={event=>{if(event.target.closest('a')&&ref.current)ref.current.open=false;}}><Link className="mobile-all-pages" to="/directory" data-testid="mobile-all-pages">All pages <ArrowUpRight size={16}/></Link><AtlasTree prefix="mobile-nav"/></div></details>;
+ const {pathname}=useLocation();const active=currentSection(pathname);
+ return <MobileNavigationSheet key={pathname} active={active}/>;
+};
+const MobileNavigationSheet=({active})=>{
+ const [open,setOpen]=useState(false);
+ return <div className="mobile-atlas-navigation site-mobile-navigation" data-testid="mobile-atlas-navigation"><Sheet open={open} onOpenChange={setOpen}>
+ <SheetTrigger asChild><button type="button" className="site-mobile-trigger" data-testid="mobile-atlas-toggle"><Compass size={17}/><span>{active?.title||'Explore the atlas'}</span><span className="mobile-browse-label">Browse</span><ChevronDown size={15}/></button></SheetTrigger>
+ <SheetContent side="right" className="site-ui-surface site-navigation-sheet" data-lenis-prevent><SheetTitle>Explore Vice Atlas</SheetTitle><SheetDescription>Choose a category or open the full directory.</SheetDescription><div className="site-navigation-scroll" data-lenis-prevent onClick={event=>{if(event.target.closest('a'))setOpen(false);}}><Link className="mobile-all-pages" to="/directory" data-testid="mobile-all-pages">All pages <ArrowUpRight size={16}/></Link><AtlasTree prefix="mobile-nav"/></div></SheetContent>
+ </Sheet></div>;
 };

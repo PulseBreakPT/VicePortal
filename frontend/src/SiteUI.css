@@ -1,0 +1,37 @@
+/* shadcn/Radix menus share the established Nightfall theme, including portalled surfaces. */
+.site-ui-surface{z-index:220!important;background:var(--night-panel,#232238)!important;color:var(--gta-cream,#fff1d6)!important;border:1px solid var(--night-line-strong,#544a68)!important;border-radius:12px;box-shadow:0 12px 36px #0007;font-family:'Plus Jakarta Sans',sans-serif;overscroll-behavior:contain}
+.site-select-trigger{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;min-width:0;min-height:44px;padding:8px 11px;background:var(--night-surface,#171728);color:var(--cream);border:1px solid var(--night-line-strong);border-radius:8px;font-size:12px;text-align:left;box-shadow:none}
+.site-select-trigger>span{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.site-select-trigger svg{flex-shrink:0;color:var(--pink)}
+.site-select-content{min-width:var(--radix-select-trigger-width);max-width:calc(100vw - 24px);max-height:min(65dvh,var(--radix-select-content-available-height));touch-action:pan-y}
+.site-select-item,.site-command-item,.site-destinations-menu [role=menuitem]{min-height:44px;white-space:normal;overflow-wrap:anywhere;line-height:1.35;font-size:12px;cursor:pointer}
+.site-select-item[data-highlighted],.site-command-item[data-selected=true],.site-destinations-menu [role=menuitem][data-highlighted]{background:var(--night-panel-hover)!important;color:var(--cream)!important}
+.site-select-item[data-disabled],.site-command-item[data-disabled=true]{opacity:.42;cursor:default}
+.site-command-popover{padding:0!important;width:min(360px,calc(100vw - 24px));min-width:min(var(--radix-popover-trigger-width),calc(100vw - 24px));max-height:var(--radix-popover-content-available-height);overflow:hidden}
+.site-command{background:transparent!important;color:inherit!important}
+.site-command-input{font-size:16px!important;min-height:46px;color:var(--cream)}
+.site-command-list{max-height:min(54dvh,360px,var(--radix-popover-content-available-height));overflow-y:auto;overscroll-behavior:contain;padding:5px;touch-action:pan-y}
+.site-command-item{display:flex;justify-content:space-between;gap:8px}
+.site-command-item svg{color:var(--pink);flex-shrink:0}
+.catalogue-filter-panel .site-filter-trigger{display:flex;align-items:center;gap:7px;min-height:44px;padding:0 12px;border:1px solid var(--night-line-strong);border-radius:8px;background:var(--night-panel);color:var(--night-text);font-size:12px}
+.site-filter-trigger[data-state=open]>svg:last-child,.site-destinations-trigger[data-state=open]>svg:last-child{transform:rotate(180deg)}
+.site-filter-popover{width:min(380px,calc(100vw - 24px));max-height:min(70dvh,var(--radix-popover-content-available-height));overflow:auto;padding:12px!important}
+.site-filter-popover .catalogue-filter-fields{position:static;width:auto;max-height:none;overflow:visible;background:transparent;border:0;border-radius:0;padding:0;box-shadow:none}
+.site-checkbox{flex-shrink:0;border-color:var(--pink)!important}
+.site-checkbox[data-state=checked]{background:var(--pink)!important;color:var(--gta-midnight)!important}
+.directory-site-select{min-width:0;flex:0 1 220px}
+.comparison-picker{display:grid;gap:8px;margin-bottom:16px;min-width:0}
+.comparison-picker>span{font-size:11px;color:var(--night-muted)}
+.site-destinations-trigger,.site-mobile-trigger{display:flex;align-items:center;gap:10px;width:100%;min-height:44px;color:var(--night-text);text-align:left;font-size:12px}
+.site-destinations-trigger small{margin-left:auto;color:var(--night-muted);font-size:10px}
+.site-destinations-trigger svg,.site-mobile-trigger svg{color:var(--pink);flex-shrink:0}
+.site-destinations-menu{width:min(320px,calc(100vw - 24px));max-height:min(65dvh,var(--radix-dropdown-menu-content-available-height));overflow:auto;touch-action:pan-y}
+.site-destinations-menu [role=menuitem]{justify-content:space-between}
+.site-mobile-navigation{display:none}
+.site-navigation-sheet{width:min(92vw,400px)!important;max-width:100%!important;height:100dvh!important;display:flex;flex-direction:column;gap:12px;padding:22px 18px!important;border-radius:0!important}
+.site-navigation-sheet [role=heading]{color:var(--cream)}
+.site-navigation-scroll{overflow:auto;overscroll-behavior:contain;touch-action:pan-y;flex:1;min-height:0;padding-bottom:env(safe-area-inset-bottom)}
+.site-ui-surface :focus-visible,.site-select-trigger:focus-visible,.site-destinations-trigger:focus-visible,.site-mobile-trigger:focus-visible,.site-filter-trigger:focus-visible{outline:2px solid var(--gta-turquoise);outline-offset:2px}
+@media(max-width:950px){.site-mobile-navigation{display:block}.site-mobile-trigger{padding:10px 14px}.site-mobile-trigger .mobile-browse-label{margin-left:auto}.site-navigation-sheet .atlas-tree{display:block}}
+@media(max-width:600px){.site-select-trigger{font-size:12px}.site-filter-popover{padding:10px!important}.directory-site-select{flex:1}.site-navigation-sheet{padding-top:max(22px,env(safe-area-inset-top))!important}}
+@media(prefers-reduced-motion:reduce){.site-ui-surface,.site-ui-surface *{animation:none!important;transition:none!important}}
