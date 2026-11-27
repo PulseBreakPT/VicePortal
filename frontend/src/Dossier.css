@@ -100,6 +100,40 @@
 .record-prose{max-width:74ch}
 .record-prose>p{font-size:14px;line-height:1.95;color:var(--night-muted);margin:0 0 22px}
 .record-prose>p.record-lead{font-size:17px;line-height:1.85;color:var(--night-text)}
+.record-person .character-biography-intro{max-width:78ch;padding-left:28px;border-left:2px solid var(--section-accent)}
+.record-person .character-biography-intro>p.record-lead{font:500 25px/1.45 'Barlow Condensed',sans-serif;letter-spacing:.01em;color:var(--gta-cream)}
+.record-person .character-profile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:38px}
+.record-person .character-profile-grid>div{display:block;padding:16px 0}
+.record-person .character-profile-grid dt{font:500 10px/1.5 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--section-accent)}
+.record-person .character-profile-grid dd{justify-content:flex-start;text-align:left;margin-top:7px;font-size:15px;line-height:1.55}
+.record-person .character-connections{padding-top:4px}
+.character-connection-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--night-line);border:1px solid var(--night-line)}
+.character-connection-list a{display:grid;grid-template-columns:1fr auto;gap:5px 12px;padding:15px;background:var(--night-deep);color:var(--gta-cream);transition:background-color .2s,color .2s}
+.character-connection-list a:hover,.character-connection-list a:focus-visible{background:var(--night-panel);color:var(--section-accent)}
+.character-connection-list span{grid-column:1/-1;font:500 9px/1.4 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--night-muted)}
+.character-connection-list strong{font:500 16px/1.25 'Barlow Condensed',sans-serif}
+.character-connection-list svg{align-self:center;color:var(--section-accent)}
+.record-weapon .weapon-reading-grid{padding-top:28px}
+.weapon-overview{max-width:76ch}
+.weapon-overview>p.record-lead{font:500 25px/1.4 'Barlow Condensed',sans-serif;color:var(--gta-cream)}
+.weapon-profile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--night-line);border:1px solid var(--night-line)}
+.weapon-profile-grid>div{padding:18px;background:var(--night-deep)}
+.weapon-profile-grid dt,.weapon-acquisition-grid span{font:500 10px/1.5 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--section-accent)}
+.weapon-profile-grid dd{margin-top:8px;color:var(--gta-cream);font:500 17px/1.35 'Barlow Condensed',sans-serif}
+.weapon-stat-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 35px}
+.weapon-stat>div:first-child{display:flex;justify-content:space-between;gap:15px;margin-bottom:9px;font:500 11px/1.4 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--night-muted)}
+.weapon-stat strong{color:var(--gta-cream);font-size:14px}
+.weapon-stat-track{height:5px;background:var(--night-line);overflow:hidden}
+.weapon-stat-track i{display:block;height:100%;background:linear-gradient(90deg,var(--gta-pink),var(--gta-peach));box-shadow:0 0 14px color-mix(in srgb,var(--gta-pink) 50%,transparent)}
+.weapon-acquisition-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--night-line);border:1px solid var(--night-line)}
+.weapon-acquisition-grid>div{display:flex;flex-direction:column;gap:9px;padding:19px;background:var(--night-deep)}
+.weapon-acquisition-grid strong{font:500 17px/1.4 'Barlow Condensed',sans-serif;color:var(--gta-cream)}
+.weapon-related-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--night-line);border:1px solid var(--night-line)}
+.weapon-related-list a{display:grid;grid-template-columns:1fr auto;gap:5px 12px;padding:15px;background:var(--night-deep);color:var(--gta-cream);transition:background-color .2s,color .2s}
+.weapon-related-list a:hover,.weapon-related-list a:focus-visible{background:var(--night-panel);color:var(--section-accent)}
+.weapon-related-list span{grid-column:1/-1;font:500 9px/1.4 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--night-muted)}
+.weapon-related-list strong{font:500 16px/1.25 'Barlow Condensed',sans-serif}
+.weapon-related-list svg{align-self:center;color:var(--section-accent)}
 .record-tags{display:flex;flex-wrap:wrap;gap:9px;list-style:none;padding:8px 0 0}
 .record-tags li{border:1px solid var(--record-border);border-radius:5px;padding:7px 11px;font-size:10px;line-height:1.7;color:var(--gta-peach)}
 .record-specifications{border-top:1px solid var(--night-line)}
@@ -144,5 +178,7 @@
 }
 @media(max-width:359px){.record-heading h1{font-size:46px}.record-heading-kicker{font-size:9px;gap:8px}.record-meta{gap:15px}.record-quick-facts{gap:0 15px}.record-quick-facts dd{font-size:26px}.record-image-caption>span:last-child{display:none}.record-related .portal-grid{grid-template-columns:1fr}.record-section-title{flex-wrap:wrap}.record-section-title>small{margin-left:33px}.record-pager{gap:8px}.record-pager>a.record-pager-index{padding-inline:9px}}
 @media(prefers-reduced-motion:reduce){.dossier-v2 button,.dossier-v2 a{transition:none}}
+@media(max-width:720px){.record-person .character-biography-intro{padding-left:18px}.record-person .character-biography-intro>p.record-lead{font-size:21px}.record-person .character-profile-grid{grid-template-columns:1fr;column-gap:0}.character-connection-list{grid-template-columns:1fr}}
+@media(max-width:720px){.record-weapon .weapon-overview>p.record-lead{font-size:21px}.weapon-profile-grid,.weapon-acquisition-grid,.weapon-related-list{grid-template-columns:1fr}.weapon-stat-grid{grid-template-columns:1fr;gap:20px}.record-weapon .record-section-nav{gap:14px;overflow-x:auto;white-space:nowrap}.record-weapon .record-section-nav>a{font-size:10px}.record-weapon .record-section-nav>span{display:none}}
 @media(forced-colors:active),(prefers-contrast:more){.record-heading h1,.record-related-heading h2{background:none!important;-webkit-text-fill-color:currentColor!important;-webkit-text-stroke:0!important;filter:none!important}.record-media-panel,.record-provenance>span,.record-primary-link{box-shadow:none;border-color:currentColor}}
 @media print{.record-heading h1,.record-related-heading h2{background:none!important;-webkit-text-fill-color:black!important;color:black!important;filter:none!important;-webkit-text-stroke:0!important}.record-stage,.record-reading-grid{display:block}.record-heading-actions,.record-media-toolbar,.record-section-nav,.record-pager{display:none}.record-image{aspect-ratio:auto}.record-image>img{height:auto;max-height:none}.record-source{position:static}}

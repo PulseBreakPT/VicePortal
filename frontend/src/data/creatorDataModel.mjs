@@ -90,6 +90,7 @@ function sourceFor(row,key){
 }
 const scalar=v=>v===undefined||v===null||v===''?'':Array.isArray(v)?v.map(x=>typeof x==='object'?JSON.stringify(x):String(x)).join(' · '):obj(v)?JSON.stringify(v):String(v);
 const label=k=>String(k).replace(/[_-]+/g,' ').replace(/([a-z])([A-Z])/g,'$1 $2').replace(/^\w/,c=>c.toUpperCase());
+const UNKNOWN='Not verified in this atlas';
 const groupWeapon=category=>{
  const c=slug(category);
  if(/handgun|pistol|revolver/.test(c))return 'handguns';
@@ -112,6 +113,7 @@ function missionGroup(row){
 export function normalizeDataset(rows,key){
  const spec=DATASETS[key];if(!spec||!Array.isArray(rows))throw Error('Unknown dataset');
  const seen=new Set();
+ const sourceFields=[...new Set(rows.flatMap(row=>Object.keys(row||{})))];
  return rows.map((row,index)=>{
    if(!obj(row))throw Error('Invalid row '+index+' in '+key);
    const title=titleFor(row,key);if(!title)throw Error('Missing title at '+key+' row '+index+'; fields '+Object.keys(row).join(','));
@@ -123,7 +125,10 @@ export function normalizeDataset(rows,key){
    const id=key==='weapons'?'weapon-'+slug(title):'gtatown-'+key+'-'+(slug(title).slice(0,64)||'entry')+'-'+hash(identity);
    if(seen.has(id))throw Error('Duplicate identity '+id+' in '+key);seen.add(id);
    const attrs={};
-   for(const [name,v] of Object.entries(row)){const val=scalar(v);if(val!=='')attrs[label(name)]=val;}
+   // Keep every field in the dossier, including fields omitted by the export.
+   // An explicit unknown is more useful to readers than silently dropping a column,
+   // and prevents us from filling gaps with guesses from earlier GTA titles.
+   for(const name of sourceFields){const val=scalar(row[name]);attrs[label(name)]=val||UNKNOWN;}
    if(key==='weapons'){
     attrs.Type=category;
     for(const [name,aliases] of Object.entries({Damage:['damage','damage_rating'],Price:['price','cost'],Availability:['availability','how_to_get','unlock'], 'Fire rate':['fire_rate','firerate'],Range:['range'], 'Clip size':['clip','clip_size','magazine','magazine_size']})){
@@ -139,7 +144,9 @@ export function normalizeDataset(rows,key){
      if(field(row,'xbox','xbox_input','xbox_buttons'))collections.push('guides/cheats/xbox');
      if(field(row,'pc','pc_input','pc_code'))collections.push('guides/cheats/pc');
    }
-   return {id,title,kind:spec.kind,category,source,collections,path:'/'+spec.section+'/'+id,status:'Community reference',creatorDataset:key,dataCredit:'GTA Town',spoiler:isSpoiler(row),storyOrder,image:'/images/creator-data-placeholder.svg',imageFallback:'/images/creator-data-placeholder.svg',placeholderImage:true,description:title+' is listed in the GTA Town public '+key+' dataset. Details below are reproduced as community data; unknown fields are not inferred.',attributes:attrs,details:[category],relatedSources:[{label:'GTA Town creator data · CC BY 4.0',url:SOURCE}]};
+   const known=Object.values(attrs).filter(value=>value!==UNKNOWN).length;
+   const completeness=`${known} / ${sourceFields.length} source fields documented`;
+   return {id,title,kind:spec.kind,category,source,collections,path:'/'+spec.section+'/'+id,status:'Community reference',creatorDataset:key,dataCredit:'GTA Town',spoiler:isSpoiler(row),storyOrder,image:'/images/creator-data-placeholder.svg',imageFallback:'/images/creator-data-placeholder.svg',placeholderImage:true,description:title+' is listed in the GTA Town public '+key+' dataset. Details below are reproduced as community data; unknown fields are not inferred.',attributes:{...attrs,'Dossier completeness':completeness},details:[category,completeness],paragraphs:['This dossier preserves every field exposed by the credited GTA Town dataset. Fields marked “Not verified in this atlas” were not supplied in that record and are intentionally left un-inferred.'],relatedSources:[{label:'GTA Town creator data · CC BY 4.0',url:SOURCE}]};
  });
 }
 export function validateDataset(rows,key,minimum=DATASETS[key].count){

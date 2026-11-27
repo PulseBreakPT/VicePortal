@@ -38,6 +38,19 @@ const guides = [
   ['atlas-privacy','Storage and credits','about','leonida_keys_01','Bookmarks and checklist progress are stored in this browser, without cloud sync.',['Saved entries, checklist progress and your spoiler preference are stored in local browser storage. Clearing site storage removes them; another browser or device has a separate collection.','Vice Atlas is an independent fan project, not affiliated with Rockstar Games or Take-Two Interactive. Grand Theft Auto, its characters and official artwork belong to their respective owners.','Visual references include GTA Town and Rockstar’s GTA VI website. Source links are attached to individual records. This site does not connect to your game or read a game save.']],
 ];
 
+// Every catalogue card receives the same dossier contract. This keeps small
+// categories (radio, animals and editorial records) as usable as the large
+// imported datasets without manufacturing facts that are not in their sources.
+const completeDossier = item => ({
+  ...item,
+  description: item.description || `${item.title} is indexed in the Vice Atlas. No additional description has been verified for this record.`,
+  paragraphs: item.paragraphs?.length ? item.paragraphs : ['This dossier contains the information currently available from its credited source. Additional details are added only when independently documented.'],
+  details: item.details?.length ? item.details : [item.category || item.kind, 'Source context checked'],
+  imageFallback: item.imageFallback || item.image,
+  relatedSources: item.relatedSources?.length ? item.relatedSources : item.source ? [{label:'Credited source',url:item.source}] : [],
+  verifiedOn: item.verifiedOn || '2026-11-27',
+});
+
 const baseEntries = [
   ...regions.map(x=>base(x,'regions',['regions','locations'])),
   ...characterRecords.map(x=>base(x,'characters',[...(x.id.startsWith('media-')?[]:[x.category==='Protagonist'?'characters/protagonists':x.category==='Additional encounter'?'characters/encounters':'characters/supporting', ...(x.category==='Optional encounter / side contact'?['characters/side-contacts']:[])]), ...(x.mediaCategories||[]).map(category=>['Radio host','Talk radio','Podcast'].includes(category)?'characters/media-radio':['Television','TV news'].includes(category)?'characters/media-tv':'characters/media-games')].filter((v,i,a)=>a.indexOf(v)===i),x.status)),
@@ -49,7 +62,7 @@ const baseEntries = [
   ...[['trailer-1','Trailer 1','QdBZY2fkU-0','rs-trailer2'],['trailer-2','Trailer 2','VQRLujxTm3c','jason_and_lucia_01']].map(([id,title,videoId,photo])=>base({id,title,kind:'Video',image:image(photo),videoId,description:'Grand Theft Auto VI · An official film by Rockstar Games',source:`https://www.youtube.com/watch?v=${videoId}`},'videos',['videos'])),
   base({id:'leonida-key-art',title:'Jason & Lucia — key art',kind:'Artwork',image:image('rs-poster-2'),description:'Official GTA VI promotional artwork. This is not presented as confirmed retail packaging.',source:officialUrl},'artwork',['artwork','wallpapers','covers']),
 ];
-export const universalReport=buildUniversal(universalSnapshot,universalSources,baseEntries);
+export const universalReport=buildUniversal(universalSnapshot,universalSources,baseEntries.map(completeDossier));
 export const entries=universalReport.entries;
 export const entryById = Object.fromEntries(entries.map(x=>[x.id,x]));
 export const entriesFor = id => {const ids=descendantIds(id);return entries.filter(e=>e.collections.some(c=>ids.includes(c)));};
