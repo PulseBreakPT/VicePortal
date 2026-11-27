@@ -1,0 +1,1258 @@
+{
+  "source": "https://gtatown.com/creators/data",
+  "license": "CC BY 4.0 (public data download)",
+  "checkedOn": "2026-11-27",
+  "complete": false,
+  "rows": [
+    {
+      "name": "Dante's Vitello",
+      "maker": "Pegassi",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": 8.6,
+      "acceleration": 8.9,
+      "handling": 8.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Black Widow Emerus",
+      "maker": "Progen",
+      "vehicle_class": "Street Racer",
+      "speed": 8.9,
+      "acceleration": 8.6,
+      "handling": 8.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Honeycomb Emerus",
+      "maker": "Progen",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": 8.9,
+      "acceleration": 8.6,
+      "handling": 8.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Purple Drank Emerus",
+      "maker": "Progen",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": 8.5,
+      "acceleration": 8.4,
+      "handling": 8.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Seaspray Emerus",
+      "maker": "Progen",
+      "vehicle_class": "Stock Car",
+      "speed": 8.9,
+      "acceleration": 8.6,
+      "handling": 8.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Andrew Node's Thrax",
+      "maker": "Truffade",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": 9.2,
+      "acceleration": 8.9,
+      "handling": 7.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Royal Ruby Emerus",
+      "maker": "Progen",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": 8.6,
+      "acceleration": 8.4,
+      "handling": 8.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Splattered Vitello",
+      "maker": "Pegassi",
+      "vehicle_class": "Fine Art",
+      "speed": 8.4,
+      "acceleration": 8.6,
+      "handling": 8.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Lipgloss Vitello",
+      "maker": "Pegassi",
+      "vehicle_class": "Girlypop",
+      "speed": 8.2,
+      "acceleration": 8.4,
+      "handling": 8.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Pegassi Vitello",
+      "maker": "Pegassi",
+      "vehicle_class": "Supercars",
+      "speed": 8.2,
+      "acceleration": 8.4,
+      "handling": 8.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Progen Emerus",
+      "maker": "Progen",
+      "vehicle_class": "Supercars",
+      "speed": 8.3,
+      "acceleration": 8.3,
+      "handling": 8.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Truffade Thrax",
+      "maker": "Truffade",
+      "vehicle_class": "Supercars",
+      "speed": 8.7,
+      "acceleration": 8.6,
+      "handling": 7.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Dolce Vita RSX",
+      "maker": "Grotti",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": 8.6,
+      "acceleration": 8.7,
+      "handling": 7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Dragon Gate Furia",
+      "maker": "Piccia",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": 8.5,
+      "acceleration": 8.6,
+      "handling": 7.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Status RSX",
+      "maker": "Grotti",
+      "vehicle_class": "Stock Car",
+      "speed": 8.7,
+      "acceleration": 8.7,
+      "handling": 7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Tsunami Zorrusso",
+      "maker": "Granforma",
+      "vehicle_class": "Street Racer",
+      "speed": 8.3,
+      "acceleration": 8.6,
+      "handling": 7.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Mojito Tempesta",
+      "maker": "Pegassi",
+      "vehicle_class": "Street Racer",
+      "speed": 8.2,
+      "acceleration": 8.6,
+      "handling": 7.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Burnished Alvino",
+      "maker": "Principe",
+      "vehicle_class": "Race Bikes",
+      "speed": 7.6,
+      "acceleration": 8.3,
+      "handling": 7.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Big Cat Furia",
+      "maker": "Piccia",
+      "vehicle_class": "Leonida Man",
+      "speed": 7.8,
+      "acceleration": 8.2,
+      "handling": 7.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "KD's SFB 1000",
+      "maker": "Nagasaki",
+      "vehicle_class": "Race Bikes",
+      "speed": 7.1,
+      "acceleration": 8.1,
+      "handling": 8.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Nagasaki SFB 1000",
+      "maker": "Nagasaki",
+      "vehicle_class": "Bikes",
+      "speed": 7.1,
+      "acceleration": 8.1,
+      "handling": 8.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Pfister Comet S2",
+      "maker": "Pfister",
+      "vehicle_class": "Sports Cars",
+      "speed": 7.7,
+      "acceleration": 8,
+      "handling": 7.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Piccia Furia",
+      "maker": "Piccia",
+      "vehicle_class": "Supercars",
+      "speed": 7.8,
+      "acceleration": 8.2,
+      "handling": 7.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Class Act Comet",
+      "maker": "Pfister",
+      "vehicle_class": "Retro",
+      "speed": 8.5,
+      "acceleration": 8.4,
+      "handling": 6.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Devil's Rope Gauntlet",
+      "maker": "Bravado",
+      "vehicle_class": "Ripped & Shredded",
+      "speed": 8.3,
+      "acceleration": 8.3,
+      "handling": 6.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Emilio's Lectro",
+      "maker": "Principe",
+      "vehicle_class": "Race Bikes",
+      "speed": 7.4,
+      "acceleration": 8.1,
+      "handling": 7.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Gentrifier Comet",
+      "maker": "Pfister",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": 7.7,
+      "acceleration": 8,
+      "handling": 7.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Pixel Elegy",
+      "maker": "Annis",
+      "vehicle_class": "Street Racer",
+      "speed": 7.3,
+      "acceleration": 8.5,
+      "handling": 7.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Venturas BLVD Elegy",
+      "maker": "Annis",
+      "vehicle_class": "Street Racer",
+      "speed": 7.6,
+      "acceleration": 8.6,
+      "handling": 6.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Gold Rope Infernus",
+      "maker": "Pegassi",
+      "vehicle_class": "Blinged Up",
+      "speed": 8.3,
+      "acceleration": 8,
+      "handling": 6.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Principe Alvino V1",
+      "maker": "Principe",
+      "vehicle_class": "Bikes",
+      "speed": 6.9,
+      "acceleration": 7.9,
+      "handling": 7.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Raul's Tempesta",
+      "maker": "Pegassi",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": 8.1,
+      "acceleration": 8.5,
+      "handling": 6.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Vice Vinyl Coquette",
+      "maker": "Invetero",
+      "vehicle_class": "Street Racer",
+      "speed": 8.2,
+      "acceleration": 8.1,
+      "handling": 6.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Granforma Zorrusso",
+      "maker": "Granforma",
+      "vehicle_class": "Supercars",
+      "speed": 7.5,
+      "acceleration": 7.8,
+      "handling": 7.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Grotti Itali RSX",
+      "maker": "Grotti",
+      "vehicle_class": "Supercars",
+      "speed": 7.5,
+      "acceleration": 8.1,
+      "handling": 7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Smokescreen Carbon RS",
+      "maker": "Nagasaki",
+      "vehicle_class": "Race Bikes",
+      "speed": 7,
+      "acceleration": 8,
+      "handling": 7.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Elegy (custom)",
+      "maker": "Annis",
+      "vehicle_class": "Street Racer",
+      "speed": 7.4,
+      "acceleration": 8.4,
+      "handling": 6.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Gold Rush Tempesta",
+      "maker": "Pegassi",
+      "vehicle_class": "Blinged Up",
+      "speed": 7.6,
+      "acceleration": 7.8,
+      "handling": 6.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Pegassi Tempesta",
+      "maker": "Pegassi",
+      "vehicle_class": "Supercars",
+      "speed": 7.6,
+      "acceleration": 7.8,
+      "handling": 6.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Valiant Tempesta",
+      "maker": "Pegassi",
+      "vehicle_class": "Law & Order",
+      "speed": 7.6,
+      "acceleration": 7.8,
+      "handling": 6.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Endurance Mamba GT",
+      "maker": "Declasse",
+      "vehicle_class": "Retro",
+      "speed": 7.8,
+      "acceleration": 7.7,
+      "handling": 6.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Hung Carbon RS",
+      "maker": "Nagasaki",
+      "vehicle_class": "Fine Art",
+      "speed": 6.7,
+      "acceleration": 7.7,
+      "handling": 7.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Nagasaki Carbon RS",
+      "maker": "Nagasaki",
+      "vehicle_class": "Bikes",
+      "speed": 6.7,
+      "acceleration": 7.7,
+      "handling": 7.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bloodless Jugular",
+      "maker": "Ocelot",
+      "vehicle_class": "Street Racer",
+      "speed": 7.4,
+      "acceleration": 8.2,
+      "handling": 6.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Burning Cypher",
+      "maker": "Übermacht",
+      "vehicle_class": "Stock Car",
+      "speed": 8,
+      "acceleration": 8.3,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Crushed Velvet Double-T",
+      "maker": "Dinka",
+      "vehicle_class": "Race Bikes",
+      "speed": 6.3,
+      "acceleration": 7.9,
+      "handling": 7.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Dinka Double-T",
+      "maker": "Dinka",
+      "vehicle_class": "Bikes",
+      "speed": 6.3,
+      "acceleration": 7.9,
+      "handling": 7.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "1010 Cheetah",
+      "maker": "Grotti",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": 7.7,
+      "acceleration": 7.1,
+      "handling": 6.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bravado Gauntlet Hellfire",
+      "maker": "Bravado",
+      "vehicle_class": "Muscle Cars",
+      "speed": 7.8,
+      "acceleration": 7.8,
+      "handling": 5.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Copperheads Gauntlet",
+      "maker": "Bravado",
+      "vehicle_class": "Clout Chaser",
+      "speed": 7.8,
+      "acceleration": 7.8,
+      "handling": 5.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Enforcer Coquette",
+      "maker": "Invetero",
+      "vehicle_class": "Law & Order",
+      "speed": 7.2,
+      "acceleration": 7.6,
+      "handling": 6.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Hornet Growler",
+      "maker": "Pfister",
+      "vehicle_class": "Street Racer",
+      "speed": 6.6,
+      "acceleration": 7.6,
+      "handling": 7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Principe Lectro",
+      "maker": "Principe",
+      "vehicle_class": "Bikes",
+      "speed": 6.4,
+      "acceleration": 7.4,
+      "handling": 7.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'96 Pegassi Infernus",
+      "maker": "Pegassi",
+      "vehicle_class": "Supercars",
+      "speed": 7.1,
+      "acceleration": 7.3,
+      "handling": 6.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Invetero Coquette D10",
+      "maker": "Invetero",
+      "vehicle_class": "Sports Cars",
+      "speed": 7,
+      "acceleration": 7.5,
+      "handling": 6.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Nightlight Schafter",
+      "maker": "Benefactor",
+      "vehicle_class": "Street Racer",
+      "speed": 7.2,
+      "acceleration": 7.5,
+      "handling": 6.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'64 Declasse Mamba GT",
+      "maker": "Declasse",
+      "vehicle_class": "Sports Cars",
+      "speed": 6.9,
+      "acceleration": 7.2,
+      "handling": 6.3,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Dogfight FCR",
+      "maker": "Übermacht",
+      "vehicle_class": "Retro",
+      "speed": 6.3,
+      "acceleration": 7.7,
+      "handling": 6.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Pfister Neon",
+      "maker": "Pfister",
+      "vehicle_class": "Sports Cars",
+      "speed": 7.1,
+      "acceleration": 7.4,
+      "handling": 5.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Pop Art Cypher",
+      "maker": "Übermacht",
+      "vehicle_class": "Fine Art",
+      "speed": 7.1,
+      "acceleration": 7.8,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bareback Cypher",
+      "maker": "Übermacht",
+      "vehicle_class": "Street Racer",
+      "speed": 7.2,
+      "acceleration": 7.8,
+      "handling": 4.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Benefactor Schutzen",
+      "maker": "Benefactor",
+      "vehicle_class": "Coupes",
+      "speed": 6.7,
+      "acceleration": 7.1,
+      "handling": 5.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Booty FCR 1000",
+      "maker": "Übermacht",
+      "vehicle_class": "Blinged Up",
+      "speed": 5.9,
+      "acceleration": 7.4,
+      "handling": 6.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "DriveShaft Banshee",
+      "maker": "Bravado",
+      "vehicle_class": "DriveShaft Famous",
+      "speed": 7.3,
+      "acceleration": 7.4,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Revival Kit Car",
+      "maker": "Reynolds",
+      "vehicle_class": "Retro",
+      "speed": 7,
+      "acceleration": 7.4,
+      "handling": 5.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Twinstripe Vigero",
+      "maker": "Declasse",
+      "vehicle_class": "Street Racer",
+      "speed": 7.1,
+      "acceleration": 7.1,
+      "handling": 5.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Übermacht FCR 1000",
+      "maker": "Übermacht",
+      "vehicle_class": "Bikes",
+      "speed": 5.9,
+      "acceleration": 7.4,
+      "handling": 6.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Chameleon Elegy",
+      "maker": "Annis",
+      "vehicle_class": "Street Racer",
+      "speed": 6.9,
+      "acceleration": 7.8,
+      "handling": 4.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "DWNPLY's Schutzen",
+      "maker": "Benefactor",
+      "vehicle_class": "Clout Chaser",
+      "speed": 6.6,
+      "acceleration": 7.1,
+      "handling": 5.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Grotti Carbonizzare",
+      "maker": "Grotti",
+      "vehicle_class": "Sports Cars",
+      "speed": 6.3,
+      "acceleration": 7.1,
+      "handling": 6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Lagoon Schafter",
+      "maker": "Benefactor",
+      "vehicle_class": "Street Racer",
+      "speed": 7.6,
+      "acceleration": 7.5,
+      "handling": 4.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Ocelot Jugular",
+      "maker": "Ocelot",
+      "vehicle_class": "Sedans",
+      "speed": 6.5,
+      "acceleration": 7.3,
+      "handling": 5.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Ascot Paragon",
+      "maker": "Ascot",
+      "vehicle_class": "Coupes",
+      "speed": 6.2,
+      "acceleration": 7.2,
+      "handling": 5.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Coil Raiden",
+      "maker": "Coil",
+      "vehicle_class": "Sedans",
+      "speed": 6.7,
+      "acceleration": 7.7,
+      "handling": 4.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Queen Bee Paragon",
+      "maker": "Ascot",
+      "vehicle_class": "Blinged Up",
+      "speed": 6.2,
+      "acceleration": 7.2,
+      "handling": 5.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'88 Pfister Comet",
+      "maker": "Pfister",
+      "vehicle_class": "Sports Cars",
+      "speed": 6.1,
+      "acceleration": 6.4,
+      "handling": 6.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'95 Grotti Cheetah",
+      "maker": "Grotti",
+      "vehicle_class": "Supercars",
+      "speed": 6.6,
+      "acceleration": 5.9,
+      "handling": 6.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Blue Drake Penumbra",
+      "maker": "Maibatsu",
+      "vehicle_class": "Stock Car",
+      "speed": 6.3,
+      "acceleration": 6.9,
+      "handling": 5.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Charred Toros",
+      "maker": "Pegassi",
+      "vehicle_class": "Donks",
+      "speed": 6.8,
+      "acceleration": 7.9,
+      "handling": 4.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Darkling Dominator",
+      "maker": "Vapid",
+      "vehicle_class": "Stock Car",
+      "speed": 6.7,
+      "acceleration": 7.3,
+      "handling": 4.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Declasse Vigero ZX Convertible",
+      "maker": "Declasse",
+      "vehicle_class": "Muscle Cars",
+      "speed": 6.6,
+      "acceleration": 6.8,
+      "handling": 5.4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Firebug Dominator",
+      "maker": "Vapid",
+      "vehicle_class": "Ripped & Shredded",
+      "speed": 6.5,
+      "acceleration": 7.2,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Murica Dominator",
+      "maker": "Vapid",
+      "vehicle_class": "Stock Car",
+      "speed": 6.5,
+      "acceleration": 7,
+      "handling": 5.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Preziosa Cheetah",
+      "maker": "Grotti",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": 6.6,
+      "acceleration": 5.9,
+      "handling": 6.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Principe Esskey",
+      "maker": "Principe",
+      "vehicle_class": "Bikes",
+      "speed": 5.7,
+      "acceleration": 6.8,
+      "handling": 6.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vapid Dominator GT",
+      "maker": "Vapid",
+      "vehicle_class": "Muscle Cars",
+      "speed": 6.3,
+      "acceleration": 6.8,
+      "handling": 5.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Albany V-STR",
+      "maker": "Albany",
+      "vehicle_class": "Sedans",
+      "speed": 7,
+      "acceleration": 7.2,
+      "handling": 4.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bourbon Windsor",
+      "maker": "Buckingham",
+      "vehicle_class": "Donks",
+      "speed": 7.3,
+      "acceleration": 7.3,
+      "handling": 4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Buttermilk Comet Retro",
+      "maker": "Pfister",
+      "vehicle_class": "Blinged Up",
+      "speed": 6.2,
+      "acceleration": 6.4,
+      "handling": 6.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Pfister Growler",
+      "maker": "Pfister",
+      "vehicle_class": "Sports Cars",
+      "speed": 5.5,
+      "acceleration": 6.3,
+      "handling": 6.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Übermacht Cypher",
+      "maker": "Übermacht",
+      "vehicle_class": "Coupes",
+      "speed": 6.5,
+      "acceleration": 7.2,
+      "handling": 4.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "DriveShaft Sovereign",
+      "maker": "Western",
+      "vehicle_class": "DriveShaft Famous",
+      "speed": 6.1,
+      "acceleration": 6.4,
+      "handling": 5.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Invetero Coquette",
+      "maker": "Invetero",
+      "vehicle_class": "Sports Cars",
+      "speed": 6.1,
+      "acceleration": 6.8,
+      "handling": 5.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Kinetic Dominator",
+      "maker": "Vapid",
+      "vehicle_class": "Street Racer",
+      "speed": 6.4,
+      "acceleration": 7,
+      "handling": 4.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Blood Fever Sovereign",
+      "maker": "Western",
+      "vehicle_class": "Hot Rods",
+      "speed": 5.9,
+      "acceleration": 6.3,
+      "handling": 5.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bravado Banshee",
+      "maker": "Bravado",
+      "vehicle_class": "Sports Cars",
+      "speed": 6,
+      "acceleration": 6.3,
+      "handling": 5.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bubblegum Growler",
+      "maker": "Pfister",
+      "vehicle_class": "Girlypop",
+      "speed": 5.4,
+      "acceleration": 6.1,
+      "handling": 6.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Dubsta (custom)",
+      "maker": "Benefactor",
+      "vehicle_class": "Blinged Up",
+      "speed": 6.5,
+      "acceleration": 7.6,
+      "handling": 3.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Lustrous Toros",
+      "maker": "Pegassi",
+      "vehicle_class": "Blinged Up",
+      "speed": 6,
+      "acceleration": 7.1,
+      "handling": 4.8,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Pacific Manchez",
+      "maker": "Maibatsu",
+      "vehicle_class": "Race Bikes",
+      "speed": 5.2,
+      "acceleration": 7.5,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Rampant Stallion",
+      "maker": "Classique",
+      "vehicle_class": "Hot Rods",
+      "speed": 6.8,
+      "acceleration": 7.2,
+      "handling": 3.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Reynolds Kit Car",
+      "maker": "Reynolds",
+      "vehicle_class": "Sports Cars",
+      "speed": 6,
+      "acceleration": 6.5,
+      "handling": 5.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Thicc Esskey",
+      "maker": "Principe",
+      "vehicle_class": "All-Terrain",
+      "speed": 5.6,
+      "acceleration": 6.8,
+      "handling": 5.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Vanessa's Growler",
+      "maker": "Pfister",
+      "vehicle_class": "Girlypop",
+      "speed": 5.4,
+      "acceleration": 6.1,
+      "handling": 6.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": true
+    },
+    {
+      "name": "Buckingham Windsor Drop",
+      "maker": "Buckingham",
+      "vehicle_class": "Coupes",
+      "speed": 6,
+      "acceleration": 6.9,
+      "handling": 4.7,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Emerald Zombie Bobber",
+      "maker": "Western",
+      "vehicle_class": "Chopper",
+      "speed": 5.5,
+      "acceleration": 6.6,
+      "handling": 5.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Malibu Zombie Bobber",
+      "maker": "Western",
+      "vehicle_class": "Throwback",
+      "speed": 5.7,
+      "acceleration": 6.4,
+      "handling": 5.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Pegassi Toros",
+      "maker": "Pegassi",
+      "vehicle_class": "SUVs",
+      "speed": 6,
+      "acceleration": 7,
+      "handling": 4.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Fatstaks Dubsta",
+      "maker": "Benefactor",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": 6.2,
+      "acceleration": 7.2,
+      "handling": 4,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "GILF Windsor",
+      "maker": "Buckingham",
+      "vehicle_class": "Girlypop",
+      "speed": 6,
+      "acceleration": 6.9,
+      "handling": 4.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Gold Scarab Windsor",
+      "maker": "Buckingham",
+      "vehicle_class": "Blinged Up",
+      "speed": 6,
+      "acceleration": 6.9,
+      "handling": 4.6,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Pharaoh Sanchez",
+      "maker": "Maibatsu",
+      "vehicle_class": "Race Bikes",
+      "speed": 5,
+      "acceleration": 7.3,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Royal Sanchez",
+      "maker": "Maibatsu",
+      "vehicle_class": "Race Bikes",
+      "speed": 5,
+      "acceleration": 7.3,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Searing Zombie Bobber",
+      "maker": "Western",
+      "vehicle_class": "Chopper",
+      "speed": 5.6,
+      "acceleration": 6.3,
+      "handling": 5.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Benefactor Schafter V12",
+      "maker": "Benefactor",
+      "vehicle_class": "Sports Cars",
+      "speed": 6,
+      "acceleration": 6.6,
+      "handling": 4.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Diamond Jubilee",
+      "maker": "Buckingham",
+      "vehicle_class": "Ultra-Luxe",
+      "speed": 5.9,
+      "acceleration": 6.8,
+      "handling": 4.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Emperor Vectre",
+      "maker": "Emperor",
+      "vehicle_class": "Coupes",
+      "speed": 5.6,
+      "acceleration": 6.5,
+      "handling": 5.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Oxygen Zombie Bobber",
+      "maker": "Western",
+      "vehicle_class": "Hot Rods",
+      "speed": 5.4,
+      "acceleration": 6.3,
+      "handling": 5.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "'90 Annis Elegy",
+      "maker": "Annis",
+      "vehicle_class": "Coupes",
+      "speed": 5.5,
+      "acceleration": 6.4,
+      "handling": 4.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "AudaCity Sanchez",
+      "maker": "Maibatsu",
+      "vehicle_class": "Leonida Man",
+      "speed": 4.7,
+      "acceleration": 6.9,
+      "handling": 5.2,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Bloodbath Phoenix",
+      "maker": "Imponte",
+      "vehicle_class": "Ripped & Shredded",
+      "speed": 6.2,
+      "acceleration": 6.7,
+      "handling": 3.9,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Caliente Picador",
+      "maker": "Declasse",
+      "vehicle_class": "Hot Rods",
+      "speed": 6.6,
+      "acceleration": 6.7,
+      "handling": 3.5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Obey 8F Drafter",
+      "maker": "Obey",
+      "vehicle_class": "Coupes",
+      "speed": 5.3,
+      "acceleration": 6.6,
+      "handling": 5,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Pfister Astron",
+      "maker": "Pfister",
+      "vehicle_class": "SUVs",
+      "speed": 5.3,
+      "acceleration": 6.5,
+      "handling": 5.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    },
+    {
+      "name": "Pink Licorice Astron",
+      "maker": "Pfister",
+      "vehicle_class": "Girlypop",
+      "speed": 5.3,
+      "acceleration": 6.5,
+      "handling": 5.1,
+      "source": "https://gtatown.com/garage/vehicles",
+      "spoiler": false
+    }
+  ]
+}
