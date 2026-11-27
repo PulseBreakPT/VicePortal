@@ -47,8 +47,8 @@ export function normalizeVehicles(input){
  for(const row of rows){
   const title=str(field(row,'name','title','vehicle_name','display_name','vehicle'));
   const maker=str(field(row,'maker','manufacturer','make','brand'))||'Not verified in this atlas';
-  const category=str(field(row,'vehicle_class','class','category','class_name','class_label','collection','standout_set','className'));
   const type=str(field(row,'type','vehicle_type','kind','type_name'));
+  const category=str(field(row,'vehicle_class','class','category','class_name','class_label','collection','standout_set','className'))||type;
   if(!title||!category)throw new Error('Missing vehicle title or class in source export: '+JSON.stringify(row).slice(0,200));
   const canonical=vehicleSlug(title), prefixed=canonical.startsWith(vehicleSlug(maker)+'-')?canonical:vehicleSlug(maker+' '+title);
   const id='vehicle-'+(aliases[canonical]||aliases[prefixed]||canonical);
