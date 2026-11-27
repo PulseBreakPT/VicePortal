@@ -3,7 +3,7 @@
 .smooth-flight-ghost { position:fixed; z-index:9998; pointer-events:none; object-fit:contain; transform-origin:top left; margin:0; max-width:none; max-height:none; background:var(--gta-midnight,#151526); }
 .atlas-app [data-smooth-flight] { visibility:hidden; }
 .atlas-app .smooth-sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap; }
-.atlas-app .smooth-kinetic-word { display:inline-block;white-space:pre; }
+.atlas-app .smooth-kinetic-word { display:inline-block;white-space:nowrap; }
 .atlas-app .smooth-kinetic-letter { display:inline-block;animation:smooth-letter .42s var(--smooth-ease) both;animation-delay:calc(var(--kinetic-order,0)*18ms); }
 @keyframes smooth-letter { from {opacity:.55;translate:0 .13em} to {opacity:1;translate:0 0} }
 
@@ -19,7 +19,8 @@
 .atlas-app .smooth-odometer-value { display:block; }
 .atlas-app .smooth-odometer-old { display:none;position:absolute;inset:0;pointer-events:none; }
 .atlas-app .smooth-odometer[data-roll-active] .smooth-odometer-value { animation:smooth-roll-in .3s var(--smooth-ease) both; }
-.atlas-app .smooth-odometer[data-roll-active]::after { content:attr(data-roll-previous);position:absolute;inset:0;pointer-events:none;animation:smooth-roll-out .3s var(--smooth-ease) both; }
+.atlas-app .smooth-odometer[data-roll-active] .smooth-odometer-old { display:block;animation:smooth-roll-out .3s var(--smooth-ease) both; }
+.atlas-app .smooth-odometer-old::before { content:attr(data-roll-previous); }
 @keyframes smooth-roll-in { from {translate:0 calc(var(--roll-direction,1)*90%);opacity:.2} to {translate:0 0;opacity:1} }
 @keyframes smooth-roll-out { from {translate:0 0;opacity:1} to {translate:0 calc(var(--roll-direction,1)*-90%);opacity:0} }
 
@@ -45,7 +46,7 @@
   .atlas-app :is(.atlas-tree details,.mobile-atlas-navigation)::details-content { block-size:0;overflow:clip;opacity:0;transition:block-size .28s var(--smooth-ease),opacity .2s,content-visibility .28s allow-discrete; }
   .atlas-app :is(.atlas-tree details,.mobile-atlas-navigation)[open]::details-content { block-size:auto;opacity:1; }
 }
-@supports not (interpolate-size:allow-keywords) {
+@supports not ((interpolate-size:allow-keywords) and selector(details::details-content)) {
   .atlas-app .atlas-tree details[open]>.atlas-tree-children,.atlas-app .mobile-atlas-navigation[open]>div { animation:smooth-accordion-in .22s var(--smooth-ease) both; }
 }
 @keyframes smooth-accordion-in { from{opacity:.6;translate:0 -4px}to{opacity:1;translate:0 0} }
@@ -68,7 +69,7 @@
   .smooth-flight-ghost { display:none!important; }
   .atlas-app [data-smooth-flight] { visibility:visible; }
   .atlas-app :is(.smooth-kinetic-letter,.pause-art,.portal-card-image::after,.smooth-odometer-value,.smooth-odometer-old) { animation:none!important;translate:none;scale:1;opacity:1; }
-  .atlas-app .smooth-odometer[data-roll-active]::after,.atlas-app .smooth-odometer-old { display:none!important; }
+  .atlas-app .smooth-odometer-old { display:none!important; }
   .atlas-app .smooth-nav-indicator { transition:none; }
   .atlas-app :is(.atlas-tree details,.mobile-atlas-navigation)::details-content { transition:none; }
   .atlas-app .atlas-tree details[open]>.atlas-tree-children,.atlas-app .mobile-atlas-navigation[open]>div { animation:none; }
