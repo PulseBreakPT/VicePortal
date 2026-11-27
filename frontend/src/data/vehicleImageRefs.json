@@ -1142,6 +1142,13 @@
     "source": "https://gtatown.com/garage/vehicles/flower-powered-rancher",
     "evidence": "exact-index-card"
   },
+  "vehicle-freddies-dubsta": {
+    "title": "Freddie's Dubsta",
+    "image": "https://gtavibase.win/assets/media/gta-6/tools/vehicles/benefactor-freddies-dubsta.webp?v=1795545420",
+    "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
+    "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
+    "evidence": "exact-tracker-variant"
+  },
   "vehicle-fruit-outlet-walton": {
     "title": "Fruit Outlet Walton",
     "image": "https://assets.gta6gps.com/standout/fruit-outlet-walton.webp",
@@ -2692,6 +2699,13 @@
     "source": "https://gtavibase.win/en/gta-6/checklist/vehicles/",
     "credit": "MetaForge via GTA VI Base · game imagery © respective rights holders",
     "evidence": "exact-tracker-variant"
+  },
+  "vehicle-yagos-elegy": {
+    "title": "Yago's Elegy",
+    "image": "https://assets.gta6gps.com/standout/yagos-elegy.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
   },
   "vehicle-yesteryear-boomazoom": {
     "title": "Yesteryear Boomazoom",

@@ -1,63 +1,9 @@
 [
   {
-    "id": "vehicle-elegy-custom",
-    "title": "Elegy (custom)",
-    "maker": "Annis",
-    "category": "Street Racer"
-  },
-  {
-    "id": "vehicle-principe-lectro",
-    "title": "Principe Lectro",
-    "maker": "Principe",
-    "category": "Bikes"
-  },
-  {
-    "id": "vehicle-96-pegassi-infernus",
-    "title": "'96 Pegassi Infernus",
-    "maker": "Pegassi",
-    "category": "Supercars"
-  },
-  {
-    "id": "vehicle-64-declasse-mamba-gt",
-    "title": "'64 Declasse Mamba GT",
-    "maker": "Declasse",
-    "category": "Sports Cars"
-  },
-  {
-    "id": "vehicle-ubermacht-fcr-1000",
-    "title": "Übermacht FCR 1000",
-    "maker": "Übermacht",
-    "category": "Bikes"
-  },
-  {
-    "id": "vehicle-88-pfister-comet",
-    "title": "'88 Pfister Comet",
-    "maker": "Pfister",
-    "category": "Sports Cars"
-  },
-  {
-    "id": "vehicle-principe-esskey",
-    "title": "Principe Esskey",
-    "maker": "Principe",
-    "category": "Bikes"
-  },
-  {
-    "id": "vehicle-dubsta-custom",
-    "title": "Dubsta (custom)",
-    "maker": "Benefactor",
-    "category": "Blinged Up"
-  },
-  {
-    "id": "vehicle-reynolds-kit-car",
-    "title": "Reynolds Kit Car",
-    "maker": "Reynolds",
-    "category": "Sports Cars"
-  },
-  {
-    "id": "vehicle-90-annis-elegy",
-    "title": "'90 Annis Elegy",
-    "maker": "Annis",
-    "category": "Coupes"
+    "id": "vehicle-07-bravado-buffalo",
+    "title": "'07 Bravado Buffalo",
+    "maker": "Bravado",
+    "category": "Sedans"
   },
   {
     "id": "vehicle-19-bravado-buffalo",
@@ -66,22 +12,22 @@
     "category": "Sedans"
   },
   {
-    "id": "vehicle-vapid-dominator-asp",
-    "title": "Vapid Dominator ASP",
+    "id": "vehicle-20-declasse-impaler",
+    "title": "'20 Declasse Impaler",
+    "maker": "Declasse",
+    "category": "Sedans"
+  },
+  {
+    "id": "vehicle-32-vapid-golfer",
+    "title": "'32 Vapid Golfer",
     "maker": "Vapid",
-    "category": "Muscle Cars"
+    "category": "Utility Vehicles"
   },
   {
-    "id": "vehicle-72-western-cliffhanger",
-    "title": "'72 Western Cliffhanger",
-    "maker": "Western",
-    "category": "Bikes"
-  },
-  {
-    "id": "vehicle-western-nightblade",
-    "title": "Western Nightblade",
-    "maker": "Western",
-    "category": "Bikes"
+    "id": "vehicle-32-vapid-hustler",
+    "title": "'32 Vapid Hustler",
+    "maker": "Vapid",
+    "category": "Coupes"
   },
   {
     "id": "vehicle-50-albany-hermes",
@@ -90,184 +36,22 @@
     "category": "Muscle Cars"
   },
   {
-    "id": "vehicle-07-bravado-buffalo",
-    "title": "'07 Bravado Buffalo",
-    "maker": "Bravado",
-    "category": "Sedans"
-  },
-  {
-    "id": "vehicle-64-invetero-coquette",
-    "title": "'64 Invetero Coquette",
-    "maker": "Invetero",
-    "category": "Muscle Cars"
-  },
-  {
-    "id": "vehicle-68-classique-stallion",
-    "title": "'68 Classique Stallion",
-    "maker": "Classique",
-    "category": "Muscle Cars"
-  },
-  {
-    "id": "vehicle-73-bf-injection",
-    "title": "'73 BF Injection",
-    "maker": "BF",
-    "category": "Off-Road Vehicles"
-  },
-  {
-    "id": "vehicle-97-maibatsu-penumbra-ff",
-    "title": "'97 Maibatsu Penumbra FF",
-    "maker": "Maibatsu",
-    "category": "Coupes"
-  },
-  {
-    "id": "vehicle-67-vapid-dominator-buggy",
-    "title": "'67 Vapid Dominator Buggy",
-    "maker": "Vapid",
-    "category": "Off-Road Vehicles"
-  },
-  {
-    "id": "vehicle-72-dinka-enduro",
-    "title": "'72 Dinka Enduro",
-    "maker": "Dinka",
-    "category": "Bikes"
-  },
-  {
-    "id": "vehicle-65-vapid-dominator",
-    "title": "'65 Vapid Dominator",
-    "maker": "Vapid",
-    "category": "Muscle Cars"
-  },
-  {
-    "id": "vehicle-98-karin-feroci",
-    "title": "'98 Karin Feroci",
-    "maker": "Karin",
-    "category": "Sedans"
-  },
-  {
-    "id": "vehicle-69-bravado-gauntlet-custom",
-    "title": "'69 Bravado Gauntlet Custom",
-    "maker": "Bravado",
-    "category": "Muscle Cars"
-  },
-  {
-    "id": "vehicle-72-schyster-deviant",
-    "title": "'72 Schyster Deviant",
-    "maker": "Schyster",
-    "category": "Muscle Cars"
-  },
-  {
-    "id": "vehicle-20-declasse-impaler",
-    "title": "'20 Declasse Impaler",
-    "maker": "Declasse",
-    "category": "Sedans"
-  },
-  {
-    "id": "vehicle-85-ubermacht-sentinel",
-    "title": "'85 Übermacht Sentinel",
-    "maker": "Übermacht",
-    "category": "Sports Cars"
-  },
-  {
-    "id": "vehicle-70-vapid-ganado",
-    "title": "'70 Vapid Ganado",
-    "maker": "Vapid",
-    "category": "Muscle Cars"
-  },
-  {
-    "id": "vehicle-dundreary-landstalker-xl",
-    "title": "Dundreary Landstalker XL",
-    "maker": "Dundreary",
-    "category": "SUVs"
-  },
-  {
-    "id": "vehicle-72-declasse-picador",
-    "title": "'72 Declasse Picador",
+    "id": "vehicle-55-declasse-bobcat-500",
+    "title": "'55 Declasse Bobcat 500",
     "maker": "Declasse",
     "category": "Muscle Cars"
   },
   {
-    "id": "vehicle-72-declasse-tulip",
-    "title": "'72 Declasse Tulip",
-    "maker": "Declasse",
-    "category": "Muscle Cars"
-  },
-  {
-    "id": "vehicle-77-bf-bandito",
-    "title": "'77 BF Bandito",
-    "maker": "BF",
-    "category": "Off-Road Vehicles"
-  },
-  {
-    "id": "vehicle-90-willard-lasso",
-    "title": "'90 Willard Lasso",
-    "maker": "Willard",
-    "category": "Coupes"
-  },
-  {
-    "id": "vehicle-93-dundreary-arcturus",
-    "title": "'93 Dundreary Arcturus",
-    "maker": "Dundreary",
-    "category": "Coupes"
-  },
-  {
-    "id": "vehicle-95-declasse-impaler-sz",
-    "title": "'95 Declasse Impaler SZ",
-    "maker": "Declasse",
-    "category": "Sedans"
-  },
-  {
-    "id": "vehicle-98-vapid-stanier",
-    "title": "'98 Vapid Stanier",
+    "id": "vehicle-55-vapid-stanier",
+    "title": "'55 Vapid Stanier",
     "maker": "Vapid",
-    "category": "Sedans"
-  },
-  {
-    "id": "vehicle-lcc-avarus",
-    "title": "LCC Avarus",
-    "maker": "LCC",
-    "category": "Bikes"
-  },
-  {
-    "id": "vehicle-67-sirius-transgressor",
-    "title": "'67 Sirius Transgressor",
-    "maker": "Sirius",
     "category": "Muscle Cars"
   },
   {
-    "id": "vehicle-82-imponte-ruiner",
-    "title": "'82 Imponte Ruiner",
-    "maker": "Imponte",
-    "category": "Coupes"
-  },
-  {
-    "id": "vehicle-85-dinka-blista",
-    "title": "'85 Dinka Blista",
-    "maker": "Dinka",
-    "category": "Coupes"
-  },
-  {
-    "id": "vehicle-77-imponte-phoenix",
-    "title": "'77 Imponte Phoenix",
-    "maker": "Imponte",
+    "id": "vehicle-56-vapid-slamvan",
+    "title": "'56 Vapid Slamvan",
+    "maker": "Vapid",
     "category": "Muscle Cars"
-  },
-  {
-    "id": "vehicle-85-karin-futo",
-    "title": "'85 Karin Futo",
-    "maker": "Karin",
-    "category": "Coupes"
-  },
-  {
-    "id": "vehicle-karin-asterope-gz",
-    "title": "Karin Asterope GZ",
-    "maker": "Karin",
-    "category": "Sedans"
-  },
-  {
-    "id": "vehicle-mer-can-outlaw",
-    "title": "Mer-Can Outlaw",
-    "maker": "Mer-Can",
-    "category": "Off-Road Vehicles"
   },
   {
     "id": "vehicle-59-albany-devanity",
@@ -276,28 +60,22 @@
     "category": "Muscle Cars"
   },
   {
-    "id": "vehicle-84-declasse-bobcat-xl",
-    "title": "'84 Declasse Bobcat XL",
-    "maker": "Declasse",
-    "category": "Pickups"
-  },
-  {
-    "id": "vehicle-74-declasse-vamos",
-    "title": "'74 Declasse Vamos",
-    "maker": "Declasse",
-    "category": "Muscle Cars"
-  },
-  {
-    "id": "vehicle-84-karin-rebel",
-    "title": "'84 Karin Rebel",
-    "maker": "Karin",
-    "category": "Pickups"
-  },
-  {
-    "id": "vehicle-bravado-bogan",
-    "title": "Bravado Bogan",
-    "maker": "Bravado",
+    "id": "vehicle-61-sirius-sungrazer",
+    "title": "'61 Sirius Sungrazer",
+    "maker": "Sirius",
     "category": "Sedans"
+  },
+  {
+    "id": "vehicle-64-declasse-mamba-gt",
+    "title": "'64 Declasse Mamba GT",
+    "maker": "Declasse",
+    "category": "Sports Cars"
+  },
+  {
+    "id": "vehicle-64-invetero-coquette",
+    "title": "'64 Invetero Coquette",
+    "maker": "Invetero",
+    "category": "Muscle Cars"
   },
   {
     "id": "vehicle-65-albany-buccaneer",
@@ -312,33 +90,111 @@
     "category": "Muscle Cars"
   },
   {
-    "id": "vehicle-80-declasse-impaler",
-    "title": "'80 Declasse Impaler",
-    "maker": "Declasse",
-    "category": "Sedans"
-  },
-  {
-    "id": "vehicle-95-bravado-bison-900",
-    "title": "'95 Bravado Bison 900",
-    "maker": "Bravado",
-    "category": "Pickups"
-  },
-  {
-    "id": "vehicle-81-declasse-walton",
-    "title": "'81 Declasse Walton",
-    "maker": "Declasse",
-    "category": "Pickups"
-  },
-  {
-    "id": "vehicle-92-willard-grouse",
-    "title": "'92 Willard Grouse",
-    "maker": "Willard",
-    "category": "Sedans"
-  },
-  {
-    "id": "vehicle-55-vapid-stanier",
-    "title": "'55 Vapid Stanier",
+    "id": "vehicle-65-vapid-dominator",
+    "title": "'65 Vapid Dominator",
     "maker": "Vapid",
+    "category": "Muscle Cars"
+  },
+  {
+    "id": "vehicle-67-declasse-yosemite",
+    "title": "'67 Declasse Yosemite",
+    "maker": "Declasse",
+    "category": "Muscle Cars"
+  },
+  {
+    "id": "vehicle-67-sirius-transgressor",
+    "title": "'67 Sirius Transgressor",
+    "maker": "Sirius",
+    "category": "Muscle Cars"
+  },
+  {
+    "id": "vehicle-67-vapid-dominator-buggy",
+    "title": "'67 Vapid Dominator Buggy",
+    "maker": "Vapid",
+    "category": "Off-Road Vehicles"
+  },
+  {
+    "id": "vehicle-68-classique-stallion",
+    "title": "'68 Classique Stallion",
+    "maker": "Classique",
+    "category": "Muscle Cars"
+  },
+  {
+    "id": "vehicle-69-bravado-gauntlet-custom",
+    "title": "'69 Bravado Gauntlet Custom",
+    "maker": "Bravado",
+    "category": "Muscle Cars"
+  },
+  {
+    "id": "vehicle-70-vapid-ganado",
+    "title": "'70 Vapid Ganado",
+    "maker": "Vapid",
+    "category": "Muscle Cars"
+  },
+  {
+    "id": "vehicle-70-vapid-reclaimer",
+    "title": "'70 Vapid Reclaimer",
+    "maker": "Vapid",
+    "category": "Pickups"
+  },
+  {
+    "id": "vehicle-70-vapid-riata",
+    "title": "'70 Vapid Riata",
+    "maker": "Vapid",
+    "category": "SUVs"
+  },
+  {
+    "id": "vehicle-71-declasse-parkland",
+    "title": "'71 Declasse Parkland",
+    "maker": "Declasse",
+    "category": "Sedans"
+  },
+  {
+    "id": "vehicle-72-declasse-picador",
+    "title": "'72 Declasse Picador",
+    "maker": "Declasse",
+    "category": "Muscle Cars"
+  },
+  {
+    "id": "vehicle-72-declasse-tulip",
+    "title": "'72 Declasse Tulip",
+    "maker": "Declasse",
+    "category": "Muscle Cars"
+  },
+  {
+    "id": "vehicle-72-dinka-enduro",
+    "title": "'72 Dinka Enduro",
+    "maker": "Dinka",
+    "category": "Bikes"
+  },
+  {
+    "id": "vehicle-72-schyster-deviant",
+    "title": "'72 Schyster Deviant",
+    "maker": "Schyster",
+    "category": "Muscle Cars"
+  },
+  {
+    "id": "vehicle-72-western-cliffhanger",
+    "title": "'72 Western Cliffhanger",
+    "maker": "Western",
+    "category": "Bikes"
+  },
+  {
+    "id": "vehicle-73-bf-injection",
+    "title": "'73 BF Injection",
+    "maker": "BF",
+    "category": "Off-Road Vehicles"
+  },
+  {
+    "id": "vehicle-74-bravado-youga",
+    "title": "'74 Bravado Youga",
+    "maker": "Bravado",
+    "category": "Vans"
+  },
+  {
+    "id": "vehicle-74-declasse-vamos",
+    "title": "'74 Declasse Vamos",
+    "maker": "Declasse",
     "category": "Muscle Cars"
   },
   {
@@ -348,21 +204,15 @@
     "category": "Muscle Cars"
   },
   {
-    "id": "vehicle-dinka-verus",
-    "title": "Dinka Verus",
-    "maker": "Dinka",
-    "category": "Bikes"
+    "id": "vehicle-77-bf-bandito",
+    "title": "'77 BF Bandito",
+    "maker": "BF",
+    "category": "Off-Road Vehicles"
   },
   {
-    "id": "vehicle-61-sirius-sungrazer",
-    "title": "'61 Sirius Sungrazer",
-    "maker": "Sirius",
-    "category": "Sedans"
-  },
-  {
-    "id": "vehicle-67-declasse-yosemite",
-    "title": "'67 Declasse Yosemite",
-    "maker": "Declasse",
+    "id": "vehicle-77-imponte-phoenix",
+    "title": "'77 Imponte Phoenix",
+    "maker": "Imponte",
     "category": "Muscle Cars"
   },
   {
@@ -372,28 +222,10 @@
     "category": "Muscle Cars"
   },
   {
-    "id": "vehicle-85-schyster-woodland",
-    "title": "'85 Schyster Woodland",
-    "maker": "Schyster",
-    "category": "Sedans"
-  },
-  {
-    "id": "vehicle-98-declasse-burrito",
-    "title": "'98 Declasse Burrito",
-    "maker": "Declasse",
+    "id": "vehicle-78-osprey-journey",
+    "title": "'78 Osprey Journey",
+    "maker": "Osprey",
     "category": "Vans"
-  },
-  {
-    "id": "vehicle-71-declasse-parkland",
-    "title": "'71 Declasse Parkland",
-    "maker": "Declasse",
-    "category": "Sedans"
-  },
-  {
-    "id": "vehicle-56-vapid-slamvan",
-    "title": "'56 Vapid Slamvan",
-    "maker": "Vapid",
-    "category": "Muscle Cars"
   },
   {
     "id": "vehicle-79-bravado-youga-xl",
@@ -402,208 +234,10 @@
     "category": "Vans"
   },
   {
-    "id": "vehicle-95-annis-hellion",
-    "title": "'95 Annis Hellion",
-    "maker": "Annis",
-    "category": "SUVs"
-  },
-  {
-    "id": "vehicle-hvy-wastelander",
-    "title": "HVY Wastelander",
-    "maker": "HVY",
-    "category": "Off-Road Vehicles"
-  },
-  {
-    "id": "vehicle-nagasaki-nimbe",
-    "title": "Nagasaki Nimbe",
-    "maker": "Nagasaki",
-    "category": "Bikes"
-  },
-  {
-    "id": "vehicle-vapid-shuttle",
-    "title": "Vapid Shuttle",
-    "maker": "Vapid",
-    "category": "Vans"
-  },
-  {
-    "id": "vehicle-32-vapid-hustler",
-    "title": "'32 Vapid Hustler",
-    "maker": "Vapid",
-    "category": "Coupes"
-  },
-  {
-    "id": "vehicle-86-declasse-rancher",
-    "title": "'86 Declasse Rancher",
+    "id": "vehicle-80-declasse-impaler",
+    "title": "'80 Declasse Impaler",
     "maker": "Declasse",
-    "category": "Pickups"
-  },
-  {
-    "id": "vehicle-82-canis-crawler",
-    "title": "'82 Canis Crawler",
-    "maker": "Canis",
-    "category": "SUVs"
-  },
-  {
-    "id": "vehicle-85-albany-emperor",
-    "title": "'85 Albany Emperor",
-    "maker": "Albany",
     "category": "Sedans"
-  },
-  {
-    "id": "vehicle-55-declasse-bobcat-500",
-    "title": "'55 Declasse Bobcat 500",
-    "maker": "Declasse",
-    "category": "Muscle Cars"
-  },
-  {
-    "id": "vehicle-70-vapid-riata",
-    "title": "'70 Vapid Riata",
-    "maker": "Vapid",
-    "category": "SUVs"
-  },
-  {
-    "id": "vehicle-74-bravado-youga",
-    "title": "'74 Bravado Youga",
-    "maker": "Bravado",
-    "category": "Vans"
-  },
-  {
-    "id": "vehicle-bravado-aphid",
-    "title": "Bravado Aphid",
-    "maker": "Bravado",
-    "category": "Bikes"
-  },
-  {
-    "id": "vehicle-70-vapid-reclaimer",
-    "title": "'70 Vapid Reclaimer",
-    "maker": "Vapid",
-    "category": "Pickups"
-  },
-  {
-    "id": "vehicle-declasse-d7700",
-    "title": "Declasse D7700",
-    "maker": "Declasse",
-    "category": "Trucks"
-  },
-  {
-    "id": "vehicle-interstate-ambulance",
-    "title": "Interstate Ambulance",
-    "maker": "Interstate",
-    "category": "Emergency Vehicles"
-  },
-  {
-    "id": "vehicle-brute-rental-bus",
-    "title": "Brute Rental Bus",
-    "maker": "Declasse",
-    "category": "Transport Vehicles"
-  },
-  {
-    "id": "vehicle-maibatsu-iota",
-    "title": "Maibatsu Iota",
-    "maker": "Maibatsu",
-    "category": "Trucks"
-  },
-  {
-    "id": "vehicle-benefactor-spritz",
-    "title": "Benefactor Spritz",
-    "maker": "Benefactor",
-    "category": "Vans"
-  },
-  {
-    "id": "vehicle-jobuilt-rubble",
-    "title": "JoBuilt Rubble",
-    "maker": "JoBuilt",
-    "category": "Trucks"
-  },
-  {
-    "id": "vehicle-95-willard-trotter",
-    "title": "'95 Willard Trotter",
-    "maker": "Willard",
-    "category": "Vans"
-  },
-  {
-    "id": "vehicle-maibatsu-mule",
-    "title": "Maibatsu Mule",
-    "maker": "Maibatsu",
-    "category": "Trucks"
-  },
-  {
-    "id": "vehicle-78-osprey-journey",
-    "title": "'78 Osprey Journey",
-    "maker": "Osprey",
-    "category": "Vans"
-  },
-  {
-    "id": "vehicle-83-willard-moocher",
-    "title": "'83 Willard Moocher",
-    "maker": "Willard",
-    "category": "Vans"
-  },
-  {
-    "id": "vehicle-97-interstate-benson",
-    "title": "'97 Interstate Benson",
-    "maker": "Interstate",
-    "category": "Trucks"
-  },
-  {
-    "id": "vehicle-99-interstate-stockade",
-    "title": "'99 Interstate Stockade",
-    "maker": "Interstate",
-    "category": "Emergency Vehicles"
-  },
-  {
-    "id": "vehicle-cartright-biff",
-    "title": "Cartright Biff",
-    "maker": "Cartright",
-    "category": "Trucks"
-  },
-  {
-    "id": "vehicle-mtl-pumper",
-    "title": "MTL Pumper",
-    "maker": "MTL",
-    "category": "Emergency Vehicles"
-  },
-  {
-    "id": "vehicle-81-jobuilt-phantom-custom",
-    "title": "'81 JoBuilt Phantom Custom",
-    "maker": "JoBuilt",
-    "category": "Trucks"
-  },
-  {
-    "id": "vehicle-1776-phantom",
-    "title": "1776 Phantom",
-    "maker": "JoBuilt",
-    "category": "Patriot"
-  },
-  {
-    "id": "vehicle-cartright-hauler",
-    "title": "Cartright Hauler",
-    "maker": "Cartright",
-    "category": "Trucks"
-  },
-  {
-    "id": "vehicle-whiffler-airport-bus",
-    "title": "Whiffler Airport Bus",
-    "maker": "Whiffler",
-    "category": "Transport Vehicles"
-  },
-  {
-    "id": "vehicle-whiffler-bus",
-    "title": "Whiffler Bus",
-    "maker": "Whiffler",
-    "category": "Transport Vehicles"
-  },
-  {
-    "id": "vehicle-maibatsu-boomazoom",
-    "title": "Maibatsu Boomazoom",
-    "maker": "Maibatsu",
-    "category": "Bikes"
-  },
-  {
-    "id": "vehicle-32-vapid-golfer",
-    "title": "'32 Vapid Golfer",
-    "maker": "Vapid",
-    "category": "Utility Vehicles"
   },
   {
     "id": "vehicle-80-interstate-yankee",
@@ -612,10 +246,106 @@
     "category": "Utility Vehicles"
   },
   {
+    "id": "vehicle-81-declasse-walton",
+    "title": "'81 Declasse Walton",
+    "maker": "Declasse",
+    "category": "Pickups"
+  },
+  {
+    "id": "vehicle-81-jobuilt-phantom-custom",
+    "title": "'81 JoBuilt Phantom Custom",
+    "maker": "JoBuilt",
+    "category": "Trucks"
+  },
+  {
+    "id": "vehicle-82-canis-crawler",
+    "title": "'82 Canis Crawler",
+    "maker": "Canis",
+    "category": "SUVs"
+  },
+  {
+    "id": "vehicle-82-imponte-ruiner",
+    "title": "'82 Imponte Ruiner",
+    "maker": "Imponte",
+    "category": "Coupes"
+  },
+  {
     "id": "vehicle-82-maibatsu-caddy",
     "title": "'82 Maibatsu Caddy",
     "maker": "Maibatsu",
     "category": "Utility Vehicles"
+  },
+  {
+    "id": "vehicle-83-willard-moocher",
+    "title": "'83 Willard Moocher",
+    "maker": "Willard",
+    "category": "Vans"
+  },
+  {
+    "id": "vehicle-84-declasse-bobcat-xl",
+    "title": "'84 Declasse Bobcat XL",
+    "maker": "Declasse",
+    "category": "Pickups"
+  },
+  {
+    "id": "vehicle-84-karin-rebel",
+    "title": "'84 Karin Rebel",
+    "maker": "Karin",
+    "category": "Pickups"
+  },
+  {
+    "id": "vehicle-85-albany-emperor",
+    "title": "'85 Albany Emperor",
+    "maker": "Albany",
+    "category": "Sedans"
+  },
+  {
+    "id": "vehicle-85-dinka-blista",
+    "title": "'85 Dinka Blista",
+    "maker": "Dinka",
+    "category": "Coupes"
+  },
+  {
+    "id": "vehicle-85-karin-futo",
+    "title": "'85 Karin Futo",
+    "maker": "Karin",
+    "category": "Coupes"
+  },
+  {
+    "id": "vehicle-85-schyster-woodland",
+    "title": "'85 Schyster Woodland",
+    "maker": "Schyster",
+    "category": "Sedans"
+  },
+  {
+    "id": "vehicle-85-ubermacht-sentinel",
+    "title": "'85 Übermacht Sentinel",
+    "maker": "Übermacht",
+    "category": "Sports Cars"
+  },
+  {
+    "id": "vehicle-86-declasse-rancher",
+    "title": "'86 Declasse Rancher",
+    "maker": "Declasse",
+    "category": "Pickups"
+  },
+  {
+    "id": "vehicle-88-pfister-comet",
+    "title": "'88 Pfister Comet",
+    "maker": "Pfister",
+    "category": "Sports Cars"
+  },
+  {
+    "id": "vehicle-90-annis-elegy",
+    "title": "'90 Annis Elegy",
+    "maker": "Annis",
+    "category": "Coupes"
+  },
+  {
+    "id": "vehicle-90-willard-lasso",
+    "title": "'90 Willard Lasso",
+    "maker": "Willard",
+    "category": "Coupes"
   },
   {
     "id": "vehicle-92-mammoth-patriot",
@@ -624,34 +354,142 @@
     "category": "Military Vehicles"
   },
   {
+    "id": "vehicle-92-willard-grouse",
+    "title": "'92 Willard Grouse",
+    "maker": "Willard",
+    "category": "Sedans"
+  },
+  {
+    "id": "vehicle-93-dundreary-arcturus",
+    "title": "'93 Dundreary Arcturus",
+    "maker": "Dundreary",
+    "category": "Coupes"
+  },
+  {
+    "id": "vehicle-95-annis-hellion",
+    "title": "'95 Annis Hellion",
+    "maker": "Annis",
+    "category": "SUVs"
+  },
+  {
+    "id": "vehicle-95-bravado-bison-900",
+    "title": "'95 Bravado Bison 900",
+    "maker": "Bravado",
+    "category": "Pickups"
+  },
+  {
+    "id": "vehicle-95-declasse-impaler-sz",
+    "title": "'95 Declasse Impaler SZ",
+    "maker": "Declasse",
+    "category": "Sedans"
+  },
+  {
+    "id": "vehicle-95-willard-trotter",
+    "title": "'95 Willard Trotter",
+    "maker": "Willard",
+    "category": "Vans"
+  },
+  {
+    "id": "vehicle-96-pegassi-infernus",
+    "title": "'96 Pegassi Infernus",
+    "maker": "Pegassi",
+    "category": "Supercars"
+  },
+  {
+    "id": "vehicle-97-interstate-benson",
+    "title": "'97 Interstate Benson",
+    "maker": "Interstate",
+    "category": "Trucks"
+  },
+  {
+    "id": "vehicle-97-maibatsu-penumbra-ff",
+    "title": "'97 Maibatsu Penumbra FF",
+    "maker": "Maibatsu",
+    "category": "Coupes"
+  },
+  {
+    "id": "vehicle-98-declasse-burrito",
+    "title": "'98 Declasse Burrito",
+    "maker": "Declasse",
+    "category": "Vans"
+  },
+  {
+    "id": "vehicle-98-karin-feroci",
+    "title": "'98 Karin Feroci",
+    "maker": "Karin",
+    "category": "Sedans"
+  },
+  {
+    "id": "vehicle-98-vapid-stanier",
+    "title": "'98 Vapid Stanier",
+    "maker": "Vapid",
+    "category": "Sedans"
+  },
+  {
+    "id": "vehicle-99-interstate-stockade",
+    "title": "'99 Interstate Stockade",
+    "maker": "Interstate",
+    "category": "Emergency Vehicles"
+  },
+  {
     "id": "vehicle-99-jack-sheepe-fieldmaster",
     "title": "'99 Jack Sheepe Fieldmaster",
     "maker": "Jack Sheepe",
     "category": "Industrial Vehicles"
   },
   {
+    "id": "vehicle-1776-phantom",
+    "title": "1776 Phantom",
+    "maker": "JoBuilt",
+    "category": "Standout: Patriot"
+  },
+  {
     "id": "vehicle-avalanche-supervolito",
     "title": "Avalanche Supervolito",
     "maker": "Buckingham",
-    "category": "Ultra-Luxe"
+    "category": "Standout: Ultra-Luxe"
+  },
+  {
+    "id": "vehicle-benefactor-spritz",
+    "title": "Benefactor Spritz",
+    "maker": "Benefactor",
+    "category": "Vans"
   },
   {
     "id": "vehicle-black-dragon-mallard",
     "title": "Black Dragon Mallard",
     "maker": "Lapwing",
-    "category": "Leonida Man"
+    "category": "Standout: Leonida Man"
   },
   {
     "id": "vehicle-black-dragon-maverick",
     "title": "Black Dragon Maverick",
     "maker": "Buckingham",
-    "category": "Leonida Man"
+    "category": "Standout: Leonida Man"
   },
   {
     "id": "vehicle-bottcher-020",
     "title": "Bottcher 020",
     "maker": "Bottcher",
     "category": "Aircraft"
+  },
+  {
+    "id": "vehicle-bravado-aphid",
+    "title": "Bravado Aphid",
+    "maker": "Bravado",
+    "category": "Bikes"
+  },
+  {
+    "id": "vehicle-bravado-bogan",
+    "title": "Bravado Bogan",
+    "maker": "Bravado",
+    "category": "Sedans"
+  },
+  {
+    "id": "vehicle-brute-rental-bus",
+    "title": "Brute Rental Bus",
+    "maker": "Declasse",
+    "category": "Transport Vehicles"
   },
   {
     "id": "vehicle-buckingham-swift",
@@ -684,10 +522,22 @@
     "category": "Watercraft"
   },
   {
+    "id": "vehicle-cartright-biff",
+    "title": "Cartright Biff",
+    "maker": "Cartright",
+    "category": "Trucks"
+  },
+  {
+    "id": "vehicle-cartright-hauler",
+    "title": "Cartright Hauler",
+    "maker": "Cartright",
+    "category": "Trucks"
+  },
+  {
     "id": "vehicle-cellerica-shamal",
     "title": "Cellerica Shamal",
     "maker": "Buckingham",
-    "category": "Ultra-Luxe"
+    "category": "Standout: Ultra-Luxe"
   },
   {
     "id": "vehicle-crest-kayak",
@@ -696,10 +546,28 @@
     "category": "Watercraft"
   },
   {
+    "id": "vehicle-declasse-d7700",
+    "title": "Declasse D7700",
+    "maker": "Declasse",
+    "category": "Trucks"
+  },
+  {
     "id": "vehicle-dingus-garda",
     "title": "Dingus Garda",
     "maker": "Dingus",
     "category": "Emergency Vehicles"
+  },
+  {
+    "id": "vehicle-dinka-verus",
+    "title": "Dinka Verus",
+    "maker": "Dinka",
+    "category": "Bikes"
+  },
+  {
+    "id": "vehicle-dundreary-landstalker-xl",
+    "title": "Dundreary Landstalker XL",
+    "maker": "Dundreary",
+    "category": "SUVs"
   },
   {
     "id": "vehicle-endurex-aerobike",
@@ -738,16 +606,40 @@
     "category": "Transport Vehicles"
   },
   {
+    "id": "vehicle-hvy-wastelander",
+    "title": "HVY Wastelander",
+    "maker": "HVY",
+    "category": "Off-Road Vehicles"
+  },
+  {
     "id": "vehicle-inflatable-flamingo",
     "title": "Inflatable Flamingo",
     "maker": "Not verified in this atlas",
-    "category": "Watercraft"
+    "category": "boat"
+  },
+  {
+    "id": "vehicle-interstate-ambulance",
+    "title": "Interstate Ambulance",
+    "maker": "Interstate",
+    "category": "Emergency Vehicles"
+  },
+  {
+    "id": "vehicle-jobuilt-rubble",
+    "title": "JoBuilt Rubble",
+    "maker": "JoBuilt",
+    "category": "Trucks"
+  },
+  {
+    "id": "vehicle-karin-asterope-gz",
+    "title": "Karin Asterope GZ",
+    "maker": "Karin",
+    "category": "Sedans"
   },
   {
     "id": "vehicle-lacewing-maverick",
     "title": "Lacewing Maverick",
     "maker": "Buckingham",
-    "category": "Law & Order"
+    "category": "Standout: Law & Order"
   },
   {
     "id": "vehicle-lapwing-streamer-216-c",
@@ -756,10 +648,40 @@
     "category": "Aircraft"
   },
   {
+    "id": "vehicle-lcc-avarus",
+    "title": "LCC Avarus",
+    "maker": "LCC",
+    "category": "Bikes"
+  },
+  {
     "id": "vehicle-lifta",
     "title": "Lifta",
     "maker": "HVY",
     "category": "Utility Vehicles"
+  },
+  {
+    "id": "vehicle-maibatsu-boomazoom",
+    "title": "Maibatsu Boomazoom",
+    "maker": "Maibatsu",
+    "category": "Bikes"
+  },
+  {
+    "id": "vehicle-maibatsu-iota",
+    "title": "Maibatsu Iota",
+    "maker": "Maibatsu",
+    "category": "Trucks"
+  },
+  {
+    "id": "vehicle-maibatsu-mule",
+    "title": "Maibatsu Mule",
+    "maker": "Maibatsu",
+    "category": "Trucks"
+  },
+  {
+    "id": "vehicle-mer-can-outlaw",
+    "title": "Mer-Can Outlaw",
+    "maker": "Mer-Can",
+    "category": "Off-Road Vehicles"
   },
   {
     "id": "vehicle-mtl-cr5013",
@@ -768,10 +690,46 @@
     "category": "Industrial Vehicles"
   },
   {
+    "id": "vehicle-mtl-pumper",
+    "title": "MTL Pumper",
+    "maker": "MTL",
+    "category": "Emergency Vehicles"
+  },
+  {
+    "id": "vehicle-nagasaki-nimbe",
+    "title": "Nagasaki Nimbe",
+    "maker": "Nagasaki",
+    "category": "Bikes"
+  },
+  {
     "id": "vehicle-nagasaki-tao",
     "title": "Nagasaki Tao",
     "maker": "Nagasaki",
     "category": "Watercraft"
+  },
+  {
+    "id": "vehicle-pegassi-tempesti",
+    "title": "Pegassi Tempesti",
+    "maker": "Pegassi",
+    "category": "Supercars"
+  },
+  {
+    "id": "vehicle-principe-esskey",
+    "title": "Principe Esskey",
+    "maker": "Principe",
+    "category": "Bikes"
+  },
+  {
+    "id": "vehicle-principe-lectro",
+    "title": "Principe Lectro",
+    "maker": "Principe",
+    "category": "Bikes"
+  },
+  {
+    "id": "vehicle-reynolds-kit-car",
+    "title": "Reynolds Kit Car",
+    "maker": "Reynolds",
+    "category": "Sports Cars"
   },
   {
     "id": "vehicle-rugger-cretacean",
@@ -804,9 +762,45 @@
     "category": "Bikes"
   },
   {
+    "id": "vehicle-ubermacht-fcr-1000",
+    "title": "Übermacht FCR 1000",
+    "maker": "Übermacht",
+    "category": "Bikes"
+  },
+  {
+    "id": "vehicle-vapid-dominator-asp",
+    "title": "Vapid Dominator ASP",
+    "maker": "Vapid",
+    "category": "Muscle Cars"
+  },
+  {
+    "id": "vehicle-vapid-shuttle",
+    "title": "Vapid Shuttle",
+    "maker": "Vapid",
+    "category": "Vans"
+  },
+  {
     "id": "vehicle-walter-crusher",
     "title": "Walter Crusher",
     "maker": "Walter",
     "category": "Bikes"
+  },
+  {
+    "id": "vehicle-western-nightblade",
+    "title": "Western Nightblade",
+    "maker": "Western",
+    "category": "Bikes"
+  },
+  {
+    "id": "vehicle-whiffler-airport-bus",
+    "title": "Whiffler Airport Bus",
+    "maker": "Whiffler",
+    "category": "Transport Vehicles"
+  },
+  {
+    "id": "vehicle-whiffler-bus",
+    "title": "Whiffler Bus",
+    "maker": "Whiffler",
+    "category": "Transport Vehicles"
   }
 ]
