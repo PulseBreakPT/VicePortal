@@ -37,10 +37,10 @@ const grid=await read('../src/components/portal/CatalogGrid.js');
 for(const marker of ['Vehicle manufacturer','Vehicle class','vehicleStats','Data: GTA Town'])check(grid.includes(marker),'Missing catalogue integration: '+marker);
 
 const refs=JSON.parse(await read('../src/data/vehicleImageRefs.json'));
-const {collectImageReferences,validImageReference}=await import('./sync-vehicle-images.mjs');
+const {collectImageReferences,collectSupplementalImages,validImageReference}=await import('./sync-vehicle-images.mjs');
 const {vehicleSlug}=await import('../src/data/vehicleNormalizer.mjs');
 const imgURLs=new Set();
-check(Object.keys(refs).length>=10,'Reviewed vehicle image coverage regressed');
+check(Object.keys(refs).length>=11,'Reviewed vehicle image coverage regressed');
 for(const [id,ref] of Object.entries(refs)){
  const row=rows.find(r=>r.id===id);
  check(Boolean(row)&&vehicleSlug(row.title)===vehicleSlug(ref.title),'Image title mismatch: '+id);
@@ -60,6 +60,12 @@ for(const id of ['vehicle-seaspray-emerus','vehicle-black-widow-emerus']){
  check(!validImageReference({...refs[id],source:'https://gta6.house/library/vehicles/progen-emerus'},row),'Wrong variant source must fail');
 }
 
+const gpsFixture='<img alt="Dante&#39;s Vitello, a Ultra-Luxe standout vehicle in GTA 6" src="https://assets.gta6gps.com/standout/dantes-vitello.webp"><img alt="Black Widow Emerus, a Street Racer standout vehicle in GTA 6" src="https://assets.gta6gps.com/standout/seaspray-emerus.webp">';
+const gpsRefs=collectSupplementalImages(gpsFixture,rows,'gps');
+check(Object.keys(gpsRefs).length===1&&gpsRefs['vehicle-dantes-vitello']?.image===refs['vehicle-dantes-vitello'].image,'GPS must accept exact name and reject wrong variant');
+const alcastFixture='<tr><td><img alt="Progen Seaspray Emerus GTA 6 Icon" src="https://alcasthq.com/wp-content/uploads/2026/11/Progen-Seaspray-Emerus-GTA-6-Icon.webp"></td><td>Progen Seaspray Emerus</td></tr><tr><td><img alt="Progen Black Widow Emerus GTA 6 Icon" src="https://alcasthq.com/wp-content/uploads/2026/11/Progen-Seaspray-Emerus-GTA-6-Icon.webp"></td><td>Progen Black Widow Emerus</td></tr>';
+const iconRefs=collectSupplementalImages(alcastFixture,rows,'alcast');
+check(Object.keys(iconRefs).length===1&&validImageReference(iconRefs['vehicle-seaspray-emerus'],rows.find(row=>row.id==='vehicle-seaspray-emerus')),'Icon parser must reject wrong variant');
 const renderer=await read('../src/data/vehicleRecords.js');
 check(renderer.includes('imageRef?imageRef.image:placeholder')&&!renderer.includes('legacyImages'),'Vehicle image renderer must use reviewed references');
 
