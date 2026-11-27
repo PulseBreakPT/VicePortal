@@ -30,7 +30,7 @@ const field=(row,...keys)=>{
  const values=Object.fromEntries(Object.entries(row||{}).map(([k,v])=>[fieldKey(k),v]));
  for(const k of keys){const v=values[fieldKey(k)];if(v!==undefined&&v!==null&&v!=='')return v;}
 };
-const str=v=>typeof v==='string'||typeof v==='number'?String(v).trim():'';
+const str=v=>typeof v==='string'||typeof v==='number'||typeof v==='boolean'?String(v).trim():'';
 const score=v=>{if(v===undefined||v===null||v==='')return null;const n=Number(String(v).trim().replace(/\s*\/\s*10$/,''));return Number.isFinite(n)&&n>=0&&n<=10?n:null;};
 const sourceURL=v=>{try{const u=new URL(String(v),'https://gtatown.com');return u.protocol==='https:'&&u.hostname==='gtatown.com'&&u.pathname.startsWith('/garage/vehicles')?u.href:'https://gtatown.com/garage/vehicles';}catch{return 'https://gtatown.com/garage/vehicles';}};
 export function extractRows(input){
@@ -46,7 +46,7 @@ export function normalizeVehicles(input){
  for(const row of rows){
   const title=str(field(row,'name','title','vehicle_name','display_name','vehicle'));
   const maker=str(field(row,'maker','manufacturer','make','brand'))||'Not verified in this atlas';
-  const category=str(field(row,'vehicle_class','class','category','class_name','class_label','collection','standout_set'));
+  const category=str(field(row,'vehicle_class','class','category','class_name','class_label','collection','standout_set','className'));
   const type=str(field(row,'type','vehicle_type','kind','type_name'));
   if(!title||!category)throw new Error('Missing vehicle title or class in source export: '+JSON.stringify(row).slice(0,200));
   const canonical=vehicleSlug(title), prefixed=canonical.startsWith(vehicleSlug(maker)+'-')?canonical:vehicleSlug(maker+' '+title);
