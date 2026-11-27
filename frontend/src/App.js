@@ -5,6 +5,8 @@ import Lenis from 'lenis';
 import { Toaster } from 'sonner';
 import { useAtlas } from './hooks/useAtlas';
 import { useCinematicEffects } from './hooks/useCinematicEffects';
+import { useCardFlight } from './hooks/useCardFlight';
+import { KineticTitle } from './components/KineticTitle';
 import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
 import { Marquee, World } from './components/World';
@@ -31,6 +33,7 @@ import './Nightfall.css';
 import './Dossier.css';
 import './Cinematic.css';
 import './NeonCipher.css';
+import './Smooth.css';
 
 function AtlasApp() {
   const atlas = useAtlas();
@@ -41,6 +44,7 @@ function AtlasApp() {
   useCinematicEffects(cinematicRoot, path, reduced);
   const section = sections.find(s => s.path === path);
   const item = entries.find(e => e.path === path);
+  useCardFlight(path,item?.id);
   const home = path === '/';
   const experience = path === '/experience';
   let area = section || sectionById[item?.collections[0]];
@@ -61,7 +65,7 @@ function AtlasApp() {
     <a href="#main-content" className="skip-link" data-testid="skip-content">Skip to content</a>
     {home && <RockstarRibbon/>}
     <Navigation {...atlas}/>
-    <main id="main-content" tabIndex={-1} data-testid="main-content">{home?<><Hero {...atlas}/><QuickDestinations/><TownHub {...atlas}/><Wire {...atlas}/><FreshLinks {...atlas}/><ExperienceTeaser/><World {...atlas}/><Marquee/><Characters {...atlas}/><Gallery {...atlas}/></>:experience?<div className="experience-page"><header className="experience-page-heading"><Link to="/directory" data-testid="experience-back">← All pages</Link><h1 data-testid="experience-title">THE GTA VI EXPERIENCE</h1></header><RockstarExperience {...atlas}/></div>:<PortalLayout><div key={path} className="cinema-route">{section?<SectionPage section={section} atlas={atlas}/>:item?<DetailPage item={item} atlas={atlas}/>:path==='/directory'?<DirectoryPage/>:<div className="portal-not-found" data-testid="not-found"><span className="portal-kicker">404</span><h1 data-testid="not-found-title">Page not found</h1><p>Check the address or browse the directory.</p><Link to="/directory" className="portal-button" data-testid="not-found-directory">All pages</Link></div>}</div></PortalLayout>}</main>
+    <main id="main-content" tabIndex={-1} data-testid="main-content">{home?<><Hero {...atlas}/><QuickDestinations/><TownHub {...atlas}/><Wire {...atlas}/><FreshLinks {...atlas}/><ExperienceTeaser/><World {...atlas}/><Marquee/><Characters {...atlas}/><Gallery {...atlas}/></>:experience?<div className="experience-page"><header className="experience-page-heading"><Link to="/directory" data-testid="experience-back">← All pages</Link><h1 data-testid="experience-title"><KineticTitle value="THE GTA VI EXPERIENCE"/></h1></header><RockstarExperience {...atlas}/></div>:<PortalLayout><div key={path} className="cinema-route">{section?<SectionPage section={section} atlas={atlas}/>:item?<DetailPage item={item} atlas={atlas}/>:path==='/directory'?<DirectoryPage/>:<div className="portal-not-found" data-testid="not-found"><span className="portal-kicker">404</span><h1 data-testid="not-found-title">Page not found</h1><p>Check the address or browse the directory.</p><Link to="/directory" className="portal-button" data-testid="not-found-directory">All pages</Link></div>}</div></PortalLayout>}</main>
     {home?<Footer {...atlas}/>:<CompactFooter/>}<Overlays {...atlas}/>
     <Toaster theme="dark" position="bottom-right" richColors/>
   </div></MotionConfig>;

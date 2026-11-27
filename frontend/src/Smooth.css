@@ -1,0 +1,77 @@
+/* SSS Smooth: finite, scoped enhancements; existing layout and colors remain authoritative. */
+.atlas-app { --smooth-ease:cubic-bezier(.2,.8,.2,1); --smooth-velocity:0px; }
+.smooth-flight-ghost { position:fixed; z-index:9998; pointer-events:none; object-fit:contain; transform-origin:top left; margin:0; max-width:none; max-height:none; background:var(--gta-midnight,#151526); }
+.atlas-app [data-smooth-flight] { visibility:hidden; }
+.atlas-app .smooth-sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap; }
+.atlas-app .smooth-kinetic-word { display:inline-block;white-space:nowrap; }
+.atlas-app .smooth-kinetic-letter { display:inline-block;animation:smooth-letter .42s var(--smooth-ease) both;animation-delay:calc(var(--kinetic-order,0)*18ms); }
+@keyframes smooth-letter { from {opacity:.55;translate:0 .13em} to {opacity:1;translate:0 0} }
+
+/* A single moving underline, with the original active state as fallback. */
+.atlas-app .town-nav.smooth-nav { position:relative; }
+.atlas-app .smooth-nav-indicator { display:none;position:absolute;left:0;bottom:-10px;height:2px;border-radius:4px;background:linear-gradient(90deg,var(--section-accent),var(--gta-peach));pointer-events:none;transform-origin:left center; }
+.atlas-app .smooth-nav[data-smooth-nav-ready] .smooth-nav-indicator { display:block; }
+.atlas-app .smooth-nav[data-smooth-nav-ready] > .nav-active:after { opacity:0; }
+.atlas-app .smooth-nav > a:focus-visible:after { opacity:1; }
+
+/* Different surfaces own different motion properties; no competing card transforms. */
+.atlas-app .smooth-odometer { position:relative;display:inline-block;overflow:hidden;vertical-align:bottom;line-height:inherit;font-variant-numeric:tabular-nums; }
+.atlas-app .smooth-odometer-value { display:block; }
+.atlas-app .smooth-odometer-old { display:none;position:absolute;inset:0;pointer-events:none; }
+.atlas-app .smooth-odometer[data-roll-active] .smooth-odometer-value { animation:smooth-roll-in .3s var(--smooth-ease) both; }
+.atlas-app .smooth-odometer[data-roll-active] .smooth-odometer-old { display:block;animation:smooth-roll-out .3s var(--smooth-ease) both; }
+.atlas-app .smooth-odometer-old::before { content:attr(data-roll-previous); }
+@keyframes smooth-roll-in { from {translate:0 calc(var(--roll-direction,1)*90%);opacity:.2} to {translate:0 0;opacity:1} }
+@keyframes smooth-roll-out { from {translate:0 0;opacity:1} to {translate:0 calc(var(--roll-direction,1)*-90%);opacity:0} }
+
+/* Ambient light runs one short sweep on entry, never a permanent animated background. */
+.atlas-app .pause-art { background-size:130% 130%;animation:smooth-aurora 2.2s ease-out both; }
+@keyframes smooth-aurora { from{background-position:0 0}to{background-position:60% 40%} }
+.atlas-app .portal-card-image::after,.atlas-app .record-image:not(.record-video)::after {
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse at center,transparent 58%,#15152633 100%);
+}
+.atlas-app .portal-card-image::after { background:linear-gradient(115deg,transparent 30%,#fff0 43%,#fff2 49%,transparent 59%) 150% 0/250% 100% no-repeat,radial-gradient(ellipse at center,transparent 58%,#15152633 100%); }
+.atlas-app .record-image::after { z-index:0; }
+.atlas-app .record-image>button { z-index:1; }
+.atlas-app .portal-card:focus-within { border-color:var(--section-accent); box-shadow:0 0 0 1px color-mix(in srgb,var(--section-accent) 30%,transparent); }
+.atlas-app .pause-row.selected .pause-row-copy { color:var(--gta-cream); }
+.atlas-app .pause-row .pause-row-arrow { transition:opacity .25s,scale .25s; }
+.atlas-app .pause-row.selected .pause-row-arrow { scale:1.07; }
+.atlas-app .checklist-meter>span { transition:width .42s var(--smooth-ease); }
+
+/* Native details keep keyboard and screen-reader semantics. Supporting browsers animate both directions. */
+@supports (interpolate-size: allow-keywords) and selector(details::details-content) {
+  .atlas-app :is(.atlas-tree details,.mobile-atlas-navigation) { interpolate-size:allow-keywords; }
+  .atlas-app :is(.atlas-tree details,.mobile-atlas-navigation)::details-content { block-size:0;overflow:clip;opacity:0;transition:block-size .28s var(--smooth-ease),opacity .2s,content-visibility .28s allow-discrete; }
+  .atlas-app :is(.atlas-tree details,.mobile-atlas-navigation)[open]::details-content { block-size:auto;opacity:1; }
+}
+@supports not ((interpolate-size:allow-keywords) and selector(details::details-content)) {
+  .atlas-app .atlas-tree details[open]>.atlas-tree-children,.atlas-app .mobile-atlas-navigation[open]>div { animation:smooth-accordion-in .22s var(--smooth-ease) both; }
+}
+@keyframes smooth-accordion-in { from{opacity:.6;translate:0 -4px}to{opacity:1;translate:0 0} }
+@media (min-width:900px) and (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  .atlas-app .portal-card:hover .portal-card-image::after { animation:smooth-sweep .65s var(--smooth-ease) both; }
+  @keyframes smooth-sweep { from{background-position:150% 0,0 0}to{background-position:-50% 0,0 0} }
+  /* Existing tilt owns transform. Elastic response uses the independent scale property. */
+  .atlas-app .portal-card[data-cinema-active] { scale:1.012;transition:scale .38s cubic-bezier(.2,1.35,.4,1),transform .18s ease-out,box-shadow .25s,border-color .25s; }
+  .atlas-app .portal-card { scale:1;transition:scale .35s var(--smooth-ease),transform .3s,background-color .3s,box-shadow .3s; }
+  .atlas-app .portal-card:focus-within { scale:1; }
+  .atlas-app :is(.portal-button,.atlas-button):active { scale:.98; }
+  .atlas-app .world-panorama-copy { translate:0 var(--smooth-velocity);transition:translate .2s var(--smooth-ease); }
+  .atlas-app .pause-photo-caption { translate:0 calc(var(--cinema-parallax,0px)*-.18); }
+}
+@media (max-width:899px),(pointer:coarse) {
+  .atlas-app .pause-art { animation:none; }
+  .atlas-app .smooth-kinetic-letter { animation-delay:calc(var(--kinetic-order,0)*8ms); }
+}
+@media (prefers-reduced-motion:reduce),(forced-colors:active),print {
+  .smooth-flight-ghost { display:none!important; }
+  .atlas-app [data-smooth-flight] { visibility:visible; }
+  .atlas-app :is(.smooth-kinetic-letter,.pause-art,.portal-card-image::after,.smooth-odometer-value,.smooth-odometer-old) { animation:none!important;translate:none;scale:1;opacity:1; }
+  .atlas-app .smooth-odometer-old { display:none!important; }
+  .atlas-app .smooth-nav-indicator { transition:none; }
+  .atlas-app :is(.atlas-tree details,.mobile-atlas-navigation)::details-content { transition:none; }
+  .atlas-app .atlas-tree details[open]>.atlas-tree-children,.atlas-app .mobile-atlas-navigation[open]>div { animation:none; }
+  .atlas-app .checklist-meter>span { transition:none; }
+}
