@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check, EyeOff, Info, ShieldCheck } from 'lucide-react';
 
-export const sourceName = item => item.source.includes('gtabase')?'GTABase':item.source.includes('gtatown')?'GTA Town':'Rockstar Games';
+export const sourceName = item => item.source.includes('gtabase')?'GTABase':item.source.includes('gtatown')?'GTA Town':item.source.includes('gta6ops.com')?'GTA6Ops':item.source.includes('powerpyx.com')?'PowerPyx':'Rockstar Games';
 export const isUnknown = value => /^not verified/i.test(value);
 export const typeLabel = item => item.kind==='Story'?'Article':item.kind;
 
@@ -26,7 +26,7 @@ export const DossierMeta = ({item,section,atlas,task,dimensions}) => {
   const official=item.status==='Official source';
   const protectedStory=item.spoiler&&!atlas.spoilers;
   const comparable=['Vehicle','Weapon'].includes(item.kind);
-  const facts=getFacts(item,section,dimensions);
+  const facts=getFacts(item,section,dimensions).filter(([name])=>!protectedStory||['Role','Credited performer','Credit section','Credited as','Evidence'].includes(name));
   return <aside className="record-meta" aria-label="Entry summary" data-testid="detail-summary">
     <div className="record-meta-heading"><span>AT A GLANCE</span><span aria-hidden="true">{typeLabel(item).toUpperCase()}</span></div>
     <dl className="record-quick-facts">{facts.map(([name,value],i)=><div key={name}><dt>{name}</dt><dd data-testid={`detail-quick-fact-${i}`}>{value}</dd></div>)}</dl>

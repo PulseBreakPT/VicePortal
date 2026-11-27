@@ -15,6 +15,7 @@ const rows = [
   ['characters/protagonists','Protagonists','characters','Jason Duval and Lucia Caminos.','jason_and_lucia_01'],
   ['characters/supporting','Supporting characters','characters','The supporting cast, including credited roles and sourced biographies.','cal_hampton_01'],
   ['characters/side-contacts','Side contacts','characters','Optional encounters and side-mission contacts with documented references.','cal_hampton_01'],
+  ['characters/encounters','Additional encounters','characters','Named gameplay and media appearances without established cast credits.','vice_city_06'],
   ['gangs','Gangs & factions','story','Organisations and documented affiliations.','ambrosia_01'],
   ['missions','Missions','story','Main missions, side missions and encounters.','story-preview'],
   ['missions/main','Main story','missions','Story missions and their requirements.','jason_and_lucia_01'],
@@ -92,4 +93,4 @@ export const sectionById = Object.fromEntries(sections.map(s => [s.id, s]));
 export const childrenOf = id => sections.filter(s => s.parent === id);
 export const rootSections = sections.filter(s => !s.parent);
 export const descendantIds = id => [id, ...childrenOf(id).flatMap(s => descendantIds(s.id))];
-export const sourceLabel = url => url?.includes('gtabase') ? 'GTABase · community reference' : url?.includes('gtatown') ? 'GTA Town · community reference' : 'Rockstar Games · official';
+export const sourceLabel = url => url?.includes('gtabase') ? 'GTABase · community reference' : url?.includes('gtatown') ? 'GTA Town · community reference' : url?.includes('gta6ops.com') ? 'GTA6Ops · community reference' : url?.includes('powerpyx.com') ? 'PowerPyx · community reference' : 'Rockstar Games · official';

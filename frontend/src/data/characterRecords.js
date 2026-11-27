@@ -923,9 +923,374 @@ function record([title,performer], castSection) {
     verifiedOn:'2026-11-27',
   };
 }
+const enrichment = {
+  "Captain Aldo Méndez": [
+    "https://gta6ops.com/story/aldo-mendez/",
+    "A senior police officer whose pursuit of the protagonists over missing evidence drives much of the conflict.",
+    "Tourist Trap",
+    "Law enforcement",
+    [
+      "jason-duval",
+      "lucia-caminos",
+      "deputy-sarah-fitzroy"
+    ]
+  ],
+  "Deputy Sarah Fitzroy": [
+    "https://gta6ops.com/story/sarah-fitzroy/",
+    "An officer who assists Jason when the station comes under attack.",
+    "Protective Custody",
+    "Law enforcement",
+    [
+      "jason-duval",
+      "captain-aldo-mendez"
+    ]
+  ],
+  "Moses \"Mo\" Watkins": [
+    "https://www.powerpyx.com/gta-6-moses-watkins-character/",
+    "A Port Gellhorn mechanic and Vicki’s friend. Lucia meets him through the vehicle storyline.",
+    "Moses (Take A Vehicle to Moses)",
+    "Automotive",
+    [
+      "vicki",
+      "lucia-caminos"
+    ]
+  ],
+  "Nicole Park": [
+    "https://www.powerpyx.com/gta-6-nicole-park-character/",
+    "An employee of Sinfrontera National Bank with expertise in its security systems.",
+    "Security Expert",
+    "Bank security",
+    [
+      "raul-bautista"
+    ]
+  ],
+  "Linda": [
+    null,
+    "Manages the Starlet Motel in Kelly County, where the protagonists recover.",
+    null,
+    "Hospitality",
+    []
+  ],
+  "Vicki": [
+    null,
+    "A Delights performer who lives at the Starlet Motel and connects Lucia with local contacts.",
+    null,
+    "Nightlife",
+    [
+      "frankie-delight",
+      "dunk",
+      "moses-mo-watkins"
+    ]
+  ],
+  "Mattia Tauro": [
+    null,
+    "Kat’s wealthy boyfriend, with connections to influential people in Vice City.",
+    null,
+    null,
+    [
+      "katerina-rosselli",
+      "giorgio-gallo"
+    ]
+  ],
+  "Raymond": [
+    null,
+    "Associated with San4San and Ernesto’s drug operation.",
+    null,
+    null,
+    [
+      "ernesto"
+    ]
+  ],
+  "Petra Navarro": [
+    null,
+    "A Megamundo executive introduced through Valentina.",
+    null,
+    "Megamundo",
+    [
+      "valentina",
+      "andres-de-leon"
+    ]
+  ],
+  "Nathan \"Nate\" Bozer": [
+    null,
+    "An Ajax Gym bodybuilder and member of Kordell’s circle.",
+    null,
+    "Ajax Gym",
+    [
+      "kordell-grant"
+    ]
+  ],
+  "Mandy": [
+    null,
+    "A tenant of Brian Heder in the Keys who takes an interest in Jason.",
+    null,
+    null,
+    [
+      "brian-heder",
+      "jason-duval"
+    ]
+  ],
+  "Kyle McKittrick": [
+    null,
+    "A crop-dusting pilot associated with McKittrick Farm near the Starlet Motel.",
+    null,
+    "Agriculture",
+    []
+  ],
+  "Santino": [
+    null,
+    "Works at the Y Hotel in Ocean Beach as a concierge.",
+    null,
+    "Hospitality",
+    []
+  ],
+  "Shayna": [
+    null,
+    "A friend Lucia met while incarcerated.",
+    null,
+    null,
+    [
+      "lucia-caminos"
+    ]
+  ],
+  "Shirley Baker": [
+    null,
+    "Jason’s Key Lento neighbour, who offers optional errands.",
+    null,
+    null,
+    [
+      "jason-duval"
+    ]
+  ],
+  "Counselor Stefanie Gates": [
+    null,
+    "A corrections-system employee who appears in Lucia’s early storyline.",
+    null,
+    "Corrections",
+    [
+      "lucia-caminos"
+    ]
+  ],
+  "Valentina": [
+    null,
+    "Arranges an escort job involving Andrés and introduces the protagonists to Megamundo contacts.",
+    null,
+    null,
+    [
+      "andres-de-leon",
+      "petra-navarro"
+    ]
+  ],
+  "Vinny Capsik": [
+    null,
+    "A specialist associated with Giorgio Gallo, alongside Kevin and Liz.",
+    null,
+    null,
+    [
+      "giorgio-gallo",
+      "kevin-kueh",
+      "liz-jackson"
+    ]
+  ],
+  "Wyman": [
+    null,
+    "A mechanic who operates Wyman’s World Auto Salvage Co.",
+    null,
+    "Automotive",
+    []
+  ],
+  "Mia Caminos": [
+    null,
+    "Lucia’s mother, who has business interests in Vice City.",
+    null,
+    null,
+    [
+      "lucia-caminos"
+    ]
+  ],
+  "Rafa de León Navarro": [
+    null,
+    "Son of Andrés and Petra, with an interest in video games.",
+    null,
+    null,
+    [
+      "andres-de-leon",
+      "petra-navarro"
+    ]
+  ],
+  "Dre'Quan Priest": [
+    "https://www.gtabase.com/characters/gta-6/dre-quan-priest",
+    "Runs music ventures in Vice City with Boobie and represents Real Dimez.",
+    null,
+    "Only Raw Records",
+    [
+      "boobie-ike",
+      "real-dimez",
+      "bae-luxe",
+      "roxy-rashad"
+    ]
+  ]
+};
+const additionalEncounters = [
+  [
+    "Alexi",
+    "alexi",
+    "Connected to Dardan and Burim in the Key Lento attack."
+  ],
+  [
+    "Charles",
+    "charles",
+    "Darnell’s brother, investigated in Here, Kitty Kitty."
+  ],
+  [
+    "Dice",
+    "dice",
+    "An opponent in Arlo’s underground fighting venue."
+  ],
+  [
+    "Dumpster Lawyer",
+    "dumpster-lawyer",
+    "A recurring street encounter involving a man who claims to practice law."
+  ],
+  [
+    "Eddie Acosta",
+    "eddie-acosta",
+    "A cryptocurrency promoter encountered during Pool Day."
+  ],
+  [
+    "Hector",
+    "hector",
+    "Runs the nightclub visited in Adventures in Babysitting."
+  ],
+  [
+    "Jackson — shooting-range encounter",
+    "jackson-shooting-range-encounter",
+    "A stranger encountered through shooting-range challenges; not established as Officer Jackson."
+  ],
+  [
+    "Manuel",
+    "manuel",
+    "A Hit ’n’ Run VC street-racing contact introduced through Dre’Quan."
+  ],
+  [
+    "Mario",
+    "mario",
+    "A performer at Delights Cabaret; not established as Mitico Mario."
+  ],
+  [
+    "Marti",
+    "marti",
+    "Hector’s associate in the nightclub storyline."
+  ],
+  [
+    "Martin",
+    "martin",
+    "Delights Cabaret security worker; his appearance in Afternoon Delight depends on the selected approach."
+  ],
+  [
+    "Nico — Vape & Smoke Shop",
+    "nico-vape-smoke-shop",
+    "Yasmani introduces this contact during Chapter 3. Nico facilitates collection of stolen goods in the game and is not established as the Hitman."
+  ],
+  [
+    "Pedro — café waiter",
+    "pedro-cafe-waiter",
+    "Serves Mia and Lucia during Mami Knows Best. Mia says he is training to become a veterinarian."
+  ],
+  [
+    "Raph",
+    "raph",
+    "Shayna’s partner, introduced through her optional post-prison storyline."
+  ],
+  [
+    "Rob — exotic-car dealer",
+    "rob-exotic-car-dealer",
+    "Dealership contact in Company Cars, reached through Santino after Valentina arranges access."
+  ],
+  [
+    "Rocco",
+    "rocco",
+    "A contact in Andrés de León’s circle whom Jason meets in Adventures in Babysitting."
+  ],
+  [
+    "Sandy",
+    "sandy",
+    "Receptionist at Lucretia Law Group, introduced in Lawyer Up."
+  ],
+  [
+    "Santiago",
+    "santiago",
+    "Organizes street racing in Vice City and sends invitations after an optional Chapter 3 race."
+  ],
+  [
+    "Tommy (Tomás)",
+    "tommy-tomas",
+    "Jason and Lucia’s son; Lorena cares for him during Lucia’s imprisonment."
+  ],
+  [
+    "Vanessa — Bayside tenant",
+    "vanessa-bayside-tenant",
+    "Former resident of the protagonists’ Bayside apartment, known through belongings and messages rather than a face-to-face meeting."
+  ],
+  [
+    "Zach",
+    "zach",
+    "A Starlet Motel acquaintance who directs Lucia to Vicki during the Chapter 2 storyline."
+  ],
+  [
+    "Andrew Node",
+    "andrew-node",
+    "Identified through the No Flusher investigation, which connects his address to a custom Truffade Thrax."
+  ],
+  [
+    "Camillo",
+    "camillo",
+    "A Vice City online content creator."
+  ],
+  [
+    "Dave — Circles of Hell",
+    "dave-circles-of-hell",
+    "The transport contact who introduces the campsite encounter near Port Gellhorn."
+  ],
+  [
+    "José Bermúdez",
+    "jose-bermudez",
+    "A contact near the Friends of Freedom memorial who introduces the Russo bunker mystery."
+  ],
+  [
+    "Mister Mangrove — Skunk Ape",
+    "mister-mangrove",
+    "The creature Kirk claims to be pursuing; its nature is not established by that claim."
+  ],
+  [
+    "Phil",
+    "phil",
+    "A figure in the Ammu-Nation advertisement in Trailer 2."
+  ],
+  [
+    "President Russo",
+    "president-russo",
+    "A named figure in the bunker investigation."
+  ],
+  [
+    "The Pretender",
+    "the-pretender",
+    "The final opponent in the optional Circles of Hell challenge."
+  ]
+];
+function enrichCharacter(item) {
+  const d=enrichment[item.title];
+  if(!d)return item;
+  const [url,bio,firstMission,occupation,relations]=d;
+  return {...item,paragraphs:[bio],attributes:{...item.attributes,...(firstMission?{'First documented mission':firstMission}:{}),...(occupation?{'Occupation / affiliation':occupation}:{}),Evidence:item.status==='Official source'?'Official profile and community research':'Official cast credit; community biography'},relatedCharacterIds:relations,relatedSources:[...(item.relatedSources||[]),{label:url?.includes('powerpyx')?'PowerPyx — individual profile':url?.includes('gtabase')?'GTABase — individual profile':url?'GTA6Ops — individual profile':'GTABase — supporting character guide',url:url||gtabase}].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i),...(item.attributes.Evidence==='Official cast credit only'?{description:bio,paragraphs:[],status:'Community reference',source:url||gtabase,details:['Official cast credit; community biography']}: {})};
+}
+function encounter([title,id,description]) {
+  return {id,title,kind:'Character',category:'Additional encounter',subtitle:'Documented named appearance',tag:'ADDITIONAL ENCOUNTER',image:placeholder,placeholderImage:true,source:'https://gta6ops.com/story/'+id+'/',status:'Community reference',spoiler:true,description,details:['No matching cast credit established'],attributes:{Role:'Additional encounter / named appearance','Credited performer':'Not verified in this atlas',Evidence:'Community gameplay or appearance reference'},relatedSources:[{label:'GTA6Ops — character directory',url:ops},{label:'PowerPyx — character index',url:powerpyx}],verifiedOn:'2026-11-27'};
+}
 export const characterRecords = [
-  ...main.map(row=>record(row,'Main Cast')),
-  ...full.map(row=>record(row,'Full Cast')),
+  ...main.map(row=>enrichCharacter(record(row,'Main Cast'))),
+  ...full.map(row=>enrichCharacter(record(row,'Full Cast'))),
+  ...additionalEncounters.map(encounter),
   {id:'real-dimez',title:'Real Dimez',kind:'Character',category:'Music duo',subtitle:'Bae-Luxe and Roxy Rashad',tag:'MUSIC DUO',
    image:'/images/real_dimez_01.webp',source:profiles,status:'Official source',spoiler:true,
    description:'Rap duo formed by Bae-Luxe and Roxy, signed to Only Raw Records. Their early collaboration with DWNPLY helped establish their career.',
