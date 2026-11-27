@@ -1,9 +1,10 @@
-import { useEffect, useLayoutEffect } from 'react';
+import { useEffect, useLayoutEffect, useRef } from 'react';
 import { BrowserRouter, Link, useLocation } from 'react-router-dom';
 import { MotionConfig, useReducedMotion } from 'framer-motion';
 import Lenis from 'lenis';
 import { Toaster } from 'sonner';
 import { useAtlas } from './hooks/useAtlas';
+import { useCinematicEffects } from './hooks/useCinematicEffects';
 import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
 import { Marquee, World } from './components/World';
@@ -28,12 +29,15 @@ import './Portal.css';
 import './TownEdition.css';
 import './Nightfall.css';
 import './Dossier.css';
+import './Cinematic.css';
 
 function AtlasApp() {
   const atlas = useAtlas();
   const reduced = useReducedMotion();
   const { pathname, hash } = useLocation();
   const path = pathname.replace(/\/+$/, '') || '/';
+  const cinematicRoot = useRef(null);
+  useCinematicEffects(cinematicRoot, path, reduced);
   const section = sections.find(s => s.path === path);
   const item = entries.find(e => e.path === path);
   const home = path === '/';
@@ -52,11 +56,11 @@ function AtlasApp() {
     const lenis = new Lenis({ duration: 1.15, smoothWheel: true, anchors: true, autoRaf: true, prevent: node => node.hasAttribute('data-lenis-prevent') });
     return () => lenis.destroy();
   }, [reduced]);
-  return <MotionConfig reducedMotion="user"><div className={`atlas-app ${!home?'portal-mode':''}`} data-atlas-area={area?.id || 'home'}>
+  return <MotionConfig reducedMotion="user"><div ref={cinematicRoot} className={`atlas-app ${!home?'portal-mode':''}`} data-atlas-area={area?.id || 'home'}>
     <a href="#main-content" className="skip-link" data-testid="skip-content">Skip to content</a>
     {home && <RockstarRibbon/>}
     <Navigation {...atlas}/>
-    <main id="main-content" tabIndex={-1} data-testid="main-content">{home?<><Hero {...atlas}/><QuickDestinations/><TownHub {...atlas}/><Wire {...atlas}/><FreshLinks {...atlas}/><ExperienceTeaser/><World {...atlas}/><Marquee/><Characters {...atlas}/><Gallery {...atlas}/></>:experience?<div className="experience-page"><header className="experience-page-heading"><Link to="/directory" data-testid="experience-back">← All pages</Link><h1 data-testid="experience-title">THE GTA VI EXPERIENCE</h1></header><RockstarExperience {...atlas}/></div>:<PortalLayout><div key={path}>{section?<SectionPage section={section} atlas={atlas}/>:item?<DetailPage item={item} atlas={atlas}/>:path==='/directory'?<DirectoryPage/>:<div className="portal-not-found" data-testid="not-found"><span className="portal-kicker">404</span><h1 data-testid="not-found-title">Page not found</h1><p>Check the address or browse the directory.</p><Link to="/directory" className="portal-button" data-testid="not-found-directory">All pages</Link></div>}</div></PortalLayout>}</main>
+    <main id="main-content" tabIndex={-1} data-testid="main-content">{home?<><Hero {...atlas}/><QuickDestinations/><TownHub {...atlas}/><Wire {...atlas}/><FreshLinks {...atlas}/><ExperienceTeaser/><World {...atlas}/><Marquee/><Characters {...atlas}/><Gallery {...atlas}/></>:experience?<div className="experience-page"><header className="experience-page-heading"><Link to="/directory" data-testid="experience-back">← All pages</Link><h1 data-testid="experience-title">THE GTA VI EXPERIENCE</h1></header><RockstarExperience {...atlas}/></div>:<PortalLayout><div key={path} className="cinema-route">{section?<SectionPage section={section} atlas={atlas}/>:item?<DetailPage item={item} atlas={atlas}/>:path==='/directory'?<DirectoryPage/>:<div className="portal-not-found" data-testid="not-found"><span className="portal-kicker">404</span><h1 data-testid="not-found-title">Page not found</h1><p>Check the address or browse the directory.</p><Link to="/directory" className="portal-button" data-testid="not-found-directory">All pages</Link></div>}</div></PortalLayout>}</main>
     {home?<Footer {...atlas}/>:<CompactFooter/>}<Overlays {...atlas}/>
     <Toaster theme="dark" position="bottom-right" richColors/>
   </div></MotionConfig>;
