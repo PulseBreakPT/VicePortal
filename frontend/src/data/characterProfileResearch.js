@@ -646,6 +646,112 @@ export const characterSceneResearch = {
       "Location": "Salton",
       "Mission category": "Strangers & Freaks"
     }
+  },
+  "joey": {
+    "source": "https://gta6ops.com/story/joey/",
+    "text": "Jason meets Joey at Coastal Auto Care in Just a Scratch, where his Ganado ’70 is repaired. Joey then becomes available as a phone contact; business ownership is not established.",
+    "fields": {
+      "Workplace": "Coastal Auto Care, Key Lento",
+      "Documented mission": "Just a Scratch",
+      "Contact availability": "Phone contact after introduction"
+    },
+    "relations": [
+      "jason-duval"
+    ]
+  },
+  "dodo-noah": {
+    "source": "https://gta6ops.com/story/dodo-noah/",
+    "text": "Noah represents Dodos Rising at the airport-area laboratory protest. His assignment, Bring Out the Chimp, involves documenting captive animals and helping remove a cage.",
+    "fields": {
+      "Affiliation": "Dodos Rising",
+      "Documented mission": "Bring Out the Chimp",
+      "Documented location": "Near Vice City International Airport"
+    }
+  },
+  "evelyn-andrews": {
+    "source": "https://gta6ops.com/story/evelyn-andrews/",
+    "text": "The owner of Evelyn Andrews Antiques refuses to appraise the statue in Dubious Provenance, suspecting its legitimacy. Her refusal does not establish whether the object is authentic.",
+    "fields": {
+      "Business": "Evelyn Andrews Antiques",
+      "Documented mission": "Dubious Provenance",
+      "Location": "Capri"
+    },
+    "relations": [
+      "jason-duval",
+      "lucia-caminos"
+    ]
+  },
+  "billy": {
+    "source": "https://gta6ops.com/story/billy/",
+    "text": "Billy leads the Thrillbilly Mud Club crew. The optional strand opens in Chapter 2 and progresses from racing to criminal jobs, including Mall Rats and Hometown Heroes.",
+    "fields": {
+      "Affiliation": "Thrillbilly Mud Club",
+      "Documented story chapter": "2",
+      "Documented appearances": "Thrillbillies; Mall Rats; The Impaler; Hometown Heroes"
+    },
+    "relations": [
+      "brittney",
+      "ian",
+      "ricky",
+      "wyman"
+    ]
+  },
+  "mister-mangrove": {
+    "source": "https://gta6ops.com/story/mister-mangrove/",
+    "text": "The creature is associated with sightings near Gambit Bay and Cottonmouth Lake. Kirk’s investigation offers branching outcomes; the creature’s biological origin remains undocumented.",
+    "fields": {
+      "Also known as": "Skunk Ape",
+      "Documented locations": "Gambit Bay; Cottonmouth Lake",
+      "Story outcome": "Player-dependent"
+    },
+    "relations": [
+      "kirk"
+    ]
+  },
+  "mother-dodo-yvonne": {
+    "source": "https://gta6ops.com/story/mother-dodo-yvonne/",
+    "text": "Lucia encounters the group’s leader at a watchtower during the finale of Dodo, Rise!; a subsequent message is accompanied by a reported $5,000 payment.",
+    "fields": {
+      "Affiliation": "Leader of Dodos Rising",
+      "Documented mission": "Dodo, Rise!",
+      "Reported reward": "$5,000 follow-up payment"
+    },
+    "relations": [
+      "dodo-noah",
+      "dodo-rosebud",
+      "dodo-tyler",
+      "lucia-caminos"
+    ]
+  },
+  "shirley-baker": {
+    "source": "https://gta6ops.com/story/shirley-baker/",
+    "text": "Shirley lives next to Jason. Her two optional errands involving rum and a scooter are limited to Chapter 1; their disappearance does not establish her later fate.",
+    "fields": {
+      "Connection": "Jason’s neighbor",
+      "Documented mission availability": "Chapter 1 only"
+    },
+    "relations": [
+      "jason-duval"
+    ]
+  },
+  "dodo-rosebud": {
+    "source": "https://gta6ops.com/story/dodo-rosebud/",
+    "text": "Rosebud’s animal-rights work focuses on marine life. The Oceanarium protest leads into Sisters of the Sea, involving an orca and an optional search for her crystal.",
+    "fields": {
+      "Affiliation": "Dodos Rising",
+      "Documented mission": "Sisters of the Sea",
+      "Location": "Oceanarium"
+    }
+  },
+  "dr-merle": {
+    "source": "https://gta6ops.com/story/dr-merle/",
+    "text": "Merle presents himself as a researcher and meets the player through the No Flushers campaign. The Final Flush includes a sewage-facility sequence with a lasting stamina reward; his credentials and associated cloning theories are not established.",
+    "fields": {
+      "Affiliation": "No Flushers",
+      "Documented mission": "The Final Flush",
+      "Reported gameplay reward": "Permanent stamina increase",
+      "Qualifications": "Not verified in this atlas"
+    }
   }
 };
 export const checkedCreditProfiles = {

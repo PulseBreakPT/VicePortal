@@ -8,7 +8,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 // Copy the modules to temporary .mjs files and resolve CRA's extensionless imports.
 const root = fileURLToPath(new URL('../', import.meta.url));
 const dir = await mkdtemp(join(tmpdir(), 'viceportal-characters-'));
-const modules = ['characterSourceIndex','characterCoverage','mediaCast','characterDiscoveries','characterEvidence','characterProfileResearch','characterRecords'];
+const modules = ['characterSourceIndex','characterCoverage','mediaCast','characterDiscoveries','characterEvidence','characterProfileResearch','characterCompleteness','characterRecords'];
 try {
   for (const name of modules) {
     const source = await readFile(join(root,'src','data',name+'.js'),'utf8');
@@ -19,6 +19,13 @@ try {
   const { mediaCast } = await import(pathToFileURL(join(dir,'mediaCast.mjs')).href);
   const { characterDiscoveries } = await import(pathToFileURL(join(dir,'characterDiscoveries.mjs')).href);
   const byId = new Map(records.map(row=>[row.id,row]));
+  const { characterCoverageReport } = await import(pathToFileURL(join(dir,'characterCompleteness.mjs')).href);
+  const report=characterCoverageReport(records);
+  assert.equal(report.records,report.uniqueIds,'Duplicate character IDs');
+  assert.equal(report.withEvidenceScope,records.length,'Every dossier must declare its evidence scope');
+  for(const row of records) assert.ok(row.attributes['Outstanding evidence'],'Missing evidence audit '+row.id);
+  for(const row of mediaCast) assert.ok(byId.get(row.existingId||row.id)?.attributes['Documented media appearances']?.includes(row.program),'Missing media context '+row.role);
+  console.log('Full character coverage audit:',JSON.stringify(report));
   const { characterProfileResearch, characterSceneResearch, checkedCreditProfiles } = await import(pathToFileURL(join(dir,'characterProfileResearch.mjs')).href);
   for (const [id,review] of [...Object.entries(characterProfileResearch),...Object.entries(characterSceneResearch)]) {
     const row=byId.get(id);
