@@ -3845,7 +3845,7 @@
           "url": "https://gtatown.com/garage/weapons/zodiac-nipper-38"
         }
       ],
-      "fetchedAt": "2026-11-27T20:14:48.019Z"
+      "fetchedAt": "2026-11-27T22:42:53.563Z"
     },
     "cheats": {
       "format": "json",
@@ -4706,7 +4706,7 @@
           "url": "https://gtatown.com/cheats/filter-hellscape"
         }
       ],
-      "fetchedAt": "2026-11-27T20:14:48.059Z"
+      "fetchedAt": "2026-11-27T22:42:53.584Z"
     },
     "trophies": {
       "format": "json",
@@ -5318,7 +5318,7 @@
           "url": "https://gtatown.com/track/trophies/on-the-spot"
         }
       ],
-      "fetchedAt": "2026-11-27T20:14:48.103Z"
+      "fetchedAt": "2026-11-27T22:42:53.621Z"
     },
     "missions": {
       "format": "json",
@@ -7275,7 +7275,7 @@
           "url": "https://gtatown.com/track/missions/dodo-rise"
         }
       ],
-      "fetchedAt": "2026-11-27T20:14:48.151Z"
+      "fetchedAt": "2026-11-27T22:42:53.660Z"
     },
     "challenges": {
       "format": "json",
@@ -8162,7 +8162,7 @@
           "url": "https://gtatown.com/challenges/train-jump"
         }
       ],
-      "fetchedAt": "2026-11-27T20:14:48.189Z"
+      "fetchedAt": "2026-11-27T22:42:53.677Z"
     },
     "collectibles": {
       "format": "json",
@@ -60442,7 +60442,7 @@
           "url": "https://gtatown.com/locations/zodiac-nipper-38"
         }
       ],
-      "fetchedAt": "2026-11-27T20:14:48.416Z"
+      "fetchedAt": "2026-11-27T22:42:53.898Z"
     },
     "locations": {
       "format": "json",
@@ -98006,7 +98006,7 @@
           "url": "https://gtatown.com/locations/garage-hamlet-h0840044"
         }
       ],
-      "fetchedAt": "2026-11-27T20:14:48.561Z"
+      "fetchedAt": "2026-11-27T22:42:54.034Z"
     }
   }
 }
