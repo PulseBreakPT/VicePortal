@@ -11,7 +11,8 @@ export const Logo = ({ footer = false }) => <Link to="/" className={`brand ${foo
 
 export const Reveal = ({ children, className = '', delay = 0, ...props }) => {
   const reduced = useReducedMotion();
-  return <motion.div initial={reduced ? false : { opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.08 }} transition={{ duration: reduced ? 0 : .65, delay: reduced ? 0 : Math.min(delay,.28), ease: [.22, 1, .36, 1] }} className={className} {...props}>{children}</motion.div>;
+  const blur = className === 'section-description';
+  return <motion.div initial={reduced ? false : { opacity: 0, y: 30, ...(blur?{filter:'blur(3px)'}:{}) }} whileInView={{ opacity: 1, y: 0, ...(blur?{filter:'blur(0px)'}:{}) }} viewport={{ once: true, amount: 0.08 }} transition={{ duration: reduced ? 0 : .65, delay: reduced ? 0 : Math.min(delay,.28), ease: [.22, 1, .36, 1] }} className={className} {...props}>{children}</motion.div>;
 };
 
 export const Action = ({ children, secondary = false, arrow = true, className = '', ...props }) => <Button className={`atlas-button ${secondary ? 'secondary' : ''} ${className}`} {...props}>{children}{arrow && <ArrowUpRight size={17}/>}</Button>;
