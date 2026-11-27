@@ -10,10 +10,10 @@ export const vehicleRecords=normalizeVehicles(feed).map(row=>{
  const ref=imageRefs[row.id];
  const imageRef=ref&&vehicleSlug(ref.title)===vehicleSlug(row.title)?ref:null;
  return {
-  id:row.id,title:row.title,kind:'Vehicle',category:row.category,type:row.type,source:imageRef?.source||row.source,spoiler:row.spoiler,
+  id:row.id,title:row.title,kind:'Vehicle',category:row.category,type:row.type,source:imageRef?.source?.startsWith('https://gtatown.com/')?imageRef.source:row.source,spoiler:row.spoiler,
   path:'/vehicles/'+row.id,collections:['vehicles/'+row.group],status:'Community reference',
   image:imageRef?imageRef.image:placeholder,imageFallback:placeholder,placeholderImage:!imageRef,
-  imageSource:imageRef?'GTA Town · game imagery © Rockstar Games':undefined,
+  imageSource:imageRef?(imageRef.credit||'GTA Town · game imagery © Rockstar Games'):undefined,
   subtitle:row.maker+' · '+row.category,
   description:row.title+' is listed in the GTA Town vehicle catalogue. The manufacturer and class are attributed to that source.',
   details:[row.maker,row.category,'GTA Town public data'],

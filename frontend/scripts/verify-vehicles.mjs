@@ -37,22 +37,29 @@ const grid=await read('../src/components/portal/CatalogGrid.js');
 for(const marker of ['Vehicle manufacturer','Vehicle class','vehicleStats','Data: GTA Town'])check(grid.includes(marker),'Missing catalogue integration: '+marker);
 
 const refs=JSON.parse(await read('../src/data/vehicleImageRefs.json'));
-const {collectImageReferences}=await import('./sync-vehicle-images.mjs');
+const {collectImageReferences,validImageReference}=await import('./sync-vehicle-images.mjs');
 const {vehicleSlug}=await import('../src/data/vehicleNormalizer.mjs');
 const imgURLs=new Set();
-check(Object.keys(refs).length>=8,'Reviewed vehicle image coverage regressed');
+check(Object.keys(refs).length>=10,'Reviewed vehicle image coverage regressed');
 for(const [id,ref] of Object.entries(refs)){
  const row=rows.find(r=>r.id===id);
  check(Boolean(row)&&vehicleSlug(row.title)===vehicleSlug(ref.title),'Image title mismatch: '+id);
- const page=new URL(ref.source),img=new URL(ref.image);
- check(page.origin==='https://gtatown.com'&&img.origin===page.origin,'Unapproved image host');
- const match=img.pathname.match(/^\/img\/(?:pc\/)?vehicles\/([a-z0-9-]+)-\d+\.webp$/);
- check(Boolean(match)&&page.pathname.replace(/\/$/,'')==='/garage/vehicles/'+match[1],'Image not from exact source dossier: '+id);
+ check(validImageReference(ref,row),'Image not from approved exact source dossier: '+id);
  check(!imgURLs.has(ref.image),'Duplicate vehicle image: '+id);imgURLs.add(ref.image);
 }
 const fixture='<a href="/garage/vehicles/progen-emerus"><img src="/img/pc/vehicles/progen-emerus-294.webp" alt="Progen Emerus">Progen Emerus Supercars</a><a href="/garage/vehicles/honeycomb-emerus"><img src="/img/pc/vehicles/progen-emerus-294.webp" alt="Honeycomb Emerus">Honeycomb Emerus Ultra-Luxe</a><a href="/garage/vehicles/truffade-thrax">No image yet Truffade Thrax</a>';
 const matched=collectImageReferences(fixture,rows);
 check(Object.keys(matched).length===1&&matched['vehicle-emerus']?.image===refs['vehicle-emerus'].image,'Exact-image fixture must reject wrong variant and missing card');
+
+const aliasFixture='<a href="/garage/vehicles/progen-seaspray-emerus"><img src="/img/pc/vehicles/progen-seaspray-emerus-294.webp" alt="Seaspray Emerus">Seaspray Emerus Stock Car</a><a href="/garage/vehicles/progen-black-widow-emerus"><img src="/img/pc/vehicles/progen-seaspray-emerus-294.webp" alt="Black Widow Emerus">Black Widow Emerus Street Racer</a>';
+const aliasMatched=collectImageReferences(aliasFixture,rows);
+check(Object.keys(aliasMatched).length===1&&Boolean(aliasMatched['vehicle-seaspray-emerus']),'Manufacturer-prefix matching must accept only exact variant');
+for(const id of ['vehicle-seaspray-emerus','vehicle-black-widow-emerus']){
+ const row=rows.find(r=>r.id===id);
+ check(refs[id]?.evidence==='reviewed-in-game-name'&&validImageReference(refs[id],row),'Reviewed in-game screenshot missing: '+id);
+ check(!validImageReference({...refs[id],source:'https://gta6.house/library/vehicles/progen-emerus'},row),'Wrong variant source must fail');
+}
+
 const renderer=await read('../src/data/vehicleRecords.js');
 check(renderer.includes('imageRef?imageRef.image:placeholder')&&!renderer.includes('legacyImages'),'Vehicle image renderer must use reviewed references');
 

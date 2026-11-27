@@ -46,5 +46,19 @@
     "image": "https://gtatown.com/img/pc/vehicles/honeycomb-emerus-294.webp",
     "source": "https://gtatown.com/garage/vehicles/honeycomb-emerus",
     "evidence": "detail-page"
+  },
+  "vehicle-black-widow-emerus": {
+    "title": "Black Widow Emerus",
+    "image": "https://gta6.house/media/gta6/1200/lib-c0411f7a03.webp",
+    "source": "https://gta6.house/library/vehicles/progen-black-widow-emerus",
+    "evidence": "reviewed-in-game-name",
+    "credit": "GamesRadar+ via GTA6.house · game imagery © Rockstar Games"
+  },
+  "vehicle-seaspray-emerus": {
+    "title": "Seaspray Emerus",
+    "image": "https://gta6.house/media/gta6/1200/lib-feb61c5ab4.webp",
+    "source": "https://gta6.house/library/vehicles/progen-seaspray-emerus",
+    "evidence": "reviewed-in-game-name",
+    "credit": "GamesRadar+ via GTA6.house · game imagery © Rockstar Games"
   }
 }
