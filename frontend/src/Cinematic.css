@@ -56,7 +56,7 @@
 .atlas-app .cinema-media-pending {
   background-image: linear-gradient(110deg,transparent 28%,#f3b6cf12 49%,transparent 71%);
   background-size: 240% 100%;
-  animation: cinema-shimmer 1.8s linear infinite;
+  animation: cinema-shimmer 1.8s linear 3;
 }
 @keyframes cinema-shimmer {
   from { background-position: 130% 0; }
@@ -88,6 +88,14 @@
 .atlas-app .record-section-nav a:hover,.atlas-app .record-section-nav a:focus-visible {
   text-decoration: underline;
 }
+.atlas-app .record-section-nav a {
+  background-image: linear-gradient(90deg,var(--section-accent),var(--gta-peach));
+  background-size: 0 1px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  transition: background-size .22s ease;
+}
+.atlas-app .record-section-nav a:hover,.atlas-app .record-section-nav a:focus-visible { background-size: 100% 1px; }
 
 /* Fine-pointer interactions are explicitly disabled on touch and small viewports. */
 @media (min-width: 900px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
@@ -95,6 +103,7 @@
     translate: 0 var(--cinema-parallax,0px);
     scale: 1.06;
   }
+  .atlas-app .town-experience-teaser picture img { translate: 0 var(--cinema-parallax,0px); scale: 1.04; }
   .atlas-app .pause-art .pause-photo-button > img {
     translate: 0 var(--cinema-parallax,0px);
     scale: 1.04;
@@ -134,7 +143,7 @@
     clip-path: none;
     translate: none;
   }
-  .atlas-app :is(.portal-card,.portal-card-image img,.portal-button,.atlas-button) { transition: none; }
+  .atlas-app :is(.portal-card,.portal-card-image img,.portal-button,.atlas-button,.record-section-nav a) { transition: none; }
 }
 @media (forced-colors: active), print {
   .atlas-app :is(.pause-art,.portal-hero,.town-experience-teaser)::after { display:none; }
