@@ -34,7 +34,18 @@ await access(new URL('../public/images/vehicle-placeholder.svg',import.meta.url)
 const portal=await read('../src/data/portal.js');
 check(portal.includes('export const carEntries = vehicleRecords;'),'Vehicle catalogue not connected');
 const grid=await read('../src/components/portal/CatalogGrid.js');
-for(const marker of ['Vehicle manufacturer','Vehicle class','vehicleStats','Data: GTA Town'])check(grid.includes(marker),'Missing catalogue integration: '+marker);
+for(const marker of ['Vehicle manufacturer','Vehicle class','Data: GTA Town','filterItems(visible,filters,layout)'])check(grid.includes(marker),'Missing catalogue integration: '+marker);
+const {filterItems,initialFilters}=await import('../src/components/portal/catalogueModel.mjs');
+const ratingFixture=[
+ {id:'low',title:'Low',kind:'Vehicle',vehicleStats:{speed:2,acceleration:3,handling:4}},
+ {id:'unknown',title:'Unknown',kind:'Vehicle',vehicleStats:{speed:null,acceleration:null,handling:null}},
+ {id:'high',title:'High',kind:'Vehicle',vehicleStats:{speed:9,acceleration:8,handling:7}}
+];
+for(const sort of ['speed','acceleration','handling']){
+ const sorted=filterItems(ratingFixture,{...initialFilters,sort},'vehicles');
+ check(sorted.map(r=>r.id).join(',')==='high,low,unknown','Catalogue rating sort failed: '+sort);
+}
+check(ratingFixture.map(r=>r.id).join(',')==='low,unknown,high','Catalogue sorting mutated source records');
 
 const refs=JSON.parse(await read('../src/data/vehicleImageRefs.json'));
 const {collectImageReferences,collectSupplementalImages,collectTrackerImages,validImageReference}=await import('./sync-vehicle-images.mjs');

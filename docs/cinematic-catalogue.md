@@ -1,3 +1,7 @@
 # Cinematic Catalogue
 
 All SectionPage routes now use a compact native disclosure for child links rather than image tile navigation. Existing routes, the directory, sidebar, mobile navigation, saved records, spoiler handling and specialized pages remain in place. The content grid has a sticky search toolbar, a single collapsible filter panel, group headings, 24-entry progressive loading, and type-specific responsive layouts. A–Z and rating sorts intentionally disable grouping to preserve global sort semantics. Mission chronology is only used when source-backed storyOrder metadata exists; no mission order is invented. Existing visual palette and motion hooks are retained. The test script checks filtering, grouping, layout selection, spoiler behavior, no duplicates and progressive coverage. Browser rendering and deployment require CI confirmation.
+
+## CI integration repair
+
+The initial catalogue PR was merged before the production workflow passed. The former vehicle validator expected `vehicleStats` in CatalogGrid.js even after sort logic moved to catalogueModel.mjs. The integration assertion now checks that the grid calls the model and executes all three ratings sorts, including unknown values and non-mutation. The optional public export now reports a schema/network failure as an explicit retained-snapshot warning only after validating the fallback. The audit regenerates the missing-image inventory from the active manifest even when image synchronization is unavailable. No image coverage checks have been removed.

@@ -23,6 +23,12 @@ await writeFile(temp,JSON.stringify(record,null,2)+'\n');
 await rename(temp,dest);
 console.log('Public vehicle catalogue:',normalized.length,'records (previous snapshot:',previous.rows.length+')');
 
+} catch(error) {
+ // The checked-in catalogue is the recovery source, not a guessed schema.
+ const snapshot=JSON.parse(await readFile(dest,'utf8'));
+ const retained=normalizeVehicles(snapshot);
+ if(retained.length<(snapshot.complete?560:559))throw new Error('Invalid fallback vehicle catalogue');
+ console.warn('Public vehicle export unavailable; retaining '+retained.length+' reviewed records:',error.message);
 } finally {
  try { const {syncImages}=await import('./sync-vehicle-images.mjs'); await syncImages(); } catch(error) { console.warn('Vehicle image sync unavailable; retaining reviewed references:',error.message); }
 }
