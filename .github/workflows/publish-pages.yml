@@ -85,7 +85,8 @@ jobs:
           path: frontend/build
 
   deploy:
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    # Production is published from main / (root) by GitHub Pages.
+    if: ${{ false }}
     needs: build
     runs-on: ubuntu-latest
     permissions:
@@ -99,7 +100,7 @@ jobs:
         id: deployment
 
   persist-vehicle-images:
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    if: ${{ false }}
     needs: [build, deploy]
     runs-on: ubuntu-latest
     permissions:

@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.css": "/VicePortal/static/css/main.06612553.css",
+    "main.js": "/VicePortal/static/js/main.51245220.js",
+    "index.html": "/VicePortal/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.06612553.css",
+    "static/js/main.51245220.js"
+  ]
+}
