@@ -1955,15 +1955,15 @@ function mergeMediaCredits(item) {
   if(!appearances.length)return item;
   return {...item,mediaCategories:[...new Set(appearances.map(x=>x.category))],
     attributes:{...item.attributes,'Media credits':appearances.map(x=>x.program+' — '+x.role+' ('+x.performer+')').join('; ')},
-    relatedSources:[...(item.relatedSources||[]),{label:'Rockstar Games — official media cast',url:credits}].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i)};
+    relatedSources:[...(item.relatedSources||[]),{label:'Rockstar Games — official media cast',url:credits},...appearances.filter(x=>x.profileUrl).map(x=>({label:'GTA6Ops — '+x.program+' / '+x.role,url:x.profileUrl}))].filter((s,i,a)=>a.findIndex(x=>x.url===s.url)===i)};
 }
 function mediaRecord(row) {
   const title = ['Himself','Herself','Presenter'].includes(row.role)?row.performer:row.role;
   const portrait=row.portrait;
   return {id:row.id,title,kind:'Character',category:row.category,mediaCategories:[row.category],subtitle:row.program,tag:row.category.toUpperCase(),image:portrait?.url||placeholder,placeholderImage:!portrait,...(portrait?{imageSource:portrait.source,imageSourceUrl:portrait.page,imageFallback:placeholder}:{}),source:credits,status:'Official source',spoiler:false,
-    description:row.performer+' is credited for '+row.role+' in '+row.program+', in the '+row.category.toLowerCase()+' cast. This credit establishes the role and programme, not an independent story biography.',
-    attributes:{Role:row.role,'Credited performer':row.performer,'Programme':row.program,'Media category':row.category,Evidence:'Official media cast credit','Biography availability':'Not verified in this atlas','Portrait availability':portrait?'Attributed external reference':'Not verified in this atlas'},
-    relatedSources:[{label:'Rockstar Games — official cast credits',url:credits},...(portrait?[{label:'GTA6DATA — image reference',url:portrait.page}]:[])],verifiedOn:'2026-11-27'};
+    description:row.performer+' is credited for '+row.role+' in '+row.program+', in the '+row.category.toLowerCase()+' cast. This credit establishes the role and programme, not an independent story biography. A shared performer or separate role label does not establish a separate person.',
+    attributes:{Role:row.role,'Original credit':row.creditedRole||row.role,'Credited performer':row.performer,'Programme':row.program,'Media category':row.category,Evidence:'Official media cast credit','Biography availability':'Not verified in this atlas','Portrait availability':portrait?'Attributed external reference':'Not verified in this atlas'},
+    relatedSources:[{label:'Rockstar Games — official cast credits',url:credits},...(row.profileUrl?[{label:'GTA6Ops — individual credit profile',url:row.profileUrl}]:[]),...(portrait?[{label:'GTA6DATA — image reference',url:portrait.page}]:[])],verifiedOn:'2026-11-27'};
 }
 export const characterRecords = [
   ...main.map(row=>enrichCharacter(record(row,'Main Cast'))),
