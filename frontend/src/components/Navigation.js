@@ -40,8 +40,8 @@ export const Navigation = ({open,saved,spoilers,setSpoilers}) => {
     <div className="town-header-actions">
       <button className="spoiler-toggle" data-testid="spoiler-toggle" aria-label={`Spoilers ${spoilers?'on':'off'}`} title={`Spoilers ${spoilers?'on':'off'}`} aria-pressed={spoilers} onClick={()=>setSpoilers(!spoilers)}>{spoilers?<Eye size={17}/>:<EyeOff size={17}/>}<span>Spoilers {spoilers?'on':'off'}</span></button>
       <button className="town-icon" data-testid="open-search" aria-label="Search Vice Atlas" title="Search" onClick={()=>open({type:'search'})}><Search size={20}/></button>
-      <Link to="/saved" className="town-icon your-atlas" data-testid="open-saved" title="Saved atlas" aria-label={`Your atlas: ${saved.length} saved items`}><Bookmark size={18}/>{saved.length>0&&<span className="saved-count" data-testid="saved-count">{saved.length}</span>}</Link>
-      <Link to="/directory" className="town-all-pages" data-testid="open-menu" aria-label="All pages"><Grid2X2 size={17}/><span>All pages</span></Link>
+      <Link to="/saved" className="town-icon your-atlas" data-testid="open-saved" title="Saved entries" aria-label={`Your atlas: ${saved.length} saved items`}><Bookmark size={18}/>{saved.length>0&&<span className="saved-count" data-testid="saved-count">{saved.length}</span>}</Link>
+      <Link to="/directory" className="town-all-pages" data-testid="open-menu" aria-label="Full index"><Grid2X2 size={17}/><span>Full index</span></Link>
     </div>
     <motion.div className="reading-progress" style={{scaleX:progress}} aria-hidden="true"/>
   </header>;
