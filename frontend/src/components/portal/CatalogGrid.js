@@ -1,32 +1,58 @@
 import { captureCardFlight } from '../../hooks/useCardFlight';
 import { NeonCipher } from '../NeonCipher';
-import { useState } from 'react';
+import { useMemo,useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRight, Search, SlidersHorizontal, X, ArrowLeft, ArrowRight, LayoutGrid, List } from 'lucide-react';
+import { ArrowUpRight, Search, SlidersHorizontal, X, LayoutGrid, List, ChevronDown } from 'lucide-react';
 import { SaveButton } from '../AtlasUI';
+import { PAGE_SIZE,initialFilters,visibleItems,layoutFor,groupFor,filterItems,makeGroups,takeGroups } from './catalogueModel.mjs';
 
 export const CatalogCard = ({item,atlas,prefix='catalog',order=0}) => {
   const [mediaState,setMediaState]=useState('pending');
   return <article data-cinema-order={order} style={{'--cinema-order':Math.min(order,11)}} className={`portal-card ${['Vehicle','Weapon','Radio station'].includes(item.kind)?'object-card':''} ${item.kind==='Character'?'person-card':''} ${['Image','Artwork'].includes(item.kind)?'media-card':''}`} data-testid={`${prefix}-card-${item.id}`}><Link to={item.path} onClick={event=>captureCardFlight(event,item)} className={`portal-card-image cinema-media-${mediaState}`} data-testid={`${prefix}-image-${item.id}`} tabIndex={-1} aria-hidden="true"><img src={item.image} alt="" loading="lazy" referrerPolicy={item.imageSource?'no-referrer':undefined} title={item.imageSource?`Image reference via ${item.imageSource}`:undefined} onLoad={()=>setMediaState('ready')} onError={e=>{if(item.imageFallback&&!e.currentTarget.src.endsWith(item.imageFallback)){e.currentTarget.src=item.imageFallback;}else setMediaState('failed');}}/><span>{item.kind}</span></Link><SaveButton item={item} saved={atlas.saved} toggleSave={atlas.toggleSave} prefix={`${prefix}-save`}/><div className="portal-card-copy"><small className={`record-status ${item.status==='Official source'?'official':''}`} data-testid={`${prefix}-status-${item.id}`}>{item.status}</small><Link to={item.path} onClick={event=>captureCardFlight(event,item)} data-testid={`${prefix}-open-${item.id}`}><h3><NeonCipher value={item.title} variant="card" block/></h3><ArrowUpRight size={19}/></Link><p data-testid={`${prefix}-description-${item.id}`}>{item.spoiler&&!atlas.spoilers?'Character and story background protected.':item.subtitle||item.category||item.description}</p>{item.dataCredit==='GTA Town'&&<a href={item.source} target="_blank" rel="noreferrer" style={{fontSize:11,display:'inline-block',marginTop:8}}>Data: GTA Town</a>}</div></article>;
 };
 
-export const CatalogGrid = ({items,atlas,prefix='catalog',title='In the atlas'}) => {
-  const [coverage,setCoverage]=useState('all');const [query,setQuery]=useState('');const [kind,setKind]=useState('All');const [sort,setSort]=useState('featured');const [page,setPage]=useState(1);const [view,setView]=useState('grid');
-  const [maker,setMaker]=useState('All');const [vehicleClass,setVehicleClass]=useState('All');
-  const visible=items.filter(e=>e.kind!=='Vehicle'||!e.spoiler||atlas.spoilers);
-  const vehicleCollection=visible.some(e=>e.kind==='Vehicle');
-  const makers=[...new Set(visible.filter(e=>e.kind==='Vehicle').map(e=>e.attributes?.Manufacturer).filter(Boolean))].sort();
-  const vehicleClasses=[...new Set(visible.filter(e=>e.kind==='Vehicle').map(e=>e.category))].sort();
-  const kinds=[...new Set(visible.map(e=>e.kind))];
-  const isCharacterCollection=items.length>0&&items.every(e=>e.kind==='Character');
-  const found=visible.filter(e=>(maker==='All'||e.attributes?.Manufacturer===maker)&&(vehicleClass==='All'||e.category===vehicleClass)&&(!isCharacterCollection||coverage==='all'||(coverage==='portrait'&&!e.placeholderImage)||(coverage==='context'&&e.placeholderImage&&e.contextImage)||(coverage==='missing'&&e.placeholderImage&&!e.contextImage))&&(kind==='All'||e.kind===kind)&&`${e.title} ${e.category||''} ${e.attributes?.Manufacturer||''} ${e.attributes?.['Credited performer']||''} ${e.attributes?.['Credited as']||''} ${e.attributes?.['Programme']||''} ${e.attributes?.['Original credit']||''} ${e.attributes?.['Media credits']||''}`.toLowerCase().includes(query.toLowerCase().trim()));
-  if(sort==='az')found.sort((a,b)=>a.title.localeCompare(b.title));if(sort==='za')found.sort((a,b)=>b.title.localeCompare(a.title));if(['speed','acceleration','handling'].includes(sort))found.sort((a,b)=>(b.vehicleStats?.[sort]??-1)-(a.vehicleStats?.[sort]??-1)||a.title.localeCompare(b.title));
-  const pages=Math.max(1,Math.ceil(found.length/12));const current=Math.min(page,pages);const shown=found.slice((current-1)*12,current*12);
-  return <section className="catalog-section" data-testid={`${prefix}-section`}>
-    <div className="portal-section-heading"><h2 data-testid={`${prefix}-heading`}>{title}</h2><span data-testid={`${prefix}-count`} aria-live="polite"><NeonCipher value={String(found.length).padStart(2,'0')} variant="number"/> {found.length===1?'entry':'entries'}</span></div>
-    <div className="portal-filters"><label className="portal-input"><Search size={17}/><input value={query} onChange={e=>{setQuery(e.target.value);setPage(1);}} placeholder="Filter by name" aria-label="Filter this collection" data-testid={`${prefix}-filter`}/>{query&&<button onClick={()=>{setQuery('');setPage(1);}} aria-label="Clear filter" data-testid={`${prefix}-clear`}><X size={16}/></button>}</label>{kinds.length>1&&<label className="portal-select"><SlidersHorizontal size={15}/><select aria-label="Filter by type" value={kind} onChange={e=>{setKind(e.target.value);setPage(1);}} data-testid={`${prefix}-type`}><option value="All">All types</option>{kinds.map(k=><option key={k}>{k}</option>)}</select></label>}<label className="portal-select"><select aria-label="Sort entries" value={sort} onChange={e=>{setSort(e.target.value);setPage(1);}} data-testid={`${prefix}-sort`}><option value="featured">Featured first</option><option value="az">Name: A–Z</option><option value="za">Name: Z–A</option>{vehicleCollection&&<><option value="speed">Speed rating</option><option value="acceleration">Acceleration rating</option><option value="handling">Handling rating</option></>}</select></label>{vehicleCollection&&<><label className="portal-select"><select aria-label="Vehicle manufacturer" value={maker} onChange={e=>{setMaker(e.target.value);setPage(1);}}><option value="All">All manufacturers</option>{makers.map(m=><option key={m}>{m}</option>)}</select></label><label className="portal-select"><select aria-label="Vehicle class" value={vehicleClass} onChange={e=>{setVehicleClass(e.target.value);setPage(1);}}><option value="All">All vehicle classes</option>{vehicleClasses.map(c=><option key={c}>{c}</option>)}</select></label></>}{isCharacterCollection&&<label className="portal-select"><select aria-label="Filter by visual evidence" value={coverage} onChange={e=>{setCoverage(e.target.value);setPage(1);}}><option value="all">All image statuses</option><option value="portrait">Image reference</option><option value="context">Contextual image only</option><option value="missing">No sourced image</option></select></label>}<div className="catalog-view-toggle" role="group" aria-label="Collection layout">{[['grid',LayoutGrid],['list',List]].map(([mode,Icon])=><button key={mode} aria-label={`${mode} view`} title={`${mode==='grid'?'Grid':'List'} view`} aria-pressed={view===mode} onClick={()=>setView(mode)} data-testid={`${prefix}-view-${mode}`}><Icon size={17}/></button>)}</div></div>
-    <div className={`portal-grid ${view==='list'?'is-list':''}`} data-testid={`${prefix}-results`}>{shown.map((item,order)=><CatalogCard order={order} item={item} atlas={atlas} key={item.id} prefix={prefix}/>)}</div>
-    {!found.length&&<div className="portal-empty" data-testid={`${prefix}-empty`}><Search size={30}/><h2>No matching entries.</h2><p>Try a different name or type.</p><button className="portal-button" data-testid={`${prefix}-reset-filters`} onClick={()=>{setQuery('');setKind('All');setCoverage('all');setMaker('All');setVehicleClass('All');setPage(1);}}>Reset filters</button></div>}
-    {pages>1&&<nav className="portal-pagination" aria-label="Collection pages"><button data-testid={`${prefix}-previous`} disabled={current===1} onClick={()=>setPage(current-1)} aria-label="Previous page"><ArrowLeft size={18}/></button><span data-testid={`${prefix}-page`}>PAGE {current} / {pages}</span><button data-testid={`${prefix}-next`} disabled={current===pages} onClick={()=>setPage(current+1)} aria-label="Next page"><ArrowRight size={18}/></button></nav>}
-  </section>;
+
+const unique=values=>[...new Set(values.filter(Boolean))].sort((a,b)=>a.localeCompare(b));
+const FilterSelect=({label,value,onChange,options,testId})=><label className="catalogue-field"><span>{label}</span><select aria-label={label} value={value} onChange={e=>onChange(e.target.value)} data-testid={testId}>{options.map(option=>{const [key,title]=Array.isArray(option)?option:[option,option];return <option value={key} key={key}>{title}</option>;})}</select></label>;
+
+export const CatalogGrid = ({items,atlas,section,prefix='catalog',title='In the atlas'}) => {
+ const [filters,setFilters]=useState(initialFilters);
+ const [limit,setLimit]=useState(PAGE_SIZE);
+ const layout=layoutFor(section);
+ const visible=useMemo(()=>visibleItems(items,atlas.spoilers),[items,atlas.spoilers]);
+ const vehicleCollection=visible.some(e=>e.kind==='Vehicle');
+ const isCharacterCollection=visible.length>0&&visible.every(e=>e.kind==='Character');
+ const kinds=unique(visible.map(e=>e.kind));
+ const makers=unique(visible.filter(e=>e.kind==='Vehicle').map(e=>e.attributes?.Manufacturer));
+ const vehicleClasses=unique(visible.filter(e=>e.kind==='Vehicle').map(e=>e.category));
+ const groups=unique(visible.map(e=>groupFor(e,layout)));
+ const found=useMemo(()=>filterItems(visible,filters,layout),[visible,filters,layout]);
+ const grouped=filters.grouped&&filters.sort==='featured'&&filters.group==='All';
+ const ordered=useMemo(()=>makeGroups(found,layout,grouped),[found,layout,grouped]);
+ const shown=takeGroups(ordered,limit);
+ const active=['kind','maker','vehicleClass','coverage','group','sort'].filter(key=>filters[key]!==initialFilters[key]).length;
+ const update=(key,value)=>{setFilters(old=>({...old,[key]:value}));setLimit(PAGE_SIZE);};
+ const reset=()=>{setFilters(initialFilters);setLimit(PAGE_SIZE);};
+ return <section className={'catalog-section cinematic-catalogue catalogue-'+layout} data-testid={prefix+'-section'}>
+   <div className="portal-section-heading"><h2 data-testid={prefix+'-heading'}>{title}</h2><span data-testid={prefix+'-count'} aria-live="polite"><NeonCipher value={String(found.length).padStart(2,'0')} variant="number"/> {found.length===1?'entry':'entries'}</span></div>
+   <div className="catalogue-toolbar">
+     <label className="portal-input catalogue-search"><Search size={18}/><input value={filters.query} onChange={e=>update('query',e.target.value)} placeholder="Search this collection..." aria-label="Filter this collection" data-testid={prefix+'-filter'}/>{filters.query&&<button type="button" onClick={()=>update('query','')} aria-label="Clear filter" data-testid={prefix+'-clear'}><X size={16}/></button>}</label>
+     <details className="catalogue-filter-panel" data-testid={prefix+'-filter-panel'}>
+       <summary><SlidersHorizontal size={17}/><span>Filters{active?' ('+active+')':''}</span><ChevronDown size={14}/></summary>
+       <div className="catalogue-filter-fields">
+         {groups.length>1&&<FilterSelect label="Category" value={filters.group} onChange={value=>update('group',value)} options={['All',...groups]} testId={prefix+'-group'}/>}
+         {kinds.length>1&&<FilterSelect label="Filter by type" value={filters.kind} onChange={value=>update('kind',value)} options={['All',...kinds]} testId={prefix+'-type'}/>}
+         {vehicleCollection&&<><FilterSelect label="Vehicle manufacturer" value={filters.maker} onChange={value=>update('maker',value)} options={['All',...makers]} testId={prefix+'-manufacturer'}/><FilterSelect label="Vehicle class" value={filters.vehicleClass} onChange={value=>update('vehicleClass',value)} options={['All',...vehicleClasses]} testId={prefix+'-class'}/></>}
+         {isCharacterCollection?<FilterSelect label="Filter by visual evidence" value={filters.coverage} onChange={value=>update('coverage',value)} options={ [['all','All image statuses'],['portrait','Image reference'],['context','Contextual image only'],['missing','No sourced image']]} testId={prefix+'-coverage'}/>:vehicleCollection&&<FilterSelect label="Image status" value={filters.coverage} onChange={value=>update('coverage',value)} options={ [['all','All image statuses'],['sourced','Image reference'],['placeholder','No sourced image']]} testId={prefix+'-coverage'}/>}
+         <FilterSelect label="Sort entries" value={filters.sort} onChange={value=>update('sort',value)} options={ [['featured','Featured first'],['az','Name: A–Z'],['za','Name: Z–A'],...(vehicleCollection?[['speed','Speed rating'],['acceleration','Acceleration rating'],['handling','Handling rating']]:[])]} testId={prefix+'-sort'}/>
+         <label className="catalogue-group-toggle"><input type="checkbox" checked={filters.grouped} onChange={e=>update('grouped',e.target.checked)}/> Group by category</label>
+         <div className="catalogue-filter-actions"><div className="catalog-view-toggle" role="group" aria-label="Collection layout">{[['grid',LayoutGrid],['list',List]].map(([mode,Icon])=><button type="button" key={mode} aria-label={mode+' view'} title={mode+' view'} aria-pressed={filters.view===mode} onClick={()=>update('view',mode)} data-testid={prefix+'-view-'+mode}><Icon size={17}/></button>)}</div><button type="button" className="catalogue-reset" onClick={reset} data-testid={prefix+'-reset-filters'}>Reset filters</button></div>
+       </div>
+     </details>
+   </div>
+   <div className="catalogue-result-meta"><span>Showing {Math.min(limit,found.length)} of {found.length}</span>{(active>0||filters.query)&&<button type="button" onClick={reset}>Clear all <X size={13}/></button>}</div>
+   <div data-testid={prefix+'-results'} className="catalogue-results">{shown.map((group,index)=><section className="catalogue-group" key={group.label} aria-labelledby={prefix+'-group-heading-'+index}>{grouped&&ordered.length>1&&<header className="catalogue-group-heading"><h3 id={prefix+'-group-heading-'+index}>{group.label}</h3><span>{group.total}</span></header>} {(!grouped||ordered.length===1)&&<h3 className="catalogue-sr-only" id={prefix+'-group-heading-'+index}>{group.label}</h3>}<div className={'portal-grid '+(filters.view==='list'?'is-list':'')}>{group.items.map((item,order)=><CatalogCard order={order} item={item} atlas={atlas} key={item.id} prefix={prefix}/>)}</div></section>)}</div>
+   {!found.length&&<div className="portal-empty" data-testid={prefix+'-empty'}><Search size={30}/><h2>No matching entries.</h2><p>Try a different name or category.</p><button className="portal-button" onClick={reset}>Reset filters</button></div>}
+   {found.length>limit&&<div className="catalogue-more"><button type="button" className="portal-button" data-testid={prefix+'-load-more'} onClick={()=>setLimit(old=>old+PAGE_SIZE)}>Load {Math.min(PAGE_SIZE,found.length-limit)} more <ChevronDown size={17}/></button><span>{Math.min(limit,found.length)} / {found.length} entries</span></div>}
+ </section>;
 };

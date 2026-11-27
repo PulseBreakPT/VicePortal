@@ -1,0 +1,52 @@
+/* Catalogue-only refinement; reuses the original Vice Atlas palette, type and cards. */
+.catalogue-hero.portal-hero{min-height:230px;margin-bottom:16px}
+.catalogue-hero .portal-hero-copy{padding-block:26px}
+.catalogue-hero h1{font-size:clamp(38px,5.1vw,64px);margin-block:10px 12px}
+.catalogue-hero .portal-hero-meta{margin-top:16px}
+.catalogue-destinations{border-bottom:1px solid var(--night-line);margin:0 0 16px}
+.catalogue-destinations>summary,.catalogue-filter-panel>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;min-height:44px;color:var(--night-text)}
+.catalogue-destinations>summary::-webkit-details-marker,.catalogue-filter-panel>summary::-webkit-details-marker{display:none}
+.catalogue-destinations>summary>span{font-size:12px;font-weight:600}
+.catalogue-destinations>summary>small{margin-left:auto;color:var(--night-muted);font-size:10px}
+.catalogue-destinations summary svg,.catalogue-filter-panel summary svg:last-child{color:var(--section-accent,var(--pink));flex-shrink:0;transition:transform .2s}
+.catalogue-destinations[open]>summary>svg,.catalogue-filter-panel[open]>summary>svg:last-child{transform:rotate(180deg)}
+.catalogue-destinations>nav{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:0 24px;padding-bottom:12px}
+.catalogue-destinations>nav>a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px;padding:8px 0;border-top:1px solid var(--night-line);font-size:12px;color:var(--night-text)}
+.catalogue-destinations>nav>a:hover{color:var(--pink)}
+.cinematic-catalogue{min-width:0}
+.cinematic-catalogue .portal-section-heading{margin:18px 0 12px}
+.catalogue-toolbar{position:sticky;top:86px;z-index:4;display:flex;align-items:flex-start;gap:8px;padding:8px 0;background:var(--gta-midnight,#111222);border-bottom:1px solid var(--night-line);min-width:0}
+.catalogue-toolbar .catalogue-search{flex:1;min-width:0;margin:0;min-height:44px}
+.catalogue-search input{width:100%;min-width:0}
+.catalogue-filter-panel{position:relative;flex:0 0 auto;min-width:0}
+.catalogue-filter-panel>summary{border:1px solid var(--night-line-strong);border-radius:8px;padding:0 12px;background:var(--night-panel);font-size:12px;min-height:44px}
+.catalogue-filter-fields{position:absolute;z-index:5;right:0;top:calc(100% + 6px);width:min(380px,calc(100vw - 40px));max-height:min(65vh,440px);overflow-y:auto;overscroll-behavior:contain;background:var(--gta-midnight,#111222);border:1px solid var(--night-line-strong);border-radius:10px;padding:14px;box-shadow:0 12px 30px #0005;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.catalogue-field{display:flex;flex-direction:column;gap:6px;min-width:0;font-size:11px;color:var(--night-muted)}
+.catalogue-field select{width:100%;min-width:0;min-height:44px;padding:8px;border:1px solid var(--night-line-strong);border-radius:6px;background:var(--night-panel);color:var(--cream);font:inherit}
+.catalogue-group-toggle,.catalogue-filter-actions{grid-column:1/-1;display:flex;align-items:center;gap:10px;min-height:44px;font-size:12px;color:var(--night-text)}
+.catalogue-group-toggle input{accent-color:var(--pink);width:18px;height:18px}
+.catalogue-filter-actions{justify-content:space-between}
+.catalogue-reset,.catalogue-result-meta button{color:var(--pink);min-height:44px;font-size:11px;display:inline-flex;align-items:center;gap:5px}
+.catalogue-result-meta{display:flex;justify-content:space-between;align-items:center;min-height:38px;font-size:11px;color:var(--night-muted)}
+.catalogue-group{margin:0 0 30px;min-width:0}
+.catalogue-group-heading{display:flex;align-items:center;gap:12px;margin:0 0 13px;border-bottom:1px solid var(--night-line);padding:0 0 8px}
+.catalogue-group-heading h3{font:600 clamp(21px,2.4vw,30px)/1.1 'Barlow Condensed',sans-serif;color:var(--cream)}
+.catalogue-group-heading>span{font-size:11px;color:var(--night-muted);margin-left:auto}
+.catalogue-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.catalogue-more{display:flex;flex-direction:column;align-items:center;gap:10px;padding-block:12px 24px}
+.catalogue-more>span{font-size:11px;color:var(--night-muted)}
+.cinematic-catalogue .portal-grid:not(.is-list){grid-template-columns:repeat(auto-fill,minmax(min(100%,225px),1fr));gap:16px}
+.catalogue-vehicles .portal-grid:not(.is-list) .portal-card-image,.catalogue-weapons .portal-grid:not(.is-list) .portal-card-image{aspect-ratio:16/9}
+.catalogue-vehicles .portal-grid:not(.is-list) .object-card img,.catalogue-weapons .portal-grid:not(.is-list) .object-card img{padding:10px;object-fit:contain}
+.catalogue-characters .portal-grid:not(.is-list){grid-template-columns:repeat(auto-fill,minmax(min(100%,180px),1fr))}
+.catalogue-characters .portal-grid:not(.is-list) .person-card .portal-card-image{aspect-ratio:3/4}
+.catalogue-world .portal-grid:not(.is-list),.catalogue-media .portal-grid:not(.is-list){grid-template-columns:repeat(auto-fill,minmax(min(100%,285px),1fr))}
+.catalogue-world .portal-grid:not(.is-list) .portal-card-image,.catalogue-media .portal-grid:not(.is-list) .portal-card-image{aspect-ratio:16/9}
+.catalogue-radio .portal-grid:not(.is-list) .portal-card-image{aspect-ratio:1}
+.catalogue-missions .portal-grid:not(.is-list),.catalogue-editorial .portal-grid:not(.is-list){grid-template-columns:repeat(auto-fill,minmax(min(100%,265px),1fr))}
+.catalogue-missions .catalogue-group-heading{border-left:2px solid var(--section-accent,var(--pink));padding-left:12px}
+.cinematic-catalogue :focus-visible,.catalogue-destinations :focus-visible{outline:2px solid var(--pink);outline-offset:3px}
+@media(max-width:950px){.catalogue-toolbar{top:72px}.catalogue-hero.portal-hero{min-height:200px}}
+@media(max-width:600px){.catalogue-hero.portal-hero{min-height:185px}.catalogue-hero .portal-hero-copy{padding-block:22px}.catalogue-hero .portal-hero-index{display:none}.catalogue-hero h1{font-size:43px}.catalogue-hero .portal-hero-meta{margin-top:12px}.catalogue-toolbar{top:64px}.catalogue-toolbar .catalogue-search{flex-basis:0;padding:10px}.catalogue-filter-panel>summary{padding:0 9px;gap:6px}.catalogue-filter-fields{width:min(340px,calc(100vw - 36px));padding:12px}.cinematic-catalogue .portal-grid:not(.is-list){grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.catalogue-world .portal-grid:not(.is-list),.catalogue-media .portal-grid:not(.is-list),.catalogue-editorial .portal-grid:not(.is-list),.catalogue-missions .portal-grid:not(.is-list){grid-template-columns:1fr}.cinematic-catalogue .portal-grid:not(.is-list) .portal-card-copy{padding:12px}.cinematic-catalogue .portal-grid:not(.is-list) .portal-card-copy h3{font-size:21px}.catalogue-group{margin-bottom:23px}}
+@media(max-width:359px){.catalogue-filter-fields{grid-template-columns:1fr}.cinematic-catalogue .portal-grid:not(.is-list){grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.catalogue-destinations summary svg,.catalogue-filter-panel summary svg{transition:none}}
