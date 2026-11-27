@@ -60,5 +60,12 @@
     "source": "https://gta6.house/library/vehicles/progen-seaspray-emerus",
     "evidence": "reviewed-in-game-name",
     "credit": "GamesRadar+ via GTA6.house · game imagery © Rockstar Games"
+  },
+  "vehicle-dantes-vitello": {
+    "title": "Dante's Vitello",
+    "image": "https://assets.gta6gps.com/standout/dantes-vitello.webp",
+    "source": "https://gta6gps.com/vehicles",
+    "evidence": "exact-gps-image",
+    "credit": "GTA6GPS · vehicle image reference · respective rights holders"
   }
 }

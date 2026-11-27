@@ -17,3 +17,7 @@ Eight explicit remote image references were checked against their exact GTA Town
 ## Second image pass — 2026-11-27
 
 The previous production workflow reported 268 source-matched image references for 559 records (291 missing). Two additional manually opened gameplay screenshots show the exact in-game names Black Widow Emerus and Seaspray Emerus; their source pages and original publisher credit are recorded in the manifest. The screenshot host is GTA6.house, credited to GamesRadar+. The GTA Town importer now also accepts a manufacturer-prefixed dossier slug when the exact title and image slug agree, without allowing base-model substitution. New coverage must be measured after CI; not all absent pictures are available in the public index. External references are subject to availability and rights-holder permissions.
+
+## Third image pass — 2026-11-27
+
+PR #19 passed CI with 270 references and 289 missing. This pass adds the directly inspected Dante's Vitello image from GTA6GPS and attempts two supplemental public catalogues: GTA6GPS and AlcastHQ (Standout icons, identified as icons rather than gameplay screenshots). Sources must match exact names, class where supplied, and image filenames; ambiguous or duplicate references remain unassigned. The import emits a complete missing-ID report. No claim of live coverage until CI completes. Remote images remain subject to availability and rights-holder permissions.

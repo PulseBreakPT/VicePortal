@@ -16,8 +16,84 @@ const safeURL=(value,kind)=>{
   }catch{return null;}
 };
 
+
+const extraSources={
+ gps:{page:'https://gta6gps.com/vehicles',host:'assets.gta6gps.com',credit:'GTA6GPS · vehicle image reference · respective rights holders'},
+ alcast:{page:'https://alcasthq.com/gta-6-standout-vehicles/',host:'alcasthq.com',credit:'AlcastHQ · Standout vehicle icon · respective rights holders'}
+};
+const namesFor=row=>{
+ const title=vehicleSlug(row.title),maker=vehicleSlug(row.maker);
+ return {title,full:title.startsWith(maker+'-')?title:maker+'-'+title};
+};
+function extraImage(value,row,kind){
+ try{
+   const cfg=extraSources[kind],u=new URL(value,cfg.page);
+   if(u.protocol!=='https:'||u.username||u.password||u.search||u.hash||u.hostname!==cfg.host)return null;
+   const {title,full}=namesFor(row);
+   const name=vehicleSlug(decodeURIComponent(u.pathname.split('/').pop()).replace(/\.(webp|png|jpe?g)$/i,''));
+   if(!/\.(webp|png|jpe?g)$/i.test(u.pathname)||/placeholder|default|no-image|generic|unknown/.test(name))return null;
+   if(kind==='gps'){
+     if(!/^\/(?:standout|vehicles)\/[a-z0-9-]+\.(webp|png|jpe?g)$/i.test(u.pathname)||![title,full].includes(name))return null;
+   }else{
+     if(!/^\/wp-content\/uploads\//.test(u.pathname))return null;
+     const normalized=name.replace(/(?:-gta-?6|-icon|-scaled|-\d+x\d+)+$/g,'').replace(/^gta-?6-/,'');
+     if(![title,full].includes(normalized))return null;
+   }
+   return u.href;
+ }catch{return null;}
+}
+export function collectSupplementalImages(html,rows,kind){
+ const cfg=extraSources[kind],result={},ambiguous=new Set();
+ if(!cfg)return result;
+ const candidates=rows.map(row=>({row,...namesFor(row)}));
+ const containers=kind==='alcast'?[...html.matchAll(/<tr\b[^>]*>[\s\S]*?<\/tr\s*>/gi)].map(x=>x[0]):[html];
+ for(const body of containers){
+   const cells=kind==='alcast'?[...body.matchAll(/<td\b[^>]*>([\s\S]*?)<\/td\s*>/gi)].map(x=>vehicleSlug(plain(x[1]))):[];
+   for(const match of body.matchAll(/<img\b[^>]*>/gi)){
+     const tag=match[0],alt=attr(tag,'alt');
+     let matches;
+     if(kind==='alcast'){
+       const label=vehicleSlug(alt.replace(/\s+GTA\s*6\s+Icon\s*$/i,''));
+       if(!/\s+GTA\s*6\s+Icon\s*$/i.test(alt))continue;
+       matches=candidates.filter(x=>x.row.group==='standout'&&label===x.full&&cells.includes(x.full));
+     }else{
+       const label=alt.match(/^(.+?),\s+a\s+(.+?)\s+standout vehicle in GTA 6$/i);
+       if(label){
+         matches=candidates.filter(x=>x.row.group==='standout'&&[x.title,x.full].includes(vehicleSlug(label[1]))&&vehicleSlug(x.row.category).replace(/^standout-/,'')===vehicleSlug(label[2]));
+       }else{
+         const normal=alt.match(/^(.+?),?\s+in GTA 6$/i);
+         if(!normal)continue;
+         matches=candidates.filter(x=>x.row.group!=='standout'&&vehicleSlug(normal[1].replace(/,$/,''))===x.full);
+       }
+     }
+     if(matches.length!==1)continue;
+     const {row}=matches[0];
+     let image;
+     for(const field of ['data-src','data-lazy-src','src','data-srcset','srcset']){
+       for(const part of attr(tag,field).split(',').map(x=>x.trim().split(/\s+/)[0]).filter(Boolean)){
+         image=extraImage(part,row,kind);
+         if(image)break;
+       }
+       if(image)break;
+     }
+     if(!image)continue;
+     if(result[row.id]&&result[row.id].image!==image){ambiguous.add(row.id);continue;}
+     result[row.id]={title:row.title,image,source:cfg.page,evidence:kind==='gps'?'exact-gps-image':'exact-alcast-icon',credit:cfg.credit};
+   }
+ }
+ for(const id of ambiguous)delete result[id];
+ return result;
+}
+async function loadHtml(url){
+ const r=await fetch(url,{signal:AbortSignal.timeout(35000),headers:{Accept:'text/html','User-Agent':'ViceAtlas/1.0 (public vehicle image references)'}});
+ if(!r.ok)throw Error('HTTP '+r.status);
+ return r.text();
+}
+
 export function validImageReference(ref,row){
  if(!ref||!row||vehicleSlug(row.title)!==vehicleSlug(ref.title))return false;
+ const kind=ref.evidence==='exact-gps-image'?'gps':ref.evidence==='exact-alcast-icon'?'alcast':null;
+ if(kind){const cfg=extraSources[kind];return ref.source===cfg.page&&ref.credit===cfg.credit&&extraImage(ref.image,row,kind)===ref.image;}
  if(ref.evidence==='reviewed-in-game-name'){
    try{
      const p=new URL(ref.source),i=new URL(ref.image);
@@ -65,11 +141,16 @@ export function collectImageReferences(html,rows){
 export async function syncImages(){
  const rows=normalizeVehicles(JSON.parse(await readFile(feedURL,'utf8')));
  const previous=JSON.parse(await readFile(manifestURL,'utf8'));
- const response=await fetch(index,{signal:AbortSignal.timeout(30000),headers:{Accept:'text/html','User-Agent':'ViceAtlas/1.0 (public vehicle image references)'}});
- if(!response.ok)throw Error('Image index returned '+response.status);
- const html=await response.text();
- const found=collectImageReferences(html,rows);
- const merged={...found,...previous}; // explicit reviewed links win, including on an incomplete source response
+ const results=await Promise.allSettled([loadHtml(index),loadHtml(extraSources.gps.page),loadHtml(extraSources.alcast.page)]);
+ const keys=['town','gps','alcast'],foundBy={};
+ for(let i=0;i<results.length;i++){
+   const r=results[i],key=keys[i];
+   if(r.status==='fulfilled')foundBy[key]=key==='town'?collectImageReferences(r.value,rows):collectSupplementalImages(r.value,rows,key);
+   else{foundBy[key]={};console.warn('Vehicle image source unavailable:',key,r.reason?.message);}
+ }
+ const found=foundBy.town;
+ // Reviewed references win, then exact GTA Town references, then screenshots/icons.
+ const merged={...foundBy.alcast,...foundBy.gps,...found,...previous};
  const active=new Set(rows.map(r=>r.id));
  for(const id of Object.keys(merged))if(!active.has(id))delete merged[id];
  const seen=new Set(),sorted={};
@@ -82,6 +163,10 @@ export async function syncImages(){
  if(Object.keys(sorted).length<Object.keys(previous).length)throw Error('Image reference coverage would regress');
  const tmp=new URL('../src/data/vehicleImageRefs.tmp.json',import.meta.url);
  await writeFile(tmp,JSON.stringify(sorted,null,2)+'\n');await rename(tmp,manifestURL);
- console.log(JSON.stringify({vehicles:rows.length,matchedFromIndex:Object.keys(found).length,imageReferences:Object.keys(sorted).length,missing:rows.length-Object.keys(sorted).length}));
+ const missing=rows.filter(row=>!sorted[row.id]).map(row=>({id:row.id,title:row.title,maker:row.maker,category:row.category}));
+ const counts=Object.fromEntries(keys.map(key=>[key,Object.keys(foundBy[key]).length]));
+ console.log(JSON.stringify({vehicles:rows.length,matchedFromIndex:Object.keys(found).length,sources:counts,imageReferences:Object.keys(sorted).length,missing:missing.length}));
+ await writeFile(new URL('../src/data/vehicleImageMissing.json',import.meta.url),JSON.stringify(missing,null,2)+'\n');
+ console.log('Missing vehicle IDs:',missing.map(row=>row.id).join(', '));
 }
 if(process.argv[1]&&pathToFileURL(process.argv[1]).href===import.meta.url)await syncImages();
