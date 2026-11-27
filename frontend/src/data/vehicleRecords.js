@@ -13,7 +13,7 @@ const legacyImages={
   'vehicle-cheetah-classic':'car-cheetah'
 };
 const bar=value=>value===null?unknown:value.toFixed(1)+' / 10';
-export const vehicleFeedInfo={complete:feed.complete===true,checkedOn:feed.checkedOn,source:feed.source,license:feed.license};
+export const vehicleFeedInfo={complete:feed.complete===true,count:feed.rows.length,publicListCount:feed.publicListCount,hiddenCount:feed.hiddenCount,checkedOn:feed.checkedOn,source:feed.source,license:feed.license};
 export const vehicleRecords=normalizeVehicles(feed).map(row=>{
  const legacy=legacyImages[row.id];
  return {
