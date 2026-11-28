@@ -1,0 +1,112 @@
+[
+  {
+    "kind": "Collectible set",
+    "title": "Stunt Jumps",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/stunt-jumps",
+    "section": "archive/stunts/stunt-jumps",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-listed total": 130
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Under the Bridge Flights",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/under-the-bridge",
+    "section": "archive/stunts/under-the-bridge",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-listed total": 202
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Knife Flights",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/knife-flights",
+    "section": "archive/stunts/knife-flights",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-listed total": 40
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "BASE Jumps",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/base-jumps",
+    "section": "archive/stunts/base-jumps",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-listed total": 25
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Cocaine Flamingos",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/cocaine-flamingos",
+    "section": "archive/collections/cocaine-flamingos",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-listed total": 125,
+      "Source-mapped count": 84,
+      "Required for 100%": 100
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Meditation Spots",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/meditation-spots",
+    "section": "archive/collections/meditation-spots",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-listed total": 18,
+      "Source-mapped count": 10,
+      "Required for 100%": 15
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Magazines, Books and Comics",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/magazines",
+    "section": "archive/collections/magazines",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-listed total": 34,
+      "Required for 100%": 30
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Basketball Hoops",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/basketball-hoops",
+    "section": "archive/activities/basketball",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-listed total": 100,
+      "Required for 100%": 90
+    }
+  }
+]
