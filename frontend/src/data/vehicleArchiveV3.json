@@ -1696,7 +1696,8 @@
       "roadIndex": 458,
       "noteOriginal": "Veículo pessoal de Jason no capítulo 1.",
       "registration": "$6,500",
-      "resale": "$1,980"
+      "resale": "$1,980",
+      "note": "Jason's personal vehicle in Chapter 1."
     },
     "bravado-gauntlet-hellfire": {
       "title": "Bravado Gauntlet Hellfire",
@@ -4206,7 +4207,8 @@
       "roadIndex": 467,
       "noteOriginal": "PowerPyx escreve '29; GamesDB e Timesaver indicam '20.",
       "registration": "$5,400",
-      "resale": "$1,595"
+      "resale": "$1,595",
+      "note": "Model-year discrepancy: PowerPyx lists '29; GamesDB and Timesaver list '20."
     },
     "declasse-impaler-sz-95": {
       "title": "'95 Declasse Impaler SZ",
@@ -5779,7 +5781,8 @@
       "registration": "$32,750",
       "resale": "$16,775",
       "testedMph": 176,
-      "testedKmh": 283.83
+      "testedKmh": 283.83,
+      "note": "Associated with Ultimate Edition; eligibility requires confirmation."
     },
     "progen-emerus": {
       "title": "Progen Emerus",
@@ -10167,7 +10170,8 @@
         "acceleration": 1.7,
         "handling": 2.6
       },
-      "noteOriginal": "Ano divergente: PowerPyx indica '95."
+      "noteOriginal": "Ano divergente: PowerPyx indica '95.",
+      "note": "Model-year discrepancy: PowerPyx lists '95."
     },
     "cartright-biff": {
       "title": "Cartright Biff",
@@ -11627,7 +11631,8 @@
       "roadIndex": 708,
       "terrainIndex": 283,
       "seats": 2,
-      "locationOriginal": "Recompensa dos puzzles de arte Snapmatic 1010."
+      "locationOriginal": "Recompensa dos puzzles de arte Snapmatic 1010.",
+      "location": "Reward for the Snapmatic 1010 art puzzles."
     },
     "andrew-nodes-thrax": {
       "title": "Andrew Node's Thrax",
@@ -11679,7 +11684,8 @@
       "seats": 2,
       "locationOriginal": "Mansão de Andrew Node, Starfish Island.",
       "registration": "$70,000",
-      "resale": "$21,250 – $23,375"
+      "resale": "$21,250 – $23,375",
+      "location": "Andrew Node's mansion, Starfish Island."
     },
     "atlantic-volatus": {
       "title": "Atlantic Volatus",
@@ -11711,7 +11717,8 @@
       ],
       "ratings": {},
       "seats": 4,
-      "locationOriginal": "Hangar no VCIA."
+      "locationOriginal": "Hangar no VCIA.",
+      "location": "Hangar at VCIA."
     },
     "avalanche-supervolito": {
       "title": "Avalanche Supervolito",
@@ -11743,7 +11750,8 @@
       ],
       "ratings": {},
       "seats": 4,
-      "locationOriginal": "Telhado dos apartamentos Neo Paloma, Tequesta."
+      "locationOriginal": "Telhado dos apartamentos Neo Paloma, Tequesta.",
+      "location": "Roof of the Neo Paloma apartments, Tequesta."
     },
     "cellerica-shamal": {
       "title": "Cellerica Shamal",
@@ -11775,7 +11783,8 @@
       ],
       "ratings": {},
       "seats": 10,
-      "locationOriginal": "Associado a Cecilia e à Cellerica, Belville; ponto exato por confirmar."
+      "locationOriginal": "Associado a Cecilia e à Cellerica, Belville; ponto exato por confirmar.",
+      "location": "Associated with Cecilia and Cellerica, Belville; exact spot unconfirmed."
     },
     "dantes-vitello": {
       "title": "Dante's Vitello",
@@ -11811,7 +11820,8 @@
       "roadIndex": 873,
       "terrainIndex": 297,
       "seats": 2,
-      "locationOriginal": "Mansão de Dante Fresh, Starfish Island."
+      "locationOriginal": "Mansão de Dante Fresh, Starfish Island.",
+      "location": "Dante Fresh's mansion, Starfish Island."
     },
     "diamond-jubilee": {
       "title": "Diamond Jubilee",
@@ -11847,7 +11857,8 @@
       "roadIndex": 577,
       "terrainIndex": 383,
       "seats": 4,
-      "locationOriginal": "Mansão em Leaf Links."
+      "locationOriginal": "Mansão em Leaf Links.",
+      "location": "Mansion in Leaf Links."
     },
     "dolce-vita-rsx": {
       "title": "Dolce Vita RSX",
@@ -11896,7 +11907,8 @@
       "terrainIndex": 270,
       "seats": 2,
       "locationOriginal": "Villa de luxo em Rialto Islands.",
-      "registration": "$40,650"
+      "registration": "$40,650",
+      "location": "Luxury villa in Rialto Islands."
     },
     "dragonfly-volatus": {
       "title": "Dragonfly Volatus",
@@ -11928,7 +11940,8 @@
       ],
       "ratings": {},
       "seats": 4,
-      "locationOriginal": "Telhado do New Quay Plaza, Downtown."
+      "locationOriginal": "Telhado do New Quay Plaza, Downtown.",
+      "location": "Roof of New Quay Plaza, Downtown."
     },
     "dragon-gate-furia": {
       "title": "Dragon Gate Furia",
@@ -11964,7 +11977,8 @@
       "roadIndex": 810,
       "terrainIndex": 239,
       "seats": 2,
-      "locationOriginal": "Y Hotel, Washington Beach."
+      "locationOriginal": "Y Hotel, Washington Beach.",
+      "location": "Y Hotel, Washington Beach."
     },
     "fatstaks-dubsta": {
       "title": "Fatstaks Dubsta",
@@ -12000,7 +12014,8 @@
       "roadIndex": 581,
       "terrainIndex": 416,
       "seats": 4,
-      "locationOriginal": "Residência de luxo em Starfish Island."
+      "locationOriginal": "Residência de luxo em Starfish Island.",
+      "location": "Luxury residence on Starfish Island."
     },
     "gentrifier-comet": {
       "title": "Gentrifier Comet",
@@ -12036,7 +12051,8 @@
       "roadIndex": 776,
       "terrainIndex": 238,
       "seats": 2,
-      "locationOriginal": "Motel em Salton."
+      "locationOriginal": "Motel em Salton.",
+      "location": "Motel in Salton."
     },
     "honeycomb-emerus": {
       "title": "Honeycomb Emerus",
@@ -12072,7 +12088,8 @@
       "roadIndex": 862,
       "terrainIndex": 213,
       "seats": 2,
-      "locationOriginal": "Dolos Exotic Car Rental, Crosstown."
+      "locationOriginal": "Dolos Exotic Car Rental, Crosstown.",
+      "location": "Dolos Exotic Car Rental, Crosstown."
     },
     "mosaic-dibnah": {
       "title": "Mosaic Dibnah",
@@ -12103,7 +12120,8 @@
         }
       ],
       "ratings": {},
-      "locationOriginal": "Cais de Dalton Island."
+      "locationOriginal": "Cais de Dalton Island.",
+      "location": "Dalton Island dock."
     },
     "purple-drank-emerus": {
       "title": "Purple Drank Emerus",
@@ -12153,7 +12171,8 @@
       "seats": 2,
       "locationOriginal": "Complexo Chatfield Storage & Logistics, Waxman Island.",
       "registration": "$29,900",
-      "resale": "$33,000"
+      "resale": "$33,000",
+      "location": "Chatfield Storage & Logistics complex, Waxman Island."
     },
     "rauls-tempesta": {
       "title": "Raul's Tempesta",
@@ -12189,7 +12208,8 @@
       "roadIndex": 761,
       "terrainIndex": 631,
       "seats": 2,
-      "locationOriginal": "Associado a Raul, Salton."
+      "locationOriginal": "Associado a Raul, Salton.",
+      "location": "Associated with Raul, Salton."
     },
     "royal-ruby-emerus": {
       "title": "Royal Ruby Emerus",
@@ -12245,7 +12265,8 @@
       "roadIndex": 852,
       "terrainIndex": 213,
       "seats": 2,
-      "locationOriginal": "Residência em Rialto Islands."
+      "locationOriginal": "Residência em Rialto Islands.",
+      "location": "Residence in Rialto Islands."
     },
     "preziosa-cheetah": {
       "title": "Preziosa Cheetah",
@@ -12312,7 +12333,8 @@
         "offroad": 4.4,
         "strength": 3
       },
-      "locationOriginal": "Ultimate: garagem sob a penthouse de Giorgio, Tequesta."
+      "locationOriginal": "Ultimate: garagem sob a penthouse de Giorgio, Tequesta.",
+      "location": "Ultimate Edition: garage beneath Giorgio's penthouse, Tequesta."
     },
     "typhoon-squalo": {
       "title": "Typhoon Squalo",
@@ -12374,7 +12396,8 @@
       ],
       "ratings": {},
       "seats": 2,
-      "locationOriginal": "Ultimate: cap. 4, cais junto ao Y Hotel, Washington Beach."
+      "locationOriginal": "Ultimate: cap. 4, cais junto ao Y Hotel, Washington Beach.",
+      "location": "Ultimate Edition: Chapter 4, dock by Y Hotel, Washington Beach."
     },
     "bareback-cypher": {
       "title": "Bareback Cypher",
@@ -12410,7 +12433,8 @@
       "roadIndex": 656,
       "terrainIndex": 574,
       "seats": 2,
-      "locationOriginal": "Garagem em Crosstown."
+      "locationOriginal": "Garagem em Crosstown.",
+      "location": "Garage in Crosstown."
     },
     "black-widow-emerus": {
       "title": "Black Widow Emerus",
@@ -12446,7 +12470,8 @@
       "roadIndex": 863,
       "terrainIndex": 212,
       "seats": 2,
-      "locationOriginal": "Contentor no porto de Vice City."
+      "locationOriginal": "Contentor no porto de Vice City.",
+      "location": "Shipping container at Vice City port."
     },
     "bloodless-jugular": {
       "title": "Bloodless Jugular",
@@ -12482,7 +12507,8 @@
       "roadIndex": 728,
       "terrainIndex": 146,
       "seats": 4,
-      "locationOriginal": "Residência em Belville."
+      "locationOriginal": "Residência em Belville.",
+      "location": "Residence in Belville."
     },
     "chameleon-elegy": {
       "title": "Chameleon Elegy",
@@ -12518,7 +12544,8 @@
       "roadIndex": 652,
       "terrainIndex": 295,
       "seats": 2,
-      "locationOriginal": "Atrás de condomínios em Ocean Beach."
+      "locationOriginal": "Atrás de condomínios em Ocean Beach.",
+      "location": "Behind condominiums in Ocean Beach."
     },
     "drifter-elegy": {
       "title": "Drifter Elegy",
@@ -12570,7 +12597,8 @@
       "seats": 2,
       "locationOriginal": "Garagem do Gellhorn International Raceway.",
       "registration": "$14,250",
-      "resale": "$2,175 – $3,725"
+      "resale": "$2,175 – $3,725",
+      "location": "Garage at Gellhorn International Raceway."
     },
     "hornet-growler": {
       "title": "Hornet Growler",
@@ -12606,7 +12634,8 @@
       "roadIndex": 719,
       "terrainIndex": 279,
       "seats": 2,
-      "locationOriginal": "Parque de estacionamento em Ocean Beach."
+      "locationOriginal": "Parque de estacionamento em Ocean Beach.",
+      "location": "Parking lot in Ocean Beach."
     },
     "kinetic-dominator": {
       "title": "Kinetic Dominator",
@@ -12642,7 +12671,8 @@
       "roadIndex": 607,
       "terrainIndex": 279,
       "seats": 2,
-      "locationOriginal": "Parque de estacionamento em Rockridge."
+      "locationOriginal": "Parque de estacionamento em Rockridge.",
+      "location": "Parking lot in Rockridge."
     },
     "lagoon-schafter": {
       "title": "Lagoon Schafter",
@@ -12678,7 +12708,8 @@
       "roadIndex": 639,
       "terrainIndex": 278,
       "seats": 4,
-      "locationOriginal": "Contentor em Ocean Beach."
+      "locationOriginal": "Contentor em Ocean Beach.",
+      "location": "Shipping container in Ocean Beach."
     },
     "moses-sultan": {
       "title": "Moses' Sultan",
@@ -12728,7 +12759,8 @@
       "seats": 4,
       "locationOriginal": "Recompensa dos trabalhos de Moses, Port Gellhorn.",
       "registration": "$1,600",
-      "resale": "$3,800"
+      "resale": "$3,800",
+      "location": "Reward for Moses' jobs, Port Gellhorn."
     },
     "mojito-tempesta": {
       "title": "Mojito Tempesta",
@@ -12764,7 +12796,8 @@
       "roadIndex": 807,
       "terrainIndex": 284,
       "seats": 2,
-      "locationOriginal": "Exterior de hotel em Tequesta Retreat."
+      "locationOriginal": "Exterior de hotel em Tequesta Retreat.",
+      "location": "Outside a hotel in Tequesta Retreat."
     },
     "nightlight-schafter": {
       "title": "Nightlight Schafter",
@@ -12800,7 +12833,8 @@
       "roadIndex": 698,
       "terrainIndex": 187,
       "seats": 4,
-      "locationOriginal": "Edifício dos Guardia Brothers, Little Cuba."
+      "locationOriginal": "Edifício dos Guardia Brothers, Little Cuba.",
+      "location": "Guardia Brothers building, Little Cuba."
     },
     "pixel-elegy": {
       "title": "Pixel Elegy",
@@ -12836,7 +12870,8 @@
       "roadIndex": 776,
       "terrainIndex": 150,
       "seats": 2,
-      "locationOriginal": "Contentor em Capri."
+      "locationOriginal": "Contentor em Capri.",
+      "location": "Shipping container in Capri."
     },
     "twinstripe-vigero": {
       "title": "Twinstripe Vigero",
@@ -12872,7 +12907,8 @@
       "roadIndex": 656,
       "terrainIndex": 219,
       "seats": 2,
-      "locationOriginal": "Exterior de clube privado em Key Lento."
+      "locationOriginal": "Exterior de clube privado em Key Lento.",
+      "location": "Outside a private club in Key Lento."
     },
     "tsunami-zorrusso": {
       "title": "Tsunami Zorrusso",
@@ -12908,7 +12944,8 @@
       "roadIndex": 810,
       "terrainIndex": 302,
       "seats": 2,
-      "locationOriginal": "Residência em Peacock Estates."
+      "locationOriginal": "Residência em Peacock Estates.",
+      "location": "Residence in Peacock Estates."
     },
     "vice-vinyl-coquette": {
       "title": "Vice Vinyl Coquette",
@@ -12944,7 +12981,8 @@
       "roadIndex": 753,
       "terrainIndex": 245,
       "seats": 2,
-      "locationOriginal": "Associado a Rialto Islands."
+      "locationOriginal": "Associado a Rialto Islands.",
+      "location": "Associated with Rialto Islands."
     },
     "yagos-elegy": {
       "title": "Yago's Elegy",
@@ -12980,7 +13018,8 @@
       "roadIndex": 757,
       "terrainIndex": 208,
       "seats": 2,
-      "locationOriginal": "Associado às atividades de Jason e Yago."
+      "locationOriginal": "Associado às atividades de Jason e Yago.",
+      "location": "Associated with Jason and Yago's activities."
     },
     "murica-dominator": {
       "title": "Murica Dominator",
@@ -13016,7 +13055,8 @@
       "roadIndex": 635,
       "terrainIndex": 219,
       "seats": 2,
-      "locationOriginal": "Ambrosia Raceway Park."
+      "locationOriginal": "Ambrosia Raceway Park.",
+      "location": "Ambrosia Raceway Park."
     },
     "battler-picador": {
       "title": "Battler Picador",
@@ -13052,7 +13092,8 @@
       "roadIndex": 506,
       "terrainIndex": 329,
       "seats": 2,
-      "locationOriginal": "Celeiro em South Kelly County."
+      "locationOriginal": "Celeiro em South Kelly County.",
+      "location": "Barn in South Kelly County."
     },
     "blue-drake-penumbra": {
       "title": "Blue Drake Penumbra",
@@ -13088,7 +13129,8 @@
       "roadIndex": 637,
       "terrainIndex": 155,
       "seats": 2,
-      "locationOriginal": "Ambrosia Raceway."
+      "locationOriginal": "Ambrosia Raceway.",
+      "location": "Ambrosia Raceway."
     },
     "burning-cypher": {
       "title": "Burning Cypher",
@@ -13124,7 +13166,8 @@
       "roadIndex": 707,
       "terrainIndex": 124,
       "seats": 2,
-      "locationOriginal": "Contentor em Port Gellhorn."
+      "locationOriginal": "Contentor em Port Gellhorn.",
+      "location": "Shipping container in Port Gellhorn."
     },
     "darkling-dominator": {
       "title": "Darkling Dominator",
@@ -13160,7 +13203,8 @@
       "roadIndex": 626,
       "terrainIndex": 280,
       "seats": 2,
-      "locationOriginal": "Gellhorn International Raceway."
+      "locationOriginal": "Gellhorn International Raceway.",
+      "location": "Gellhorn International Raceway."
     },
     "seaspray-emerus": {
       "title": "Seaspray Emerus",
@@ -13210,7 +13254,8 @@
       "seats": 2,
       "locationOriginal": "Garagem em Capri.",
       "registration": "$59,900",
-      "resale": "$19,900"
+      "resale": "$19,900",
+      "location": "Garage in Capri."
     },
     "status-rsx": {
       "title": "Status RSX",
@@ -13260,7 +13305,8 @@
       "seats": 2,
       "locationOriginal": "Gellhorn International Raceway.",
       "registration": "$40,650",
-      "resale": "$7,675"
+      "resale": "$7,675",
+      "location": "Gellhorn International Raceway."
     },
     "burnished-alvino": {
       "title": "Burnished Alvino",
@@ -13296,7 +13342,8 @@
       "roadIndex": 804,
       "terrainIndex": 118,
       "seats": 2,
-      "locationOriginal": "Garagem em Starfish Island."
+      "locationOriginal": "Garagem em Starfish Island.",
+      "location": "Garage on Starfish Island."
     },
     "crushed-velvet-double-t": {
       "title": "Crushed Velvet Double-T",
@@ -13332,7 +13379,8 @@
       "roadIndex": 744,
       "terrainIndex": 120,
       "seats": 2,
-      "locationOriginal": "Estúdio Sound4Sound, Stockyard."
+      "locationOriginal": "Estúdio Sound4Sound, Stockyard.",
+      "location": "Sound4Sound studio, Stockyard."
     },
     "emilios-lectro": {
       "title": "Emilio's Lectro",
@@ -13368,7 +13416,8 @@
       "roadIndex": 774,
       "terrainIndex": 118,
       "seats": 2,
-      "locationOriginal": "Emilio's Auto Center, Rockridge."
+      "locationOriginal": "Emilio's Auto Center, Rockridge.",
+      "location": "Emilio's Auto Center, Rockridge."
     },
     "highwayman-sanchez": {
       "title": "Highwayman Sanchez",
@@ -13404,7 +13453,8 @@
       "roadIndex": 524,
       "terrainIndex": 715,
       "seats": 2,
-      "locationOriginal": "Mota fornecida por Billy numa atividade."
+      "locationOriginal": "Mota fornecida por Billy numa atividade.",
+      "location": "Motorcycle provided by Billy during an activity."
     },
     "kds-sfb-1000": {
       "title": "KD's SFB 1000",
@@ -13440,7 +13490,8 @@
       "roadIndex": 796,
       "terrainIndex": 121,
       "seats": 2,
-      "locationOriginal": "Missão de resgate de Dre'Quan e KD."
+      "locationOriginal": "Missão de resgate de Dre'Quan e KD.",
+      "location": "Dre'Quan and KD rescue mission."
     },
     "memorial-sanchez": {
       "title": "Memorial Sanchez",
@@ -13476,7 +13527,8 @@
       "roadIndex": 548,
       "terrainIndex": 739,
       "seats": 2,
-      "locationOriginal": "Waning Sands; associada a uma vítima de homicídio."
+      "locationOriginal": "Waning Sands; associada a uma vítima de homicídio.",
+      "location": "Waning Sands; associated with a murder victim."
     },
     "pacific-manchez": {
       "title": "Pacific Manchez",
@@ -13512,7 +13564,8 @@
       "roadIndex": 616,
       "terrainIndex": 134,
       "seats": 2,
-      "locationOriginal": "Posto de combustível em South Kelly County."
+      "locationOriginal": "Posto de combustível em South Kelly County.",
+      "location": "Gas station in South Kelly County."
     },
     "pharaoh-sanchez": {
       "title": "Pharaoh Sanchez",
@@ -13548,7 +13601,8 @@
       "roadIndex": 603,
       "terrainIndex": 129,
       "seats": 2,
-      "locationOriginal": "Residência em Wild Hog Point."
+      "locationOriginal": "Residência em Wild Hog Point.",
+      "location": "Residence in Wild Hog Point."
     },
     "royal-sanchez": {
       "title": "Royal Sanchez",
@@ -13584,7 +13638,8 @@
       "roadIndex": 603,
       "terrainIndex": 129,
       "seats": 2,
-      "locationOriginal": "Contentor em North Mariana County."
+      "locationOriginal": "Contentor em North Mariana County.",
+      "location": "Shipping container in North Mariana County."
     },
     "smokescreen-carbon-rs": {
       "title": "Smokescreen Carbon RS",
@@ -13620,7 +13675,8 @@
       "roadIndex": 768,
       "terrainIndex": 120,
       "seats": 2,
-      "locationOriginal": "Obras em Port Gellhorn."
+      "locationOriginal": "Obras em Port Gellhorn.",
+      "location": "Construction site in Port Gellhorn."
     },
     "tropical-manchez": {
       "title": "Tropical Manchez",
@@ -13687,7 +13743,8 @@
         "offroad": 7.7,
         "strength": 4
       },
-      "locationOriginal": "Ultimate: armazém dos PTT Youngin$, Southside (cap. 1)."
+      "locationOriginal": "Ultimate: armazém dos PTT Youngin$, Southside (cap. 1).",
+      "location": "Ultimate Edition: PTT Youngin$ warehouse, Southside (Chapter 1)."
     },
     "apocalypse-stallion": {
       "title": "Apocalypse Stallion",
@@ -13723,7 +13780,8 @@
       "roadIndex": 512,
       "terrainIndex": 702,
       "seats": 2,
-      "locationOriginal": "Garagem perto de Mount Kalaga."
+      "locationOriginal": "Garagem perto de Mount Kalaga.",
+      "location": "Garage near Mount Kalaga."
     },
     "cheshire-rebel": {
       "title": "Cheshire Rebel",
@@ -13759,7 +13817,8 @@
       "roadIndex": 522,
       "terrainIndex": 428,
       "seats": 2,
-      "locationOriginal": "Garagem perto de Port Gellhorn."
+      "locationOriginal": "Garagem perto de Port Gellhorn.",
+      "location": "Garage near Port Gellhorn."
     },
     "getaway-grouse": {
       "title": "Getaway Grouse",
@@ -13795,7 +13854,8 @@
       "roadIndex": 463,
       "terrainIndex": 312,
       "seats": 4,
-      "locationOriginal": "Garagem em Ambrosia."
+      "locationOriginal": "Garagem em Ambrosia.",
+      "location": "Garage in Ambrosia."
     },
     "gravekeeper-walton": {
       "title": "Gravekeeper Walton",
@@ -13831,7 +13891,8 @@
       "roadIndex": 444,
       "terrainIndex": 328,
       "seats": 2,
-      "locationOriginal": "Atrás de casa em Grayson."
+      "locationOriginal": "Atrás de casa em Grayson.",
+      "location": "Behind a house in Grayson."
     },
     "thirsty-grouse": {
       "title": "Thirsty Grouse",
@@ -13867,7 +13928,8 @@
       "roadIndex": 428,
       "terrainIndex": 257,
       "seats": 4,
-      "locationOriginal": "Posto de combustível em Moreau."
+      "locationOriginal": "Posto de combustível em Moreau.",
+      "location": "Gas station in Moreau."
     },
     "trash-rebel": {
       "title": "Trash Rebel",
@@ -13903,7 +13965,8 @@
       "roadIndex": 489,
       "terrainIndex": 389,
       "seats": 2,
-      "locationOriginal": "Junto a uma caravana em Ambrosia."
+      "locationOriginal": "Junto a uma caravana em Ambrosia.",
+      "location": "Beside a trailer in Ambrosia."
     },
     "love-buggy-outlaw": {
       "title": "Love Buggy Outlaw",
@@ -13939,7 +14002,8 @@
       "roadIndex": 439,
       "terrainIndex": 694,
       "seats": 2,
-      "locationOriginal": "Garagem em Port Gellhorn."
+      "locationOriginal": "Garagem em Port Gellhorn.",
+      "location": "Garage in Port Gellhorn."
     },
     "mud-crasher-rancher": {
       "title": "Mud Crasher Rancher",
@@ -13975,7 +14039,8 @@
       "roadIndex": 307,
       "terrainIndex": 547,
       "seats": 4,
-      "locationOriginal": "Armazém fechado em Port Gellhorn."
+      "locationOriginal": "Armazém fechado em Port Gellhorn.",
+      "location": "Locked warehouse in Port Gellhorn."
     },
     "sunset-sanchez": {
       "title": "Sunset Sanchez",
@@ -14011,7 +14076,8 @@
       "roadIndex": 523,
       "terrainIndex": 728,
       "seats": 2,
-      "locationOriginal": "Casa na costa de Grayson."
+      "locationOriginal": "Casa na costa de Grayson.",
+      "location": "House on the Grayson coast."
     },
     "tormentor-street-blazer": {
       "title": "Tormentor Street Blazer",
@@ -14047,7 +14113,8 @@
       "roadIndex": 414,
       "terrainIndex": 663,
       "seats": 1,
-      "locationOriginal": "Cabana de pesca em Bonanza."
+      "locationOriginal": "Cabana de pesca em Bonanza.",
+      "location": "Fishing cabin in Bonanza."
     },
     "venomous-marshall": {
       "title": "Venomous Marshall",
@@ -14082,7 +14149,8 @@
       },
       "roadIndex": 344,
       "terrainIndex": 600,
-      "locationOriginal": "Celeiro no Mount Kalaga National Park."
+      "locationOriginal": "Celeiro no Mount Kalaga National Park.",
+      "location": "Barn in Mount Kalaga National Park."
     },
     "wymans-dominator-buggy-67": {
       "title": "Wyman's '67 Dominator Buggy",
@@ -14149,7 +14217,8 @@
         "offroad": 7.3,
         "strength": 3
       },
-      "locationOriginal": "Ultimate: recompensa de Wyman, Watson Bay."
+      "locationOriginal": "Ultimate: recompensa de Wyman, Watson Bay.",
+      "location": "Ultimate Edition: Wyman's reward, Watson Bay."
     },
     "blue-silk-walton": {
       "title": "Blue Silk Walton",
@@ -14185,7 +14254,8 @@
       "roadIndex": 455,
       "terrainIndex": 378,
       "seats": 2,
-      "locationOriginal": "Parque de estacionamento, Rockridge."
+      "locationOriginal": "Parque de estacionamento, Rockridge.",
+      "location": "Parking lot, Rockridge."
     },
     "bourbon-windsor": {
       "title": "Bourbon Windsor",
@@ -14221,7 +14291,8 @@
       "roadIndex": 607,
       "terrainIndex": 389,
       "seats": 4,
-      "locationOriginal": "Estúdio Sound4Sound, Stockyard."
+      "locationOriginal": "Estúdio Sound4Sound, Stockyard.",
+      "location": "Sound4Sound studio, Stockyard."
     },
     "charred-toros": {
       "title": "Charred Toros",
@@ -14292,7 +14363,8 @@
       "seats": 4,
       "locationOriginal": "Casa de La Perle associada aos San4San.",
       "registration": "$8,950",
-      "resale": "$20,950 – $23,045"
+      "resale": "$20,950 – $23,045",
+      "location": "House in La Perle associated with San4San."
     },
     "peppermint-stanier": {
       "title": "Peppermint Stanier",
@@ -14328,7 +14400,8 @@
       "roadIndex": 450,
       "terrainIndex": 294,
       "seats": 4,
-      "locationOriginal": "Exterior de loja em La Perle."
+      "locationOriginal": "Exterior de loja em La Perle.",
+      "location": "Outside a store in La Perle."
     },
     "pink-gin-tulip": {
       "title": "Pink Gin Tulip",
@@ -14364,7 +14437,8 @@
       "roadIndex": 419,
       "terrainIndex": 332,
       "seats": 2,
-      "locationOriginal": "Garagem dos San4San, La Perle."
+      "locationOriginal": "Garagem dos San4San, La Perle.",
+      "location": "San4San garage, La Perle."
     },
     "cereza-manana": {
       "title": "Cereza Manana",
@@ -14400,7 +14474,8 @@
       "roadIndex": 364,
       "terrainIndex": 190,
       "seats": 2,
-      "locationOriginal": "Local de crime em Ocean Beach."
+      "locationOriginal": "Local de crime em Ocean Beach.",
+      "location": "Crime scene in Ocean Beach."
     },
     "seafoam-picador": {
       "title": "Seafoam Picador",
@@ -14436,7 +14511,8 @@
       "roadIndex": 499,
       "terrainIndex": 333,
       "seats": 2,
-      "locationOriginal": "Parque de estacionamento coberto, Ocean Beach."
+      "locationOriginal": "Parque de estacionamento coberto, Ocean Beach.",
+      "location": "Covered parking lot, Ocean Beach."
     },
     "sunrise-emperor": {
       "title": "Sunrise Emperor",
@@ -14472,7 +14548,8 @@
       "roadIndex": 362,
       "terrainIndex": 244,
       "seats": 4,
-      "locationOriginal": "Beco em Stockyard."
+      "locationOriginal": "Beco em Stockyard.",
+      "location": "Alley in Stockyard."
     },
     "teniente-manana": {
       "title": "Teniente Manana",
@@ -14508,7 +14585,8 @@
       "roadIndex": 475,
       "terrainIndex": 182,
       "seats": 2,
-      "locationOriginal": "Sucata de Hamlet, associada a M7."
+      "locationOriginal": "Sucata de Hamlet, associada a M7.",
+      "location": "Hamlet scrapyard, associated with M7."
     },
     "verdant-buccaneer": {
       "title": "Verdant Buccaneer",
@@ -14544,7 +14622,8 @@
       "roadIndex": 501,
       "terrainIndex": 360,
       "seats": 2,
-      "locationOriginal": "Instalação de M7 perto de Millport."
+      "locationOriginal": "Instalação de M7 perto de Millport.",
+      "location": "M7 facility near Millport."
     },
     "blazing-mallard": {
       "title": "Blazing Mallard",
@@ -14576,7 +14655,8 @@
       ],
       "ratings": {},
       "seats": 1,
-      "locationOriginal": "Aeródromo em Bobcat Key."
+      "locationOriginal": "Aeródromo em Bobcat Key.",
+      "location": "Airfield in Bobcat Key."
     },
     "blood-fever-sovereign": {
       "title": "Blood Fever Sovereign",
@@ -14612,7 +14692,8 @@
       "roadIndex": 611,
       "terrainIndex": 199,
       "seats": 1,
-      "locationOriginal": "Garagem em La Perle."
+      "locationOriginal": "Garagem em La Perle.",
+      "location": "Garage in La Perle."
     },
     "brimstone-golfer": {
       "title": "Brimstone Golfer",
@@ -14643,7 +14724,8 @@
         }
       ],
       "ratings": {},
-      "locationOriginal": "Garagem em Leaf Links."
+      "locationOriginal": "Garagem em Leaf Links.",
+      "location": "Garage in Leaf Links."
     },
     "broken-oak-bobcat": {
       "title": "Broken Oak Bobcat",
@@ -14693,7 +14775,8 @@
       "seats": 2,
       "locationOriginal": "Rancho de North Leonard County.",
       "registration": "$14,750",
-      "resale": "$4,000"
+      "resale": "$4,000",
+      "location": "Ranch in North Leonard County."
     },
     "caliente-picador": {
       "title": "Caliente Picador",
@@ -14729,7 +14812,8 @@
       "roadIndex": 549,
       "terrainIndex": 369,
       "seats": 2,
-      "locationOriginal": "Antigo terminal ferroviário, North Mariana County."
+      "locationOriginal": "Antigo terminal ferroviário, North Mariana County.",
+      "location": "Former railway terminal, North Mariana County."
     },
     "oxygen-zombie-bobber": {
       "title": "Oxygen Zombie Bobber",
@@ -14779,7 +14863,8 @@
       "seats": 2,
       "locationOriginal": "Estacionamento em Washington Beach.",
       "registration": "$12,500",
-      "resale": "$3,400"
+      "resale": "$3,400",
+      "location": "Parking lot in Washington Beach."
     },
     "rampant-stallion": {
       "title": "Rampant Stallion",
@@ -14815,7 +14900,8 @@
       "roadIndex": 585,
       "terrainIndex": 229,
       "seats": 2,
-      "locationOriginal": "Garagem em Waning Sands."
+      "locationOriginal": "Garagem em Waning Sands.",
+      "location": "Garage in Waning Sands."
     },
     "red-hot-hustler": {
       "title": "Red Hot Hustler",
@@ -14851,7 +14937,8 @@
       "roadIndex": 428,
       "terrainIndex": 215,
       "seats": 2,
-      "locationOriginal": "Hotel junto à praia em Capri."
+      "locationOriginal": "Hotel junto à praia em Capri.",
+      "location": "Beachside hotel in Capri."
     },
     "rocket-slamvan": {
       "title": "Rocket Slamvan",
@@ -14901,7 +14988,8 @@
       "seats": 2,
       "locationOriginal": "Marina de Watson Bay.",
       "registration": "$11,500",
-      "resale": "$4,375"
+      "resale": "$4,375",
+      "location": "Watson Bay marina."
     },
     "turbo-ruiner": {
       "title": "Turbo Ruiner",
@@ -14937,7 +15025,8 @@
       "roadIndex": 534,
       "terrainIndex": 376,
       "seats": 2,
-      "locationOriginal": "Pátio em Key Lento."
+      "locationOriginal": "Pátio em Key Lento.",
+      "location": "Yard in Key Lento."
     },
     "anarchist-dominator": {
       "title": "Anarchist Dominator",
@@ -14973,7 +15062,8 @@
       "roadIndex": 539,
       "terrainIndex": 126,
       "seats": 2,
-      "locationOriginal": "Garagem em Balsero."
+      "locationOriginal": "Garagem em Balsero.",
+      "location": "Garage in Balsero."
     },
     "blazin-phoenix": {
       "title": "Blazin' Phoenix",
@@ -15009,7 +15099,8 @@
       "roadIndex": 464,
       "terrainIndex": 259,
       "seats": 2,
-      "locationOriginal": "Veículo de uma atividade de Jason e Cal; Key Lento."
+      "locationOriginal": "Veículo de uma atividade de Jason e Cal; Key Lento.",
+      "location": "Vehicle from a Jason and Cal activity; Key Lento."
     },
     "bloodbath-phoenix": {
       "title": "Bloodbath Phoenix",
@@ -15045,7 +15136,8 @@
       "roadIndex": 560,
       "terrainIndex": 402,
       "seats": 2,
-      "locationOriginal": "Oficina clandestina em Salton."
+      "locationOriginal": "Oficina clandestina em Salton.",
+      "location": "Underground workshop in Salton."
     },
     "bullion-gauntlet": {
       "title": "Bullion Gauntlet",
@@ -15081,7 +15173,8 @@
       "roadIndex": 474,
       "terrainIndex": 334,
       "seats": 2,
-      "locationOriginal": "Contentor em Millport."
+      "locationOriginal": "Contentor em Millport.",
+      "location": "Shipping container in Millport."
     },
     "cherry-bomb-chino": {
       "title": "Cherry Bomb Chino",
@@ -15117,7 +15210,8 @@
       "roadIndex": 537,
       "terrainIndex": 357,
       "seats": 2,
-      "locationOriginal": "Estaleiro naval dos Guardia Brothers, Little Cuba."
+      "locationOriginal": "Estaleiro naval dos Guardia Brothers, Little Cuba.",
+      "location": "Guardia Brothers shipyard, Little Cuba."
     },
     "citrus-ganado": {
       "title": "Citrus Ganado",
@@ -15153,7 +15247,8 @@
       "roadIndex": 483,
       "terrainIndex": 263,
       "seats": 2,
-      "locationOriginal": "Residência perto de Capri."
+      "locationOriginal": "Residência perto de Capri.",
+      "location": "Residence near Capri."
     },
     "devils-rope-gauntlet": {
       "title": "Devil's Rope Gauntlet",
@@ -15203,7 +15298,8 @@
       "seats": 2,
       "locationOriginal": "Garagem dos Final Chapter em Ambrosia.",
       "registration": "$8,500",
-      "resale": "$21,890"
+      "resale": "$21,890",
+      "location": "Final Chapter garage in Ambrosia."
     },
     "emancipator-stallion": {
       "title": "Emancipator Stallion",
@@ -15253,7 +15349,8 @@
       "seats": 2,
       "locationOriginal": "Garagem perto de Ambrosia.",
       "registration": "$10,650",
-      "resale": "$3,190"
+      "resale": "$3,190",
+      "location": "Garage near Ambrosia."
     },
     "firebug-dominator": {
       "title": "Firebug Dominator",
@@ -15289,7 +15386,8 @@
       "roadIndex": 632,
       "terrainIndex": 305,
       "seats": 2,
-      "locationOriginal": "Hotel abandonado em Port Gellhorn."
+      "locationOriginal": "Hotel abandonado em Port Gellhorn.",
+      "location": "Abandoned hotel in Port Gellhorn."
     },
     "marthas-vamos": {
       "title": "Martha's Vamos",
@@ -15325,7 +15423,8 @@
       "roadIndex": 487,
       "terrainIndex": 318,
       "seats": 2,
-      "locationOriginal": "Barracão abandonado em Bonanza."
+      "locationOriginal": "Barracão abandonado em Bonanza.",
+      "location": "Abandoned shed in Bonanza."
     },
     "revenant-gauntlet": {
       "title": "Revenant Gauntlet",
@@ -15361,7 +15460,8 @@
       "roadIndex": 532,
       "terrainIndex": 270,
       "seats": 2,
-      "locationOriginal": "Celeiro em Ambrosia, perto de Frogswater."
+      "locationOriginal": "Celeiro em Ambrosia, perto de Frogswater.",
+      "location": "Barn in Ambrosia, near Frogswater."
     },
     "soaring-phoenix": {
       "title": "Soaring Phoenix",
@@ -15397,7 +15497,8 @@
       "roadIndex": 513,
       "terrainIndex": 275,
       "seats": 2,
-      "locationOriginal": "Garagem em Watson Bay."
+      "locationOriginal": "Garagem em Watson Bay.",
+      "location": "Garage in Watson Bay."
     },
     "axanthic-transgressor": {
       "title": "Axanthic Transgressor",
@@ -15464,7 +15565,8 @@
         "offroad": 4.5,
         "strength": 3
       },
-      "locationOriginal": "Ultimate: reconstrução com Wyman, sucata perto de Capri."
+      "locationOriginal": "Ultimate: reconstrução com Wyman, sucata perto de Capri.",
+      "location": "Ultimate Edition: rebuild with Wyman, scrapyard near Capri."
     },
     "applesauce-bobcat": {
       "title": "Applesauce Bobcat",
@@ -15500,7 +15602,8 @@
       "roadIndex": 412,
       "terrainIndex": 321,
       "seats": 2,
-      "locationOriginal": "Farmer Scrumpy's Red Apple Orchard."
+      "locationOriginal": "Farmer Scrumpy's Red Apple Orchard.",
+      "location": "Farmer Scrumpy's Red Apple Orchard."
     },
     "beast-chino": {
       "title": "Beast Chino",
@@ -15536,7 +15639,8 @@
       "roadIndex": 447,
       "terrainIndex": 321,
       "seats": 2,
-      "locationOriginal": "Resort junto ao Lake Tallaloko."
+      "locationOriginal": "Resort junto ao Lake Tallaloko.",
+      "location": "Resort by Lake Tallaloko."
     },
     "class-act-comet": {
       "title": "Class Act Comet",
@@ -15585,7 +15689,8 @@
       "terrainIndex": 296,
       "seats": 2,
       "locationOriginal": "Mansão em Starfish Island.",
-      "registration": "$34,250"
+      "registration": "$34,250",
+      "location": "Mansion on Starfish Island."
     },
     "dogfight-fcr": {
       "title": "Dogfight FCR",
@@ -15621,7 +15726,8 @@
       "roadIndex": 701,
       "terrainIndex": 119,
       "seats": 1,
-      "locationOriginal": "Escola de aviação perto do VCIA."
+      "locationOriginal": "Escola de aviação perto do VCIA.",
+      "location": "Flight school near VCIA."
     },
     "gradys-slamvan": {
       "title": "Grady's Slamvan",
@@ -15671,7 +15777,8 @@
       "seats": 2,
       "locationOriginal": "Grady's General Store, Moreau.",
       "registration": "$17,500",
-      "resale": "$5,225"
+      "resale": "$5,225",
+      "location": "Grady's General Store, Moreau."
     },
     "holdout-sungrazer": {
       "title": "Holdout Sungrazer",
@@ -15721,7 +15828,8 @@
       "seats": 2,
       "locationOriginal": "Residência junto a fábrica, Ambrosia.",
       "registration": "$15,500",
-      "resale": "$4,620"
+      "resale": "$4,620",
+      "location": "Residence beside a factory, Ambrosia."
     },
     "kyles-mallard": {
       "title": "Kyle's Mallard",
@@ -15753,7 +15861,8 @@
       ],
       "ratings": {},
       "seats": 1,
-      "locationOriginal": "Quinta de Kyle McKittrick, Frogswater."
+      "locationOriginal": "Quinta de Kyle McKittrick, Frogswater.",
+      "location": "Kyle McKittrick's farm, Frogswater."
     },
     "magma-cliffhanger": {
       "title": "Magma Cliffhanger",
@@ -15789,7 +15898,8 @@
       "roadIndex": 556,
       "terrainIndex": 728,
       "seats": 2,
-      "locationOriginal": "Cabana junto à água, Watson Bay."
+      "locationOriginal": "Cabana junto à água, Watson Bay.",
+      "location": "Waterside cabin, Watson Bay."
     },
     "meteor-duster": {
       "title": "Meteor Duster",
@@ -15821,7 +15931,8 @@
       ],
       "ratings": {},
       "seats": 2,
-      "locationOriginal": "Pista de aviação em North Kelly County."
+      "locationOriginal": "Pista de aviação em North Kelly County.",
+      "location": "Airstrip in North Kelly County."
     },
     "obsidian-sovereign": {
       "title": "Obsidian Sovereign",
@@ -15857,7 +15968,8 @@
       "roadIndex": 571,
       "terrainIndex": 186,
       "seats": 1,
-      "locationOriginal": "Contentor em Draper Island."
+      "locationOriginal": "Contentor em Draper Island.",
+      "location": "Shipping container on Draper Island."
     },
     "oubliette-coquette": {
       "title": "Oubliette Coquette",
@@ -15893,7 +16005,8 @@
       "roadIndex": 525,
       "terrainIndex": 368,
       "seats": 2,
-      "locationOriginal": "Contentor em La Perle."
+      "locationOriginal": "Contentor em La Perle.",
+      "location": "Shipping container in La Perle."
     },
     "peacock-sovereign": {
       "title": "Peacock Sovereign",
@@ -15929,7 +16042,8 @@
       "roadIndex": 573,
       "terrainIndex": 186,
       "seats": 1,
-      "locationOriginal": "Arrecadação de loja em Grassrivers."
+      "locationOriginal": "Arrecadação de loja em Grassrivers.",
+      "location": "Store storage room in Grassrivers."
     },
     "rauls-coquette-classic": {
       "title": "Raul's Coquette Classic",
@@ -15965,7 +16079,8 @@
       "roadIndex": 492,
       "terrainIndex": 362,
       "seats": 2,
-      "locationOriginal": "Marina em Ocean Beach."
+      "locationOriginal": "Marina em Ocean Beach.",
+      "location": "Marina in Ocean Beach."
     },
     "sals-chino": {
       "title": "Sal's Chino",
@@ -16001,7 +16116,8 @@
       "roadIndex": 544,
       "terrainIndex": 208,
       "seats": 2,
-      "locationOriginal": "Recompensa das atividades de Sal."
+      "locationOriginal": "Recompensa das atividades de Sal.",
+      "location": "Reward for Sal's activities."
     },
     "silver-bullet-mallard": {
       "title": "Silver Bullet Mallard",
@@ -16033,7 +16149,8 @@
       ],
       "ratings": {},
       "seats": 1,
-      "locationOriginal": "Hangar em Wild Hog Point."
+      "locationOriginal": "Hangar em Wild Hog Point.",
+      "location": "Hangar in Wild Hog Point."
     },
     "spiderweb-coquette": {
       "title": "Spiderweb Coquette",
@@ -16069,7 +16186,8 @@
       "roadIndex": 541,
       "terrainIndex": 375,
       "seats": 2,
-      "locationOriginal": "Casa de festa em Key Lento."
+      "locationOriginal": "Casa de festa em Key Lento.",
+      "location": "Party house in Key Lento."
     },
     "springtime-sungrazer": {
       "title": "Springtime Sungrazer",
@@ -16105,7 +16223,8 @@
       "roadIndex": 443,
       "terrainIndex": 307,
       "seats": 2,
-      "locationOriginal": "Loja de antiguidades em Capri."
+      "locationOriginal": "Loja de antiguidades em Capri.",
+      "location": "Antique store in Capri."
     },
     "stolen-valor-300-h": {
       "title": "Stolen Valor 300-H",
@@ -16137,7 +16256,8 @@
       ],
       "ratings": {},
       "seats": 1,
-      "locationOriginal": "Aeródromo em Bobcat Key."
+      "locationOriginal": "Aeródromo em Bobcat Key.",
+      "location": "Airfield in Bobcat Key."
     },
     "endurance-mamba-gt": {
       "title": "Endurance Mamba GT",
@@ -16205,7 +16325,8 @@
         "strength": 3
       },
       "seats": 2,
-      "locationOriginal": "Ultimate: reconstrução com Wyman, East Capri."
+      "locationOriginal": "Ultimate: reconstrução com Wyman, East Capri.",
+      "location": "Ultimate Edition: rebuild with Wyman, East Capri."
     },
     "revival-kit-car": {
       "title": "Revival Kit Car",
@@ -16272,7 +16393,8 @@
         "offroad": 3.8,
         "strength": 3
       },
-      "locationOriginal": "Ultimate: reconstrução com Wyman, East Capri."
+      "locationOriginal": "Ultimate: reconstrução com Wyman, East Capri.",
+      "location": "Ultimate Edition: rebuild with Wyman, East Capri."
     },
     "blood-moon-bandito": {
       "title": "Blood Moon Bandito",
@@ -16320,7 +16442,8 @@
       "roadIndex": 497,
       "terrainIndex": 755,
       "locationOriginal": "Boone Speedway, Hamlet.",
-      "registration": "$4,750"
+      "registration": "$4,750",
+      "location": "Boone Speedway, Hamlet."
     },
     "brets-rebel": {
       "title": "Bret's Rebel",
@@ -16356,7 +16479,8 @@
       "roadIndex": 455,
       "terrainIndex": 713,
       "seats": 2,
-      "locationOriginal": "Recompensa de Killtelligence Provisions."
+      "locationOriginal": "Recompensa de Killtelligence Provisions.",
+      "location": "Killtelligence Provisions reward."
     },
     "chrome-street-blazer": {
       "title": "Chrome Street Blazer",
@@ -16392,7 +16516,8 @@
       "roadIndex": 417,
       "terrainIndex": 665,
       "seats": 1,
-      "locationOriginal": "Contentor junto à estrada, Port Gellhorn."
+      "locationOriginal": "Contentor junto à estrada, Port Gellhorn.",
+      "location": "Roadside shipping container, Port Gellhorn."
     },
     "cultivator-sandking": {
       "title": "Cultivator Sandking",
@@ -16428,7 +16553,8 @@
       "roadIndex": 391,
       "terrainIndex": 645,
       "seats": 4,
-      "locationOriginal": "Fábrica em North Mariana County."
+      "locationOriginal": "Fábrica em North Mariana County.",
+      "location": "Factory in North Mariana County."
     },
     "dirt-rocket-zombie-bobber": {
       "title": "Dirt Rocket Zombie Bobber",
@@ -16464,7 +16590,8 @@
       "roadIndex": 534,
       "terrainIndex": 702,
       "seats": 2,
-      "locationOriginal": "Cabana perto de Mount Kalaga."
+      "locationOriginal": "Cabana perto de Mount Kalaga.",
+      "location": "Cabin near Mount Kalaga."
     },
     "flipside-enduro": {
       "title": "Flipside Enduro",
@@ -16500,7 +16627,8 @@
       "roadIndex": 519,
       "terrainIndex": 706,
       "seats": 2,
-      "locationOriginal": "Contentor perto de Mount Kalaga."
+      "locationOriginal": "Contentor perto de Mount Kalaga.",
+      "location": "Shipping container near Mount Kalaga."
     },
     "black-moth-kamacho": {
       "title": "Black Moth Kamacho",
@@ -16549,7 +16677,8 @@
       "terrainIndex": 814,
       "seats": 4,
       "locationOriginal": "Propriedade isolada em Watson Bay.",
-      "registration": "$6,700"
+      "registration": "$6,700",
+      "location": "Isolated property in Watson Bay."
     },
     "gunrunner-kamacho": {
       "title": "Gunrunner Kamacho",
@@ -16598,7 +16727,8 @@
       "terrainIndex": 727,
       "seats": 4,
       "locationOriginal": "Armazém em Balsero.",
-      "registration": "$6,700"
+      "registration": "$6,700",
+      "location": "Warehouse in Balsero."
     },
     "mountain-yosemite": {
       "title": "Mountain Yosemite",
@@ -16647,7 +16777,8 @@
       "terrainIndex": 662,
       "seats": 2,
       "locationOriginal": "Exterior de residência em Watson Bay.",
-      "registration": "$6,250"
+      "registration": "$6,250",
+      "location": "Outside a residence in Watson Bay."
     },
     "muckspreader-bandito": {
       "title": "Muckspreader Bandito",
@@ -16682,7 +16813,8 @@
       },
       "roadIndex": 459,
       "terrainIndex": 713,
-      "locationOriginal": "Contentor na sucata de Hamlet."
+      "locationOriginal": "Contentor na sucata de Hamlet.",
+      "location": "Shipping container in Hamlet scrapyard."
     },
     "nancys-crawler": {
       "title": "Nancy's Crawler",
@@ -16718,7 +16850,8 @@
       "roadIndex": 426,
       "terrainIndex": 688,
       "seats": 2,
-      "locationOriginal": "Garagem da casa de Nancy, Moreau."
+      "locationOriginal": "Garagem da casa de Nancy, Moreau.",
+      "location": "Nancy's home garage, Moreau."
     },
     "sandblasted-cliffhanger": {
       "title": "Sandblasted Cliffhanger",
@@ -16754,7 +16887,8 @@
       "roadIndex": 574,
       "terrainIndex": 744,
       "seats": 2,
-      "locationOriginal": "Contentor em Breakwater Quarry."
+      "locationOriginal": "Contentor em Breakwater Quarry.",
+      "location": "Shipping container in Breakwater Quarry."
     },
     "sludge-wraith-injection": {
       "title": "Sludge Wraith Injection",
@@ -16803,7 +16937,8 @@
       "terrainIndex": 765,
       "seats": 2,
       "locationOriginal": "Thrillbilly Mud Club.",
-      "registration": "$4,650"
+      "registration": "$4,650",
+      "location": "Thrillbilly Mud Club."
     },
     "smuggler-caracara": {
       "title": "Smuggler Caracara",
@@ -16839,7 +16974,8 @@
       "roadIndex": 537,
       "terrainIndex": 814,
       "seats": 4,
-      "locationOriginal": "Docas em Port Gellhorn."
+      "locationOriginal": "Docas em Port Gellhorn.",
+      "location": "Docks in Port Gellhorn."
     },
     "tactical-caddy": {
       "title": "Tactical Caddy",
@@ -16874,7 +17010,8 @@
       },
       "roadIndex": 108,
       "terrainIndex": 222,
-      "locationOriginal": "Exterior de motel em Moreau."
+      "locationOriginal": "Exterior de motel em Moreau.",
+      "location": "Outside a motel in Moreau."
     },
     "thicc-esskey": {
       "title": "Thicc Esskey",
@@ -16910,7 +17047,8 @@
       "roadIndex": 614,
       "terrainIndex": 745,
       "seats": 2,
-      "locationOriginal": "Loja de conveniência em Southside."
+      "locationOriginal": "Loja de conveniência em Southside.",
+      "location": "Convenience store in Southside."
     },
     "survivor-riata": {
       "title": "Survivor Riata",
@@ -16977,7 +17115,8 @@
         "offroad": 7.2,
         "strength": 3
       },
-      "locationOriginal": "Ultimate: reconstrução com Wyman, East Capri."
+      "locationOriginal": "Ultimate: reconstrução com Wyman, East Capri.",
+      "location": "Ultimate Edition: rebuild with Wyman, East Capri."
     },
     "driveshaft-journey": {
       "title": "DriveShaft Journey",
@@ -17013,7 +17152,8 @@
       "roadIndex": 227,
       "terrainIndex": 114,
       "seats": 6,
-      "locationOriginal": "Casa de Antigone Robertson, Watson Bay."
+      "locationOriginal": "Casa de Antigone Robertson, Watson Bay.",
+      "location": "Antigone Robertson's house, Watson Bay."
     },
     "driveshaft-marshall": {
       "title": "DriveShaft Marshall",
@@ -17048,7 +17188,8 @@
       },
       "roadIndex": 357,
       "terrainIndex": 615,
-      "locationOriginal": "Associado a Benny Copperfield, Port Gellhorn."
+      "locationOriginal": "Associado a Benny Copperfield, Port Gellhorn.",
+      "location": "Associated with Benny Copperfield, Port Gellhorn."
     },
     "driveshaft-devanity": {
       "title": "DriveShaft Devanity",
@@ -17098,7 +17239,8 @@
       "seats": 2,
       "locationOriginal": "Quinta de Butter Collins, North Leonard County.",
       "registration": "$21,750",
-      "resale": "$6,490"
+      "resale": "$6,490",
+      "location": "Butter Collins' farm, North Leonard County."
     },
     "driveshaft-banshee": {
       "title": "DriveShaft Banshee",
@@ -17134,7 +17276,8 @@
       "roadIndex": 657,
       "terrainIndex": 743,
       "seats": 2,
-      "locationOriginal": "Sucata de Hamlet."
+      "locationOriginal": "Sucata de Hamlet.",
+      "location": "Hamlet scrapyard."
     },
     "driveshaft-sovereign": {
       "title": "DriveShaft Sovereign",
@@ -17170,7 +17313,8 @@
       "roadIndex": 615,
       "terrainIndex": 202,
       "seats": 1,
-      "locationOriginal": "Associado a Hunter Bradley, Capri/Gellhorn."
+      "locationOriginal": "Associado a Hunter Bradley, Capri/Gellhorn.",
+      "location": "Associated with Hunter Bradley, Capri/Gellhorn."
     },
     "driveshaft-youga": {
       "title": "DriveShaft Youga",
@@ -17206,7 +17350,8 @@
       "roadIndex": 387,
       "terrainIndex": 199,
       "seats": 2,
-      "locationOriginal": "Casa de Jillian Jones, Millport."
+      "locationOriginal": "Casa de Jillian Jones, Millport.",
+      "location": "Jillian Jones' house, Millport."
     },
     "driveshaft-gauntlet": {
       "title": "DriveShaft Gauntlet",
@@ -17242,7 +17387,8 @@
       "roadIndex": 532,
       "terrainIndex": 272,
       "seats": 2,
-      "locationOriginal": "Casa de Sid Thompson, Grayson."
+      "locationOriginal": "Casa de Sid Thompson, Grayson.",
+      "location": "Sid Thompson's house, Grayson."
     },
     "driveshaft-hustler": {
       "title": "DriveShaft Hustler",
@@ -17278,7 +17424,8 @@
       "roadIndex": 447,
       "terrainIndex": 258,
       "seats": 2,
-      "locationOriginal": "Associado a Tommy O'Callahan, Key Lento."
+      "locationOriginal": "Associado a Tommy O'Callahan, Key Lento.",
+      "location": "Associated with Tommy O'Callahan, Key Lento."
     },
     "monarch-avarus": {
       "title": "Monarch Avarus",
@@ -17314,7 +17461,8 @@
       "roadIndex": 511,
       "terrainIndex": 169,
       "seats": 1,
-      "locationOriginal": "Barracão atrás do The Thirsty Wolf, Ambrosia."
+      "locationOriginal": "Barracão atrás do The Thirsty Wolf, Ambrosia.",
+      "location": "Shed behind The Thirsty Wolf, Ambrosia."
     },
     "cultist-nightblade": {
       "title": "Cultist Nightblade",
@@ -17350,7 +17498,8 @@
       "roadIndex": 579,
       "terrainIndex": 108,
       "seats": 2,
-      "locationOriginal": "Armazém em Salton."
+      "locationOriginal": "Armazém em Salton.",
+      "location": "Warehouse in Salton."
     },
     "emerald-zombie-bobber": {
       "title": "Emerald Zombie Bobber",
@@ -17386,7 +17535,8 @@
       "roadIndex": 599,
       "terrainIndex": 211,
       "seats": 2,
-      "locationOriginal": "Atrás de uma residência em Grayson."
+      "locationOriginal": "Atrás de uma residência em Grayson.",
+      "location": "Behind a residence in Grayson."
     },
     "final-chapter-avarus": {
       "title": "Final Chapter Avarus",
@@ -17422,7 +17572,8 @@
       "roadIndex": 457,
       "terrainIndex": 146,
       "seats": 1,
-      "locationOriginal": "Casa suburbana em Ambrosia."
+      "locationOriginal": "Casa suburbana em Ambrosia.",
+      "location": "Suburban house in Ambrosia."
     },
     "hellraiser-avarus": {
       "title": "Hellraiser Avarus",
@@ -17458,7 +17609,8 @@
       "roadIndex": 509,
       "terrainIndex": 175,
       "seats": 1,
-      "locationOriginal": "Exterior de bar em Millport."
+      "locationOriginal": "Exterior de bar em Millport.",
+      "location": "Outside a bar in Millport."
     },
     "midnight-sun-avarus": {
       "title": "Midnight Sun Avarus",
@@ -17494,7 +17646,8 @@
       "roadIndex": 457,
       "terrainIndex": 146,
       "seats": 1,
-      "locationOriginal": "Garagem em Hamlet."
+      "locationOriginal": "Garagem em Hamlet.",
+      "location": "Garage in Hamlet."
     },
     "searing-zombie-bobber": {
       "title": "Searing Zombie Bobber",
@@ -17530,7 +17683,8 @@
       "roadIndex": 590,
       "terrainIndex": 213,
       "seats": 2,
-      "locationOriginal": "Fábrica rural perto de Belville."
+      "locationOriginal": "Fábrica rural perto de Belville.",
+      "location": "Rural factory near Belville."
     },
     "cherry-popper-boxville": {
       "title": "Cherry Popper Boxville",
@@ -17566,7 +17720,8 @@
       "roadIndex": 276,
       "terrainIndex": 189,
       "seats": 4,
-      "locationOriginal": "Loja de sobremesas em Grassrivers."
+      "locationOriginal": "Loja de sobremesas em Grassrivers.",
+      "location": "Dessert shop in Grassrivers."
     },
     "cousin-carlos-akane": {
       "title": "Cousin Carlo's Akane",
@@ -17602,7 +17757,8 @@
       "roadIndex": 431,
       "terrainIndex": 296,
       "seats": 2,
-      "locationOriginal": "Pizzaria em Key Lento."
+      "locationOriginal": "Pizzaria em Key Lento.",
+      "location": "Pizza restaurant in Key Lento."
     },
     "fruit-outlet-walton": {
       "title": "Fruit Outlet Walton",
@@ -17638,7 +17794,8 @@
       "roadIndex": 379,
       "terrainIndex": 274,
       "seats": 2,
-      "locationOriginal": "Banca de fruta em Port Gellhorn."
+      "locationOriginal": "Banca de fruta em Port Gellhorn.",
+      "location": "Fruit stand in Port Gellhorn."
     },
     "red-apple-orchard-rancher": {
       "title": "Red Apple Orchard Rancher",
@@ -17674,7 +17831,8 @@
       "roadIndex": 345,
       "terrainIndex": 516,
       "seats": 4,
-      "locationOriginal": "Atração turística em Manifest Canyon."
+      "locationOriginal": "Atração turística em Manifest Canyon.",
+      "location": "Tourist attraction in Manifest Canyon."
     },
     "shrimp-and-save-shifter": {
       "title": "Shrimp and Save Shifter",
@@ -17710,7 +17868,8 @@
       "roadIndex": 391,
       "terrainIndex": 206,
       "seats": 2,
-      "locationOriginal": "Restaurante em Key Lento."
+      "locationOriginal": "Restaurante em Key Lento.",
+      "location": "Restaurant in Key Lento."
     },
     "smush-ganado": {
       "title": "Smush! Ganado",
@@ -17746,7 +17905,8 @@
       "roadIndex": 458,
       "terrainIndex": 330,
       "seats": 2,
-      "locationOriginal": "Loja de sumos abandonada em Gellhorn."
+      "locationOriginal": "Loja de sumos abandonada em Gellhorn.",
+      "location": "Abandoned juice shop in Gellhorn."
     },
     "ambergris-torlan": {
       "title": "Ambergris Torlan",
@@ -17777,7 +17937,8 @@
         }
       ],
       "ratings": {},
-      "locationOriginal": "Casa de barcos em Waning Sands."
+      "locationOriginal": "Casa de barcos em Waning Sands.",
+      "location": "Boathouse in Waning Sands."
     },
     "big-shot-baller-std": {
       "title": "Big Shot Baller-STD",
@@ -17813,7 +17974,8 @@
       "roadIndex": 540,
       "terrainIndex": 439,
       "seats": 4,
-      "locationOriginal": "Apartamentos de luxo, Washington Beach."
+      "locationOriginal": "Apartamentos de luxo, Washington Beach.",
+      "location": "Luxury apartments, Washington Beach."
     },
     "booty-fcr-1000": {
       "title": "Booty FCR 1000",
@@ -17849,7 +18011,8 @@
       "roadIndex": 681,
       "terrainIndex": 119,
       "seats": 1,
-      "locationOriginal": "Armazém fechado no VCIA."
+      "locationOriginal": "Armazém fechado no VCIA.",
+      "location": "Locked warehouse at VCIA."
     },
     "freddies-dubsta": {
       "title": "Freddie's Dubsta",
@@ -17885,7 +18048,8 @@
       "roadIndex": 603,
       "terrainIndex": 494,
       "seats": 4,
-      "locationOriginal": "Bunker de Freddie, Ambrosia."
+      "locationOriginal": "Bunker de Freddie, Ambrosia.",
+      "location": "Freddie's bunker, Ambrosia."
     },
     "buttermilk-comet-retro": {
       "title": "Buttermilk Comet Retro",
@@ -17921,7 +18085,8 @@
       "roadIndex": 625,
       "terrainIndex": 379,
       "seats": 2,
-      "locationOriginal": "Mansão na costa de Capri."
+      "locationOriginal": "Mansão na costa de Capri.",
+      "location": "Mansion on the Capri coast."
     },
     "gilded-dubsta": {
       "title": "Gilded Dubsta",
@@ -17957,7 +18122,8 @@
       "roadIndex": 479,
       "terrainIndex": 398,
       "seats": 4,
-      "locationOriginal": "Residência em Starfish Island."
+      "locationOriginal": "Residência em Starfish Island.",
+      "location": "Residence on Starfish Island."
     },
     "glamor-caddy": {
       "title": "Glamor Caddy",
@@ -17992,7 +18158,8 @@
       },
       "roadIndex": 110,
       "terrainIndex": 171,
-      "locationOriginal": "Mount Hailes Country Club."
+      "locationOriginal": "Mount Hailes Country Club.",
+      "location": "Mount Hailes Country Club."
     },
     "gold-rope-infernus": {
       "title": "Gold Rope Infernus",
@@ -18042,7 +18209,8 @@
       "seats": 2,
       "locationOriginal": "Casa em Reservoir St, Ambrosia.",
       "registration": "$34,750",
-      "resale": "$9,200"
+      "resale": "$9,200",
+      "location": "House on Reservoir St, Ambrosia."
     },
     "gold-rush-tempesta": {
       "title": "Gold Rush Tempesta",
@@ -18092,7 +18260,8 @@
       "seats": 2,
       "locationOriginal": "Exterior de restaurante em Ocean Beach.",
       "registration": "$38,750",
-      "resale": "$9,600 – $17,930"
+      "resale": "$9,600 – $17,930",
+      "location": "Outside a restaurant in Ocean Beach."
     },
     "gold-scarab-windsor": {
       "title": "Gold Scarab Windsor",
@@ -18128,7 +18297,8 @@
       "roadIndex": 588,
       "terrainIndex": 369,
       "seats": 4,
-      "locationOriginal": "Propriedade em Waning Sands."
+      "locationOriginal": "Propriedade em Waning Sands.",
+      "location": "Property in Waning Sands."
     },
     "lustrous-toros": {
       "title": "Lustrous Toros",
@@ -18178,7 +18348,8 @@
       "seats": 4,
       "locationOriginal": "Residência em Rialto Islands.",
       "registration": "$29,900",
-      "resale": "$13,250"
+      "resale": "$13,250",
+      "location": "Residence in Rialto Islands."
     },
     "nugget-boomazoom": {
       "title": "Nugget Boomazoom",
@@ -18214,7 +18385,8 @@
       "roadIndex": 19,
       "terrainIndex": 20,
       "seats": 1,
-      "locationOriginal": "Mansão em Rialto Islands."
+      "locationOriginal": "Mansão em Rialto Islands.",
+      "location": "Mansion in Rialto Islands."
     },
     "pink-sunset-baller": {
       "title": "Pink Sunset Baller",
@@ -18250,7 +18422,8 @@
       "roadIndex": 541,
       "terrainIndex": 353,
       "seats": 4,
-      "locationOriginal": "Garagem em Belville."
+      "locationOriginal": "Garagem em Belville.",
+      "location": "Garage in Belville."
     },
     "queen-bee-paragon": {
       "title": "Queen Bee Paragon",
@@ -18286,7 +18459,8 @@
       "roadIndex": 654,
       "terrainIndex": 316,
       "seats": 2,
-      "locationOriginal": "Propriedade de Waning Sands."
+      "locationOriginal": "Propriedade de Waning Sands.",
+      "location": "Waning Sands property."
     },
     "red-queen-dubsta": {
       "title": "Red Queen Dubsta",
@@ -18322,7 +18496,8 @@
       "roadIndex": 480,
       "terrainIndex": 399,
       "seats": 4,
-      "locationOriginal": "Garagem em Leaf Links."
+      "locationOriginal": "Garagem em Leaf Links.",
+      "location": "Garage in Leaf Links."
     },
     "azalea-street-blazer": {
       "title": "Azalea Street Blazer",
@@ -18358,7 +18533,8 @@
       "roadIndex": 417,
       "terrainIndex": 660,
       "seats": 1,
-      "locationOriginal": "Exterior de casa em Watson Bay."
+      "locationOriginal": "Exterior de casa em Watson Bay.",
+      "location": "Outside a house in Watson Bay."
     },
     "beach-candy-bobcat": {
       "title": "Beach Candy Bobcat",
@@ -18394,7 +18570,8 @@
       "roadIndex": 414,
       "terrainIndex": 382,
       "seats": 2,
-      "locationOriginal": "Estacionamento em Bobcat Key."
+      "locationOriginal": "Estacionamento em Bobcat Key.",
+      "location": "Parking lot in Bobcat Key."
     },
     "bubblegum-growler": {
       "title": "Bubblegum Growler",
@@ -18430,7 +18607,8 @@
       "roadIndex": 616,
       "terrainIndex": 274,
       "seats": 2,
-      "locationOriginal": "Garagem de residência em Rialto Islands."
+      "locationOriginal": "Garagem de residência em Rialto Islands.",
+      "location": "Residential garage in Rialto Islands."
     },
     "cotton-candy-devanity": {
       "title": "Cotton Candy Devanity",
@@ -18466,7 +18644,8 @@
       "roadIndex": 413,
       "terrainIndex": 293,
       "seats": 2,
-      "locationOriginal": "Garagem em Waning Sands."
+      "locationOriginal": "Garagem em Waning Sands.",
+      "location": "Garage in Waning Sands."
     },
     "gilf-windsor": {
       "title": "GILF Windsor",
@@ -18502,7 +18681,8 @@
       "roadIndex": 589,
       "terrainIndex": 372,
       "seats": 4,
-      "locationOriginal": "Residência de luxo em Capri."
+      "locationOriginal": "Residência de luxo em Capri.",
+      "location": "Luxury residence in Capri."
     },
     "glitterbomb-apoc": {
       "title": "Glitterbomb APOC",
@@ -18538,7 +18718,8 @@
       "roadIndex": 488,
       "terrainIndex": 292,
       "seats": 2,
-      "locationOriginal": "Casa suburbana em Belville."
+      "locationOriginal": "Casa suburbana em Belville.",
+      "location": "Suburban house in Belville."
     },
     "lipgloss-vitello": {
       "title": "Lipgloss Vitello",
@@ -18574,7 +18755,8 @@
       "roadIndex": 832,
       "terrainIndex": 297,
       "seats": 2,
-      "locationOriginal": "Dolos Exotic Car Rental, Crosstown."
+      "locationOriginal": "Dolos Exotic Car Rental, Crosstown.",
+      "location": "Dolos Exotic Car Rental, Crosstown."
     },
     "ocean-pearl-cb69": {
       "title": "Ocean Pearl CB69",
@@ -18605,7 +18787,8 @@
         }
       ],
       "ratings": {},
-      "locationOriginal": "Cais em Tequesta."
+      "locationOriginal": "Cais em Tequesta.",
+      "location": "Dock in Tequesta."
     },
     "party-girl-penumbra": {
       "title": "Party Girl Penumbra",
@@ -18641,7 +18824,8 @@
       "roadIndex": 512,
       "terrainIndex": 331,
       "seats": 2,
-      "locationOriginal": "Estacionamento de hotel em Capri."
+      "locationOriginal": "Estacionamento de hotel em Capri.",
+      "location": "Hotel parking lot in Capri."
     },
     "pink-champagne-caddy": {
       "title": "Pink Champagne Caddy",
@@ -18676,7 +18860,8 @@
       },
       "roadIndex": 110,
       "terrainIndex": 171,
-      "locationOriginal": "Residência suburbana em Waning Sands."
+      "locationOriginal": "Residência suburbana em Waning Sands.",
+      "location": "Suburban residence in Waning Sands."
     },
     "pink-licorice-astron": {
       "title": "Pink Licorice Astron",
@@ -18712,7 +18897,8 @@
       "roadIndex": 577,
       "terrainIndex": 353,
       "seats": 4,
-      "locationOriginal": "Garagem de casa em Belville."
+      "locationOriginal": "Garagem de casa em Belville.",
+      "location": "Home garage in Belville."
     },
     "princess-jubilee": {
       "title": "Princess Jubilee",
@@ -18748,7 +18934,8 @@
       "roadIndex": 512,
       "terrainIndex": 663,
       "seats": 4,
-      "locationOriginal": "Residência de luxo em Rialto Islands."
+      "locationOriginal": "Residência de luxo em Rialto Islands.",
+      "location": "Luxury residence in Rialto Islands."
     },
     "pussycat-mammatus": {
       "title": "Pussycat Mammatus",
@@ -18780,7 +18967,8 @@
       ],
       "ratings": {},
       "seats": 4,
-      "locationOriginal": "Hangar em Grassrivers."
+      "locationOriginal": "Hangar em Grassrivers.",
+      "location": "Hangar in Grassrivers."
     },
     "seashell-boomazoom": {
       "title": "Seashell Boomazoom",
@@ -18816,7 +19004,8 @@
       "roadIndex": 19,
       "terrainIndex": 20,
       "seats": 1,
-      "locationOriginal": "Waxman Island; ponto exato não indicado."
+      "locationOriginal": "Waxman Island; ponto exato não indicado.",
+      "location": "Waxman Island; exact spot not specified."
     },
     "shes-all-that-blista": {
       "title": "She's All That Blista",
@@ -18852,7 +19041,8 @@
       "roadIndex": 437,
       "terrainIndex": 291,
       "seats": 2,
-      "locationOriginal": "Loja de cosmética em Port Gellhorn."
+      "locationOriginal": "Loja de cosmética em Port Gellhorn.",
+      "location": "Cosmetics store in Port Gellhorn."
     },
     "vanessas-growler": {
       "title": "Vanessa's Growler",
@@ -18888,7 +19078,8 @@
       "roadIndex": 616,
       "terrainIndex": 274,
       "seats": 2,
-      "locationOriginal": "Garagem em Rockridge, código 92665 (Timesaver)."
+      "locationOriginal": "Garagem em Rockridge, código 92665 (Timesaver).",
+      "location": "Garage in Rockridge, code 92665 (Timesaver)."
     },
     "1776-phantom": {
       "title": "1776 Phantom",
@@ -18924,7 +19115,8 @@
       "roadIndex": 191,
       "terrainIndex": 124,
       "seats": 5,
-      "locationOriginal": "Allied Crystal, Ambrosia."
+      "locationOriginal": "Allied Crystal, Ambrosia.",
+      "location": "Allied Crystal, Ambrosia."
     },
     "allegiance-dorado": {
       "title": "Allegiance Dorado",
@@ -18960,7 +19152,8 @@
       "roadIndex": 373,
       "terrainIndex": 314,
       "seats": 4,
-      "locationOriginal": "Lavagem automóvel em Ambrosia."
+      "locationOriginal": "Lavagem automóvel em Ambrosia.",
+      "location": "Car wash in Ambrosia."
     },
     "beer-buggy-bandito": {
       "title": "Beer Buggy Bandito",
@@ -18995,7 +19188,8 @@
       },
       "roadIndex": 459,
       "terrainIndex": 714,
-      "locationOriginal": "Exterior de casa em Wild Hog Point."
+      "locationOriginal": "Exterior de casa em Wild Hog Point.",
+      "location": "Outside a house in Wild Hog Point."
     },
     "beer-monster-marshall": {
       "title": "Beer Monster Marshall",
@@ -19030,7 +19224,8 @@
       },
       "roadIndex": 344,
       "terrainIndex": 600,
-      "locationOriginal": "Thrillbilly Mud Club."
+      "locationOriginal": "Thrillbilly Mud Club.",
+      "location": "Thrillbilly Mud Club."
     },
     "henshaw-rhode": {
       "title": "Henshaw Rhode",
@@ -19061,7 +19256,8 @@
         }
       ],
       "ratings": {},
-      "locationOriginal": "Lake Leonida, Ambrosia."
+      "locationOriginal": "Lake Leonida, Ambrosia.",
+      "location": "Lake Leonida, Ambrosia."
     },
     "independence-boomazoom": {
       "title": "Independence Boomazoom",
@@ -19097,7 +19293,8 @@
       "roadIndex": 19,
       "terrainIndex": 20,
       "seats": 1,
-      "locationOriginal": "Bar junto ao Lake Leonida."
+      "locationOriginal": "Bar junto ao Lake Leonida.",
+      "location": "Bar by Lake Leonida."
     },
     "old-glory-caracara": {
       "title": "Old Glory Caracara",
@@ -19133,7 +19330,8 @@
       "roadIndex": 436,
       "terrainIndex": 619,
       "seats": 4,
-      "locationOriginal": "Allied Crystal, Ambrosia."
+      "locationOriginal": "Allied Crystal, Ambrosia.",
+      "location": "Allied Crystal, Ambrosia."
     },
     "revolutionary-azure": {
       "title": "Revolutionary Azure",
@@ -19164,7 +19362,8 @@
         }
       ],
       "ratings": {},
-      "locationOriginal": "Exterior de casa em Key Lento."
+      "locationOriginal": "Exterior de casa em Key Lento.",
+      "location": "Outside a house in Key Lento."
     },
     "sweet-land-caddy": {
       "title": "Sweet Land Caddy",
@@ -19199,7 +19398,8 @@
       },
       "roadIndex": 108,
       "terrainIndex": 222,
-      "locationOriginal": "Feira em Ambrosia."
+      "locationOriginal": "Feira em Ambrosia.",
+      "location": "Fair in Ambrosia."
     },
     "shining-sea-squalo": {
       "title": "Shining Sea Squalo",
@@ -19231,7 +19431,8 @@
       ],
       "ratings": {},
       "seats": 2,
-      "locationOriginal": "Cais em Port Gellhorn."
+      "locationOriginal": "Cais em Port Gellhorn.",
+      "location": "Dock in Port Gellhorn."
     },
     "truth-justice-caracara": {
       "title": "Truth & Justice Caracara",
@@ -19281,7 +19482,8 @@
       "seats": 4,
       "locationOriginal": "Garagem dos Kolt & Associates, Port Gellhorn.",
       "registration": "$5,550",
-      "resale": "$5,900"
+      "resale": "$5,900",
+      "location": "Kolt & Associates garage, Port Gellhorn."
     },
     "born-free-deviant": {
       "title": "Born Free Deviant",
@@ -19348,7 +19550,8 @@
         "offroad": 4.5,
         "strength": 3
       },
-      "locationOriginal": "Ultimate: recompensa final da coleção de Wyman, Capri."
+      "locationOriginal": "Ultimate: recompensa final da coleção de Wyman, Capri.",
+      "location": "Ultimate Edition: final reward for Wyman's collection, Capri."
     },
     "big-game-airboat": {
       "title": "Big Game Airboat",
@@ -19379,7 +19582,8 @@
         }
       ],
       "ratings": {},
-      "locationOriginal": "Água junto ao Swampy Sal's."
+      "locationOriginal": "Água junto ao Swampy Sal's.",
+      "location": "Water beside Swampy Sal's."
     },
     "bogskimmer-sea-sparrow": {
       "title": "Bogskimmer Sea Sparrow",
@@ -19411,7 +19615,8 @@
       ],
       "ratings": {},
       "seats": 2,
-      "locationOriginal": "Cais em Buckskin Swamp."
+      "locationOriginal": "Cais em Buckskin Swamp.",
+      "location": "Dock in Buckskin Swamp."
     },
     "camo-caddy": {
       "title": "Camo Caddy",
@@ -19446,7 +19651,8 @@
       },
       "roadIndex": 105,
       "terrainIndex": 232,
-      "locationOriginal": "Cabana em Buckskin Swamp."
+      "locationOriginal": "Cabana em Buckskin Swamp.",
+      "location": "Cabin in Buckskin Swamp."
     },
     "dr-sheehans-airboat": {
       "title": "Dr Sheehan's Airboat",
@@ -19477,7 +19683,8 @@
         }
       ],
       "ratings": {},
-      "locationOriginal": "Posto de investigação, Pelican Valley."
+      "locationOriginal": "Posto de investigação, Pelican Valley.",
+      "location": "Research station, Pelican Valley."
     },
     "gator-shack-bison": {
       "title": "Gator Shack Bison",
@@ -19513,7 +19720,8 @@
       "roadIndex": 386,
       "terrainIndex": 580,
       "seats": 6,
-      "locationOriginal": "Restaurante Gator Shack, Big Pine."
+      "locationOriginal": "Restaurante Gator Shack, Big Pine.",
+      "location": "Gator Shack restaurant, Big Pine."
     },
     "kowaachobee-airboat": {
       "title": "Kowaachobee Airboat",
@@ -19544,7 +19752,8 @@
         }
       ],
       "ratings": {},
-      "locationOriginal": "Plataforma de observação, Buckskin Swamp."
+      "locationOriginal": "Plataforma de observação, Buckskin Swamp.",
+      "location": "Observation platform, Buckskin Swamp."
     },
     "naughty-boy-airboat": {
       "title": "Naughty Boy Airboat",
@@ -19575,7 +19784,8 @@
         }
       ],
       "ratings": {},
-      "locationOriginal": "Treinadora de jacarés, Buckskin Swamp."
+      "locationOriginal": "Treinadora de jacarés, Buckskin Swamp.",
+      "location": "Alligator trainer, Buckskin Swamp."
     },
     "spec-ops-boomazoom": {
       "title": "Spec Ops Boomazoom",
@@ -19611,7 +19821,8 @@
       "roadIndex": 17,
       "terrainIndex": 31,
       "seats": 1,
-      "locationOriginal": "Trilho em Manifest Canyon."
+      "locationOriginal": "Trilho em Manifest Canyon.",
+      "location": "Trail in Manifest Canyon."
     },
     "swampy-sals-caddy": {
       "title": "Swampy Sal's Caddy",
@@ -19646,7 +19857,8 @@
       },
       "roadIndex": 110,
       "terrainIndex": 171,
-      "locationOriginal": "Swampy Sal's, Buckskin Swamp."
+      "locationOriginal": "Swampy Sal's, Buckskin Swamp.",
+      "location": "Swampy Sal's, Buckskin Swamp."
     },
     "will-o-the-wisp-airboat": {
       "title": "Will O' The Wisp Airboat",
@@ -19677,7 +19889,8 @@
         }
       ],
       "ratings": {},
-      "locationOriginal": "Cais em Buckskin Swamp."
+      "locationOriginal": "Cais em Buckskin Swamp.",
+      "location": "Dock in Buckskin Swamp."
     },
     "beer-nuts-yosemite": {
       "title": "Beer Nuts Yosemite",
@@ -19713,7 +19926,8 @@
       "roadIndex": 383,
       "terrainIndex": 621,
       "seats": 2,
-      "locationOriginal": "Exterior de casa em Port Gellhorn."
+      "locationOriginal": "Exterior de casa em Port Gellhorn.",
+      "location": "Outside a house in Port Gellhorn."
     },
     "berserker-sanchez": {
       "title": "Berserker Sanchez",
@@ -19749,7 +19963,8 @@
       "roadIndex": 524,
       "terrainIndex": 715,
       "seats": 2,
-      "locationOriginal": "Recompensa dos stunt jumps."
+      "locationOriginal": "Recompensa dos stunt jumps.",
+      "location": "Stunt jumps reward."
     },
     "big-cat-furia": {
       "title": "Big Cat Furia",
@@ -19785,7 +20000,8 @@
       "roadIndex": 781,
       "terrainIndex": 239,
       "seats": 2,
-      "locationOriginal": "Residência de luxo em Starfish Island."
+      "locationOriginal": "Residência de luxo em Starfish Island.",
+      "location": "Luxury residence on Starfish Island."
     },
     "black-dragon-mallard": {
       "title": "Black Dragon Mallard",
@@ -19817,7 +20033,8 @@
       ],
       "ratings": {},
       "seats": 1,
-      "locationOriginal": "Recompensa dos knife flights."
+      "locationOriginal": "Recompensa dos knife flights.",
+      "location": "Knife flights reward."
     },
     "black-dragon-maverick": {
       "title": "Black Dragon Maverick",
@@ -19849,7 +20066,8 @@
       ],
       "ratings": {},
       "seats": 4,
-      "locationOriginal": "Recompensa de voar por baixo das pontes."
+      "locationOriginal": "Recompensa de voar por baixo das pontes.",
+      "location": "Reward for flying under bridges."
     },
     "busted-cheater-rebel": {
       "title": "Busted Cheater Rebel",
@@ -19899,7 +20117,8 @@
       "seats": 2,
       "locationOriginal": "Casa de recém-casados em Port Gellhorn.",
       "registration": "$6,750",
-      "resale": "$2,035"
+      "resale": "$2,035",
+      "location": "Newlyweds' house in Port Gellhorn."
     },
     "celebration-caddy": {
       "title": "Celebration Caddy",
@@ -19935,7 +20154,8 @@
       "roadIndex": 107,
       "terrainIndex": 133,
       "seats": 2,
-      "locationOriginal": "Garagem do Mount Hailes Country Club."
+      "locationOriginal": "Garagem do Mount Hailes Country Club.",
+      "location": "Mount Hailes Country Club garage."
     },
     "cellerica-caddy": {
       "title": "Cellerica Caddy",
@@ -19970,7 +20190,8 @@
       },
       "roadIndex": 110,
       "terrainIndex": 171,
-      "locationOriginal": "Campus da Cellerica em Belville."
+      "locationOriginal": "Campus da Cellerica em Belville.",
+      "location": "Cellerica campus in Belville."
     },
     "donk-boomazoom": {
       "title": "Donk Boomazoom",
@@ -20006,7 +20227,8 @@
       "roadIndex": 19,
       "terrainIndex": 20,
       "seats": 1,
-      "locationOriginal": "Costa de Vice Beach."
+      "locationOriginal": "Costa de Vice Beach.",
+      "location": "Vice Beach coast."
     },
     "donk-caddy": {
       "title": "Donk Caddy",
@@ -20041,7 +20263,8 @@
       },
       "roadIndex": 110,
       "terrainIndex": 171,
-      "locationOriginal": "Dwindle Wood Retirement Community."
+      "locationOriginal": "Dwindle Wood Retirement Community.",
+      "location": "Dwindle Wood Retirement Community."
     },
     "donk-verus": {
       "title": "Donk Verus",
@@ -20077,7 +20300,8 @@
       "roadIndex": 428,
       "terrainIndex": 286,
       "seats": 2,
-      "locationOriginal": "Contentor em Rockridge."
+      "locationOriginal": "Contentor em Rockridge.",
+      "location": "Shipping container in Rockridge."
     },
     "diy-chavos": {
       "title": "DIY Chavos",
@@ -20113,7 +20337,8 @@
       "roadIndex": 504,
       "terrainIndex": 315,
       "seats": 4,
-      "locationOriginal": "Prédio de apartamentos em La Perle."
+      "locationOriginal": "Prédio de apartamentos em La Perle.",
+      "location": "Apartment building in La Perle."
     },
     "erotic-journey": {
       "title": "Erotic Journey",
@@ -20149,7 +20374,8 @@
       "roadIndex": 227,
       "terrainIndex": 114,
       "seats": 6,
-      "locationOriginal": "Parque de autocaravanas em Watson Bay."
+      "locationOriginal": "Parque de autocaravanas em Watson Bay.",
+      "location": "RV park in Watson Bay."
     },
     "flamingo-bobcat": {
       "title": "Flamingo Bobcat",
@@ -20185,7 +20411,8 @@
       "roadIndex": 406,
       "terrainIndex": 368,
       "seats": 2,
-      "locationOriginal": "Posto de guardas florestais em Belpoint."
+      "locationOriginal": "Posto de guardas florestais em Belpoint.",
+      "location": "Ranger station in Belpoint."
     },
     "finns-reclaimer": {
       "title": "Finns Reclaimer",
@@ -20234,7 +20461,8 @@
       "terrainIndex": 208,
       "seats": 2,
       "locationOriginal": "Finns Diner, Millport.",
-      "registration": "$7,500"
+      "registration": "$7,500",
+      "location": "Finns Diner, Millport."
     },
     "ghosts-exposed-parkland": {
       "title": "Ghosts Exposed Parkland",
@@ -20284,7 +20512,8 @@
       "seats": 4,
       "locationOriginal": "Residência em Capri.",
       "registration": "$10,500",
-      "resale": "$3,135"
+      "resale": "$3,135",
+      "location": "Residence in Capri."
     },
     "lowrider-boomazoom": {
       "title": "Lowrider Boomazoom",
@@ -20320,7 +20549,8 @@
       "roadIndex": 17,
       "terrainIndex": 31,
       "seats": 1,
-      "locationOriginal": "Dwindle Wood."
+      "locationOriginal": "Dwindle Wood.",
+      "location": "Dwindle Wood."
     },
     "lowrider-caddy": {
       "title": "Lowrider Caddy",
@@ -20355,7 +20585,8 @@
       },
       "roadIndex": 110,
       "terrainIndex": 147,
-      "locationOriginal": "Exterior de casa em Dwindle Wood."
+      "locationOriginal": "Exterior de casa em Dwindle Wood.",
+      "location": "Outside a house in Dwindle Wood."
     },
     "monster-futo": {
       "title": "Monster Futo",
@@ -20391,7 +20622,8 @@
       "roadIndex": 391,
       "terrainIndex": 583,
       "seats": 2,
-      "locationOriginal": "Contentor em Port Gellhorn."
+      "locationOriginal": "Contentor em Port Gellhorn.",
+      "location": "Shipping container in Port Gellhorn."
     },
     "myways-manchez": {
       "title": "MyWays Manchez",
@@ -20427,7 +20659,8 @@
       "roadIndex": 521,
       "terrainIndex": 712,
       "seats": 2,
-      "locationOriginal": "Ponte perto de Grayson."
+      "locationOriginal": "Ponte perto de Grayson.",
+      "location": "Bridge near Grayson."
     },
     "audacity-sanchez": {
       "title": "AudaCity Sanchez",
@@ -20463,7 +20696,8 @@
       "roadIndex": 581,
       "terrainIndex": 774,
       "seats": 2,
-      "locationOriginal": "Associada a Papa AudaCity; local exato por confirmar."
+      "locationOriginal": "Associada a Papa AudaCity; local exato por confirmar.",
+      "location": "Associated with Papa AudaCity; exact location unconfirmed."
     },
     "audacity-sandking": {
       "title": "AudaCity Sandking",
@@ -20499,7 +20733,8 @@
       "roadIndex": 358,
       "terrainIndex": 544,
       "seats": 4,
-      "locationOriginal": "Associada a Papa AudaCity; local exato por confirmar."
+      "locationOriginal": "Associada a Papa AudaCity; local exato por confirmar.",
+      "location": "Associated with Papa AudaCity; exact location unconfirmed."
     },
     "partytime-caddy": {
       "title": "Partytime Caddy",
@@ -20534,7 +20769,8 @@
       },
       "roadIndex": 110,
       "terrainIndex": 147,
-      "locationOriginal": "Exterior de loja em Port Gellhorn."
+      "locationOriginal": "Exterior de loja em Port Gellhorn.",
+      "location": "Outside a store in Port Gellhorn."
     },
     "preachers-moocher": {
       "title": "Preacher's Moocher",
@@ -20570,7 +20806,8 @@
       "roadIndex": 224,
       "terrainIndex": 124,
       "seats": 4,
-      "locationOriginal": "Estrada de montanha em Moreau."
+      "locationOriginal": "Estrada de montanha em Moreau.",
+      "location": "Mountain road in Moreau."
     },
     "punk-putter-caddy": {
       "title": "Punk Putter Caddy",
@@ -20605,7 +20842,8 @@
       },
       "roadIndex": 128,
       "terrainIndex": 251,
-      "locationOriginal": "Mount Hailes Country Club."
+      "locationOriginal": "Mount Hailes Country Club.",
+      "location": "Mount Hailes Country Club."
     },
     "rudolph-tao": {
       "title": "Rudolph Tao",
@@ -20636,7 +20874,8 @@
         }
       ],
       "ratings": {},
-      "locationOriginal": "Exterior de casa em Key Lento."
+      "locationOriginal": "Exterior de casa em Key Lento.",
+      "location": "Outside a house in Key Lento."
     },
     "speedy-boomazoom": {
       "title": "Speedy Boomazoom",
@@ -20672,7 +20911,8 @@
       "roadIndex": 42,
       "terrainIndex": 90,
       "seats": 1,
-      "locationOriginal": "Garagem em Little Cuba."
+      "locationOriginal": "Garagem em Little Cuba.",
+      "location": "Garage in Little Cuba."
     },
     "truther-burrito": {
       "title": "Truther Burrito",
@@ -20708,7 +20948,8 @@
       "roadIndex": 361,
       "terrainIndex": 203,
       "seats": 4,
-      "locationOriginal": "Exterior de casa em Millport."
+      "locationOriginal": "Exterior de casa em Millport.",
+      "location": "Outside a house in Millport."
     },
     "westbound-azure": {
       "title": "Westbound Azure",
@@ -20739,7 +20980,8 @@
         }
       ],
       "ratings": {},
-      "locationOriginal": "Perto do proprietário em Pelican Valley."
+      "locationOriginal": "Perto do proprietário em Pelican Valley.",
+      "location": "Near the owner in Pelican Valley."
     },
     "yesteryear-boomazoom": {
       "title": "Yesteryear Boomazoom",
@@ -20775,7 +21017,8 @@
       "roadIndex": 19,
       "terrainIndex": 20,
       "seats": 1,
-      "locationOriginal": "Atrás de loja de usados em Port Gellhorn."
+      "locationOriginal": "Atrás de loja de usados em Port Gellhorn.",
+      "location": "Behind a secondhand store in Port Gellhorn."
     },
     "ahol-blista": {
       "title": "Ahol Blista",
@@ -20811,7 +21054,8 @@
       "roadIndex": 516,
       "terrainIndex": 310,
       "seats": 2,
-      "locationOriginal": "Recompensa da coleção Geographies of Trash."
+      "locationOriginal": "Recompensa da coleção Geographies of Trash.",
+      "location": "Geographies of Trash collection reward."
     },
     "circles-of-hell-youga": {
       "title": "Circles of Hell Youga",
@@ -20847,7 +21091,8 @@
       "roadIndex": 321,
       "terrainIndex": 194,
       "seats": 2,
-      "locationOriginal": "Associada a um grupo em Port Gellhorn."
+      "locationOriginal": "Associada a um grupo em Port Gellhorn.",
+      "location": "Associated with a group in Port Gellhorn."
     },
     "dot-matrix-dibnah": {
       "title": "Dot Matrix Dibnah",
@@ -20878,7 +21123,8 @@
         }
       ],
       "ratings": {},
-      "locationOriginal": "Cais em Rialto Islands."
+      "locationOriginal": "Cais em Rialto Islands.",
+      "location": "Dock in Rialto Islands."
     },
     "elven-queen-youga": {
       "title": "Elven Queen Youga",
@@ -20914,7 +21160,8 @@
       "roadIndex": 321,
       "terrainIndex": 194,
       "seats": 2,
-      "locationOriginal": "Casa de festas perto do Gellhorn Raceway."
+      "locationOriginal": "Casa de festas perto do Gellhorn Raceway.",
+      "location": "Party house near Gellhorn Raceway."
     },
     "acid-youga": {
       "title": "Acid Youga",
@@ -20950,7 +21197,8 @@
       "roadIndex": 321,
       "terrainIndex": 194,
       "seats": 2,
-      "locationOriginal": "Casa de festas perto do Gellhorn Raceway."
+      "locationOriginal": "Casa de festas perto do Gellhorn Raceway.",
+      "location": "Party house near Gellhorn Raceway."
     },
     "flower-child-woodland": {
       "title": "Flower Child Woodland",
@@ -20986,7 +21234,8 @@
       "roadIndex": 352,
       "terrainIndex": 188,
       "seats": 4,
-      "locationOriginal": "Loja de vidente em Key Lento."
+      "locationOriginal": "Loja de vidente em Key Lento.",
+      "location": "Fortune teller's shop in Key Lento."
     },
     "flower-powered-rancher": {
       "title": "Flower Powered Rancher",
@@ -21022,7 +21271,8 @@
       "roadIndex": 326,
       "terrainIndex": 390,
       "seats": 4,
-      "locationOriginal": "Celeiro perto de Kalaga Reservoir."
+      "locationOriginal": "Celeiro perto de Kalaga Reservoir.",
+      "location": "Barn near Kalaga Reservoir."
     },
     "hung-carbon-rs": {
       "title": "Hung Carbon RS",
@@ -21058,7 +21308,8 @@
       "roadIndex": 750,
       "terrainIndex": 120,
       "seats": 2,
-      "locationOriginal": "Árvore perto de bar de motards, Belville."
+      "locationOriginal": "Árvore perto de bar de motards, Belville.",
+      "location": "Tree near a biker bar, Belville."
     },
     "interdimensional-youga": {
       "title": "Interdimensional Youga",
@@ -21094,7 +21345,8 @@
       "roadIndex": 296,
       "terrainIndex": 173,
       "seats": 4,
-      "locationOriginal": "Mount Kalaga National Park."
+      "locationOriginal": "Mount Kalaga National Park.",
+      "location": "Mount Kalaga National Park."
     },
     "king-of-swing-youga": {
       "title": "King of Swing Youga",
@@ -21130,7 +21382,8 @@
       "roadIndex": 296,
       "terrainIndex": 173,
       "seats": 4,
-      "locationOriginal": "Parque de autocaravanas, Watson Bay."
+      "locationOriginal": "Parque de autocaravanas, Watson Bay.",
+      "location": "RV park, Watson Bay."
     },
     "pop-art-cypher": {
       "title": "Pop Art Cypher",
@@ -21166,7 +21419,8 @@
       "roadIndex": 669,
       "terrainIndex": 272,
       "seats": 2,
-      "locationOriginal": "Parque de estacionamento em Bayside."
+      "locationOriginal": "Parque de estacionamento em Bayside.",
+      "location": "Parking lot in Bayside."
     },
     "splattered-vitello": {
       "title": "Splattered Vitello",
@@ -21215,7 +21469,8 @@
       "terrainIndex": 296,
       "seats": 2,
       "locationOriginal": "Casa em Capri.",
-      "registration": "$43,750"
+      "registration": "$43,750",
+      "location": "House in Capri."
     },
     "street-art-squalo": {
       "title": "Street Art Squalo",
@@ -21247,7 +21502,8 @@
       ],
       "ratings": {},
       "seats": 2,
-      "locationOriginal": "Exterior de residência em Key Lento."
+      "locationOriginal": "Exterior de residência em Key Lento.",
+      "location": "Outside a residence in Key Lento."
     },
     "tap-tap-walton": {
       "title": "Tap-Tap Walton",
@@ -21283,7 +21539,8 @@
       "roadIndex": 379,
       "terrainIndex": 274,
       "seats": 2,
-      "locationOriginal": "Posto de combustível em La Perle."
+      "locationOriginal": "Posto de combustível em La Perle.",
+      "location": "Gas station in La Perle."
     },
     "third-eye-youga": {
       "title": "Third Eye Youga",
@@ -21333,7 +21590,8 @@
       "seats": 4,
       "locationOriginal": "Casa de vidente em Grayson.",
       "registration": "$5,400",
-      "resale": "$1,595"
+      "resale": "$1,595",
+      "location": "Fortune teller's house in Grayson."
     },
     "trippin-picador": {
       "title": "Trippin' Picador",
@@ -21369,7 +21627,8 @@
       "roadIndex": 440,
       "terrainIndex": 313,
       "seats": 2,
-      "locationOriginal": "Quinta em Frogswater."
+      "locationOriginal": "Quinta em Frogswater.",
+      "location": "Farm in Frogswater."
     },
     "tropic-dawn-youga": {
       "title": "Tropic Dawn Youga",
@@ -21405,7 +21664,8 @@
       "roadIndex": 321,
       "terrainIndex": 194,
       "seats": 2,
-      "locationOriginal": "Oficina de barcos em Key Lento."
+      "locationOriginal": "Oficina de barcos em Key Lento.",
+      "location": "Boat workshop in Key Lento."
     },
     "alpha-bison": {
       "title": "Alpha Bison",
@@ -21441,7 +21701,8 @@
       "roadIndex": 494,
       "terrainIndex": 771,
       "seats": 6,
-      "locationOriginal": "Posto de polícia rodoviária em Moreau."
+      "locationOriginal": "Posto de polícia rodoviária em Moreau.",
+      "location": "Highway patrol station in Moreau."
     },
     "cold-case-l35p": {
       "title": "Cold Case L35P",
@@ -21472,7 +21733,8 @@
         }
       ],
       "ratings": {},
-      "locationOriginal": "Pântanos de Watson Bay."
+      "locationOriginal": "Pântanos de Watson Bay.",
+      "location": "Watson Bay swamps."
     },
     "enforcer-coquette": {
       "title": "Enforcer Coquette",
@@ -21508,7 +21770,8 @@
       "roadIndex": 712,
       "terrainIndex": 238,
       "seats": 2,
-      "locationOriginal": "Exposição junto à sede policial de Capri."
+      "locationOriginal": "Exposição junto à sede policial de Capri.",
+      "location": "Display near Capri police headquarters."
     },
     "lacewing-maverick": {
       "title": "Lacewing Maverick",
@@ -21540,7 +21803,8 @@
       ],
       "ratings": {},
       "seats": 4,
-      "locationOriginal": "Telhado em Crosstown."
+      "locationOriginal": "Telhado em Crosstown.",
+      "location": "Rooftop in Crosstown."
     },
     "valiant-tempesta": {
       "title": "Valiant Tempesta",
@@ -21576,7 +21840,8 @@
       "roadIndex": 748,
       "terrainIndex": 284,
       "seats": 2,
-      "locationOriginal": "Evento de recrutamento VCPD, Vice Beach."
+      "locationOriginal": "Evento de recrutamento VCPD, Vice Beach.",
+      "location": "VCPD recruitment event, Vice Beach."
     },
     "booty-bang-cavalcade": {
       "title": "Booty Bang Cavalcade",
@@ -21612,7 +21877,8 @@
       "roadIndex": 503,
       "terrainIndex": 332,
       "seats": 4,
-      "locationOriginal": "Casa do fundador em Peacock Estates."
+      "locationOriginal": "Casa do fundador em Peacock Estates.",
+      "location": "Founder's house in Peacock Estates."
     },
     "booty-bang-nimbus": {
       "title": "Booty Bang Nimbus",
@@ -21644,7 +21910,8 @@
       ],
       "ratings": {},
       "seats": 8,
-      "locationOriginal": "Hangar no VCIA."
+      "locationOriginal": "Hangar no VCIA.",
+      "location": "Hangar at VCIA."
     },
     "copperheads-gauntlet": {
       "title": "Copperheads Gauntlet",
@@ -21694,7 +21961,8 @@
       "seats": 2,
       "locationOriginal": "Garagem de fã, Ambrosia.",
       "registration": "$28,400",
-      "resale": "$10,120"
+      "resale": "$10,120",
+      "location": "Fan's garage, Ambrosia."
     },
     "dwnplys-schutzen": {
       "title": "DWNPLY's Schutzen",
@@ -21730,7 +21998,8 @@
       "roadIndex": 656,
       "terrainIndex": 329,
       "seats": 2,
-      "locationOriginal": "Exterior do Pay 'n' Spray, Stockyard."
+      "locationOriginal": "Exterior do Pay 'n' Spray, Stockyard.",
+      "location": "Outside Pay 'n' Spray, Stockyard."
     },
     "jackals-caracara": {
       "title": "Jackals Caracara",
@@ -21766,7 +22035,8 @@
       "roadIndex": 473,
       "terrainIndex": 656,
       "seats": 4,
-      "locationOriginal": "Estádio dos Capri City Jackals."
+      "locationOriginal": "Estádio dos Capri City Jackals.",
+      "location": "Capri City Jackals stadium."
     },
     "jackals-sanchez": {
       "title": "Jackals Sanchez",
@@ -21802,7 +22072,8 @@
       "roadIndex": 553,
       "terrainIndex": 747,
       "seats": 2,
-      "locationOriginal": "Pista de motocross em Waning Sands."
+      "locationOriginal": "Pista de motocross em Waning Sands.",
+      "location": "Motocross track in Waning Sands."
     },
     "narcos-cavalcade": {
       "title": "Narcos Cavalcade",
@@ -21851,7 +22122,8 @@
       "terrainIndex": 332,
       "seats": 4,
       "locationOriginal": "Garagem de estacionamento em Downtown.",
-      "registration": "$28,250"
+      "registration": "$28,250",
+      "location": "Parking garage in Downtown."
     },
     "rainbow-ripple-l20s": {
       "title": "Rainbow Ripple L20S",
@@ -21882,7 +22154,8 @@
         }
       ],
       "ratings": {},
-      "locationOriginal": "Ilhota em Gambit Bay, perto de Maroon Key."
+      "locationOriginal": "Ilhota em Gambit Bay, perto de Maroon Key.",
+      "location": "Small island in Gambit Bay, near Maroon Key."
     },
     "candyman-scorcher": {
       "title": "Candyman Scorcher",
@@ -21914,7 +22187,8 @@
       ],
       "ratings": {},
       "seats": 1,
-      "locationOriginal": "Exterior de loja em Port Gellhorn."
+      "locationOriginal": "Exterior de loja em Port Gellhorn.",
+      "location": "Outside a store in Port Gellhorn."
     },
     "ghost-cruiser": {
       "title": "Ghost Cruiser",
@@ -21946,7 +22220,8 @@
       ],
       "ratings": {},
       "seats": 1,
-      "locationOriginal": "Memorial de estrada em Port Gellhorn."
+      "locationOriginal": "Memorial de estrada em Port Gellhorn.",
+      "location": "Roadside memorial in Port Gellhorn."
     },
     "glacier-erode": {
       "title": "Glacier Erode",
@@ -21978,7 +22253,8 @@
       ],
       "ratings": {},
       "seats": 1,
-      "locationOriginal": "Traseiras de loja em Port Gellhorn."
+      "locationOriginal": "Traseiras de loja em Port Gellhorn.",
+      "location": "Behind a store in Port Gellhorn."
     },
     "immortal-bmx": {
       "title": "Immortal BMX",
@@ -22010,7 +22286,8 @@
       ],
       "ratings": {},
       "seats": 1,
-      "locationOriginal": "Piscina abandonada em Hamlet."
+      "locationOriginal": "Piscina abandonada em Hamlet.",
+      "location": "Abandoned swimming pool in Hamlet."
     },
     "midsummer-erode": {
       "title": "Midsummer Erode",
@@ -22042,7 +22319,8 @@
       ],
       "ratings": {},
       "seats": 1,
-      "locationOriginal": "Figura de madeira na floresta perto de Bonanza."
+      "locationOriginal": "Figura de madeira na floresta perto de Bonanza.",
+      "location": "Wooden figure in the forest near Bonanza."
     },
     "millionaire-bmx": {
       "title": "Millionaire BMX",
@@ -22074,7 +22352,8 @@
       ],
       "ratings": {},
       "seats": 1,
-      "locationOriginal": "Atrás de loja de crédito em Little Cuba."
+      "locationOriginal": "Atrás de loja de crédito em Little Cuba.",
+      "location": "Behind a loan store in Little Cuba."
     },
     "bugstars-burrito": {
       "title": "Bugstars Burrito",
@@ -22110,7 +22389,8 @@
       "roadIndex": 361,
       "terrainIndex": 203,
       "seats": 4,
-      "locationOriginal": "Exterior de residência em Capri."
+      "locationOriginal": "Exterior de residência em Capri.",
+      "location": "Outside a residence in Capri."
     },
     "cuban-hermes": {
       "title": "Cuban Hermes",
@@ -22160,7 +22440,8 @@
       "seats": 2,
       "locationOriginal": "Contentor em Draper Island.",
       "registration": "$21,650",
-      "resale": "$5,850"
+      "resale": "$5,850",
+      "location": "Shipping container on Draper Island."
     },
     "love-fist-shamal": {
       "title": "Love Fist Shamal",
@@ -22192,7 +22473,8 @@
       ],
       "ratings": {},
       "seats": 10,
-      "locationOriginal": "Hangar no VCIA."
+      "locationOriginal": "Hangar no VCIA.",
+      "location": "Hangar at VCIA."
     },
     "love-fist-youga": {
       "title": "Love Fist Youga",
@@ -22228,7 +22510,8 @@
       "roadIndex": 252,
       "terrainIndex": 392,
       "seats": 4,
-      "locationOriginal": "Hangar no VCIA."
+      "locationOriginal": "Hangar no VCIA.",
+      "location": "Hangar at VCIA."
     },
     "malibu-zombie-bobber": {
       "title": "Malibu Zombie Bobber",
@@ -22264,7 +22547,8 @@
       "roadIndex": 598,
       "terrainIndex": 214,
       "seats": 2,
-      "locationOriginal": "Recompensa de evento numa central elétrica."
+      "locationOriginal": "Recompensa de evento numa central elétrica.",
+      "location": "Event reward at a power station."
     },
     "venturas-blvd-elegy": {
       "title": "Venturas BLVD Elegy",
@@ -22314,7 +22598,8 @@
         "strength": 3.7
       },
       "seats": 2,
-      "locationOriginal": "GTA+: garagem Crosstown; requer subscrição ativa."
+      "locationOriginal": "GTA+: garagem Crosstown; requer subscrição ativa.",
+      "location": "GTA+: Crosstown garage; requires an active subscription."
     }
   }
 }
