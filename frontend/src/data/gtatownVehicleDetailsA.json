@@ -98,5 +98,138 @@
       "Game mode": "story",
       "GTA Town acquisition methods": "steal: Take one from a dock or marina. Can't be registered."
     }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "'82 Maibatsu Caddy",
+    "source": "https://gtatown.com/garage/vehicles/maibatsu-caddy-82",
+    "attributes": {
+      "Real-life reference": "Club Car Precedent",
+      "GTA Town acquisition methods": "Found in traffic or parking; 19 fixed parking spots; registration available.",
+      "Drive": "RWD"
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Atlantic Volatus",
+    "source": "https://gtatown.com/garage/vehicles/atlantic-volatus",
+    "attributes": {
+      "GTA Town acquisition methods": "Unique Ultra-Luxe variant; fixed spawn or reward.",
+      "Seats": 4,
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Avalanche Supervolito",
+    "source": "https://gtatown.com/garage/vehicles/avalanche-supervolito",
+    "attributes": {
+      "GTA Town acquisition methods": "Unique Ultra-Luxe variant; fixed spawn.",
+      "Seats": 4,
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Black Dragon Maverick",
+    "source": "https://gtatown.com/garage/vehicles/black-dragon-maverick",
+    "attributes": {
+      "Real-life reference": "Bell 206L LongRanger; Eurocopter AS350 (base model: Buckingham Maverick)",
+      "GTA Town acquisition methods": "Unique Leonida Man variant; reward for clearing fly-under-a-bridge stunts.",
+      "Seats": 4,
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Bogskimmer Sea Sparrow",
+    "source": "https://gtatown.com/garage/vehicles/bogskimmer-sea-sparrow",
+    "attributes": {
+      "GTA Town acquisition methods": "Unique Swamp Style variant; fixed spawn.",
+      "Seats": 2,
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Buckingham SuperVolito",
+    "source": "https://gtatown.com/garage/vehicles/buckingham-supervolito",
+    "attributes": {
+      "GTA Town acquisition methods": "Airfields, helipads or hangars.",
+      "Seats": 4
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Buckingham Swift",
+    "source": "https://gtatown.com/garage/vehicles/buckingham-swift",
+    "attributes": {
+      "GTA Town acquisition methods": "Airfields, helipads or hangars; 2 fixed parking spots.",
+      "Seats": 4,
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Calder Torlan",
+    "source": "https://gtatown.com/garage/vehicles/calder-torlan",
+    "attributes": {
+      "Real-life reference": "Azimut Atlantis 45; Fairline Targa 40",
+      "GTA Town acquisition methods": "Docks or marinas; 187 fixed parking spots; cannot be registered."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Clarion",
+    "source": "https://gtatown.com/garage/vehicles/clarion",
+    "attributes": {
+      "Real-life reference": "Cigarette 38' Top Gun; Cigarette 515",
+      "GTA Town acquisition methods": "Docks or marinas; 26 fixed parking spots; cannot be registered. Appears in Day Release."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Crest Kayak",
+    "source": "https://gtatown.com/garage/vehicles/crest-kayak",
+    "attributes": {
+      "Real-life reference": "Crescent Kayaks Splashback; Crescent Kayaks Ultralite; Crescent Kayaks Primo",
+      "GTA Town acquisition methods": "Docks or marinas; 246 fixed parking spots; cannot be registered. GTA Town lists an Ultimate Edition bonus at Jason's house in Chapter 1.",
+      "Seats": 1
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Del Perro Erode",
+    "source": "https://gtatown.com/garage/vehicles/del-perro-erode",
+    "attributes": {
+      "Real-life reference": "2024 Santa Cruz Vala; Mondraker Crafty",
+      "GTA Town acquisition methods": "Found parked or ridden; 65 fixed parking spots."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Del Perro Scorcher",
+    "source": "https://gtatown.com/garage/vehicles/del-perro-scorcher",
+    "attributes": {
+      "GTA Town acquisition methods": "Found parked or ridden; 72 fixed parking spots, including 2 on the map."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Dingus Como",
+    "source": "https://gtatown.com/garage/vehicles/dingus-como",
+    "attributes": {
+      "Real-life reference": "Naval Special Warfare rigid-hulled inflatable boat",
+      "GTA Town acquisition methods": "Docks or marinas; 60 fixed parking spots; cannot be registered."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Dingus Nepa",
+    "source": "https://gtatown.com/garage/vehicles/dingus-nepa",
+    "attributes": {
+      "Real-life reference": "Highfield Sport 900; Highfield Sport 700; Highfield Sport 760",
+      "GTA Town acquisition methods": "Docks or marinas; 24 fixed parking spots; cannot be registered."
+    }
   }
 ]
