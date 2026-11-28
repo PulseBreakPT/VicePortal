@@ -2,9 +2,6 @@ name: Publish Vice Atlas
 on:
   push:
     branches: [main]
-    paths:
-      - 'frontend/**'
-      - '.github/workflows/publish-pages.yml'
   pull_request:
     paths:
       - 'frontend/**'
@@ -16,7 +13,7 @@ permissions:
 
 concurrency:
   group: vice-atlas-pages-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build:
@@ -83,58 +80,35 @@ jobs:
         run: yarn build
       - name: Prepare project-relative assets and route fallback
         run: node scripts/prepare-pages.mjs
+      - name: Stamp and validate deployable artifact
+        run: node scripts/stamp-pages-build.mjs
       - uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/main'
         with:
           path: frontend/build
 
   deploy:
-    # Production is published from main / (root) by GitHub Pages.
-    if: ${{ false }}
+    # Only the trusted main ref can publish the artifact.
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       pages: write
       id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/deploy-pages@v4
+      - name: Deploy exact build artifact to GitHub Pages
         id: deployment
-
-  persist-vehicle-images:
-    if: ${{ false }}
-    needs: [build, deploy]
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
+        uses: actions/deploy-pages@v4
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          ref: main
-      - uses: actions/download-artifact@v4
-        with:
-          name: vehicle-image-snapshot
-          path: snapshot
-      - name: Persist validated reference snapshot without stale overwrites
+          node-version: '22'
+      - name: Verify the public release and deep-link fallback
         env:
-          BUILD_SHA: ${{ github.sha }}
-        run: |
-          set -eu
-          git fetch origin main
-          if [ "$(git rev-parse origin/main)" != "$BUILD_SHA" ]; then
-            echo "Main changed during build; skipping stale snapshot."
-            exit 0
-          fi
-          git checkout --detach "$BUILD_SHA"
-          cp snapshot/vehicleImageRefs.json frontend/src/data/vehicleImageRefs.json
-          cp snapshot/vehicleImageMissing.json frontend/src/data/vehicleImageMissing.json
-          cp snapshot/creatorData.json frontend/src/data/creatorData.json
-          cp snapshot/vehicleFeed.json frontend/src/data/vehicleFeed.json
-          git add frontend/src/data/vehicleImageRefs.json frontend/src/data/vehicleImageMissing.json frontend/src/data/creatorData.json frontend/src/data/vehicleFeed.json
-          if git diff --cached --quiet; then exit 0; fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Persist validated creator datasets and vehicle image references"
-          git push origin HEAD:main
+          PAGES_URL: ${{ steps.deployment.outputs.page_url }}
+          EXPECTED_SHA: ${{ github.sha }}
+        run: node frontend/scripts/verify-live-pages.mjs
