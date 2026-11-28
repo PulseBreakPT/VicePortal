@@ -7,6 +7,15 @@ export function progressFacts(raw,knownTitles){
  const summary=typeof raw?.summary==='string'?raw.summary.trim():'';
  const era=summary.match(/^((?:19|20)\d0s)\b/);
  if(era)attrs.Era=era[1];
+ // The source's factual body-style descriptor is distinct from the Progress class.
+ // Use a controlled vocabulary and never invent the menu's exact style labels.
+ const description=summary.match(/^(?:19|20)\d0s (.+?)(?:, modded at [^.!?]+)?\.$/);
+ const maker=String(raw?.manufacturer||raw?.maker||'').trim();
+ if(description&&maker&&description[1].startsWith(maker+' ')){
+  const body=description[1].slice(maker.length+1);
+  const styles=['sports sedan','muscle coupe','muscle pickup','luxury muscle car','sports muscle car','muscle convertible','off-road SUV','station wagon','dirt bike','commercial van','motorhome','muscle sedan','compact coupe','convertible','sports coupe','luxury supercar','riverboat','luxury SUV','luxury coupe','luxury sports car','passenger van','jet','minivan','yacht','powerboat','speedboat','workboat','superbike','quad bike','sports SUV','water taxi','chopper','scooter','sports bike','luxury sedan','hypercar','jet ski'];
+  if(styles.includes(body))attrs['Design style']=body;
+ }
  // Capture workshop names, not source sentences.
  const shop=summary.match(/, modded at ([^.!?]+)\.$/);
  if(shop)attrs['Specialist workshop']=shop[1];
