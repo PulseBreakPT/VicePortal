@@ -46,11 +46,13 @@ assert.ok(portal.includes('...creatorRecords')&&portal.includes('creatorWeapons(
 console.log('Creator dataset checks passed; snapshot rows:',imported);
 
 
-import {enrichArsenal,arsenalAuditNames,arsenalBase,arsenalVariants,arsenalOther} from '../src/data/arsenalAudit.mjs';
+import {enrichArsenal,arsenalAuditNames,arsenalBase,arsenalVariants,arsenalOther,arsenalTechnical,arsenalAlternativeRatings} from '../src/data/arsenalAudit.mjs';
 assert.equal(arsenalBase.length,53);
 assert.equal(arsenalVariants.length,130);
 assert.equal(arsenalOther.length,26);
 assert.equal(arsenalAuditNames.length,209);
+assert.equal(arsenalTechnical.length,62);
+assert.equal(arsenalAlternativeRatings.length,17);
 const rawWeapons=normalizeDataset(snapshot.datasets.weapons.rows,'weapons');
 const enrichedWeapons=enrichArsenal(rawWeapons);
 assert.equal(enrichedWeapons.length,rawWeapons.length);
@@ -69,6 +71,13 @@ const k17=enrichedWeapons.find(x=>x.title==='Klose K17');
 assert.equal(k17.attributes.Handling,'8.5/10');
 assert.equal(k17.attributes['Technical capacity (game data)'],'12');
 assert.equal(k17.attributes['Clip size'],'17');
+assert.equal(k17.attributes['In-game projectile speed parameter'],'370');
+assert.equal(k17.attributes['Reload animation multiplier'],'1');
+assert.ok(k17.relatedSources.some(s=>s.url==='https://six.mics.dev/weapons/ballistics'));
+const bonus=enrichedWeapons.find(x=>x.title==="Jason's Hawk & Little Morgan");
+if(bonus){assert.equal(bonus.attributes['Base weapon family'],'Hawk & Little Morgan');assert.equal(bonus.attributes.Damage,'Not verified in this atlas');}
+const grenade=enrichedWeapons.find(x=>x.title==='Frag Grenade');
+assert.equal(grenade.attributes['In-game force on vehicles'],'0');
 assert.ok(k17.relatedSources.some(s=>s.url==='https://gamesdb.gg/gta-6/weapons?variants=1'));
 const untouched={id:'unmatched',title:'Unknown fictional weapon',attributes:{}};
 assert.strictEqual(enrichArsenal([untouched])[0],untouched);
