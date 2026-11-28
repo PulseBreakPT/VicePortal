@@ -34,12 +34,20 @@ try{
  assert.equal(new Set(externalIds).size,externalIds.length,'Duplicate GTA Town source identity');
  console.log('Extended GTA Town:',JSON.stringify({counts:gtaTownExtendedReport.counts,review:gtaTownExtendedReport.review.length,byKind:extended.reduce((m,e)=>(m[e.kind]=(m[e.kind]||0)+1,m),{})}));
  const styleCoverage=gtaTownExtendedReport.styleCoverage;
- assert.ok(styleCoverage.unique>=728,'Style source coverage regressed');
- for(const [type,minimum] of Object.entries({clothes:384,outfits:299,stores:31,brands:14})){
+ assert.ok(styleCoverage.unique>=1011,'Style source coverage regressed');
+ for(const [type,minimum] of Object.entries({clothes:558,outfits:357,stores:56,brands:40})){
   assert.ok(styleCoverage.byType[type].found>=minimum,'Style source coverage regressed: '+type);
  }
  const sourceStyleIds=entries.map(e=>e.gtaTownEntityId).filter(id=>id?.startsWith('/style/'));
- assert.ok(sourceStyleIds.length>=700,'Style catalogue integration regressed');
+ assert.ok(sourceStyleIds.length>=980,'Style catalogue integration regressed');
+ assert.equal(styleCoverage.raw-styleCoverage.duplicateOccurrences,styleCoverage.unique);
+ assert.equal(styleCoverage.integratedSourceIds+styleCoverage.unresolvedSourceIds.length,styleCoverage.unique);
+ assert.ok(styleCoverage.integratedSourceIds>=1011,'Source identities were not integrated');
+ assert.equal(styleCoverage.byType.stores.remaining,null,'Inconsistent source denominator must not imply completion');
+ assert.ok(styleCoverage.byType.stores.sourceCountDiscrepancy>=6);
+ const typedStores=entries.filter(e=>e.kind==='Store chain'&&e.attributes?.['Source classification']==='Gun store');
+ assert.ok(typedStores.length>0&&typedStores.every(e=>e.collections.includes('archive/stores-services/gun-stores')));
+ assert.ok(typedStores.every(e=>Number.isInteger(e.attributes['Source-listed location count'])&&Number.isInteger(e.attributes['Source-listed clothing count'])));
  console.log('GTA Town style source coverage:',JSON.stringify(styleCoverage));
  const setRecords=entries.filter(e=>e.kind==='Collectible set'&&e.source?.includes('gtatown.com/collectibles/'));
  assert.ok(setRecords.length>=20,'Collection set coverage regressed');
