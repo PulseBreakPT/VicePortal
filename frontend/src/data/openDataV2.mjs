@@ -54,22 +54,112 @@ function attrKey(attrs,field){
  const n=norm(field),keys=Object.keys(attrs),found=keys.filter(k=>norm(k)===n||(aliases[n]||[]).includes(norm(k)));
  return found.find(k=>!missing(attrs[k]))||found[0]||field;
 }
+// Reviewed property aliases use exact GTA Town map IDs; never merge a generic building with its purchasable garage.
+const propertyPins={
+ 'mitchell-auto-center':'garage-north-gellhorn-hills-ogarage002',
+ 'persistence-road-garage':'garage-belville-ogarage005',
+ '7th-avenue-garage':'garage-salton-ogarage003',
+ 'store-n-bolt':'garage-ambrosia-ogarage009',
+ 'wyatt-motors':'garage-ambrosia-ogarage006',
+ 'vela-rota-driver-garage':'garage-capri-ogarage004',
+ 'bonita-court-garage':'garage-washington-island-ogarage007',
+ 'atlantic-court-garage':'garage-ocean-beach-east-ogarage008',
+ 'port-gellhorn-station-garage':'garage-port-gellhorn-ogarage010',
+ 'thompson-court-garage':'garage-ocean-beach-west-ogarage011',
+ 'ne-15th-street-garage':'garage-stockyard-ogarage012',
+ 'pegassi-residences-garage':'garage-tequesta-retreat-ogarage013',
+ 'gta-plus-crosstown-garage':'garage-crosstown-ogarage019',
+ 'paradise-garage':'garage-northern-grassrivers-ogarage001',
+ 'shore-court-garage':'garage-ocean-beach-east-ogarage014',
+ 'starlet-motel-safehouse':'safehouse-north-gellhorn-hills-osafehouse003',
+ 'bayside-safehouse':'safehouse-crosstown-osafehouse002',
+ // GTABase properties list: Key Lento is Jason's home; Ocean Beach is Y Hotel room 701.
+ 'leonida-keys-safehouse':'safehouse-key-lento-osafehouse001',
+ 'ocean-beach-safehouse':'safehouse-washington-beach-osafehouse005'
+};
+const compact=v=>norm(v).replace(/ /g,'');
+const fullName=e=>norm(e.title);
+const placeName=e=>norm(String(e.title||'').split(' · ').slice(-1)[0]);
+const rawMaker=e=>norm(e.attributes?.Manufacturer||e.attributes?.Maker||e.attributes?.Brand);
+// These spelling/abbreviation pairs are present in the two licensed exports and GTA Town.
+const makerAliases={'duke arms':'duke','fairview firearms':'fairview','bohemia zbran industries':'bzi','armurerie de belgique':'adb'};
+const maker=e=>makerAliases[rawMaker(e)]||rawMaker(e);
+function modelName(title,brand,kind){
+ let raw=String(title||'').trim(),year='';
+ // Preserve the exact model year; only move explicit apostrophe-year suffixes/prefixes.
+ if(kind==='Vehicle'){
+  const front=raw.match(/^['’](\d{2})\s+/),back=raw.match(/\s+['’](\d{2})$/);
+  if(front&&!back){year=front[1];raw=raw.slice(front[0].length);}
+  else if(back&&!front){year=back[1];raw=raw.slice(0,-back[0].length);}
+ }
+ const n=norm(raw),model=brand&&n.startsWith(brand+' ')?n.slice(brand.length+1):n;
+ return year?model+' | year '+year:model;
+}
+function sourcePin(e,pin){
+ return [e.source,...(e.relatedSources||[]).map(x=>x.url)].includes('https://gtatown.com/locations/'+pin);
+}
+function geoCompatible(e,row){
+ const a=norm(row.area),c=norm(row.county),x=e.attributes||{};
+ const areas=[x.Area,x.District,x.Region,x.Neighbourhood,x.Neighborhood].filter(Boolean).map(norm);
+ if(c&&x.County&&norm(x.County)!==c)return false;
+ return Boolean(a&&areas.includes(a));
+}
+function makeReconciliationIndexes(entries){
+ const index={pins:new Map(),places:new Map(),models:new Map(),compact:new Map()};
+ function add(map,key,i){if(!key)return;if(!map.has(key))map.set(key,[]);if(!map.get(key).includes(i))map.get(key).push(i);}
+ entries.forEach((e,i)=>{
+  if(e.kind==='Location'){
+   for(const u of [e.source,...(e.relatedSources||[]).map(x=>x.url)]){
+    if(typeof u==='string'&&u.startsWith('https://gtatown.com/locations/'))add(index.pins,u.split('/').pop(),i);
+   }
+   for(const n of [fullName(e),placeName(e)])add(index.places,n,i);
+  }
+  if(['Vehicle','Weapon'].includes(e.kind)&&maker(e))add(index.models,e.kind+'|'+maker(e)+'|'+modelName(e.title,rawMaker(e),e.kind),i);
+  add(index.compact,e.kind+'|'+compact(e.title),i);
+ });
+ return index;
+}
+function reconcile(out,row,dataset,exact,secondary){
+ if(dataset==='atlas/properties'){
+  const pin=propertyPins[row.id]||propertyPins[Object.keys(propertyPins).find(k=>compact(k)===compact(row.id))];
+  if(!pin)return {matches:[],method:'unresolved property'};
+  return {matches:(secondary.pins.get(pin)||[]).filter(i=>sourcePin(out[i],pin)),method:'reviewed property pin'};
+ }
+ if(row.kind==='Location'){
+  const matches=(secondary.places.get(norm(row.title))||[]).filter(i=>geoCompatible(out[i],row));
+  return {matches,method:'location name + geography'};
+ }
+ if(exact.length===1)return {matches:exact,method:'exact title'};
+ if(exact.length>1)return {matches:exact,method:'ambiguous exact title'};
+ if(['Vehicle','Weapon'].includes(row.kind)){
+  const brand=maker(row),model=modelName(row.title,rawMaker(row),row.kind);
+  if(!brand||!model)return {matches:[],method:'manufacturer unavailable'};
+  const matches=secondary.models.get(row.kind+'|'+brand+'|'+model)||[];
+  return {matches,method:'exact manufacturer + model'};
+ }
+ // Punctuation-only variants are safe only if they identify one canonical entity.
+ if(['Animal','Character','Trophy','Collectible set','Completion requirement','Mission','Cheat'].includes(row.kind)){
+  const matches=secondary.compact.get(row.kind+'|'+compact(row.title))||[];
+  return {matches,method:'punctuation-only variant'};
+ }
+ return {matches:[],method:'unresolved'};
+}
 export function mergeOpenData(entries,snapshot){
- const out=entries.slice(),index=new Map(),review=[],conflicts=[],counts={rows:0,matched:0,enriched:0,fields:0,unmatched:0,ambiguous:0,skipped:0};
+ const out=entries.slice(),index=new Map(),review=[],conflicts=[],counts={rows:0,matched:0,enriched:0,fields:0,unmatched:0,ambiguous:0,skipped:0,reconciled:0,propertiesMatched:0,propertiesEnriched:0},methods={};
  for(let i=0;i<out.length;i++){const e=out[i],k=identity(e.kind,e.title,e.attributes?.['Recording artist']||e.attributes?.Artist);if(!index.has(k))index.set(k,[]);index.get(k).push(i);}
+ const secondary=makeReconciliationIndexes(out);
  const seen=new Set(),changed=new Set();
  for(const [dataset,rows] of Object.entries(snapshot.datasets||{})){
   const [provider,key]=dataset.split('/');if(!sources[provider]||!Object.hasOwn(specs[provider],key)||!Array.isArray(rows))throw Error('Unknown open dataset '+dataset);
   for(const row of rows){
    const uid=dataset+'|'+row.id;if(seen.has(uid))throw Error('Duplicate open source identity '+uid);seen.add(uid);counts.rows++;
    if(row.kind==='Fact'||row.spoiler){counts.skipped++;review.push({dataset,id:row.id,title:row.title,reason:'Evidence only / spoiler-sensitive'});continue;}
-   let matches=index.get(identity(row.kind,row.title,row.artist))||[];
-   if(row.kind==='Location'){
-    const a=norm(row.area),c=norm(row.county);
-    matches=matches.filter(i=>{const x=out[i].attributes||{},areas=[x.Area,x.District,x.Region,x.Neighbourhood,x.Neighborhood].filter(Boolean).map(norm);return a&&areas.includes(a)&&(!c||!x.County||norm(x.County)===c);});
-   }
-   if(matches.length!==1){counts[matches.length?'ambiguous':'unmatched']++;review.push({dataset,id:row.id,title:row.title,reason:matches.length?'Ambiguous canonical identity':'No exact canonical match'});continue;}
-   counts.matched++;
+   const exact=index.get(identity(row.kind,row.title,row.artist))||[];
+   const {matches,method}=reconcile(out,row,dataset,exact,secondary);
+   if(matches.length!==1){counts[matches.length?'ambiguous':'unmatched']++;review.push({dataset,id:row.id,title:row.title,reason:matches.length?'Ambiguous canonical identity':'No proven canonical match',method});continue;}
+   counts.matched++;methods[method]=(methods[method]||0)+1;
+   if(method!=='exact title')counts.reconciled++;
+   if(dataset==='atlas/properties')counts.propertiesMatched++;
    const i=matches[0],old=out[i],attributes={...old.attributes};
    let filled=0;
    for(const [field,v] of Object.entries(row.attributes||{})){
@@ -80,11 +170,13 @@ export function mergeOpenData(entries,snapshot){
    }
    // Add attribution only when evidence supplied a new field. Never change identity, images or spoiler flags.
    if(!filled)continue;
-   const s=sources[provider],refs=[...(old.relatedSources||[]),{label:s.label+' · '+s.license,url:getURL(provider,key)},{label:s.label+' data licence',url:s.licenseUrl}];
-   out[i]={...old,attributes,relatedSources:[...new Map(refs.map(x=>[x.url,x])).values()]};
+   if(dataset==='atlas/properties')counts.propertiesEnriched++;
+   const s=sources[provider],refs=[...(old.relatedSources||[]),{label:s.label+' · '+s.license+' · '+row.confidence,url:getURL(provider,key)},{label:s.label+' data licence',url:s.licenseUrl},...row.refs.filter(u=>/^https:\/\//.test(u)).map(url=>({label:s.label+' cited evidence',url}))];
+   const collections=dataset==='atlas/properties'?[...new Set([...(old.collections||[]),'archive/real-estate',...(row.attributes['Property type']==='garage'?['archive/real-estate/garages']:row.attributes['Property type']==='safehouse'?['archive/real-estate/safehouses']:[])])]:old.collections;
+   out[i]={...old,attributes,collections,relatedSources:[...new Map(refs.map(x=>[x.url,x])).values()]};
    changed.add(old.id);counts.fields+=filled;
   }
  }
  counts.enriched=changed.size;
- return {entries:out,counts,review,conflicts};
+ return {entries:out,counts,review,conflicts,methods};
 }
