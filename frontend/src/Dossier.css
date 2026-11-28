@@ -182,3 +182,14 @@
 @media(max-width:720px){.record-weapon .weapon-overview>p.record-lead{font-size:21px}.weapon-profile-grid,.weapon-acquisition-grid,.weapon-related-list{grid-template-columns:1fr}.weapon-stat-grid{grid-template-columns:1fr;gap:20px}.record-weapon .record-section-nav{gap:14px;overflow-x:auto;white-space:nowrap}.record-weapon .record-section-nav>a{font-size:10px}.record-weapon .record-section-nav>span{display:none}}
 @media(forced-colors:active),(prefers-contrast:more){.record-heading h1,.record-related-heading h2{background:none!important;-webkit-text-fill-color:currentColor!important;-webkit-text-stroke:0!important;filter:none!important}.record-media-panel,.record-provenance>span,.record-primary-link{box-shadow:none;border-color:currentColor}}
 @media print{.record-heading h1,.record-related-heading h2{background:none!important;-webkit-text-fill-color:black!important;color:black!important;filter:none!important;-webkit-text-stroke:0!important}.record-stage,.record-reading-grid{display:block}.record-heading-actions,.record-media-toolbar,.record-section-nav,.record-pager{display:none}.record-image{aspect-ratio:auto}.record-image>img{height:auto;max-height:none}.record-source{position:static}}
+
+/* Shared dossier navigation remains compact on small screens. */
+.universal-dossier-nav{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:thin;padding-bottom:14px;overscroll-behavior-inline:contain}
+.universal-dossier-nav>a{white-space:nowrap;flex-shrink:0}
+.record-reading-section,.record-source{scroll-margin-top:110px}
+.record-specifications dd{min-width:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.record-specifications dt{flex-shrink:0;max-width:45%;overflow-wrap:anywhere}
+.record-source .record-specifications{margin-top:20px}
+.record-source .record-specifications>div{display:block;padding:9px 0}
+.record-source .record-specifications dd{text-align:left;justify-content:flex-start;font-size:11px}
+@media(max-width:720px){.universal-dossier-nav{gap:16px}.record-reading-section,.record-source{scroll-margin-top:90px}}
