@@ -83,6 +83,19 @@ try{
   reviewedVehicleCount++;
  }
  assert.ok(reviewedVehicleCount>=20,'Reviewed vehicle coverage regression');
+ const wildlifeEvidence=[['American Black Bear',3],['Black Fox',3],['Leonida Panther',2]];
+ for(const [title,count] of wildlifeEvidence){
+  const found=entries.filter(e=>e.kind==='Animal'&&e.title===title);
+  assert.equal(found.length,1,'Duplicate or missing wildlife dossier: '+title);
+  assert.equal(found[0].attributes['Mapped hunting spots'],count);
+  assert.ok(found[0].relatedSources.some(x=>x.url.startsWith('https://gtatown.com/map?find=a-')));
+ }
+ const lombike=entries.find(e=>e.kind==='Vehicle'&&e.title==='Walter Lombike');
+ assert.ok(lombike,'Missing Walter Lombike');
+ assert.equal(lombike.vehicleStats.speed,6.9);
+ assert.equal(lombike.vehicleStats.acceleration,7.9);
+ assert.equal(lombike.vehicleStats.handling,7.9);
+ assert.equal(lombike.vehicleStats.offroad,2.3);
  const {enrichMissionRecords}=await import(pathToFileURL(join(dir,'gtatownMissionEnrichment.mjs')).href);
  const fixtureSource='https://gtatown.com/track/missions/example';
  const seed=[{id:'m1',kind:'Mission',title:'Example',source:fixtureSource,attributes:{Chapter:'Existing','Reward':'Not verified in this atlas'},path:'/missions/m1'},{id:'m2',kind:'Mission',title:'Example',source:'https://gtatown.com/track/missions/other',attributes:{},path:'/missions/m2'}];

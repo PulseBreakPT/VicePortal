@@ -735,5 +735,38 @@
       "Mapped by source": 406,
       "Card sets": 18
     }
+  },
+  {
+    "kind": "Animal",
+    "title": "American Black Bear",
+    "category": "Hunting",
+    "section": "animals",
+    "source": "https://gtatown.com/map?find=a-american-black-bear",
+    "attributes": {
+      "Mapped hunting spots": 3,
+      "Documented hunting areas": "Grayson (Lummox County); Moreau (Lummox County); Big Pine (Mariana County)"
+    }
+  },
+  {
+    "kind": "Animal",
+    "title": "Black Fox",
+    "category": "Hunting",
+    "section": "animals",
+    "source": "https://gtatown.com/map?find=a-black-fox",
+    "attributes": {
+      "Mapped hunting spots": 3,
+      "Documented hunting areas": "Pelican Valley, Southern Grassrivers (Mariana County); South Gellhorn Hills (Kelly County); Moreau (Lummox County)"
+    }
+  },
+  {
+    "kind": "Animal",
+    "title": "Leonida Panther",
+    "category": "Hunting",
+    "section": "animals",
+    "source": "https://gtatown.com/map?find=a-leonida-panther",
+    "attributes": {
+      "Mapped hunting spots": 2,
+      "Documented hunting areas": "Northern Grassrivers (Mariana County); South Gellhorn Hills (Kelly County)"
+    }
   }
 ]
