@@ -1,4 +1,6 @@
 import feed from './vehicleFeed.json';
+import archive from './vehicleArchiveV3.json';
+import { enrichVehicle } from './vehicleArchiveModel.mjs';
 import imageRefs from './vehicleImageRefs.json';
 import { normalizeVehicles,vehicleSlug } from './vehicleNormalizer.mjs';
 
@@ -6,10 +8,12 @@ const unknown='Not verified in this atlas';
 const placeholder='/images/vehicle-placeholder.svg';
 const bar=value=>value===null?unknown:value.toFixed(1)+' / 10';
 export const vehicleFeedInfo={complete:feed.complete===true,count:feed.rows.length,publicListCount:feed.publicListCount,hiddenCount:feed.hiddenCount,checkedOn:feed.checkedOn,source:feed.source,license:feed.license};
-export const vehicleRecords=normalizeVehicles(feed).map(row=>{
+export const vehicleRecords=normalizeVehicles(feed).map(original=>{
+ const evidence=enrichVehicle(original,archive);
+ const row=evidence.row;
  const ref=imageRefs[row.id];
  const imageRef=ref&&vehicleSlug(ref.title)===vehicleSlug(row.title)?ref:null;
- const documented=[row.maker,row.category,row.type,row.speed,row.acceleration,row.handling,row.offroad,row.strength,row.price,row.availability,row.seats,row.drive].filter(value=>value!==null&&value!==undefined&&value!=='').length;
+ const documented=[row.maker,row.category,row.type,row.speed,row.acceleration,row.handling,row.offroad,row.strength,row.price||evidence.attributes['Registration cost'],row.availability||evidence.attributes['Spawn Locations'],row.seats,row.drive].filter(value=>value!==null&&value!==undefined&&value!=='').length;
  const completeness=`${documented} / 12 catalogue fields documented`;
  return {
   id:row.id,title:row.title,kind:'Vehicle',category:row.category,type:row.type,source:imageRef?.source?.startsWith('https://gtatown.com/')?imageRef.source:row.source,spoiler:row.spoiler,
@@ -19,10 +23,10 @@ export const vehicleRecords=normalizeVehicles(feed).map(row=>{
   subtitle:row.maker+' · '+row.category,
   description:row.title+' is listed in the GTA Town vehicle catalogue. The manufacturer and class are attributed to that source.',
   details:[row.maker,row.category,'GTA Town public data',completeness],
-  attributes:{Manufacturer:row.maker,Class:row.category,Type:row.type||unknown,'Speed rating':bar(row.speed),Acceleration:bar(row.acceleration),Handling:bar(row.handling),'Off-road rating':bar(row.offroad),Strength:bar(row.strength),'Top speed':unknown,Price:row.price||unknown,Availability:row.availability||unknown,Seats:row.seats||unknown,Drive:row.drive||unknown,'Dossier completeness':completeness},
+  attributes:{Manufacturer:row.maker,Class:row.category,Type:row.type||unknown,'Speed rating':bar(row.speed),Acceleration:bar(row.acceleration),Handling:bar(row.handling),'Off-road rating':bar(row.offroad),Strength:bar(row.strength),'Top speed':unknown,Price:row.price||unknown,Availability:row.availability||unknown,Seats:row.seats||unknown,Drive:row.drive||unknown,'Dossier completeness':completeness,...evidence.attributes},
   vehicleStats:{speed:row.speed,acceleration:row.acceleration,handling:row.handling,offroad:row.offroad,strength:row.strength},
   paragraphs:['Ratings are GTA Town’s reported 0–10 stat bars, not measured km/h, acceleration times or independently verified performance. Missing fields are left unverified.','Source: gtatown.com. Public vehicle data distributed under CC BY 4.0; adapted to the Vice Atlas dossier format.'],
   dataCredit:'GTA Town',verifiedOn:feed.checkedOn,
-  relatedSources:[{label:'GTA Town public data and licence',url:'https://gtatown.com/creators/data'},...(imageRef?[{label:'Vehicle image reference',url:imageRef.source}]:[])]
+  relatedSources:[{label:'GTA Town public data and licence',url:'https://gtatown.com/creators/data'},...(imageRef?[{label:'Vehicle image reference',url:imageRef.source}]:[]),...evidence.sources]
  };
 });
