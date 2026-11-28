@@ -1,0 +1,680 @@
+[
+  {
+    "id": "/style/clothes/vice-city-t-shirt",
+    "title": "Vice City T-Shirt",
+    "url": "https://gtatown.com/style/clothes/vice-city-t-shirt",
+    "meta": "top · $36 to $38 · Beach Please, Billie's Key Lento Gift Shop"
+  },
+  {
+    "id": "/style/clothes/vice-beach-t-shirt",
+    "title": "Vice Beach T-Shirt",
+    "url": "https://gtatown.com/style/clothes/vice-beach-t-shirt",
+    "meta": "top · $36 · Beach Please, Billie's Key Lento Gift Shop"
+  },
+  {
+    "id": "/style/clothes/crew-neck-t-shirt",
+    "title": "Crew Neck T-Shirt",
+    "url": "https://gtatown.com/style/clothes/crew-neck-t-shirt",
+    "meta": "top · $22 to $70 · Alpha Sports, Ferruccio Tucci"
+  },
+  {
+    "id": "/style/clothes/sob-t-shirt",
+    "title": "SOB T-Shirt",
+    "url": "https://gtatown.com/style/clothes/sob-t-shirt",
+    "meta": "top · $45 · Coastal Auto Care"
+  },
+  {
+    "id": "/style/clothes/ahol-t-shirt",
+    "title": "Ahol T-Shirt",
+    "url": "https://gtatown.com/style/clothes/ahol-t-shirt",
+    "meta": "top · Ahol · $310 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/heat-t-shirt",
+    "title": "Heat T-Shirt",
+    "url": "https://gtatown.com/style/clothes/heat-t-shirt",
+    "meta": "top · Heat · $35 · Alpha Sports"
+  },
+  {
+    "id": "/style/clothes/reel-t-shirt",
+    "title": "Reel T-Shirt",
+    "url": "https://gtatown.com/style/clothes/reel-t-shirt",
+    "meta": "top · $42 · Chuck's Tackle & Shot"
+  },
+  {
+    "id": "/style/clothes/void-t-shirt",
+    "title": "Void T-Shirt",
+    "url": "https://gtatown.com/style/clothes/void-t-shirt",
+    "meta": "top · Void · $42 · Dr Froogal"
+  },
+  {
+    "id": "/style/clothes/cheap-t-shirt",
+    "title": "Cheap T-Shirt",
+    "url": "https://gtatown.com/style/clothes/cheap-t-shirt",
+    "meta": "top · $11 · Bargain World"
+  },
+  {
+    "id": "/style/clothes/crome-t-shirt",
+    "title": "Crome T-Shirt",
+    "url": "https://gtatown.com/style/clothes/crome-t-shirt",
+    "meta": "top · Crome · $310 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/cuban-shirt",
+    "title": "Cuban Shirt",
+    "url": "https://gtatown.com/style/clothes/cuban-shirt",
+    "meta": "top · $339 to $395 · De'Luge Swimwear, Ferruccio Tucci"
+  },
+  {
+    "id": "/style/clothes/hawaiian-shirt",
+    "title": "Hawaiian Shirt",
+    "url": "https://gtatown.com/style/clothes/hawaiian-shirt",
+    "meta": "top · $20 to $78 · Aline's Thrift Store, Bargain World"
+  },
+  {
+    "id": "/style/clothes/flannel-shirt",
+    "title": "Flannel Shirt",
+    "url": "https://gtatown.com/style/clothes/flannel-shirt",
+    "meta": "top · $24 to $42 · Hamlet Thrift, Phil's Ammu-Nation"
+  },
+  {
+    "id": "/style/clothes/stained-shirt",
+    "title": "Stained Shirt",
+    "url": "https://gtatown.com/style/clothes/stained-shirt",
+    "meta": "top · $29 · Hamlet Thrift"
+  },
+  {
+    "id": "/style/clothes/military-shirt",
+    "title": "Military Shirt",
+    "url": "https://gtatown.com/style/clothes/military-shirt",
+    "meta": "top · $26 · Hamlet Thrift"
+  },
+  {
+    "id": "/style/clothes/slim-crew-neck-t-shirt",
+    "title": "Slim Crew Neck T-Shirt",
+    "url": "https://gtatown.com/style/clothes/slim-crew-neck-t-shirt",
+    "meta": "top · $9 to $40 · Bargain World, Ferruccio Tucci"
+  },
+  {
+    "id": "/style/clothes/vice-city-outline-t-shirt",
+    "title": "Vice City Outline T-Shirt",
+    "url": "https://gtatown.com/style/clothes/vice-city-outline-t-shirt",
+    "meta": "top · $36 · Beach Please, Billie's Key Lento Gift Shop"
+  },
+  {
+    "id": "/style/clothes/vice-city-stylized-t-shirt",
+    "title": "Vice City Stylized T-Shirt",
+    "url": "https://gtatown.com/style/clothes/vice-city-stylized-t-shirt",
+    "meta": "top · $39 · Beach Please, Billie's Key Lento Gift Shop"
+  },
+  {
+    "id": "/style/clothes/jungle-jacket",
+    "title": "Jungle Jacket",
+    "url": "https://gtatown.com/style/clothes/jungle-jacket",
+    "meta": "jacket · $34 · Nifty Threads Island Wear"
+  },
+  {
+    "id": "/style/clothes/canvas-chore-jacket",
+    "title": "Canvas Chore Jacket",
+    "url": "https://gtatown.com/style/clothes/canvas-chore-jacket",
+    "meta": "jacket · $42 to $150 · Hamlet Thrift, MID"
+  },
+  {
+    "id": "/style/clothes/classic-biker-jacket",
+    "title": "Classic Biker Jacket",
+    "url": "https://gtatown.com/style/clothes/classic-biker-jacket",
+    "meta": "top · $104 · Dr Froogal, Nifty Threads Island Wear"
+  },
+  {
+    "id": "/style/clothes/cropped-denim-jacket",
+    "title": "Cropped Denim Jacket",
+    "url": "https://gtatown.com/style/clothes/cropped-denim-jacket",
+    "meta": "jacket · $99 to $115 · MID, Stock 305"
+  },
+  {
+    "id": "/style/clothes/long-sleeve-trucker-jacket",
+    "title": "Long Sleeve Trucker Jacket",
+    "url": "https://gtatown.com/style/clothes/long-sleeve-trucker-jacket",
+    "meta": "jacket · $44 to $150 · Aline's Thrift Store, Hamlet Thrift"
+  },
+  {
+    "id": "/style/outfits/gray-work-jacket-and-jeans-e65e0",
+    "title": "Gray work jacket and jeans",
+    "url": "https://gtatown.com/style/outfits/gray-work-jacket-and-jeans-e65e0",
+    "meta": "Jason outfit"
+  },
+  {
+    "id": "/style/outfits/olive-jacket-and-dark-pants-8dcfc",
+    "title": "Olive jacket and dark pants",
+    "url": "https://gtatown.com/style/outfits/olive-jacket-and-dark-pants-8dcfc",
+    "meta": "Jason outfit · $287"
+  },
+  {
+    "id": "/style/outfits/gray-leather-jacket-and-jeans-ba890",
+    "title": "Gray leather jacket and jeans",
+    "url": "https://gtatown.com/style/outfits/gray-leather-jacket-and-jeans-ba890",
+    "meta": "Jason outfit · $132"
+  },
+  {
+    "id": "/style/outfits/olive-track-jacket-and-beanie-a9e51",
+    "title": "Olive track jacket and beanie",
+    "url": "https://gtatown.com/style/outfits/olive-track-jacket-and-beanie-a9e51",
+    "meta": "Jason outfit"
+  },
+  {
+    "id": "/style/outfits/mint-jacket-and-pink-trousers-67707",
+    "title": "Mint jacket and pink trousers",
+    "url": "https://gtatown.com/style/outfits/mint-jacket-and-pink-trousers-67707",
+    "meta": "Jason outfit · $25"
+  },
+  {
+    "id": "/style/clothes/777-hoodie",
+    "title": "777 Hoodie",
+    "url": "https://gtatown.com/style/clothes/777-hoodie",
+    "meta": "top · 777 · $405 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/abuse-hoodie",
+    "title": "Abuse Hoodie",
+    "url": "https://gtatown.com/style/clothes/abuse-hoodie",
+    "meta": "top · $405 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/camnut-hoodie",
+    "title": "Camnut Hoodie",
+    "url": "https://gtatown.com/style/clothes/camnut-hoodie",
+    "meta": "top · $405 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/hoxxoh-hoodie",
+    "title": "Hoxxoh Hoodie",
+    "url": "https://gtatown.com/style/clothes/hoxxoh-hoodie",
+    "meta": "top · Hoxxoh · $405 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/pullover-hoodie",
+    "title": "Pullover Hoodie",
+    "url": "https://gtatown.com/style/clothes/pullover-hoodie",
+    "meta": "top · $25"
+  },
+  {
+    "id": "/style/clothes/basic-zipped-hoodie",
+    "title": "Basic Zipped Hoodie",
+    "url": "https://gtatown.com/style/clothes/basic-zipped-hoodie",
+    "meta": "top · $18 to $23 · Aline's Thrift Store, Nifty Threads Island Wear"
+  },
+  {
+    "id": "/style/outfits/camo-hoodie-and-gray-pants-d1fc5",
+    "title": "Camo hoodie and gray pants",
+    "url": "https://gtatown.com/style/outfits/camo-hoodie-and-gray-pants-d1fc5",
+    "meta": "Jason outfit"
+  },
+  {
+    "id": "/style/outfits/gray-hoodie-and-striped-shorts-74c33",
+    "title": "Gray hoodie and striped shorts",
+    "url": "https://gtatown.com/style/outfits/gray-hoodie-and-striped-shorts-74c33",
+    "meta": "Jason outfit · $50"
+  },
+  {
+    "id": "/style/clothes/eris-elite-hoodie",
+    "title": "Eris Elite Hoodie",
+    "url": "https://gtatown.com/style/clothes/eris-elite-hoodie",
+    "meta": "top · Eris · $159"
+  },
+  {
+    "id": "/style/clothes/shodi-logo-hoodie",
+    "title": "Shodi Logo Hoodie",
+    "url": "https://gtatown.com/style/clothes/shodi-logo-hoodie",
+    "meta": "top · Shodi · $52 · Aline's Thrift Store"
+  },
+  {
+    "id": "/style/clothes/drawstring-pants",
+    "title": "Drawstring Pants",
+    "url": "https://gtatown.com/style/clothes/drawstring-pants",
+    "meta": "pair of pants · $60 to $170 · De'Luge Swimwear, MID"
+  },
+  {
+    "id": "/style/clothes/utility-pants",
+    "title": "Utility Pants",
+    "url": "https://gtatown.com/style/clothes/utility-pants",
+    "meta": "pair of pants · $25"
+  },
+  {
+    "id": "/style/outfits/raspberry-striped-drawstring-pants-80402",
+    "title": "Raspberry Striped Drawstring Pants",
+    "url": "https://gtatown.com/style/outfits/raspberry-striped-drawstring-pants-80402",
+    "meta": "Lucia outfit · $364 · MID"
+  },
+  {
+    "id": "/style/outfits/graphic-tee-with-brown-pants-9bfe5",
+    "title": "Graphic tee with brown pants",
+    "url": "https://gtatown.com/style/outfits/graphic-tee-with-brown-pants-9bfe5",
+    "meta": "Jason outfit · $22"
+  },
+  {
+    "id": "/style/outfits/floral-shirt-with-white-pants-edd9f",
+    "title": "Floral shirt with white pants",
+    "url": "https://gtatown.com/style/outfits/floral-shirt-with-white-pants-edd9f",
+    "meta": "Jason outfit · $25"
+  },
+  {
+    "id": "/style/clothes/aaa-track-pants",
+    "title": "AAA Track Pants",
+    "url": "https://gtatown.com/style/clothes/aaa-track-pants",
+    "meta": "pair of pants · AAA · $64 · Urban Legendz"
+  },
+  {
+    "id": "/style/clothes/linen-dress-pants",
+    "title": "Linen Dress Pants",
+    "url": "https://gtatown.com/style/clothes/linen-dress-pants",
+    "meta": "pair of pants · $345 to $385 · This / That"
+  },
+  {
+    "id": "/style/clothes/loose-linen-pants",
+    "title": "Loose Linen Pants",
+    "url": "https://gtatown.com/style/clothes/loose-linen-pants",
+    "meta": "pair of pants · $25 to $355 · This / That"
+  },
+  {
+    "id": "/style/clothes/short-cargo-shorts",
+    "title": "Short Cargo Shorts",
+    "url": "https://gtatown.com/style/clothes/short-cargo-shorts",
+    "meta": "pair of shorts · $23 to $27 · Chuck's Tackle & Shot, Gellhorn Outfitters"
+  },
+  {
+    "id": "/style/clothes/short-sarong",
+    "title": "Short Sarong",
+    "url": "https://gtatown.com/style/clothes/short-sarong",
+    "meta": "piece of swimwear · $330 · De'Luge Swimwear"
+  },
+  {
+    "id": "/style/clothes/short-cutoffs",
+    "title": "Short Cutoffs",
+    "url": "https://gtatown.com/style/clothes/short-cutoffs",
+    "meta": "pair of shorts · $25"
+  },
+  {
+    "id": "/style/clothes/short-sleeve-shirt",
+    "title": "Short Sleeve Shirt",
+    "url": "https://gtatown.com/style/clothes/short-sleeve-shirt",
+    "meta": "top · $25 to $60 · MID, This / That"
+  },
+  {
+    "id": "/style/clothes/short-swim-shorts",
+    "title": "Short Swim Shorts",
+    "url": "https://gtatown.com/style/clothes/short-swim-shorts",
+    "meta": "piece of swimwear · $285 to $295 · De'Luge Swimwear"
+  },
+  {
+    "id": "/style/clothes/baggy-cargo-shorts",
+    "title": "Baggy Cargo Shorts",
+    "url": "https://gtatown.com/style/clothes/baggy-cargo-shorts",
+    "meta": "pair of shorts · $17 to $23 · Bargain World, Gellhorn Outfitters"
+  },
+  {
+    "id": "/style/clothes/beach-shorts",
+    "title": "Beach Shorts",
+    "url": "https://gtatown.com/style/clothes/beach-shorts",
+    "meta": "pair of shorts · $195 · This / That, Wonder Whale"
+  },
+  {
+    "id": "/style/clothes/777-shorts",
+    "title": "777 Shorts",
+    "url": "https://gtatown.com/style/clothes/777-shorts",
+    "meta": "pair of shorts · 777 · $210 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/ahol-shorts",
+    "title": "Ahol Shorts",
+    "url": "https://gtatown.com/style/clothes/ahol-shorts",
+    "meta": "pair of shorts · Ahol · $210 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/adorn-shorts",
+    "title": "Adorn Shorts",
+    "url": "https://gtatown.com/style/clothes/adorn-shorts",
+    "meta": "pair of shorts · Adorn · $139 · Suburban"
+  },
+  {
+    "id": "/style/clothes/knit-mini-dress",
+    "title": "Knit Mini Dress",
+    "url": "https://gtatown.com/style/clothes/knit-mini-dress",
+    "meta": "one-piece · $829 · Nola"
+  },
+  {
+    "id": "/style/clothes/adorn-mini-dress",
+    "title": "Adorn Mini Dress",
+    "url": "https://gtatown.com/style/clothes/adorn-mini-dress",
+    "meta": "one-piece · Adorn · $329 · Suburban"
+  },
+  {
+    "id": "/style/clothes/satin-slip-dress",
+    "title": "Satin Slip Dress",
+    "url": "https://gtatown.com/style/clothes/satin-slip-dress",
+    "meta": "one-piece · $28 to $450 · Bargain World"
+  },
+  {
+    "id": "/style/clothes/strapless-mini-dress",
+    "title": "Strapless Mini Dress",
+    "url": "https://gtatown.com/style/clothes/strapless-mini-dress",
+    "meta": "one-piece · $2,825 · Ferruccio Tucci"
+  },
+  {
+    "id": "/style/clothes/strappy-bodycon-dress",
+    "title": "Strappy Bodycon Dress",
+    "url": "https://gtatown.com/style/clothes/strappy-bodycon-dress",
+    "meta": "one-piece · $1,350 to $2,290 · Ferruccio Tucci"
+  },
+  {
+    "id": "/style/clothes/scoop-neck-side-slit-dress",
+    "title": "Scoop Neck Side Slit Dress",
+    "url": "https://gtatown.com/style/clothes/scoop-neck-side-slit-dress",
+    "meta": "one-piece · $81 to $530 · De'Luge Swimwear, MID"
+  },
+  {
+    "id": "/style/clothes/single-slit-mini-dress",
+    "title": "Single Slit Mini Dress",
+    "url": "https://gtatown.com/style/clothes/single-slit-mini-dress",
+    "meta": "one-piece · $280 to $1,499 · Nola, This / That"
+  },
+  {
+    "id": "/style/clothes/sleeveless-mini-dress",
+    "title": "Sleeveless Mini Dress",
+    "url": "https://gtatown.com/style/clothes/sleeveless-mini-dress",
+    "meta": "one-piece"
+  },
+  {
+    "id": "/style/clothes/mini-skirt",
+    "title": "Mini Skirt",
+    "url": "https://gtatown.com/style/clothes/mini-skirt",
+    "meta": "pair of pants · $879 · Nola"
+  },
+  {
+    "id": "/style/clothes/sports-skirt",
+    "title": "Sports Skirt",
+    "url": "https://gtatown.com/style/clothes/sports-skirt",
+    "meta": "pair of pants · $89 · Suburban"
+  },
+  {
+    "id": "/style/clothes/cutoff-mini-skirt",
+    "title": "Cutoff Mini Skirt",
+    "url": "https://gtatown.com/style/clothes/cutoff-mini-skirt",
+    "meta": "pair of pants · $50 to $415 · MID, Stock 305"
+  },
+  {
+    "id": "/style/clothes/pleated-mini-skirt",
+    "title": "Pleated Mini Skirt",
+    "url": "https://gtatown.com/style/clothes/pleated-mini-skirt",
+    "meta": "pair of pants · $45 to $115 · MID, This / That"
+  },
+  {
+    "id": "/style/clothes/cargo-mini-skirt",
+    "title": "Cargo Mini Skirt",
+    "url": "https://gtatown.com/style/clothes/cargo-mini-skirt",
+    "meta": "pair of pants · $335 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/fitted-mini-skirt",
+    "title": "Fitted Mini Skirt",
+    "url": "https://gtatown.com/style/clothes/fitted-mini-skirt",
+    "meta": "pair of pants · $25 to $210 · De'Luge Swimwear"
+  },
+  {
+    "id": "/style/clothes/jersey-mini-skirt",
+    "title": "Jersey Mini Skirt",
+    "url": "https://gtatown.com/style/clothes/jersey-mini-skirt",
+    "meta": "pair of pants · $48 · MID"
+  },
+  {
+    "id": "/style/clothes/tailored-pencil-skirt",
+    "title": "Tailored Pencil Skirt",
+    "url": "https://gtatown.com/style/clothes/tailored-pencil-skirt",
+    "meta": "pair of pants · $800 · Ferruccio Tucci"
+  },
+  {
+    "id": "/style/clothes/ruched-drawstring-skirt",
+    "title": "Ruched Drawstring Skirt",
+    "url": "https://gtatown.com/style/clothes/ruched-drawstring-skirt",
+    "meta": "pair of pants · $95 · This / That"
+  },
+  {
+    "id": "/style/outfits/tiger-print-high-split-maxi-skirt-26971",
+    "title": "Tiger Print High Split Maxi Skirt",
+    "url": "https://gtatown.com/style/outfits/tiger-print-high-split-maxi-skirt-26971",
+    "meta": "Lucia outfit · $1,253 · Nola"
+  },
+  {
+    "id": "/style/clothes/suede-sneakers",
+    "title": "Suede Sneakers",
+    "url": "https://gtatown.com/style/clothes/suede-sneakers",
+    "meta": "pair of shoes · $32 to $59 · WHS"
+  },
+  {
+    "id": "/style/clothes/classic-sneakers",
+    "title": "Classic Sneakers",
+    "url": "https://gtatown.com/style/clothes/classic-sneakers",
+    "meta": "pair of shoes · Port Gellhorn Yard Sale"
+  },
+  {
+    "id": "/style/clothes/leather-sneakers",
+    "title": "Leather Sneakers",
+    "url": "https://gtatown.com/style/clothes/leather-sneakers",
+    "meta": "pair of shoes · $32 · WHS"
+  },
+  {
+    "id": "/style/clothes/running-sneakers",
+    "title": "Running Sneakers",
+    "url": "https://gtatown.com/style/clothes/running-sneakers",
+    "meta": "pair of shoes · $89 · Flip Flop House"
+  },
+  {
+    "id": "/style/outfits/white-unitard-and-sneakers-b2ffa",
+    "title": "White unitard and sneakers",
+    "url": "https://gtatown.com/style/outfits/white-unitard-and-sneakers-b2ffa",
+    "meta": "Lucia outfit · $40"
+  },
+  {
+    "id": "/style/clothes/center-seam-sneakers",
+    "title": "Center Seam Sneakers",
+    "url": "https://gtatown.com/style/clothes/center-seam-sneakers",
+    "meta": "pair of shoes · $230 · Endzone, Podium Sports"
+  },
+  {
+    "id": "/style/outfits/red-corset-catsuit-and-sneakers-b6b4a",
+    "title": "Red corset catsuit and sneakers",
+    "url": "https://gtatown.com/style/outfits/red-corset-catsuit-and-sneakers-b6b4a",
+    "meta": "Lucia outfit · $1,173"
+  },
+  {
+    "id": "/style/outfits/teal-plunge-romper-and-sneakers-4cabd",
+    "title": "Teal plunge romper and sneakers",
+    "url": "https://gtatown.com/style/outfits/teal-plunge-romper-and-sneakers-4cabd",
+    "meta": "Lucia outfit · $200"
+  },
+  {
+    "id": "/style/outfits/coral-plunge-romper-and-sneakers-ee466",
+    "title": "Coral plunge romper and sneakers",
+    "url": "https://gtatown.com/style/outfits/coral-plunge-romper-and-sneakers-ee466",
+    "meta": "Lucia outfit · $200"
+  },
+  {
+    "id": "/style/clothes/logger-boots",
+    "title": "Logger Boots",
+    "url": "https://gtatown.com/style/clothes/logger-boots",
+    "meta": "pair of shoes · $180 · This / That"
+  },
+  {
+    "id": "/style/clothes/chelsea-boots",
+    "title": "Chelsea Boots",
+    "url": "https://gtatown.com/style/clothes/chelsea-boots",
+    "meta": "pair of shoes · $1,395 · Ferruccio Tucci"
+  },
+  {
+    "id": "/style/clothes/combat-boots",
+    "title": "Combat Boots",
+    "url": "https://gtatown.com/style/clothes/combat-boots",
+    "meta": "pair of shoes"
+  },
+  {
+    "id": "/style/clothes/hiking-boots",
+    "title": "Hiking Boots",
+    "url": "https://gtatown.com/style/clothes/hiking-boots",
+    "meta": "pair of shoes"
+  },
+  {
+    "id": "/style/clothes/ankle-work-boots",
+    "title": "Ankle Work Boots",
+    "url": "https://gtatown.com/style/clothes/ankle-work-boots",
+    "meta": "pair of shoes · $139 to $144 · Dr Froogal, Hamlet Thrift"
+  },
+  {
+    "id": "/style/clothes/leather-platform-boots",
+    "title": "Leather Platform Boots",
+    "url": "https://gtatown.com/style/clothes/leather-platform-boots",
+    "meta": "pair of shoes · $409 · Nifty Threads Island Wear, Stock 305"
+  },
+  {
+    "id": "/style/outfits/gray-catsuit-and-black-boots-9240d",
+    "title": "Gray catsuit and black boots",
+    "url": "https://gtatown.com/style/outfits/gray-catsuit-and-black-boots-9240d",
+    "meta": "Lucia outfit · $1,760"
+  },
+  {
+    "id": "/style/clothes/moc-toe-boots",
+    "title": "Moc Toe Boots",
+    "url": "https://gtatown.com/style/clothes/moc-toe-boots",
+    "meta": "pair of shoes · $60 · WHS"
+  },
+  {
+    "id": "/style/clothes/leather-work-boots",
+    "title": "Leather Work Boots",
+    "url": "https://gtatown.com/style/clothes/leather-work-boots",
+    "meta": "pair of shoes · $330 · Callus"
+  },
+  {
+    "id": "/style/clothes/crocodile-work-boots",
+    "title": "Crocodile Work Boots",
+    "url": "https://gtatown.com/style/clothes/crocodile-work-boots",
+    "meta": "pair of shoes · $760 · Callus"
+  },
+  {
+    "id": "/style/clothes/thick-strap-sandals",
+    "title": "Thick Strap Sandals",
+    "url": "https://gtatown.com/style/clothes/thick-strap-sandals",
+    "meta": "pair of shoes · $22 to $27 · Flip Flop House, Nifty Threads Island Wear"
+  },
+  {
+    "id": "/style/clothes/multi-buckle-sandals",
+    "title": "Multi Buckle Sandals",
+    "url": "https://gtatown.com/style/clothes/multi-buckle-sandals",
+    "meta": "pair of shoes · $345 to $390 · De'Luge Swimwear, This / That"
+  },
+  {
+    "id": "/style/outfits/red-slip-dress-and-sandals-2b9a2",
+    "title": "Red slip dress and sandals",
+    "url": "https://gtatown.com/style/outfits/red-slip-dress-and-sandals-2b9a2",
+    "meta": "Lucia outfit · $452"
+  },
+  {
+    "id": "/style/outfits/pink-slip-dress-and-sandals-1575c",
+    "title": "Pink slip dress and sandals",
+    "url": "https://gtatown.com/style/outfits/pink-slip-dress-and-sandals-1575c",
+    "meta": "Lucia outfit"
+  },
+  {
+    "id": "/style/clothes/h-strap-sandals",
+    "title": "H Strap Sandals",
+    "url": "https://gtatown.com/style/clothes/h-strap-sandals",
+    "meta": "pair of shoes · $390 to $415 · Callus"
+  },
+  {
+    "id": "/style/clothes/multi-strap-sandals",
+    "title": "Multi Strap Sandals",
+    "url": "https://gtatown.com/style/clothes/multi-strap-sandals",
+    "meta": "pair of shoes · $17 · Nifty Threads Island Wear"
+  },
+  {
+    "id": "/style/clothes/double-strap-sandals",
+    "title": "Double Strap Sandals",
+    "url": "https://gtatown.com/style/clothes/double-strap-sandals",
+    "meta": "pair of shoes · $659 · Nola"
+  },
+  {
+    "id": "/style/clothes/gladiator-strap-sandals",
+    "title": "Gladiator Strap Sandals",
+    "url": "https://gtatown.com/style/clothes/gladiator-strap-sandals",
+    "meta": "pair of shoes · $38 to $44 · Flip Flop House"
+  },
+  {
+    "id": "/style/clothes/cushioned-buckle-sandals",
+    "title": "Cushioned Buckle Sandals",
+    "url": "https://gtatown.com/style/clothes/cushioned-buckle-sandals",
+    "meta": "pair of shoes · $285 · De'Luge Swimwear"
+  },
+  {
+    "id": "/style/outfits/floral-apron-mini-dress-and-sandals-60d9d",
+    "title": "Floral apron mini dress and sandals",
+    "url": "https://gtatown.com/style/outfits/floral-apron-mini-dress-and-sandals-60d9d",
+    "meta": "Lucia outfit · $28"
+  },
+  {
+    "id": "/style/clothes/bucket-hat",
+    "title": "Bucket Hat",
+    "url": "https://gtatown.com/style/clothes/bucket-hat",
+    "meta": "hat · $9 to $160 · A&L Surf Mart, Bargain World"
+  },
+  {
+    "id": "/style/outfits/cowboy-hat-outfit-e5f5b",
+    "title": "Cowboy Hat Outfit",
+    "url": "https://gtatown.com/style/outfits/cowboy-hat-outfit-e5f5b",
+    "meta": "Jason outfit · $57"
+  },
+  {
+    "id": "/style/clothes/cowboy-hat",
+    "title": "Cowboy Hat",
+    "url": "https://gtatown.com/style/clothes/cowboy-hat",
+    "meta": "hat"
+  },
+  {
+    "id": "/style/clothes/andres-hat",
+    "title": "Andres' Hat",
+    "url": "https://gtatown.com/style/clothes/andres-hat",
+    "meta": "hat · $25"
+  },
+  {
+    "id": "/style/clothes/raffia-panama-hat",
+    "title": "Raffia Panama Hat",
+    "url": "https://gtatown.com/style/clothes/raffia-panama-hat",
+    "meta": "hat · $25 to $65 · Billie's Key Lento Gift Shop, Little Cuba Souvenirs"
+  },
+  {
+    "id": "/style/outfits/bucket-hat-and-denim-shorts-140ed",
+    "title": "Bucket hat and denim shorts",
+    "url": "https://gtatown.com/style/outfits/bucket-hat-and-denim-shorts-140ed",
+    "meta": "Lucia outfit · $65"
+  },
+  {
+    "id": "/style/outfits/brown-leather-genuine-cowboy-hat-48fbd",
+    "title": "Brown Leather Genuine Cowboy Hat",
+    "url": "https://gtatown.com/style/outfits/brown-leather-genuine-cowboy-hat-48fbd",
+    "meta": "Jason outfit · $57"
+  },
+  {
+    "id": "/style/clothes/arm-boonie-hat",
+    "title": "ARM Boonie Hat",
+    "url": "https://gtatown.com/style/clothes/arm-boonie-hat",
+    "meta": "hat · $19 · Bargain World"
+  },
+  {
+    "id": "/style/clothes/fur-bucket-hat",
+    "title": "Fur Bucket Hat",
+    "url": "https://gtatown.com/style/clothes/fur-bucket-hat",
+    "meta": "hat · $235 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/lips-bucket-hat",
+    "title": "Lips Bucket Hat",
+    "url": "https://gtatown.com/style/clothes/lips-bucket-hat",
+    "meta": "hat · $36 · Dr Froogal"
+  }
+]
