@@ -80,9 +80,20 @@ const propertyPins={
 const compact=v=>norm(v).replace(/ /g,'');
 const fullName=e=>norm(e.title);
 const placeName=e=>norm(String(e.title||'').split(' · ').slice(-1)[0]);
-const maker=e=>norm(e.attributes?.Manufacturer||e.attributes?.Maker||e.attributes?.Brand);
-function modelName(title,brand){
- const n=norm(title);return brand&&n.startsWith(brand+' ')?n.slice(brand.length+1):n;
+const rawMaker=e=>norm(e.attributes?.Manufacturer||e.attributes?.Maker||e.attributes?.Brand);
+// These spelling/abbreviation pairs are present in the two licensed exports and GTA Town.
+const makerAliases={'duke arms':'duke','fairview firearms':'fairview','bohemia zbran industries':'bzi','armurerie de belgique':'adb'};
+const maker=e=>makerAliases[rawMaker(e)]||rawMaker(e);
+function modelName(title,brand,kind){
+ let raw=String(title||'').trim(),year='';
+ // Preserve the exact model year; only move explicit apostrophe-year suffixes/prefixes.
+ if(kind==='Vehicle'){
+  const front=raw.match(/^['’](\d{2})\s+/),back=raw.match(/\s+['’](\d{2})$/);
+  if(front&&!back){year=front[1];raw=raw.slice(front[0].length);}
+  else if(back&&!front){year=back[1];raw=raw.slice(0,-back[0].length);}
+ }
+ const n=norm(raw),model=brand&&n.startsWith(brand+' ')?n.slice(brand.length+1):n;
+ return year?model+' | year '+year:model;
 }
 function sourcePin(e,pin){
  return [e.source,...(e.relatedSources||[]).map(x=>x.url)].includes('https://gtatown.com/locations/'+pin);
@@ -103,7 +114,7 @@ function makeReconciliationIndexes(entries){
    }
    for(const n of [fullName(e),placeName(e)])add(index.places,n,i);
   }
-  if(['Vehicle','Weapon'].includes(e.kind)&&maker(e))add(index.models,e.kind+'|'+maker(e)+'|'+modelName(e.title,maker(e)),i);
+  if(['Vehicle','Weapon'].includes(e.kind)&&maker(e))add(index.models,e.kind+'|'+maker(e)+'|'+modelName(e.title,rawMaker(e),e.kind),i);
   add(index.compact,e.kind+'|'+compact(e.title),i);
  });
  return index;
@@ -121,7 +132,7 @@ function reconcile(out,row,dataset,exact,secondary){
  if(exact.length===1)return {matches:exact,method:'exact title'};
  if(exact.length>1)return {matches:exact,method:'ambiguous exact title'};
  if(['Vehicle','Weapon'].includes(row.kind)){
-  const brand=maker(row),model=modelName(row.title,brand);
+  const brand=maker(row),model=modelName(row.title,rawMaker(row),row.kind);
   if(!brand||!model)return {matches:[],method:'manufacturer unavailable'};
   const matches=secondary.models.get(row.kind+'|'+brand+'|'+model)||[];
   return {matches,method:'exact manufacturer + model'};
