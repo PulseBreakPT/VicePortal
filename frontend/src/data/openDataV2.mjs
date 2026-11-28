@@ -90,14 +90,29 @@ function geoCompatible(e,row){
  if(c&&x.County&&norm(x.County)!==c)return false;
  return Boolean(a&&areas.includes(a));
 }
-function reconcile(out,row,dataset,exact){
+function makeReconciliationIndexes(entries){
+ const index={pins:new Map(),places:new Map(),models:new Map(),compact:new Map()};
+ function add(map,key,i){if(!key)return;if(!map.has(key))map.set(key,[]);if(!map.get(key).includes(i))map.get(key).push(i);}
+ entries.forEach((e,i)=>{
+  if(e.kind==='Location'){
+   for(const u of [e.source,...(e.relatedSources||[]).map(x=>x.url)]){
+    if(typeof u==='string'&&u.startsWith('https://gtatown.com/locations/'))add(index.pins,u.split('/').pop(),i);
+   }
+   for(const n of [fullName(e),placeName(e)])add(index.places,n,i);
+  }
+  if(['Vehicle','Weapon'].includes(e.kind)&&maker(e))add(index.models,e.kind+'|'+maker(e)+'|'+modelName(e.title,maker(e)),i);
+  add(index.compact,e.kind+'|'+compact(e.title),i);
+ });
+ return index;
+}
+function reconcile(out,row,dataset,exact,secondary){
  if(dataset==='atlas/properties'){
   const pin=propertyPins[row.id]||propertyPins[Object.keys(propertyPins).find(k=>compact(k)===compact(row.id))];
   if(!pin)return {matches:[],method:'unresolved property'};
-  return {matches:out.flatMap((e,i)=>e.kind==='Location'&&sourcePin(e,pin)?[i]:[]),method:'reviewed property pin'};
+  return {matches:(secondary.pins.get(pin)||[]).filter(i=>sourcePin(out[i],pin)),method:'reviewed property pin'};
  }
  if(row.kind==='Location'){
-  const matches=out.flatMap((e,i)=>e.kind==='Location'&&geoCompatible(e,row)&&(fullName(e)===norm(row.title)||placeName(e)===norm(row.title))?[i]:[]);
+  const matches=(secondary.places.get(norm(row.title))||[]).filter(i=>geoCompatible(out[i],row));
   return {matches,method:'location name + geography'};
  }
  if(exact.length===1)return {matches:exact,method:'exact title'};
@@ -105,12 +120,12 @@ function reconcile(out,row,dataset,exact){
  if(['Vehicle','Weapon'].includes(row.kind)){
   const brand=maker(row),model=modelName(row.title,brand);
   if(!brand||!model)return {matches:[],method:'manufacturer unavailable'};
-  const matches=out.flatMap((e,i)=>e.kind===row.kind&&maker(e)===brand&&modelName(e.title,brand)===model?[i]:[]);
+  const matches=secondary.models.get(row.kind+'|'+brand+'|'+model)||[];
   return {matches,method:'exact manufacturer + model'};
  }
  // Punctuation-only variants are safe only if they identify one canonical entity.
  if(['Animal','Character','Trophy','Collectible set','Completion requirement','Mission','Cheat'].includes(row.kind)){
-  const matches=out.flatMap((e,i)=>e.kind===row.kind&&compact(e.title)===compact(row.title)?[i]:[]);
+  const matches=secondary.compact.get(row.kind+'|'+compact(row.title))||[];
   return {matches,method:'punctuation-only variant'};
  }
  return {matches:[],method:'unresolved'};
@@ -118,6 +133,7 @@ function reconcile(out,row,dataset,exact){
 export function mergeOpenData(entries,snapshot){
  const out=entries.slice(),index=new Map(),review=[],conflicts=[],counts={rows:0,matched:0,enriched:0,fields:0,unmatched:0,ambiguous:0,skipped:0,reconciled:0,propertiesMatched:0,propertiesEnriched:0},methods={};
  for(let i=0;i<out.length;i++){const e=out[i],k=identity(e.kind,e.title,e.attributes?.['Recording artist']||e.attributes?.Artist);if(!index.has(k))index.set(k,[]);index.get(k).push(i);}
+ const secondary=makeReconciliationIndexes(out);
  const seen=new Set(),changed=new Set();
  for(const [dataset,rows] of Object.entries(snapshot.datasets||{})){
   const [provider,key]=dataset.split('/');if(!sources[provider]||!Object.hasOwn(specs[provider],key)||!Array.isArray(rows))throw Error('Unknown open dataset '+dataset);
@@ -125,7 +141,7 @@ export function mergeOpenData(entries,snapshot){
    const uid=dataset+'|'+row.id;if(seen.has(uid))throw Error('Duplicate open source identity '+uid);seen.add(uid);counts.rows++;
    if(row.kind==='Fact'||row.spoiler){counts.skipped++;review.push({dataset,id:row.id,title:row.title,reason:'Evidence only / spoiler-sensitive'});continue;}
    const exact=index.get(identity(row.kind,row.title,row.artist))||[];
-   const {matches,method}=reconcile(out,row,dataset,exact);
+   const {matches,method}=reconcile(out,row,dataset,exact,secondary);
    if(matches.length!==1){counts[matches.length?'ambiguous':'unmatched']++;review.push({dataset,id:row.id,title:row.title,reason:matches.length?'Ambiguous canonical identity':'No proven canonical match',method});continue;}
    counts.matched++;methods[method]=(methods[method]||0)+1;
    if(method!=='exact title')counts.reconciled++;
