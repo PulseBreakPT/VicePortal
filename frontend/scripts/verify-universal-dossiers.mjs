@@ -54,5 +54,8 @@ try{
  assert.equal(rows.filter(x=>['Clip','Clip size'].includes(x.name)).length,1);
  assert.equal(v.sections[0].paragraphs.join(' '),'Original overview. Extra information. A unique fact.');
  assert.equal(v.sections[0].tags.length,0);
+ const credit={title:'Example',kind:'Character',source:'https://example.com',description:'Actor is credited for Host in Station, in the radio host cast. This credit establishes the role and programme, not an independent story biography.',attributes:{Role:'Host','Credited performer':'Actor',Programme:'Station','Media category':'Radio host'}};
+ const creditView=buildDossier(credit,true);
+ assert.equal(creditView.sections[0].paragraphs[0],'This credit establishes the role and programme, not an independent story biography.');
  console.log('Universal dossier audit:',JSON.stringify(report));
 }finally{await rm(dir,{recursive:true,force:true});}

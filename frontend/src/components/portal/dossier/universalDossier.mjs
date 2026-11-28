@@ -48,6 +48,19 @@ const generatedIntro=item=>[
  item.title+' is indexed in the Vice Atlas. No additional description has been verified for this record.',
  item.title+' is listed in the GTA Town public '+item.creatorDataset+' dataset. Details below are reproduced as community data; unknown fields are not inferred.',
 ].map(exact);
+const reviewedSummary=(item,included)=>{
+ const a=Object.fromEntries(included);
+ const has=(name,value)=>Object.prototype.hasOwnProperty.call(a,name)&&exact(valueText(a[name]))===exact(value);
+ const out=[];
+ if(item.kind==='Character'&&a['Credited performer']&&a.Role&&a.Programme&&a['Media category']){
+  const text=a['Credited performer']+' is credited for '+a.Role+' in '+a.Programme+', in the '+String(a['Media category']).toLowerCase()+' cast.';
+  out.push(exact(text));
+ }
+ if(item.kind==='Radio station'&&has('Genre',item.category)){
+  out.push(exact(item.title+' is listed in GTA Town’s radio reference with a '+String(item.category).toLowerCase()+' focus.'));
+ }
+ return new Set(out);
+};
 const equivalence=(a,b)=>key(a)===key(b)||aliases.some(group=>group.map(key).includes(key(a))&&group.map(key).includes(key(b)));
 const regionTags={
  'vice-city':['Art Deco architecture','Nightlife'],
@@ -96,10 +109,11 @@ export function buildDossier(item,spoilers=false){
  const seen=new Set([...represented,exact(subtitle)]);
  const sentences=new Set();
  const paragraphs=[];
+ const reviewed=reviewedSummary(item,included);
  if(!locked){
   for(const rawText of [item.description,...(item.paragraphs||[])]){
    if(typeof rawText!=='string'||!rawText.trim()||seen.has(exact(rawText))||commonFiller.has(exact(rawText))||generatedIntro(item).includes(exact(rawText)))continue;
-   const parts=rawText.trim().split(/(?<=[.!?])\s+(?=[A-Z“‘"'])/u).filter(text=>{const k=exact(text);if(!k||sentences.has(k)||seen.has(k)||commonFiller.has(k))return false;sentences.add(k);return true;});
+   const parts=rawText.trim().split(/(?<=[.!?])\s+(?=[A-Z“‘"'])/u).filter(text=>{const k=exact(text);if(!k||sentences.has(k)||seen.has(k)||commonFiller.has(k)||reviewed.has(k))return false;sentences.add(k);return true;});
    if(parts.length)paragraphs.push(parts.join(' '));
    seen.add(exact(rawText));
   }
