@@ -58,7 +58,7 @@ export function normalizeVehicles(input){
   const stats=field(row,'stats','stat_bars','ratings')||{};
   const getScore=(...keys)=>score(field(row,...keys)??field(stats,...keys));
   const spoiler=/^(true|1|yes)$/i.test(str(field(row,'spoiler','is_spoiler','story_spoiler')));
-  records.push({id,title,maker,category,type,group:vehicleGroup(category,type),source,spoiler,speed:getScore('speed','speed_rating','speed_score'),acceleration:getScore('acceleration','accel','acceleration_rating'),handling:getScore('handling','handling_rating'),offroad:getScore('offroad','off_road'),strength:getScore('strength'),price:str(field(row,'price','registration_cost','cost_to_register')),availability:str(field(row,'how_to_get','availability','acquisition')),seats:str(field(row,'seats','seat_count')),drive:str(field(row,'drive','drivetrain'))});
+  records.push({id,title,maker,category,type,sourceSlug:str(field(row,'slug')),group:vehicleGroup(category,type),source,spoiler,speed:getScore('speed','speed_rating','speed_score'),acceleration:getScore('acceleration','accel','acceleration_rating'),handling:getScore('handling','handling_rating'),offroad:getScore('offroad','off_road'),strength:getScore('strength'),price:str(field(row,'price','registration_cost','cost_to_register')),availability:str(field(row,'how_to_get','availability','acquisition')),seats:str(field(row,'seats','seat_count')),drive:str(field(row,'drive','drivetrain'))});
  }
  return records;
 }
