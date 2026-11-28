@@ -72,7 +72,10 @@ const propertyPins={
  'paradise-garage':'garage-northern-grassrivers-ogarage001',
  'shore-court-garage':'garage-ocean-beach-east-ogarage014',
  'starlet-motel-safehouse':'safehouse-north-gellhorn-hills-osafehouse003',
- 'bayside-safehouse':'safehouse-crosstown-osafehouse002'
+ 'bayside-safehouse':'safehouse-crosstown-osafehouse002',
+ // GTABase properties list: Key Lento is Jason's home; Ocean Beach is Y Hotel room 701.
+ 'leonida-keys-safehouse':'safehouse-key-lento-osafehouse001',
+ 'ocean-beach-safehouse':'safehouse-washington-beach-osafehouse005'
 };
 const compact=v=>norm(v).replace(/ /g,'');
 const fullName=e=>norm(e.title);
