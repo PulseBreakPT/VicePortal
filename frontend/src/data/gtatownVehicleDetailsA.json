@@ -1,0 +1,102 @@
+[
+  {
+    "kind": "Vehicle",
+    "title": "'32 Vapid Golfer",
+    "source": "https://gtatown.com/garage/vehicles/vapid-golfer-32",
+    "attributes": {
+      "Game mode": "story",
+      "GTA Town acquisition methods": "steal: Steal from traffic or parking, then register it.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "'80 Interstate Yankee",
+    "source": "https://gtatown.com/garage/vehicles/interstate-yankee-80",
+    "attributes": {
+      "Game mode": "story",
+      "GTA Town acquisition methods": "steal: Steal from traffic or parking, then register it. 6 fixed parking spots.\nother: Appears in the mission Unwanted Attention."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "'99 Jack Sheepe Fieldmaster",
+    "source": "https://gtatown.com/garage/vehicles/jack-sheepe-fieldmaster-99",
+    "attributes": {
+      "Game mode": "story",
+      "GTA Town acquisition methods": "steal: Steal from traffic or parking, then register it. 21 fixed parking spots."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Airgator Airboat 09",
+    "source": "https://gtatown.com/garage/vehicles/airgator-airboat-09",
+    "attributes": {
+      "Real-life reference": "Diamondback Airboats Work Boat series, American Airboats AirRanger, Panther Airboats",
+      "Game mode": "story",
+      "GTA Town acquisition methods": "steal: Take one from a dock or marina. Can't be registered.\nother: Appears in the mission Gone Fishing.\ncheat: Post-story phone cheat menu (hold L1/LB+R1/RB). Unlock: 5 survival challenges."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Ambergris Torlan",
+    "source": "https://gtatown.com/garage/vehicles/ambergris-torlan",
+    "attributes": {
+      "Real-life reference": "Azimut Atlantis 45, Fairline Targa 40",
+      "Game mode": "story",
+      "GTA Town acquisition methods": "spawn: One-off spawn.\nsteal: Fixed spawn or reward.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "B3000 Excavator",
+    "source": "https://gtatown.com/garage/vehicles/b3000-excavator",
+    "attributes": {
+      "Real-life reference": "Deere 350D LC",
+      "Game mode": "story",
+      "GTA Town acquisition methods": "steal: Steal from traffic or parking, then register it."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Big Game Airboat",
+    "source": "https://gtatown.com/garage/vehicles/big-game-airboat",
+    "attributes": {
+      "Real-life reference": "Diamondback Airboats Work Boat series, American Airboats AirRanger, Panther Airboats",
+      "Game mode": "story",
+      "GTA Town acquisition methods": "spawn: One-off spawn.\nsteal: Parks in this area.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Blade 500",
+    "source": "https://gtatown.com/garage/vehicles/blade-500",
+    "attributes": {
+      "Real-life reference": "Skater 388, 2023 P360 Powerboat",
+      "Game mode": "story",
+      "GTA Town acquisition methods": "steal: Take one from a dock or marina. Can't be registered. 4 fixed parking spots."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Blazing Mallard",
+    "source": "https://gtatown.com/garage/vehicles/blazing-mallard",
+    "attributes": {
+      "Game mode": "story",
+      "GTA Town acquisition methods": "spawn: One-off spawn. Map: https://gtatown.com/map?m=bobcat-key",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Bombora S23 CCS",
+    "source": "https://gtatown.com/garage/vehicles/bombora-s23-ccs",
+    "attributes": {
+      "Real-life reference": "Contender 25 Bay, Key West 188 BR",
+      "Game mode": "story",
+      "GTA Town acquisition methods": "steal: Take one from a dock or marina. Can't be registered."
+    }
+  }
+]
