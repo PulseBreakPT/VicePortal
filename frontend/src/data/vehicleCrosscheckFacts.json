@@ -1,0 +1,251 @@
+{
+  "schema": 1,
+  "checkedOn": "2026-11-28",
+  "rows": [
+    {
+      "title": "Pegassi Toros",
+      "source": "https://gtatown.com/garage/vehicles/pegassi-toros",
+      "attributes": {
+        "Registration cost": "$29,900",
+        "Sell value (stolen)": "$13,250",
+        "GTA Town acquisition methods": "Traffic or parking; 7 fixed spots (3 mapped); Pegassi Residences, vineyard bar and Fontana Motorsports."
+      },
+      "refs": [
+        {
+          "label": "GTA Spotter · registration and resale reference",
+          "url": "https://gtaspotter.com/en/guides/gta-6-vehicles/pegassi-toros/"
+        },
+        {
+          "label": "GTA Town · vehicle evidence",
+          "url": "https://gtatown.com/garage/vehicles/pegassi-toros"
+        }
+      ]
+    },
+    {
+      "title": "Progen Emerus",
+      "source": "https://gtatown.com/garage/vehicles/progen-emerus",
+      "attributes": {
+        "Registration cost": "$29,900",
+        "Race rental": "$900",
+        "GTA Town acquisition methods": "Traffic or parking; post-story cheat unlock after all vehicle challenges.",
+        "Upgraded speed (source-reported)": "282.81 km/h"
+      },
+      "refs": [
+        {
+          "label": "GTA Spotter · registration and rental reference",
+          "url": "https://gtaspotter.com/en/guides/gta-6-vehicles/progen-emerus/"
+        },
+        {
+          "label": "GTA Town · vehicle evidence",
+          "url": "https://gtatown.com/garage/vehicles/progen-emerus"
+        }
+      ]
+    },
+    {
+      "title": "'85 Albany Emperor",
+      "source": "https://gtatown.com/garage/vehicles/albany-emperor-85",
+      "attributes": {
+        "Registration cost": "$5,650",
+        "Sell value (stolen)": "$1,705",
+        "GTA Town acquisition methods": "Traffic or parking; 8 fixed spots. Appears in Boobie Time."
+      },
+      "refs": [
+        {
+          "label": "GTA Spotter · tuning and prices",
+          "url": "https://gtaspotter.com/en/guides/gta-6-vehicles/"
+        },
+        {
+          "label": "GTA Town · vehicle evidence",
+          "url": "https://gtatown.com/garage/vehicles/albany-emperor-85"
+        }
+      ]
+    },
+    {
+      "title": "Albany Cavalcade XL",
+      "source": "https://gtatown.com/garage/vehicles/albany-cavalcade-xl",
+      "attributes": {
+        "GTA Town acquisition methods": "Traffic or parking; 11 fixed parking spots."
+      },
+      "refs": [
+        {
+          "label": "GTA Spotter · matching tuning ratings",
+          "url": "https://gtaspotter.com/en/guides/gta-6-vehicles/"
+        },
+        {
+          "label": "GTA Town · vehicle evidence",
+          "url": "https://gtatown.com/garage/vehicles/albany-cavalcade-xl"
+        }
+      ]
+    },
+    {
+      "title": "Albany Primo",
+      "source": "https://gtatown.com/garage/vehicles/albany-primo",
+      "attributes": {
+        "GTA Town acquisition methods": "Traffic or parking; 15 fixed parking spots."
+      },
+      "refs": [
+        {
+          "label": "GTA Spotter · matching tuning ratings",
+          "url": "https://gtaspotter.com/en/guides/gta-6-vehicles/"
+        },
+        {
+          "label": "GTA Town · vehicle evidence",
+          "url": "https://gtatown.com/garage/vehicles/albany-primo"
+        }
+      ]
+    },
+    {
+      "title": "Buckingham Maverick",
+      "source": "https://gtatown.com/garage/vehicles/buckingham-maverick",
+      "attributes": {
+        "GTA Town acquisition methods": "Airfields, helipads or hangars; 1 mapped parking spot; appears in Photo/Shoot; dock east of Sherwin Boatworks."
+      },
+      "refs": [
+        {
+          "label": "PowerPyx · aircraft menu membership",
+          "url": "https://www.powerpyx.com/gta-6-all-aircraft/"
+        },
+        {
+          "label": "GTA Town · vehicle evidence",
+          "url": "https://gtatown.com/garage/vehicles/buckingham-maverick"
+        }
+      ]
+    },
+    {
+      "title": "Lapwing Mammatus",
+      "source": "https://gtatown.com/garage/vehicles/lapwing-mammatus",
+      "attributes": {
+        "GTA Town acquisition methods": "Airfields, helipads or hangars; 25 fixed parking spots; appears in Company Property."
+      },
+      "refs": [
+        {
+          "label": "PowerPyx · aircraft menu membership",
+          "url": "https://www.powerpyx.com/gta-6-all-aircraft/"
+        },
+        {
+          "label": "GTA Town · vehicle evidence",
+          "url": "https://gtatown.com/garage/vehicles/lapwing-mammatus"
+        }
+      ]
+    },
+    {
+      "title": "Mammoth Dodo",
+      "source": "https://gtatown.com/garage/vehicles/mammoth-dodo",
+      "attributes": {
+        "GTA Town acquisition methods": "Airfields, helipads or hangars; 3 fixed spots; appears in Gone Fishing. GTA Town also lists Jason's house dock."
+      },
+      "refs": [
+        {
+          "label": "PowerPyx · aircraft menu membership",
+          "url": "https://www.powerpyx.com/gta-6-all-aircraft/"
+        },
+        {
+          "label": "GTA Town · vehicle evidence",
+          "url": "https://gtatown.com/garage/vehicles/mammoth-dodo"
+        }
+      ]
+    },
+    {
+      "title": "Dragonfly Volatus",
+      "source": "https://gtatown.com/garage/vehicles/dragonfly-volatus",
+      "attributes": {
+        "Spawn Locations": "New Quay Plaza rooftop, Downtown"
+      },
+      "refs": [
+        {
+          "label": "AllThings.How · reported in-game location",
+          "url": "https://allthings.how/gta-6-rare-cars-standout-vehicles-locations/"
+        },
+        {
+          "label": "GTA Town · mapped vehicle location",
+          "url": "https://gtatown.com/locations/buckingham-dragonfly-volatus"
+        }
+      ]
+    },
+    {
+      "title": "Glacier Erode",
+      "source": "https://gtatown.com/garage/vehicles/glacier-erode",
+      "attributes": {
+        "Spawn Locations": "Behind a shop, Port Gellhorn"
+      },
+      "refs": [
+        {
+          "label": "AllThings.How · reported in-game location",
+          "url": "https://allthings.how/gta-6-rare-cars-standout-vehicles-locations/"
+        },
+        {
+          "label": "GTA Town · mapped vehicle location",
+          "url": "https://gtatown.com/locations/del-perro-glacier-erode"
+        }
+      ]
+    },
+    {
+      "title": "Shining Sea Squalo",
+      "source": "https://gtatown.com/garage/vehicles/shining-sea-squalo",
+      "attributes": {
+        "Spawn Locations": "Dock, Port Gellhorn"
+      },
+      "refs": [
+        {
+          "label": "AllThings.How · reported in-game location",
+          "url": "https://allthings.how/gta-6-rare-cars-standout-vehicles-locations/"
+        },
+        {
+          "label": "GTA Town · mapped vehicle location",
+          "url": "https://gtatown.com/locations/shitzu-shining-sea-squalo"
+        }
+      ]
+    },
+    {
+      "title": "Ocean Pearl CB69",
+      "source": "https://gtatown.com/garage/vehicles/ocean-pearl-cb69",
+      "attributes": {
+        "Spawn Locations": "Dock, Tequesta"
+      },
+      "refs": [
+        {
+          "label": "AllThings.How · reported in-game location",
+          "url": "https://allthings.how/gta-6-rare-cars-standout-vehicles-locations/"
+        },
+        {
+          "label": "GTA Town · mapped vehicle location",
+          "url": "https://gtatown.com/locations/calder-ocean-pearl-cb69"
+        }
+      ]
+    },
+    {
+      "title": "Mosaic Dibnah",
+      "source": "https://gtatown.com/garage/vehicles/mosaic-dibnah",
+      "attributes": {
+        "Spawn Locations": "Dock, Dalton Island"
+      },
+      "refs": [
+        {
+          "label": "AllThings.How · reported in-game location",
+          "url": "https://allthings.how/gta-6-rare-cars-standout-vehicles-locations/"
+        },
+        {
+          "label": "GTA Town · mapped vehicle location",
+          "url": "https://gtatown.com/locations/calder-mosaic-dibnah"
+        }
+      ]
+    },
+    {
+      "title": "Kyle's Mallard",
+      "source": "https://gtatown.com/garage/vehicles/kyles-mallard",
+      "attributes": {
+        "Spawn Locations": "Farm, Frogswater"
+      },
+      "refs": [
+        {
+          "label": "AllThings.How · reported in-game location",
+          "url": "https://allthings.how/gta-6-rare-cars-standout-vehicles-locations/"
+        },
+        {
+          "label": "GTA Town · mapped vehicle location",
+          "url": "https://gtatown.com/locations/retro-kyles-mallard-frogswater"
+        }
+      ]
+    }
+  ]
+}
