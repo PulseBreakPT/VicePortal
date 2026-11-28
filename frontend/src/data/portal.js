@@ -1,3 +1,8 @@
+import styleU from './gtatownStyleU.json';
+import styleV from './gtatownStyleV.json';
+import missionDetailsA from './gtatownMissionDetailsA.json';
+import missionDetailsB from './gtatownMissionDetailsB.json';
+import {enrichMissionRecords} from './gtatownMissionEnrichment.mjs';
 import styleM from './gtatownStyleM.json';
 import styleN from './gtatownStyleN.json';
 import styleO from './gtatownStyleO.json';
@@ -91,8 +96,9 @@ const baseEntries = [
   base({id:'leonida-key-art',title:'Jason & Lucia — key art',kind:'Artwork',image:image('rs-poster-2'),description:'Official GTA VI promotional artwork. This is not presented as confirmed retail packaging.',source:officialUrl},'artwork',['artwork','wallpapers','covers']),
 ];
 export const universalReport=buildUniversal(universalSnapshot,universalSources,baseEntries.map(completeDossier));
-export const gtaTownExtendedReport=extendGtaTown(buildMaster(universalReport.entries,universalSnapshot,universalSources,masterVerified.rows),[...styleA,...styleB,...styleC,...styleD,...styleE,...styleF,...styleG,...styleH,...styleI,...styleJ,...styleK,...styleL,...styleM,...styleN,...styleO,...styleP,...styleQ,...styleR,...styleS,...styleT],townWorld,[...townFacts,...townGuides,...townCollectionsA,...townCollectionsB]);
-export const entries=gtaTownExtendedReport.entries;
+export const gtaTownExtendedReport=extendGtaTown(buildMaster(universalReport.entries,universalSnapshot,universalSources,masterVerified.rows),[...styleA,...styleB,...styleC,...styleD,...styleE,...styleF,...styleG,...styleH,...styleI,...styleJ,...styleK,...styleL,...styleM,...styleN,...styleO,...styleP,...styleQ,...styleR,...styleS,...styleT,...styleU,...styleV],townWorld,[...townFacts,...townGuides,...townCollectionsA,...townCollectionsB]);
+export const missionEnrichmentReport=enrichMissionRecords(gtaTownExtendedReport.entries,[...missionDetailsA,...missionDetailsB]);
+export const entries=missionEnrichmentReport.entries;
 export const entryById = Object.fromEntries(entries.map(x=>[x.id,x]));
 export const entriesFor = id => {const ids=descendantIds(id);return entries.filter(e=>e.collections.some(c=>ids.includes(c)));};
 export const getItemPath = item => entryById[item.id]?.path || '/explore';
