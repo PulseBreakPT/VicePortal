@@ -21,7 +21,7 @@
 
 </div>
 
-> **Website:** [pulsebreakpt.github.io/VicePortal/](https://pulsebreakpt.github.io/VicePortal/) — the intended URL for the original Vice Atlas React application. The repository previously served only documentation. The application deployment workflow is now configured; a successful production deployment must be verified separately.
+> **Website:** [pulsebreakpt.github.io/VicePortal/](https://pulsebreakpt.github.io/VicePortal/) — the intended URL for the original Vice Atlas React application. Production is built from main and published by the Pages workflow; its public release is verified against the source commit.
 
 ---
 
@@ -144,7 +144,7 @@ For a production bundle:
 yarn build
 ```
 
-The build is written to `frontend/build/`. A production host must support client-side route fallback and the configured public asset base. For GitHub Pages, the [Publish Vice Atlas workflow](.github/workflows/publish-pages.yml) builds the original frontend with the correct project base and prepares deep-link fallback. In repository Settings → Pages, select GitHub Actions as the publishing source. Then run the workflow on main.
+The build is written to `frontend/build/`. A production host must support client-side route fallback and the configured public asset base. For GitHub Pages, the [Publish Vice Atlas workflow](.github/workflows/publish-pages.yml) builds the original frontend with the correct project base and prepares deep-link fallback. In repository Settings → Pages, select **GitHub Actions** as the publishing source (not Deploy from a branch). This one-time setting avoids an independent legacy root deployment overwriting the compiled site. Every push to main runs the build, uploads the exact artifact and deploys it, then verifies the public commit marker, compiled asset hashes and deep-link fallback. Run the workflow manually on main to retry a deployment. The public `/VicePortal/release.json` identifies the deployed source commit. Root-level static files are legacy and are not the publishing source in workflow mode.
 
 ### Optional backend
 
