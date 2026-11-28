@@ -44,3 +44,37 @@ for(const [key,dataset] of Object.entries(snapshot.datasets)){
 const portal=await read('../src/data/portal.js');
 assert.ok(portal.includes('...creatorRecords')&&portal.includes('creatorWeapons(reviewedWeaponEntries)'));
 console.log('Creator dataset checks passed; snapshot rows:',imported);
+
+
+import {enrichArsenal,arsenalAuditNames,arsenalBase,arsenalVariants,arsenalOther} from '../src/data/arsenalAudit.mjs';
+assert.equal(arsenalBase.length,53);
+assert.equal(arsenalVariants.length,130);
+assert.equal(arsenalOther.length,26);
+assert.equal(arsenalAuditNames.length,209);
+const rawWeapons=normalizeDataset(snapshot.datasets.weapons.rows,'weapons');
+const enrichedWeapons=enrichArsenal(rawWeapons);
+assert.equal(enrichedWeapons.length,rawWeapons.length);
+assert.equal(new Set(enrichedWeapons.map(x=>x.id)).size,rawWeapons.length);
+assert.ok(enrichedWeapons.filter(x=>x.arsenalAudit).length>=200,'Weapon audit identity coverage regression');
+for(let i=0;i<rawWeapons.length;i++){
+ const before=rawWeapons[i],after=enrichedWeapons[i];
+ for(const k of ['id','title','path','image','source','spoiler'])assert.equal(after[k],before[k]);
+ for(const [k,value] of Object.entries(before.attributes)){
+  if(value==='Not verified in this atlas'||value===''||value==null)continue;
+  const actual=after.attributes[k];
+  assert.ok(actual===value||actual===String(value)+'/10',before.title+' overwritten '+k);
+ }
+}
+const k17=enrichedWeapons.find(x=>x.title==='Klose K17');
+assert.equal(k17.attributes.Handling,'8.5/10');
+assert.equal(k17.attributes['Technical capacity (game data)'],'12');
+assert.equal(k17.attributes['Clip size'],'17');
+assert.ok(k17.relatedSources.some(s=>s.url==='https://gamesdb.gg/gta-6/weapons?variants=1'));
+const untouched={id:'unmatched',title:'Unknown fictional weapon',attributes:{}};
+assert.strictEqual(enrichArsenal([untouched])[0],untouched);
+const conflict=enrichArsenal([{title:'Klose K17',attributes:{Damage:'9',Price:'100',Availability:'Already documented'}}])[0];
+assert.equal(conflict.attributes.Damage,'9');
+assert.equal(conflict.attributes.Price,'100');
+assert.equal(conflict.attributes.Availability,'Already documented');
+assert.ok(conflict.arsenalAudit.conflicts.some(x=>x.field==='Damage'));
+console.log('Arsenal V2 audit:',JSON.stringify({matched:enrichedWeapons.filter(x=>x.arsenalAudit).length,filled:enrichedWeapons.reduce((n,x)=>n+(x.arsenalAudit?.added.length||0),0),conflicts:enrichedWeapons.reduce((n,x)=>n+(x.arsenalAudit?.conflicts.length||0),0)}));
