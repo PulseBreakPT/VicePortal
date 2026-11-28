@@ -1,0 +1,294 @@
+[
+  {
+    "kind": "Organization",
+    "title": "Drumboyz",
+    "category": "Gangs",
+    "section": "archive/organizations/gangs",
+    "source": "https://gtatown.com/locations/gang-compound-belville-ogangcompound002",
+    "attributes": {
+      "Documented compound area": "Belville",
+      "County": "Leonard County"
+    }
+  },
+  {
+    "kind": "Organization",
+    "title": "PTT Youngin$",
+    "category": "Gangs",
+    "section": "archive/organizations/gangs",
+    "source": "https://gtatown.com/locations/gang-compound-southside-ogangcompound001",
+    "attributes": {
+      "Documented compound area": "Southside",
+      "County": "Vice-Dale County"
+    }
+  },
+  {
+    "kind": "Organization",
+    "title": "Kingfishers",
+    "category": "Gangs",
+    "section": "archive/organizations/gangs",
+    "source": "https://gtatown.com/locations/sunrise-rv-park-kingfishers-op",
+    "attributes": {
+      "Documented operation": "Sunrise RV Park",
+      "Area": "Southern Grassrivers",
+      "County": "Mariana County"
+    }
+  },
+  {
+    "kind": "In-game video game",
+    "title": "Tenebrae Lux",
+    "category": "In-world games",
+    "section": "archive/culture/in-world-games",
+    "membership": [
+      "archive/activities/arcade-games"
+    ],
+    "source": "https://gtatown.com/guides/hobbies",
+    "attributes": {
+      "Platform": "Home console"
+    }
+  },
+  {
+    "kind": "In-game video game",
+    "title": "Street Trash 3: Dezombifier",
+    "category": "In-world games",
+    "section": "archive/culture/in-world-games",
+    "membership": [
+      "archive/activities/arcade-games"
+    ],
+    "source": "https://gtatown.com/guides/hobbies",
+    "attributes": {
+      "Platform": "Home console"
+    }
+  },
+  {
+    "kind": "In-game video game",
+    "title": "Time Jackers Rewind",
+    "category": "In-world games",
+    "section": "archive/culture/in-world-games",
+    "membership": [
+      "archive/activities/arcade-games"
+    ],
+    "source": "https://gtatown.com/guides/hobbies",
+    "attributes": {
+      "Platform": "Home console"
+    }
+  },
+  {
+    "kind": "In-game video game",
+    "title": "Bang For Your Buck",
+    "category": "In-world games",
+    "section": "archive/culture/in-world-games",
+    "membership": [
+      "archive/activities/arcade-games"
+    ],
+    "source": "https://gtatown.com/guides/hobbies",
+    "attributes": {
+      "Platform": "Arcade cabinet"
+    }
+  },
+  {
+    "kind": "Race programme",
+    "title": "Gellhorn International Raceway — racing programme",
+    "category": "Competitions",
+    "section": "archive/racing/competitions",
+    "source": "https://gtatown.com/answers/is-there-a-race-track",
+    "attributes": {
+      "Venue": "Gellhorn International Raceway",
+      "Source-listed events": 11,
+      "Maximum reported payout": "$6,000"
+    }
+  },
+  {
+    "kind": "Race programme",
+    "title": "Ambrosia Raceway Park — racing programme",
+    "category": "Competitions",
+    "section": "archive/racing/competitions",
+    "source": "https://gtatown.com/answers/is-there-a-race-track",
+    "attributes": {
+      "Venue": "Ambrosia Raceway Park"
+    }
+  },
+  {
+    "kind": "Race programme",
+    "title": "Boone Speedway — racing programme",
+    "category": "Competitions",
+    "section": "archive/racing/competitions",
+    "source": "https://gtatown.com/answers/is-there-a-race-track",
+    "attributes": {
+      "Venue": "Boone Speedway"
+    }
+  },
+  {
+    "kind": "Race programme",
+    "title": "Thrillbilly Mud Club — racing programme",
+    "category": "Competitions",
+    "section": "archive/racing/competitions",
+    "source": "https://gtatown.com/answers/is-there-mud-racing",
+    "attributes": {
+      "Venue": "Thrillbilly Mud Club",
+      "Source-listed off-road races": 8,
+      "Source-listed trials": 6,
+      "Unlock chapter": 2
+    }
+  },
+  {
+    "kind": "Appearance catalogue",
+    "title": "Tattoos",
+    "category": "Tattoos",
+    "section": "archive/appearance/tattoos",
+    "source": "https://gtatown.com/appearance/tattoos",
+    "attributes": {
+      "Source-listed options": 726,
+      "Coverage status": "Individual designs not enumerated by the connector"
+    }
+  },
+  {
+    "kind": "Appearance catalogue",
+    "title": "Hair and facial hair catalogue",
+    "category": "Character styles",
+    "section": "archive/appearance/character-styles",
+    "source": "https://gtatown.com/appearance/hairstyles",
+    "attributes": {
+      "Source-listed options": 220,
+      "Coverage status": "Individual designs not enumerated by the connector"
+    }
+  },
+  {
+    "kind": "Appearance catalogue",
+    "title": "Makeup catalogue",
+    "category": "Makeup",
+    "section": "archive/appearance/makeup",
+    "source": "https://gtatown.com/appearance/makeup",
+    "attributes": {
+      "Source-listed options": 63,
+      "Coverage status": "Individual designs not enumerated by the connector"
+    }
+  },
+  {
+    "kind": "Mechanic",
+    "title": "Wanted level",
+    "category": "Wanted levels",
+    "section": "archive/gameplay/wanted-levels",
+    "membership": [],
+    "source": "https://gtatown.com/guides/wanted-level",
+    "attributes": {
+      "Maximum stars": 6,
+      "Source-listed star states": 4,
+      "Source-listed heat indicators": 6
+    }
+  },
+  {
+    "kind": "Mechanic",
+    "title": "Criminal Profile",
+    "category": "Criminal profile",
+    "section": "archive/gameplay/criminal-profile",
+    "membership": [],
+    "source": "https://gtatown.com/guides/criminal-profile",
+    "attributes": {
+      "Tiers": "Professional · Hardened · Violent · Psycho · Irredeemable",
+      "Profiles per playable character": 1,
+      "Permanent tier": "Irredeemable"
+    }
+  },
+  {
+    "kind": "Mechanic",
+    "title": "Character switching",
+    "category": "Character switching",
+    "section": "archive/gameplay/character-switching",
+    "membership": [],
+    "source": "https://gtatown.com/guides/jason-vs-lucia",
+    "attributes": {
+      "Playable protagonists": 2,
+      "Shared systems": "Owned weapons, Family Savings, relationship meter",
+      "Separate systems": "Cash, checking, character stats, criminal profile, wardrobe"
+    }
+  },
+  {
+    "kind": "Mechanic",
+    "title": "Focus",
+    "category": "Skills",
+    "section": "archive/gameplay/skills",
+    "membership": [],
+    "source": "https://gtatown.com/guides/jason-vs-lucia",
+    "attributes": {
+      "Available to": "Jason and Lucia",
+      "Progression": "Separate character levels"
+    }
+  },
+  {
+    "kind": "Mechanic",
+    "title": "Family Savings",
+    "category": "Economy",
+    "section": "archive/gameplay/economy",
+    "membership": [
+      "archive/economy/bank-accounts"
+    ],
+    "source": "https://gtatown.com/guides/bank-account",
+    "attributes": {
+      "Account ownership": "Shared between both protagonists",
+      "Withdrawals": "Unavailable"
+    }
+  },
+  {
+    "kind": "Mechanic",
+    "title": "Pocket cash",
+    "category": "Economy",
+    "section": "archive/gameplay/economy",
+    "membership": [
+      "archive/economy/cash"
+    ],
+    "source": "https://gtatown.com/guides/bank-account",
+    "attributes": {
+      "Maximum per character": "$20,000",
+      "Large purchase threshold": "$1,000"
+    }
+  },
+  {
+    "kind": "Mechanic",
+    "title": "Wardrobe and trunk outfits",
+    "category": "Storage",
+    "section": "archive/gameplay/storage",
+    "membership": [],
+    "source": "https://gtatown.com/guides/outfits-and-masks",
+    "attributes": {
+      "Saved trunk outfit slots": 5
+    }
+  },
+  {
+    "kind": "Item",
+    "title": "Stash bag",
+    "category": "Interactive objects",
+    "section": "archive/items/interactive-objects",
+    "source": "https://gtatown.com/guides/stash-bags",
+    "attributes": {
+      "Capacity per character": 2,
+      "Combined capacity": 4
+    },
+    "membership": [
+      "archive/gameplay/inventory"
+    ]
+  },
+  {
+    "kind": "Item",
+    "title": "Fishing rod",
+    "category": "Interactive objects",
+    "section": "archive/items/interactive-objects",
+    "membership": [
+      "archive/equipment/fishing-equipment"
+    ],
+    "source": "https://gtatown.com/guides/hobbies",
+    "attributes": {
+      "Source-listed acquisition location": "Jason's pier, Key Lento"
+    }
+  },
+  {
+    "kind": "Item",
+    "title": "Waiver Pass",
+    "category": "Unique items",
+    "section": "archive/items/unique-items",
+    "source": "https://gtatown.com/guides/hobbies",
+    "attributes": {
+      "Source-listed price": "$5",
+      "Purpose": "Shooting range access"
+    }
+  }
+]
