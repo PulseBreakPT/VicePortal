@@ -304,5 +304,161 @@
     "attributes": {
       "GTA Town acquisition methods": "Found parked or ridden; 9 fixed parking spots."
     }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Henshaw Rhode",
+    "source": "https://gtatown.com/garage/vehicles/henshaw-rhode",
+    "attributes": {
+      "Real-life reference": "Contender 39ST (base model: Rugger Rhode)",
+      "GTA Town acquisition methods": "Unique Patriot variant; Lake Leonida spawn.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Hulls Flatdeck",
+    "source": "https://gtatown.com/garage/vehicles/hulls-flatdeck",
+    "attributes": {
+      "Real-life reference": "Shipyard De Hoop Breuil / Brion Ro-Ro barges",
+      "GTA Town acquisition methods": "Docks or marinas; 5 fixed parking spots; cannot be registered.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Hulls Seacab",
+    "source": "https://gtatown.com/garage/vehicles/hulls-seacab",
+    "attributes": {
+      "Real-life reference": "Water Taxi Miami bay boats",
+      "GTA Town acquisition methods": "GTA Town reports 11 fixed parking spots; acquisition and registration details remain unconfirmed.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Kowaachobee Airboat",
+    "source": "https://gtatown.com/garage/vehicles/kowaachobee-airboat",
+    "attributes": {
+      "Real-life reference": "Diamondback Airboats Work Boat series; American Airboats AirRanger; Panther Airboats (base model: Airgator Airboat 09)",
+      "GTA Town acquisition methods": "Unique Swamp Style variant; fixed spawn.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Midsummer Erode",
+    "source": "https://gtatown.com/garage/vehicles/midsummer-erode",
+    "attributes": {
+      "Real-life reference": "2024 Santa Cruz Vala; Mondraker Crafty (base model: Del Perro Erode)",
+      "GTA Town acquisition methods": "Unique Pedal Power variant; left unlocked at spawn."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Mosaic Dibnah",
+    "source": "https://gtatown.com/garage/vehicles/mosaic-dibnah",
+    "attributes": {
+      "Real-life reference": "2007 Azimut 85; Ferretti 720 (roof canopy; base model: Calder Dibnah)",
+      "GTA Town acquisition methods": "Unique Ultra-Luxe variant; fixed spawn or reward.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Nagasaki Tao",
+    "source": "https://gtatown.com/garage/vehicles/nagasaki-tao",
+    "attributes": {
+      "Real-life reference": "Yamaha 242 Limited; Yamaha 255XD",
+      "GTA Town acquisition methods": "Docks or marinas; 139 fixed parking spots; cannot be registered."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Naughty Boy Airboat",
+    "source": "https://gtatown.com/garage/vehicles/naughty-boy-airboat",
+    "attributes": {
+      "Real-life reference": "Diamondback Airboats Work Boat series; American Airboats AirRanger; Panther Airboats (base model: Airgator Airboat 09)",
+      "GTA Town acquisition methods": "Unique Swamp Style variant; fixed spawn."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Ocean Pearl CB69",
+    "source": "https://gtatown.com/garage/vehicles/ocean-pearl-cb69",
+    "attributes": {
+      "Real-life reference": "Horizon Power Catamarans PC60; Hudson Powercat 56 (base model: Calder CB69)",
+      "GTA Town acquisition methods": "Unique Girlypop variant; fixed spawn.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Rainbow Ripple L20S",
+    "source": "https://gtatown.com/garage/vehicles/rainbow-ripple-l20s",
+    "attributes": {
+      "Real-life reference": "Contender 25 Bay; Key West 188 BR (base model: Lure Predator L20S)",
+      "GTA Town acquisition methods": "Unique Clout Chaser variant; Gambit Bay spawn."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Revolutionary Azure",
+    "source": "https://gtatown.com/garage/vehicles/revolutionary-azure",
+    "attributes": {
+      "Real-life reference": "Sea-Doo Spark (base model: Seashark Azure)",
+      "GTA Town acquisition methods": "Unique Patriot variant; fixed spawn.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Rudolph Tao",
+    "source": "https://gtatown.com/garage/vehicles/rudolph-tao",
+    "attributes": {
+      "Real-life reference": "Yamaha 242 Limited; Yamaha 255XD (base model: Nagasaki Tao)",
+      "GTA Town acquisition methods": "Unique Leonida Man variant; fixed spawn."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Rugger Fortune",
+    "source": "https://gtatown.com/garage/vehicles/rugger-fortune",
+    "attributes": {
+      "Real-life reference": "Custom Shrimp 82 IQF trawler",
+      "GTA Town acquisition methods": "Docks or marinas; 1 fixed parking spot; cannot be registered."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Walter Lombike",
+    "source": "https://gtatown.com/garage/vehicles/walter-lombike",
+    "attributes": {
+      "Real-life reference": "Citi Bike Miami pedal-assist e-bike",
+      "GTA Town acquisition methods": "Found parked or ridden.",
+      "Speed rating": "6.9 / 10",
+      "Acceleration": "7.9 / 10",
+      "Handling": "7.9 / 10",
+      "Off-road rating": "2.3 / 10"
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Westbound Azure",
+    "source": "https://gtatown.com/garage/vehicles/westbound-azure",
+    "attributes": {
+      "Real-life reference": "Sea-Doo Spark (base model: Seashark Azure)",
+      "GTA Town acquisition methods": "Unique Leonida Man variant; fixed spawn."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Will O' The Wisp Airboat",
+    "source": "https://gtatown.com/garage/vehicles/will-o-the-wisp-airboat",
+    "attributes": {
+      "Real-life reference": "Diamondback Airboats Work Boat series; American Airboats AirRanger; Panther Airboats (base model: Airgator Airboat 09)",
+      "GTA Town acquisition methods": "Unique Swamp Style variant; fixed spawn.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
   }
 ]
