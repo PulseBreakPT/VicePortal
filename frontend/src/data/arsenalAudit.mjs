@@ -36,7 +36,7 @@ const stock = {S:'Standard stock','S/C':'Standard / Hunting stock',E:'Expanded s
 const validPrice = value => /^\d+$/.test(value);
 export function enrichArsenal(entries){
  return entries.map(item=>{
-  const hit = indexes.get(key(item.title));
+  const hit = indexes.get(supplementKey(item.title)) || indexes.get(key(item.title));
   if(!hit){
    // The creator catalogue confirms the identity and edition of these two separate bonus variants.
    // Their individual stats are not in the audit; never inherit the base revolver's ratings.
@@ -84,7 +84,7 @@ export function enrichArsenal(entries){
   }
   if(validPrice(price))fill('Price',price);
   if(location&&!known(attributes.Availability)&&!known(attributes.Unlock)&&!known(attributes['How to get']))fill('Availability',location);
-  const rawTechnical=technicalByName.get(key(item.title));
+  const rawTechnical=technicalByName.get(supplementKey(item.title));
   if(rawTechnical){
    rawTechnical.slice(1).forEach((value,i)=>{
     if(!known(value))return;
@@ -110,3 +110,28 @@ export function enrichArsenal(entries){
  });
 }
 export const arsenalAuditNames = [...indexes.keys()];
+
+const supplementalAliases=new Map([
+ ['heavydutyblade','machete'],['pipewrench','wrench'],['arrasbullhead','speargun'],['arrasbullheadlongarm','speargun'],['harpoongun','speargun'],
+ ['unarmedfist','fistsunarmed'],['fists','fistsunarmed'],['unarmed','fistsunarmed'],['deevertechpocketblastdsg','pocketblastdsg'],['worthamshackattackw14','shackattackw14']
+]);
+const supplementKey=name=>supplementalAliases.get(key(name))||key(name);
+const supplemental=[
+ {title:'Pocketblast DSG',slug:'pocketblast-dsg',category:'SMG',group:'smgs',source:'https://www.gtabase.com/gta-6/weapons/pocketblast-dsg',description:'Unique DSG variant available through Griffin Shooting Range.',attributes:{Manufacturer:'Deever Tech',Price:'2840',Availability:'Griffin Shooting Range; gold medals unlock the purchase',Customization:'Cannot be modified'},refs:[{label:'GTABoss · shooting ranges',url:'https://www.gtaboss.gg/gta-6/guides/gta-6-shooting-ranges'}]},
+ {title:'Shack Attack W-14',slug:'shack-attack-w-14',category:'Tactical Rifle',group:'other',source:'https://www.gtabase.com/gta-6/weapons/shack-attack-w-14',description:'Unique W-14 variant available at Richardson Hunting Supplies.',attributes:{Manufacturer:'Wortham',Price:'2940',Availability:'Richardson Hunting Supplies, Big Pine',Customization:'Cannot be modified'},refs:[{label:'GTA6DB · weapon record',url:'https://gta6db.io/weapons/shack-attack-w-14'}]},
+ {title:'Candy Suxxx Bat',slug:'candy-suxxx-bat',category:'Melee',group:'melee',source:'https://www.gtabase.com/gta-6/weapons/candy-suxxx-bat',description:'Unique baseball bat found at Gil Reynolds’ residence.',attributes:{Availability:'Gil Reynolds’ residence, Peacock Estates',Customization:'Cannot be modified'}},
+ {title:'Wrench',slug:'wrench',category:'Melee',group:'melee',source:'https://www.powerpyx.com/gta-6-all-weapons/',description:'Collectible melee weapon listed in the weapon progress catalogue.',attributes:{Availability:'World pickup',Alias:'Pipe Wrench'},refs:[{label:'Nerdschalk · in-game pickup',url:'https://nerdschalk.com/pick-up-equip-wrench-grand-theft-auto-vi/'}]},
+ {title:'Machete',slug:'machete',category:'Melee',group:'melee',source:'https://www.gamerguides.com/grand-the-auto-vi/database/weapons/melee/machete'.replace('grand-the-auto','grand-theft-auto'),description:'Melee weapon also listed as Heavy-Duty Blade in the progress catalogue.',attributes:{'Progress menu label':'Heavy-Duty Blade'},refs:[{label:'PowerPyx · weapon progress catalogue',url:'https://www.powerpyx.com/gta-6-all-weapons/'},{label:'GTA VI Explorer · raw game record',url:'https://six.mics.dev/weapons/machete'}]},
+ {title:'Speargun',slug:'speargun',category:'Special weapon',group:'other',source:'https://gta6.house/library/weapons/harpoon-gun',description:'Special weapon also known as Arras Bullhead; community guides report an encounter in Key Lento.',attributes:{Alias:'Arras Bullhead',Availability:'Reported special encounter in Key Lento; exact conditions not verified','Collection status':'Outside the verified core progress count'},refs:[{label:'GTA6Ops · equipment catalogue',url:'https://gta6ops.com/database/weapons-and-equipment/'}]},
+ {title:'Fists (unarmed)',slug:'fists-unarmed',category:'Unarmed',group:'melee',source:'https://www.gtabase.com/gta-6/weapons/unarmed-fist',description:'Default unarmed combat option; not an equipment pickup.',attributes:{Availability:'Available without equipment','Collection status':'Not a collectible weapon'}},
+];
+export function appendVerifiedWeapons(entries){
+ const result=[...entries],present=new Set(entries.map(x=>supplementKey(x.title))),ids=new Set(entries.map(x=>x.id));
+ for(const item of supplemental){
+  const id='weapon-'+item.slug,k=supplementKey(item.title);
+  if(present.has(k)||ids.has(id))continue;
+  result.push({id,title:item.title,kind:'Weapon',category:item.category,collections:['weapons/'+item.group],path:'/weapons/'+id,status:'Community reference',source:item.source,relatedSources:item.refs||[],image:'/images/creator-data-placeholder.svg',description:item.description,attributes:{Type:item.category,...item.attributes},verifiedOn:'2026-11-28'});
+  present.add(k);ids.add(id);
+ }
+ return result;
+}
