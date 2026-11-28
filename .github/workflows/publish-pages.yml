@@ -86,6 +86,7 @@ jobs:
             frontend/src/data/openDataV2.json
             frontend/src/data/openDataV2ImportReport.json
             frontend/src/data/openDataV2Audit.json
+            frontend/src/data/dossierCompletenessAudit.json
           if-no-files-found: error
       - name: Build original React frontend
         run: yarn build
