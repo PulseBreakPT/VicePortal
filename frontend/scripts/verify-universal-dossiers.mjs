@@ -17,7 +17,7 @@ try{
   const esm=source.replace(/(from\s+['"]\.\/)([\w-]+)(['"])/g,'$1$2.mjs$3').replace(/(from\s+['"]\.\/)([\w-]+\.json)(['"])/g,'$1$2.mjs$3');
   await writeFile(join(dir,name.replace(/\.js$/,'.mjs')),esm);
  }
- const {entries,gtaTownExtendedReport,missionEnrichmentReport}=await import(pathToFileURL(join(dir,'portal.mjs')).href);
+ const {entries,gtaTownExtendedReport,missionEnrichmentReport,categoryEnrichmentReport}=await import(pathToFileURL(join(dir,'portal.mjs')).href);
  const {masterSections,MASTER}=await import(pathToFileURL(join(dir,'masterArchive.mjs')).href);
  const masterIds=new Set(masterSections.map(s=>s.id));
  assert.ok(entries.every(e=>(e.collections||[]).filter(c=>c.startsWith('archive')).every(c=>masterIds.has(c))),'Unregistered master collection');
@@ -96,6 +96,20 @@ try{
  console.log('Vehicle field recovery:',JSON.stringify({records:sourceVehicles.length,topSpeed:sourceVehicles.filter(v=>v.topSpeedMph!==null).length,realLife:sourceVehicles.filter(v=>v.realLife).length,edition:sourceVehicles.filter(v=>v.edition).length,mode:sourceVehicles.filter(v=>v.mode).length,individual:reviewedVehicleCount}));
  const masterCoverage=Object.fromEntries(MASTER.map(g=>[g.id,entries.filter(e=>e.collections.some(c=>c==='archive/'+g.id||c.startsWith('archive/'+g.id+'/'))).length]));
  console.log('Master archive production coverage:',JSON.stringify(masterCoverage));
+ const categoryFacts=JSON.parse(await readFile(join(root,'gtatownCategoryFacts.json'),'utf8'));
+ assert.equal(categoryFacts.length,24);
+ for(const row of categoryFacts){
+  const found=entries.filter(e=>e.kind===row.kind&&e.title===row.title);
+  assert.equal(found.length,1,'Missing or repeated category fact: '+row.title);
+  assert.ok(found[0].collections.includes(row.section),'Missing category membership: '+row.title);
+  assert.ok(found[0].source===row.source||found[0].relatedSources?.some(s=>s.url===row.source),'Missing source: '+row.title);
+ }
+ for(const group of ['organizations','racing','appearance','economy','culture','items','gameplay'])assert.ok(masterCoverage[group]>0,'Missing category coverage: '+group);
+ assert.ok(categoryEnrichmentReport.counts.guides>=12,'Guide cross-indexing regression');
+ const shopEvidence=JSON.parse(await readFile(join(root,'gtatownShopEvidence.json'),'utf8'));
+ assert.equal(shopEvidence.length,29);
+ console.log('Category enrichment:',JSON.stringify({facts:categoryFacts.length,counts:categoryEnrichmentReport.counts,unmatchedShops:categoryEnrichmentReport.review}));
+
  const report={entries:entries.length,byKind:{},views:0,attributes:0,omissions:{},unknownKinds:[]};
  for(const entry of entries){
   report.byKind[entry.kind]=(report.byKind[entry.kind]||0)+1;
