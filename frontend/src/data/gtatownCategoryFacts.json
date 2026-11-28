@@ -216,18 +216,6 @@
   },
   {
     "kind": "Mechanic",
-    "title": "Stash bag capacity",
-    "category": "Inventory",
-    "section": "archive/gameplay/inventory",
-    "membership": [],
-    "source": "https://gtatown.com/guides/stash-bags",
-    "attributes": {
-      "Capacity per character": 2,
-      "Combined capacity": 4
-    }
-  },
-  {
-    "kind": "Mechanic",
     "title": "Family Savings",
     "category": "Economy",
     "section": "archive/gameplay/economy",
@@ -274,7 +262,10 @@
     "attributes": {
       "Capacity per character": 2,
       "Combined capacity": 4
-    }
+    },
+    "membership": [
+      "archive/gameplay/inventory"
+    ]
   },
   {
     "kind": "Item",
