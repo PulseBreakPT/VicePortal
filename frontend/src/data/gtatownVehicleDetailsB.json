@@ -212,5 +212,97 @@
       "GTA Town acquisition methods": "Military grounds; acquisition may trigger a wanted level.",
       "Source confidence": "not yet confirmed by two sources."
     }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Hulls Pontoon",
+    "source": "https://gtatown.com/garage/vehicles/hulls-pontoon",
+    "attributes": {
+      "GTA Town acquisition methods": "Docks or marinas; 17 fixed parking spots; cannot be registered.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Immortal BMX",
+    "source": "https://gtatown.com/garage/vehicles/immortal-bmx",
+    "attributes": {
+      "GTA Town acquisition methods": "Unique spawn; Tuff BMX base model, Pedal Power standout set."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Inflatable Flamingo",
+    "source": "https://gtatown.com/garage/vehicles/inflatable-flamingo",
+    "attributes": {
+      "GTA Town acquisition methods": "Post-story phone cheat menu; unlock by destroying 50 cocaine flamingos. Not listed in Progress vehicle list.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Kyle's Mallard",
+    "source": "https://gtatown.com/garage/vehicles/kyles-mallard",
+    "attributes": {
+      "GTA Town acquisition methods": "Unique spawn; Lapwing Mallard base model, Retro standout set."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Lapwing Mallard",
+    "source": "https://gtatown.com/garage/vehicles/lapwing-mallard",
+    "attributes": {
+      "GTA Town acquisition methods": "Airfields, helipads or hangars; 2 fixed parking spots. Post-story cheat unlock: 5 vehicle challenges."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Lapwing Streamer 216-C",
+    "source": "https://gtatown.com/garage/vehicles/lapwing-streamer-216-c",
+    "attributes": {
+      "GTA Town acquisition methods": "Airfields, helipads or hangars.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Meteor Duster",
+    "source": "https://gtatown.com/garage/vehicles/meteor-duster",
+    "attributes": {
+      "GTA Town acquisition methods": "Unique spawn; Bottcher Duster base model, Retro standout set.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Rugger Cretacean",
+    "source": "https://gtatown.com/garage/vehicles/rugger-cretacean",
+    "attributes": {
+      "GTA Town acquisition methods": "Docks or marinas; 8 fixed parking spots; cannot be registered."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Rugger Hemming",
+    "source": "https://gtatown.com/garage/vehicles/rugger-hemming",
+    "attributes": {
+      "GTA Town acquisition methods": "Docks or marinas; 18 fixed parking spots; cannot be registered."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Tuff BMX",
+    "source": "https://gtatown.com/garage/vehicles/tuff-bmx",
+    "attributes": {
+      "GTA Town acquisition methods": "Found parked or ridden; 95 fixed parking spots. Post-story cheat unlock: 5 fitness challenges."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Walter Crusher",
+    "source": "https://gtatown.com/garage/vehicles/walter-crusher",
+    "attributes": {
+      "GTA Town acquisition methods": "Found parked or ridden; 9 fixed parking spots."
+    }
   }
 ]
