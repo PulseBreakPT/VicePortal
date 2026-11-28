@@ -1,0 +1,416 @@
+[
+  {
+    "id": "/style/brands/alpha-gas",
+    "title": "Alpha Gas",
+    "url": "https://gtatown.com/style/brands/alpha-gas",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/stores/alpha-gas",
+    "title": "Alpha Gas",
+    "url": "https://gtatown.com/style/stores/alpha-gas",
+    "meta": "Gas station · 2 locations · 9 pieces"
+  },
+  {
+    "id": "/style/clothes/alpha-gas-beanie",
+    "title": "Alpha Gas Beanie",
+    "url": "https://gtatown.com/style/clothes/alpha-gas-beanie",
+    "meta": "hat · Alpha Gas · $17"
+  },
+  {
+    "id": "/style/clothes/alpha-gas-logo-t-shirt",
+    "title": "Alpha Gas Logo T-Shirt",
+    "url": "https://gtatown.com/style/clothes/alpha-gas-logo-t-shirt",
+    "meta": "top · Alpha Gas · $13"
+  },
+  {
+    "id": "/style/clothes/alpha-gas-slogan-t-shirt",
+    "title": "Alpha Gas Slogan T-Shirt",
+    "url": "https://gtatown.com/style/clothes/alpha-gas-slogan-t-shirt",
+    "meta": "top · Alpha Gas · $18"
+  },
+  {
+    "id": "/style/clothes/alpha-gas-graphic-t-shirt",
+    "title": "Alpha Gas Graphic T-Shirt",
+    "url": "https://gtatown.com/style/clothes/alpha-gas-graphic-t-shirt",
+    "meta": "top · Alpha Gas · $15"
+  },
+  {
+    "id": "/style/clothes/vintage-alpha-gas-shirt",
+    "title": "Vintage Alpha Gas Shirt",
+    "url": "https://gtatown.com/style/clothes/vintage-alpha-gas-shirt",
+    "meta": "top · $25 · Alpha Gas"
+  },
+  {
+    "id": "/style/brands/gill-joy",
+    "title": "Gill Joy",
+    "url": "https://gtatown.com/style/brands/gill-joy",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/clothes/gill-joy-swim-shorts",
+    "title": "Gill Joy Swim Shorts",
+    "url": "https://gtatown.com/style/clothes/gill-joy-swim-shorts",
+    "meta": "pair of shorts · Gill Joy · $11 · Bargain World"
+  },
+  {
+    "id": "/style/clothes/gill-joy-graphic-tank",
+    "title": "Gill Joy Graphic Tank",
+    "url": "https://gtatown.com/style/clothes/gill-joy-graphic-tank",
+    "meta": "top · Gill Joy · $35 · Chuck's Tackle & Shot"
+  },
+  {
+    "id": "/style/clothes/gill-joy-baggy-board-shorts",
+    "title": "Gill Joy Baggy Board Shorts",
+    "url": "https://gtatown.com/style/clothes/gill-joy-baggy-board-shorts",
+    "meta": "pair of shorts · Gill Joy · $18 · Bargain World"
+  },
+  {
+    "id": "/style/outfits/navy-sweater-and-red-shorts-74fd1",
+    "title": "Navy sweater and red shorts",
+    "url": "https://gtatown.com/style/outfits/navy-sweater-and-red-shorts-74fd1",
+    "meta": "Jason outfit · $38"
+  },
+  {
+    "id": "/style/outfits/shirtless-with-red-swim-shorts-2ab9f",
+    "title": "Shirtless with red swim shorts",
+    "url": "https://gtatown.com/style/outfits/shirtless-with-red-swim-shorts-2ab9f",
+    "meta": "Jason outfit · $33"
+  },
+  {
+    "id": "/style/outfits/shirtless-with-red-board-shorts-and-shades-c4adc",
+    "title": "Shirtless with red board shorts and shades",
+    "url": "https://gtatown.com/style/outfits/shirtless-with-red-board-shorts-and-shades-c4adc",
+    "meta": "Jason outfit · $40"
+  },
+  {
+    "id": "/style/brands/mud-club",
+    "title": "Mud Club",
+    "url": "https://gtatown.com/style/brands/mud-club",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/stores/thrillbilly-mud-club",
+    "title": "Thrillbilly Mud Club",
+    "url": "https://gtatown.com/style/stores/thrillbilly-mud-club",
+    "meta": "Casual and street · 1 location · 21 pieces"
+  },
+  {
+    "id": "/style/clothes/mud-club-cap",
+    "title": "Mud Club Cap",
+    "url": "https://gtatown.com/style/clothes/mud-club-cap",
+    "meta": "hat · Mud Club · $21 · Thrillbilly Mud Club"
+  },
+  {
+    "id": "/style/clothes/mud-club-girls-tank",
+    "title": "Mud Club Girls Tank",
+    "url": "https://gtatown.com/style/clothes/mud-club-girls-tank",
+    "meta": "top · Mud Club · $29 to $33 · Thrillbilly Mud Club"
+  },
+  {
+    "id": "/style/clothes/mud-club-swim-shorts",
+    "title": "Mud Club Swim Shorts",
+    "url": "https://gtatown.com/style/clothes/mud-club-swim-shorts",
+    "meta": "piece of swimwear · Mud Club · $36 · Thrillbilly Mud Club"
+  },
+  {
+    "id": "/style/clothes/thrillbilly-mud-club-t-shirt",
+    "title": "Thrillbilly Mud Club T-Shirt",
+    "url": "https://gtatown.com/style/clothes/thrillbilly-mud-club-t-shirt",
+    "meta": "top · Thrillbilly · $31 · Thrillbilly Mud Club"
+  },
+  {
+    "id": "/style/clothes/thrillbilly-mud-club-bikini-top",
+    "title": "Thrillbilly Mud Club Bikini Top",
+    "url": "https://gtatown.com/style/clothes/thrillbilly-mud-club-bikini-top",
+    "meta": "piece of swimwear · Thrillbilly · $35 · Thrillbilly Mud Club"
+  },
+  {
+    "id": "/style/stores/quickscope",
+    "title": "Quickscope",
+    "url": "https://gtatown.com/style/stores/quickscope",
+    "meta": "Gun store · 1 location · 14 pieces"
+  },
+  {
+    "id": "/style/clothes/quickscope-cap",
+    "title": "Quickscope Cap",
+    "url": "https://gtatown.com/style/clothes/quickscope-cap",
+    "meta": "hat · $23 · Quickscope"
+  },
+  {
+    "id": "/style/clothes/quickscope-t-shirt",
+    "title": "Quickscope T-Shirt",
+    "url": "https://gtatown.com/style/clothes/quickscope-t-shirt",
+    "meta": "top · $21 · Quickscope"
+  },
+  {
+    "id": "/style/outfits/all-black-tactical-vest-mask-and-cap-c8873",
+    "title": "All-black tactical vest, mask and cap",
+    "url": "https://gtatown.com/style/outfits/all-black-tactical-vest-mask-and-cap-c8873",
+    "meta": "Jason outfit · $518"
+  },
+  {
+    "id": "/style/outfits/gray-camo-quarter-zip-black-pants-and-a-cap-528b7",
+    "title": "Gray camo quarter-zip, black pants and a cap",
+    "url": "https://gtatown.com/style/outfits/gray-camo-quarter-zip-black-pants-and-a-cap-528b7",
+    "meta": "Jason outfit · $287"
+  },
+  {
+    "id": "/style/clothes/ripstop-cargo-shorts",
+    "title": "Ripstop Cargo Shorts",
+    "url": "https://gtatown.com/style/clothes/ripstop-cargo-shorts",
+    "meta": "pair of shorts · $28 · Chuck's Tackle & Shot, Quickscope"
+  },
+  {
+    "id": "/style/clothes/3-hole-ski-mask",
+    "title": "3 Hole Ski Mask",
+    "url": "https://gtatown.com/style/clothes/3-hole-ski-mask",
+    "meta": "mask · $41 · Quickscope"
+  },
+  {
+    "id": "/style/stores/this-that",
+    "title": "This / That",
+    "url": "https://gtatown.com/style/stores/this-that",
+    "meta": "Casual and street · 4 locations · 73 pieces"
+  },
+  {
+    "id": "/style/brands/this-that",
+    "title": "THIS/THAT",
+    "url": "https://gtatown.com/style/brands/this-that",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/clothes/this-that-apparel",
+    "title": "This/That Apparel",
+    "url": "https://gtatown.com/style/clothes/this-that-apparel",
+    "meta": "set outfit · THIS/THAT · $420 · This / That"
+  },
+  {
+    "id": "/style/clothes/this-that-swim-shorts",
+    "title": "THIS/THAT Swim Shorts",
+    "url": "https://gtatown.com/style/clothes/this-that-swim-shorts",
+    "meta": "piece of swimwear · THIS/THAT · $79 to $85 · This / That"
+  },
+  {
+    "id": "/style/clothes/this-that-embroidered-tank",
+    "title": "This/That Embroidered Tank",
+    "url": "https://gtatown.com/style/clothes/this-that-embroidered-tank",
+    "meta": "top · THIS/THAT · $80 · This / That"
+  },
+  {
+    "id": "/style/clothes/this-that-zip-neck-sweater",
+    "title": "THIS/THAT Zip Neck Sweater",
+    "url": "https://gtatown.com/style/clothes/this-that-zip-neck-sweater",
+    "meta": "top · THIS/THAT · $145 · This / That"
+  },
+  {
+    "id": "/style/clothes/this-that-long-sleeve-t-shirt",
+    "title": "THIS/THAT Long Sleeve T-Shirt",
+    "url": "https://gtatown.com/style/clothes/this-that-long-sleeve-t-shirt",
+    "meta": "top · THIS/THAT · $95 · This / That"
+  },
+  {
+    "id": "/style/stores/black-eagle",
+    "title": "Black Eagle",
+    "url": "https://gtatown.com/style/stores/black-eagle",
+    "meta": "Gun store · 1 location · 8 pieces"
+  },
+  {
+    "id": "/style/clothes/bandana",
+    "title": "Bandana",
+    "url": "https://gtatown.com/style/clothes/bandana",
+    "meta": "hat · $23 to $75 · Barrage Gun Supply, Biff's Gun Supply"
+  },
+  {
+    "id": "/style/stores/slinger",
+    "title": "Slinger",
+    "url": "https://gtatown.com/style/stores/slinger",
+    "meta": "Casual and street · 6 locations · 28 pieces"
+  },
+  {
+    "id": "/style/brands/slinger",
+    "title": "Slinger",
+    "url": "https://gtatown.com/style/brands/slinger",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/clothes/slinger-cap",
+    "title": "Slinger Cap",
+    "url": "https://gtatown.com/style/clothes/slinger-cap",
+    "meta": "hat · Slinger · $40"
+  },
+  {
+    "id": "/style/clothes/slinger-tank",
+    "title": "Slinger Tank",
+    "url": "https://gtatown.com/style/clothes/slinger-tank",
+    "meta": "top · Slinger · $62"
+  },
+  {
+    "id": "/style/clothes/slinger-apparel",
+    "title": "Slinger Apparel",
+    "url": "https://gtatown.com/style/clothes/slinger-apparel",
+    "meta": "set outfit · Slinger · $359"
+  },
+  {
+    "id": "/style/clothes/slinger-cutoffs",
+    "title": "Slinger Cutoffs",
+    "url": "https://gtatown.com/style/clothes/slinger-cutoffs",
+    "meta": "pair of shorts · Slinger · $60"
+  },
+  {
+    "id": "/style/clothes/slinger-sweatshirt",
+    "title": "Slinger Sweatshirt",
+    "url": "https://gtatown.com/style/clothes/slinger-sweatshirt",
+    "meta": "top · Slinger · $75"
+  },
+  {
+    "id": "/style/clothes/slinger-logo-tank",
+    "title": "Slinger Logo Tank",
+    "url": "https://gtatown.com/style/clothes/slinger-logo-tank",
+    "meta": "top · Slinger · $55"
+  },
+  {
+    "id": "/style/clothes/slinger-skinny-jeans",
+    "title": "Slinger Skinny Jeans",
+    "url": "https://gtatown.com/style/clothes/slinger-skinny-jeans",
+    "meta": "pair of pants · Slinger · $89"
+  },
+  {
+    "id": "/style/stores/basic-beach",
+    "title": "Basic Beach",
+    "url": "https://gtatown.com/style/stores/basic-beach",
+    "meta": "Casual and street · 2 locations · 4 pieces"
+  },
+  {
+    "id": "/style/outfits/blue-ombre-swimsuit-3b5f4",
+    "title": "Blue ombre swimsuit",
+    "url": "https://gtatown.com/style/outfits/blue-ombre-swimsuit-3b5f4",
+    "meta": "Lucia outfit · $38"
+  },
+  {
+    "id": "/style/outfits/royal-blue-tee-and-gray-shorts-aba56",
+    "title": "Royal blue tee and gray shorts",
+    "url": "https://gtatown.com/style/outfits/royal-blue-tee-and-gray-shorts-aba56",
+    "meta": "Jason outfit · $35"
+  },
+  {
+    "id": "/style/outfits/teal-sequin-swimsuit-and-bandana-9bdf5",
+    "title": "Teal sequin swimsuit and bandana",
+    "url": "https://gtatown.com/style/outfits/teal-sequin-swimsuit-and-bandana-9bdf5",
+    "meta": "Lucia outfit · $38"
+  },
+  {
+    "id": "/style/outfits/ombre-blue-swimsuit-and-white-cap-cb0a9",
+    "title": "Ombre blue swimsuit and white cap",
+    "url": "https://gtatown.com/style/outfits/ombre-blue-swimsuit-and-white-cap-cb0a9",
+    "meta": "Lucia outfit · $38"
+  },
+  {
+    "id": "/style/outfits/green-sequin-swimsuit-and-a-bandana-ccc48",
+    "title": "Green sequin swimsuit and a bandana",
+    "url": "https://gtatown.com/style/outfits/green-sequin-swimsuit-and-a-bandana-ccc48",
+    "meta": "Lucia outfit · $38"
+  },
+  {
+    "id": "/style/stores/waves",
+    "title": "Waves",
+    "url": "https://gtatown.com/style/stores/waves",
+    "meta": "Casual and street · 1 location · 26 pieces"
+  },
+  {
+    "id": "/style/clothes/brave-the-wave-t-shirt",
+    "title": "Brave The Wave T-Shirt",
+    "url": "https://gtatown.com/style/clothes/brave-the-wave-t-shirt",
+    "meta": "top · $12 · Nifty Threads Island Wear"
+  },
+  {
+    "id": "/style/clothes/crystal-wave-graphic-t-shirt",
+    "title": "Crystal Wave Graphic T-Shirt",
+    "url": "https://gtatown.com/style/clothes/crystal-wave-graphic-t-shirt",
+    "meta": "top · $28 · Xero Gas"
+  },
+  {
+    "id": "/style/clothes/vice-city-graphic-sweatshirt",
+    "title": "Vice City Graphic Sweatshirt",
+    "url": "https://gtatown.com/style/clothes/vice-city-graphic-sweatshirt",
+    "meta": "top · $63 · Billie's Key Lento Gift Shop, Key Lento Kahuna"
+  },
+  {
+    "id": "/style/stores/zenith",
+    "title": "Zenith",
+    "url": "https://gtatown.com/style/stores/zenith",
+    "meta": "Casual and street · 1 location · 7 pieces"
+  },
+  {
+    "id": "/style/brands/zenith",
+    "title": "Zenith",
+    "url": "https://gtatown.com/style/brands/zenith",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/clothes/zenith-tank",
+    "title": "Zenith Tank",
+    "url": "https://gtatown.com/style/clothes/zenith-tank",
+    "meta": "top · Zenith · $59"
+  },
+  {
+    "id": "/style/clothes/zenith-sports-t-shirt",
+    "title": "Zenith Sports T-Shirt",
+    "url": "https://gtatown.com/style/clothes/zenith-sports-t-shirt",
+    "meta": "top · Zenith · $55"
+  },
+  {
+    "id": "/style/clothes/zenith-slim-fit-t-shirt",
+    "title": "Zenith Slim Fit T-Shirt",
+    "url": "https://gtatown.com/style/clothes/zenith-slim-fit-t-shirt",
+    "meta": "top · Zenith · $55"
+  },
+  {
+    "id": "/style/outfits/sage-tank-and-light-jeans-f2355",
+    "title": "Sage tank and light jeans",
+    "url": "https://gtatown.com/style/outfits/sage-tank-and-light-jeans-f2355",
+    "meta": "Jason outfit · $78"
+  },
+  {
+    "id": "/style/stores/leroy-s",
+    "title": "Leroy's",
+    "url": "https://gtatown.com/style/stores/leroy-s",
+    "meta": "Casual and street · 1 location · 23 pieces"
+  },
+  {
+    "id": "/style/clothes/key-lento-palms-tank",
+    "title": "Key Lento Palms Tank",
+    "url": "https://gtatown.com/style/clothes/key-lento-palms-tank",
+    "meta": "top · $38 · Key Lento Kahuna, Leroy's"
+  },
+  {
+    "id": "/style/clothes/leonida-mermaid-top",
+    "title": "Leonida Mermaid Top",
+    "url": "https://gtatown.com/style/clothes/leonida-mermaid-top",
+    "meta": "top · $46 · Leroy's"
+  },
+  {
+    "id": "/style/stores/nola",
+    "title": "Nola",
+    "url": "https://gtatown.com/style/stores/nola",
+    "meta": "Formal · 5 locations · 47 pieces"
+  },
+  {
+    "id": "/style/clothes/nola-finery",
+    "title": "Nola Finery",
+    "url": "https://gtatown.com/style/clothes/nola-finery",
+    "meta": "set outfit · $2,229 · Nola"
+  },
+  {
+    "id": "/style/clothes/nola-refined-attire",
+    "title": "Nola Refined Attire",
+    "url": "https://gtatown.com/style/clothes/nola-refined-attire",
+    "meta": "set outfit"
+  },
+  {
+    "id": "/style/clothes/nola-relaxed-attire",
+    "title": "Nola Relaxed Attire",
+    "url": "https://gtatown.com/style/clothes/nola-relaxed-attire",
+    "meta": "set outfit"
+  }
+]
