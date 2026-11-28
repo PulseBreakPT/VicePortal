@@ -1,0 +1,404 @@
+[
+  {
+    "id": "/style/stores/a-and-l-surf-mart",
+    "title": "A&L Surf Mart",
+    "url": "https://gtatown.com/style/stores/a-and-l-surf-mart",
+    "meta": "Gas station · 1 location · 10 pieces"
+  },
+  {
+    "id": "/style/clothes/square-shades",
+    "title": "Square Shades",
+    "url": "https://gtatown.com/style/clothes/square-shades",
+    "meta": "pair of glasses · $15 to $17 · 247, A&L Surf Mart"
+  },
+  {
+    "id": "/style/clothes/rectangle-shades",
+    "title": "Rectangle Shades",
+    "url": "https://gtatown.com/style/clothes/rectangle-shades",
+    "meta": "pair of glasses · $18 to $34 · 247, A&L Surf Mart"
+  },
+  {
+    "id": "/style/clothes/thick-wrap-shades",
+    "title": "Thick Wrap Shades",
+    "url": "https://gtatown.com/style/clothes/thick-wrap-shades",
+    "meta": "pair of glasses · $21 to $40 · 247, A&L Surf Mart"
+  },
+  {
+    "id": "/style/clothes/sports-wrap-shades",
+    "title": "Sports Wrap Shades",
+    "url": "https://gtatown.com/style/clothes/sports-wrap-shades",
+    "meta": "pair of glasses · $17 to $25 · 247, A&L Surf Mart"
+  },
+  {
+    "id": "/style/clothes/vice-city-graphic-tank",
+    "title": "Vice City Graphic Tank",
+    "url": "https://gtatown.com/style/clothes/vice-city-graphic-tank",
+    "meta": "top · $39 to $42 · A&L Surf Mart, Beach Please"
+  },
+  {
+    "id": "/style/clothes/vice-city-outline-tank",
+    "title": "Vice City Outline Tank",
+    "url": "https://gtatown.com/style/clothes/vice-city-outline-tank",
+    "meta": "top · $18 to $33 · A&L Surf Mart, Beach Please"
+  },
+  {
+    "id": "/style/clothes/skinny-thong-flip-flops",
+    "title": "Skinny Thong Flip Flops",
+    "url": "https://gtatown.com/style/clothes/skinny-thong-flip-flops",
+    "meta": "pair of shoes · $12 to $134 · A&L Surf Mart, Billie's Key Lento Gift Shop"
+  },
+  {
+    "id": "/style/stores/dock-ring-souvenirs",
+    "title": "Dock Ring Souvenirs",
+    "url": "https://gtatown.com/style/stores/dock-ring-souvenirs",
+    "meta": "Casual and street · 1 location · 9 pieces"
+  },
+  {
+    "id": "/style/clothes/beaded-bracelet-set",
+    "title": "Beaded Bracelet Set",
+    "url": "https://gtatown.com/style/clothes/beaded-bracelet-set",
+    "meta": "piece of jewelry · $12 · Coquina Box, Dock Ring Souvenirs"
+  },
+  {
+    "id": "/style/clothes/braided-leather-bracelet",
+    "title": "Braided Leather Bracelet",
+    "url": "https://gtatown.com/style/clothes/braided-leather-bracelet",
+    "meta": "piece of jewelry · $20 · Coquina Box, Dock Ring Souvenirs"
+  },
+  {
+    "id": "/style/clothes/slab-skinny-thong-flip-flops",
+    "title": "Slab Skinny Thong Flip Flops",
+    "url": "https://gtatown.com/style/clothes/slab-skinny-thong-flip-flops",
+    "meta": "pair of shoes · Slab · $19 · Billie's Key Lento Gift Shop, Coquina Box"
+  },
+  {
+    "id": "/style/stores/key-lento-kahuna",
+    "title": "Key Lento Kahuna",
+    "url": "https://gtatown.com/style/stores/key-lento-kahuna",
+    "meta": "Casual and street · 1 location · 31 pieces"
+  },
+  {
+    "id": "/style/clothes/key-lento-palms-tank",
+    "title": "Key Lento Palms Tank",
+    "url": "https://gtatown.com/style/clothes/key-lento-palms-tank",
+    "meta": "top · $38 · Key Lento Kahuna, Leroy's"
+  },
+  {
+    "id": "/style/clothes/key-lento-palms-t-shirt",
+    "title": "Key Lento Palms T-Shirt",
+    "url": "https://gtatown.com/style/clothes/key-lento-palms-t-shirt",
+    "meta": "top · $41 · Key Lento Kahuna"
+  },
+  {
+    "id": "/style/clothes/basic-swimsuit",
+    "title": "Basic Swimsuit",
+    "url": "https://gtatown.com/style/clothes/basic-swimsuit",
+    "meta": "piece of swimwear · $38 to $45 · Key Lento Kahuna, Larry's Lagoon"
+  },
+  {
+    "id": "/style/clothes/split-hem-swim-shorts",
+    "title": "Split Hem Swim Shorts",
+    "url": "https://gtatown.com/style/clothes/split-hem-swim-shorts",
+    "meta": "piece of swimwear · $28 to $33 · Key Lento Kahuna, Larry's Lagoon"
+  },
+  {
+    "id": "/style/clothes/vice-city-graphic-sweatshirt",
+    "title": "Vice City Graphic Sweatshirt",
+    "url": "https://gtatown.com/style/clothes/vice-city-graphic-sweatshirt",
+    "meta": "top · $63 · Billie's Key Lento Gift Shop, Key Lento Kahuna"
+  },
+  {
+    "id": "/style/clothes/leonida-cocktail-top",
+    "title": "Leonida Cocktail Top",
+    "url": "https://gtatown.com/style/clothes/leonida-cocktail-top",
+    "meta": "top · $54 · Key Lento Kahuna"
+  },
+  {
+    "id": "/style/stores/larry-s-lagoon",
+    "title": "Larry's Lagoon",
+    "url": "https://gtatown.com/style/stores/larry-s-lagoon",
+    "meta": "Casual and street · 1 location · 28 pieces"
+  },
+  {
+    "id": "/style/clothes/kenny-brewster-parrot-t-shirt",
+    "title": "Kenny Brewster Parrot T-Shirt",
+    "url": "https://gtatown.com/style/clothes/kenny-brewster-parrot-t-shirt",
+    "meta": "top · $49 · Larry's Lagoon"
+  },
+  {
+    "id": "/style/clothes/vice-city-ocean-beach-t-shirt",
+    "title": "Vice City Ocean Beach T-Shirt",
+    "url": "https://gtatown.com/style/clothes/vice-city-ocean-beach-t-shirt",
+    "meta": "top · $45 · Larry's Lagoon"
+  },
+  {
+    "id": "/style/clothes/ocean-beach-graphic-sweatshirt",
+    "title": "Ocean Beach Graphic Sweatshirt",
+    "url": "https://gtatown.com/style/clothes/ocean-beach-graphic-sweatshirt",
+    "meta": "top · $55 · Larry's Lagoon"
+  },
+  {
+    "id": "/style/stores/barrage-gun-supply",
+    "title": "Barrage Gun Supply",
+    "url": "https://gtatown.com/style/stores/barrage-gun-supply",
+    "meta": "Gun store · 1 location · 8 pieces"
+  },
+  {
+    "id": "/style/clothes/bandana",
+    "title": "Bandana",
+    "url": "https://gtatown.com/style/clothes/bandana",
+    "meta": "hat · $23 to $75 · Barrage Gun Supply, Biff's Gun Supply"
+  },
+  {
+    "id": "/style/clothes/body-armor",
+    "title": "Body Armor",
+    "url": "https://gtatown.com/style/clothes/body-armor",
+    "meta": "piece · $250 to $275 · Barrage Gun Supply, Biff's Gun Supply"
+  },
+  {
+    "id": "/style/clothes/neck-gaiter",
+    "title": "Neck Gaiter",
+    "url": "https://gtatown.com/style/clothes/neck-gaiter",
+    "meta": "accessory · $35 to $40 · Barrage Gun Supply, Biff's Gun Supply"
+  },
+  {
+    "id": "/style/clothes/parachute-bag",
+    "title": "Parachute Bag",
+    "url": "https://gtatown.com/style/clothes/parachute-bag",
+    "meta": "piece · $300 · Barrage Gun Supply, Biff's Gun Supply"
+  },
+  {
+    "id": "/style/stores/biff-s-gun-supply",
+    "title": "Biff's Gun Supply",
+    "url": "https://gtatown.com/style/stores/biff-s-gun-supply",
+    "meta": "Gun store · 1 location · 8 pieces"
+  },
+  {
+    "id": "/style/stores/island-dreams",
+    "title": "Boat Charter",
+    "url": "https://gtatown.com/style/stores/island-dreams",
+    "meta": "Casual and street · 1 location · 6 pieces"
+  },
+  {
+    "id": "/style/brands/island-dreams",
+    "title": "Boat Charter",
+    "url": "https://gtatown.com/style/brands/island-dreams",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/clothes/island-dreams-cap",
+    "title": "Boat Charter Cap",
+    "url": "https://gtatown.com/style/clothes/island-dreams-cap",
+    "meta": "hat · Boat Charter · $30"
+  },
+  {
+    "id": "/style/clothes/island-dreams-tank",
+    "title": "Boat Charter Tank",
+    "url": "https://gtatown.com/style/clothes/island-dreams-tank",
+    "meta": "top · Boat Charter · $32"
+  },
+  {
+    "id": "/style/clothes/island-dreams-swimsuit",
+    "title": "Boat Charter Swimsuit",
+    "url": "https://gtatown.com/style/clothes/island-dreams-swimsuit",
+    "meta": "one-piece · Boat Charter · $35"
+  },
+  {
+    "id": "/style/clothes/island-dreams-t-shirt",
+    "title": "Boat Charter T-Shirt",
+    "url": "https://gtatown.com/style/clothes/island-dreams-t-shirt",
+    "meta": "top · Boat Charter · $35"
+  },
+  {
+    "id": "/style/clothes/island-dreams-swim-shorts",
+    "title": "Boat Charter Swim Shorts",
+    "url": "https://gtatown.com/style/clothes/island-dreams-swim-shorts",
+    "meta": "pair of pants · Boat Charter · $20"
+  },
+  {
+    "id": "/style/brands/santo-capra",
+    "title": "Santo Capra",
+    "url": "https://gtatown.com/style/brands/santo-capra",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/clothes/santo-capra-jeans",
+    "title": "Santo Capra Jeans",
+    "url": "https://gtatown.com/style/clothes/santo-capra-jeans",
+    "meta": "pair of pants · Santo Capra · $25"
+  },
+  {
+    "id": "/style/clothes/santo-capra-slides",
+    "title": "Santo Capra Slides",
+    "url": "https://gtatown.com/style/clothes/santo-capra-slides",
+    "meta": "pair of shoes · Santo Capra · $25"
+  },
+  {
+    "id": "/style/clothes/santo-capra-swimsuit",
+    "title": "Santo Capra Swimsuit",
+    "url": "https://gtatown.com/style/clothes/santo-capra-swimsuit",
+    "meta": "piece of swimwear · Santo Capra · $25"
+  },
+  {
+    "id": "/style/clothes/santo-capra-crop-top",
+    "title": "Santo Capra Crop Top",
+    "url": "https://gtatown.com/style/clothes/santo-capra-crop-top",
+    "meta": "top · Santo Capra · $25"
+  },
+  {
+    "id": "/style/clothes/santo-capra-low-tops",
+    "title": "Santo Capra Low Tops",
+    "url": "https://gtatown.com/style/clothes/santo-capra-low-tops",
+    "meta": "pair of shoes · Santo Capra · $56"
+  },
+  {
+    "id": "/style/clothes/santo-capra-sports-bra",
+    "title": "Santo Capra Sports Bra",
+    "url": "https://gtatown.com/style/clothes/santo-capra-sports-bra",
+    "meta": "top · Santo Capra · $25"
+  },
+  {
+    "id": "/style/clothes/santo-capra-swim-shorts",
+    "title": "Santo Capra Swim Shorts",
+    "url": "https://gtatown.com/style/clothes/santo-capra-swim-shorts",
+    "meta": "pair of shorts · Santo Capra · $25"
+  },
+  {
+    "id": "/style/clothes/santo-capra-track-shorts",
+    "title": "Santo Capra Track Shorts",
+    "url": "https://gtatown.com/style/clothes/santo-capra-track-shorts",
+    "meta": "pair of shorts · Santo Capra · $25"
+  },
+  {
+    "id": "/style/clothes/santo-capra-lounge-shorts",
+    "title": "Santo Capra Lounge Shorts",
+    "url": "https://gtatown.com/style/clothes/santo-capra-lounge-shorts",
+    "meta": "pair of shorts · Santo Capra · $25"
+  },
+  {
+    "id": "/style/brands/phil-s-ammu-nation",
+    "title": "Phil's Ammu-Nation",
+    "url": "https://gtatown.com/style/brands/phil-s-ammu-nation",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/stores/phil-s-ammu-nation",
+    "title": "Phil's Ammu-Nation",
+    "url": "https://gtatown.com/style/stores/phil-s-ammu-nation",
+    "meta": "Gun store · 1 location · 22 pieces"
+  },
+  {
+    "id": "/style/clothes/phil-s-ammu-nation-cap",
+    "title": "Phil's Ammu-Nation Cap",
+    "url": "https://gtatown.com/style/clothes/phil-s-ammu-nation-cap",
+    "meta": "hat · Phil's Ammu-Nation · $23"
+  },
+  {
+    "id": "/style/clothes/phil-s-ammu-nation-tank",
+    "title": "Phil's Ammu-Nation Tank",
+    "url": "https://gtatown.com/style/clothes/phil-s-ammu-nation-tank",
+    "meta": "top · Phil's Ammu-Nation · $35"
+  },
+  {
+    "id": "/style/clothes/phil-s-ammu-nation-t-shirt",
+    "title": "Phil's Ammu-Nation T-Shirt",
+    "url": "https://gtatown.com/style/clothes/phil-s-ammu-nation-t-shirt",
+    "meta": "top · Phil's Ammu-Nation · $40 · De'Luge Swimwear, Phil's Ammu-Nation"
+  },
+  {
+    "id": "/style/brands/hoxxoh",
+    "title": "Hoxxoh",
+    "url": "https://gtatown.com/style/brands/hoxxoh",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/clothes/hoxxoh-hoodie",
+    "title": "Hoxxoh Hoodie",
+    "url": "https://gtatown.com/style/clothes/hoxxoh-hoodie",
+    "meta": "top · Hoxxoh · $405 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/hoxxoh-ski-mask",
+    "title": "Hoxxoh Ski Mask",
+    "url": "https://gtatown.com/style/clothes/hoxxoh-ski-mask",
+    "meta": "mask · Hoxxoh · $205 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/hoxxoh-long-sleeve-top",
+    "title": "Hoxxoh Long Sleeve Top",
+    "url": "https://gtatown.com/style/clothes/hoxxoh-long-sleeve-top",
+    "meta": "top · Hoxxoh · $335 · Stock 305"
+  },
+  {
+    "id": "/style/stores/urban-legendz",
+    "title": "Urban Legendz",
+    "url": "https://gtatown.com/style/stores/urban-legendz",
+    "meta": "Casual and street · 1 location · 27 pieces"
+  },
+  {
+    "id": "/style/clothes/strapz-cap",
+    "title": "Strapz Cap",
+    "url": "https://gtatown.com/style/clothes/strapz-cap",
+    "meta": "hat · $43 · Urban Legendz"
+  },
+  {
+    "id": "/style/clothes/crosstown-cap",
+    "title": "Crosstown Cap",
+    "url": "https://gtatown.com/style/clothes/crosstown-cap",
+    "meta": "hat · $47 · Urban Legendz"
+  },
+  {
+    "id": "/style/clothes/aaa-cat-t-shirt",
+    "title": "AAA Cat T-Shirt",
+    "url": "https://gtatown.com/style/clothes/aaa-cat-t-shirt",
+    "meta": "top · AAA · $57 · Urban Legendz"
+  },
+  {
+    "id": "/style/clothes/aaa-track-pants",
+    "title": "AAA Track Pants",
+    "url": "https://gtatown.com/style/clothes/aaa-track-pants",
+    "meta": "pair of pants · AAA · $64 · Urban Legendz"
+  },
+  {
+    "id": "/style/clothes/aaa-cat-crop-top",
+    "title": "AAA Cat Crop Top",
+    "url": "https://gtatown.com/style/clothes/aaa-cat-crop-top",
+    "meta": "top · AAA · $79 · Urban Legendz"
+  },
+  {
+    "id": "/style/clothes/aaa-smoke-t-shirt",
+    "title": "AAA Smoke T-Shirt",
+    "url": "https://gtatown.com/style/clothes/aaa-smoke-t-shirt",
+    "meta": "top · AAA · $55 · Urban Legendz"
+  },
+  {
+    "id": "/style/clothes/aaa-tiger-t-shirt",
+    "title": "AAA Tiger T-Shirt",
+    "url": "https://gtatown.com/style/clothes/aaa-tiger-t-shirt",
+    "meta": "top · AAA · $52 · Urban Legendz"
+  },
+  {
+    "id": "/style/stores/little-cuba-souvenirs",
+    "title": "Little Cuba Souvenirs",
+    "url": "https://gtatown.com/style/stores/little-cuba-souvenirs",
+    "meta": "Casual and street · 1 location · 24 pieces"
+  },
+  {
+    "id": "/style/clothes/cuban-shirt",
+    "title": "Cuban Shirt",
+    "url": "https://gtatown.com/style/clothes/cuban-shirt",
+    "meta": "top · $339 to $395 · De'Luge Swimwear, Ferruccio Tucci"
+  },
+  {
+    "id": "/style/clothes/hawaiian-shirt",
+    "title": "Hawaiian Shirt",
+    "url": "https://gtatown.com/style/clothes/hawaiian-shirt",
+    "meta": "top · $20 to $78 · Aline's Thrift Store, Bargain World"
+  },
+  {
+    "id": "/style/clothes/raffia-panama-hat",
+    "title": "Raffia Panama Hat",
+    "url": "https://gtatown.com/style/clothes/raffia-panama-hat",
+    "meta": "hat · $25 to $65 · Billie's Key Lento Gift Shop, Little Cuba Souvenirs"
+  }
+]
