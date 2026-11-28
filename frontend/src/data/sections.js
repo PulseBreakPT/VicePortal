@@ -1,3 +1,4 @@
+import { masterSections } from './masterArchive.mjs';
 import { image, officialUrl } from './catalog';
 
 // Stable IDs keep bookmarks and links intact when editorial copy changes.
@@ -105,7 +106,8 @@ const rows = [
   ['about','About Vice Atlas','game','An atlas with a point of view. Behind the atlas: an independent GTA VI fan guide, its sources, credits and local storage.','leonida_keys_01'],
 ];
 
-export const sections = rows.map(([id, title, parent, description, photo]) => ({ id, title, parent, description, image: image(photo), path: `/${id}`, kind: 'Section', source: officialUrl }));
+const legacySections = rows.map(([id, title, parent, description, photo]) => ({ id, title, parent, description, image: image(photo), path: `/${id}`, kind: 'Section', source: officialUrl }));
+export const sections = [...legacySections, ...masterSections];
 export const sectionById = Object.fromEntries(sections.map(s => [s.id, s]));
 export const childrenOf = id => sections.filter(s => s.parent === id);
 export const rootSections = sections.filter(s => !s.parent);
