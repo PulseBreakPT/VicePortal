@@ -1,0 +1,263 @@
+[
+  {
+    "title": "Captain Starlings Barber Shop",
+    "area": "Ambrosia, Kelly County",
+    "mapId": "barber-ambrosia-ohaircut018",
+    "map": "https://gtatown.com/map?m=barber-ambrosia-ohaircut018",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": "Unisex"
+  },
+  {
+    "title": "Hair By Clair",
+    "area": "Capri, Mariana County",
+    "mapId": "capri-shop-l2380",
+    "map": "https://gtatown.com/map?m=capri-shop-l2380",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": "Beauty Salon"
+  },
+  {
+    "title": "Kurt's Barber Shop",
+    "area": "Hamlet, Vice-Dale County",
+    "mapId": "kurt-s-barber-shop",
+    "map": "https://gtatown.com/map?m=kurt-s-barber-shop",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": null
+  },
+  {
+    "title": "Sara's Unisex Salon",
+    "area": "Hamlet, Vice-Dale County",
+    "mapId": "hamlet-shop-l361",
+    "map": "https://gtatown.com/map?m=hamlet-shop-l361",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": null
+  },
+  {
+    "title": "Barnacle Beauties",
+    "area": "Key Lento, Mariana County",
+    "mapId": "random-event-key-lento-orandomevent036",
+    "map": "https://gtatown.com/map?m=random-event-key-lento-orandomevent036",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": "Unisex"
+  },
+  {
+    "title": "Pearl House Hair Salon",
+    "area": "Port Gellhorn, Kelly County",
+    "mapId": "barber-port-gellhorn-ohaircut017",
+    "map": "https://gtatown.com/map?m=barber-port-gellhorn-ohaircut017",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": "Unisex"
+  },
+  {
+    "title": "Gabriel Wexler",
+    "area": "Vice Beach, Vice-Dale County",
+    "mapId": "barber-ocean-beach-east-ohaircut015",
+    "map": "https://gtatown.com/map?m=barber-ocean-beach-east-ohaircut015",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": "Beauty Salon"
+  },
+  {
+    "title": "Oomph!",
+    "area": "Vice Beach, Vice-Dale County",
+    "mapId": "barber-washington-beach-ohaircut014",
+    "map": "https://gtatown.com/map?m=barber-washington-beach-ohaircut014",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": "Beauty Salon"
+  },
+  {
+    "title": "A Better You",
+    "area": "Vice City, Leonard County",
+    "mapId": "barber-belville-ohaircut016",
+    "map": "https://gtatown.com/map?m=barber-belville-ohaircut016",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": "Beauty Salon"
+  },
+  {
+    "title": "AU Courant",
+    "area": "Vice City, Vice-Dale County",
+    "mapId": "au-courant-unisex-hair-salon",
+    "map": "https://gtatown.com/map?m=au-courant-unisex-hair-salon",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": "Unisex"
+  },
+  {
+    "title": "Bellissima Hair Salon",
+    "area": "Vice City, Vice-Dale County",
+    "mapId": "barber-tisha-wocka-ohaircut009",
+    "map": "https://gtatown.com/map?m=barber-tisha-wocka-ohaircut009",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": "Unisex"
+  },
+  {
+    "title": "Clip & Fade",
+    "area": "Vice City, Vice-Dale County",
+    "mapId": "barber-stockyard-ohaircut013",
+    "map": "https://gtatown.com/map?m=barber-stockyard-ohaircut013",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": "Barber"
+  },
+  {
+    "title": "Crosstown Cutz",
+    "area": "Vice City, Vice-Dale County",
+    "mapId": "barber-crosstown-ohaircut012",
+    "map": "https://gtatown.com/map?m=barber-crosstown-ohaircut012",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": "Barber"
+  },
+  {
+    "title": "Fabiola's Unisex Salon",
+    "area": "Vice City, Vice-Dale County",
+    "mapId": "barber-rockridge-ohaircut011",
+    "map": "https://gtatown.com/map?m=barber-rockridge-ohaircut011",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": "Beauty Salon"
+  },
+  {
+    "title": "Onyx Salon",
+    "area": "Vice City, Vice-Dale County",
+    "mapId": "vice-decor-district-building-l2867",
+    "map": "https://gtatown.com/map?m=vice-decor-district-building-l2867",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": null
+  },
+  {
+    "title": "Salon Belle",
+    "area": "Vice City, Vice-Dale County",
+    "mapId": "barber-rockridge-ohaircut010",
+    "map": "https://gtatown.com/map?m=barber-rockridge-ohaircut010",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": "Beauty Salon"
+  },
+  {
+    "title": "Salon Pérez",
+    "area": "Vice City, Vice-Dale County",
+    "mapId": "barber-little-cuba-ohaircut008",
+    "map": "https://gtatown.com/map?m=barber-little-cuba-ohaircut008",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": "Barber"
+  },
+  {
+    "title": "Lori Scott Hair & Beauty",
+    "area": "Watson Bay, Mariana County",
+    "mapId": "watson-bay-building-l726",
+    "map": "https://gtatown.com/map?m=watson-bay-building-l726",
+    "source": "https://gtatown.com/shops/hair-salons",
+    "section": "archive/stores-services/beauty-salons",
+    "style": "Unisex"
+  },
+  {
+    "title": "Blood Sugar Tattoo",
+    "area": "Ambrosia, Kelly County",
+    "mapId": "tattoo-parlour-ambrosia-otattoo010",
+    "map": "https://gtatown.com/map?m=tattoo-parlour-ambrosia-otattoo010",
+    "source": "https://gtatown.com/shops/tattoo-parlors",
+    "section": "archive/stores-services/tattoo-studios",
+    "style": "Lettering"
+  },
+  {
+    "title": "Layin' Ink",
+    "area": "Hamlet, Vice-Dale County",
+    "mapId": "tattoo-parlour-hamlet-otattoo003",
+    "map": "https://gtatown.com/map?m=tattoo-parlour-hamlet-otattoo003",
+    "source": "https://gtatown.com/shops/tattoo-parlors",
+    "section": "archive/stores-services/tattoo-studios",
+    "style": "Black & Gray"
+  },
+  {
+    "title": "The Inked Mermaid",
+    "area": "Key Lento, Mariana County",
+    "mapId": "atm-key-lento-oatm190",
+    "map": "https://gtatown.com/map?m=atm-key-lento-oatm190",
+    "source": "https://gtatown.com/shops/tattoo-parlors",
+    "section": "archive/stores-services/tattoo-studios",
+    "style": "American Traditional"
+  },
+  {
+    "title": "Freedom Tattoo",
+    "area": "Port Gellhorn, Kelly County",
+    "mapId": "port-gellhorn-building-l965",
+    "map": "https://gtatown.com/map?m=port-gellhorn-building-l965",
+    "source": "https://gtatown.com/shops/tattoo-parlors",
+    "section": "archive/stores-services/tattoo-studios",
+    "style": "Stick & Poke"
+  },
+  {
+    "title": "Electric Fang Tattoo",
+    "area": "Stockyard, Vice City, Vice-Dale County",
+    "mapId": "electric-fang-tattoo",
+    "map": "https://gtatown.com/map?m=electric-fang-tattoo",
+    "source": "https://gtatown.com/shops/tattoo-parlors",
+    "section": "archive/stores-services/tattoo-studios",
+    "style": null
+  },
+  {
+    "title": "Black Spot Tattoo",
+    "area": "Vice Beach, Vice-Dale County",
+    "mapId": "tattoo-parlour-ocean-beach-east-otattoo009",
+    "map": "https://gtatown.com/map?m=tattoo-parlour-ocean-beach-east-otattoo009",
+    "source": "https://gtatown.com/shops/tattoo-parlors",
+    "section": "archive/stores-services/tattoo-studios",
+    "style": "Geometric & Blackwork"
+  },
+  {
+    "title": "Cross My Heart Tattoos",
+    "area": "Vice City, Vice-Dale County",
+    "mapId": "tattoo-parlour-crosstown-otattoo006",
+    "map": "https://gtatown.com/map?m=tattoo-parlour-crosstown-otattoo006",
+    "source": "https://gtatown.com/shops/tattoo-parlors",
+    "section": "archive/stores-services/tattoo-studios",
+    "style": "New School"
+  },
+  {
+    "title": "Dominion Ink",
+    "area": "Vice City, Vice-Dale County",
+    "mapId": "tattoo-parlour-downtown-otattoo004",
+    "map": "https://gtatown.com/map?m=tattoo-parlour-downtown-otattoo004",
+    "source": "https://gtatown.com/shops/tattoo-parlors",
+    "section": "archive/stores-services/tattoo-studios",
+    "style": "Anime"
+  },
+  {
+    "title": "Hyper Ink",
+    "area": "Vice City, Vice-Dale County",
+    "mapId": "tattoo-parlour-little-cuba-otattoo005",
+    "map": "https://gtatown.com/map?m=tattoo-parlour-little-cuba-otattoo005",
+    "source": "https://gtatown.com/shops/tattoo-parlors",
+    "section": "archive/stores-services/tattoo-studios",
+    "style": "Illustrative"
+  },
+  {
+    "title": "Inkomplete Tattoo Co.",
+    "area": "Vice City, Vice-Dale County",
+    "mapId": "tattoo-parlour-rockridge-otattoo007",
+    "map": "https://gtatown.com/map?m=tattoo-parlour-rockridge-otattoo007",
+    "source": "https://gtatown.com/shops/tattoo-parlors",
+    "section": "archive/stores-services/tattoo-studios",
+    "style": "Old School"
+  },
+  {
+    "title": "Twa Ponya Tattoo",
+    "area": "Vice City, Vice-Dale County",
+    "mapId": "tattoo-parlour-la-perle-otattoo008",
+    "map": "https://gtatown.com/map?m=tattoo-parlour-la-perle-otattoo008",
+    "source": "https://gtatown.com/shops/tattoo-parlors",
+    "section": "archive/stores-services/tattoo-studios",
+    "style": "Neo-Traditional"
+  }
+]
