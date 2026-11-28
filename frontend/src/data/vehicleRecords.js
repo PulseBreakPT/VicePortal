@@ -1,3 +1,5 @@
+import crosscheckFacts from './vehicleCrosscheckFacts.json';
+import {progressFacts,indexTitles,fillVehicleFacts} from './vehicleProgressFacts.mjs';
 import vehicleDetailsA from './gtatownVehicleDetailsA.json';
 import vehicleDetailsB from './gtatownVehicleDetailsB.json';
 import feed from './vehicleFeed.json';
@@ -10,13 +12,23 @@ const known=value=>value!==null&&value!==undefined&&value!==''&&value!==unknown;
 const placeholder='/images/vehicle-placeholder.svg';
 const bar=value=>value===null?unknown:value.toFixed(1)+' / 10';
 export const vehicleFeedInfo={complete:feed.complete===true,count:feed.rows.length,publicListCount:feed.publicListCount,hiddenCount:feed.hiddenCount,checkedOn:feed.checkedOn,source:feed.source,license:feed.license};
-export const vehicleRecords=normalizeVehicles(feed).map(row=>{
+const normalized=normalizeVehicles(feed);
+const titleIndex=indexTitles(normalized);
+const rawBySource=new Map(feed.rows.map(r=>[r.url,r]));
+const crosscheckBySource=new Map(crosscheckFacts.rows.map(r=>[r.source,r]));
+export const vehicleRecords=normalized.map(row=>{
  const ref=imageRefs[row.id];
  const imageRef=ref&&vehicleSlug(ref.title)===vehicleSlug(row.title)?ref:null;
  const detail=detailBySource.get(row.source);
  const reviewed=detail?.title===row.title?detail:null;
- const attributes={Manufacturer:row.maker,Class:row.category,Type:row.type||unknown,'Speed rating':bar(row.speed),Acceleration:bar(row.acceleration),Handling:bar(row.handling),'Off-road rating':bar(row.offroad),Strength:bar(row.strength),'Top speed':row.topSpeedMph===null?unknown:row.topSpeedMph+' mph (source-reported)',Price:row.price||unknown,Availability:row.availability||unknown,Seats:row.seats||unknown,Drive:row.drive||unknown,'Real-life reference':row.realLife||unknown,Edition:row.edition||unknown,'Game mode':row.mode||unknown};
+ let attributes={Manufacturer:row.maker,Class:row.category,Type:row.type||unknown,'Speed rating':bar(row.speed),Acceleration:bar(row.acceleration),Handling:bar(row.handling),'Off-road rating':bar(row.offroad),Strength:bar(row.strength),'Top speed':row.topSpeedMph===null?unknown:row.topSpeedMph+' mph (source-reported)',Price:row.price||unknown,Availability:row.availability||unknown,Seats:row.seats||unknown,Drive:row.drive||unknown,'Real-life reference':row.realLife||unknown,Edition:row.edition||unknown,'Game mode':row.mode||unknown};
  if(reviewed)for(const [field,value] of Object.entries(reviewed.attributes))if(known(value)&&!known(attributes[field]))attributes[field]=value;
+ const raw=rawBySource.get(row.source);
+ const progress=raw?progressFacts(raw,titleIndex):{};
+ attributes=fillVehicleFacts(attributes,progress);
+ const candidate=crosscheckBySource.get(row.source);
+ const crosscheck=candidate?.title===row.title?candidate:null;
+ if(crosscheck)attributes=fillVehicleFacts(attributes,crosscheck.attributes);
  // Keep individual source-reported ratings consistent with the existing performance meters.
  const recoveredRating=(field,existing)=>{
   if(existing!==null&&existing!==undefined)return existing;
@@ -39,6 +51,6 @@ export const vehicleRecords=normalizeVehicles(feed).map(row=>{
   vehicleStats,
   paragraphs:['Ratings are GTA Town’s reported 0–10 stat bars, not measured km/h, acceleration times or independently verified performance. Missing fields are left unverified.','Source: gtatown.com. Public vehicle data distributed under CC BY 4.0; adapted to the Vice Atlas dossier format.'],
   dataCredit:'GTA Town',verifiedOn:feed.checkedOn,
-  relatedSources:[{label:'GTA Town public data and licence',url:'https://gtatown.com/creators/data'},...(imageRef?[{label:'Vehicle image reference',url:imageRef.source}]:[]),...(reviewed?[{label:'GTA Town · individual vehicle reference',url:reviewed.source}]:[])]
+  relatedSources:[{label:'GTA Town public data and licence',url:'https://gtatown.com/creators/data'},...(imageRef?[{label:'Vehicle image reference',url:imageRef.source}]:[]),...(reviewed?[{label:'GTA Town · individual vehicle reference',url:reviewed.source}]:[]),...(crosscheck?.refs||[])].filter((ref,i,all)=>all.findIndex(r=>r.url===ref.url)===i)
  };
 });
