@@ -14,7 +14,7 @@ const bar=value=>value===null?unknown:value.toFixed(1)+' / 10';
 export const vehicleFeedInfo={complete:feed.complete===true,count:feed.rows.length,publicListCount:feed.publicListCount,hiddenCount:feed.hiddenCount,checkedOn:feed.checkedOn,source:feed.source,license:feed.license};
 const normalized=normalizeVehicles(feed);
 const titleIndex=indexTitles(normalized);
-const rawBySource=new Map(feed.rows.map(r=>[r.url,r]));
+const rawBySource=new Map(normalized.map((r,i)=>[r.source,feed.rows[i]]));
 const crosscheckBySource=new Map(crosscheckFacts.rows.map(r=>[r.source,r]));
 export const vehicleRecords=normalized.map(row=>{
  const ref=imageRefs[row.id];
