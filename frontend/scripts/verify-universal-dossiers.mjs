@@ -167,5 +167,23 @@ try{
  const credit={title:'Example',kind:'Character',source:'https://example.com',description:'Actor is credited for Host in Station, in the radio host cast. This credit establishes the role and programme, not an independent story biography.',attributes:{Role:'Host','Credited performer':'Actor',Programme:'Station','Media category':'Radio host'}};
  const creditView=buildDossier(credit,true);
  assert.equal(creditView.sections[0].paragraphs[0],'This credit establishes the role and programme, not an independent story biography.');
+ // Explicit gaps are a measurable lower bound, not a claim that every absent field applies.
+ const coverage={total:entries.length,withExplicitGaps:0,withoutExplicitGaps:0,withNoDocumentedAttributes:0,byKind:{},records:[]};
+ const metadata=new Set(['Dossier completeness','Source confidence','Source classification','Source-listed details']);
+ for(const e of entries){
+  const attributes=Object.entries(e.attributes||{}).filter(([name])=>!metadata.has(name));
+  const unknown=attributes.filter(([,v])=>isUnknown(v)||v==null||(Array.isArray(v)&&!v.length)||(v&&typeof v==='object'&&!Object.keys(v).length)).map(([name])=>name);
+  const known=attributes.length-unknown.length;
+  const group=coverage.byKind[e.kind]||={total:0,withExplicitGaps:0,withoutExplicitGaps:0,withNoDocumentedAttributes:0,missingFields:0};
+  group.total++;
+  if(unknown.length){coverage.withExplicitGaps++;group.withExplicitGaps++;group.missingFields+=unknown.length;}
+  else{coverage.withoutExplicitGaps++;group.withoutExplicitGaps++;}
+  if(!known){coverage.withNoDocumentedAttributes++;group.withNoDocumentedAttributes++;}
+  if(unknown.length||!known)coverage.records.push({id:e.id,title:e.title,kind:e.kind,path:e.path,missing:unknown,documentedFields:known});
+ }
+ assert.equal(coverage.withExplicitGaps+coverage.withoutExplicitGaps,entries.length);
+ coverage.records.sort((a,b)=>b.missing.length-a.missing.length||a.documentedFields-b.documentedFields||a.id.localeCompare(b.id));
+ await writeFile(join(root,'dossierCompletenessAudit.json'),JSON.stringify(coverage,null,2)+'\n');
+ console.log('DOSSIER_COMPLETENESS '+JSON.stringify({...coverage,records:undefined}));
  console.log('Universal dossier audit:',JSON.stringify(report));
 }finally{await rm(dir,{recursive:true,force:true});}

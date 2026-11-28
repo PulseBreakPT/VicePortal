@@ -460,5 +460,157 @@
       "GTA Town acquisition methods": "Unique Swamp Style variant; fixed spawn.",
       "Source confidence": "not yet confirmed by two sources."
     }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Dragonfly Volatus",
+    "source": "https://gtatown.com/garage/vehicles/dragonfly-volatus",
+    "attributes": {
+      "GTA Town acquisition methods": "Unique Ultra-Luxe variant; fixed spawn.",
+      "Seats": 4,
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Dump",
+    "source": "https://gtatown.com/garage/vehicles/dump",
+    "attributes": {
+      "GTA Town acquisition methods": "Found in traffic or parking; 74 fixed parking spots. GTA Town lists registration.",
+      "Seats": 1,
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Glacier Erode",
+    "source": "https://gtatown.com/garage/vehicles/glacier-erode",
+    "attributes": {
+      "Real-life reference": "2024 Santa Cruz Vala; Mondraker Crafty (base model: Del Perro Erode)",
+      "GTA Town acquisition methods": "Unique Pedal Power variant; fixed spawn.",
+      "Seats": 1,
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Hulls Sea Enchantress",
+    "source": "https://gtatown.com/garage/vehicles/hulls-sea-enchantress",
+    "attributes": {
+      "Real-life reference": "2005 Crusader Boats 34' GFY; Newton 36' Dive Special",
+      "GTA Town acquisition methods": "Docks or marinas; cannot be registered."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "HVY Bulldozer",
+    "source": "https://gtatown.com/garage/vehicles/hvy-bulldozer",
+    "attributes": {
+      "GTA Town acquisition methods": "Found in traffic or parking; 269 fixed parking spots; registration available. Post-story cheat unlock: discover in Progress menu.",
+      "Drive": "AWD"
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Lacewing Maverick",
+    "source": "https://gtatown.com/garage/vehicles/lacewing-maverick",
+    "attributes": {
+      "Real-life reference": "Bell 206L LongRanger; Eurocopter AS350 (base model: Buckingham Maverick)",
+      "GTA Town acquisition methods": "Unique Law & Order variant; fixed spawn.",
+      "Seats": 4,
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Lapwing Nimbus",
+    "source": "https://gtatown.com/garage/vehicles/lapwing-nimbus",
+    "attributes": {
+      "GTA Town acquisition methods": "Airfields, helipads or hangars; 1 fixed parking spot.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Lure Predator L20S",
+    "source": "https://gtatown.com/garage/vehicles/lure-predator-l20s",
+    "attributes": {
+      "Real-life reference": "Contender 25 Bay; Key West 188 BR",
+      "GTA Town acquisition methods": "Docks or marinas; 272 fixed parking spots; cannot be registered. Appears in Unwanted Attention."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Lure Predator L35P",
+    "source": "https://gtatown.com/garage/vehicles/lure-predator-l35p",
+    "attributes": {
+      "Real-life reference": "Contender 25T; Contender 24S",
+      "GTA Town acquisition methods": "Docks or marinas; cannot be registered. Appears in Gone Fishing."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Maibatsu Caddy",
+    "source": "https://gtatown.com/garage/vehicles/maibatsu-caddy",
+    "attributes": {
+      "Real-life reference": "Club Car Precedent",
+      "GTA Town acquisition methods": "Found in traffic or parking; 53 fixed parking spots; registration available."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "MTL CR5013",
+    "source": "https://gtatown.com/garage/vehicles/mtl-cr5013",
+    "attributes": {
+      "Real-life reference": "1978 American 9299",
+      "GTA Town acquisition methods": "Found in traffic or parking; 66 fixed parking spots; registration available.",
+      "Drive": "AWD"
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Nagasaki Sea Sparrow",
+    "source": "https://gtatown.com/garage/vehicles/nagasaki-sea-sparrow",
+    "attributes": {
+      "GTA Town acquisition methods": "Airfields, helipads or hangars; 7 fixed parking spots, 5 mapped. Appears in Swamped at Big Pine. Post-story cheat unlock: 5 exploration challenges."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Rugger Rhode",
+    "source": "https://gtatown.com/garage/vehicles/rugger-rhode",
+    "attributes": {
+      "Real-life reference": "Contender 39ST",
+      "GTA Town acquisition methods": "Docks or marinas; 165 fixed parking spots; cannot be registered."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Seashark Azure",
+    "source": "https://gtatown.com/garage/vehicles/seashark-azure",
+    "attributes": {
+      "Real-life reference": "Sea-Doo Spark",
+      "GTA Town acquisition methods": "Docks or marinas; 63 fixed parking spots; cannot be registered."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Seashark Sedna",
+    "source": "https://gtatown.com/garage/vehicles/seashark-sedna",
+    "attributes": {
+      "Real-life reference": "Sea-Doo RXT-X 300; Yamaha WaveRunner",
+      "GTA Town acquisition methods": "Docks or marinas; 50 fixed parking spots, 1 mapped; cannot be registered."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Shining Sea Squalo",
+    "source": "https://gtatown.com/garage/vehicles/shining-sea-squalo",
+    "attributes": {
+      "Real-life reference": "Riviera M290 Sports Cruiser; Bayliner 2855 Ciera Sunbridge (base model: Shitzu Squalo)",
+      "GTA Town acquisition methods": "Unique Patriot variant; fixed spawn.",
+      "Seats": 2,
+      "Source confidence": "not yet confirmed by two sources."
+    }
   }
 ]
