@@ -13,6 +13,14 @@ const key = name => aliases.get(identity(name)) || identity(name);
 const known = x => x!==null && x!==undefined && String(x).trim()!=='' && !/^(?:not verified|unknown|unverified|not (?:known|confirmed|available|documented)|pending|n\/a\b|tbd\b|-+$|—$)/i.test(String(x).trim());
 const ratings = ['Damage','Accuracy','Handling','Range'];
 const indexes = new Map([...arsenalBase.map(row=>[key(row[0]),{type:'base',row}]),...arsenalVariants.map(row=>[key(row[0]),{type:'variant',row}]),...arsenalOther.map(row=>[key(row[0]),{type:'other',row}])]);
+export const arsenalTechnical = [["Scorpio Nipper .38","1.2","2000*","3","1","40","1","1","85","30"],["Girardi ES9","1.2","2000*","2","1.35","40","1","1","85","30"],["Klose K17","1.2","370","3","1","40","1","1","85","30"],["Duke 1922","1.2","2000*","2","1","40","1","1","95","40"],["Girardi ES18","1.2","2000*","2","1.35","40","1","1","85","30"],["Klose K17 MCD","1.2","370","3","1","40","1","1","85","30"],["Schlamm DRX","1.2","2000*","2","1","40","1","1","95","40"],["Fairview Kalinga .50","5","2000*","3","1.5","40","1","1","125","150"],["Wortham WCR1","2","310","3","1","40","1","2","125","80"],["Hawk & Little .38","4","250","2","1.2","40","1","2","125","100"],["Duke Mustang .357","4","310","2","1","40","1","2","125","125"],["Scorpio Akulus","5","310","2","1","40","1","2","125","175"],["Hawk & Little Morgan","4","310","2","1","40","1","2","125","100"],["Wortham W-10","1.2","250","2.5","1","40","1","2","125","40"],["Zhang Wu Type 9","1.2","540","2.5","1","40","1","2","125","40"],["BZI Vatra","1.2","250","2.5","1","40","1","2","125","40"],["Deever Tech DSG","1.2","250","2.5","1","40","1","2","125","40"],["Schlamm DW-9","1.2","540","2","1","40","1","3","125","40"],["Vom Feuer VF5","1.2","540","2","1","40","1","3","125","40"],["Vom Feuer VF5C","1.2","540","2","1","40","1","3","125","40"],["AdB PD-90","1.2","540","2","1","40","1","3","125","40"],["Fortune & Son Moreland 850","0.01","200","2","1","30","1","3","250","40"],["Fortune & Son Gorse 425","0.01","200","2","1","30","1","3","250","40"],["Shrewsbury Drifter","0.01","200","2","1","30","1","3","250","40"],["Shrewsbury Hobo","0.01","200","2","1","30","1","3","250","40"],["Mason & Keen Longshot","0.01","200","2","1","30","1","3","250","40"],["Mason & Keen Shortstraw","0.01","200","2","1","30","1","3","250","40"],["Girardi AZ1200","0.01","200","2","1","30","1","3","250","30"],["Girardi Verro","0.01","200","2","1","30","1","3","250","30"],["Girardi Super400","0.01","200","2","1","30","1","3","250","30"],["Kozlov KVGA-12","0.01","200","2","1","30","1","3","250","30"],["Goodwin Comshot 12","0.01","200","2","1","30","1","3","250","30"],["Kozlov KZ-59","2","420","2.5","1.15","80","1.3","4","100","50"],["Duke 556","2","720","2.5","1","80","1.3","3","100","50"],["Kozlov Hind","2","420","2.5","1.15","80","1.3","4","100","50"],["Hillinger Heathen","2","720","2","1.35","80","1.3","4","100","60"],["AdB FRA","2","720","2.5","1.25","80","1.3","4","100","80"],["Vom Feuer VF-G1","2","720","2.5","1","80","1.3","3","100","50"],["Hawk & Little Mediator","5.4","830","2","1","80","1.3","5","100","100"],["Wortham W-14","5.4","2000*","2","1","80","1.3","4","100","100"],["Hillinger M306","5.4","830","2","1","80","1.3","5","100","150"],["Hillinger M306 TMR","5.4","830","2","1","80","1.3","5","100","150"],["Wortham W-22","1","2000*","2","1","80","1.3","4","100","100"],["Fortune & Son Laird 350","6","4000","2","1","200","1","7","175","200"],["Shrewsbury SM-69","6","4000","2.5","1","200","1","7","175","200"],["Shrewsbury SMS-01","6","4000","2.5","1","200","1","7","175","200"],["Fairview FF-SR","8.5","860","3","1","200","1","7","175","200"],["Fairview FF-50","8.5","860","3","1","200","1","7","275","175"],["AdB M350","7.5","810","2","1","40","1.3","12","200","80"],["Goodwin LMG 6","5.4","810","2","1","40","1.3","12","200","80"],["Hillinger Boomer","-","510","2","1","25","1.3","2","100","1100"],["Deever Tech GLR40","-","510","2","1","25","1.3","2","100","1100"],["Hauners H-AT","-","510","2","1","45","1.3","14","100","1100"],["Flash Grenade","-","-","-","-","35","-","1","50","0"],["Frag Grenade","-","-","-","-","35","-","1","50","0"],["Molotov","-","-","-","-","35","-","1","50","0"],["Sticky Bomb","-","-","-","-","35","-","1","50","0"],["Baseball Bat","-","-","-","-","20","-","-","110","0"],["Brass Knuckles","-","-","-","-","11.5","-","-","120","0"],["Machete","-","-","-","-","20","-","1","100","0"],["Pool Cue","-","-","-","-","10","-","1","110","0"],["Switchblade","-","-","-","-","20","-","-","100","0"]];
+export const arsenalAlternativeRatings = [["Shrewsbury SMS-01","7.8","4.6","7.5"],["The Guardian ES18","4.5","7.7","4.8"],["Scrapper VF5C","4.5","7.2","3.7"],["Raul's Heist 556","6.5","6.5","5.6"],["Little Cuba Hind","3.5","6.8","4.5"],["Island Poacher FF-50","8.2","2.4","7.5"],["Internal Affairs FF-SR","8.5","2.9","7.8"],["Fincredible Laird 350","8.4","4","8.5"],["Hunter's Laird 350","8.8","4","8"],["Kingfishers Laird 350","7.8","4.8","7.5"],["Mister Mangrove Laird 350","8.4","4.7","7.8"],["Twin's Laird 350","8.3","4.6","7.1"],["Cruel Huntsman's SM-69","8.4","3.2","8.3"],["Firebreak SM-69","8.4","2.6","8.9"],["Killtelligence SM-69","8.4","2.7","8.4"],["Gun Nut SMS-01","8.6","3.2","8.3"],["IAA SMS-01","8.8","2.8","8.9"]];
+const technicalByName=new Map(arsenalTechnical.map(row=>[key(row[0]),row]));
+const alternateByName=new Map(arsenalAlternativeRatings.map(row=>[key(row[0]),row]));
+export const gameParameterNames=['In-game penetration parameter','In-game projectile speed parameter','In-game spread parameter','In-game recoil recovery parameter','In-game lock-on parameter','Reload animation multiplier','In-game weight class','In-game force on NPCs','In-game force on vehicles'];
+const ballisticsSource={label:'GTA VI Explorer · raw game parameters (Xbox build 1.0.2.1)',url:'https://six.mics.dev/weapons/ballistics'};
+const familyNames=Object.fromEntries(arsenalBase.flatMap(row=>[row[0].split(' ').slice(1).join(' '),row[0].split(' ').slice(2).join(' '),row[0].split(' ').slice(3).join(' ')].filter(Boolean).map(name=>[name,row[0]])));
+Object.assign(familyNames,{'H&L .38':'Hawk & Little .38','1922':'Duke 1922','556':'Duke 556','LMG 6':'Goodwin LMG 6','Kalinga .50':'Fairview Kalinga .50','Mediator':'Hawk & Little Mediator','Nipper .38':'Scorpio Nipper .38','Mustang .357':'Duke Mustang .357','WCR1':'Wortham WCR1','Laird 350':'Fortune & Son Laird 350','Moreland 850':'Fortune & Son Moreland 850','Gorse 425':'Fortune & Son Gorse 425'});
 const menuSources = [
  {label:'GamesDB · weapon ratings and variants (Arsenal V2 reference)',url:'https://gamesdb.gg/gta-6/weapons?variants=1'},
  {label:'GTA6Wiki · weapon catalogue (Arsenal V2 reference)',url:'https://www.gta6wiki.eu/weapons/all/'},
@@ -28,7 +36,18 @@ const stock = {S:'Standard stock','S/C':'Standard / Hunting stock',E:'Expanded s
 const validPrice = value => /^\d+$/.test(value);
 export function enrichArsenal(entries){
  return entries.map(item=>{
-  const hit = indexes.get(key(item.title)); if(!hit)return item;
+  const hit = indexes.get(key(item.title));
+  if(!hit){
+   // The creator catalogue confirms the identity and edition of these two separate bonus variants.
+   // Their individual stats are not in the audit; never inherit the base revolver's ratings.
+   if(["Jason's Hawk & Little Morgan","Lucia's Hawk & Little Morgan"].includes(item.title)&&/ultimate/i.test(String(item.attributes?.Edition||''))){
+    const attributes={...item.attributes};
+    if(!known(attributes['Base weapon family']))attributes['Base weapon family']='Hawk & Little Morgan';
+    if(!known(attributes['Customization']))attributes['Customization']='Not modifiable (GTA Town variant summary)';
+    return {...item,attributes,arsenalAudit:{date:'2026-11-28',source:'GTA Town creator catalogue',matchedTitle:null,added:Object.keys(attributes).filter(k=>!(k in (item.attributes||{}))),conflicts:[]}};
+   }
+   return item;
+  }
   const {type,row}=hit, attributes={...item.attributes}, added=[], conflicts=[];
   const normalized = value=>String(value??'').trim().replace(/^(?:\$)/,'').replace(/\s*\/\s*10$/,'');
   const fill=(name,value)=>{
@@ -57,14 +76,34 @@ export function enrichArsenal(entries){
     if(known(mode))fill('Firing mode',mode);
     if(known(damage))fill('Technical damage (game data)',damage.replace('/p',' per projectile'));
     if(known(capacity)&&capacity!==row[5])fill('Technical capacity (game data)',capacity);
-   } else {fill('Base weapon family',row[1]);location=row[8];}
+   } else {fill('Base weapon family',familyNames[row[1]]||row[1]);location=row[8];if(item.title==='Black Eagle Import M306 TMR')location='Black Eagle warehouse, Balsero (character restriction disputed)';}
   }else{
    location=row[1];price=row[2];
    if(known(row[3]))fill('Technical damage (game data)',row[3]);
   }
   if(validPrice(price))fill('Price',price);
   if(location&&!known(attributes.Availability)&&!known(attributes.Unlock)&&!known(attributes['How to get']))fill('Availability',location);
-  const relatedSources=[...(item.relatedSources||[]),...menuSources,...(type==='variant'||location?uniqueSources:[]),...(type==='base'||known(attributes['Technical damage (game data)'])?[technicalSource]:[])];
+  const rawTechnical=technicalByName.get(key(item.title));
+  if(rawTechnical){
+   rawTechnical.slice(1).forEach((value,i)=>{
+    if(!known(value))return;
+    if(value.endsWith('*'))value=value.slice(0,-1)+' (possible default)';
+    fill(gameParameterNames[i],value);
+   });
+   fill('Evidence scope','Community-extracted GTA VI Xbox game data, build 1.0.2.1. Raw parameters; physical units not confirmed. Reload multiplier is not elapsed reload time.');
+  }
+  const alternate=alternateByName.get(key(item.title));
+  if(alternate){
+   ['Accuracy','Handling','Range'].forEach((field,i)=>{
+    const value=alternate[i+1]+'/10';
+    if(known(attributes[field])&&normalized(attributes[field])!==normalized(value)&&!conflicts.some(x=>x.field===field&&normalized(x.audit)===normalized(value)))conflicts.push({field,existing:attributes[field],audit:value,source:'GamesDB alternative rating'});
+   });
+  }
+  if(conflicts.length){
+   // Preserve original values and expose distinct alternatives only; do not duplicate the main facts.
+   fill('Source discrepancies',conflicts.map(x=>x.field+': '+x.audit+(x.source?' ('+x.source+')':' (Arsenal V2)')).join(' · '));
+  }
+  const relatedSources=[...(item.relatedSources||[]),...menuSources,...(rawTechnical?[ballisticsSource]:[]),...(type==='variant'||location?uniqueSources:[]),...(type==='base'||known(attributes['Technical damage (game data)'])?[technicalSource]:[])];
   const seen=new Set();
   return {...item,attributes,relatedSources:relatedSources.filter(s=>s?.url&&!seen.has(s.url)&&seen.add(s.url)),arsenalAudit:{date:'2026-11-28',source:'Arsenal V2 community audit',matchedTitle:row[0],added,conflicts},verifiedOn:item.verifiedOn};
  });
