@@ -17,7 +17,7 @@ try{
   const esm=source.replace(/(from\s+['"]\.\/)([\w-]+)(['"])/g,'$1$2.mjs$3').replace(/(from\s+['"]\.\/)([\w-]+\.json)(['"])/g,'$1$2.mjs$3');
   await writeFile(join(dir,name.replace(/\.js$/,'.mjs')),esm);
  }
- const {entries,gtaTownExtendedReport}=await import(pathToFileURL(join(dir,'portal.mjs')).href);
+ const {entries,gtaTownExtendedReport,missionEnrichmentReport}=await import(pathToFileURL(join(dir,'portal.mjs')).href);
  const {masterSections,MASTER}=await import(pathToFileURL(join(dir,'masterArchive.mjs')).href);
  const masterIds=new Set(masterSections.map(s=>s.id));
  assert.ok(entries.every(e=>(e.collections||[]).filter(c=>c.startsWith('archive')).every(c=>masterIds.has(c))),'Unregistered master collection');
@@ -34,7 +34,7 @@ try{
  assert.equal(new Set(externalIds).size,externalIds.length,'Duplicate GTA Town source identity');
  console.log('Extended GTA Town:',JSON.stringify({counts:gtaTownExtendedReport.counts,review:gtaTownExtendedReport.review.length,byKind:extended.reduce((m,e)=>(m[e.kind]=(m[e.kind]||0)+1,m),{})}));
  const styleCoverage=gtaTownExtendedReport.styleCoverage;
- assert.ok(styleCoverage.unique>=1011,'Style source coverage regressed');
+ assert.ok(styleCoverage.unique>=1068,'Style source coverage regressed');
  for(const [type,minimum] of Object.entries({clothes:558,outfits:357,stores:56,brands:40})){
   assert.ok(styleCoverage.byType[type].found>=minimum,'Style source coverage regressed: '+type);
  }
@@ -42,7 +42,7 @@ try{
  assert.ok(sourceStyleIds.length>=980,'Style catalogue integration regressed');
  assert.equal(styleCoverage.raw-styleCoverage.duplicateOccurrences,styleCoverage.unique);
  assert.equal(styleCoverage.integratedSourceIds+styleCoverage.unresolvedSourceIds.length,styleCoverage.unique);
- assert.ok(styleCoverage.integratedSourceIds>=1011,'Source identities were not integrated');
+ assert.ok(styleCoverage.integratedSourceIds>=1068,'Source identities were not integrated');
  assert.equal(styleCoverage.byType.stores.remaining,null,'Inconsistent source denominator must not imply completion');
  assert.ok(styleCoverage.byType.stores.sourceCountDiscrepancy>=6);
  const typedStores=entries.filter(e=>e.kind==='Store chain'&&e.attributes?.['Source classification']==='Gun store');
@@ -51,6 +51,49 @@ try{
  console.log('GTA Town style source coverage:',JSON.stringify(styleCoverage));
  const setRecords=entries.filter(e=>e.kind==='Collectible set'&&e.source?.includes('gtatown.com/collectibles/'));
  assert.ok(setRecords.length>=20,'Collection set coverage regressed');
+ const {normalizeVehicles}=await import(pathToFileURL(join(dir,'vehicleNormalizer.mjs')).href);
+ const feed=JSON.parse(await readFile(join(root,'vehicleFeed.json'),'utf8'));
+ const sourceVehicles=normalizeVehicles(feed);
+ const byId=new Map(entries.map(e=>[e.id,e]));
+ for(const v of sourceVehicles){
+  const e=byId.get(v.id);
+  assert.ok(e&&e.kind==='Vehicle',v.id+' missing vehicle dossier');
+  if(v.topSpeedMph!==null)assert.equal(e.attributes['Top speed'],v.topSpeedMph+' mph (source-reported)');
+  if(v.realLife)assert.equal(e.attributes['Real-life reference'],v.realLife);
+  if(v.edition)assert.equal(e.attributes.Edition,v.edition);
+  if(v.mode)assert.equal(e.attributes['Game mode'],v.mode);
+ }
+ const vehicleDetails=await Promise.all(['gtatownVehicleDetailsA.json','gtatownVehicleDetailsB.json'].map(name=>readFile(join(root,name),'utf8').then(JSON.parse)));
+ const vehicleRows=vehicleDetails.flat();
+ assert.equal(new Set(vehicleRows.map(x=>x.source)).size,vehicleRows.length);
+ assert.ok(vehicleRows.length>=20);
+ const lookup=new Map(sourceVehicles.map(v=>[v.source,v]));
+ let reviewedVehicleCount=0;
+ for(const row of vehicleRows){
+  const v=lookup.get(row.source);
+  if(!v||v.title!==row.title)continue;
+  const e=byId.get(v.id);
+  for(const [name,value] of Object.entries(row.attributes)){
+   if(name==='GTA Town acquisition methods')assert.equal(e.attributes[name],value);
+  }
+  reviewedVehicleCount++;
+ }
+ assert.ok(reviewedVehicleCount>=20,'Reviewed vehicle coverage regression');
+ const {enrichMissionRecords}=await import(pathToFileURL(join(dir,'gtatownMissionEnrichment.mjs')).href);
+ const fixtureSource='https://gtatown.com/track/missions/example';
+ const seed=[{id:'m1',kind:'Mission',title:'Example',source:fixtureSource,attributes:{Chapter:'Existing','Reward':'Not verified in this atlas'},path:'/missions/m1'},{id:'m2',kind:'Mission',title:'Example',source:'https://gtatown.com/track/missions/other',attributes:{},path:'/missions/m2'}];
+ const candidate={kind:'Mission',title:'Example',source:fixtureSource,attributes:{Chapter:'Different',Rewards:'$100','Story order':1}};
+ const merged=enrichMissionRecords(seed,[candidate]);
+ assert.equal(merged.counts.matched,1);
+ assert.equal(merged.counts.filled,2);
+ assert.equal(merged.counts.conflicts,1);
+ assert.equal(merged.entries[0].attributes.Chapter,'Existing');
+ assert.equal(merged.entries[0].attributes.Reward,'$100');
+ assert.equal(merged.entries[0].storyOrder,1);
+ assert.equal(merged.entries[1],seed[1]);
+ assert.equal(seed[0].attributes.Reward,'Not verified in this atlas');
+ console.log('Individual mission enrichment:',JSON.stringify({counts:missionEnrichmentReport.counts,review:missionEnrichmentReport.review.length}));
+ console.log('Vehicle field recovery:',JSON.stringify({records:sourceVehicles.length,topSpeed:sourceVehicles.filter(v=>v.topSpeedMph!==null).length,realLife:sourceVehicles.filter(v=>v.realLife).length,edition:sourceVehicles.filter(v=>v.edition).length,mode:sourceVehicles.filter(v=>v.mode).length,individual:reviewedVehicleCount}));
  const masterCoverage=Object.fromEntries(MASTER.map(g=>[g.id,entries.filter(e=>e.collections.some(c=>c==='archive/'+g.id||c.startsWith('archive/'+g.id+'/'))).length]));
  console.log('Master archive production coverage:',JSON.stringify(masterCoverage));
  const report={entries:entries.length,byKind:{},views:0,attributes:0,omissions:{},unknownKinds:[]};
