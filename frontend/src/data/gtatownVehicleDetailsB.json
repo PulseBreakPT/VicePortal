@@ -1,0 +1,102 @@
+[
+  {
+    "kind": "Vehicle",
+    "title": "Bottcher 015A",
+    "source": "https://gtatown.com/garage/vehicles/bottcher-015a",
+    "attributes": {
+      "Real-life reference": "Boeing 767, Boeing 777, Boeing 787",
+      "Game mode": "story",
+      "GTA Town acquisition methods": "steal: Take one from an airfield, helipad or hangar. 1 fixed parking spot.\nsteal: Parked on a military base. Map: https://gtatown.com/map?m=mile-zero-air-station"
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Bottcher 020",
+    "source": "https://gtatown.com/garage/vehicles/bottcher-020",
+    "attributes": {
+      "Real-life reference": "Boeing 747-400, Boeing 747-8i (upper deck)",
+      "Game mode": "story",
+      "GTA Town acquisition methods": "steal: Take one from an airfield, helipad or hangar.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Bottcher Buzzard",
+    "source": "https://gtatown.com/garage/vehicles/bottcher-buzzard",
+    "attributes": {
+      "Game mode": "story",
+      "GTA Town acquisition methods": "steal: On military ground; expect a wanted level.\nsteal: Parked on a military base. Map: https://gtatown.com/map?m=mile-zero-air-station"
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Bottcher Duster",
+    "source": "https://gtatown.com/garage/vehicles/bottcher-duster",
+    "attributes": {
+      "Game mode": "story",
+      "GTA Town acquisition methods": "steal: Take one from an airfield, helipad or hangar. 4 fixed parking spots.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Brimstone Golfer",
+    "source": "https://gtatown.com/garage/vehicles/brimstone-golfer",
+    "attributes": {
+      "Game mode": "story",
+      "GTA Town acquisition methods": "spawn: One-off spawn. Left unlocked.\ncheat: Post-story phone cheat menu (hold L1/LB+R1/RB). Unlock: all sports challenges."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Brute Ripley",
+    "source": "https://gtatown.com/garage/vehicles/brute-ripley",
+    "attributes": {
+      "Game mode": "story",
+      "GTA Town acquisition methods": "steal: Steal from traffic or parking, then register it. 1 fixed parking spot.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Brute Taco Van",
+    "source": "https://gtatown.com/garage/vehicles/brute-taco-van",
+    "attributes": {
+      "Game mode": "story",
+      "GTA Town acquisition methods": "steal: Steal from traffic or parking, then register it. 1 fixed parking spot.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Buckingham Valkyrie",
+    "source": "https://gtatown.com/garage/vehicles/buckingham-valkyrie",
+    "attributes": {
+      "Game mode": "story",
+      "GTA Town acquisition methods": "steal: On military ground; expect a wanted level.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Buckingham Volatus",
+    "source": "https://gtatown.com/garage/vehicles/buckingham-volatus",
+    "attributes": {
+      "Game mode": "story",
+      "GTA Town acquisition methods": "steal: Take one from an airfield, helipad or hangar. 1 fixed parking spot on the map.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Calder CB69",
+    "source": "https://gtatown.com/garage/vehicles/calder-cb69",
+    "attributes": {
+      "Real-life reference": "Horizon Power Catamarans PC60, Hudson Powercat 56",
+      "Game mode": "story",
+      "GTA Town acquisition methods": "steal: Take one from a dock or marina. Can't be registered.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  }
+]
