@@ -1,0 +1,20 @@
+/* Vice Atlas: automotive and ballistic instrument panel. */
+.performance-instruments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 0 16px}
+.performance-instrument{--stat-accent:var(--section-accent,var(--gta-pink));--stat-highlight:var(--gta-cream);min-width:0;padding:16px 16px 12px;border:1px solid var(--night-line);border-radius:11px;background:linear-gradient(145deg,color-mix(in srgb,var(--night-panel) 95%,var(--stat-accent)),var(--night-surface));box-shadow:inset 0 1px 0 #ffffff08;transition:border-color .22s ease,background-color .22s ease}
+.performance-instrument[data-tone="sunset"]{--stat-accent:var(--gta-peach);--stat-highlight:var(--gta-pink)}
+.performance-instrument[data-tone="coral"]{--stat-accent:var(--gta-coral);--stat-highlight:var(--gta-peach)}
+.performance-instrument[data-tone="aqua"]{--stat-accent:var(--gta-turquoise);--stat-highlight:var(--gta-cream)}
+.performance-instrument[data-tone="violet"]{--stat-accent:var(--gta-lilac);--stat-highlight:var(--gta-pink)}
+.performance-instrument-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}
+.performance-metric{display:flex;align-items:center;gap:9px;min-width:0;color:var(--night-text);font:500 13px/1.35 'Barlow Condensed',sans-serif;letter-spacing:.055em;text-transform:uppercase}
+.performance-icon{display:grid;place-items:center;flex:0 0 29px;height:29px;border:1px solid color-mix(in srgb,var(--stat-accent) 24%,transparent);border-radius:6px;color:var(--stat-accent);background:color-mix(in srgb,var(--stat-accent) 7%,transparent)}
+.performance-reading{font:600 27px/1 'Barlow Condensed',sans-serif;letter-spacing:-.02em;color:var(--gta-cream);font-variant-numeric:tabular-nums;white-space:nowrap;flex-shrink:0}
+.performance-reading small{font-size:13px;font-weight:500;letter-spacing:0;color:var(--night-muted)}
+.performance-track{height:12px;border-radius:3px;position:relative;overflow:hidden;background:color-mix(in srgb,var(--night-deep) 85%,var(--stat-accent));box-shadow:inset 0 1px 3px #0005;isolation:isolate}
+.performance-fill{position:absolute;inset:0 auto 0 0;width:calc(var(--performance-fill)*100%);background:linear-gradient(90deg,var(--stat-accent),var(--stat-highlight));border-radius:2px;box-shadow:inset 0 1px 0 #ffffff38,0 0 8px color-mix(in srgb,var(--stat-accent) 24%,transparent)}
+.performance-ticks{position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0,transparent calc(10% - 1px),var(--night-deep) calc(10% - 1px),var(--night-deep) 10%);pointer-events:none}
+.performance-axis{display:flex;justify-content:space-between;margin-top:7px;font:500 10px/1.2 'Barlow Condensed',sans-serif;font-variant-numeric:tabular-nums;color:var(--night-muted);letter-spacing:.05em}
+@media(hover:hover) and (pointer:fine){.performance-instrument:hover{border-color:color-mix(in srgb,var(--stat-accent) 38%,var(--night-line))}}
+@media(max-width:720px){.performance-instruments{grid-template-columns:1fr;gap:9px}.performance-instrument{padding:12px 13px 10px}.performance-instrument-head{margin-bottom:11px}.performance-reading{font-size:25px}.performance-track{height:11px}}
+@media(prefers-reduced-motion:reduce){.performance-instrument{transition:none}.performance-fill{clip-path:none!important;animation:none!important}}
+@media(forced-colors:active){.performance-instrument,.performance-track{border:1px solid CanvasText}.performance-fill{background:Highlight;forced-color-adjust:none}.performance-ticks{display:none}.performance-icon{border-color:CanvasText;color:CanvasText}}
