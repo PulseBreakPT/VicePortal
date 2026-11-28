@@ -1,15 +1,16 @@
 import { ArrowUpRight, Download, Eye, Info, Link2 } from 'lucide-react';
 import { sourceLabel } from '../../../data/sections';
+import { PerformanceMeter } from './PerformanceMeter';
+import { performanceScale } from './performanceModel.mjs';
 
 const display=value=>typeof value==='object'&&value!==null?JSON.stringify(value):String(value??'');
 const fieldId=name=>name.toLowerCase().replaceAll(' ','-');
 const FactRows=({rows})=><dl className="record-specifications">{rows.map(({name,value})=><div key={name}><dt>{name}</dt><dd data-testid={`detail-attribute-${fieldId(name)}`}><span>{display(value)}</span></dd></div>)}</dl>;
-const explicitScale=value=>{const match=String(value).trim().match(/^(\d+(?:\.\d+)?)\s*\/\s*(10|100)$/);if(match&&Number(match[1])<=Number(match[2]))return {value:Number(match[1]),max:Number(match[2])};return null;};
 const PerformanceRows=({rows})=>{
- const scaled=rows.filter(r=>explicitScale(r.value));const unscaled=rows.filter(r=>!explicitScale(r.value));
- return <>{scaled.length>0&&<div className="weapon-stat-grid">{scaled.map(r=>{const scale=explicitScale(r.value);return <div key={r.name} className="weapon-stat"><div><span>{r.name}</span><strong>{display(r.value)}</strong></div><meter min="0" max={scale.max} value={scale.value} aria-label={r.name} style={{width:'100%',accentColor:'var(--portal-pink, #ff8cb4)'}}/></div>;})}</div>}{unscaled.length>0&&<FactRows rows={unscaled}/>}</>;
+ const scaled=rows.filter(r=>performanceScale(r.value));const unscaled=rows.filter(r=>!performanceScale(r.value));
+ return <>{scaled.length>0&&<div className="weapon-stat-grid performance-instruments">{scaled.map(r=>{const scale=performanceScale(r.value);return <PerformanceMeter key={r.name} label={r.name} value={scale.value} max={scale.max} displayValue={display(r.value)}/>;})}</div>}{unscaled.length>0&&<FactRows rows={unscaled}/>}</>;
 };
-const StatMeters=({meters})=><div className="weapon-stat-grid">{meters.map(({id,label,value,max})=><div className="weapon-stat" key={id}><div><span>{label}</span><strong>{value} / {max}</strong></div><meter min="0" max={max} value={value} aria-label={label} style={{width:'100%',accentColor:'var(--portal-pink, #ff8cb4)'}}/></div>)}</div>;
+const StatMeters=({meters})=><div className="weapon-stat-grid performance-instruments">{meters.map(({id,label,value,max})=><PerformanceMeter key={id} label={label} value={value} max={max}/>)}</div>;
 const Overview=({section,item,atlas})=>section.locked?<div className="record-spoiler" data-testid="story-protection"><Eye size={24}/><div><h3 data-testid="spoiler-protection-heading">Story under wraps</h3><p>Backstories and plot details stay hidden while spoilers are off.</p><button className="portal-button" data-testid="reveal-character-story" onClick={()=>atlas.setSpoilers(true)}>Show story details<Eye size={16}/></button></div></div>:<><div className="record-prose">{section.paragraphs.map((text,i)=><p key={i} className={i===0?'record-lead':undefined} data-testid={i===0?'detail-description':`detail-paragraph-${i-1}`}>{text}</p>)}{section.tags.length>0&&<ul className="record-tags" data-testid="detail-facts">{section.tags.map((tag,i)=><li key={i}>{display(tag)}</li>)}</ul>}</div>{item.kind==='Video'&&<p className="record-footnote" data-testid="trailer-help">Playback is provided by YouTube. If unavailable, open the source video.</p>}</>;
 const ContextGallery=({context})=><figure className="record-context-image" data-testid="detail-contextual-image"><img src={context.image} alt={context.caption||'Contextual image'} loading="lazy" referrerPolicy="no-referrer" style={{width:'100%',height:'auto',borderRadius:'8px'}} onError={e=>{e.currentTarget.hidden=true;}}/><figcaption>{context.caption}{context.source&&<a href={context.source} target="_blank" rel="noreferrer"> Source <ArrowUpRight size={14}/></a>}</figcaption></figure>;
 const SourcePanel=({item,view})=>{
