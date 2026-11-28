@@ -46,7 +46,7 @@ assert.ok(portal.includes('...creatorRecords')&&portal.includes('creatorWeapons(
 console.log('Creator dataset checks passed; snapshot rows:',imported);
 
 
-import {enrichArsenal,arsenalAuditNames,arsenalBase,arsenalVariants,arsenalOther,arsenalTechnical,arsenalAlternativeRatings} from '../src/data/arsenalAudit.mjs';
+import {enrichArsenal,appendVerifiedWeapons,arsenalAuditNames,arsenalBase,arsenalVariants,arsenalOther,arsenalTechnical,arsenalAlternativeRatings} from '../src/data/arsenalAudit.mjs';
 assert.equal(arsenalBase.length,53);
 assert.equal(arsenalVariants.length,130);
 assert.equal(arsenalOther.length,26);
@@ -87,3 +87,14 @@ assert.equal(conflict.attributes.Price,'100');
 assert.equal(conflict.attributes.Availability,'Already documented');
 assert.ok(conflict.arsenalAudit.conflicts.some(x=>x.field==='Damage'));
 console.log('Arsenal V2 audit:',JSON.stringify({matched:enrichedWeapons.filter(x=>x.arsenalAudit).length,filled:enrichedWeapons.reduce((n,x)=>n+(x.arsenalAudit?.added.length||0),0),conflicts:enrichedWeapons.reduce((n,x)=>n+(x.arsenalAudit?.conflicts.length||0),0)}));
+
+const expanded=appendVerifiedWeapons(rawWeapons);
+assert.ok(expanded.length>=209);
+assert.equal(new Set(expanded.map(x=>x.id)).size,expanded.length);
+assert.equal(appendVerifiedWeapons(expanded).length,expanded.length);
+assert.equal(appendVerifiedWeapons([{id:'legacy',title:'Heavy-Duty Blade'}]).filter(x=>x.title==='Machete').length,0);
+const completed=enrichArsenal(expanded);
+const machete=completed.find(x=>x.title==='Machete'||x.title==='Heavy-Duty Blade');
+assert.equal(machete.attributes['Technical damage (game data)'],'150');
+assert.ok(completed.every(x=>x.collections.every(s=>sections.includes("'"+s+"'"))));
+console.log('Expanded weapons:',completed.length,'Technical records:',completed.filter(x=>x.attributes['Evidence scope']?.includes('1.0.2.1')).length);
