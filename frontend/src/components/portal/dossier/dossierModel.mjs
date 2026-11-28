@@ -28,7 +28,7 @@ export function splitDossier(item,spoilers){
   const performanceKeys=new Set();
   if(!protectedStory){
     if(['Character','Weapon','Vehicle'].includes(item.kind)){
-      for(const title of editorialFields[item.kind]||[])for(const key of [title,...(editorialAliases[title]||[])])bodyKeys.add(key);
+      for(const title of editorialFields[item.kind]||[])for(const key of [title,...(editorialAliases[title]||[])])if(['string','number'].includes(typeof item.attributes?.[key]))bodyKeys.add(key);
       if(item.kind==='Character')characterProfileKeys.forEach(k=>bodyKeys.add(k));
       if(item.kind==='Weapon')weaponKeys.forEach(k=>bodyKeys.add(k));
       if(item.kind==='Vehicle')for(const [key,v] of Object.entries(item.vehicleStats||{}))if(Number.isFinite(v)&&v>=0&&v<=10&&statAliases[key]){bodyKeys.add(statAliases[key]);performanceKeys.add(statAliases[key]);}

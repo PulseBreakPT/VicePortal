@@ -23,9 +23,10 @@ export const DossierMeta = ({item,section,atlas,task,dimensions}) => {
   const facts=getFacts(item,section,dimensions).filter(([name])=>!protectedStory||['Role','Credited performer','Credit section','Credited as','Evidence'].includes(name));
   return <aside className="record-meta" aria-label="Entry summary" data-testid="detail-summary">
     <div className="record-meta-heading"><span>THE LOWDOWN</span></div>
-    <dl className="record-quick-facts">{facts.map(([name,value],i)=><div key={name}><dt>{name}</dt><dd data-testid={`detail-quick-fact-${i}`}>{/^[\d\s.,%×:+−–-]+$/.test(String(value))?<NeonCipher value={value} variant="number"/>:value}</dd></div>)}</dl>
+    {facts.length>0&&<dl className="record-quick-facts">{facts.map(([name,value],i)=><div key={name}><dt>{name}</dt><dd data-testid={`detail-quick-fact-${i}`}>{/^[\d\s.,%×:+−–-]+$/.test(String(value))?<NeonCipher value={value} variant="number"/>:value}</dd></div>)}</dl>}
     {comparable&&<Link className="record-primary-link" to={`${item.kind==='Weapon'?'/weapons/compare':'/compare'}?a=${item.id}&b=`} data-testid="detail-compare">Compare {item.kind.toLowerCase()}<ArrowRight size={17}/></Link>}
     {item.kind==='Region'&&<Link className="record-primary-link" to="/map" data-testid="detail-region-map">Region map<ArrowRight size={17}/></Link>}
     {task&&<button className={`record-checklist ${atlas.completed.includes(task.id)?'is-completed':''}`} data-testid="detail-complete" aria-pressed={atlas.completed.includes(task.id)} onClick={()=>atlas.toggleComplete(task.id)}><Check size={17}/><span>{atlas.completed.includes(task.id)?'Marked as explored':'Mark as explored'}<small>Personal atlas checklist</small></span></button>}
+    {!facts.length&&!comparable&&item.kind!=='Region'&&!task&&<Link className="record-collection-link" to={section.path} data-testid="detail-collection-link">Browse collection<ArrowRight size={14}/></Link>}
   </aside>;
 };
