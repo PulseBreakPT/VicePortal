@@ -68,7 +68,7 @@ const propertyPins={
  'thompson-court-garage':'garage-ocean-beach-west-ogarage011',
  'ne-15th-street-garage':'garage-stockyard-ogarage012',
  'pegassi-residences-garage':'garage-tequesta-retreat-ogarage013',
- 'gta-crosstown-garage':'garage-crosstown-ogarage019',
+ 'gta-plus-crosstown-garage':'garage-crosstown-ogarage019',
  'paradise-garage':'garage-northern-grassrivers-ogarage001',
  'shore-court-garage':'garage-ocean-beach-east-ogarage014',
  'starlet-motel-safehouse':'safehouse-north-gellhorn-hills-osafehouse003',
@@ -88,7 +88,7 @@ function geoCompatible(e,row){
  const a=norm(row.area),c=norm(row.county),x=e.attributes||{};
  const areas=[x.Area,x.District,x.Region,x.Neighbourhood,x.Neighborhood].filter(Boolean).map(norm);
  if(c&&x.County&&norm(x.County)!==c)return false;
- return a?areas.includes(a):Boolean(c&&x.County&&norm(x.County)===c);
+ return Boolean(a&&areas.includes(a));
 }
 function reconcile(out,row,dataset,exact){
  if(dataset==='atlas/properties'){
@@ -141,7 +141,7 @@ export function mergeOpenData(entries,snapshot){
    // Add attribution only when evidence supplied a new field. Never change identity, images or spoiler flags.
    if(!filled)continue;
    if(dataset==='atlas/properties')counts.propertiesEnriched++;
-   const s=sources[provider],refs=[...(old.relatedSources||[]),{label:s.label+' · '+s.license,url:getURL(provider,key)},{label:s.label+' data licence',url:s.licenseUrl},...row.refs.filter(u=>/^https:\/\//.test(u)).map(url=>({label:s.label+' cited evidence',url}))];
+   const s=sources[provider],refs=[...(old.relatedSources||[]),{label:s.label+' · '+s.license+' · '+row.confidence,url:getURL(provider,key)},{label:s.label+' data licence',url:s.licenseUrl},...row.refs.filter(u=>/^https:\/\//.test(u)).map(url=>({label:s.label+' cited evidence',url}))];
    const collections=dataset==='atlas/properties'?[...new Set([...(old.collections||[]),'archive/real-estate',...(row.attributes['Property type']==='garage'?['archive/real-estate/garages']:row.attributes['Property type']==='safehouse'?['archive/real-estate/safehouses']:[])])]:old.collections;
    out[i]={...old,attributes,collections,relatedSources:[...new Map(refs.map(x=>[x.url,x])).values()]};
    changed.add(old.id);counts.fields+=filled;
