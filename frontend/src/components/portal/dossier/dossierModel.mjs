@@ -21,9 +21,24 @@ export function uniqueSources(item){
   const seen=new Set([urlKey(item.source)]);
   return (item.relatedSources||[]).filter(s=>{if(!s?.url||seen.has(urlKey(s.url)))return false;seen.add(urlKey(s.url));return true;});
 }
+// Reviewed overlaps in the six original Rockstar region summaries.
+const regionOverlap={
+ 'vice-city':['Coastal city','Art Deco architecture','Nightlife'],
+ 'leonida-keys':['Island communities','Coastal roads'],
+ 'grassrivers':['Wetlands','Backcountry waterways','Airboat imagery'],
+ 'port-gellhorn':['Coastal town','Roadside motels','Older tourist infrastructure'],
+ 'ambrosia':['Industrial region','Factories','Biker culture'],
+ 'mount-kalaga':['National park','Wilderness'],
+};
+const equivalentTextKeys=[['Role','Original credit'],['Role','Credited as'],['Occupation / affiliation','Affiliations'],['First documented mission','Documented mission'],['Category','Type'],['Class','Type']];
+function uniqueFacts(facts){
+ const byKey=new Map(facts);const omitted=new Set();
+ for(const [a,b] of equivalentTextKeys){if(byKey.has(a)&&byKey.has(b)&&typeof byKey.get(a)==='string'&&typeof byKey.get(b)==='string'&&norm(byKey.get(a))===norm(byKey.get(b)))omitted.add(b);}
+ return facts.filter(([key])=>!omitted.has(key));
+}
 export function splitDossier(item,spoilers){
   const protectedStory=item.spoiler&&!spoilers;
-  const facts=Object.entries(item.attributes||{}).filter(([key,v])=>!isUnknown(v)&&(!protectedStory||safeKeys.includes(key)));
+  const facts=uniqueFacts(Object.entries(item.attributes||{}).filter(([key,v])=>!isUnknown(v)&&(!protectedStory||safeKeys.includes(key))));
   const bodyKeys=new Set();
   const performanceKeys=new Set();
   if(!protectedStory){
@@ -55,6 +70,6 @@ export function splitDossier(item,spoilers){
     norm('Source: gtatown.com. Public vehicle data distributed under CC BY 4.0; adapted to the Vice Atlas dossier format.'),
   ]);
   const paragraphs=(item.paragraphs||[]).filter(p=>!(item.kind==='Vehicle'&&item.dataCredit==='GTA Town'&&boilerplate.has(norm(p)))).map(takeProse).filter(Boolean);
-  const details=(item.details||[]).filter(v=>{const key=norm(v);if(!key||seen.has(key)||factValues.has(key)||sentenceSeen.has(key)||(key===norm(item.category)&&item.kind==='Weapon')||(key==='gta town public data'&&item.dataCredit==='GTA Town'))return false;seen.add(key);return true;});
+  const details=(item.details||[]).filter(v=>{const key=norm(v);if(item.kind==='Region'&&(regionOverlap[item.id]||[]).some(x=>norm(x)===key)&&norm(item.description).includes(key))return false;if(!key||seen.has(key)||factValues.has(key)||sentenceSeen.has(key)||(key===norm(item.category)&&item.kind==='Weapon')||(key==='gta town public data'&&item.dataCredit==='GTA Town'))return false;seen.add(key);return true;});
   return {subtitle,body:{...item,attributes:Object.fromEntries(bodyFacts),description,paragraphs,details,relatedSources:uniqueSources(item)},meta:{...item,attributes:Object.fromEntries(metaFacts)}};
 }

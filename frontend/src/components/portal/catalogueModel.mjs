@@ -79,3 +79,12 @@ export function takeGroups(groups,limit){
  let remaining=Math.max(0,limit);
  return groups.flatMap(({label,items})=>{if(!remaining)return [];const shown=items.slice(0,remaining);remaining-=shown.length;return [{label,total:items.length,items:shown}];});
 }
+
+// Strip redundant display labels, preserving distinct classifications and descriptions.
+const labelKey=v=>norm(v).replace(/[^a-z0-9 ]/g,'').replace(/\s+/g,' ').replace(/s$/,'');
+export function cardSubtitle(item,groupLabel='',spoilers=false){
+ if(item.spoiler&&!spoilers)return 'Story details are hidden.';
+ const text=item.subtitle||item.category||item.description||'';
+ const redundant=new Set([item.title,item.kind,item.status,groupLabel].filter(Boolean).map(labelKey));
+ return text.split(/\s+·\s+/).filter(part=>!redundant.has(labelKey(part))).join(' · ');
+}

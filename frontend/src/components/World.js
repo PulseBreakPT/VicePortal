@@ -22,7 +22,7 @@ export const World = ({ open, saved, toggleSave }) => {
   const items = filter === 'All regions' ? regions : regions.filter(item => item.category === filter);
   return <section id="world" className="section world-section" data-testid="world-section">
     <WorldPanorama/>
-    <div className="filter-row"><Filters options={['All regions', 'City life', 'Coast', 'The wilds']} value={filter} setValue={setFilter} prefix="regions"/><span className="result-label" data-testid="region-result-count">{String(items.length).padStart(2, '0')} REGIONS</span></div>
+    <div className="filter-row"><Filters options={['All regions', 'City life', 'Coast', 'The wilds']} value={filter} setValue={setFilter} prefix="regions"/>{filter!=='All regions'&&<span className="result-label" data-testid="region-result-count">{String(items.length).padStart(2, '0')} MATCHES</span>}</div>
     <div className={`region-grid ${filter !== 'All regions' ? 'is-filtered' : ''}`} data-testid="region-grid">
       {items.map((item, i) => <Reveal key={item.id} className={`region-card region-${item.id}`} delay={i * .055}>
         <img src={item.image} alt={item.title === 'Mount Kalaga' ? 'Official Mount Kalaga National Park postcard' : `${item.title} in Grand Theft Auto VI`} loading="lazy"/>
@@ -36,4 +36,5 @@ export const World = ({ open, saved, toggleSave }) => {
   </section>;
 };
 
-export const Marquee = () => <div className="marquee" aria-label="Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, Mount Kalaga" data-testid="editorial-marquee"><div className="marquee-track" aria-hidden="true">{[0, 1].map(i => <span key={i}>{regions.map(region=><span key={region.id}>{region.title.toUpperCase()} <span className="marquee-star">✳</span> </span>)}</span>)}</div></div>;
+const marqueeWords=["SUN-BLEACHED STREETS","AFTER HOURS","OPEN ROADS","THE OTHER SIDE OF PARADISE"];
+export const Marquee = () => <div className="marquee" aria-hidden="true" data-testid="editorial-marquee"><div className="marquee-track">{[0, 1].map(i => <span key={i}>{marqueeWords.map(word=><span key={word}>{word} <span className="marquee-star">✳</span> </span>)}</span>)}</div></div>;

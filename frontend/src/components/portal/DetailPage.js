@@ -21,7 +21,9 @@ export default function DetailPage({item,atlas}) {
   const section=sectionById[item.collections[0]];
   const peers=entries.filter(e=>e.kind===item.kind&&!hideSpoiler(e,atlas.spoilers));
   const relationshipIds=atlas.spoilers?(item.relatedCharacterIds||[]):[];
-  const related=peers.filter(e=>e.id!==item.id).sort((a,b)=>Number(relationshipIds.includes(b.id))-Number(relationshipIds.includes(a.id))||Number(b.collections.some(c=>item.collections.includes(c)))-Number(a.collections.some(c=>item.collections.includes(c)))).slice(0,Math.max(3,relationshipIds.length));
+  const peerIndex=peers.findIndex(e=>e.id===item.id);
+  const adjacent=new Set(peers.length>1&&peerIndex>=0?[peers[(peerIndex-1+peers.length)%peers.length].id,peers[(peerIndex+1)%peers.length].id]:[]);
+  const related=peers.filter(e=>e.id!==item.id&&(!adjacent.has(e.id)||relationshipIds.includes(e.id))).sort((a,b)=>Number(relationshipIds.includes(b.id))-Number(relationshipIds.includes(a.id))||Number(b.collections.some(c=>item.collections.includes(c)))-Number(a.collections.some(c=>item.collections.includes(c)))).slice(0,Math.max(3,relationshipIds.length));
   const task=checklist.find(t=>t.path===item.path);
   const share=async()=>{try{await navigator.clipboard.writeText(new URL(window.location.pathname,window.location.origin).href);toast.success('Page link copied.');}catch{toast.error('Could not copy. You can share the page address instead.');}};
   const {subtitle,body,meta}=splitDossier(item,atlas.spoilers);
