@@ -1,0 +1,1607 @@
+{
+  "scope": "GTA VI community catalogue factual names and source group labels; checked 2026-11-28. No copied guide text or unverified statistics.",
+  "rows": [
+    {
+      "title": "Albino American Alligator",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Albino Spectacled Caiman",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Alligator",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Black Bear",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Crocodile",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Red Fox",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Black Fox",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Blue Axanthic Iguana",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Box Turtle",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Canada Goose",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Cane Toad",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Corn Snake",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Eastern Coral Snake",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Eastern Cottontail Rabbit",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Eastern Diamondback Rattlesnake",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Eastern Gray Squirrel",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Eastern Spotted Skunk",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Gloriana Opossum",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Golden Fox",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Gray Fox",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Green Iguana",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Gulf Coast Box Turtle",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Leonida Black Bobcat",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Leonida Black Panther",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Leonida Bobcat",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Leonida Cottonmouth",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Leonida Kingsnake",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Leonida Panther",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Leonida Wild Turkey",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Leonida Wild White Tom",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Marsh Rabbit",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Mosaic Mottled Duck",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Mottled Duck",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Nile Monitor",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Nine-Banded Armadillo",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "North American River Otter",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Northern Albino Raccoon",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Northern Black Coyote",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Northern Coyote",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Northern Raccoon",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Northern Silver Coyote",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Nutria",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Piebald Whitetail Buck",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Round-Tailed Muskrat",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Snapping Turtle",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Softshell Turtle",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Soot-Spotted Cottontail Rabbit",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Spectacled Caiman",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Spotted Wild Boar",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Super Red Iguana",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Unique Black Bear",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Unique Buck",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Unique Coyote",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Unique Crocodile",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Unique Panther",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Unique Swamp Alligator",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Unique White Fox",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Unique Wild Boar",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "White River Otter",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Whitetail Deer",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Wild Boar",
+      "category": "Huntable species",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Anhinga",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Barn Owl",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Crow",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Flamingo",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Goldfinch",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Pekin Duck",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Robin",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American White Ibis",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American White Pelican",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Bald Eagle",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Black Vulture",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Black-Capped Chickadee",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Blue Jay",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Blue-and-Yellow Macaw",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Caspian Tern",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Common Loon",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Crested Caracara",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Cubalaya Chicken",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Double-Crested Cormorant",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Eastern Brown Pelican",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Eastern Great Horned Owl",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Glossy Ibis",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Golden Eagle",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Great Blue Heron",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Great Egret",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Herring Gull",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "House Finch",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "House Sparrow",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Indian Peacock",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Killdeer",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Laughing Gull",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Leghorn Chicken",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Magnificent Frigatebird",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Monk Parakeet",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "New World Oriole",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Northern Cardinal",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Northern Gannet",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Northern Mockingbird",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Orchard Oriole",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Peregrine Falcon",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Purple Gallinule",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Red-Bellied Woodpecker",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Red-Cockaded Woodpecker",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Red-Crowned Parrot",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Red-Shouldered Hawk",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Red-Tailed Hawk",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Rock Pigeon",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Roseate Spoonbill",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Sanderling",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Scarlet Macaw",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Scrub Jay",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Spot-Breasted Oriole",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Spotted Sandpiper",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Tricolored Heron",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Trumpeter Swan",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Turkey Vulture",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Western Osprey",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Whooping Crane",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Wood Stork",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Yellow-Crested Cockatoo",
+      "category": "Birds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Eel",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Atlantic Spadefish",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Atlantic Spanish Mackerel",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Atlantic Tarpon",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Atlantic Thread Herring",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Black Drum",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Black Grouper",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Bluegill",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Bluestriped Grunt",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Candy Fish",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Channel Catfish",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Cobia",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Common Snook",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Great Barracuda",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Greater Amberjack",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Green Moray Eel",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Hogfish",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Lake Chubsucker",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Largemouth Bass",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Leonida Gar",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Littlehead Porgy",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Mahi-Mahi",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Northern Red Snapper",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Permit",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Red Lionfish",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Redbreast Sunfish",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Redfin Pickerel",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Rock Sea Bass",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Salt Fish",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Spotted Moray Eel",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Stoplight Parrotfish",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Striped Bass",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Tiger Grouper",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Yellowfin Tuna",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Yellowtail Snapper",
+      "category": "Catchable fish",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Foxhound",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Pit Bull Terrier",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Shorthair",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Australian Shepherd",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Balinese",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Belgian Malinois",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Bengal",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Blotched Tabby",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Bombay",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Border Collie",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Boxer",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Bullworth Longhair",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Calico",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Catahoula Cur",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Chihuahua",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Chocolate Longhair",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Cream Longhair",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Doberman Pinscher",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "French Bulldog",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "German Shepherd",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Ginger Longhair",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Ginger Tabby",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Gloriana Dog",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Labrador Retriever",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Mackerel Tabby",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Maltese Dog",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Persian",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Ragdoll",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Red Tabby",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Rottweiler",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Russian Blue",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Standard Poodle",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Striped Tabby",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Yorkshire Terrier",
+      "category": "Breeds",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Alpine Goat",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Quarter Horse",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Yorkshire Pig",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Bengal Tiger",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Big Brown Bat",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Bottlenose Dolphin",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Brown Rat",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Chimpanzee",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Gulf Coast Sheep",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Holstein Cattle",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "House Mouse",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Humpback Whale",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Leonida Manatee",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Orca",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Rhesus Macaque",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Short-Beaked Common Dolphin",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Sperm Whale",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "White-Headed Capuchin",
+      "category": "Mammals",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Atlantic Bluefin Tuna",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Atlantic Goliath Grouper",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Atlantic Sailfish",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Atlantic Stingray",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Blacktip Shark",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Blue Land Crab",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Bull Shark",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Giant Oceanic Manta Ray",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Great Hammerhead Shark",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Koi",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Leonida Stone Crab",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Moon Jellyfish",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "North Atlantic Swordfish",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Nurse Shark",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Portuguese Man O' War",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Spotted Eagle Ray",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Tiger Shark",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Yellowtail Damselfish",
+      "category": "Aquatic",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "American Bullfrog",
+      "category": "Reptiles & amphibians",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Gopher Tortoise",
+      "category": "Reptiles & amphibians",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Green Sea Turtle",
+      "category": "Reptiles & amphibians",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Green Tree Frog",
+      "category": "Reptiles & amphibians",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Southern Leopard Frog",
+      "category": "Reptiles & amphibians",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Southern Toad",
+      "category": "Reptiles & amphibians",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Alien Frenchie",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Baby Bonnet Cat",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Bob-cut Maltese",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Burmese Python",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Cartoon Labrador",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Diva Poodle",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Dodo",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Festive Poodle",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Gertrude",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Gomez",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Karkinos",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Mutated American Crocodile",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Mutated American Herring Gull",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Mutated Eastern Brown Pelican",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Mutated Mottled Duck",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Patriot Cat",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Polar Bear",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Police Poodle",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Pretty Pig",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Rainbow Poodle",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Ride 'em Chihuahua",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Snowbird Raccoon",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Star-Spangled Raccoon",
+      "category": "Other wildlife",
+      "kind": "Animal",
+      "source": "https://gtatown.com/wildlife"
+    },
+    {
+      "title": "Binoculars",
+      "category": "Binoculars",
+      "kind": "Equipment",
+      "source": "https://gtatown.com/guides/gear"
+    },
+    {
+      "title": "Flashlight",
+      "category": "Flashlights",
+      "kind": "Equipment",
+      "source": "https://gtatown.com/guides/gear"
+    },
+    {
+      "title": "Duffel Bag",
+      "category": "Tools",
+      "kind": "Equipment",
+      "source": "https://gtatown.com/guides/gear"
+    },
+    {
+      "title": "Headphones",
+      "category": "Headphones",
+      "kind": "Equipment",
+      "source": "https://gtatown.com/guides/gear"
+    },
+    {
+      "title": "Pry Bar",
+      "category": "Tools",
+      "kind": "Equipment",
+      "source": "https://gtatown.com/guides/gear"
+    },
+    {
+      "title": "Masks",
+      "category": "Masks",
+      "kind": "Equipment",
+      "source": "https://gtatown.com/guides/gear"
+    },
+    {
+      "title": "Metal Detector",
+      "category": "Metal detectors",
+      "kind": "Equipment",
+      "source": "https://gtatown.com/guides/gear"
+    },
+    {
+      "title": "Slim Jim",
+      "category": "Tools",
+      "kind": "Equipment",
+      "source": "https://gtatown.com/guides/gear"
+    },
+    {
+      "title": "Snap Gun",
+      "category": "Tools",
+      "kind": "Equipment",
+      "source": "https://gtatown.com/guides/gear"
+    },
+    {
+      "title": "Cut-off Tool",
+      "category": "Tools",
+      "kind": "Equipment",
+      "source": "https://gtatown.com/guides/gear"
+    },
+    {
+      "title": "Key Cloner",
+      "category": "Tools",
+      "kind": "Equipment",
+      "source": "https://gtatown.com/guides/gear"
+    },
+    {
+      "title": "Dye Pack Jammer",
+      "category": "Tools",
+      "kind": "Equipment",
+      "source": "https://gtatown.com/guides/gear"
+    }
+  ]
+}
