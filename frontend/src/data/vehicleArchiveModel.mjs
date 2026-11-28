@@ -6,7 +6,7 @@ const identity=s=>String(s??'').normalize('NFKC').trim().toLowerCase();
 const areas={
  'Coupes':'Urban traffic and parking lots in Vice City.',
  'Muscle Cars':'Traffic and parking lots, including suburban areas.',
- 'Off-Road':'Rural roads, dirt tracks and off-road areas.',
+ 'Off-Road Vehicles':'Rural roads, dirt tracks and off-road areas.',
  'Pickups':'Countryside, secondary roads, industrial areas and traffic.',
  'Sedans':'Urban traffic, residential neighborhoods and avenues.',
  'Sports Cars':'Ocean Beach, affluent districts and Vice City traffic; some models are rare.',
@@ -18,10 +18,10 @@ const areas={
  'Aircraft':'Vice City International Airport, airfields and marked helipads.',
  'Trucks':'Industrial zones, construction sites and freight roads.',
  'Utility Vehicles':'Industrial facilities, construction sites, airports and golf courses, depending on model.',
- 'Emergency':'Service and emergency vehicles; no individual fixed spawn confirmed.',
- 'Military':'Mile Zero Air Station, south of Key Lento; some appear at high wanted levels.',
- 'Industrial':'Construction sites, quarries, agricultural or industrial facilities.',
- 'Transport':'Airport, roads, terminals and transport services.'
+ 'Emergency Vehicles':'Service and emergency vehicles; no individual fixed spawn confirmed.',
+ 'Military Vehicles':'Mile Zero Air Station, south of Key Lento; some appear at high wanted levels.',
+ 'Industrial Vehicles':'Construction sites, quarries, agricultural or industrial facilities.',
+ 'Transport Vehicles':'Airport, roads, terminals and transport services.'
 };
 export function enrichVehicle(row,archive){
  const e=archive.entries[row.sourceSlug];
@@ -49,7 +49,7 @@ export function enrichVehicle(row,archive){
  if(Number.isFinite(e.testedKmh))attributes['Top speed']=e.testedKmh.toFixed(2)+' km/h — community test reported by Hotwired; upgrades unknown, not independently verified.';
  const historical=archive.conflicts.filter(c=>c.slug===row.sourceSlug&&ratingKeys.includes(c.key)).map(c=>c.key+': earlier archive '+c.previous+'/10; later archive '+c.incoming+'/10');
  const all=[...new Set([...conflicts,...historical])];
- if(all.length)attributes['Evidence scope']='Published ratings disagree. Existing catalogue ratings retained where available. '+all.join('; ')+'.';
+ if(all.length)attributes['Evidence scope']='Published values disagree. Existing catalogue values retained where available. '+all.join('; ')+'.';
  const sources=e.sourceCodes.map(code=>archive.sources[code]).filter(Boolean).map(([label,url])=>({label,url}));
  return {row:enriched,attributes,sources,conflicts:all};
 }
