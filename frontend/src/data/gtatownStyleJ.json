@@ -1,0 +1,362 @@
+[
+  {
+    "id": "/style/brands/crome",
+    "title": "Crome",
+    "url": "https://gtatown.com/style/brands/crome",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/clothes/crome-cap",
+    "title": "Crome Cap",
+    "url": "https://gtatown.com/style/clothes/crome-cap",
+    "meta": "hat · Crome · $210 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/crome-t-shirt",
+    "title": "Crome T-Shirt",
+    "url": "https://gtatown.com/style/clothes/crome-t-shirt",
+    "meta": "top · Crome · $310 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/crome-boxy-t-shirt",
+    "title": "Crome Boxy T-Shirt",
+    "url": "https://gtatown.com/style/clothes/crome-boxy-t-shirt",
+    "meta": "top · Crome · $25"
+  },
+  {
+    "id": "/style/brands/heat",
+    "title": "Heat",
+    "url": "https://gtatown.com/style/brands/heat",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/clothes/heat-swimsuit",
+    "title": "Heat Swimsuit",
+    "url": "https://gtatown.com/style/clothes/heat-swimsuit",
+    "meta": "one-piece · Heat · $79 · Alpha Sports"
+  },
+  {
+    "id": "/style/clothes/heat-cushioned-runners",
+    "title": "Heat Cushioned Runners",
+    "url": "https://gtatown.com/style/clothes/heat-cushioned-runners",
+    "meta": "pair of shoes · Heat · $80 to $99 · Endzone, Podium Sports"
+  },
+  {
+    "id": "/style/clothes/heat-t-shirt",
+    "title": "Heat T-Shirt",
+    "url": "https://gtatown.com/style/clothes/heat-t-shirt",
+    "meta": "top · Heat · $35 · Alpha Sports"
+  },
+  {
+    "id": "/style/clothes/heat-fitted-tank",
+    "title": "Heat Fitted Tank",
+    "url": "https://gtatown.com/style/clothes/heat-fitted-tank",
+    "meta": "top · Heat · $30 · Alpha Sports"
+  },
+  {
+    "id": "/style/clothes/heat-baseball-cap",
+    "title": "Heat Baseball Cap",
+    "url": "https://gtatown.com/style/clothes/heat-baseball-cap",
+    "meta": "hat · Heat · $36 · Alpha Sports"
+  },
+  {
+    "id": "/style/clothes/heat-track-shorts",
+    "title": "Heat Track Shorts",
+    "url": "https://gtatown.com/style/clothes/heat-track-shorts",
+    "meta": "pair of shorts · Heat · $33 · Aline's Thrift Store"
+  },
+  {
+    "id": "/style/clothes/heat-racerback-top",
+    "title": "Heat Racerback Top",
+    "url": "https://gtatown.com/style/clothes/heat-racerback-top",
+    "meta": "top · Heat · $42 · Alpha Sports"
+  },
+  {
+    "id": "/style/clothes/heat-zipped-hoodie",
+    "title": "Heat Zipped Hoodie",
+    "url": "https://gtatown.com/style/clothes/heat-zipped-hoodie",
+    "meta": "top · Heat · $50 to $53 · Alpha Sports"
+  },
+  {
+    "id": "/style/brands/ahol",
+    "title": "Ahol",
+    "url": "https://gtatown.com/style/brands/ahol",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/clothes/ahol-shorts",
+    "title": "Ahol Shorts",
+    "url": "https://gtatown.com/style/clothes/ahol-shorts",
+    "meta": "pair of shorts · Ahol · $210 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/ahol-bandana",
+    "title": "Ahol Bandana",
+    "url": "https://gtatown.com/style/clothes/ahol-bandana",
+    "meta": "mask · Ahol · $175 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/ahol-sweatshirt",
+    "title": "Ahol Sweatshirt",
+    "url": "https://gtatown.com/style/clothes/ahol-sweatshirt",
+    "meta": "top · Ahol · $385 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/ahol-t-shirt",
+    "title": "Ahol T-Shirt",
+    "url": "https://gtatown.com/style/clothes/ahol-t-shirt",
+    "meta": "top · Ahol · $310 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/ahol-ski-mask",
+    "title": "Ahol Ski Mask",
+    "url": "https://gtatown.com/style/clothes/ahol-ski-mask",
+    "meta": "mask · Ahol · $205 · Stock 305"
+  },
+  {
+    "id": "/style/clothes/ahol-zip-cropped-bustier",
+    "title": "Ahol Zip Cropped Bustier",
+    "url": "https://gtatown.com/style/clothes/ahol-zip-cropped-bustier",
+    "meta": "top · Ahol · $395 · Stock 305"
+  },
+  {
+    "id": "/style/brands/void",
+    "title": "Void",
+    "url": "https://gtatown.com/style/brands/void",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/clothes/void-t-shirt",
+    "title": "Void T-Shirt",
+    "url": "https://gtatown.com/style/clothes/void-t-shirt",
+    "meta": "top · Void · $42 · Dr Froogal"
+  },
+  {
+    "id": "/style/clothes/void-frayed-jacket",
+    "title": "Void Frayed Jacket",
+    "url": "https://gtatown.com/style/clothes/void-frayed-jacket",
+    "meta": "jacket · Void · $51 · Aline's Thrift Store"
+  },
+  {
+    "id": "/style/clothes/void-varsity-jacket",
+    "title": "Void Varsity Jacket",
+    "url": "https://gtatown.com/style/clothes/void-varsity-jacket",
+    "meta": "jacket · Void · $93 · Aline's Thrift Store"
+  },
+  {
+    "id": "/style/brands/de-luge",
+    "title": "De'Luge",
+    "url": "https://gtatown.com/style/brands/de-luge",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/stores/de-luge-swimwear",
+    "title": "De'Luge Swimwear",
+    "url": "https://gtatown.com/style/stores/de-luge-swimwear",
+    "meta": "Swimwear · 1 location · 63 pieces"
+  },
+  {
+    "id": "/style/clothes/de-luge-swimwear",
+    "title": "De'Luge Swimwear",
+    "url": "https://gtatown.com/style/clothes/de-luge-swimwear",
+    "meta": "set outfit · De'Luge · $775 · De'Luge Swimwear"
+  },
+  {
+    "id": "/style/clothes/de-luge-beachwear",
+    "title": "De'Luge Beachwear",
+    "url": "https://gtatown.com/style/clothes/de-luge-beachwear",
+    "meta": "set outfit · De'Luge · $975 · De'Luge Swimwear"
+  },
+  {
+    "id": "/style/clothes/de-luge-resort-shirt",
+    "title": "De'Luge Resort Shirt",
+    "url": "https://gtatown.com/style/clothes/de-luge-resort-shirt",
+    "meta": "top · De'Luge · $345 · De'Luge Swimwear"
+  },
+  {
+    "id": "/style/clothes/de-luge-embroidered-tank",
+    "title": "De'Luge Embroidered Tank",
+    "url": "https://gtatown.com/style/clothes/de-luge-embroidered-tank",
+    "meta": "top · De'Luge · $175 · De'Luge Swimwear"
+  },
+  {
+    "id": "/style/clothes/de-luge-embroidered-t-shirt",
+    "title": "De'Luge Embroidered T-Shirt",
+    "url": "https://gtatown.com/style/clothes/de-luge-embroidered-t-shirt",
+    "meta": "top · De'Luge · $195 · De'Luge Swimwear"
+  },
+  {
+    "id": "/style/clothes/cuban-shirt",
+    "title": "Cuban Shirt",
+    "url": "https://gtatown.com/style/clothes/cuban-shirt",
+    "meta": "top · $339 to $395 · De'Luge Swimwear, Ferruccio Tucci"
+  },
+  {
+    "id": "/style/clothes/bucket-hat",
+    "title": "Bucket Hat",
+    "url": "https://gtatown.com/style/clothes/bucket-hat",
+    "meta": "hat · $9 to $160 · A&L Surf Mart, Bargain World"
+  },
+  {
+    "id": "/style/stores/chuck-s-tackle-and-shot",
+    "title": "Chuck's Tackle & Shot",
+    "url": "https://gtatown.com/style/stores/chuck-s-tackle-and-shot",
+    "meta": "Gun store · 1 location · 18 pieces"
+  },
+  {
+    "id": "/style/clothes/army-cap",
+    "title": "Army Cap",
+    "url": "https://gtatown.com/style/clothes/army-cap",
+    "meta": "hat · $17 · Chuck's Tackle & Shot, Gellhorn Outfitters"
+  },
+  {
+    "id": "/style/clothes/scoop-neck-tank",
+    "title": "Scoop Neck Tank",
+    "url": "https://gtatown.com/style/clothes/scoop-neck-tank",
+    "meta": "top · $49 to $50 · Chuck's Tackle & Shot, Gellhorn Outfitters"
+  },
+  {
+    "id": "/style/clothes/short-cargo-shorts",
+    "title": "Short Cargo Shorts",
+    "url": "https://gtatown.com/style/clothes/short-cargo-shorts",
+    "meta": "pair of shorts · $23 to $27 · Chuck's Tackle & Shot, Gellhorn Outfitters"
+  },
+  {
+    "id": "/style/clothes/ripstop-cargo-shorts",
+    "title": "Ripstop Cargo Shorts",
+    "url": "https://gtatown.com/style/clothes/ripstop-cargo-shorts",
+    "meta": "pair of shorts · $28 · Chuck's Tackle & Shot, Quickscope"
+  },
+  {
+    "id": "/style/clothes/fishing-shades",
+    "title": "Fishing Shades",
+    "url": "https://gtatown.com/style/clothes/fishing-shades",
+    "meta": "pair of glasses · $42 to $55 · Chuck's Tackle & Shot, Boat Charter"
+  },
+  {
+    "id": "/style/clothes/reel-t-shirt",
+    "title": "Reel T-Shirt",
+    "url": "https://gtatown.com/style/clothes/reel-t-shirt",
+    "meta": "top · $42 · Chuck's Tackle & Shot"
+  },
+  {
+    "id": "/style/clothes/reel-neck-gaiter",
+    "title": "Reel Neck Gaiter",
+    "url": "https://gtatown.com/style/clothes/reel-neck-gaiter",
+    "meta": "accessory · $35 · Chuck's Tackle & Shot"
+  },
+  {
+    "id": "/style/stores/flip-flop-house",
+    "title": "Flip Flop House",
+    "url": "https://gtatown.com/style/stores/flip-flop-house",
+    "meta": "Shoes · 1 location · 31 pieces"
+  },
+  {
+    "id": "/style/clothes/baseball-cap",
+    "title": "Baseball Cap",
+    "url": "https://gtatown.com/style/clothes/baseball-cap",
+    "meta": "hat · $22 to $46 · Aline's Thrift Store, Flip Flop House"
+  },
+  {
+    "id": "/style/clothes/canvas-low-tops",
+    "title": "Canvas Low Tops",
+    "url": "https://gtatown.com/style/clothes/canvas-low-tops",
+    "meta": "pair of shoes · $45 to $70 · Flip Flop House, MID"
+  },
+  {
+    "id": "/style/clothes/canvas-slip-ons",
+    "title": "Canvas Slip-Ons",
+    "url": "https://gtatown.com/style/clothes/canvas-slip-ons",
+    "meta": "pair of shoes · $48 · Aline's Thrift Store, Flip Flop House"
+  },
+  {
+    "id": "/style/clothes/eris-cross-trainers",
+    "title": "Eris Cross Trainers",
+    "url": "https://gtatown.com/style/clothes/eris-cross-trainers",
+    "meta": "pair of shoes · Eris · $115 · Endzone, Flip Flop House"
+  },
+  {
+    "id": "/style/clothes/thick-strap-sandals",
+    "title": "Thick Strap Sandals",
+    "url": "https://gtatown.com/style/clothes/thick-strap-sandals",
+    "meta": "pair of shoes · $22 to $27 · Flip Flop House, Nifty Threads Island Wear"
+  },
+  {
+    "id": "/style/clothes/ugglies",
+    "title": "Ugglies",
+    "url": "https://gtatown.com/style/clothes/ugglies",
+    "meta": "pair of shoes · $60 to $89 · Flip Flop House, WHS"
+  },
+  {
+    "id": "/style/brands/thrillbilly",
+    "title": "Thrillbilly",
+    "url": "https://gtatown.com/style/brands/thrillbilly",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/stores/thrillbilly-mud-club",
+    "title": "Thrillbilly Mud Club",
+    "url": "https://gtatown.com/style/stores/thrillbilly-mud-club",
+    "meta": "Casual and street · 1 location · 21 pieces"
+  },
+  {
+    "id": "/style/clothes/thrillbilly-mx-gear",
+    "title": "Thrillbilly MX Gear",
+    "url": "https://gtatown.com/style/clothes/thrillbilly-mx-gear",
+    "meta": "set outfit · Thrillbilly · $460 · Thrillbilly Mud Club"
+  },
+  {
+    "id": "/style/clothes/thrillbilly-life-t-shirt",
+    "title": "Thrillbilly Life T-Shirt",
+    "url": "https://gtatown.com/style/clothes/thrillbilly-life-t-shirt",
+    "meta": "top · Thrillbilly · $33 · Thrillbilly Mud Club"
+  },
+  {
+    "id": "/style/clothes/thrillbilly-life-bikini-top",
+    "title": "Thrillbilly Life Bikini Top",
+    "url": "https://gtatown.com/style/clothes/thrillbilly-life-bikini-top",
+    "meta": "piece of swimwear · Thrillbilly · $29 · Thrillbilly Mud Club"
+  },
+  {
+    "id": "/style/clothes/thrillbilly-mud-club-t-shirt",
+    "title": "Thrillbilly Mud Club T-Shirt",
+    "url": "https://gtatown.com/style/clothes/thrillbilly-mud-club-t-shirt",
+    "meta": "top · Thrillbilly · $31 · Thrillbilly Mud Club"
+  },
+  {
+    "id": "/style/clothes/thrillbilly-mud-club-bikini-top",
+    "title": "Thrillbilly Mud Club Bikini Top",
+    "url": "https://gtatown.com/style/clothes/thrillbilly-mud-club-bikini-top",
+    "meta": "piece of swimwear · Thrillbilly · $35 · Thrillbilly Mud Club"
+  },
+  {
+    "id": "/style/stores/richardson-hunting",
+    "title": "Richardson Hunting",
+    "url": "https://gtatown.com/style/stores/richardson-hunting",
+    "meta": "Gun store · 1 location · 8 pieces"
+  },
+  {
+    "id": "/style/clothes/vice-beach-cap",
+    "title": "Vice Beach Cap",
+    "url": "https://gtatown.com/style/clothes/vice-beach-cap",
+    "meta": "hat · $36 · Beach Please, Billie's Key Lento Gift Shop"
+  },
+  {
+    "id": "/style/clothes/vice-beach-top",
+    "title": "Vice Beach Top",
+    "url": "https://gtatown.com/style/clothes/vice-beach-top",
+    "meta": "top · $50 · Beach Please, Billie's Key Lento Gift Shop"
+  },
+  {
+    "id": "/style/clothes/vice-beach-tank",
+    "title": "Vice Beach Tank",
+    "url": "https://gtatown.com/style/clothes/vice-beach-tank",
+    "meta": "top · $34 to $36 · Beach Please, Billie's Key Lento Gift Shop"
+  },
+  {
+    "id": "/style/clothes/vice-beach-t-shirt",
+    "title": "Vice Beach T-Shirt",
+    "url": "https://gtatown.com/style/clothes/vice-beach-t-shirt",
+    "meta": "top · $36 · Beach Please, Billie's Key Lento Gift Shop"
+  }
+]

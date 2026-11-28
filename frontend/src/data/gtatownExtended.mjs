@@ -16,13 +16,27 @@ function styleRecord(row){
 }
 function factRecord(row){
  const sections={'Guide':'guides','Completion requirement':'progress/100-percent','Collectible set':'archive/collections/'+slug(row.category),'Game edition':'game/editions','Phone app':'archive/digital-world/apps','Phone plugin':'archive/digital-world/apps'};
- return {...row,section:sections[row.kind],membership:row.kind==='Collectible set'?['collectibles']:row.kind==='Completion requirement'?['archive/progression/completion']:[]};
+ return {...row,section:row.section||sections[row.kind],membership:row.membership||(row.kind==='Collectible set'?['collectibles']:row.kind==='Completion requirement'?['archive/progression/completion']:[])};
 }
 function worldRecord(row){
  const [category,...detail]=row.meta.split(' · ');
  if(category==='Phone app')return {kind:'Phone app',title:row.title,category:'Apps',section:'archive/digital-world/apps',membership:[],attributes:{'Source classification':category},source:row.url,sourceId:row.id};
  const group={'Vehicle maker':'Vehicle manufacturers','Gun maker':'Weapon manufacturers','Clothing brand':'Fashion brands'}[category];
  return {kind:'Brand',title:row.title,category:group||category,section:'brands',membership:group?['archive/corporations/'+slug(group)]:[],attributes:{'Source classification':category,...(detail.length?{'Source-listed details':detail.join(' · ')}:{})},source:row.url,sourceId:row.id};
+}
+export const styleSourceTotals=Object.freeze({clothes:1467,outfits:500,brands:51,stores:50});
+export function styleSourceCoverage(style){
+ const found=new Map(),types={clothes:0,outfits:0,brands:0,stores:0};
+ for(const row of style){
+  const type=row.id?.split('/')[2];
+  if(!Object.hasOwn(types,type)||row.url!=='https://gtatown.com'+row.id)throw Error('Invalid style source identity '+row.id);
+  if(found.has(row.id)){
+   if(JSON.stringify(found.get(row.id))!==JSON.stringify(row))throw Error('Conflicting facts for source identity '+row.id);
+   continue;
+  }
+  found.set(row.id,row);types[type]++;
+ }
+ return {source:'https://gtatown.com/style',sourceChecked:'2026-11-28',raw:style.length,unique:found.size,duplicateOccurrences:style.length-found.size,byType:Object.fromEntries(Object.entries(types).map(([type,count])=>[type,{found:count,sourceTotal:styleSourceTotals[type],remaining:Math.max(0,styleSourceTotals[type]-count)}]))};
 }
 export function extendGtaTown(existing,style,world,facts){
  const entries=[...existing],ids=new Set(entries.map(e=>e.id)),paths=new Set(entries.map(e=>e.path));
@@ -58,5 +72,5 @@ export function extendGtaTown(existing,style,world,facts){
   const rec={id,path,title:row.title,kind:row.kind,category:row.category,collections:[...new Set(collections)],source:row.source,status:'Community reference',creatorDataset:'gtatown-extra',gtaTownEntityId:row.sourceId,relatedSources:[{label:'GTA Town · community reference',url:row.source}],description:'GTA VI catalogue entry documented by the linked community reference.',attributes:row.attributes,image:'/images/creator-data-placeholder.svg',imageFallback:'/images/creator-data-placeholder.svg',placeholderImage:true};
   ids.add(id);paths.add(path);index(rec,entries.length);entries.push(rec);counts.added++;
  }
- return {entries,counts,review};
+ return {entries,counts,review,styleCoverage:styleSourceCoverage(style)};
 }

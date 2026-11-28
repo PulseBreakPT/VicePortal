@@ -1,0 +1,146 @@
+[
+  {
+    "kind": "Collectible set",
+    "title": "WAiNK Locations",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/waink-locations",
+    "section": "archive/collections",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-mapped count": 117
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Meteorite Fragments",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/meteorites",
+    "section": "archive/collections",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-mapped count": 115
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Hidden Stashes",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/hidden-stashes",
+    "section": "archive/collections",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-mapped count": 113
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Book Swaps",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/book-swaps",
+    "section": "archive/collections/book-swaps",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-listed total": 7
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Tattoo and Style Magazines",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/style-magazines",
+    "section": "archive/collections/magazine-tattoos",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-mapped count": 29
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Ahol Street Art",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/street-art",
+    "section": "archive/collections/ahol-street-art",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-mapped count": 85
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "1010 Murals",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/1010-murals",
+    "section": "archive/collections/1010-murals",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-listed total": 5
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Messages in a Bottle",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/messages-in-a-bottle",
+    "section": "archive/collections",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-mapped count": 6
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Shipwreck Treasure",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/shipwreck-treasure",
+    "section": "archive/collections/shipwrecks",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-listed total": 7,
+      "Required for 100%": 5
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Towable ATMs",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/towable-atms",
+    "section": "archive/collections",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-mapped count": 137
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Tree Effigies",
+    "category": "Collection set",
+    "source": "https://gtatown.com/collectibles/tree-effigies",
+    "section": "archive/collections",
+    "membership": [
+      "collectibles"
+    ],
+    "attributes": {
+      "Source-listed total": 9
+    }
+  }
+]

@@ -33,7 +33,17 @@ try{
  const externalIds=entries.map(e=>e.gtaTownEntityId).filter(Boolean);
  assert.equal(new Set(externalIds).size,externalIds.length,'Duplicate GTA Town source identity');
  console.log('Extended GTA Town:',JSON.stringify({counts:gtaTownExtendedReport.counts,review:gtaTownExtendedReport.review.length,byKind:extended.reduce((m,e)=>(m[e.kind]=(m[e.kind]||0)+1,m),{})}));
- const masterCoverage=Object.fromEntries(MASTER.map(g=>[g.id,entries.filter(e=>e.collections.includes('archive/'+g.id)).length]));
+ const styleCoverage=gtaTownExtendedReport.styleCoverage;
+ assert.ok(styleCoverage.unique>=728,'Style source coverage regressed');
+ for(const [type,minimum] of Object.entries({clothes:384,outfits:299,stores:31,brands:14})){
+  assert.ok(styleCoverage.byType[type].found>=minimum,'Style source coverage regressed: '+type);
+ }
+ const sourceStyleIds=entries.map(e=>e.gtaTownEntityId).filter(id=>id?.startsWith('/style/'));
+ assert.ok(sourceStyleIds.length>=700,'Style catalogue integration regressed');
+ console.log('GTA Town style source coverage:',JSON.stringify(styleCoverage));
+ const setRecords=entries.filter(e=>e.kind==='Collectible set'&&e.source?.includes('gtatown.com/collectibles/'));
+ assert.ok(setRecords.length>=20,'Collection set coverage regressed');
+ const masterCoverage=Object.fromEntries(MASTER.map(g=>[g.id,entries.filter(e=>e.collections.some(c=>c==='archive/'+g.id||c.startsWith('archive/'+g.id+'/'))).length]));
  console.log('Master archive production coverage:',JSON.stringify(masterCoverage));
  const report={entries:entries.length,byKind:{},views:0,attributes:0,omissions:{},unknownKinds:[]};
  for(const entry of entries){
