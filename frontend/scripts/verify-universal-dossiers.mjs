@@ -1,3 +1,4 @@
+import './verify-master-archive.mjs';
 import assert from 'node:assert/strict';
 import { readFile,writeFile,mkdtemp,rm,readdir } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
@@ -17,6 +18,11 @@ try{
   await writeFile(join(dir,name.replace(/\.js$/,'.mjs')),esm);
  }
  const {entries}=await import(pathToFileURL(join(dir,'portal.mjs')).href);
+ const {masterSections,MASTER}=await import(pathToFileURL(join(dir,'masterArchive.mjs')).href);
+ const masterIds=new Set(masterSections.map(s=>s.id));
+ assert.ok(entries.every(e=>(e.collections||[]).filter(c=>c.startsWith('archive')).every(c=>masterIds.has(c))),'Unregistered master collection');
+ const masterCoverage=Object.fromEntries(MASTER.map(g=>[g.id,entries.filter(e=>e.collections.includes('archive/'+g.id)).length]));
+ console.log('Master archive production coverage:',JSON.stringify(masterCoverage));
  const report={entries:entries.length,byKind:{},views:0,attributes:0,omissions:{},unknownKinds:[]};
  for(const entry of entries){
   report.byKind[entry.kind]=(report.byKind[entry.kind]||0)+1;
