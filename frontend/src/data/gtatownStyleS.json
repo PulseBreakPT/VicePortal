@@ -1,0 +1,416 @@
+[
+  {
+    "id": "/style/brands/cmd-plus-ctrl",
+    "title": "CMD+CTRL",
+    "url": "https://gtatown.com/style/brands/cmd-plus-ctrl",
+    "meta": "Clothing brand"
+  },
+  {
+    "id": "/style/clothes/cmd-plus-ctrl-cap",
+    "title": "CMD+CTRL Cap",
+    "url": "https://gtatown.com/style/clothes/cmd-plus-ctrl-cap",
+    "meta": "hat · CMD+CTRL · $28 · Iron & Oak, Vice City Firearms"
+  },
+  {
+    "id": "/style/clothes/cmd-plus-ctrl-tank",
+    "title": "CMD+CTRL Tank",
+    "url": "https://gtatown.com/style/clothes/cmd-plus-ctrl-tank",
+    "meta": "top · CMD+CTRL · $22 · Phil's Ammu-Nation"
+  },
+  {
+    "id": "/style/clothes/cmd-plus-ctrl-graphic-t-shirt",
+    "title": "CMD+CTRL Graphic T-Shirt",
+    "url": "https://gtatown.com/style/clothes/cmd-plus-ctrl-graphic-t-shirt",
+    "meta": "top · CMD+CTRL · $27 · Phil's Ammu-Nation"
+  },
+  {
+    "id": "/style/clothes/cmd-plus-ctrl-smoking-barrels-tank",
+    "title": "CMD+CTRL Smoking Barrels Tank",
+    "url": "https://gtatown.com/style/clothes/cmd-plus-ctrl-smoking-barrels-tank",
+    "meta": "top · CMD+CTRL · $19 · Vice City Firearms"
+  },
+  {
+    "id": "/style/stores/vice-city-firearms",
+    "title": "Vice City Firearms",
+    "url": "https://gtatown.com/style/stores/vice-city-firearms",
+    "meta": "Gun store · 1 location · 17 pieces"
+  },
+  {
+    "id": "/style/stores/xero-gas",
+    "title": "Xero Gas",
+    "url": "https://gtatown.com/style/stores/xero-gas",
+    "meta": "Gas station · 11 locations · 9 pieces"
+  },
+  {
+    "id": "/style/stores/podium-sports",
+    "title": "Podium Sports",
+    "url": "https://gtatown.com/style/stores/podium-sports",
+    "meta": "Shoes · 6 locations · 17 pieces"
+  },
+  {
+    "id": "/style/clothes/eris-rook-1-high",
+    "title": "Eris Rook 1 High",
+    "url": "https://gtatown.com/style/clothes/eris-rook-1-high",
+    "meta": "pair of shoes · Eris · $185 to $290 · Alpha Sports, Endzone"
+  },
+  {
+    "id": "/style/clothes/classic-tennis-shoes",
+    "title": "Classic Tennis Shoes",
+    "url": "https://gtatown.com/style/clothes/classic-tennis-shoes",
+    "meta": "pair of shoes · $110 to $725 · Callus, Endzone"
+  },
+  {
+    "id": "/style/stores/hamlet-thrift",
+    "title": "Hamlet Thrift",
+    "url": "https://gtatown.com/style/stores/hamlet-thrift",
+    "meta": "Thrift · 1 location · 52 pieces"
+  },
+  {
+    "id": "/style/clothes/hamlet-thrift-ensemble",
+    "title": "Hamlet Thrift Ensemble",
+    "url": "https://gtatown.com/style/clothes/hamlet-thrift-ensemble",
+    "meta": "set outfit · $113 · Hamlet Thrift"
+  },
+  {
+    "id": "/style/clothes/old-denim-cutoffs",
+    "title": "Old Denim Cutoffs",
+    "url": "https://gtatown.com/style/clothes/old-denim-cutoffs",
+    "meta": "pair of shorts · $31 to $69 · Dr Froogal, Hamlet Thrift"
+  },
+  {
+    "id": "/style/clothes/takio-digital-watch",
+    "title": "Takio Digital Watch",
+    "url": "https://gtatown.com/style/clothes/takio-digital-watch",
+    "meta": "watch · $31 to $107 · Aline's Thrift Store, Hamlet Thrift"
+  },
+  {
+    "id": "/style/clothes/long-sleeve-crop-top",
+    "title": "Long Sleeve Crop Top",
+    "url": "https://gtatown.com/style/clothes/long-sleeve-crop-top",
+    "meta": "top · $38 to $125 · Hamlet Thrift, Slinger"
+  },
+  {
+    "id": "/style/clothes/classic-athletic-shoes",
+    "title": "Classic Athletic Shoes",
+    "url": "https://gtatown.com/style/clothes/classic-athletic-shoes",
+    "meta": "pair of shoes · $22 to $36 · Aline's Thrift Store, Bargain World"
+  },
+  {
+    "id": "/style/clothes/long-sleeve-trucker-jacket",
+    "title": "Long Sleeve Trucker Jacket",
+    "url": "https://gtatown.com/style/clothes/long-sleeve-trucker-jacket",
+    "meta": "jacket · $44 to $150 · Aline's Thrift Store, Hamlet Thrift"
+  },
+  {
+    "id": "/style/stores/endzone",
+    "title": "Endzone",
+    "url": "https://gtatown.com/style/stores/endzone",
+    "meta": "Sportswear · 4 locations · 66 pieces"
+  },
+  {
+    "id": "/style/clothes/eris-rise-low",
+    "title": "Eris Rise Low",
+    "url": "https://gtatown.com/style/clothes/eris-rise-low",
+    "meta": "pair of shoes · Eris · $119 to $135 · Aline's Thrift Store, Endzone"
+  },
+  {
+    "id": "/style/clothes/eris-cross-trainers",
+    "title": "Eris Cross Trainers",
+    "url": "https://gtatown.com/style/clothes/eris-cross-trainers",
+    "meta": "pair of shoes · Eris · $115 · Endzone, Flip Flop House"
+  },
+  {
+    "id": "/style/clothes/retro-crevis-sweatshirt",
+    "title": "Retro Crevis Sweatshirt",
+    "url": "https://gtatown.com/style/clothes/retro-crevis-sweatshirt",
+    "meta": "top · $20 · Bargain World"
+  },
+  {
+    "id": "/style/clothes/retro-sleeveless-hoodie",
+    "title": "Retro Sleeveless Hoodie",
+    "url": "https://gtatown.com/style/clothes/retro-sleeveless-hoodie",
+    "meta": "top · $38 · Aline's Thrift Store"
+  },
+  {
+    "id": "/style/clothes/retro-sprunk-sweatshirt",
+    "title": "Retro Sprunk Sweatshirt",
+    "url": "https://gtatown.com/style/clothes/retro-sprunk-sweatshirt",
+    "meta": "top · $16 · Nifty Threads Island Wear"
+  },
+  {
+    "id": "/style/clothes/retro-zipped-windbreaker",
+    "title": "Retro Zipped Windbreaker",
+    "url": "https://gtatown.com/style/clothes/retro-zipped-windbreaker",
+    "meta": "jacket · $35 · Nifty Threads Island Wear"
+  },
+  {
+    "id": "/style/clothes/thick-retro-shades",
+    "title": "Thick Retro Shades",
+    "url": "https://gtatown.com/style/clothes/thick-retro-shades",
+    "meta": "pair of glasses · $25"
+  },
+  {
+    "id": "/style/clothes/247-retro-emblem-tank",
+    "title": "247 Retro Emblem Tank",
+    "url": "https://gtatown.com/style/clothes/247-retro-emblem-tank",
+    "meta": "top · 247 · $31"
+  },
+  {
+    "id": "/style/clothes/retro-canvas-low-tops",
+    "title": "Retro Canvas Low Tops",
+    "url": "https://gtatown.com/style/clothes/retro-canvas-low-tops",
+    "meta": "pair of shoes · $18 · Bargain World"
+  },
+  {
+    "id": "/style/clothes/retro-canvas-slip-ons",
+    "title": "Retro Canvas Slip-Ons",
+    "url": "https://gtatown.com/style/clothes/retro-canvas-slip-ons",
+    "meta": "pair of shoes · $29 · Nifty Threads Island Wear"
+  },
+  {
+    "id": "/style/clothes/retro-baseball-low-tops",
+    "title": "Retro Baseball Low Tops",
+    "url": "https://gtatown.com/style/clothes/retro-baseball-low-tops",
+    "meta": "pair of shoes · $19 to $21 · Nifty Threads Island Wear"
+  },
+  {
+    "id": "/style/clothes/retro-crevis-track-shorts",
+    "title": "Retro Crevis Track Shorts",
+    "url": "https://gtatown.com/style/clothes/retro-crevis-track-shorts",
+    "meta": "pair of shorts · $11 · Bargain World"
+  },
+  {
+    "id": "/style/clothes/vintage-popper-joggers",
+    "title": "Vintage Popper Joggers",
+    "url": "https://gtatown.com/style/clothes/vintage-popper-joggers",
+    "meta": "pair of pants · $25 to $70 · Aline's Thrift Store, Alpha Sports"
+  },
+  {
+    "id": "/style/clothes/mid-vintage-cap",
+    "title": "MID Vintage Cap",
+    "url": "https://gtatown.com/style/clothes/mid-vintage-cap",
+    "meta": "hat · MID · $35"
+  },
+  {
+    "id": "/style/clothes/vintage-t-shirt",
+    "title": "Vintage T-Shirt",
+    "url": "https://gtatown.com/style/clothes/vintage-t-shirt",
+    "meta": "top · $12 · Aline's Thrift Store"
+  },
+  {
+    "id": "/style/clothes/vintage-track-pants",
+    "title": "Vintage Track Pants",
+    "url": "https://gtatown.com/style/clothes/vintage-track-pants",
+    "meta": "pair of pants · $22 · Aline's Thrift Store"
+  },
+  {
+    "id": "/style/clothes/vintage-denim-jacket",
+    "title": "Vintage Denim Jacket",
+    "url": "https://gtatown.com/style/clothes/vintage-denim-jacket",
+    "meta": "jacket · $58 · Dr Froogal"
+  },
+  {
+    "id": "/style/clothes/vintage-ripley-hoodie",
+    "title": "Vintage Ripley Hoodie",
+    "url": "https://gtatown.com/style/clothes/vintage-ripley-hoodie",
+    "meta": "top · $21 · Nifty Threads Island Wear"
+  },
+  {
+    "id": "/style/clothes/vintage-straight-jeans",
+    "title": "Vintage Straight Jeans",
+    "url": "https://gtatown.com/style/clothes/vintage-straight-jeans",
+    "meta": "pair of pants · $46 · Dr Froogal"
+  },
+  {
+    "id": "/style/clothes/vintage-heat-t-shirt",
+    "title": "Vintage Heat T-Shirt",
+    "url": "https://gtatown.com/style/clothes/vintage-heat-t-shirt",
+    "meta": "top · $16 · Bargain World"
+  },
+  {
+    "id": "/style/clothes/vintage-metv-t-shirt",
+    "title": "Vintage MeTV T-Shirt",
+    "url": "https://gtatown.com/style/clothes/vintage-metv-t-shirt",
+    "meta": "top · $20 · Bargain World"
+  },
+  {
+    "id": "/style/clothes/vintage-tiger-t-shirt",
+    "title": "Vintage Tiger T-Shirt",
+    "url": "https://gtatown.com/style/clothes/vintage-tiger-t-shirt",
+    "meta": "top · $18 · Nifty Threads Island Wear"
+  },
+  {
+    "id": "/style/clothes/linen-dress-pants",
+    "title": "Linen Dress Pants",
+    "url": "https://gtatown.com/style/clothes/linen-dress-pants",
+    "meta": "pair of pants · $345 to $385 · This / That"
+  },
+  {
+    "id": "/style/clothes/linen-long-sleeve-shirt",
+    "title": "Linen Long Sleeve Shirt",
+    "url": "https://gtatown.com/style/clothes/linen-long-sleeve-shirt",
+    "meta": "top · $315 · De'Luge Swimwear"
+  },
+  {
+    "id": "/style/clothes/loose-linen-pants",
+    "title": "Loose Linen Pants",
+    "url": "https://gtatown.com/style/clothes/loose-linen-pants",
+    "meta": "pair of pants · $25 to $355 · This / That"
+  },
+  {
+    "id": "/style/clothes/oversized-linen-shirt",
+    "title": "Oversized Linen Shirt",
+    "url": "https://gtatown.com/style/clothes/oversized-linen-shirt",
+    "meta": "top · $163 · This / That"
+  },
+  {
+    "id": "/style/outfits/floral-shirt-with-white-pants-edd9f",
+    "title": "Floral shirt with white pants",
+    "url": "https://gtatown.com/style/outfits/floral-shirt-with-white-pants-edd9f",
+    "meta": "Jason outfit · $25"
+  },
+  {
+    "id": "/style/outfits/mint-blazer-and-pink-trousers-f16ec",
+    "title": "Mint blazer and pink trousers",
+    "url": "https://gtatown.com/style/outfits/mint-blazer-and-pink-trousers-f16ec",
+    "meta": "Jason outfit · $410"
+  },
+  {
+    "id": "/style/outfits/mint-jacket-and-pink-trousers-67707",
+    "title": "Mint jacket and pink trousers",
+    "url": "https://gtatown.com/style/outfits/mint-jacket-and-pink-trousers-67707",
+    "meta": "Jason outfit · $25"
+  },
+  {
+    "id": "/style/outfits/gray-suit-and-a-burgundy-shirt-af0e4",
+    "title": "Gray suit and a burgundy shirt",
+    "url": "https://gtatown.com/style/outfits/gray-suit-and-a-burgundy-shirt-af0e4",
+    "meta": "Jason outfit · $540"
+  },
+  {
+    "id": "/style/outfits/charcoal-knit-and-white-trousers-ae269",
+    "title": "Charcoal knit and white trousers",
+    "url": "https://gtatown.com/style/outfits/charcoal-knit-and-white-trousers-ae269",
+    "meta": "Jason outfit · $195"
+  },
+  {
+    "id": "/style/outfits/navy-print-shirt-and-cream-trousers-31109",
+    "title": "Navy print shirt and cream trousers",
+    "url": "https://gtatown.com/style/outfits/navy-print-shirt-and-cream-trousers-31109",
+    "meta": "Jason outfit · $82"
+  },
+  {
+    "id": "/style/clothes/baggy-denim-shorts",
+    "title": "Baggy Denim Shorts",
+    "url": "https://gtatown.com/style/clothes/baggy-denim-shorts",
+    "meta": "pair of shorts · $54 · MID"
+  },
+  {
+    "id": "/style/clothes/cuffed-denim-shorts",
+    "title": "Cuffed Denim Shorts",
+    "url": "https://gtatown.com/style/clothes/cuffed-denim-shorts",
+    "meta": "pair of shorts"
+  },
+  {
+    "id": "/style/outfits/bucket-hat-and-denim-shorts-140ed",
+    "title": "Bucket hat and denim shorts",
+    "url": "https://gtatown.com/style/outfits/bucket-hat-and-denim-shorts-140ed",
+    "meta": "Lucia outfit · $65"
+  },
+  {
+    "id": "/style/outfits/floral-shirt-and-denim-shorts-8b602",
+    "title": "Floral shirt and denim shorts",
+    "url": "https://gtatown.com/style/outfits/floral-shirt-and-denim-shorts-8b602",
+    "meta": "Jason outfit · $20"
+  },
+  {
+    "id": "/style/outfits/varsity-jacket-and-denim-shorts-e4d85",
+    "title": "Varsity jacket and denim shorts",
+    "url": "https://gtatown.com/style/outfits/varsity-jacket-and-denim-shorts-e4d85",
+    "meta": "Lucia outfit · $260"
+  },
+  {
+    "id": "/style/outfits/cream-sweatshirt-and-denim-shorts-5ef0b",
+    "title": "Cream sweatshirt and denim shorts",
+    "url": "https://gtatown.com/style/outfits/cream-sweatshirt-and-denim-shorts-5ef0b",
+    "meta": "Jason outfit · $192"
+  },
+  {
+    "id": "/style/clothes/high-waisted-denim-shorts",
+    "title": "High Waisted Denim Shorts",
+    "url": "https://gtatown.com/style/clothes/high-waisted-denim-shorts",
+    "meta": "pair of shorts · $25 to $165 · Suburban, This / That"
+  },
+  {
+    "id": "/style/clothes/pre-loved-denim-shorts",
+    "title": "Pre-Loved Denim Shorts",
+    "url": "https://gtatown.com/style/clothes/pre-loved-denim-shorts",
+    "meta": "pair of shorts · $27 · Hamlet Thrift"
+  },
+  {
+    "id": "/style/outfits/white-crop-tank-and-denim-shorts-920cf",
+    "title": "White crop tank and denim shorts",
+    "url": "https://gtatown.com/style/outfits/white-crop-tank-and-denim-shorts-920cf",
+    "meta": "Lucia outfit"
+  },
+  {
+    "id": "/style/outfits/white-tee-and-light-denim-shorts-3acd4",
+    "title": "White tee and light denim shorts",
+    "url": "https://gtatown.com/style/outfits/white-tee-and-light-denim-shorts-3acd4",
+    "meta": "Jason outfit · $67"
+  },
+  {
+    "id": "/style/outfits/yellow-crop-tank-and-black-joggers-87535",
+    "title": "Yellow crop tank and black joggers",
+    "url": "https://gtatown.com/style/outfits/yellow-crop-tank-and-black-joggers-87535",
+    "meta": "Lucia outfit · $98"
+  },
+  {
+    "id": "/style/outfits/yellow-crop-tank-red-running-shorts-and-cap-c1acc",
+    "title": "Yellow crop tank, red running shorts and cap",
+    "url": "https://gtatown.com/style/outfits/yellow-crop-tank-red-running-shorts-and-cap-c1acc",
+    "meta": "Lucia outfit · $70"
+  },
+  {
+    "id": "/style/outfits/yellow-crop-denim-shorts-trucker-cap-and-work-boots-97c2b",
+    "title": "Yellow crop, denim shorts, trucker cap and work boots",
+    "url": "https://gtatown.com/style/outfits/yellow-crop-denim-shorts-trucker-cap-and-work-boots-97c2b",
+    "meta": "Lucia outfit · $42"
+  },
+  {
+    "id": "/style/clothes/striped-cropped-tank",
+    "title": "Striped Cropped Tank",
+    "url": "https://gtatown.com/style/clothes/striped-cropped-tank",
+    "meta": "top · $14 to $41 · Bargain World, Dr Froogal"
+  },
+  {
+    "id": "/style/clothes/shodi-cropped-tank",
+    "title": "Shodi Cropped Tank",
+    "url": "https://gtatown.com/style/clothes/shodi-cropped-tank",
+    "meta": "top · Shodi · $32 · Aline's Thrift Store"
+  },
+  {
+    "id": "/style/clothes/usace-cropped-tank",
+    "title": "USAce Cropped Tank",
+    "url": "https://gtatown.com/style/clothes/usace-cropped-tank",
+    "meta": "top · $17 · Bargain World"
+  },
+  {
+    "id": "/style/clothes/broker-cropped-tank",
+    "title": "Broker Cropped Tank",
+    "url": "https://gtatown.com/style/clothes/broker-cropped-tank",
+    "meta": "top · $32 · Aline's Thrift Store"
+  },
+  {
+    "id": "/style/clothes/tie-dye-cropped-tank",
+    "title": "Tie Dye Cropped Tank",
+    "url": "https://gtatown.com/style/clothes/tie-dye-cropped-tank",
+    "meta": "top · $13 · Nifty Threads Island Wear"
+  },
+  {
+    "id": "/style/clothes/thin-strap-cropped-tank",
+    "title": "Thin Strap Cropped Tank",
+    "url": "https://gtatown.com/style/clothes/thin-strap-cropped-tank",
+    "meta": "top · $40 · Dr Froogal"
+  }
+]
