@@ -27,3 +27,13 @@ assert.equal(pr.counts.propertiesMatched,1);assert.equal(pr.entries[0].attribute
 assert.ok(pr.entries[1].collections.includes('archive/real-estate/garages'));
 const shop=adaptRow('gang','stores',{slug:'shop',name:'Shop',county:'County',kind:'Clothing'});
 assert.equal(mergeOpenData([{id:'s',kind:'Location',title:'Shop',attributes:{County:'County'}}],{datasets:{'gang/stores':[shop]}}).counts.unmatched,1);
+
+// Model-year ordering does not collapse generations.
+const yearCar={id:'year',kind:'Vehicle',title:"'97 Maker Example",attributes:{Manufacturer:'Maker'}};
+const yearRow=adaptRow('atlas','vehicles',{slug:'maker-example-97',name:"Maker Example '97",manufacturer:'Maker',seats:4});
+assert.equal(mergeOpenData([yearCar],{datasets:{'atlas/vehicles':[yearRow]}}).counts.enriched,1);
+assert.equal(mergeOpenData([{...yearCar,title:"'98 Maker Example"}],{datasets:{'atlas/vehicles':[yearRow]}}).counts.unmatched,1);
+const weapon={id:'w',kind:'Weapon',title:'Example 556',attributes:{Manufacturer:'Duke'}};
+const weaponRow=adaptRow('atlas','weapons',{slug:'duke-arms-example-556',name:'Duke Arms Example 556',manufacturer:'Duke Arms',caliber:'5.56'});
+assert.equal(mergeOpenData([weapon],{datasets:{'atlas/weapons':[weaponRow]}}).counts.enriched,1);
+assert.equal(mergeOpenData([{...weapon,title:'Example 557'}],{datasets:{'atlas/weapons':[weaponRow]}}).counts.unmatched,1);
