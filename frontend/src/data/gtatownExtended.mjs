@@ -4,15 +4,31 @@ const slug=v=>String(v??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLo
 const norm=v=>String(v??'').normalize('NFKC').trim().replace(/\s+/g,' ').toLowerCase();
 const hash=s=>{let h=2166136261;for(const c of s){h^=c.charCodeAt(0);h=Math.imul(h,16777619);}return (h>>>0).toString(36);};
 const fashion={hat:'Hats',cap:'Caps','pair of glasses':'Glasses','pair of pants':'Pants',pants:'Pants',shorts:'Shorts',dress:'Dresses',skirt:'Skirts',jacket:'Jackets','pair of shoes':'Shoes','pair of boots':'Boots','pair of sneakers':'Sneakers','pair of sandals':'Sandals',watch:'Watches',necklace:'Necklaces',earrings:'Earrings',bracelet:'Bracelets',ring:'Rings',bag:'Bags','set outfit':'Outfits','jason outfit':'Outfits','lucia outfit':'Outfits'};
+// Supplement memberships without changing previously published canonical paths.
+const storeGroups={'Gun store':'gun-stores','Gas station':'gas-stations','Shoes':'footwear-stores','Yard sale':'markets'};
+const clothingGroups={'pair of shorts':'shorts','piece of swimwear':'swimwear'};
 function styleRecord(row){
  const type=row.id.split('/')[2],parts=row.meta.split(' · '),classification=parts.shift();
  const attributes={'Source classification':classification};
  const price=parts.find(x=>/^\$\d/.test(x));if(price)attributes['Source-listed price']=price;
  const other=parts.filter(x=>x!==price);if(other.length)attributes['Source-listed details']=other.join(' · ');
  if(type==='brands')return {kind:'Brand',title:row.title,category:'Fashion brands',section:'brands',membership:['archive/corporations/fashion-brands'],attributes,source:row.url,sourceId:row.id};
- if(type==='stores')return {kind:'Store chain',title:row.title,category:'Clothing stores',section:'archive/stores-services/clothing-stores',membership:[],attributes,source:row.url,sourceId:row.id};
+ if(type==='stores'){
+  const group=storeGroups[classification];
+  const rest=[];
+  for(const field of other){
+   const locations=field.match(/^(\d+) locations?$/);
+   const stock=field.match(/^(\d+) pieces?$/);
+   if(locations)attributes['Source-listed location count']=Number(locations[1]);
+   else if(stock)attributes['Source-listed clothing count']=Number(stock[1]);
+   else rest.push(field);
+  }
+  delete attributes['Source-listed details'];
+  if(rest.length)attributes['Source-listed details']=rest.join(' · ');
+  return {kind:'Store chain',title:row.title,category:'Clothing stores',section:'archive/stores-services/clothing-stores',membership:group?['archive/stores-services/'+group]:[],attributes,source:row.url,sourceId:row.id};
+ }
  const group=type==='outfits'?'Outfits':fashion[norm(classification)];
- return {kind:type==='outfits'?'Outfit':'Clothing',title:row.title,category:group||classification,section:'archive/fashion'+(group?'/'+slug(group):''),membership:['guides/clothing'],attributes,source:row.url,sourceId:row.id};
+ return {kind:type==='outfits'?'Outfit':'Clothing',title:row.title,category:group||classification,section:'archive/fashion'+(group?'/'+slug(group):''),membership:['guides/clothing',...(clothingGroups[classification]?['archive/fashion/'+clothingGroups[classification]]:[]),...(classification==='mask'?['archive/equipment/masks']:[])],attributes,source:row.url,sourceId:row.id};
 }
 function factRecord(row){
  const sections={'Guide':'guides','Completion requirement':'progress/100-percent','Collectible set':'archive/collections/'+slug(row.category),'Game edition':'game/editions','Phone app':'archive/digital-world/apps','Phone plugin':'archive/digital-world/apps'};
@@ -36,7 +52,7 @@ export function styleSourceCoverage(style){
   }
   found.set(row.id,row);types[type]++;
  }
- return {source:'https://gtatown.com/style',sourceChecked:'2026-11-28',raw:style.length,unique:found.size,duplicateOccurrences:style.length-found.size,byType:Object.fromEntries(Object.entries(types).map(([type,count])=>[type,{found:count,sourceTotal:styleSourceTotals[type],remaining:Math.max(0,styleSourceTotals[type]-count)}]))};
+ return {source:'https://gtatown.com/style',sourceChecked:'2026-11-28',raw:style.length,unique:found.size,duplicateOccurrences:style.length-found.size,byType:Object.fromEntries(Object.entries(types).map(([type,count])=>[type,{found:count,sourceTotal:styleSourceTotals[type],remaining:count>styleSourceTotals[type]?null:styleSourceTotals[type]-count,sourceCountDiscrepancy:count>styleSourceTotals[type]?count-styleSourceTotals[type]:0}]))};
 }
 export function extendGtaTown(existing,style,world,facts){
  const entries=[...existing],ids=new Set(entries.map(e=>e.id)),paths=new Set(entries.map(e=>e.path));
@@ -72,5 +88,8 @@ export function extendGtaTown(existing,style,world,facts){
   const rec={id,path,title:row.title,kind:row.kind,category:row.category,collections:[...new Set(collections)],source:row.source,status:'Community reference',creatorDataset:'gtatown-extra',gtaTownEntityId:row.sourceId,relatedSources:[{label:'GTA Town · community reference',url:row.source}],description:'GTA VI catalogue entry documented by the linked community reference.',attributes:row.attributes,image:'/images/creator-data-placeholder.svg',imageFallback:'/images/creator-data-placeholder.svg',placeholderImage:true};
   ids.add(id);paths.add(path);index(rec,entries.length);entries.push(rec);counts.added++;
  }
- return {entries,counts,review,styleCoverage:styleSourceCoverage(style)};
+ const styleCoverage=styleSourceCoverage(style);
+ const sourceIds=[...new Set(style.map(row=>row.id))];
+ const unresolved=sourceIds.filter(id=>!sourceIndexed.has(id));
+ return {entries,counts,review,styleCoverage:{...styleCoverage,integratedSourceIds:sourceIds.length-unresolved.length,unresolvedSourceIds:unresolved}};
 }
