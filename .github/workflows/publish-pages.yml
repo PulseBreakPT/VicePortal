@@ -37,6 +37,10 @@ jobs:
         run: yarn install --non-interactive --network-timeout 120000
       - name: Download and validate GTA Town creator datasets
         run: node scripts/import-creator-data.mjs
+      - name: Import licensed GTA Atlas and GTA6Gang data
+        run: node scripts/import-open-data-v2.mjs
+      - name: Verify open data V2 import and merge rules
+        run: node scripts/verify-open-data-v2.mjs
       - name: Verify Universal Data Engine
         run: node scripts/verify-universal-data.mjs
       - name: Verify creator dataset integration
@@ -79,6 +83,9 @@ jobs:
             frontend/src/data/universalAudit.json
             frontend/src/data/creatorData.json
             frontend/src/data/vehicleFeed.json
+            frontend/src/data/openDataV2.json
+            frontend/src/data/openDataV2ImportReport.json
+            frontend/src/data/openDataV2Audit.json
           if-no-files-found: error
       - name: Build original React frontend
         run: yarn build

@@ -1,3 +1,5 @@
+import openDataV2 from './openDataV2.json';
+import {mergeOpenData} from './openDataV2.mjs';
 import categoryFacts from './gtatownCategoryFacts.json';
 import shopEvidence from './gtatownShopEvidence.json';
 import {enrichCategories} from './gtatownCategoryEnrichment.mjs';
@@ -102,7 +104,8 @@ export const universalReport=buildUniversal(universalSnapshot,universalSources,b
 export const gtaTownExtendedReport=extendGtaTown(buildMaster(universalReport.entries,universalSnapshot,universalSources,masterVerified.rows),[...styleA,...styleB,...styleC,...styleD,...styleE,...styleF,...styleG,...styleH,...styleI,...styleJ,...styleK,...styleL,...styleM,...styleN,...styleO,...styleP,...styleQ,...styleR,...styleS,...styleT,...styleU,...styleV],townWorld,[...townFacts,...townGuides,...townCollectionsA,...townCollectionsB,...categoryFacts]);
 export const missionEnrichmentReport=enrichMissionRecords(gtaTownExtendedReport.entries,[...missionDetailsA,...missionDetailsB]);
 export const categoryEnrichmentReport=enrichCategories(missionEnrichmentReport.entries,shopEvidence);
-export const entries=categoryEnrichmentReport.entries;
+export const openDataV2Report=mergeOpenData(categoryEnrichmentReport.entries,openDataV2);
+export const entries=openDataV2Report.entries;
 export const entryById = Object.fromEntries(entries.map(x=>[x.id,x]));
 export const entriesFor = id => {const ids=descendantIds(id);return entries.filter(e=>e.collections.some(c=>ids.includes(c)));};
 export const getItemPath = item => entryById[item.id]?.path || '/explore';

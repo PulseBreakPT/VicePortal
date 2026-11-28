@@ -17,7 +17,11 @@ try{
   const esm=source.replace(/(from\s+['"]\.\/)([\w-]+)(['"])/g,'$1$2.mjs$3').replace(/(from\s+['"]\.\/)([\w-]+\.json)(['"])/g,'$1$2.mjs$3');
   await writeFile(join(dir,name.replace(/\.js$/,'.mjs')),esm);
  }
- const {entries,gtaTownExtendedReport,missionEnrichmentReport,categoryEnrichmentReport}=await import(pathToFileURL(join(dir,'portal.mjs')).href);
+ const {entries,gtaTownExtendedReport,missionEnrichmentReport,categoryEnrichmentReport,openDataV2Report}=await import(pathToFileURL(join(dir,'portal.mjs')).href);
+ const openAudit={counts:openDataV2Report.counts,review:openDataV2Report.review,conflicts:openDataV2Report.conflicts};
+ assert.equal(entries.length,categoryEnrichmentReport.entries.length,'Open data must preserve canonical record count');
+ await writeFile(join(root,'openDataV2Audit.json'),JSON.stringify(openAudit,null,2)+'\n');
+ console.log('OPEN_DATA_V2_DOSSIERS '+JSON.stringify(openAudit.counts));
  const {masterSections,MASTER}=await import(pathToFileURL(join(dir,'masterArchive.mjs')).href);
  const masterIds=new Set(masterSections.map(s=>s.id));
  assert.ok(entries.every(e=>(e.collections||[]).filter(c=>c.startsWith('archive')).every(c=>masterIds.has(c))),'Unregistered master collection');
