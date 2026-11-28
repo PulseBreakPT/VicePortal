@@ -1,3 +1,4 @@
+import townGuides from './gtatownGuideIndex.json';
 import {extendGtaTown} from './gtatownExtended.mjs';
 import styleA from './gtatownStyleA.json';
 import styleB from './gtatownStyleB.json';
@@ -71,7 +72,7 @@ const baseEntries = [
   base({id:'leonida-key-art',title:'Jason & Lucia — key art',kind:'Artwork',image:image('rs-poster-2'),description:'Official GTA VI promotional artwork. This is not presented as confirmed retail packaging.',source:officialUrl},'artwork',['artwork','wallpapers','covers']),
 ];
 export const universalReport=buildUniversal(universalSnapshot,universalSources,baseEntries.map(completeDossier));
-export const gtaTownExtendedReport=extendGtaTown(buildMaster(universalReport.entries,universalSnapshot,universalSources,masterVerified.rows),[...styleA,...styleB,...styleC],townWorld,townFacts);
+export const gtaTownExtendedReport=extendGtaTown(buildMaster(universalReport.entries,universalSnapshot,universalSources,masterVerified.rows),[...styleA,...styleB,...styleC],townWorld,[...townFacts,...townGuides]);
 export const entries=gtaTownExtendedReport.entries;
 export const entryById = Object.fromEntries(entries.map(x=>[x.id,x]));
 export const entriesFor = id => {const ids=descendantIds(id);return entries.filter(e=>e.collections.some(c=>ids.includes(c)));};
