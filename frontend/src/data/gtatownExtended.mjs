@@ -15,7 +15,7 @@ function styleRecord(row){
  return {kind:type==='outfits'?'Outfit':'Clothing',title:row.title,category:group||classification,section:'archive/fashion'+(group?'/'+slug(group):''),membership:['guides/clothing'],attributes,source:row.url,sourceId:row.id};
 }
 function factRecord(row){
- const sections={'Completion requirement':'progress/100-percent','Collectible set':'archive/collections/'+slug(row.category),'Game edition':'game/editions','Phone app':'archive/digital-world/apps','Phone plugin':'archive/digital-world/apps'};
+ const sections={'Guide':'guides','Completion requirement':'progress/100-percent','Collectible set':'archive/collections/'+slug(row.category),'Game edition':'game/editions','Phone app':'archive/digital-world/apps','Phone plugin':'archive/digital-world/apps'};
  return {...row,section:sections[row.kind],membership:row.kind==='Collectible set'?['collectibles']:row.kind==='Completion requirement'?['archive/progression/completion']:[]};
 }
 function worldRecord(row){
