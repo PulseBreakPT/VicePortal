@@ -7,16 +7,16 @@ import { Link } from 'react-router-dom';
 
 export const RockstarRibbon = () => <Link className="rockstar-ribbon" to="/experience" data-testid="rockstar-ribbon"><span>GRAND THEFT AUTO VI</span><i>•</i><span>THE WORLD IN FRAME</span><ArrowRight size={14}/></Link>;
 
-const OfficialPoster = ({ open }) => {
+const OfficialPoster = () => {
   const ref = useRef(null);
   const reduced = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] });
   const scale = useTransform(scrollYProgress, [0, .5, 1], [.91, 1, 1.035]);
   const y = useTransform(scrollYProgress, [0, 1], [35, -35]);
   return <div className="rs-poster-section" ref={ref}>
-    <Reveal className="rs-chapter-mark"><span data-testid="rs-chapter-label">STEP INTO</span><h2 data-testid="rs-chapter-title">GRAND THEFT AUTO VI</h2><span className="rs-chapter-line"/></Reveal>
+    <Reveal className="rs-chapter-mark"><span data-testid="rs-chapter-label">STEP INTO</span><h2 data-testid="rs-chapter-title">THE KEY ART</h2><span className="rs-chapter-line"/></Reveal>
     <motion.div className="rs-poster-frame" style={reduced ? {} : { scale, y }}><img src={image('rs-poster-2')} alt="Official Grand Theft Auto VI poster featuring Jason, Lucia and the people of Leonida" loading="lazy" data-testid="rs-official-poster"/></motion.div>
-    <div className="rs-poster-info"><div><strong data-testid="rs-poster-welcome">GRAND THEFT AUTO VI</strong><span data-testid="rs-poster-subtitle">OFFICIAL PROMOTIONAL ARTWORK</span></div><button className="rs-pill" onClick={() => open({ type: 'trailer' })} data-testid="rs-poster-watch">Watch Trailer 2 <Play size={13} fill="currentColor"/></button><div className="rs-fan-label" data-testid="rs-unofficial-label"><span>INDEPENDENT FAN COMPANION</span><strong>VICE ATLAS</strong></div></div>
+    <div className="rs-poster-info"><div><span data-testid="rs-poster-subtitle">OFFICIAL PROMOTIONAL ARTWORK</span></div></div>
     <a className="rs-down" href="#rs-trailer" aria-label="Explore the cinematic trailer section" data-testid="rs-poster-down"><ChevronDown size={35}/></a>
   </div>;
 };
@@ -42,4 +42,4 @@ const WorldFeature = ({ open }) => <section className="rs-editorial" id="rs-only
   <div className="rs-editorial-end"><span data-testid="rs-editorial-source">OFFICIAL ARTWORK & SCREENSHOTS © ROCKSTAR GAMES</span><a href="https://www.rockstargames.com/VI" target="_blank" rel="noreferrer" data-testid="rs-visit-official">Visit the official GTA VI website <ArrowUpRight size={15}/></a></div>
 </section>;
 
-export const RockstarExperience = ({ open }) => <section className="rockstar-experience" id="experience" data-testid="rockstar-experience"><OfficialPoster open={open}/><TrailerScene open={open}/><WorldFeature open={open}/></section>;
+export const RockstarExperience = ({ open }) => <section className="rockstar-experience" id="experience" data-testid="rockstar-experience"><OfficialPoster/><TrailerScene open={open}/><WorldFeature open={open}/></section>;

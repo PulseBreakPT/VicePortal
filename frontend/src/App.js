@@ -12,7 +12,7 @@ import { Hero } from './components/Hero';
 import { Marquee, World } from './components/World';
 import { Characters, Wire } from './components/Stories';
 import { Footer, Gallery } from './components/Gallery';
-import { FreshLinks, TownHub } from './components/TownHub';
+import { TownHub } from './components/TownHub';
 import { RockstarExperience, RockstarRibbon } from './components/RockstarExperience';
 import { ExperienceTeaser, QuickDestinations } from './components/TownEdition';
 import { Overlays } from './components/Overlays';
@@ -69,8 +69,8 @@ function AtlasApp() {
     <a href="#main-content" className="skip-link" data-testid="skip-content">Skip to content</a>
     {home && <RockstarRibbon/>}
     <Navigation {...atlas}/>
-    <main id="main-content" tabIndex={-1} data-testid="main-content">{home?<><Hero {...atlas}/><QuickDestinations/><TownHub {...atlas}/><Wire {...atlas}/><FreshLinks {...atlas}/><ExperienceTeaser/><World {...atlas}/><Marquee/><Characters {...atlas}/><Gallery {...atlas}/></>:experience?<div className="experience-page"><header className="experience-page-heading"><Link to="/directory" data-testid="experience-back">← Full index</Link><h1 data-testid="experience-title"><KineticTitle value="THE GTA VI EXPERIENCE"/></h1></header><RockstarExperience {...atlas}/></div>:<PortalLayout><div key={path} className="cinema-route">{section?<SectionPage section={section} atlas={atlas}/>:hiddenVehicle?<div className="portal-empty"><h1>Spoiler-protected entry</h1><p>This file contains story-sensitive information.</p><button className="portal-button" onClick={()=>atlas.setSpoilers(true)}>Show spoilers</button><Link to={sectionById[item?.collections[0]]?.path||"/directory"}>Browse collection</Link></div>:item?<DetailPage item={item} atlas={atlas}/>:path==='/directory'?<DirectoryPage/>:<div className="portal-not-found" data-testid="not-found"><span className="portal-kicker">404</span><h1 data-testid="not-found-title">Wrong turn, pal.</h1><p>Check the address or head back to the full index.</p><Link to="/directory" className="portal-button" data-testid="not-found-directory">Full index</Link></div>}</div></PortalLayout>}</main>
-    {home?<Footer {...atlas}/>:<CompactFooter/>}<Overlays {...atlas}/>
+    <main id="main-content" tabIndex={-1} data-testid="main-content">{home?<><Hero {...atlas}/><QuickDestinations/><TownHub {...atlas}/><Wire {...atlas}/><ExperienceTeaser/><World {...atlas}/><Marquee/><Characters {...atlas}/><Gallery {...atlas}/></>:experience?<div className="experience-page"><header className="experience-page-heading"><Link to="/directory" data-testid="experience-back">← Full index</Link><h1 data-testid="experience-title"><KineticTitle value="THE GTA VI EXPERIENCE"/></h1></header><RockstarExperience {...atlas}/></div>:<PortalLayout><div key={path} className="cinema-route">{section?<SectionPage section={section} atlas={atlas}/>:hiddenVehicle?<div className="portal-empty"><h1>Spoiler-protected entry</h1><p>This file contains story-sensitive information.</p><button className="portal-button" onClick={()=>atlas.setSpoilers(true)}>Show spoilers</button><Link to={sectionById[item?.collections[0]]?.path||"/directory"}>Browse collection</Link></div>:item?<DetailPage item={item} atlas={atlas}/>:path==='/directory'?<DirectoryPage/>:<div className="portal-not-found" data-testid="not-found"><span className="portal-kicker">404</span><h1 data-testid="not-found-title">Wrong turn, pal.</h1><p>Check the address or head back to the full index.</p><Link to="/directory" className="portal-button" data-testid="not-found-directory">Full index</Link></div>}</div></PortalLayout>}</main>
+    {home?<Footer {...atlas}/>:<CompactFooter hideLegal={path==='/guides/faq'}/>}<Overlays {...atlas}/>
     <Toaster theme="dark" position="bottom-right" richColors/>
   </div></MotionConfig>;
 }

@@ -54,6 +54,8 @@ jobs:
         run: node scripts/verify-catalogue.mjs
       - name: Verify site-only UI controls
         run: node scripts/verify-site-ui.mjs
+      - name: Verify unique landing and shared page content
+        run: node scripts/verify-page-ownership.mjs
       - name: Verify unique dossier presentation
         run: node scripts/verify-dossier-dedup.mjs
       - name: Verify character catalogue
