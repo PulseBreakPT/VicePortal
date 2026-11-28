@@ -291,7 +291,10 @@ export const MASTER = [
       "Variants",
       "Rare species",
       "Huntable species",
-      "Catchable fish"
+      "Catchable fish",
+      "Aquatic",
+      "Reptiles & amphibians",
+      "Other wildlife"
     ]
   },
   {
@@ -729,6 +732,7 @@ export function archiveMembership(entry){
   if(['Location','Collectible','Mission','Challenge','Equipment'].includes(entry.kind)&&aliases[n])add(...aliases[n]);
  }
  if(entry.kind==='Song')add('music','Songs');
+ if(entry.kind==='Animal'&&entry.category==='Catchable fish')add('wildlife','Fish');
  if(entry.kind==='Vehicle'&&set.has(key('vehicles','Standout vehicles')))add('vehicles','Vehicle variants');
  if(set.size)set.add('archive');
  return [...set].filter(x=>valid.has(x));
@@ -759,7 +763,23 @@ export function buildMusicRecords(snapshot,sources,existing){
  }
  return out;
 }
-export function buildMaster(entries,snapshot,sources){
+export function buildVerifiedRecords(rows,existing){
+ const seen=new Set(existing.filter(e=>['Animal','Equipment'].includes(e.kind)).map(e=>e.kind+'|'+identity(e.title)));
+ // A map pin is not a species; only exact matching records of the same kind suppress creation.
+ const ids=new Set(existing.map(e=>e.id)),out=[];
+ for(const row of rows||[]){
+  if(!['Animal','Equipment'].includes(row.kind)||!row.title||!['https://gtatown.com/wildlife','https://gtatown.com/guides/gear'].includes(row.source))throw Error('Invalid reviewed master record');
+  const k=row.kind+'|'+identity(row.title);if(seen.has(k))continue;
+  const id='master-'+masterSlug(row.kind)+'-'+masterSlug(row.title);
+  if(ids.has(id))throw Error('Master identity collision: '+id);
+  ids.add(id);seen.add(k);
+  const section=row.kind==='Animal'?'animals':'archive/equipment';
+  out.push({id,title:row.title,kind:row.kind,category:row.category,path:'/'+section+'/'+id,collections:[section],status:'Community reference',creatorDataset:'master-reviewed',source:row.source,relatedSources:[{label:'GTA Town · GTA VI community reference',url:row.source}],description:row.kind==='Animal'?'Wildlife entry listed in the GTA VI community compendium.':'Equipment entry listed in the GTA VI in-game equipment reference.',attributes:{'Source classification':row.category},image:'/images/creator-data-placeholder.svg',imageFallback:'/images/creator-data-placeholder.svg',placeholderImage:true,verifiedOn:'2026-11-28'});
+ }
+ return out;
+}
+export function buildMaster(entries,snapshot,sources,verified=[]){
  const music=buildMusicRecords(snapshot,sources,entries);
- return [...entries,...music].map(entry=>({...entry,collections:[...new Set([...(entry.collections||[]),...archiveMembership(entry)])]}));
+ const reviewed=buildVerifiedRecords(verified,[...entries,...music]);
+ return [...entries,...music,...reviewed].map(entry=>({...entry,collections:[...new Set([...(entry.collections||[]),...archiveMembership(entry)])]}));
 }
