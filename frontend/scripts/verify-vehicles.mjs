@@ -94,3 +94,26 @@ const renderer=await read('../src/data/vehicleRecords.js');
 check(renderer.includes('imageRef?(imageRef.local?.path||imageRef.image):placeholder')&&!renderer.includes('legacyImages'),'Vehicle image renderer must use reviewed references');
 
 console.log(JSON.stringify({vehicles:rows.length,complete:feed.complete,imageReferences:Object.keys(refs).length,checks},null,2));
+
+// Licensed feed factual recovery: no prose, no title-only guesses, no overwrites.
+const {progressFacts,indexTitles,fillVehicleFacts}=await import('../src/data/vehicleProgressFacts.mjs');
+const titleIndex=indexTitles(rows);
+const facts=feed.rows.map(raw=>progressFacts(raw,titleIndex));
+const coverage=Object.fromEntries(['Era','Specialist workshop','Base model','Design style'].map(k=>[k,facts.filter(x=>Object.hasOwn(x,k)).length]));
+check(coverage.Era>=276,'Progress era coverage regression');
+check(coverage['Specialist workshop']>=128,'Workshop coverage regression');
+check(coverage['Base model']>=281,'Base-model coverage regression');
+check(coverage['Design style']>=100,'Body-style coverage regression');
+const titleFixture=indexTitles([{title:'Sample Base'},{title:'Sample Variant'}]);
+assert.deepEqual(progressFacts({name:'Sample Variant',summary:'One-off Sample Base from the Retro standout set, custom finish and parts.'},titleFixture),{'Base model':'Sample Base'});
+assert.deepEqual(progressFacts({name:'Sample Variant',summary:'One-off Other Base from the Retro standout set, custom finish and parts.'},titleFixture),{});
+assert.deepEqual(progressFacts({name:'Sample Base',summary:'One-off Sample Base from the Retro standout set, custom finish and parts.'},titleFixture),{});
+assert.deepEqual(progressFacts({name:'Sample Base',manufacturer:'Sample',summary:'2010s Sample luxury SUV, modded at Example Workshop.'},titleFixture),{Era:'2010s','Design style':'luxury SUV','Specialist workshop':'Example Workshop'});
+assert.deepEqual(fillVehicleFacts({Era:'Existing',Price:'Not verified in this atlas'},{Era:'Other',Price:'$100'}),{Era:'Existing',Price:'$100'});
+const cross=JSON.parse(await read('../src/data/vehicleCrosscheckFacts.json'));
+check(new Set(cross.rows.map(x=>x.source)).size===cross.rows.length,'Duplicate crosscheck identities');
+for(const row of cross.rows){
+ check(rows.filter(x=>x.title===row.title&&x.source===row.source).length===1,'Unproven crosscheck identity: '+row.title);
+ check(row.refs.every(x=>/^https:\/\/(gtatown\.com|gtaspotter\.com|allthings\.how|www\.powerpyx\.com)\//.test(x.url)),'Unexpected crosscheck provenance');
+}
+console.log('VEHICLE_PROGRESS_FACTS '+JSON.stringify({coverage,crosschecked:cross.rows.length}));

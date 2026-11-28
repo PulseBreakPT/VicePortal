@@ -83,6 +83,20 @@ try{
   reviewedVehicleCount++;
  }
  assert.ok(reviewedVehicleCount>=20,'Reviewed vehicle coverage regression');
+ const vehicleProgress=entries.filter(e=>e.kind==='Vehicle');
+ const productionProgressCoverage=Object.fromEntries(['Era','Specialist workshop','Base model','Design style','Spawn Locations','Registration cost','Sell value (stolen)','Race rental'].map(k=>[k,vehicleProgress.filter(e=>!isUnknown(e.attributes?.[k])).length]));
+ assert.ok(productionProgressCoverage.Era>=276,'Era evidence not integrated');
+ assert.ok(productionProgressCoverage['Specialist workshop']>=128,'Workshop evidence not integrated');
+ assert.ok(productionProgressCoverage['Base model']>=281,'Base model evidence not integrated');
+ assert.ok(productionProgressCoverage['Design style']>=100,'Style evidence not integrated');
+ const crosschecked=JSON.parse(await readFile(join(root,'vehicleCrosscheckFacts.json'),'utf8'));
+ for(const row of crosschecked.rows){
+  const found=vehicleProgress.filter(e=>e.title===row.title);
+  assert.equal(found.length,1,'Duplicate or missing crosschecked vehicle: '+row.title);
+  for(const [field,value] of Object.entries(row.attributes))assert.ok(!isUnknown(found[0].attributes[field]),'Missing crosschecked field '+row.title+' '+field);
+  for(const ref of row.refs)assert.ok(found[0].relatedSources.some(x=>x.url===ref.url),'Missing crosscheck source '+row.title);
+ }
+ console.log('VEHICLE_PROGRESS_PRODUCTION '+JSON.stringify(productionProgressCoverage));
  const wildlifeEvidence=[['American Black Bear',3],['Black Fox',3],['Leonida Panther',2]];
  for(const [title,count] of wildlifeEvidence){
   const found=entries.filter(e=>e.kind==='Animal'&&e.title===title);
