@@ -62,6 +62,8 @@ jobs:
         run: node scripts/import-vehicles.mjs
       - name: Verify vehicle catalogue
         run: node scripts/verify-vehicles.mjs
+      - name: Verify vehicle archive evidence and dossier integration
+        run: node scripts/verify-vehicle-archive.mjs
       - name: Verify cinematic performance instruments
         run: node scripts/verify-performance.mjs
       - name: Audit every universal dossier and spoiler state
