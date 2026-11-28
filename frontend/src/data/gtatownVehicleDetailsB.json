@@ -98,5 +98,119 @@
       "GTA Town acquisition methods": "steal: Take one from a dock or marina. Can't be registered.",
       "Source confidence": "not yet confirmed by two sources."
     }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Calder Dibnah",
+    "source": "https://gtatown.com/garage/vehicles/calder-dibnah",
+    "attributes": {
+      "Real-life reference": "2007 Azimut 85; Ferretti 720 (roof canopy)",
+      "GTA Town acquisition methods": "Found at docks or marinas; 66 fixed parking spots; cannot be registered."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Calder Marquis",
+    "source": "https://gtatown.com/garage/vehicles/calder-marquis",
+    "attributes": {
+      "GTA Town acquisition methods": "Found at docks or marinas; 98 fixed parking spots; cannot be registered.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Calder Shasa",
+    "source": "https://gtatown.com/garage/vehicles/calder-shasa",
+    "attributes": {
+      "Real-life reference": "Sea Ray 350 Sundancer; Regal 33 Express",
+      "GTA Town acquisition methods": "Found at docks or marinas; 230 fixed parking spots; cannot be registered."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Calder Yakuruna",
+    "source": "https://gtatown.com/garage/vehicles/calder-yakuruna",
+    "attributes": {
+      "Real-life reference": "Riva 86 Domino",
+      "GTA Town acquisition methods": "Found at docks or marinas; 49 fixed parking spots; cannot be registered.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Cold Case L35P",
+    "source": "https://gtatown.com/garage/vehicles/cold-case-l35p",
+    "attributes": {
+      "Real-life reference": "Contender 25T; Contender 24S (base model: Lure Predator L35P)",
+      "GTA Town acquisition methods": "Unique fixed spawn or reward.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Decker Crake",
+    "source": "https://gtatown.com/garage/vehicles/decker-crake",
+    "attributes": {
+      "Real-life reference": "Eurocopter EC135; Eurocopter EC130",
+      "GTA Town acquisition methods": "Available at airfields, helipads or hangars.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Dingus Garda",
+    "source": "https://gtatown.com/garage/vehicles/dingus-garda",
+    "attributes": {
+      "Real-life reference": "Defender-class Response Boat-Small (40 ft)",
+      "GTA Town acquisition methods": "GTA Town lists 112 fixed parking spots; source reports traffic or parking acquisition and registration.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Dot Matrix Dibnah",
+    "source": "https://gtatown.com/garage/vehicles/dot-matrix-dibnah",
+    "attributes": {
+      "Real-life reference": "2007 Azimut 85; Ferretti 720 (roof canopy; base model: Calder Dibnah)",
+      "GTA Town acquisition methods": "Unique spawn; parked in the source-listed area.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Dr Sheehan's Airboat",
+    "source": "https://gtatown.com/garage/vehicles/dr-sheehans-airboat",
+    "attributes": {
+      "Real-life reference": "Diamondback Airboats Work Boat series; American Airboats AirRanger; Panther Airboats (base model: Airgator Airboat 09)",
+      "GTA Town acquisition methods": "Unique spawn."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Endurex Aerobike",
+    "source": "https://gtatown.com/garage/vehicles/endurex-aerobike",
+    "attributes": {
+      "GTA Town acquisition methods": "Found parked or ridden; 27 fixed parking spots.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Hauners Cargobob",
+    "source": "https://gtatown.com/garage/vehicles/hauners-cargobob",
+    "attributes": {
+      "GTA Town acquisition methods": "Military grounds; acquisition may trigger a wanted level.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
+  },
+  {
+    "kind": "Vehicle",
+    "title": "Hauners Ridgway",
+    "source": "https://gtatown.com/garage/vehicles/hauners-ridgway",
+    "attributes": {
+      "Real-life reference": "Chevrolet T17E1 Staghound",
+      "GTA Town acquisition methods": "Military grounds; acquisition may trigger a wanted level.",
+      "Source confidence": "not yet confirmed by two sources."
+    }
   }
 ]
