@@ -17,10 +17,22 @@ try{
   const esm=source.replace(/(from\s+['"]\.\/)([\w-]+)(['"])/g,'$1$2.mjs$3').replace(/(from\s+['"]\.\/)([\w-]+\.json)(['"])/g,'$1$2.mjs$3');
   await writeFile(join(dir,name.replace(/\.js$/,'.mjs')),esm);
  }
- const {entries}=await import(pathToFileURL(join(dir,'portal.mjs')).href);
+ const {entries,gtaTownExtendedReport}=await import(pathToFileURL(join(dir,'portal.mjs')).href);
  const {masterSections,MASTER}=await import(pathToFileURL(join(dir,'masterArchive.mjs')).href);
  const masterIds=new Set(masterSections.map(s=>s.id));
  assert.ok(entries.every(e=>(e.collections||[]).filter(c=>c.startsWith('archive')).every(c=>masterIds.has(c))),'Unregistered master collection');
+ const {sections}=await import(pathToFileURL(join(dir,'sections.mjs')).href);
+ const allSections=new Set(sections.map(s=>s.id));
+ assert.equal(new Set(entries.map(e=>e.path)).size,entries.length,'Duplicate dossier paths');
+ const extended=entries.filter(e=>e.creatorDataset==='gtatown-extra');
+ assert.ok(extended.length>=150,'Missing extended GTA Town records');
+ for(const e of extended){
+  assert.ok(e.collections.every(c=>allSections.has(c)),e.id+' unknown section');
+  assert.ok(e.source.startsWith('https://gtatown.com/'),e.id+' missing provenance');
+ }
+ const externalIds=entries.map(e=>e.gtaTownEntityId).filter(Boolean);
+ assert.equal(new Set(externalIds).size,externalIds.length,'Duplicate GTA Town source identity');
+ console.log('Extended GTA Town:',JSON.stringify({counts:gtaTownExtendedReport.counts,review:gtaTownExtendedReport.review.length,byKind:extended.reduce((m,e)=>(m[e.kind]=(m[e.kind]||0)+1,m),{})}));
  const masterCoverage=Object.fromEntries(MASTER.map(g=>[g.id,entries.filter(e=>e.collections.includes('archive/'+g.id)).length]));
  console.log('Master archive production coverage:',JSON.stringify(masterCoverage));
  const report={entries:entries.length,byKind:{},views:0,attributes:0,omissions:{},unknownKinds:[]};
