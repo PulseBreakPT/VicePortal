@@ -25,7 +25,7 @@ const areas={
 };
 export function enrichVehicle(row,archive){
  const e=archive.entries[row.sourceSlug];
- if(!e||identity(e.title)!==identity(row.title)||identity(e.manufacturer)!==identity(row.maker))return {row,attributes:{},sources:[],conflicts:[]};
+ if(!e||identity(e.title)!==identity(row.title)||identity(e.manufacturer||'Not verified in this atlas')!==identity(row.maker))return {row,attributes:{},sources:[],conflicts:[]};
  const enriched={...row};
  const conflicts=[];
  for(const k of ratingKeys){
