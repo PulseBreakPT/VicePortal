@@ -1,0 +1,9 @@
+# Data Engine V2 — open datasets
+
+Existing GTA Town imports and pinned open-map/radio/price sources remain in place. The build downloads 12 GTA Atlas JSON files and six GTA6Gang CSV/JSON files, with count and source-ID validation, bounded concurrency and a downloadable audit artifact. Source figures are minimums, not distinct dossier counts. Empty or failed first-time imports stop the build rather than falsely reporting completion.
+
+GTA Atlas (https://atlasgta.com/data/), CC BY-SA 4.0; GTA6Gang (https://gta6gang.com/data/datapackage.json), CC BY 4.0. Adapted datasets are separately available under `/VicePortal/open-data/atlas.json` and `/VicePortal/open-data/gang.json` with licence and attribution metadata. No images, third-party map coordinates or editorial prose are redistributed. Underlying source URLs and source confidence are retained; they are not independent verification. The ledger remains in the audit snapshot, not shown as confirmed game facts.
+
+Canonical dossier identity is kind + exact normalized title (song: artist as well; location: matching district/area and compatible county). Existing values, paths, IDs and spoiler flags are retained. Unmatched and ambiguous records are reported for human review rather than silently creating near-duplicates. Conflicting fields are recorded, not overwritten. Only selected structured factual fields are merged. API sources requiring credentials and unlicensed technical dumps are not ingested.
+
+Run `node frontend/scripts/import-open-data-v2.mjs`, then `node frontend/scripts/verify-open-data-v2.mjs` and `node frontend/scripts/verify-universal-dossiers.mjs`. CI uploads import counts, matched/enriched fields, unresolved identities and conflicts. The checked-in bootstrap is empty until a network-enabled import runs; a successful CI build, not the bootstrap, proves extraction.
