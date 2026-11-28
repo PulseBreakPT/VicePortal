@@ -10,8 +10,8 @@ export const typeLabel = item => item.kind==='Story'?'Article':item.kind;
 const getFacts = (item,section,dimensions) => {
   const facts=Object.entries(item.attributes||{}).filter(([,value])=>!isUnknown(value));
   if(['Guide','Story'].includes(item.kind)){
-    const words=[item.description,...(item.paragraphs||[])].filter(Boolean).join(' ').split(/\s+/).length;
-    facts.push(['Reading time',`${Math.max(1,Math.ceil(words/200))} min`]);
+    const text=[item.description,...(item.paragraphs||[])].filter(Boolean).join(' ').trim();
+    if(text)facts.push(['Reading time',`${Math.max(1,Math.ceil(text.split(/\s+/).length/200))} min`]);
   }
   if(['Image','Artwork'].includes(item.kind)&&dimensions)facts.push(['Image size',`${dimensions.width} × ${dimensions.height}`]);
   return facts;
@@ -23,7 +23,7 @@ export const DossierMeta = ({item,section,atlas,task,dimensions}) => {
   const facts=getFacts(item,section,dimensions).filter(([name])=>!protectedStory||['Role','Credited performer','Credit section','Credited as','Evidence'].includes(name));
   return <aside className="record-meta" aria-label="Entry summary" data-testid="detail-summary">
     <div className="record-meta-heading"><span>THE LOWDOWN</span></div>
-    {facts.length>0&&<dl className="record-quick-facts">{facts.map(([name,value],i)=><div key={name}><dt>{name}</dt><dd data-testid={`detail-quick-fact-${i}`}>{/^[\d\s.,%×:+−–-]+$/.test(String(value))?<NeonCipher value={value} variant="number"/>:value}</dd></div>)}</dl>}
+    {facts.length>0&&<dl className="record-quick-facts">{facts.map(([name,value],i)=><div key={name}><dt>{name}</dt><dd data-testid={`detail-quick-fact-${i}`}>{/^[\d\s.,%×:+−–-]+$/.test(String(value))?<NeonCipher value={value} variant="number"/>:typeof value==='object'&&value!==null?JSON.stringify(value):String(value)}</dd></div>)}</dl>}
     {comparable&&<Link className="record-primary-link" to={`${item.kind==='Weapon'?'/weapons/compare':'/compare'}?a=${item.id}&b=`} data-testid="detail-compare">Compare {item.kind.toLowerCase()}<ArrowRight size={17}/></Link>}
     {item.kind==='Region'&&<Link className="record-primary-link" to="/map" data-testid="detail-region-map">Region map<ArrowRight size={17}/></Link>}
     {task&&<button className={`record-checklist ${atlas.completed.includes(task.id)?'is-completed':''}`} data-testid="detail-complete" aria-pressed={atlas.completed.includes(task.id)} onClick={()=>atlas.toggleComplete(task.id)}><Check size={17}/><span>{atlas.completed.includes(task.id)?'Marked as explored':'Mark as explored'}<small>Personal atlas checklist</small></span></button>}
