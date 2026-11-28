@@ -1,0 +1,105 @@
+[
+  {
+    "kind": "Mission",
+    "title": "Prologue",
+    "source": "https://gtatown.com/track/missions/prologue",
+    "attributes": {
+      "Chapter": "Chapter 1: Just Like Paradise",
+      "Protagonist": "lucia",
+      "Story order": 1
+    }
+  },
+  {
+    "kind": "Mission",
+    "title": "Gone Fishing",
+    "source": "https://gtatown.com/track/missions/gone-fishing",
+    "attributes": {
+      "Chapter": "Chapter 1: Just Like Paradise",
+      "Protagonist": "jason",
+      "Rewards": "$100 to $220 by performance",
+      "Story order": 2
+    }
+  },
+  {
+    "kind": "Mission",
+    "title": "Gear Up",
+    "source": "https://gtatown.com/track/missions/gear-up",
+    "attributes": {
+      "Chapter": "Chapter 1: Just Like Paradise",
+      "Protagonist": "jason",
+      "Story order": 3
+    }
+  },
+  {
+    "kind": "Mission",
+    "title": "Just a Scratch",
+    "source": "https://gtatown.com/track/missions/just-a-scratch",
+    "attributes": {
+      "Story order": 4
+    }
+  },
+  {
+    "kind": "Mission",
+    "title": "Lab Fees",
+    "source": "https://gtatown.com/track/missions/lab-fees",
+    "attributes": {
+      "Story order": 5
+    }
+  },
+  {
+    "kind": "Mission",
+    "title": "Unwanted Attention",
+    "source": "https://gtatown.com/track/missions/unwanted-attention",
+    "attributes": {
+      "Story order": 6
+    }
+  },
+  {
+    "kind": "Mission",
+    "title": "Pipework",
+    "source": "https://gtatown.com/track/missions/pipework",
+    "attributes": {
+      "Story order": 7
+    }
+  },
+  {
+    "kind": "Mission",
+    "title": "Hey Arnold!",
+    "source": "https://gtatown.com/track/missions/hey-arnold",
+    "attributes": {
+      "Story order": 8
+    }
+  },
+  {
+    "kind": "Mission",
+    "title": "Island Dreams",
+    "source": "https://gtatown.com/track/missions/island-dreams",
+    "attributes": {
+      "Story order": 9
+    }
+  },
+  {
+    "kind": "Mission",
+    "title": "Feng Shui",
+    "source": "https://gtatown.com/track/missions/feng-shui",
+    "attributes": {
+      "Story order": 10
+    }
+  },
+  {
+    "kind": "Mission",
+    "title": "Coming Home",
+    "source": "https://gtatown.com/track/missions/coming-home",
+    "attributes": {
+      "Story order": 11
+    }
+  },
+  {
+    "kind": "Mission",
+    "title": "Buck Me",
+    "source": "https://gtatown.com/track/missions/buck-me",
+    "attributes": {
+      "Story order": 12
+    }
+  }
+]
