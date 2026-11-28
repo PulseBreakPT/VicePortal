@@ -60,6 +60,7 @@ export function enrichArsenal(entries){
    fill(name,value+'/10');
    // The existing value agrees with the audit scale; make the scale explicit for the existing meter.
    if(normalized(attributes[name])===value)attributes[name]=value+'/10';
+   else if(item.creatorDataset==='weapons'&&/^\d+(?:\.\d+)?$/.test(String(attributes[name]))&&Number(attributes[name])<=10)attributes[name]=String(attributes[name])+'/10';
   };
   let price,location;
   if(type==='base'||type==='variant'){
