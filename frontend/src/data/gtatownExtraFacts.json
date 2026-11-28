@@ -1,0 +1,739 @@
+[
+  {
+    "kind": "Completion requirement",
+    "title": "Story Completion",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "50%",
+      "Progress group": "Story & Tasks"
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Optional Tasks Completed",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "6%",
+      "Progress group": "Story & Tasks"
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Gang Operations Cleared",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "3%",
+      "Progress group": "Story & Tasks",
+      "Source-listed total": 39
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Bank Jobs Fully Completed",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "2%",
+      "Progress group": "Story & Tasks",
+      "Source-listed total": 22
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Payday Loan Jobs Fully Completed",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "2%",
+      "Progress group": "Story & Tasks",
+      "Source-listed total": 7
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Smash 'N' Grabs Fully Completed",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "2%",
+      "Progress group": "Story & Tasks",
+      "Source-listed total": 35
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Stick Ups Fully Completed",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "2%",
+      "Progress group": "Story & Tasks",
+      "Source-listed total": 91
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Narcotics Fenced",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "2%",
+      "Progress group": "Story & Tasks"
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Jewelry Fenced",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "2%",
+      "Progress group": "Story & Tasks"
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Marked Bills Fenced",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "2%",
+      "Progress group": "Story & Tasks"
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Vehicles Fenced",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "2%",
+      "Progress group": "Story & Tasks"
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Kenton Sets Completed",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 7
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Collectible Card Sets Found",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 18
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "WAiNK Locations Scanned",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities"
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Underwater Discoveries Found",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 33
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Magazines, Books & Comics Found",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 34
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Meditation Spots Completed",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 18
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Cocaine Flamingos Destroyed",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 125
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Unique Playlists Completed",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 2
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Discovered Styles",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 79
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Unique Races Won",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 40
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Race Challenge Gold Medals",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 13
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Shooting Range Gold Medals",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 42
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Video Games Played",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 4
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Pool Opponents Defeated",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 7
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Mini Golf Locations Played",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 3
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Basketball Hoops",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 100
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Drone Time Trials Completed",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 42
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Stunts Completed",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 397
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Challenges Completed",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 80
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Bret's Target Decks",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Exploration & Activities",
+      "Source-listed total": 15
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Base Model Vehicles Scanned",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Discovery",
+      "Source-listed total": 277
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Standard Issue Weapons Found",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Discovery",
+      "Source-listed total": 66
+    }
+  },
+  {
+    "kind": "Completion requirement",
+    "title": "Animals Studied",
+    "category": "Completion",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Completion weight": "1%",
+      "Progress group": "Discovery",
+      "Source-listed total": 255
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Vice City Flamingos Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 24
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Vice City Narcos Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 24
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Vice City Manatees Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 24
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Vice City Club De Futbol Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 30
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Liberty City Swingers Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 24
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Liberty City Penetrators Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 24
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Liberty City Wrath Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 24
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Los Santos Corkers Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 24
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Los Santos Panic Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 24
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Los Santos Pounders Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 24
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Backyard Wrestling Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 12
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "America's Next Top Hooker Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 24
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Delights Dancers Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 18
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Jack of Hearts Dancers Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 36
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Nine1Nine Dancers Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 36
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "The Legends of Ratface Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 36
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Right Wing",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": null
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Ed Comics Universe Cards",
+    "category": "Card sets",
+    "source": "https://gtatown.com/track",
+    "attributes": {
+      "Source-listed cards": 36
+    }
+  },
+  {
+    "kind": "Game edition",
+    "title": "Grand Theft Auto VI (Standard Edition)",
+    "category": "Edition / add-on",
+    "source": "https://gtatown.com/editions",
+    "attributes": {
+      "Source-listed release": "2026-11-19",
+      "Source-listed prices": "PS5 US $79.99, XBOX US $79.99, PS5 UK £69.99, XBOX UK £69.99, PS5 EU €79.99, XBOX EU €79.99",
+      "Source-listed bonus count": 1
+    }
+  },
+  {
+    "kind": "Game edition",
+    "title": "Grand Theft Auto VI: Ultimate Edition",
+    "category": "Edition / add-on",
+    "source": "https://gtatown.com/editions",
+    "attributes": {
+      "Source-listed release": "2026-11-19",
+      "Source-listed prices": "PS5 US $99.99, XBOX US $99.99, PS5 UK £89.99, XBOX UK £89.99, PS5 EU €99.99, XBOX EU €99.99",
+      "Source-listed bonus count": 29
+    }
+  },
+  {
+    "kind": "Game edition",
+    "title": "Vintage Vice City Pack",
+    "category": "Edition / add-on",
+    "source": "https://gtatown.com/editions",
+    "attributes": {
+      "Source-listed release": "2026-11-20",
+      "Source-listed prices": "PS5 US $4.99, XBOX US $4.99, PS5 UK £4.49, XBOX UK £4.49, PS5 EU €4.99, XBOX EU €4.99",
+      "Source-listed bonus count": 4
+    }
+  },
+  {
+    "kind": "Game edition",
+    "title": "GTA+ membership (GTA VI benefits)",
+    "category": "Edition / add-on",
+    "source": "https://gtatown.com/editions",
+    "attributes": {
+      "Source-listed release": "2026-11-19",
+      "Source-listed prices": "PS5 US $7.99, XBOX US $7.99, PS5 UK £6.99, XBOX UK £6.99, PS5 EU €7.99, XBOX EU €7.99",
+      "Source-listed bonus count": 5
+    }
+  },
+  {
+    "kind": "Phone app",
+    "title": "WAiNK",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "Scanning"
+    }
+  },
+  {
+    "kind": "Phone app",
+    "title": "BuckMe",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "Banking"
+    }
+  },
+  {
+    "kind": "Phone app",
+    "title": "RydeMe",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "Ride service"
+    }
+  },
+  {
+    "kind": "Phone app",
+    "title": "Scooter Bros",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "Vehicle delivery"
+    }
+  },
+  {
+    "kind": "Phone app",
+    "title": "Contacts",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "Contact directory"
+    }
+  },
+  {
+    "kind": "Phone app",
+    "title": "WhatUp",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "Messaging"
+    }
+  },
+  {
+    "kind": "Phone app",
+    "title": "Camera",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "Photography"
+    }
+  },
+  {
+    "kind": "Phone app",
+    "title": "Gallery",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "Photo storage"
+    }
+  },
+  {
+    "kind": "Phone app",
+    "title": "Snapmatic",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "Social feed"
+    }
+  },
+  {
+    "kind": "Phone app",
+    "title": "Vice City Real Estate",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "Garage purchases"
+    }
+  },
+  {
+    "kind": "Phone app",
+    "title": "Fitness",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "Fitness tracking"
+    }
+  },
+  {
+    "kind": "Phone app",
+    "title": "News",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "News feed"
+    }
+  },
+  {
+    "kind": "Phone app",
+    "title": "Weather",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "Weather forecast"
+    }
+  },
+  {
+    "kind": "Phone app",
+    "title": "Settings",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "Phone settings"
+    }
+  },
+  {
+    "kind": "Phone app",
+    "title": "Reminders",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "Notifications"
+    }
+  },
+  {
+    "kind": "Phone plugin",
+    "title": "Cop scanner",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "Police radio"
+    }
+  },
+  {
+    "kind": "Phone plugin",
+    "title": "Key cloner",
+    "category": "Apps",
+    "source": "https://gtatown.com/guides/phone-apps",
+    "attributes": {
+      "Function": "Vehicle key plugin"
+    }
+  },
+  {
+    "kind": "Collectible set",
+    "title": "Collectible Cards",
+    "category": "Trading cards",
+    "source": "https://gtatown.com/collectibles/collectible-cards",
+    "attributes": {
+      "Source-listed total": 480,
+      "Mapped by source": 406,
+      "Card sets": 18
+    }
+  }
+]
