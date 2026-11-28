@@ -53,9 +53,9 @@ export const CatalogGrid = ({items,atlas,section,prefix='catalog',title='On file
        </div></PopoverContent>
      </div></Popover>
    </div>
-   <div className="catalogue-result-meta"><span>Showing {Math.min(limit,found.length)} of {found.length}</span>{(active>0||filters.query)&&<button type="button" onClick={reset}>Clear all <X size={13}/></button>}</div>
+   <div className="catalogue-result-meta">{found.length>limit&&<span>Showing {limit}</span>}{(active>0||filters.query)&&<button type="button" onClick={reset}>Clear all <X size={13}/></button>}</div>
    <div data-testid={prefix+'-results'} className="catalogue-results">{shown.map((group,index)=><section className="catalogue-group" key={group.label} aria-labelledby={prefix+'-group-heading-'+index}>{grouped&&ordered.length>1&&<header className="catalogue-group-heading"><h3 id={prefix+'-group-heading-'+index}>{group.label}</h3><span>{group.total}</span></header>} {(!grouped||ordered.length===1)&&<h3 className="catalogue-sr-only" id={prefix+'-group-heading-'+index}>{group.label}</h3>}<div className={'portal-grid '+(filters.view==='list'?'is-list':'')}>{group.items.map((item,order)=><CatalogCard order={order} item={item} atlas={atlas} key={item.id} prefix={prefix}/>)}</div></section>)}</div>
    {!found.length&&<div className="portal-empty" data-testid={prefix+'-empty'}><Search size={30}/><h2>No matches on file.</h2><p>Try another name or category.</p><button className="portal-button" onClick={reset}>Reset filters</button></div>}
-   {found.length>limit&&<div className="catalogue-more"><button type="button" className="portal-button" data-testid={prefix+'-load-more'} onClick={()=>setLimit(old=>old+PAGE_SIZE)}>Load {Math.min(PAGE_SIZE,found.length-limit)} more <ChevronDown size={17}/></button><span>{Math.min(limit,found.length)} / {found.length} entries</span></div>}
+   {found.length>limit&&<div className="catalogue-more"><button type="button" className="portal-button" data-testid={prefix+'-load-more'} onClick={()=>setLimit(old=>old+PAGE_SIZE)}>Load {Math.min(PAGE_SIZE,found.length-limit)} more <ChevronDown size={17}/></button></div>}
  </section>;
 };

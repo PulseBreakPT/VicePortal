@@ -1,5 +1,5 @@
 import { NeonCipher } from './NeonCipher';
-import { ArrowRight, BookOpen, Bookmark, Camera, Check, ChevronRight, Compass, Image as ImageIcon, MapPin, Play, Users } from 'lucide-react';
+import { ArrowRight, BookOpen, Bookmark, Camera, ChevronRight, Compass, Image as ImageIcon, MapPin, Play, Users } from 'lucide-react';
 import { image, regions } from '../data/catalog';
 import { entries as catalog } from '../data/portal';
 import { Reveal } from './AtlasUI';
@@ -7,10 +7,10 @@ import { Reveal } from './AtlasUI';
 export const ProgressPreview = ({saved}) => {
   const percent=Math.round(saved.length/catalog.length*100);
   const groups=[['Regions','Region'],['Characters','Character'],['Screenshots','Image']];
-  return <div className="hub-progress-preview"><div className="hub-progress-top"><div className="hub-ring" style={{'--progress':`${percent}%`}}><strong data-testid="home-saved-percentage"><NeonCipher value={`${percent}%`} variant="number"/></strong><small>saved</small></div><div className="hub-progress-key"><strong>Saved entries</strong>{groups.map(([label,kind])=><div key={kind}><span>{label}</span><span data-testid={`home-saved-${kind.toLowerCase()}`}>{catalog.filter(item=>item.kind===kind&&saved.includes(item.id)).length} saved</span></div>)}</div></div><div className="hub-progress-lines">{groups.map(([label,kind])=>{const group=catalog.filter(item=>item.kind===kind);const total=group.filter(item=>saved.includes(item.id)).length;return <span key={kind}><Check size={12}/>{label}<i style={{width:`${total/group.length*70}px`}}/></span>;})}</div></div>;
+  return <div className="hub-progress-preview"><div className="hub-progress-top"><div className="hub-ring" style={{'--progress':`${percent}%`}}><strong data-testid="home-saved-percentage"><NeonCipher value={`${percent}%`} variant="number"/></strong><small>saved</small></div><div className="hub-progress-key"><strong>Saved entries</strong>{groups.map(([label,kind])=><div key={kind}><span>{label}</span><span data-testid={`home-saved-${kind.toLowerCase()}`}>{catalog.filter(item=>item.kind===kind&&saved.includes(item.id)).length} saved</span></div>)}</div></div></div>;
 };
 export const TownHub = ({open,saved}) => <section className="town-hub" id="jump-in" data-testid="jump-in-section">
-  <Reveal className="town-banner"><img src={image('hub-map')} alt="Leonida coastal map detail"/><div><h2 data-testid="banner-heading">LEONIDA <span>ON THE MAP</span></h2><p data-testid="banner-description">Six regions, from the coast to the backcountry. Illustrated overview, not an in-game map.</p></div><button data-testid="banner-explore-map" onClick={()=>open({type:'map'})}><MapPin size={16}/> Open map</button></Reveal>
+  <Reveal className="town-banner"><img src={image('hub-map')} alt="Leonida coastal map detail"/><div><h2 data-testid="banner-heading">LEONIDA <span>ON THE MAP</span></h2><p data-testid="banner-description">Illustrated overview, not an in-game map.</p></div><button data-testid="banner-explore-map" onClick={()=>open({type:'map'})}><MapPin size={16}/> Open map</button></Reveal>
   <h2 className="town-section-title" data-testid="jump-in-heading">Paradise comes at a price.</h2>
   <div className="town-hub-grid">
     <Reveal className="hub-tile hub-map-tile"><img src={image('hub-map')} alt="Color map of the Vice City coastline"/><button className="card-click-target" data-testid="hub-map-open" onClick={()=>open({type:'map'})} aria-label="Explore the Leonida region map"/><span className="hub-map-chip" data-testid="home-region-count"><MapPin size={13}/><strong><NeonCipher value={regions.length} variant="number"/></strong> regions</span><div className="hub-map-markers" aria-hidden="true">{[[42,33,BookOpen],[52,46,Camera],[46,59,Users],[65,70,Compass],[36,49,MapPin],[53,77,Bookmark]].map(([x,y,Icon],i)=><span style={{left:`${x}%`,top:`${y}%`}} key={i}><Icon size={17}/></span>)}</div><div className="hub-tile-caption"><h3>Map</h3><p>Get your bearings</p></div></Reveal>
